@@ -36,9 +36,8 @@ __export(extension_exports, {
 module.exports = __toCommonJS(extension_exports);
 var vscode = __toESM(require("vscode"));
 function activate(context) {
-  console.log('Congratulations, your extension "ps-dev-tools" is now active!');
   const disposable = vscode.commands.registerCommand("ps-dev-tools.helloWorld", () => {
-    vscode.window.showInformationMessage("Hello World from ps_dev_tools!");
+    vscode.window.showInformationMessage(vscode.l10n.t("Hello World from {name}!", { name: "Zsolt" }));
   });
   context.subscriptions.push(disposable);
 }
