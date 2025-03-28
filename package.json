@@ -1,6 +1,6 @@
 {
-  "name": "ps-dev-tools",
-  "displayName": "ps_dev_tools",
+  "name": "ps-remove-accent",
+  "displayName": "ps_remove_accent",
   "description": "Visual Studio Code developer tools extension",
   "version": "0.0.1",
   "license": "BSD-3-Clause",
@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/playfulsparkle/vscode_ps_dev_tools.git"
+    "url": "git+https://github.com/playfulsparkle/vscode_ps_remove_accent.git"
   },
   "bugs": {
-    "url": "https://github.com/playfulsparkle/vscode_ps_dev_tools/issues"
+    "url": "https://github.com/playfulsparkle/vscode_ps_remove_accent/issues"
   },
-  "homepage": "https://github.com/playfulsparkle/vscode_ps_dev_tools#readme",
+  "homepage": "https://github.com/playfulsparkle/vscode_ps_remove_accent#readme",
   "extensionKind": [
     "ui",
     "workspace"
@@ -38,7 +38,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "ps-dev-tools.helloWorld",
+        "command": "ps-remove-accent.helloWorld",
         "title": "%extension.command.hello.title%"
       }
     ],
