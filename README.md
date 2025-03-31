@@ -2,6 +2,8 @@
 
 **PS: Replace Accents** is a Visual Studio Code extension designed to streamline your text processing workflow by replacing accented characters with their unaccented equivalents, ensuring text normalization. Ideal for developers requiring plain text representations, this tool simplifies the task of preparing text for code, databases, or other applications where accented characters might cause issues.
 
+![Usage preview](img/preview.gif "Usage preview")
+
 ---
 
 ## Features
