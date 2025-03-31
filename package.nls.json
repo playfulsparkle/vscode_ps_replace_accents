@@ -1,3 +1,5 @@
 {
-    "extension.command.hello.title": "PS Dev Tools: Hello, World!"
+    "extension.command.replaceAccents.title": "PS: Replace Accents",
+    "extension.configuration.replaceAccents.title": "Replace Accents",
+    "extension.configuration.replaceAccents.description": "Custom mappings for special characters (e.g., {'ß': 'ss', 'æ': 'ae'})"
 }

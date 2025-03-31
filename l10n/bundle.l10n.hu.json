@@ -1,3 +1,10 @@
 {
-    "Hello World from {name}!": "Hali Világ {name}!"
+  "Invalid mappings: Not an object.": "Érvénytelen leképezések: Nem objektum.",
+  "Invalid key: \"{key}\". Keys must be single characters.": "Érvénytelen kulcs: \"{key}\". A kulcsoknak egyetlen karakterből kell állniuk.",
+  "Invalid value for key \"${key}\": \"${value}\". Values must be strings.": "Érvénytelen érték a(z) \"${key}\" kulcshoz: \"${value}\". Az értékeknek szöveges formátumúaknak kell lenniük.",
+  "Cannot modify \"{type}\" type of document": "Nem lehet módosítani a(z) \"{type}\" típusú dokumentumot",
+  "All accented characters were replaced in the entire document.": "Minden ékezetes karakter cserélve lett a teljes dokumentumban.",
+  "All accented characters were replaced in the selected text.": "Minden ékezetes karakter cserélve lett a kijelölt szövegben.",
+  "Unable to replace accents: {errorMessage}. If this persists, please try reopening the file or restarting VS Code.": "Nem sikerült lecserélni az ékezeteket: {errorMessage}. Ha ez továbbra is fennáll, kérjük, próbálja meg újranyitni a fájlt vagy indítsa újra a VS Code-ot.",
+  "Unknown error": "Ismeretlen hiba"
 }

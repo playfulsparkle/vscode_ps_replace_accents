@@ -1,0 +1,10 @@
+{
+  "Invalid mappings: Not an object.": "Neplatné mapovania: Nie je to objekt.",
+  "Invalid key: \"{key}\". Keys must be single characters.": "Neplatný kľúč: \"{key}\". Kľúče musia byť jednoznakové.",
+  "Invalid value for key \"${key}\": \"${value}\". Values must be strings.": "Neplatná hodnota pre kľúč \"${key}\": \"${value}\". Hodnoty musia byť reťazce.",
+  "Cannot modify \"{type}\" type of document": "Nie je možné upraviť dokument typu \"{type}\"",
+  "All accented characters were replaced in the entire document.": "Všetky diakritické znaky boli nahradené v celom dokumente.",
+  "All accented characters were replaced in the selected text.": "Všetky diakritické znaky boli nahradené vo vybranom texte.",
+  "Unable to replace accents: {errorMessage}. If this persists, please try reopening the file or restarting VS Code.": "Nepodarilo sa nahradiť diakritiku: {errorMessage}. Ak tento problém pretrváva, skúste súbor znova otvoriť alebo reštartovať VS Code.",
+  "Unknown error": "Neznáma chyba"
+}
