@@ -1,13 +1,29 @@
 {
   "name": "ps-replace-accents",
-  "displayName": "ps_replace_accents",
-  "description": "Visual Studio Code developer tools extension",
+  "displayName": "PS: Replace Accents",
   "version": "0.0.1",
-  "license": "BSD-3-Clause",
+  "publisher": "playful-sparkle",
+  "description": "A VS Code extension that replaces accented characters with their unaccented equivalents.",
+  "author": {
+    "name": "Zsolt Oroszlány",
+    "email": "hello@playfulsparkle.com"
+  },
+  "categories": [
+    "Other",
+    "Formatters"
+  ],
   "icon": "img/icon.png",
+  "galleryBanner": {
+    "color": "#e61a4a",
+    "theme": "light"
+  },
+  "pricing": "Free",
+  "activationEvents": [],
   "engines": {
     "vscode": "^1.98.0"
   },
+  "main": "./dist/extension.js",
+  "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/playfulsparkle/vscode_ps_replace_accents.git"
@@ -28,13 +44,6 @@
     "blank",
     "line"
   ],
-  "categories": [
-    "Other",
-    "Formatters"
-  ],
-  "activationEvents": [],
-  "main": "./dist/extension.js",
-  "browser": "./dist/extension.js",
   "l10n": "./l10n",
   "contributes": {
     "commands": [
