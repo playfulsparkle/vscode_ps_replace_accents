@@ -1,0 +1,5 @@
+{
+    "extension.command.replaceAccents.title": "Akzente ersetzen",
+    "extension.configuration.replaceAccents.title": "Akzente ersetzen",
+    "extension.configuration.replaceAccents.description": "Benutzerdefinierte Zuordnungen für Sonderzeichen (z.B. {'ß': 'ss', 'æ': 'ae'})"
+}

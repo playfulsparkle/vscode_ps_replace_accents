@@ -20,7 +20,7 @@
 
 * **Keyboard Shortcuts**: Quickly initiate the accent replacement process using the keyboard shortcut `Ctrl+Alt+R` on Windows and `Cmd+Alt+R` on macOS.
 
-* **Multi-Language Support**: The extension's user interface and informational messages are available in 2 languages.
+* **Multi-Language Support**: The extension's user interface and informational messages are available in English (en), Magyar (hu), Slovenčina (sk), Čeština (cs), Deutsch (de), Français (fr), Polski (pl) languages.
 
 ---
 
