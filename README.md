@@ -74,12 +74,9 @@ We encourage users to use the GitHub Issues page for bug reports and feature req
 This extension is licensed under the [BSD-3-Clause License](https://github.com/playfulsparkle/vscode_ps_replace_accents/blob/main/LICENSE). See the `LICENSE` file for complete details.
 
 ---
-<<<<<<< HEAD
 
 ## Author
 
 Hi! We're the team behind Playful Sparkle, a creative agency from Slovakia. We got started way back in 2004 and have been having fun building digital solutions ever since. Whether it's crafting a brand, designing a website, developing an app, or anything in between, we're all about delivering great results with a smile. We hope you enjoy using our Visual Studio Code extension!
 
 ---
-=======
->>>>>>> fa1f7aa32b46fa305c84d1c821fe48e121689ae0
