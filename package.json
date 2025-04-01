@@ -1,7 +1,7 @@
 {
   "name": "ps-replace-accents",
   "displayName": "Playful Sparkle: Replace Accents",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "playful-sparkle",
   "description": "A VS Code extension that replaces accented characters with their unaccented equivalents.",
   "author": {

@@ -1,0 +1,5 @@
+{
+    "extension.command.replaceAccents.title": "アクセントの置換",
+    "extension.configuration.replaceAccents.title": "アクセントの置換",
+    "extension.configuration.replaceAccents.description": "特殊文字のカスタムマッピング (例: {'ß': 'ss', 'æ': 'ae'})"
+}

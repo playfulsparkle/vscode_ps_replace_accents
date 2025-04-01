@@ -1,0 +1,5 @@
+{
+    "extension.command.replaceAccents.title": "取代重音符號",
+    "extension.configuration.replaceAccents.title": "取代重音符號",
+    "extension.configuration.replaceAccents.description": "特殊字元的自訂對應 (例如：{'ß': 'ss', 'æ': 'ae'})"
+}

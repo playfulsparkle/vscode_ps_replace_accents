@@ -2,6 +2,10 @@
 
 All notable changes to the "Playful Sparkle: Replace Accents" extension will be documented in this file.
 
+## [0.0.3] - 2025-04-01
+
+* Added additional languages: Čeština (cs), Deutsch (de), Français (fr), Polski (pl), Български (bg), Español (es), Italiano (it), 日本語 (ja), 한국어 (ko), Português do Brasil (pt-br), Русский (ru), Türkçe (tr), 简体中文 (zh-cn), 繁體中文 (zh-tw).
+
 ## [0.0.2] - 2025-04-01
 
 * Internal code refactoring to optimize document processing and selection mechanisms.

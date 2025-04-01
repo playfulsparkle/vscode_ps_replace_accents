@@ -1,0 +1,10 @@
+{
+  "Invalid mappings: Not an object.": "Mapeamentos inválidos: Não é um objeto.",
+  "Invalid key: \"{key}\". Keys must be single characters.": "Chave inválida: \"{key}\". As chaves devem ser caracteres únicos.",
+  "Invalid value for key \"${key}\": \"${value}\". Values must be strings.": "Valor inválido para a chave \"${key}\": \"${value}\". Os valores devem ser strings.",
+  "Cannot modify \"{type}\" type of document": "Não é possível modificar o tipo de documento \"{type}\"",
+  "All accented characters were replaced in the entire document.": "Todos os caracteres acentuados foram substituídos em todo o documento.",
+  "All accented characters were replaced in the selected text.": "Todos os caracteres acentuados foram substituídos no texto selecionado.",
+  "Unable to replace accents: {errorMessage}. If this persists, please try reopening the file or restarting VS Code.": "Não foi possível substituir os acentos: {errorMessage}. Se o problema persistir, tente reabrir o arquivo ou reiniciar o VS Code.",
+  "Unknown error": "Erro desconhecido"
+}

@@ -1,0 +1,10 @@
+{
+  "Invalid mappings: Not an object.": "無效的對應：不是一個物件。",
+  "Invalid key: \"{key}\". Keys must be single characters.": "無效的鍵：「{key}」。鍵必須是單個字元。",
+  "Invalid value for key \"${key}\": \"${value}\". Values must be strings.": "鍵「${key}」的值無效：「${value}」。值必須是字串。",
+  "Cannot modify \"{type}\" type of document": "無法修改「{type}」類型的文件",
+  "All accented characters were replaced in the entire document.": "整個文件中所有帶重音的字元都已被取代。",
+  "All accented characters were replaced in the selected text.": "所選文字中所有帶重音的字元都已被取代。",
+  "Unable to replace accents: {errorMessage}. If this persists, please try reopening the file or restarting VS Code.": "無法取代重音符號：{errorMessage}。如果問題仍然存在，請嘗試重新開啟檔案或重新啟動 VS Code。",
+  "Unknown error": "未知的錯誤"
+}

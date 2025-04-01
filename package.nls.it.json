@@ -1,0 +1,5 @@
+{
+    "extension.command.replaceAccents.title": "Sostituisci accenti",
+    "extension.configuration.replaceAccents.title": "Sostituisci accenti",
+    "extension.configuration.replaceAccents.description": "Mappature personalizzate per caratteri speciali (es. {'ß': 'ss', 'æ': 'ae'})"
+}

@@ -1,0 +1,5 @@
+{
+    "extension.command.replaceAccents.title": "Заменить диакритические знаки",
+    "extension.configuration.replaceAccents.title": "Заменить диакритические знаки",
+    "extension.configuration.replaceAccents.description": "Пользовательские сопоставления для специальных символов (например, {'ß': 'ss', 'æ': 'ae'})"
+}

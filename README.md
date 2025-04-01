@@ -20,7 +20,7 @@
 
 * **Keyboard Shortcuts**: Quickly initiate the accent replacement process using the keyboard shortcut `Ctrl+Alt+R` on Windows and `Cmd+Alt+R` on macOS.
 
-* **Multi-Language Support**: The extension's user interface and informational messages are available in English (en), Magyar (hu), Slovenčina (sk), Čeština (cs), Deutsch (de), Français (fr), Polski (pl) languages.
+* **Multi-Language Support**: The extension's user interface and informational messages are available in English (en), Magyar (hu), Slovenčina (sk), Čeština (cs), Deutsch (de), Français (fr), Polski (pl), Български (bg), Español (es), Italiano (it), 日本語 (ja), 한국어 (ko), Português do Brasil (pt-br), Русский (ru), Türkçe (tr), 简体中文 (zh-cn), 繁體中文 (zh-tw) languages.
 
 ---
 
@@ -42,6 +42,10 @@ If you encounter any of these or other issues, please report them on the [GitHub
 ---
 
 ## Release Notes
+
+## 0.0.3
+
+* Added additional languages: Čeština (cs), Deutsch (de), Français (fr), Polski (pl), Български (bg), Español (es), Italiano (it), 日本語 (ja), 한국어 (ko), Português do Brasil (pt-br), Русский (ru), Türkçe (tr), 简体中文 (zh-cn), 繁體中文 (zh-tw).
 
 ### 0.0.2
 

@@ -1,0 +1,10 @@
+{
+  "Invalid mappings: Not an object.": "Невалидни съпоставяния: Не е обект.",
+  "Invalid key: \"{key}\". Keys must be single characters.": "Невалиден ключ: \"{key}\". Ключовете трябва да бъдат единични символи.",
+  "Invalid value for key \"${key}\": \"${value}\". Values must be strings.": "Невалидна стойност за ключ \"${key}\": \"${value}\". Стойностите трябва да бъдат низове.",
+  "Cannot modify \"{type}\" type of document": "Не може да се модифицира типът \"{type}\" на документа",
+  "All accented characters were replaced in the entire document.": "Всички ударени знаци бяха заменени в целия документ.",
+  "All accented characters were replaced in the selected text.": "Всички ударени знаци бяха заменени в избрания текст.",
+  "Unable to replace accents: {errorMessage}. If this persists, please try reopening the file or restarting VS Code.": "Невъзможност за замяна на ударения: {errorMessage}. Ако проблемът продължава, моля, опитайте да отворите файла отново или да рестартирате VS Code.",
+  "Unknown error": "Неизвестна грешка"
+}
