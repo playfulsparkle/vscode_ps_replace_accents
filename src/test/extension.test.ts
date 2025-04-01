@@ -1,7 +1,7 @@
 import * as assert from "assert";
 import { replaceAccents, validateSpecialCharacterMappings } from "../utils";
 
-suite("PS: Replace Accents Tests", () => {
+suite("Playful Sparkle: Replace Accents Tests", () => {
 	suite("replaceAccents Tests", () => {
 		test("removes accents correctly", () => {
 			const input = "áéíóúñç";

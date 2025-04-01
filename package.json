@@ -1,7 +1,7 @@
 {
   "name": "ps-replace-accents",
-  "displayName": "PS: Replace Accents",
-  "version": "0.0.1",
+  "displayName": "Playful Sparkle: Replace Accents",
+  "version": "0.0.2",
   "publisher": "playful-sparkle",
   "description": "A VS Code extension that replaces accented characters with their unaccented equivalents.",
   "author": {
@@ -9,14 +9,31 @@
     "email": "hello@playfulsparkle.com"
   },
   "categories": [
-    "Other",
-    "Formatters"
+		"Formatters",
+		"Other"
   ],
   "icon": "img/icon.png",
   "galleryBanner": {
     "color": "#e61a4a",
-    "theme": "light"
+    "theme": "dark"
   },
+	"badges": [
+		{
+			"url": "https://img.shields.io/visual-studio-marketplace/v/playful-sparkle.ps-replace-accents?style=flat-square",
+			"href": "https://marketplace.visualstudio.com/items?itemName=playful-sparkle.ps-replace-accents",
+			"description": "The latest version of this extension"
+		},
+		{
+			"url": "https://img.shields.io/visual-studio-marketplace/i/playful-sparkle.ps-replace-accents?style=flat-square",
+			"href": "https://marketplace.visualstudio.com/items?itemName=playful-sparkle.ps-replace-accents",
+			"description": "Number of installs for this extension"
+		},
+		{
+			"url": "https://img.shields.io/visual-studio-marketplace/stars/playful-sparkle.ps-replace-accents?style=flat-square",
+			"href": "https://marketplace.visualstudio.com/items?itemName=playful-sparkle.ps-replace-accents",
+			"description": "Number of stars for this extension"
+		}
+	],
   "pricing": "Free",
   "activationEvents": [],
   "engines": {
@@ -37,19 +54,24 @@
     "workspace"
   ],
   "keywords": [
+		"ascii",
+		"diacritics",
+    "accent",
+    "letter",
+		"alphabet",
     "remove",
     "replace",
-    "delete",
-    "empty",
-    "blank",
-    "line"
+    "playfulsparkle",
+    "vscode",
+    "extension"
   ],
   "l10n": "./l10n",
   "contributes": {
     "commands": [
       {
         "command": "ps-replace-accents.replaceAccents",
-        "title": "%extension.command.replaceAccents.title%"
+        "title": "%extension.command.replaceAccents.title%",
+				"category": "Playful Sparkle"
       }
     ],
     "configuration": {

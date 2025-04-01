@@ -1,5 +1,5 @@
 {
-  "extension.command.replaceAccents.title": "PS: Nahradiť diakritiku",
+  "extension.command.replaceAccents.title": "Nahradiť diakritiku",
   "extension.configuration.replaceAccents.title": "Nahradiť diakritiku",
   "extension.configuration.replaceAccents.description": "Vlastné mapovania pre špeciálne znaky (napr. {'ß': 'ss', 'æ': 'ae'})"
 }

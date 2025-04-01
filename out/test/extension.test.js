@@ -35,7 +35,7 @@ var __importStar = (this && this.__importStar) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 const assert = __importStar(require("assert"));
 const utils_1 = require("../utils");
-suite("PS: Replace Accents Tests", () => {
+suite("Playful Sparkle: Replace Accents Tests", () => {
     suite("replaceAccents Tests", () => {
         test("removes accents correctly", () => {
             const input = "áéíóúñç";

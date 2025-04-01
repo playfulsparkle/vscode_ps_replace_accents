@@ -1,5 +1,5 @@
 {
-  "extension.command.replaceAccents.title": "PS: Ékezetek lecserélése",
-  "extension.configuration.replaceAccents.title": "PS: Ékezetek lecserélése",
+  "extension.command.replaceAccents.title": "Ékezetek lecserélése",
+  "extension.configuration.replaceAccents.title": "Ékezetek lecserélése",
   "extension.configuration.replaceAccents.description": "Egyéni leképezések speciális karakterekhez (pl. {'ß': 'ss', 'æ': 'ae'})"
 }

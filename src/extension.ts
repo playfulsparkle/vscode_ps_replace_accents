@@ -10,7 +10,6 @@ export function activate(context: vscode.ExtensionContext) {
 	const replaceAccentsCommand = vscode.commands.registerCommand("ps-replace-accents.replaceAccents", async () => {
 		try {
 			const editor = vscode.window.activeTextEditor;
-
 			if (!editor) {
 				return; // no editor
 			}
@@ -21,6 +20,7 @@ export function activate(context: vscode.ExtensionContext) {
 			// Check if the document is writeable
 			if (document.uri.scheme !== "file" && document.uri.scheme !== "untitled") {
 				vscode.window.showErrorMessage(vscode.l10n.t('Cannot modify "{type}" type of document', { "type": document.uri.scheme }));
+
 				return;
 			}
 
@@ -28,6 +28,7 @@ export function activate(context: vscode.ExtensionContext) {
 			const userMappings = vscode.workspace
 				.getConfiguration("ps-replace-accents")
 				.get<{ [key: string]: string }>("specialCharacterMappings", {});
+
 
 			const userMappingsErrors = validateSpecialCharacterMappings(userMappings);
 
@@ -37,16 +38,13 @@ export function activate(context: vscode.ExtensionContext) {
 			}
 
 			/** @type {boolean} Indicates if all selections are empty */
-			const allSelectionsEmpty = selections.length === 0 || selections.every(selection => selection.isEmpty);
-
+			const allSelectionsEmpty = !selections.length || selections.every(s => s.isEmpty);
 			let modified = false;
 
 			await editor.edit(editBuilder => {
-				if (allSelectionsEmpty) {
-					modified = processEntireDocument(editBuilder, document, userMappings);
-				} else {
-					modified = processSelections(editBuilder, document, selections, userMappings);
-				}
+				modified = allSelectionsEmpty
+					? processEntireDocument(editBuilder, document, userMappings)
+					: processSelections(editBuilder, document, selections, userMappings);
 			});
 
 			if (modified) {
@@ -82,17 +80,23 @@ function processEntireDocument(editBuilder: vscode.TextEditorEdit, document: vsc
 		return modified;
 	}
 
-	for (let idx = 0; idx < document.lineCount; idx++) {
-		const line = document.lineAt(idx);
+	const CHUNK_SIZE = 1000;
 
-		if (line.isEmptyOrWhitespace) {
-			continue;
-		}
+	for (let startLine = 0; startLine < document.lineCount; startLine += CHUNK_SIZE) {
+		const endLine = Math.min(startLine + CHUNK_SIZE - 1, document.lineCount - 1);
 
-		const processed = replaceAccents(line.text, userMappings);
+		// Create a range for the chunk
+		const startPos = new vscode.Position(startLine, 0);
+		const endPos = document.lineAt(endLine).range.end;
+		const chunkRange = new vscode.Range(startPos, endPos);
 
-		if (line.text !== processed) {
-			editBuilder.replace(line.range, processed);
+		// Get and process the chunk text
+		const chunkText = document.getText(chunkRange);
+		const processedText = replaceAccents(chunkText, userMappings);
+
+		// Only replace if changed
+		if (chunkText !== processedText) {
+			editBuilder.replace(chunkRange, processedText);
 
 			modified = true;
 		}
