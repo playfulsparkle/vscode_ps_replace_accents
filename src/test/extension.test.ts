@@ -1,8 +1,8 @@
 import * as assert from "assert";
 import { replaceAccents, validateSpecialCharacterMappings } from "../utils";
 
-suite("Playful Sparkle: Replace Accents Tests", () => {
-	suite("replaceAccents Tests", () => {
+suite("Replace Accents Tests", () => {
+	suite("Replace Accents Tests", () => {
 		test("removes accents correctly", () => {
 			const input = "áéíóúñç";
 			const expected = "aeiounc";
@@ -56,7 +56,7 @@ suite("Playful Sparkle: Replace Accents Tests", () => {
 		});
 	});
 
-	suite("validateSpecialCharacterMappings Tests", () => {
+	suite("Validate Special Character Mappings Tests", () => {
 		test("valid mappings", () => {
 			const mappings = { "á": "a", "é": "e" };
 			assert.strictEqual(validateSpecialCharacterMappings(mappings), "");

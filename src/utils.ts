@@ -15,20 +15,15 @@ export function replaceAccents(text: string, charMappings: Record<string, string
     }
 
     try {
-        // Unicode normalization with decomposition
-        const normalized = text.normalize("NFD");
+        // Remove diacritics (accent marks) and convert to lowercase in one step
+        let normalized = text.normalize("NFD");
+
+        // Remove combining marks and special characters in one regex operation
+        normalized = normalized.replace(/[\u0300-\u036f]/g, "");
 
         // Process each character
         return Array.from(normalized)
-            .map(char => {
-                // Check if character is a combining mark
-                if (char.charCodeAt(0) >= 0x0300 && char.charCodeAt(0) <= 0x036F) {
-                    return "";
-                }
-
-                // Handle special cases
-                return charMappings[char] || char;
-            })
+            .map(char => charMappings[char] || char)
             .join("");
     } catch (error) {
         return text;
