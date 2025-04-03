@@ -4,7 +4,7 @@
 
 # Playful Sparkle: Replace Accents
 
-**Playful Sparkle: Replace Accents** is a Visual Studio Code extension designed to streamline your text processing workflow by replacing accented characters with their unaccented equivalents, ensuring text normalization. Ideal for developers requiring plain text representations, this tool simplifies the task of preparing text for code, databases, or other applications where accented characters might cause issues.
+**Playful Sparkle: Replace Accents** is your go-to Visual Studio Code extension for effortlessly removing accents from text. Utilizing Unicode normalization and customizable mappings, this tool ensures clean text processing for code, databases, and more. Quickly replace accented characters across your entire document, selections, or with multi-cursor.
 
 ![Usage preview](img/preview.gif "Usage preview")
 
@@ -16,7 +16,7 @@
 
 * **Batch Processing**: Perform accent replacement across the entire active text document, within a selected text range, or across multiple selections using Visual Studio Code's multi-cursor feature.
 
-* **Customizable Character Mapping**: Define specific character replacements using the `psReplaceAccents.customMappings` setting. These custom mappings are applied after the standard Unicode normalization and diacritic removal process, allowing for fine-grained control over how certain characters are handled. Ensure your custom mappings target the base characters (those remaining after diacritic removal).
+* **Customizable Character Mapping**: Define specific character replacements using the custom mappings setting. These replacements are applied after the standard Unicode normalization and diacritic removal process, allowing for fine-grained control over how certain characters are handled. Ensure your custom mappings target the base characters (those remaining after diacritic removal).
 
 * **Keyboard Shortcuts**: Quickly initiate the accent replacement process using the keyboard shortcut `Ctrl+Alt+R` on Windows and `Cmd+Alt+R` on macOS.
 
