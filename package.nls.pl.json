@@ -1,4 +1,5 @@
 {
+    "extension.command.reportIssue.title": "Zgłoś problem",
     "extension.command.replaceAccents.title": "Zamień znaki diakrytyczne",
     "extension.configuration.replaceAccents.title": "Zamień znaki diakrytyczne",
     "extension.configuration.replaceAccents.description": "Własne mapowania dla znaków specjalnych (np. {'ß': 'ss', 'æ': 'ae'})"

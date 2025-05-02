@@ -1,4 +1,5 @@
 {
+  "extension.command.reportIssue.title": "Probléma jelentése",
   "extension.command.replaceAccents.title": "Ékezetek lecserélése",
   "extension.configuration.replaceAccents.title": "Ékezetek lecserélése",
   "extension.configuration.replaceAccents.description": "Egyéni leképezések speciális karakterekhez (pl. {'ß': 'ss', 'æ': 'ae'})"

@@ -1,4 +1,5 @@
 {
+    "extension.command.reportIssue.title": "문제 보고",
     "extension.command.replaceAccents.title": "액센트 바꾸기",
     "extension.configuration.replaceAccents.title": "액센트 바꾸기",
     "extension.configuration.replaceAccents.description": "특수 문자에 대한 사용자 지정 매핑 (예: {'ß': 'ss', 'æ': 'ae'})"

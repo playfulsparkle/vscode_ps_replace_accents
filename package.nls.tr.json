@@ -1,4 +1,5 @@
 {
+    "extension.command.reportIssue.title": "Sorun Bildir",
     "extension.command.replaceAccents.title": "Aksanları Değiştir",
     "extension.configuration.replaceAccents.title": "Aksanları Değiştir",
     "extension.configuration.replaceAccents.description": "Özel karakterler için özel eşlemeler (örneğin: {'ß': 'ss', 'æ': 'ae'})"

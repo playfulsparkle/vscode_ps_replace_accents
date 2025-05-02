@@ -1,4 +1,5 @@
 {
+    "extension.command.reportIssue.title": "Nahlásit problém",
     "extension.command.replaceAccents.title": "Nahradit diakritiku",
     "extension.configuration.replaceAccents.title": "Nahradit diakritiku",
     "extension.configuration.replaceAccents.description": "Vlastní mapování pro speciální znaky (např. {'ß': 'ss', 'æ': 'ae'})"

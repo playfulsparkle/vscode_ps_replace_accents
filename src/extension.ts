@@ -6,6 +6,15 @@ import { replaceAccents, validateSpecialCharacterMappings } from "./utils";
  */
 export function activate(context: vscode.ExtensionContext) {
 
+	/**
+	 * Registers a command that opens the default web browser to the GitHub issues page
+	 * for the "ps-replace-accents" extension. This allows users to report issues directly.
+	 */
+	const reportIssueCommand = vscode.commands.registerCommand(
+		"ps-replace-accents.reportIssue",
+		async () => vscode.env.openExternal(vscode.Uri.parse("https://github.com/playfulsparkle/vscode_ps_replace_accents/issues"))
+	);
+
 	/** Command to replace accented characters with their non-accented equivalents */
 	const replaceAccentsCommand = vscode.commands.registerCommand("ps-replace-accents.replaceAccents", async () => {
 		try {
@@ -60,6 +69,8 @@ export function activate(context: vscode.ExtensionContext) {
 			vscode.window.showErrorMessage(vscode.l10n.t("Unable to replace accents: {errorMessage}. If this persists, please try reopening the file or restarting VS Code.", { errorMessage }));
 		}
 	});
+
+	context.subscriptions.push(reportIssueCommand);
 
 	context.subscriptions.push(replaceAccentsCommand);
 }

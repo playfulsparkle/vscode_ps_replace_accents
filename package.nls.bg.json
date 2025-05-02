@@ -1,4 +1,5 @@
 {
+  "extension.command.reportIssue.title": "Докладване на проблем",
   "extension.command.replaceAccents.title": "Замяна на ударения",
   "extension.configuration.replaceAccents.title": "Замяна на ударения",
   "extension.configuration.replaceAccents.description": "Персонализирани съпоставяния за специални знаци (например {'ß': 'ss', 'æ': 'ae'})"

@@ -1,7 +1,7 @@
 {
   "name": "ps-replace-accents",
   "displayName": "Replace Accents",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "playful-sparkle",
   "description": "Remove accents/diacritics from text to generate clean text through Unicode normalization and custom character mappings.",
   "author": {
@@ -71,8 +71,20 @@
         "command": "ps-replace-accents.replaceAccents",
         "title": "%extension.command.replaceAccents.title%",
 				"category": "Playful Sparkle"
+      },
+      {
+        "command": "ps-replace-accents.reportIssue",
+        "title": "%extension.command.reportIssue.title%",
+        "category": "Help"
       }
     ],
+    "menus": {
+      "issue/reporter": [
+        {
+          "command": "ps-replace-accents.reportIssue"
+        }
+      ]
+    },
     "configuration": {
       "title": "%extension.configuration.replaceAccents.title%",
       "properties": {

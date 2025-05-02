@@ -1,4 +1,5 @@
 {
+    "extension.command.reportIssue.title": "Repost Issue",
     "extension.command.replaceAccents.title": "Replace Accents",
     "extension.configuration.replaceAccents.title": "Replace Accents",
     "extension.configuration.replaceAccents.description": "Custom mappings for special characters (e.g., {'ß': 'ss', 'æ': 'ae'})"

@@ -1,4 +1,5 @@
 {
+    "extension.command.reportIssue.title": "Signaler un problème",
     "extension.command.replaceAccents.title": "Remplacer les accents",
     "extension.configuration.replaceAccents.title": "Remplacer les accents",
     "extension.configuration.replaceAccents.description": "Mappages personnalisés pour les caractères spéciaux (par ex. {'ß': 'ss', 'æ': 'ae'})"

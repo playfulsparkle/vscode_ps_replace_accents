@@ -43,6 +43,10 @@ If you encounter any of these or other issues, please report them on the [GitHub
 
 ## Release Notes
 
+### 0.0.6
+
+Introduced a streamlined issue reporting mechanism in alignment with **Microsoft Visual Studio Code** extension development best practices. This enhancement allows users to report bugs, suggest features, and provide feedback more efficiently, improving overall user experience and support responsiveness.
+
 ### 0.0.5
 
 * **Enhanced Visuals:** The extension's icon color theme has been updated, providing a more polished and consistent look.
