@@ -111,7 +111,7 @@ To ensure the quality of your contributions:
    ```
 3. Build the extension:
    ```bash
-   npm run compile
+   vsce package
    ```
 4. Launch the extension in a new VS Code instance:
    ```bash
@@ -121,7 +121,7 @@ To ensure the quality of your contributions:
 
 5. Run tests:
    ```bash
-   npm test
+   npm run pretest
    ```
 
 ---
