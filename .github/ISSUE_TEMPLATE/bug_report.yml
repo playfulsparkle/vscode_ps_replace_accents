@@ -1,0 +1,78 @@
+name: 🐞 Bug Report
+description: Create a report to help us improve the Replace Accents extension for Visual Studio Code.
+title: "Bug Report Title"
+labels: []
+assignees:
+  - zsoltoroszlany82
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the details below to help us understand and fix the issue.
+
+  - type: textarea
+    attributes:
+      label: Describe the Bug
+      description: A clear and concise description of what the bug is. What character(s) are not being replaced as expected, or what unexpected behavior occurs?
+      placeholder: e.g. The accent on character 'č' is not removed, or custom mappings are not applied correctly.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Steps to Reproduce
+      description: List the steps to reproduce the issue. Please be specific about the text used and how you applied the command (whole document, selection, multi-cursor).
+      placeholder: |
+        1. Open a document/tab in VS Code.
+        2. Enter the following text: '...'.
+        3. Select the text (or leave unselected for whole document).
+        4. Run the 'Replace Accents' command (via command palette or shortcut).
+        5. Describe what the text becomes (or what error/behavior occurs).
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: What should have happened instead? What should the text look like after running the command?
+      placeholder: The text 'český' should become 'cesky'.
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Error Logs or Messages
+      description: If applicable, paste any relevant error messages from the VS Code Developer Tools Console (`Help > Toggle Developer Tools`) or Output window.
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Screenshots or Video
+      description: If available, upload screenshots or a short video demonstrating the problem. Drag and drop files directly into the text area.
+    validations:
+      required: false
+
+  - type: input
+    attributes:
+      label: Extension Version
+      description: What version of the Replace Accents extension are you using? (Found in the Extensions view)
+      placeholder: e.g. 0.0.6
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: VS Code Version
+      description: What version of Visual Studio Code are you using? (Found in `Help > About` or `Code > About Visual Studio Code`)
+      placeholder: e.g. 1.85.2
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Operating System
+      description: What is your operating system?
+      placeholder: e.g. Windows 11, macOS Sonoma 14.2.1, Ubuntu 22.04
+    validations:
+      required: true
