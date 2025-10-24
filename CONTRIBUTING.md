@@ -30,7 +30,7 @@ To contribute effectively, ensure you have:
 
 To report an issue:
 
-1. Review the [existing issues](https://github.com/playfulsparkle/vscode_ps_replace_accents/issues) to avoid duplicates.
+1. Review the [existing issues](https://github.com/playfulsparkle/vscode_ps_replace_accents/issues) to avoid duplicates, or open a ticket on the [support page](https://support.playfulsparkle.com/).
 2. Provide detailed information, including:
    - Steps to reproduce the issue
    - Expected and actual behavior
