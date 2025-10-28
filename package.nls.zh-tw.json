@@ -1,6 +1,15 @@
 {
-    "extension.command.reportIssue.title": "報告問題",
-    "extension.command.replaceAccents.title": "取代重音符號",
-    "extension.configuration.replaceAccents.title": "取代重音符號",
-    "extension.configuration.replaceAccents.description": "特殊字元的自訂對應 (例如：{'ß': 'ss', 'æ': 'ae'})"
+    "extension.config.title": "Replace Accents",
+    "extension.config.replaceAccents.title": "Replace Accents",
+    "extension.config.replaceAccents.description": "特殊字元的自訂對應（例如 {'ß': 'ss', 'æ': 'ae'}）",
+    "extension.command.reportIssue.title": "回報問題",
+    "extension.command.replaceAccents.title": "移除變音符號 (áéő - aeo)",
+    "extension.command.replaceAccentsFileOrFolder.title": "移除變音符號",
+    "No diacritics were removed from '{0}'.": "未從「{0}」移除任何變音符號。",
+    "'{0}' already exists. Do you want to overwrite it?": "「{0}」已存在。要覆寫嗎？",
+    "Yes": "是",
+    "No": "否",
+    "Renamed: {0} to {1}": "已重新命名：{0} 為 {1}",
+    "Failed to rename '{0}': {1}": "重新命名「{0}」失敗：{1}",
+    "Diacritics removed from {0} items.": "已自 {0} 個項目移除變音符號。"
 }

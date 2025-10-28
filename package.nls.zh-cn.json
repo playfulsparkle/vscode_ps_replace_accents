@@ -1,6 +1,15 @@
 {
+    "extension.config.title": "Replace Accents",
+    "extension.config.replaceAccents.title": "Replace Accents",
+    "extension.config.replaceAccents.description": "特殊字符的自定义映射（例如 {'ß': 'ss', 'æ': 'ae'}）",
     "extension.command.reportIssue.title": "报告问题",
-    "extension.command.replaceAccents.title": "替换重音符号",
-    "extension.configuration.replaceAccents.title": "替换重音符号",
-    "extension.configuration.replaceAccents.description": "特殊字符的自定义映射（例如：{'ß': 'ss', 'æ': 'ae'}）"
+    "extension.command.replaceAccents.title": "去除变音符号 (áéő - aeo)",
+    "extension.command.replaceAccentsFileOrFolder.title": "去除变音符号",
+    "No diacritics were removed from '{0}'.": "未从“{0}”中移除任何变音符号。",
+    "'{0}' already exists. Do you want to overwrite it?": "“{0}”已存在。要覆盖吗？",
+    "Yes": "是",
+    "No": "否",
+    "Renamed: {0} to {1}": "已重命名：{0} 为 {1}",
+    "Failed to rename '{0}': {1}": "重命名“{0}”失败：{1}",
+    "Diacritics removed from {0} items.": "已从 {0} 个项目中移除变音符号。"
 }

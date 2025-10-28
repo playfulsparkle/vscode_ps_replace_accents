@@ -1,6 +1,15 @@
 {
+    "extension.config.title": "Replace Accents",
+    "extension.config.replaceAccents.title": "Replace Accents",
+    "extension.config.replaceAccents.description": "Correspondances personnalisées pour les caractères spéciaux (p. ex. {'ß': 'ss', 'æ': 'ae'})",
     "extension.command.reportIssue.title": "Signaler un problème",
-    "extension.command.replaceAccents.title": "Remplacer les accents",
-    "extension.configuration.replaceAccents.title": "Remplacer les accents",
-    "extension.configuration.replaceAccents.description": "Mappages personnalisés pour les caractères spéciaux (par ex. {'ß': 'ss', 'æ': 'ae'})"
+    "extension.command.replaceAccents.title": "Supprimer les diacritiques (áéő - aeo)",
+    "extension.command.replaceAccentsFileOrFolder.title": "Supprimer les diacritiques",
+    "No diacritics were removed from '{0}'.": "Aucun signe diacritique n’a été supprimé de « {0} ».",
+    "'{0}' already exists. Do you want to overwrite it?": "« {0} » existe déjà. Voulez-vous le remplacer ?",
+    "Yes": "Oui",
+    "No": "Non",
+    "Renamed: {0} to {1}": "Renommé : {0} en {1}",
+    "Failed to rename '{0}': {1}": "Échec du renommage de « {0} » : {1}",
+    "Diacritics removed from {0} items.": "Des signes diacritiques ont été supprimés de {0} éléments."
 }

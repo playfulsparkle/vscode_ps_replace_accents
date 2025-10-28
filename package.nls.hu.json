@@ -1,6 +1,15 @@
 {
-  "extension.command.reportIssue.title": "Probléma jelentése",
-  "extension.command.replaceAccents.title": "Ékezetek lecserélése",
-  "extension.configuration.replaceAccents.title": "Ékezetek lecserélése",
-  "extension.configuration.replaceAccents.description": "Egyéni leképezések speciális karakterekhez (pl. {'ß': 'ss', 'æ': 'ae'})"
+  "extension.config.title": "Replace Accents",
+  "extension.config.replaceAccents.title": "Replace Accents",
+  "extension.config.replaceAccents.description": "Egyéni leképezések speciális karakterekhez (pl. {'ß': 'ss', 'æ': 'ae'})",
+  "extension.command.reportIssue.title": "Hiba bejelentése",
+  "extension.command.replaceAccents.title": "Diakritikus jelek eltávolítása (áéő - aeo)",
+  "extension.command.replaceAccentsFileOrFolder.title": "Diakritikus jelek eltávolítása",
+  "No diacritics were removed from '{0}'.": "A „{0}” esetében nem távolítottunk el ékezeteket.",
+  "'{0}' already exists. Do you want to overwrite it?": "A „{0}” már létezik. Felülírja?",
+  "Yes": "Igen",
+  "No": "Nem",
+  "Renamed: {0} to {1}": "Átnevezve: {0} → {1}",
+  "Failed to rename '{0}': {1}": "A „{0}” átnevezése sikertelen: {1}",
+  "Diacritics removed from {0} items.": "Ékezetek eltávolítva {0} elemből."
 }

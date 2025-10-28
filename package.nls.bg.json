@@ -1,6 +1,15 @@
 {
-  "extension.command.reportIssue.title": "Докладване на проблем",
-  "extension.command.replaceAccents.title": "Замяна на ударения",
-  "extension.configuration.replaceAccents.title": "Замяна на ударения",
-  "extension.configuration.replaceAccents.description": "Персонализирани съпоставяния за специални знаци (например {'ß': 'ss', 'æ': 'ae'})"
+  "extension.config.title": "Replace Accents",
+  "extension.config.replaceAccents.title": "Replace Accents",
+  "extension.config.replaceAccents.description": "Персонализирани съпоставяния за специални знаци (напр. {'ß': 'ss', 'æ': 'ae'})",
+  "extension.command.reportIssue.title": "Съобщаване за проблем",
+  "extension.command.replaceAccents.title": "Премахване на диакритични знаци (áéő - aeo)",
+  "extension.command.replaceAccentsFileOrFolder.title": "Премахване на диакритични знаци",
+  "No diacritics were removed from '{0}'.": "Не бяха премахнати диакритични знаци от „{0}“.",
+  "'{0}' already exists. Do you want to overwrite it?": "„{0}“ вече съществува. Искате ли да го презапишете?",
+  "Yes": "Да",
+  "No": "Не",
+  "Renamed: {0} to {1}": "Преименувано: {0} на {1}",
+  "Failed to rename '{0}': {1}": "Неуспешно преименуване на „{0}“: {1}",
+  "Diacritics removed from {0} items.": "Премахнати са диакритични знаци от {0} елемента."
 }

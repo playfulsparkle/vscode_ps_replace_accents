@@ -1,6 +1,15 @@
 {
+  "extension.config.title": "Replace Accents",
+  "extension.config.replaceAccents.title": "Replace Accents",
+  "extension.config.replaceAccents.description": "Vlastné mapovania pre špeciálne znaky (napr. {'ß': 'ss', 'æ': 'ae'})",
   "extension.command.reportIssue.title": "Nahlásiť problém",
-  "extension.command.replaceAccents.title": "Nahradiť diakritiku",
-  "extension.configuration.replaceAccents.title": "Nahradiť diakritiku",
-  "extension.configuration.replaceAccents.description": "Vlastné mapovania pre špeciálne znaky (napr. {'ß': 'ss', 'æ': 'ae'})"
+  "extension.command.replaceAccents.title": "Odstrániť diakritiku (áéő - aeo)",
+  "extension.command.replaceAccentsFileOrFolder.title": "Odstrániť diakritiku",
+  "No diacritics were removed from '{0}'.": "Z „{0}“ neboli odstránené žiadne diakritické znamienka.",
+  "'{0}' already exists. Do you want to overwrite it?": "„{0}“ už existuje. Chcete ho prepísať?",
+  "Yes": "Áno",
+  "No": "Nie",
+  "Renamed: {0} to {1}": "Premenované: {0} na {1}",
+  "Failed to rename '{0}': {1}": "Nepodarilo sa premenovať „{0}“: {1}",
+  "Diacritics removed from {0} items.": "Z {0} položiek boli odstránené diakritické znamienka."
 }

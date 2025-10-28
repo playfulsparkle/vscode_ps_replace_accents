@@ -1,7 +1,7 @@
 {
   "name": "ps-replace-accents",
   "displayName": "Replace Accents",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "publisher": "playful-sparkle",
   "description": "Remove accents/diacritics from text to generate clean text through Unicode normalization and custom character mappings.",
   "author": {
@@ -9,31 +9,31 @@
     "email": "hello@playfulsparkle.com"
   },
   "categories": [
-		"Formatters",
-		"Other"
+    "Formatters",
+    "Other"
   ],
   "icon": "img/icon.png",
   "galleryBanner": {
     "color": "#e61a4a",
     "theme": "dark"
   },
-	"badges": [
-		{
-			"url": "https://img.shields.io/visual-studio-marketplace/v/playful-sparkle.ps-replace-accents?style=flat-square",
-			"href": "https://marketplace.visualstudio.com/items?itemName=playful-sparkle.ps-replace-accents",
-			"description": "The latest version of this extension"
-		},
-		{
-			"url": "https://img.shields.io/visual-studio-marketplace/i/playful-sparkle.ps-replace-accents?style=flat-square",
-			"href": "https://marketplace.visualstudio.com/items?itemName=playful-sparkle.ps-replace-accents",
-			"description": "Number of installs for this extension"
-		},
-		{
-			"url": "https://img.shields.io/visual-studio-marketplace/stars/playful-sparkle.ps-replace-accents?style=flat-square",
-			"href": "https://marketplace.visualstudio.com/items?itemName=playful-sparkle.ps-replace-accents",
-			"description": "Number of stars for this extension"
-		}
-	],
+  "badges": [
+    {
+      "url": "https://img.shields.io/visual-studio-marketplace/v/playful-sparkle.ps-replace-accents?style=flat-square",
+      "href": "https://marketplace.visualstudio.com/items?itemName=playful-sparkle.ps-replace-accents",
+      "description": "The latest version of this extension"
+    },
+    {
+      "url": "https://img.shields.io/visual-studio-marketplace/i/playful-sparkle.ps-replace-accents?style=flat-square",
+      "href": "https://marketplace.visualstudio.com/items?itemName=playful-sparkle.ps-replace-accents",
+      "description": "Number of installs for this extension"
+    },
+    {
+      "url": "https://img.shields.io/visual-studio-marketplace/stars/playful-sparkle.ps-replace-accents?style=flat-square",
+      "href": "https://marketplace.visualstudio.com/items?itemName=playful-sparkle.ps-replace-accents",
+      "description": "Number of stars for this extension"
+    }
+  ],
   "pricing": "Free",
   "engines": {
     "vscode": "^1.98.0"
@@ -53,11 +53,11 @@
     "workspace"
   ],
   "keywords": [
-		"ascii",
-		"diacritics",
+    "ascii",
+    "diacritics",
     "accent",
     "letter",
-		"alphabet",
+    "alphabet",
     "remove",
     "replace",
     "playfulsparkle",
@@ -68,9 +68,13 @@
   "contributes": {
     "commands": [
       {
+        "command": "ps-replace-accents.replaceAccentsFileOrFolder",
+        "title": "%extension.command.replaceAccentsFileOrFolder.title%"
+      },
+      {
         "command": "ps-replace-accents.replaceAccents",
         "title": "%extension.command.replaceAccents.title%",
-				"category": "Playful Sparkle"
+        "category": "Replace Accents"
       },
       {
         "command": "ps-replace-accents.reportIssue",
@@ -79,6 +83,18 @@
       }
     ],
     "menus": {
+      "explorer/context": [
+        {
+          "command": "ps-replace-accents.replaceAccentsFileOrFolder",
+          "group": "7_modification",
+          "when": "explorerResourceIsFolder == false"
+        },
+        {
+          "command": "ps-replace-accents.replaceAccentsFileOrFolder",
+          "group": "7_modification",
+          "when": "explorerResourceIsFolder == true"
+        }
+      ],
       "issue/reporter": [
         {
           "command": "ps-replace-accents.reportIssue"
@@ -86,12 +102,12 @@
       ]
     },
     "configuration": {
-      "title": "%extension.configuration.replaceAccents.title%",
+      "title": "%extension.config.replaceAccents.title%",
       "properties": {
         "ps-replace-accents.specialCharacterMappings": {
           "type": "object",
           "default": {},
-          "description": "%extension.configuration.replaceAccents.description%",
+          "description": "%extension.config.replaceAccents.description%",
           "additionalProperties": {
             "type": "string"
           }
