@@ -2,14 +2,9 @@
     "extension.config.title": "Replace Accents",
     "extension.config.replaceAccents.title": "Replace Accents",
     "extension.config.replaceAccents.description": "Własne mapowania znaków specjalnych (np. {'ß': 'ss', 'æ': 'ae'})",
+    "extension.category.utilities.title": "Narzędzia",
+    "extension.category.help.title": "Pomoc",
     "extension.command.reportIssue.title": "Zgłoś problem",
     "extension.command.replaceAccents.title": "Usuń diakrytyki (áéő - aeo)",
-    "extension.command.replaceAccentsFileOrFolder.title": "Usuń diakrytyki",
-    "No diacritics were removed from '{0}'.": "Z „{0}” nie usunięto żadnych znaków diakrytycznych.",
-    "'{0}' already exists. Do you want to overwrite it?": "„{0}” już istnieje. Czy chcesz go nadpisać?",
-    "Yes": "Tak",
-    "No": "Nie",
-    "Renamed: {0} to {1}": "Zmieniono nazwę: {0} na {1}",
-    "Failed to rename '{0}': {1}": "Nie udało się zmienić nazwy „{0}”: {1}",
-    "Diacritics removed from {0} items.": "Usunięto znaki diakrytyczne z {0} elementów."
+    "extension.command.replaceAccentsFileOrFolder.title": "Usuń diakrytyki"
 }

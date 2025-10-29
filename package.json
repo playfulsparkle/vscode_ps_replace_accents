@@ -74,12 +74,12 @@
       {
         "command": "ps-replace-accents.replaceAccents",
         "title": "%extension.command.replaceAccents.title%",
-        "category": "Replace Accents"
+        "category": "%extension.category.utilities.title%"
       },
       {
         "command": "ps-replace-accents.reportIssue",
         "title": "%extension.command.reportIssue.title%",
-        "category": "Help"
+        "category": "%extension.category.help.title%"
       }
     ],
     "menus": {

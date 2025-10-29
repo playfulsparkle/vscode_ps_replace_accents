@@ -6,5 +6,12 @@
   "All accented characters were replaced in the entire document.": "Belgenin tamamındaki tüm aksanlı karakterler değiştirildi.",
   "All accented characters were replaced in the selected text.": "Seçilen metindeki tüm aksanlı karakterler değiştirildi.",
   "Unable to replace accents: {errorMessage}. If this persists, please try reopening the file or restarting VS Code.": "Aksanlar değiştirilemedi: {errorMessage}. Bu durum devam ederse, lütfen dosyayı yeniden açmayı veya VS Code'u yeniden başlatmayı deneyin.",
-  "Unknown error": "Bilinmeyen hata"
+  "Unknown error": "Bilinmeyen hata",
+  "No diacritics were removed from '{0}'.": "“{0}” öğesinden hiçbir diakritik işaret kaldırılmadı.",
+  "'{0}' already exists. Do you want to overwrite it?": "“{0}” zaten var. Üzerine yazmak istiyor musunuz?",
+  "Yes": "Evet",
+  "No": "Hayır",
+  "Renamed: {0} to {1}": "Yeniden adlandırıldı: {0} → {1}",
+  "Failed to rename '{0}': {1}": "“{0}” yeniden adlandırılamadı: {1}",
+  "Diacritics removed from {0} items.": "Diakritik işaretler {0} öğeden kaldırıldı."
 }

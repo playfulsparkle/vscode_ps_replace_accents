@@ -2,14 +2,9 @@
     "extension.config.title": "Replace Accents",
     "extension.config.replaceAccents.title": "Replace Accents",
     "extension.config.replaceAccents.description": "Vlastní mapování speciálních znaků (např. {'ß': 'ss', 'æ': 'ae'})",
+    "extension.category.utilities.title": "Nástroje",
+    "extension.category.help.title": "Nápověda",
     "extension.command.reportIssue.title": "Nahlásit problém",
     "extension.command.replaceAccents.title": "Odstranit diakritiku (áéő - aeo)",
-    "extension.command.replaceAccentsFileOrFolder.title": "Odstranit diakritiku",
-    "No diacritics were removed from '{0}'.": "Z „{0}“ nebyla odstraněna žádná diakritická znaménka.",
-    "'{0}' already exists. Do you want to overwrite it?": "„{0}“ již existuje. Chcete jej přepsat?",
-    "Yes": "Ano",
-    "No": "Ne",
-    "Renamed: {0} to {1}": "Přejmenováno: {0} na {1}",
-    "Failed to rename '{0}': {1}": "Nepodařilo se přejmenovat „{0}“: {1}",
-    "Diacritics removed from {0} items.": "Z {0} položek byla odstraněna diakritika."
+    "extension.command.replaceAccentsFileOrFolder.title": "Odstranit diakritiku"
 }

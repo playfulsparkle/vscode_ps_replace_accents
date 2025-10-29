@@ -6,5 +6,12 @@
   "All accented characters were replaced in the entire document.": "Minden ékezetes karakter cserélve lett a teljes dokumentumban.",
   "All accented characters were replaced in the selected text.": "Minden ékezetes karakter cserélve lett a kijelölt szövegben.",
   "Unable to replace accents: {errorMessage}. If this persists, please try reopening the file or restarting VS Code.": "Nem sikerült lecserélni az ékezeteket: {errorMessage}. Ha ez továbbra is fennáll, kérjük, próbálja meg újranyitni a fájlt vagy indítsa újra a VS Code-ot.",
-  "Unknown error": "Ismeretlen hiba"
+  "Unknown error": "Ismeretlen hiba",
+  "No diacritics were removed from '{0}'.": "A „{0}” esetében nem távolítottunk el ékezeteket.",
+  "'{0}' already exists. Do you want to overwrite it?": "A „{0}” már létezik. Felülírja?",
+  "Yes": "Igen",
+  "No": "Nem",
+  "Renamed: {0} to {1}": "Átnevezve: {0} → {1}",
+  "Failed to rename '{0}': {1}": "A „{0}” átnevezése sikertelen: {1}",
+  "Diacritics removed from {0} items.": "Ékezetek eltávolítva {0} elemből."
 }

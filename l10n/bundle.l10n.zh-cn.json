@@ -6,5 +6,12 @@
   "All accented characters were replaced in the entire document.": "整个文档中所有带重音的字符都已被替换。",
   "All accented characters were replaced in the selected text.": "所选文本中所有带重音的字符都已被替换。",
   "Unable to replace accents: {errorMessage}. If this persists, please try reopening the file or restarting VS Code.": "无法替换重音符号：{errorMessage}。如果问题仍然存在，请尝试重新打开文件或重启 VS Code。",
-  "Unknown error": "未知错误"
+  "Unknown error": "未知错误",
+  "No diacritics were removed from '{0}'.": "未从“{0}”中移除任何变音符号。",
+  "'{0}' already exists. Do you want to overwrite it?": "“{0}”已存在。要覆盖吗？",
+  "Yes": "是",
+  "No": "否",
+  "Renamed: {0} to {1}": "已重命名：{0} 为 {1}",
+  "Failed to rename '{0}': {1}": "重命名“{0}”失败：{1}",
+  "Diacritics removed from {0} items.": "已从 {0} 个项目中移除变音符号。"
 }

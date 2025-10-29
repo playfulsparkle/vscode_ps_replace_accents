@@ -6,5 +6,12 @@
   "All accented characters were replaced in the entire document.": "Wszystkie znaki diakrytyczne zostały zastąpione w całym dokumencie.",
   "All accented characters were replaced in the selected text.": "Wszystkie znaki diakrytyczne zostały zastąpione w zaznaczonym tekście.",
   "Unable to replace accents: {errorMessage}. If this persists, please try reopening the file or restarting VS Code.": "Nie można zastąpić znaków diakrytycznych: {errorMessage}. Jeśli problem będzie się powtarzał, spróbuj ponownie otworzyć plik lub uruchomić ponownie VS Code.",
-  "Unknown error": "Nieznany błąd"
+  "Unknown error": "Nieznany błąd",
+  "No diacritics were removed from '{0}'.": "Z „{0}” nie usunięto żadnych znaków diakrytycznych.",
+  "'{0}' already exists. Do you want to overwrite it?": "„{0}” już istnieje. Czy chcesz go nadpisać?",
+  "Yes": "Tak",
+  "No": "Nie",
+  "Renamed: {0} to {1}": "Zmieniono nazwę: {0} na {1}",
+  "Failed to rename '{0}': {1}": "Nie udało się zmienić nazwy „{0}”: {1}",
+  "Diacritics removed from {0} items.": "Usunięto znaki diakrytyczne z {0} elementów."
 }

@@ -2,14 +2,9 @@
     "extension.config.title": "Replace Accents",
     "extension.config.replaceAccents.title": "Replace Accents",
     "extension.config.replaceAccents.description": "특수 문자에 대한 사용자 지정 매핑(예: {'ß': 'ss', 'æ': 'ae'})",
+    "extension.category.utilities.title": "도구",
+    "extension.category.help.title": "도움말",
     "extension.command.reportIssue.title": "문제 신고",
     "extension.command.replaceAccents.title": "발음 구별 기호 제거 (áéő - aeo)",
-    "extension.command.replaceAccentsFileOrFolder.title": "발음 구별 기호 제거",
-    "No diacritics were removed from '{0}'.": "‘{0}’에서 발음 구별 기호가 제거되지 않았습니다.",
-    "'{0}' already exists. Do you want to overwrite it?": "‘{0}’이(가) 이미 존재합니다. 덮어쓰시겠습니까?",
-    "Yes": "예",
-    "No": "아니요",
-    "Renamed: {0} to {1}": "이름 변경: {0} → {1}",
-    "Failed to rename '{0}': {1}": "‘{0}’ 이름 변경 실패: {1}",
-    "Diacritics removed from {0} items.": "발음 구별 기호가 {0}개 항목에서 제거되었습니다."
+    "extension.command.replaceAccentsFileOrFolder.title": "발음 구별 기호 제거"
 }

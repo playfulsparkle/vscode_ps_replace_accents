@@ -6,5 +6,12 @@
   "All accented characters were replaced in the entire document.": "Всички ударени знаци бяха заменени в целия документ.",
   "All accented characters were replaced in the selected text.": "Всички ударени знаци бяха заменени в избрания текст.",
   "Unable to replace accents: {errorMessage}. If this persists, please try reopening the file or restarting VS Code.": "Невъзможност за замяна на ударения: {errorMessage}. Ако проблемът продължава, моля, опитайте да отворите файла отново или да рестартирате VS Code.",
-  "Unknown error": "Неизвестна грешка"
+  "Unknown error": "Неизвестна грешка",
+  "No diacritics were removed from '{0}'.": "Не бяха премахнати диакритични знаци от „{0}“.",
+  "'{0}' already exists. Do you want to overwrite it?": "„{0}“ вече съществува. Искате ли да го презапишете?",
+  "Yes": "Да",
+  "No": "Не",
+  "Renamed: {0} to {1}": "Преименувано: {0} на {1}",
+  "Failed to rename '{0}': {1}": "Неуспешно преименуване на „{0}“: {1}",
+  "Diacritics removed from {0} items.": "Премахнати са диакритични знаци от {0} елемента."
 }

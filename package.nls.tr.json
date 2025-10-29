@@ -2,14 +2,9 @@
     "extension.config.title": "Replace Accents",
     "extension.config.replaceAccents.title": "Replace Accents",
     "extension.config.replaceAccents.description": "Özel karakterler için özel eşlemeler (örn. {'ß': 'ss', 'æ': 'ae'})",
+    "extension.category.utilities.title": "Araçlar",
+    "extension.category.help.title": "Yardım",
     "extension.command.reportIssue.title": "Sorun bildir",
     "extension.command.replaceAccents.title": "Diyakritik işaretleri kaldır (áéő - aeo)",
-    "extension.command.replaceAccentsFileOrFolder.title": "Diyakritik işaretleri kaldır",
-    "No diacritics were removed from '{0}'.": "“{0}” öğesinden hiçbir diakritik işaret kaldırılmadı.",
-    "'{0}' already exists. Do you want to overwrite it?": "“{0}” zaten var. Üzerine yazmak istiyor musunuz?",
-    "Yes": "Evet",
-    "No": "Hayır",
-    "Renamed: {0} to {1}": "Yeniden adlandırıldı: {0} → {1}",
-    "Failed to rename '{0}': {1}": "“{0}” yeniden adlandırılamadı: {1}",
-    "Diacritics removed from {0} items.": "Diakritik işaretler {0} öğeden kaldırıldı."
+    "extension.command.replaceAccentsFileOrFolder.title": "Diyakritik işaretleri kaldır"
 }

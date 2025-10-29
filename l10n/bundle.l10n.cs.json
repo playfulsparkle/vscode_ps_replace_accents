@@ -6,5 +6,12 @@
   "All accented characters were replaced in the entire document.": "Všechny znaky s diakritikou byly nahrazeny v celém dokumentu.",
   "All accented characters were replaced in the selected text.": "Všechny znaky s diakritikou byly nahrazeny ve vybraném textu.",
   "Unable to replace accents: {errorMessage}. If this persists, please try reopening the file or restarting VS Code.": "Nepodařilo se nahradit diakritiku: {errorMessage}. Pokud problém přetrvává, zkuste soubor znovu otevřít nebo restartovat VS Code.",
-  "Unknown error": "Neznámá chyba"
+  "Unknown error": "Neznámá chyba",
+  "No diacritics were removed from '{0}'.": "Z „{0}“ nebyla odstraněna žádná diakritická znaménka.",
+  "'{0}' already exists. Do you want to overwrite it?": "„{0}“ již existuje. Chcete jej přepsat?",
+  "Yes": "Ano",
+  "No": "Ne",
+  "Renamed: {0} to {1}": "Přejmenováno: {0} na {1}",
+  "Failed to rename '{0}': {1}": "Nepodařilo se přejmenovat „{0}“: {1}",
+  "Diacritics removed from {0} items.": "Z {0} položek byla odstraněna diakritika."
 }

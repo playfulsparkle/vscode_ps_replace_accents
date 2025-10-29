@@ -6,5 +6,12 @@
   "All accented characters were replaced in the entire document.": "ドキュメント全体で、すべてのアクサン付き文字が置換されました。",
   "All accented characters were replaced in the selected text.": "選択されたテキストで、すべてのアクサン付き文字が置換されました。",
   "Unable to replace accents: {errorMessage}. If this persists, please try reopening the file or restarting VS Code.": "アクセントを置換できません: {errorMessage}。問題が解決しない場合は、ファイルを再度開くか、VS Code を再起動してください。",
-  "Unknown error": "不明なエラー"
+  "Unknown error": "不明なエラー",
+  "No diacritics were removed from '{0}'.": "「{0}」からダイアクリティカルマークは削除されませんでした。",
+  "'{0}' already exists. Do you want to overwrite it?": "「{0}」は既に存在します。上書きしますか。",
+  "Yes": "はい",
+  "No": "いいえ",
+  "Renamed: {0} to {1}": "名前を変更: {0} → {1}",
+  "Failed to rename '{0}': {1}": "「{0}」の名前変更に失敗しました: {1}",
+  "Diacritics removed from {0} items.": "ダイアクリティカルマークを{0}件の項目から削除しました。"
 }
