@@ -190,7 +190,7 @@ function activate(context) {
         }
       } catch (error) {
         const errorMessage = error instanceof Error ? error.message : vscode2.l10n.t("Unknown error");
-        vscode2.window.showErrorMessage(vscode2.l10n.t("Unable to replace accents: {errorMessage}. If this persists, please try reopening the file or restarting VS Code.", { errorMessage }));
+        vscode2.window.showErrorMessage(vscode2.l10n.t("Unable to replace accents: '{message}'. If this persists, please try reopening the file or restarting Visual Studio Code.", { message: errorMessage }));
       }
     },
     ["ps-replace-accents.replaceAccentsFileOrFolder" /* ReplaceAccentsFileOrFolder */]: async (uri, selectedUris) => {

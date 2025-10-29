@@ -126,7 +126,7 @@ export function activate(context: vscode.ExtensionContext) {
 		const newUri = vscode.Uri.file(newPath);
 		let shouldOverwrite = false;
 
-		// Check existence using VS Code API (avoids race condition)
+		// Check existence using Visual Studio Code API (avoids race condition)
 		try {
 			await vscode.workspace.fs.stat(newUri);
 
@@ -213,7 +213,7 @@ export function activate(context: vscode.ExtensionContext) {
 			} catch (error) {
 				const errorMessage = error instanceof Error ? error.message : vscode.l10n.t("Unknown error");
 
-				vscode.window.showErrorMessage(vscode.l10n.t("Unable to replace accents: {errorMessage}. If this persists, please try reopening the file or restarting VS Code.", { errorMessage }));
+				vscode.window.showErrorMessage(vscode.l10n.t("Unable to replace accents: '{message}'. If this persists, please try reopening the file or restarting Visual Studio Code.", { message: errorMessage }));
 			}
 		},
 		[CommandId.ReplaceAccentsFileOrFolder]: async (uri: vscode.Uri, selectedUris?: vscode.Uri[]) => {
