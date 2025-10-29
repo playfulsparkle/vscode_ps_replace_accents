@@ -43,6 +43,10 @@ If you encounter any of these or other issues, please report them on the [GitHub
 
 ## Release Notes
 
+### 0.0.8
+
+Translated Command Palette category
+
 ### 0.0.7
 
 Add support for removing diacritics from file and folder names.

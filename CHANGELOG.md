@@ -2,6 +2,10 @@
 
 All notable changes to the "Playful Sparkle: Replace Accents" extension will be documented in this file.
 
+## [0.0.8] - 2025-10-29
+
+Translated Command Palette category
+
 ## [0.0.7] - 2025-10-28
 
 Add support for removing diacritics from file and folder names.
