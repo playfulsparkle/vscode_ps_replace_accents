@@ -76,6 +76,11 @@
         "title": "%extension.command.replaceAccents.title%",
         "category": "%extension.category.utilities.title%"
       },
+       {
+        "command": "ps-replace-accents.restoreAccents",
+        "title": "%extension.command.restoreAccents.title%",
+        "category": "%extension.category.utilities.title%"
+      },
       {
         "command": "ps-replace-accents.reportIssue",
         "title": "%extension.command.reportIssue.title%",

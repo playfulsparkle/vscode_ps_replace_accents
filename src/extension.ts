@@ -1,6 +1,7 @@
 import * as vscode from "vscode";
 import * as path from "path";
 import * as utils from "./utils";
+import { AccentRestorer } from "./accent_restore";
 
 
 /** Activates the extension
@@ -10,98 +11,70 @@ export function activate(context: vscode.ExtensionContext) {
 	enum CommandId {
 		ReportIssue = "ps-replace-accents.reportIssue",
 		ReplaceAccents = "ps-replace-accents.replaceAccents",
-		ReplaceAccentsFileOrFolder = "ps-replace-accents.replaceAccentsFileOrFolder"
+		ReplaceAccentsFileOrFolder = "ps-replace-accents.replaceAccentsFileOrFolder",
+		RestoreAccents = "ps-replace-accents.restoreAccents",
 	}
 
 	/**
-	 * Processes the entire document line by line.
-	 * 
-	 * @param {vscode.TextEditorEdit} editBuilder - The edit builder.
-	 * @param {vscode.TextDocument} document - The document to process.
-	 * @param {{[key: string]: string}} userMappings - The character mappings.
-	 * 
-	 * @returns {boolean} Whether any modifications were made.
+	 * Processes text in the editor with a transformation function
+	 * @param editor The active text editor
+	 * @param transformFn The function to transform the text
+	 * @param expandToFullLines Whether to expand selections to full lines
+	 * @param options Optional parameters to pass to the transform function
 	 */
-	const processEntireDocument = (
-		editBuilder: vscode.TextEditorEdit,
-		document: vscode.TextDocument,
-		userMappings: {}
-	): boolean => {
-		let modified = false;
+	const processTextInEditor = async (
+		transformFn: (text: string, options?: any) => string,
+		expandToFullLines: boolean = false,
+		options?: any
+	): Promise<number> => {
+		const editor = vscode.window.activeTextEditor;
 
-		if (document.lineCount === 0) {
-			return modified;
+		if (!editor) {
+			return -1;
 		}
 
-		const CHUNK_SIZE = 1000;
+		const document = editor.document;
+		const selections = editor.selections;
 
-		for (let startLine = 0; startLine < document.lineCount; startLine += CHUNK_SIZE) {
-			const endLine = Math.min(startLine + CHUNK_SIZE - 1, document.lineCount - 1);
+		// If there are no manual selections or only empty selections, process the entire document
+		if (!selections.length || selections.every(s => s.isEmpty)) {
+			const entireDocumentRange = new vscode.Range(
+				0, 0,
+				document.lineCount - 1, document.lineAt(document.lineCount - 1).text.length
+			);
+			const text = document.getText(entireDocumentRange);
+			const processedText = transformFn(text, options);
 
-			// Create a range for the chunk
-			const startPos = new vscode.Position(startLine, 0);
-			const endPos = document.lineAt(endLine).range.end;
-			const chunkRange = new vscode.Range(startPos, endPos);
-
-			// Get and process the chunk text
-			const chunkText = document.getText(chunkRange);
-			const processedText = utils.replaceAccents(chunkText, userMappings);
-
-			// Only replace if changed
-			if (chunkText !== processedText) {
-				editBuilder.replace(chunkRange, processedText);
-
-				modified = true;
-			}
+			await editor.edit(editBuilder => {
+				editBuilder.replace(entireDocumentRange, processedText);
+			});
+			return 1;
 		}
 
-		return modified;
-	};
-
-	/**
-	 * Processes the selected text line by line.
-	 * 
-	 * @param {vscode.TextEditorEdit} editBuilder - The edit builder.
-	 * @param {vscode.TextDocument} document - The document to process.
-	 * @param {readonly vscode.Selection[]} selections - The selections to process.
-	 * @param {{[key: string]: string}} userMappings - The character mappings.
-	 * 
-	 * @returns {boolean} Whether any modifications were made.
-	 */
-	const processSelections = (
-		editBuilder: vscode.TextEditorEdit,
-		document: vscode.TextDocument,
-		selections: readonly vscode.Selection[],
-		userMappings: {}
-	): boolean => {
-		let modified = false;
-
-		for (const selection of selections) {
-			if (selection.isEmpty) {
-				continue;
-			}
-
-			for (let idx = selection.start.line; idx <= selection.end.line; idx++) {
-				const line = document.lineAt(idx);
-
-				const lineRange = new vscode.Range(
-					idx === selection.start.line ? selection.start : line.range.start,
-					idx === selection.end.line ? selection.end : line.range.end
-				);
-
-				const text = document.getText(lineRange);
-
-				const processed = utils.replaceAccents(text, userMappings);
-
-				if (text !== processed) {
-					editBuilder.replace(lineRange, processed);
-
-					modified = true;
+		// Process each selection
+		await editor.edit(editBuilder => {
+			for (const selection of selections) {
+				if (selection.isEmpty) {
+					continue;
 				}
-			}
-		}
 
-		return modified;
+				let rangeToProcess = selection;
+
+				// Expand selection to full lines if requested
+				if (expandToFullLines) {
+					const startLine = document.lineAt(selection.start.line);
+					const endLine = document.lineAt(selection.end.line);
+					rangeToProcess = new vscode.Selection(startLine.range.start, endLine.range.end);
+				}
+
+				const selectedText = document.getText(rangeToProcess);
+				const processedText = transformFn(selectedText, options);
+
+				editBuilder.replace(rangeToProcess, processedText);
+			}
+		});
+
+		return 0;
 	};
 
 	const replaceAccentsFileOrFolder = async (uri: vscode.Uri, userMappings: {}) => {
@@ -163,57 +136,31 @@ export function activate(context: vscode.ExtensionContext) {
 	const commandHandlers = {
 		[CommandId.ReportIssue]: () => vscode.env.openExternal(vscode.Uri.parse("https://github.com/playfulsparkle/vscode_ps_replace_accents/issues")),
 		[CommandId.ReplaceAccents]: async () => {
-			try {
-				const editor = vscode.window.activeTextEditor;
+			const userMappings: { [key: string]: string } = vscode.workspace
+				.getConfiguration("ps-replace-accents")
+				.get<{ [key: string]: string }>("specialCharacterMappings", {});
 
-				if (!editor) {
-					return; // no editor
+
+			const userMappingsErrors = utils.validateSpecialCharacterMappings(userMappings);
+
+			if (userMappingsErrors) {
+				vscode.window.showErrorMessage(userMappingsErrors);
+				return;
+			}
+
+			const allSelectionsEmpty = await processTextInEditor(text => utils.replaceAccents(text, userMappings));
+
+			let modified = false;
+
+			if (modified) {
+				switch (allSelectionsEmpty) {
+					case 1: // selection
+						vscode.window.showInformationMessage(vscode.l10n.t("All accented characters were replaced in the selected text."));
+						break;
+					case 0: // entire document
+						vscode.window.showInformationMessage(vscode.l10n.t("All accented characters were replaced in the entire document."));
+						break;
 				}
-
-				const document = editor.document;
-
-				// Check if the document is writeable
-				if (document.uri.scheme !== "file" && document.uri.scheme !== "untitled") {
-					vscode.window.showErrorMessage(vscode.l10n.t('Cannot modify "{type}" type of document', { "type": document.uri.scheme }));
-
-					return;
-				}
-
-				const userMappings: { [key: string]: string } = vscode.workspace
-					.getConfiguration("ps-replace-accents")
-					.get<{ [key: string]: string }>("specialCharacterMappings", {});
-
-
-				const userMappingsErrors = utils.validateSpecialCharacterMappings(userMappings);
-
-				if (userMappingsErrors) {
-					vscode.window.showErrorMessage(userMappingsErrors);
-
-					return;
-				}
-
-				const selections = editor.selections;
-				const allSelectionsEmpty: boolean = !selections.length || selections.every(s => s.isEmpty);
-
-				let modified = false;
-
-				await editor.edit(editBuilder => {
-					modified = allSelectionsEmpty
-						? processEntireDocument(editBuilder, document, userMappings)
-						: processSelections(editBuilder, document, selections, userMappings);
-				});
-
-				if (modified) {
-					const message = allSelectionsEmpty
-						? vscode.l10n.t("All accented characters were replaced in the entire document.")
-						: vscode.l10n.t("All accented characters were replaced in the selected text.");
-
-					vscode.window.showInformationMessage(message);
-				}
-			} catch (error) {
-				const errorMessage = error instanceof Error ? error.message : vscode.l10n.t("Unknown error");
-
-				vscode.window.showErrorMessage(vscode.l10n.t("Unable to replace accents: '{message}'. If this persists, please try reopening the file or restarting Visual Studio Code.", { message: errorMessage }));
 			}
 		},
 		[CommandId.ReplaceAccentsFileOrFolder]: async (uri: vscode.Uri, selectedUris?: vscode.Uri[]) => {
@@ -246,6 +193,11 @@ export function activate(context: vscode.ExtensionContext) {
 					vscode.l10n.t("Diacritics removed from {0} items.", urisToRename.length)
 				);
 			}
+		},
+		[CommandId.RestoreAccents]: async () => {
+			const restorer = new AccentRestorer();
+
+			await processTextInEditor(text => restorer.restore(text));
 		}
 	};
 

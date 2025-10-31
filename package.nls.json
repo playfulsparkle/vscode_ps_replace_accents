@@ -6,5 +6,6 @@
     "extension.category.help.title": "Help",
     "extension.command.reportIssue.title": "Repost Issue",
     "extension.command.replaceAccents.title": "Remove Diacritics (áéő - aeo)",
-    "extension.command.replaceAccentsFileOrFolder.title": "Remove Diacritics"
+    "extension.command.replaceAccentsFileOrFolder.title": "Remove Diacritics",
+    "extension.command.restoreAccents.title": "Restore Diacritics"
 }
