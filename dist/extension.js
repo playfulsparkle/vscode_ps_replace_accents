@@ -337,7 +337,8 @@ function activate(context) {
       }
     },
     ["ps-replace-accents.restoreAccents" /* RestoreAccents */]: async () => {
-      const restorer = await createAccentRestorer("slovak");
+      const accentDictionary = vscode2.workspace.getConfiguration("ps-replace-accents").get("accentDictionary", "hungarian");
+      const restorer = await createAccentRestorer(accentDictionary);
       await processTextInEditor((text) => restorer.restoreAccents(text));
       restorer.dispose();
     }

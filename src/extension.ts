@@ -194,7 +194,11 @@ export function activate(context: vscode.ExtensionContext) {
 			}
 		},
 		[CommandId.RestoreAccents]: async () => {
-			const restorer = await createAccentRestorer("slovak");
+			const accentDictionary: string = vscode.workspace
+				.getConfiguration("ps-replace-accents")
+				.get<string>("accentDictionary", "hungarian");
+
+			const restorer = await createAccentRestorer(accentDictionary);
 
 			await processTextInEditor(text => restorer.restoreAccents(text));
 

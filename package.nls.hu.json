@@ -2,9 +2,11 @@
   "extension.config.title": "Replace Accents",
   "extension.config.replaceAccents.title": "Replace Accents",
   "extension.config.replaceAccents.description": "Egyéni leképezések speciális karakterekhez (pl. {'ß': 'ss', 'æ': 'ae'})",
+  "extension.config.accentDictionary.desc": "Válassza ki a diakritikus jelek szótárát a jelek visszaállításához.",
   "extension.category.utilities.title": "Eszközök",
   "extension.category.help.title": "Súgó",
   "extension.command.reportIssue.title": "Hiba bejelentése",
   "extension.command.replaceAccents.title": "Diakritikus jelek eltávolítása (áéő - aeo)",
-  "extension.command.replaceAccentsFileOrFolder.title": "Diakritikus jelek eltávolítása"
+  "extension.command.replaceAccentsFileOrFolder.title": "Diakritikus jelek eltávolítása",
+  "extension.command.restoreAccents.title": "Diakritikus jelek visszaállítása"
 }
