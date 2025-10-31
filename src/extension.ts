@@ -1,7 +1,7 @@
 import * as vscode from "vscode";
 import * as path from "path";
 import * as utils from "./utils";
-import { AccentRestorationSystem } from "./accent";
+import { createAccentRestorer } from "./accent";
 
 /** Activates the extension
  * @param {vscode.ExtensionContext} context - The extension context
@@ -193,10 +193,12 @@ export function activate(context: vscode.ExtensionContext) {
 				);
 			}
 		},
-		[CommandId.RestoreAccents]: async () => { 
-			const accentSystem = new AccentRestorationSystem();
+		[CommandId.RestoreAccents]: async () => {
+			const restorer = await createAccentRestorer("slovak");
 
-			await processTextInEditor(text => accentSystem.restoreAccents(text));
+			await processTextInEditor(text => restorer.restoreAccents(text));
+
+			restorer.dispose();
 		}
 	};
 
