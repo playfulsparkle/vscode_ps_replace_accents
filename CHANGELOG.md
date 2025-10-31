@@ -2,6 +2,10 @@
 
 All notable changes to the "Playful Sparkle: Replace Accents" extension will be documented in this file.
 
+## [0.0.9] - 2025-10-31
+
+Added diacritic restoration for Czech, German, Hungarian, Polish, and Slovak.
+
 ## [0.0.8] - 2025-10-29
 
 Translated Command Palette category

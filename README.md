@@ -43,6 +43,10 @@ If you encounter any of these or other issues, please report them on the [GitHub
 
 ## Release Notes
 
+### 0.0.9
+
+Added diacritic restoration for Czech, German, Hungarian, Polish, and Slovak.
+
 ### 0.0.8
 
 Translated Command Palette category
