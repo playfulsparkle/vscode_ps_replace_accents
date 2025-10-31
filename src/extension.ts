@@ -1,8 +1,6 @@
 import * as vscode from "vscode";
 import * as path from "path";
 import * as utils from "./utils";
-import { AccentRestorer } from "./accent_restore";
-
 
 /** Activates the extension
  * @param {vscode.ExtensionContext} context - The extension context
@@ -194,11 +192,7 @@ export function activate(context: vscode.ExtensionContext) {
 				);
 			}
 		},
-		[CommandId.RestoreAccents]: async () => {
-			const restorer = new AccentRestorer();
-
-			await processTextInEditor(text => restorer.restore(text));
-		}
+		[CommandId.RestoreAccents]: async () => { }
 	};
 
 	// Register all commands
