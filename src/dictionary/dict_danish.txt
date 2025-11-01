@@ -1,4 +1,3 @@
-på	92
 redigér	54
 påbegyndte	44
 trådt	31
@@ -53,6 +52,7 @@ stået	4
 året	3
 årligt	3
 blågårdsstræde	3
+fløde	3
 forhånd	3
 genåbne	3
 håndarbejde	3
@@ -97,7 +97,6 @@ få	2
 fastslå	2
 fastslår	2
 flåden	2
-fløde	2
 forhåbentlig	2
 frå	2
 gårsdagens	2
@@ -335,6 +334,7 @@ indgås	1
 indlæringsmål	1
 íslenska	1
 jordartsspørgsmål	1
+jordbær	1
 josé	1
 kabinetsspørgsmål	1
 kæmpeområde	1
@@ -421,6 +421,7 @@ overstrålede	1
 overvåger	1
 overvågningskameraer	1
 overvågningskameraet	1
+på	1
 påbegynder	1
 påbegyndt	1
 påbuddet	1

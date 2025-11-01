@@ -200,7 +200,6 @@ aplikační	10
 bezpilotních	10
 čd	10
 dočtete	10
-již	10
 konferencí	10
 mířilo	10
 obrací	10
@@ -1095,7 +1094,6 @@ každý	3
 kensingtonský	3
 klášter	3
 klientském	3
-knoflíčkypřívěseknáramekspona	3
 koaliční	3
 koaxiální	3
 kognitivní	3
@@ -1265,14 +1263,12 @@ passé	3
 patička	3
 patočka	3
 patrně	3
-pcautomotovědacestováníhistoriepodcasty	3
 placení	3
 plánuje	3
 plánují	3
 pneudeskové	3
 pobaltí	3
 pobaltských	3
-počasíhalloweenpodpora	3
 podepisovaným	3
 podepsaná	3
 podepsaném	3
@@ -1297,7 +1293,6 @@ popisovaného	3
 popisují	3
 poptávkové	3
 pořady	3
-pořadysportkvízyspeciálypočasítv	3
 poškozují	3
 poslanecká	3
 postačovat	3
@@ -1382,7 +1377,6 @@ relativní	3
 renovována	3
 restauracích	3
 retencí	3
-řetízekprstýnekbrožnáušnicemanžetové	3
 řezat	3
 řezy	3
 řičí	3
@@ -1506,7 +1500,6 @@ udeřit	3
 ukažme	3
 uklízet	3
 ukončil	3
-ukrajiněkomentářekrimikulturaekonomikalifestylekoktejl	3
 ukrýt	3
 umělci	3
 umístěnou	3
@@ -3527,7 +3520,6 @@ tchéky	2
 té	2
 tę	2
 technologičtí	2
-teď	2
 tektonických	2
 těl	2
 telefonům	2
@@ -5493,6 +5485,7 @@ cídit	1
 čierne	1
 ciferníku	1
 číhat	1
+čilá	1
 cílech	1
 cílem	1
 cílená	1
@@ -5700,7 +5693,6 @@ d'amérique	1
 dá	1
 dabā	1
 ďábel	1
-ďábelské	1
 ďábelské	1
 dabingoví	1
 dabingový	1
@@ -5936,6 +5928,7 @@ desítkové	1
 děsivé	1
 desktopů	1
 desná	1
+déšť	1
 deště	1
 destičky	1
 destinací	1
@@ -8161,6 +8154,7 @@ jistém	1
 jistým	1
 jít	1
 jíti	1
+již	1
 jízda	1
 jízdné	1
 jízdního	1
@@ -8849,7 +8843,6 @@ kulturní	1
 kulturního	1
 kumpáni	1
 kůň	1
-kůň	1
 kunďák	1
 kundička	1
 kundratová	1
@@ -9025,6 +9018,7 @@ laktóza	1
 láků	1
 lalokoploutví	1
 lámat	1
+laň	1
 lanová	1
 lanové	1
 lanýž	1
@@ -10021,6 +10015,7 @@ nahlásila	1
 náhle	1
 nahlédnout	1
 náhledu	1
+náhlý	1
 nahnědlý	1
 nahnilý	1
 náhodném	1
@@ -11406,7 +11401,6 @@ odvolacího	1
 odvolání	1
 odvrávať	1
 ódy	1
-ódy	1
 oficiálně	1
 oficiální	1
 oficiálních	1
@@ -11630,7 +11624,6 @@ osvětlovat	1
 osvětová	1
 osvobozené	1
 osvobození	1
-ószeres	1
 otáčet	1
 otálet	1
 otavní	1
@@ -13478,7 +13471,6 @@ přikývnout	1
 přilákat	1
 příležitosti	1
 příležitostné	1
-příliš	1
 příliš	1
 příloh	1
 přiložit	1
@@ -16755,6 +16747,7 @@ technologií	1
 technologiích	1
 tečka	1
 téct	1
+teď	1
 tehdejší	1
 tehdejších	1
 tehdejšího	1
@@ -17341,7 +17334,6 @@ ujišťuje	1
 ujít	1
 újma	1
 újmy	1
-újságíró	1
 ujście	1
 ukáčko	1
 úkáčko	1
@@ -17542,7 +17534,6 @@ univerzitní	1
 upálit	1
 úpatní	1
 upéct	1
-úpěl	1
 úpěl	1
 úpěnlivě	1
 úpěnlivost	1
@@ -19235,14 +19226,6 @@ webových	1
 wejście	1
 welština	1
 wielką	1
-wikipediečeské	1
-wikipediehistoriehistorické	1
-wikipediespolečenské	1
-wikipediích	1
-wikizdrojích	1
-wikizprávy	1
-wirtschaftsförderungsinstitut	1
-woodcrafterských	1
 woodův	1
 wskazujący	1
 wu-šu	1
@@ -20489,7 +20472,6 @@ zlozvyků	1
 žluto-zelená	1
 žlutou	1
 žluťoučký	1
-žluťoučký	1
 žlutý	1
 žluva	1
 zmáčknutí	1
@@ -20799,6 +20781,7 @@ zvětšovat	1
 zvířata	1
 zvířaty	1
 zvíře	1
+zvířil	1
 zvířit	1
 zvítězila	1
 zvítězili	1

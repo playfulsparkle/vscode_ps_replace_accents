@@ -306,7 +306,6 @@ plätzen	10
 rückgang	10
 schwäbisch	10
 süß-saure	10
-über	10
 überarbeitete	10
 angehören	9
 archäologisches	9
@@ -4031,6 +4030,7 @@ böte	1
 böttcherberg	1
 böttge	1
 böwe	1
+boxkämpfer	1
 brähmer	1
 branchen-überblick	1
 brandauslöser	1
@@ -5528,7 +5528,6 @@ großenzyklopädie	1
 größer	1
 größere	1
 größerem	1
-größeren	1
 größeren	1
 großflächiges	1
 großklärwerke	1
@@ -7645,7 +7644,6 @@ qualitätsstandards	1
 qualitätsverbesserung	1
 qualitätszeit	1
 quält	1
-quält	1
 quartär	1
 quartären	1
 quartärforschung	1
@@ -8840,7 +8838,7 @@ u-täler	1
 u-yüan	1
 übel	1
 üben	1
-üben	1
+über	1
 überall	1
 überarbeitende	1
 überarbeitenden	1

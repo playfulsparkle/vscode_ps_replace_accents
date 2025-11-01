@@ -1154,7 +1154,6 @@ maľby	5
 manažérov	5
 marketingových	5
 meško	5
-môjho	5
 môžem	5
 mŕtvu	5
 muzikál	5
@@ -7197,7 +7196,6 @@ cepáň	1
 čerstvého	1
 čerstvo	1
 čerstvú	1
-čerstvú	1
 certifikovaná	1
 certifikované	1
 certifikovaným	1
@@ -7645,7 +7643,7 @@ dátami	1
 dáte	1
 ďatelina	1
 datív	1
-ďatľov	1
+ďatľa	1
 ďatľov	1
 datované	1
 dátové	1
@@ -10228,7 +10226,6 @@ komunitné	1
 komunitného	1
 komunitno-vzťahovú	1
 koňa	1
-koňa	1
 konajú	1
 konáme	1
 konaní	1
@@ -10526,7 +10523,6 @@ kratšia	1
 kratšiemu	1
 kratšiu	1
 kratšom	1
-kŕdeľ	1
 kŕdeľ	1
 kreatívca	1
 kreatívnej	1
@@ -11739,7 +11735,6 @@ mlčanie	1
 mlieč	1
 mliečneho	1
 mĺkveho	1
-mĺkveho	1
 mlynár	1
 mlynárik	1
 mlynárová	1
@@ -11808,6 +11803,7 @@ mohutnú	1
 mohutný	1
 mohutnými	1
 môj	1
+môjho	1
 mojmír	1
 môjmu	1
 mojžiš	1
@@ -12915,6 +12911,7 @@ nerozumejú	1
 nerozvíjame	1
 nerušili	1
 nervová	1
+nervózne	1
 nesamostatní	1
 nesbovým	1
 neschopní	1
@@ -14163,6 +14160,7 @@ patrím	1
 patriť	1
 päťročniciach	1
 päťsto	1
+päťtýždňové	1
 páv	1
 pavelková	1
 pavián	1
@@ -17718,6 +17716,7 @@ stedmanová	1
 štefánika	1
 štefanovičova	1
 štefunko	1
+štekajú	1
 stekať	1
 stenných	1
 stepanovyč	1
@@ -18643,6 +18642,7 @@ trištvrte	1
 triumvirát	1
 tŕň	1
 trnavčan	1
+tŕní	1
 trnková	1
 trnovský	1
 trojfázová	1
@@ -18841,7 +18841,6 @@ uchránil	1
 uchvátiť	1
 úchvatné	1
 úchylka	1
-učí	1
 učí	1
 učia	1
 učiaceho	1
@@ -19190,7 +19189,6 @@ ustavičných	1
 ústavu	1
 ústavy	1
 ústí	1
-ústí	1
 ústny	1
 ústredná	1
 ústrednej	1
@@ -19336,7 +19334,6 @@ väčšmi	1
 väčšom	1
 väčšou	1
 váhou	1
-váhu	1
 váhu	1
 váhy	1
 vajdička	1
@@ -19684,6 +19681,7 @@ vlastných	1
 vlastným	1
 vľavo	1
 vlčany	1
+vĺčatá	1
 vlhkosť	1
 vložiť	1
 vložka	1
@@ -21180,7 +21178,6 @@ zíde	1
 žien	1
 žiga	1
 žihľavu	1
-žihľavu	1
 žije	1
 žijem	1
 žijeme	1
@@ -21468,7 +21465,6 @@ zoznám	1
 zradkyňou	1
 zranený	1
 zraniť	1
-žrať	1
 žrať	1
 zrátaná	1
 zrážka	1

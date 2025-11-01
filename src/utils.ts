@@ -1,4 +1,6 @@
 import * as vscode from "vscode";
+import { mergedLanguageMappings, diacriticRegex, preserveOriginalCase } from "./shared";
+
 
 /**
  * Replaces accented characters in a text string with their non-accented equivalents.
@@ -9,23 +11,31 @@ import * as vscode from "vscode";
  * @returns The input string with accents removed, or the original text if processing fails
  * @defaultValue charMappings = {}
  */
-export function replaceAccents(text: string, charMappings: Record<string, string> = {}): string {
+export function replaceAccents(
+    text: string,
+    charMappings: Record<string, string> = {}
+): string {
     if (!text || typeof text !== "string") {
-        return text; // Handle empty or null input
+        return text;
     }
 
     try {
-        // Remove diacritics (accent marks) and convert to lowercase in one step
-        let normalized = text.normalize("NFD");
+        const combinedMappings = { ...mergedLanguageMappings, ...charMappings };
+        const specialChars = Object.keys(combinedMappings).join("");
+        const customPattern = new RegExp(`[${specialChars}]`, "g");
 
-        // Remove combining marks and special characters in one regex operation
-        normalized = normalized.replace(/[\u0300-\u036f]/g, "");
+        // Apply custom mappings FIRST (before normalization)
+        let result = text.replace(customPattern, match => {
+            const replacement = combinedMappings[match];
 
-        // Process each character
-        return Array.from(normalized)
-            .map(char => charMappings[char] || char)
-            .join("");
+            return preserveOriginalCase(match, replacement);
+        });
+
+        // Then normalize remaining characters
+        return result.normalize("NFKD").replace(diacriticRegex, "");
     } catch (error) {
+        console.error("Error in replaceAccents:", error);
+
         return text;
     }
 }
@@ -50,7 +60,7 @@ export function validateAccentRemoveMapping(mappings: { [key: string]: string })
         }
 
         if (typeof value !== "string") {
-            return vscode.l10n.t('Invalid value for key "${key}": "${value}". Values must be strings.', { key, value });
+            return vscode.l10n.t('Invalid value for key "{key}": "{value}". Values must be strings.', { key, value });
         }
     }
 

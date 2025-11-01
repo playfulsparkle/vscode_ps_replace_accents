@@ -39,15 +39,186 @@ var path2 = __toESM(require("path"));
 
 // src/utils.ts
 var vscode = __toESM(require("vscode"));
+
+// src/shared.ts
+var diacriticRegex = /[\p{Mn}\u0300-\u036f]/gu;
+var languageSpecificMappings = {
+  // Czech specific: Complete mapping for Czech diacritics
+  czech: {
+    "\xE1": "a",
+    "\u010D": "c",
+    "\u010F": "d",
+    "\xE9": "e",
+    "\u011B": "e",
+    "\xED": "i",
+    "\u0148": "n",
+    "\xF3": "o",
+    "\u0159": "r",
+    "\u0161": "s",
+    "\u0165": "t",
+    "\xFA": "u",
+    "\u016F": "u",
+    "\xFD": "y",
+    "\u017E": "z"
+  },
+  // Danish specific: Complete mapping for Danish/Norwegian
+  danish: {
+    "\xE5": "a",
+    "\xE6": "ae",
+    "\xF8": "o",
+    "\xE9": "e",
+    "\xFC": "u",
+    "\xE1": "a",
+    "\xE8": "e",
+    "\xEA": "e",
+    "\xF3": "o",
+    "\xF4": "o"
+  },
+  // French specific: Comprehensive French accent mapping
+  french: {
+    "\xE0": "a",
+    "\xE2": "a",
+    "\xE6": "ae",
+    "\xE7": "c",
+    "\xE9": "e",
+    "\xE8": "e",
+    "\xEA": "e",
+    "\xEB": "e",
+    "\xEE": "i",
+    "\xEF": "i",
+    "\xF4": "o",
+    "\u0153": "oe",
+    "\xF9": "u",
+    "\xFB": "u",
+    "\xFC": "u",
+    "\xFF": "y"
+  },
+  // German specific: Complete German umlaut and eszett mapping
+  german: {
+    "\xE4": "a",
+    "\xF6": "o",
+    "\xFC": "u",
+    "\xDF": "s",
+    "\xE9": "e",
+    "\xE0": "a",
+    "\xE8": "e",
+    "\xF9": "u"
+  },
+  // Hungarian specific: Comprehensive Hungarian accent mapping
+  hungarian: {
+    "\xE1": "a",
+    "\xE9": "e",
+    "\xED": "i",
+    "\xF3": "o",
+    "\xF6": "o",
+    "\u0151": "o",
+    "\xFA": "u",
+    "\xFC": "u",
+    "\u0171": "u"
+  },
+  // Polish specific: Complete Polish diacritic mapping
+  polish: {
+    "\u0105": "a",
+    "\u0107": "c",
+    "\u0119": "e",
+    "\u0142": "l",
+    "\u0144": "n",
+    "\xF3": "o",
+    "\u015B": "s",
+    "\u017A": "z"
+  },
+  // Slovak specific: Comprehensive Slovak diacritic mapping
+  slovak: {
+    "\xE1": "a",
+    "\xE4": "a",
+    "\u010D": "c",
+    "\u010F": "d",
+    "\xE9": "e",
+    "\xED": "i",
+    "\u013E": "l",
+    "\u013A": "l",
+    "\u0148": "n",
+    "\xF3": "o",
+    "\xF4": "o",
+    "\u0155": "r",
+    "\u0161": "s",
+    "\u0165": "t",
+    "\xFA": "u",
+    "\xFD": "y",
+    "\u017E": "z"
+  },
+  // Spanish specific: Complete Spanish accent mapping
+  spanish: {
+    "\xE1": "a",
+    "\xE9": "e",
+    "\xED": "i",
+    "\xF3": "o",
+    "\xFA": "u",
+    "\xFC": "u",
+    "\xF1": "n"
+  },
+  // Swedish specific: Complete Swedish character mapping
+  swedish: {
+    "\xE5": "a",
+    "\xE4": "a",
+    "\xF6": "o",
+    "\xE9": "e",
+    "\xFC": "u",
+    "\xE0": "a",
+    "\xE8": "e",
+    "\xF4": "o"
+  }
+};
+var mergedLanguageMappings = Object.assign(
+  {},
+  ...Object.values(languageSpecificMappings)
+);
+function preserveOriginalCase(original, restored) {
+  if (!original || !restored) {
+    return restored;
+  }
+  const origLen = original.length;
+  const restLen = restored.length;
+  if (original === original.toUpperCase()) {
+    return restored.toUpperCase();
+  }
+  if (origLen > 0 && original[0] === original[0].toUpperCase() && (origLen === 1 || original.slice(1) === original.slice(1).toLowerCase())) {
+    return restored[0].toUpperCase() + restored.slice(1).toLowerCase();
+  }
+  if (original === original.toLowerCase()) {
+    return restored.toLowerCase();
+  }
+  let result = "";
+  const minLength = Math.min(origLen, restLen);
+  for (let i = 0; i < minLength; i++) {
+    const origChar = original[i];
+    result += origChar === origChar.toUpperCase() ? restored[i].toUpperCase() : restored[i].toLowerCase();
+  }
+  if (restLen > minLength) {
+    const lastCharIsUpper = origLen > 0 && original[origLen - 1] === original[origLen - 1].toUpperCase();
+    for (let i = minLength; i < restLen; i++) {
+      result += lastCharIsUpper ? restored[i].toUpperCase() : restored[i].toLowerCase();
+    }
+  }
+  return result;
+}
+
+// src/utils.ts
 function replaceAccents(text, charMappings = {}) {
   if (!text || typeof text !== "string") {
     return text;
   }
   try {
-    let normalized = text.normalize("NFD");
-    normalized = normalized.replace(/[\u0300-\u036f]/g, "");
-    return Array.from(normalized).map((char) => charMappings[char] || char).join("");
+    const combinedMappings = { ...mergedLanguageMappings, ...charMappings };
+    const specialChars = Object.keys(combinedMappings).join("");
+    const customPattern = new RegExp(`[${specialChars}]`, "g");
+    let result = text.replace(customPattern, (match) => {
+      const replacement = combinedMappings[match];
+      return preserveOriginalCase(match, replacement);
+    });
+    return result.normalize("NFKD").replace(diacriticRegex, "");
   } catch (error) {
+    console.error("Error in replaceAccents:", error);
     return text;
   }
 }
@@ -60,7 +231,7 @@ function validateAccentRemoveMapping(mappings) {
       return vscode.l10n.t('Invalid key: "{key}". Keys must be single characters.', { key });
     }
     if (typeof value !== "string") {
-      return vscode.l10n.t('Invalid value for key "${key}": "${value}". Values must be strings.', { key, value });
+      return vscode.l10n.t('Invalid value for key "{key}": "{value}". Values must be strings.', { key, value });
     }
   }
   return "";
@@ -85,10 +256,10 @@ var AccentRestorer = class _AccentRestorer {
   // LRU cache for restoration results
   restorationCache = /* @__PURE__ */ new Map();
   MAX_CACHE_SIZE = 1e3;
-  enableSuffixMatching = false;
+  enableSuffixMatching;
   // Cached regex patterns for better performance
-  static WORD_REGEX = /[\w\u00C0-\u017F]+/g;
-  static DIACRITIC_REGEX = /[\u0300-\u036f]/g;
+  // Use Unicode property escapes to match all letters and combining marks
+  static WORD_REGEX = /[\p{L}\p{M}'\u2019-]+/gu;
   constructor(language, ignoredWords = [], enableSuffixMatching = false) {
     this.currentLanguage = language;
     this.enableSuffixMatching = enableSuffixMatching;
@@ -101,31 +272,41 @@ var AccentRestorer = class _AccentRestorer {
     if (this.isReady) {
       return;
     }
+    if (!this.currentLanguage) {
+      throw new Error("No language specified for initialization");
+    }
     const dictionaryFile = path.join(this.dictionaryBasePath, `dict_${this.currentLanguage}.txt`);
     const data = await this.readDictionaryFile(dictionaryFile);
     this.buildDictionary(data);
     this.isReady = true;
   }
-  readDictionaryFile(filePath) {
+  async readDictionaryFile(filePath) {
     return new Promise((resolve, reject) => {
-      const stream = fs.createReadStream(filePath, {
-        encoding: "utf8",
-        highWaterMark: 64 * 1024
-        // 64KB chunks
-      });
-      let data = "";
-      stream.on("data", (chunk) => {
-        data += chunk;
-      });
-      stream.on("end", () => resolve(data));
-      stream.on("error", (err) => {
-        reject(new Error(`Dictionary file not found: ${filePath}. Error: ${err.message}`));
+      fs.access(filePath, fs.constants.F_OK, (accessErr) => {
+        if (accessErr) {
+          reject(new Error(`Dictionary file not found: ${filePath}`));
+          return;
+        }
+        const stream = fs.createReadStream(filePath, {
+          encoding: "utf8",
+          highWaterMark: 64 * 1024
+          // 64KB chunks
+        });
+        let data = "";
+        stream.on("data", (chunk) => {
+          data += chunk;
+        });
+        stream.on("end", () => resolve(data));
+        stream.on("error", (err) => {
+          reject(new Error(`Error reading dictionary file: ${filePath}. Error: ${err.message}`));
+        });
       });
     });
   }
   buildDictionary(csvData) {
     const lines = csvData.split("\n");
     let lineCount = 0;
+    let errorCount = 0;
     for (let i = 1; i < lines.length; i++) {
       const line = lines[i].trim();
       if (!line) {
@@ -133,38 +314,46 @@ var AccentRestorer = class _AccentRestorer {
       }
       const tabIndex = line.indexOf("	");
       if (tabIndex === -1) {
+        errorCount++;
         continue;
       }
-      const word = line.substring(0, tabIndex);
-      const frequencyStr = line.substring(tabIndex + 1);
-      if (!word || !frequencyStr) {
-        continue;
-      }
-      const frequency = parseInt(frequencyStr, 10);
-      if (isNaN(frequency)) {
-        continue;
-      }
-      const baseForm = this.removeAccents(word.toLowerCase());
-      let entries = this.dictionary.get(baseForm);
-      if (!entries) {
-        entries = [];
-        this.dictionary.set(baseForm, entries);
-      }
-      const entry = { word, frequency };
-      let left = 0;
-      let right = entries.length;
-      while (left < right) {
-        const mid = left + right >>> 1;
-        if (entries[mid].frequency > frequency) {
-          left = mid + 1;
-        } else {
-          right = mid;
+      try {
+        const word = line.substring(0, tabIndex);
+        const frequencyStr = line.substring(tabIndex + 1);
+        if (!word || !frequencyStr) {
+          errorCount++;
+          continue;
         }
+        const frequency = parseInt(frequencyStr, 10);
+        if (isNaN(frequency)) {
+          errorCount++;
+          continue;
+        }
+        const baseForm = this.removeAccents(word.toLowerCase());
+        let entries = this.dictionary.get(baseForm);
+        if (!entries) {
+          entries = [];
+          this.dictionary.set(baseForm, entries);
+        }
+        const entry = { word, frequency };
+        let left = 0;
+        let right = entries.length;
+        while (left < right) {
+          const mid = left + right >>> 1;
+          if (entries[mid].frequency > frequency) {
+            left = mid + 1;
+          } else {
+            right = mid;
+          }
+        }
+        entries.splice(left, 0, entry);
+        lineCount++;
+      } catch (error) {
+        errorCount++;
+        continue;
       }
-      entries.splice(left, 0, entry);
-      lineCount++;
     }
-    console.log(`Loaded ${lineCount} words for language ${this.currentLanguage}`);
+    console.log(`Loaded ${lineCount} words for language ${this.currentLanguage} (${errorCount} errors)`);
   }
   restoreAccents(text) {
     if (!this.isReady) {
@@ -205,7 +394,7 @@ var AccentRestorer = class _AccentRestorer {
       return null;
     }
     const bestMatch = candidates[0].word;
-    return this.preserveOriginalCase(word, bestMatch);
+    return preserveOriginalCase(word, bestMatch);
   }
   findSuffixMatch(word, normalizedBase) {
     const wordLower = word.toLowerCase();
@@ -219,40 +408,29 @@ var AccentRestorer = class _AccentRestorer {
         const bestStem = candidates[0].word;
         const suffix = wordLower.substring(stemLen);
         const reconstructed = bestStem + suffix;
-        return this.preserveOriginalCase(word, reconstructed);
+        return preserveOriginalCase(word, reconstructed);
       }
     }
     return null;
   }
   removeAccents(text) {
-    return text.normalize("NFD").replace(_AccentRestorer.DIACRITIC_REGEX, "").toLowerCase();
-  }
-  preserveOriginalCase(original, restored) {
-    const origLen = original.length;
-    const restLen = restored.length;
-    if (original === original.toUpperCase()) {
-      return restored.toUpperCase();
+    if (!text || typeof text !== "string") {
+      return text;
     }
-    if (origLen > 0 && original[0] === original[0].toUpperCase() && original.slice(1) === original.slice(1).toLowerCase()) {
-      return restored[0].toUpperCase() + restored.slice(1).toLowerCase();
-    }
-    let result = "";
-    const minLength = Math.min(origLen, restLen);
-    for (let i = 0; i < minLength; i++) {
-      const origChar = original[i];
-      result += origChar === origChar.toUpperCase() ? restored[i].toUpperCase() : restored[i].toLowerCase();
-    }
-    if (restLen > minLength) {
-      const lastCharIsUpper = origLen > 0 && original[origLen - 1] === original[origLen - 1].toUpperCase();
-      for (let i = minLength; i < restLen; i++) {
-        result += lastCharIsUpper ? restored[i].toUpperCase() : restored[i].toLowerCase();
-      }
-    }
-    return result;
+    const allMappings = this.currentLanguage ? languageSpecificMappings[this.currentLanguage] || {} : {};
+    let normalized = text.toLowerCase().normalize("NFKD").replace(diacriticRegex, "");
+    const specialChars = Object.keys(allMappings).join("");
+    const specialCharsPattern = new RegExp(`[${specialChars}]`, "g");
+    return normalized.replace(
+      specialCharsPattern,
+      (match) => allMappings[match]
+    );
   }
   async changeLanguage(language) {
+    if (language === this.currentLanguage && this.isReady) {
+      return;
+    }
     this.dictionary.clear();
-    this.ignoredWords.clear();
     this.restorationCache.clear();
     this.currentLanguage = language;
     this.isReady = false;
@@ -269,7 +447,15 @@ var AccentRestorer = class _AccentRestorer {
   getMemoryUsage() {
     const entries = Array.from(this.dictionary.values()).reduce((sum, arr) => sum + arr.length, 0);
     const uniqueBaseForms = this.dictionary.size;
-    return `Dictionary: ${uniqueBaseForms} base forms, ${entries} total entries, Cache: ${this.restorationCache.size} words, Language: ${this.currentLanguage}`;
+    return `Dictionary: ${uniqueBaseForms} base forms, ${entries} total entries, Cache: ${this.restorationCache.size} words, Language: ${this.currentLanguage || "none"}`;
+  }
+  // Utility method to check if initialized
+  getIsReady() {
+    return this.isReady;
+  }
+  // Utility method to get current language
+  getCurrentLanguage() {
+    return this.currentLanguage;
   }
 };
 var accent_default = AccentRestorer;

@@ -173,7 +173,6 @@ zamienić	14
 dopasować	13
 każdych	13
 kwaśne	13
-łódź	13
 mąkę	13
 marionetką	13
 poniósł	13
@@ -4494,7 +4493,6 @@ gęsie	1
 gęsiej	1
 gęsiorek	1
 gęślą	1
-gęślą	1
 gęśmi	1
 gęstą	1
 gęste	1
@@ -4879,7 +4877,6 @@ jasnowidzącą	1
 jastrzębie	1
 jazdą	1
 jazdę	1
-jaźń	1
 jaźń	1
 jazów	1
 jechać	1
@@ -5632,6 +5629,7 @@ lochów	1
 łódkę	1
 łódki	1
 lodożerczego	1
+łódź	1
 łodzią	1
 łódzkie	1
 łódzkiego	1
@@ -7202,6 +7200,7 @@ osłoną	1
 osłonią	1
 osłonięto	1
 osłoniętymi	1
+ośm	1
 ośmieszały	1
 ośmiobocznej	1
 ośmiu	1
@@ -7441,6 +7440,7 @@ października	1
 październikowe	1
 październikowym	1
 październiku	1
+pchnąć	1
 pęcherzyków	1
 pedałując	1
 pędzelkiem	1
@@ -12916,7 +12916,6 @@ zażądała	1
 zażartować	1
 zazdrość	1
 zaznaczając	1
-zażółć	1
 zażółć	1
 zażyć	1
 zażywał	1

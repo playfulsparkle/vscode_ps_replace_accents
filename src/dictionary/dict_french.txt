@@ -223,7 +223,6 @@ frères	4
 géorgien	4
 géorgienne	4
 josé	4
-jugé	4
 l’entraîneur	4
 lancés	4
 littérature	4
@@ -946,7 +945,6 @@ córdoba	1
 correção	1
 cortège	1
 côté	1
-côté	1
 côtés	1
 côtoyer	1
 coude-à-coude	1
@@ -990,7 +988,6 @@ d’économies	1
 d'élaboration	1
 d’élections	1
 d’électricité	1
-d'élise	1
 d'élise	1
 d’énergie	1
 d’enquête	1
@@ -1072,7 +1069,6 @@ dégrader	1
 degustação	1
 délai	1
 délicats	1
-délicieux	1
 délicieux	1
 démanteler	1
 démarré	1
@@ -1371,7 +1367,6 @@ galvão	1
 gangrène	1
 garçon	1
 gâteaux	1
-gâteaux	1
 géant	1
 gebäude-kranbau	1
 généralement	1
@@ -1500,7 +1495,6 @@ j’étais	1
 japón	1
 jazyků	1
 jérôme	1
-jérôme	1
 jerónimo	1
 jérusalem	1
 joão	1
@@ -1560,7 +1554,6 @@ l’emblème	1
 l'épisode	1
 l’ère	1
 l’état-major	1
-l'été	1
 l'été	1
 l’étranger	1
 l’événement	1
@@ -1790,6 +1783,7 @@ palmipèdes	1
 pamiątkę	1
 paniqué	1
 paralysé	1
+parfumé	1
 parié	1
 parrainé	1
 participación	1
@@ -1905,6 +1899,7 @@ pulvérisées	1
 puneña	1
 può	1
 qu’à	1
+qu’on	1
 qualifiée	1
 qualité	1
 quête	1

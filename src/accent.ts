@@ -1,5 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
+import { languageSpecificMappings, preserveOriginalCase, diacriticRegex } from "./shared";
 
 interface DictionaryEntry {
     word: string;
@@ -16,11 +17,11 @@ class AccentRestorer {
     // LRU cache for restoration results
     private restorationCache: Map<string, string> = new Map();
     private readonly MAX_CACHE_SIZE = 1000;
-    private enableSuffixMatching: boolean = false;
+    private enableSuffixMatching: boolean;
 
     // Cached regex patterns for better performance
-    private static readonly WORD_REGEX = /[\w\u00C0-\u017F]+/g;
-    private static readonly DIACRITIC_REGEX = /[\u0300-\u036f]/g;
+    // Use Unicode property escapes to match all letters and combining marks
+    private static readonly WORD_REGEX = /[\p{L}\p{M}'\u2019-]+/gu;
 
     constructor(language: string, ignoredWords: string[] = [], enableSuffixMatching: boolean = false) {
         this.currentLanguage = language;
@@ -33,27 +34,42 @@ class AccentRestorer {
     }
 
     async initialize(): Promise<void> {
-        if (this.isReady) { return; }
+        if (this.isReady) {
+            return;
+        }
+
+        if (!this.currentLanguage) {
+            throw new Error("No language specified for initialization");
+        }
 
         const dictionaryFile = path.join(this.dictionaryBasePath, `dict_${this.currentLanguage}.txt`);
+
         const data = await this.readDictionaryFile(dictionaryFile);
         this.buildDictionary(data);
         this.isReady = true;
     }
 
-    private readDictionaryFile(filePath: string): Promise<string> {
+    private async readDictionaryFile(filePath: string): Promise<string> {
         return new Promise((resolve, reject) => {
-            // Use larger buffer for better I/O performance with big files
-            const stream = fs.createReadStream(filePath, {
-                encoding: "utf8",
-                highWaterMark: 64 * 1024 // 64KB chunks
-            });
+            // Check if file exists first
+            fs.access(filePath, fs.constants.F_OK, (accessErr) => {
+                if (accessErr) {
+                    reject(new Error(`Dictionary file not found: ${filePath}`));
+                    return;
+                }
 
-            let data = "";
-            stream.on("data", (chunk) => { data += chunk; });
-            stream.on("end", () => resolve(data));
-            stream.on("error", (err) => {
-                reject(new Error(`Dictionary file not found: ${filePath}. Error: ${err.message}`));
+                // Use larger buffer for better I/O performance with big files
+                const stream = fs.createReadStream(filePath, {
+                    encoding: "utf8",
+                    highWaterMark: 64 * 1024 // 64KB chunks
+                });
+
+                let data = "";
+                stream.on("data", (chunk) => { data += chunk; });
+                stream.on("end", () => resolve(data));
+                stream.on("error", (err) => {
+                    reject(new Error(`Error reading dictionary file: ${filePath}. Error: ${err.message}`));
+                });
             });
         });
     }
@@ -61,52 +77,69 @@ class AccentRestorer {
     private buildDictionary(csvData: string): void {
         const lines = csvData.split("\n");
         let lineCount = 0;
+        let errorCount = 0;
 
         for (let i = 1; i < lines.length; i++) { // Skip header
             const line = lines[i].trim();
             if (!line) { continue; }
 
             const tabIndex = line.indexOf("\t");
-            if (tabIndex === -1) { continue; }
-
-            // Avoid split() - more efficient for tab-separated values
-            const word = line.substring(0, tabIndex);
-            const frequencyStr = line.substring(tabIndex + 1);
-
-            if (!word || !frequencyStr) { continue; }
-
-            const frequency = parseInt(frequencyStr, 10);
-            if (isNaN(frequency)) { continue; }
-
-            const baseForm = this.removeAccents(word.toLowerCase());
-
-            // Get or create entries array
-            let entries = this.dictionary.get(baseForm);
-            if (!entries) {
-                entries = [];
-                this.dictionary.set(baseForm, entries);
+            if (tabIndex === -1) {
+                errorCount++;
+                continue;
             }
 
-            const entry = { word, frequency };
+            try {
+                const word = line.substring(0, tabIndex);
+                const frequencyStr = line.substring(tabIndex + 1);
 
-            // Binary search for insertion point (more efficient for large arrays)
-            let left = 0;
-            let right = entries.length;
-
-            while (left < right) {
-                const mid = (left + right) >>> 1; // Unsigned right shift for floor division
-                if (entries[mid].frequency > frequency) {
-                    left = mid + 1;
-                } else {
-                    right = mid;
+                if (!word || !frequencyStr) {
+                    errorCount++;
+                    continue;
                 }
+
+                const frequency = parseInt(frequencyStr, 10);
+                if (isNaN(frequency)) {
+                    errorCount++;
+                    continue;
+                }
+
+                const baseForm = this.removeAccents(word.toLowerCase());
+
+                // Get or create entries array
+                let entries = this.dictionary.get(baseForm);
+                if (!entries) {
+                    entries = [];
+                    this.dictionary.set(baseForm, entries);
+                }
+
+                const entry = { word, frequency };
+
+                // Binary search for insertion point (more efficient for large arrays)
+                let left = 0;
+                let right = entries.length;
+
+                while (left < right) {
+                    const mid = (left + right) >>> 1; // Unsigned right shift for floor division
+                    if (entries[mid].frequency > frequency) {
+                        left = mid + 1;
+                    } else {
+                        right = mid;
+                    }
+                }
+
+                entries.splice(left, 0, entry);
+                lineCount++;
+            } catch (error) {
+                errorCount++;
+                continue;
             }
-
-            entries.splice(left, 0, entry);
-            lineCount++;
         }
-
-        console.log(`Loaded ${lineCount} words for language ${this.currentLanguage}`);
+        // // Log dictionary entries
+        // for (const [key, entries] of this.dictionary.entries()) {
+        //     console.log(`Key: ${key}, Entries:`, entries);
+        // }
+        console.log(`Loaded ${lineCount} words for language ${this.currentLanguage} (${errorCount} errors)`);
     }
 
     restoreAccents(text: string): string {
@@ -163,7 +196,7 @@ class AccentRestorer {
 
         // Return the most frequent candidate (already sorted in buildDictionary)
         const bestMatch = candidates[0].word;
-        return this.preserveOriginalCase(word, bestMatch);
+        return preserveOriginalCase(word, bestMatch);
     }
 
     private findSuffixMatch(word: string, normalizedBase: string): string | null {
@@ -186,7 +219,7 @@ class AccentRestorer {
                 const suffix = wordLower.substring(stemLen);
                 const reconstructed = bestStem + suffix;
 
-                return this.preserveOriginalCase(word, reconstructed);
+                return preserveOriginalCase(word, reconstructed);
             }
         }
 
@@ -194,60 +227,37 @@ class AccentRestorer {
     }
 
     private removeAccents(text: string): string {
-        // NFD normalization followed by diacritic removal
-        return text.normalize("NFD")
-            .replace(AccentRestorer.DIACRITIC_REGEX, "")
-            .toLowerCase();
-    }
-
-    private preserveOriginalCase(original: string, restored: string): string {
-        const origLen = original.length;
-        const restLen = restored.length;
-
-        // Fast path: all uppercase
-        if (original === original.toUpperCase()) {
-            return restored.toUpperCase();
+        if (!text || typeof text !== "string") {
+            return text;
         }
 
-        // Fast path: title case
-        if (origLen > 0 &&
-            original[0] === original[0].toUpperCase() &&
-            original.slice(1) === original.slice(1).toLowerCase()) {
-            return restored[0].toUpperCase() + restored.slice(1).toLowerCase();
-        }
+        // Get current language mappings or use empty object
+        const allMappings = this.currentLanguage ? languageSpecificMappings[this.currentLanguage] || {} : {};
 
-        // Character-by-character case preservation
-        let result = "";
-        const minLength = Math.min(origLen, restLen);
+        // Single normalization pass with NFKD for maximum decomposition
+        // Remove diacritics and combining marks using Unicode property
+        let normalized = text.toLowerCase().normalize("NFKD").replace(diacriticRegex, "");
 
-        for (let i = 0; i < minLength; i++) {
-            const origChar = original[i];
-            result += origChar === origChar.toUpperCase()
-                ? restored[i].toUpperCase()
-                : restored[i].toLowerCase();
-        }
+        // Handle remaining special characters
+        const specialChars = Object.keys(allMappings).join("");
+        const specialCharsPattern = new RegExp(`[${specialChars}]`, "g");
 
-        // Handle remaining characters if restored is longer
-        if (restLen > minLength) {
-            const lastCharIsUpper = origLen > 0 &&
-                original[origLen - 1] === original[origLen - 1].toUpperCase();
-
-            for (let i = minLength; i < restLen; i++) {
-                result += lastCharIsUpper
-                    ? restored[i].toUpperCase()
-                    : restored[i].toLowerCase();
-            }
-        }
-
-        return result;
+        return normalized.replace(
+            specialCharsPattern,
+            match => allMappings[match]
+        );
     }
 
     async changeLanguage(language: string): Promise<void> {
+        if (language === this.currentLanguage && this.isReady) {
+            return; // No change needed
+        }
+
         this.dictionary.clear();
-        this.ignoredWords.clear();
         this.restorationCache.clear();
         this.currentLanguage = language;
         this.isReady = false;
+
         await this.initialize();
     }
 
@@ -263,7 +273,17 @@ class AccentRestorer {
     getMemoryUsage(): string {
         const entries = Array.from(this.dictionary.values()).reduce((sum, arr) => sum + arr.length, 0);
         const uniqueBaseForms = this.dictionary.size;
-        return `Dictionary: ${uniqueBaseForms} base forms, ${entries} total entries, Cache: ${this.restorationCache.size} words, Language: ${this.currentLanguage}`;
+        return `Dictionary: ${uniqueBaseForms} base forms, ${entries} total entries, Cache: ${this.restorationCache.size} words, Language: ${this.currentLanguage || "none"}`;
+    }
+
+    // Utility method to check if initialized
+    getIsReady(): boolean {
+        return this.isReady;
+    }
+
+    // Utility method to get current language
+    getCurrentLanguage(): string | undefined {
+        return this.currentLanguage;
     }
 }
 

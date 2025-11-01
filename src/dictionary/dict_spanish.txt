@@ -2166,7 +2166,6 @@ darán	1
 daría	1
 darían	1
 darín	1
-dé	1
 debería	1
 deberían	1
 debían	1
@@ -2808,7 +2807,6 @@ freír	1
 frenesí	1
 fricción	1
 frío	1
-frío	1
 frívolos	1
 frontón	1
 frotación	1
@@ -3221,7 +3219,6 @@ karaúl	1
 karīm	1
 kéfir	1
 kijé	1
-kilómetros	1
 kilómetros	1
 kirguistán	1
 koiné	1
@@ -3823,7 +3820,6 @@ pigmentación	1
 píldoras	1
 piña	1
 piñeramiente	1
-pingüino	1
 pingüino	1
 pío	1
 pirámide	1
