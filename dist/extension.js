@@ -69,15 +69,20 @@ function validateSpecialCharacterMappings(mappings) {
 // src/accent.ts
 var fs = __toESM(require("fs"));
 var path = __toESM(require("path"));
-var AccentRestorer = class {
+var AccentRestorer = class _AccentRestorer {
   dictionary = /* @__PURE__ */ new Map();
   ignoredWords;
   currentLanguage;
   isReady = false;
   dictionaryBasePath;
+  // Cached regex patterns for better performance
+  static WORD_REGEX = /[\w\u00C0-\u017F]+/g;
+  static DIACRITIC_REGEX = /[\u0300-\u036f]/g;
   constructor(language, ignoredWords = []) {
     this.currentLanguage = language;
-    this.ignoredWords = new Set(ignoredWords.map((word) => word.toLowerCase()));
+    this.ignoredWords = new Set(
+      ignoredWords.map((word) => this.removeAccents(word.toLowerCase()))
+    );
     this.dictionaryBasePath = path.join(__dirname, "dictionary");
   }
   async initialize() {
@@ -91,12 +96,18 @@ var AccentRestorer = class {
   }
   readDictionaryFile(filePath) {
     return new Promise((resolve, reject) => {
-      fs.readFile(filePath, "utf8", (err, data) => {
-        if (err) {
-          reject(new Error(`Dictionary file not found: ${filePath}. Error: ${err.message}`));
-        } else {
-          resolve(data);
-        }
+      const stream = fs.createReadStream(filePath, {
+        encoding: "utf8",
+        highWaterMark: 64 * 1024
+        // 64KB chunks
+      });
+      let data = "";
+      stream.on("data", (chunk) => {
+        data += chunk;
+      });
+      stream.on("end", () => resolve(data));
+      stream.on("error", (err) => {
+        reject(new Error(`Dictionary file not found: ${filePath}. Error: ${err.message}`));
       });
     });
   }
@@ -108,7 +119,12 @@ var AccentRestorer = class {
       if (!line) {
         continue;
       }
-      const [word, frequencyStr] = line.split("	");
+      const tabIndex = line.indexOf("	");
+      if (tabIndex === -1) {
+        continue;
+      }
+      const word = line.substring(0, tabIndex);
+      const frequencyStr = line.substring(tabIndex + 1);
       if (!word || !frequencyStr) {
         continue;
       }
@@ -117,16 +133,23 @@ var AccentRestorer = class {
         continue;
       }
       const baseForm = this.removeAccents(word.toLowerCase());
-      if (!this.dictionary.has(baseForm)) {
-        this.dictionary.set(baseForm, []);
+      let entries = this.dictionary.get(baseForm);
+      if (!entries) {
+        entries = [];
+        this.dictionary.set(baseForm, entries);
       }
-      const entries = this.dictionary.get(baseForm);
       const entry = { word, frequency };
-      let insertIndex = 0;
-      while (insertIndex < entries.length && entries[insertIndex].frequency > frequency) {
-        insertIndex++;
+      let left = 0;
+      let right = entries.length;
+      while (left < right) {
+        const mid = left + right >>> 1;
+        if (entries[mid].frequency > frequency) {
+          left = mid + 1;
+        } else {
+          right = mid;
+        }
       }
-      entries.splice(insertIndex, 0, entry);
+      entries.splice(left, 0, entry);
       lineCount++;
     }
     console.log(`Loaded ${lineCount} words for language ${this.currentLanguage}`);
@@ -135,17 +158,18 @@ var AccentRestorer = class {
     if (!this.isReady) {
       throw new Error("Accent restorer not initialized. Call initialize() first.");
     }
-    return text.replace(/[\w\u00C0-\u017F]+/g, (word) => {
-      if (this.ignoredWords.has(word.toLowerCase())) {
+    return text.replace(_AccentRestorer.WORD_REGEX, (word) => {
+      const baseForm = this.removeAccents(word.toLowerCase());
+      if (this.ignoredWords.has(baseForm)) {
         return word;
       }
-      const restored = this.findBestMatch(word);
+      const restored = this.findBestMatch(word, baseForm);
       return restored || word;
     });
   }
-  findBestMatch(word) {
-    const baseForm = this.removeAccents(word.toLowerCase());
-    const candidates = this.dictionary.get(baseForm);
+  findBestMatch(word, baseForm) {
+    const normalizedBase = baseForm || this.removeAccents(word.toLowerCase());
+    const candidates = this.dictionary.get(normalizedBase);
     if (!candidates || candidates.length === 0) {
       return null;
     }
@@ -153,28 +177,27 @@ var AccentRestorer = class {
     return this.preserveOriginalCase(word, bestMatch);
   }
   removeAccents(text) {
-    return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    return text.normalize("NFD").replace(_AccentRestorer.DIACRITIC_REGEX, "").toLowerCase();
   }
   preserveOriginalCase(original, restored) {
+    const origLen = original.length;
+    const restLen = restored.length;
     if (original === original.toUpperCase()) {
       return restored.toUpperCase();
     }
-    if (original === original[0].toUpperCase() + original.slice(1).toLowerCase()) {
+    if (origLen > 0 && original[0] === original[0].toUpperCase() && original.slice(1) === original.slice(1).toLowerCase()) {
       return restored[0].toUpperCase() + restored.slice(1).toLowerCase();
     }
     let result = "";
-    const minLength = Math.min(original.length, restored.length);
+    const minLength = Math.min(origLen, restLen);
     for (let i = 0; i < minLength; i++) {
-      if (original[i] === original[i].toUpperCase()) {
-        result += restored[i].toUpperCase();
-      } else {
-        result += restored[i].toLowerCase();
-      }
+      const origChar = original[i];
+      result += origChar === origChar.toUpperCase() ? restored[i].toUpperCase() : restored[i].toLowerCase();
     }
-    if (restored.length > minLength) {
-      const lastCharCase = original[original.length - 1] === original[original.length - 1].toUpperCase() ? "upper" : "lower";
-      for (let i = minLength; i < restored.length; i++) {
-        result += lastCharCase === "upper" ? restored[i].toUpperCase() : restored[i].toLowerCase();
+    if (restLen > minLength) {
+      const lastCharIsUpper = origLen > 0 && original[origLen - 1] === original[origLen - 1].toUpperCase();
+      for (let i = minLength; i < restLen; i++) {
+        result += lastCharIsUpper ? restored[i].toUpperCase() : restored[i].toLowerCase();
       }
     }
     return result;
