@@ -9,7 +9,7 @@ interface DictionaryEntry {
 class AccentRestorer {
     private dictionary: Map<string, DictionaryEntry[]> = new Map();
     private ignoredWords: Set<string>;
-    private currentLanguage: string;
+    private currentLanguage: string | undefined;
     private isReady: boolean = false;
     private dictionaryBasePath: string;
 
@@ -151,6 +151,7 @@ class AccentRestorer {
 
     async changeLanguage(language: string): Promise<void> {
         this.dictionary.clear();
+        this.ignoredWords.clear();
         this.currentLanguage = language;
         this.isReady = false;
         await this.initialize();
@@ -161,6 +162,7 @@ class AccentRestorer {
         this.dictionary.clear();
         this.ignoredWords.clear();
         this.isReady = false;
+        this.currentLanguage = undefined;
     }
 
     getMemoryUsage(): string {

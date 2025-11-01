@@ -181,6 +181,7 @@ var AccentRestorer = class {
   }
   async changeLanguage(language) {
     this.dictionary.clear();
+    this.ignoredWords.clear();
     this.currentLanguage = language;
     this.isReady = false;
     await this.initialize();
@@ -190,6 +191,7 @@ var AccentRestorer = class {
     this.dictionary.clear();
     this.ignoredWords.clear();
     this.isReady = false;
+    this.currentLanguage = void 0;
   }
   getMemoryUsage() {
     const entries = Array.from(this.dictionary.values()).reduce((sum, arr) => sum + arr.length, 0);
