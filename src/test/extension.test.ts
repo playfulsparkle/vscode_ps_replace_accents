@@ -1,5 +1,5 @@
 import * as assert from "assert";
-import { replaceAccents, validateSpecialCharacterMappings } from "../utils";
+import { replaceAccents, validateAccentRemoveMapping } from "../utils";
 
 suite("Replace Accents Tests", () => {
 	suite("Replace Accents Tests", () => {
@@ -59,24 +59,24 @@ suite("Replace Accents Tests", () => {
 	suite("Validate Special Character Mappings Tests", () => {
 		test("valid mappings", () => {
 			const mappings = { "á": "a", "é": "e" };
-			assert.strictEqual(validateSpecialCharacterMappings(mappings), "");
+			assert.strictEqual(validateAccentRemoveMapping(mappings), "");
 		});
 
 		test("invalid key", () => {
 			const mappings = { "abc": "a" };
-			const errorMessage = validateSpecialCharacterMappings(mappings);
+			const errorMessage = validateAccentRemoveMapping(mappings);
 			assert.ok(errorMessage.includes("Invalid key"));
 		});
 
 		test("invalid value", () => {
 			const mappings = { "á": 123 as unknown as string };
-			const errorMessage = validateSpecialCharacterMappings(mappings);
+			const errorMessage = validateAccentRemoveMapping(mappings);
 			assert.ok(errorMessage.includes("Invalid value"));
 		});
 
 		test("not an object", () => {
 			const mappings = null as unknown as Record<string, string>;
-			const errorMessage = validateSpecialCharacterMappings(mappings);
+			const errorMessage = validateAccentRemoveMapping(mappings);
 			assert.ok(errorMessage.includes("Invalid mappings"));
 		});
 	});

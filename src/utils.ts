@@ -39,7 +39,7 @@ export function replaceAccents(text: string, charMappings: Record<string, string
  * 
  * @returns An empty string if validation passes, or a localized error message string if validation fails
  */
-export function validateSpecialCharacterMappings(mappings: { [key: string]: string }): string {
+export function validateAccentRemoveMapping(mappings: { [key: string]: string }): string {
     if (!mappings || typeof mappings !== "object") {
         return vscode.l10n.t("Invalid mappings: Not an object.");
     }
@@ -55,4 +55,15 @@ export function validateSpecialCharacterMappings(mappings: { [key: string]: stri
     }
 
     return "";
+}
+
+export function normalizeIgnoreWords(str: string): string[] {
+    return Array.from(
+        new Set(
+            str
+                .split("\n")
+                .map(word => word.trim())
+                .filter(word => word.length > 0)
+        )
+    );
 }

@@ -1,8 +1,10 @@
 {
     "extension.config.title": "Replace Accents",
     "extension.config.replaceAccents.title": "Replace Accents",
-    "extension.config.replaceAccents.description": "Vlastní mapování speciálních znaků (např. {'ß': 'ss', 'æ': 'ae'})",
-    "extension.config.accentDictionary.desc": "Vyberte slovník diakritiky pro obnovení diakritických znamének.",
+    "extension.config.accentRemoveMapping.desc": "Definujte vlastní mapování znaků pro odstranění diakritiky. Použijte to k určení, jak mají být speciální znaky převedeny (např. německé „ß“ na „ss“, ligatury „æ“ na „ae“). Použije se po normalizaci.",
+    "extension.config.accentDictionary.desc": "Vyberte slovník diakritiky pro obnovu diakritických znamének.",
+    "extension.config.accentRestoreSuffixMatching.desc": "Pokuste se obnovovat diakritiku v koncovkách slov (např. „edeny“ na „edényemet“). Může zlepšit výsledky u ohýbaných tvarů, ale může způsobit i nesprávná shodná nalezení. Nechte vypnuto, pokud to není potřeba.",
+    "extension.config.accentIgnoredWords.desc": "Seznam slov, která se mají z obnovy diakritiky vyloučit. Tato slova zůstanou beze změny i v případě, že jsou ve slovníku.",
     "extension.category.utilities.title": "Nástroje",
     "extension.category.help.title": "Nápověda",
     "extension.command.reportIssue.title": "Nahlásit problém",

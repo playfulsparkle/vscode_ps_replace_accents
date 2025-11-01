@@ -1,12 +1,14 @@
 {
     "extension.config.title": "Replace Accents",
     "extension.config.replaceAccents.title": "Replace Accents",
-    "extension.config.replaceAccents.description": "Пользовательские соответствия для специальных символов (например, {'ß': 'ss', 'æ': 'ae'})",
-    "extension.config.accentDictionary.desc": "Выберите словарь диакритических знаков для их восстановления.",
-    "extension.category.utilities.title": "Инструменты",
+    "extension.config.accentRemoveMapping.desc": "Задайте собственные сопоставления символов для удаления диакритических знаков. Используйте это, чтобы указать, как должны преобразовываться специальные символы (например, немецкий «ß» в «ss», лигатуры «æ» в «ae»). Применяется после нормализации.",
+    "extension.config.accentDictionary.desc": "Выберите словарь диакритических знаков для восстановления диакритики.",
+    "extension.config.accentRestoreSuffixMatching.desc": "Пробовать восстанавливать диакритику в окончаниях слов (например, «edeny» в «edényemet»). Это может улучшить результаты для словоформ, но может приводить к ошибочным совпадениям. Оставьте отключенным, если нет необходимости.",
+    "extension.config.accentIgnoredWords.desc": "Список слов, которые необходимо исключить из восстановления диакритики. Эти слова останутся без изменений, даже если они есть в словаре.",
+    "extension.category.utilities.title": "Служебные функции",
     "extension.category.help.title": "Справка",
     "extension.command.reportIssue.title": "Сообщить о проблеме",
-    "extension.command.replaceAccents.title": "Удалить диакритические знаки (áéő - aeo)",
-    "extension.command.replaceAccentsFileOrFolder.title": "Удалить диакритические знаки",
-    "extension.command.restoreAccents.title": "Восстановить диакритические знаки"
+    "extension.command.replaceAccents.title": "Удалить диакритику (áéő - aeo)",
+    "extension.command.replaceAccentsFileOrFolder.title": "Удалить диакритику",
+    "extension.command.restoreAccents.title": "Восстановить диакритику"
 }

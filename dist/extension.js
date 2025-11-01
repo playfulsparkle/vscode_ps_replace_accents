@@ -51,7 +51,7 @@ function replaceAccents(text, charMappings = {}) {
     return text;
   }
 }
-function validateSpecialCharacterMappings(mappings) {
+function validateAccentRemoveMapping(mappings) {
   if (!mappings || typeof mappings !== "object") {
     return vscode.l10n.t("Invalid mappings: Not an object.");
   }
@@ -65,6 +65,13 @@ function validateSpecialCharacterMappings(mappings) {
   }
   return "";
 }
+function normalizeIgnoreWords(str) {
+  return Array.from(
+    new Set(
+      str.split("\n").map((word) => word.trim()).filter((word) => word.length > 0)
+    )
+  );
+}
 
 // src/accent.ts
 var fs = __toESM(require("fs"));
@@ -75,11 +82,16 @@ var AccentRestorer = class _AccentRestorer {
   currentLanguage;
   isReady = false;
   dictionaryBasePath;
+  // LRU cache for restoration results
+  restorationCache = /* @__PURE__ */ new Map();
+  MAX_CACHE_SIZE = 1e3;
+  enableSuffixMatching = false;
   // Cached regex patterns for better performance
   static WORD_REGEX = /[\w\u00C0-\u017F]+/g;
   static DIACRITIC_REGEX = /[\u0300-\u036f]/g;
-  constructor(language, ignoredWords = []) {
+  constructor(language, ignoredWords = [], enableSuffixMatching = false) {
     this.currentLanguage = language;
+    this.enableSuffixMatching = enableSuffixMatching;
     this.ignoredWords = new Set(
       ignoredWords.map((word) => this.removeAccents(word.toLowerCase()))
     );
@@ -159,22 +171,58 @@ var AccentRestorer = class _AccentRestorer {
       throw new Error("Accent restorer not initialized. Call initialize() first.");
     }
     return text.replace(_AccentRestorer.WORD_REGEX, (word) => {
+      const cached = this.restorationCache.get(word);
+      if (cached !== void 0) {
+        return cached;
+      }
       const baseForm = this.removeAccents(word.toLowerCase());
       if (this.ignoredWords.has(baseForm)) {
+        this.addToCache(word, word);
         return word;
       }
       const restored = this.findBestMatch(word, baseForm);
-      return restored || word;
+      const result = restored || word;
+      this.addToCache(word, result);
+      return result;
     });
+  }
+  addToCache(key, value) {
+    if (this.restorationCache.size >= this.MAX_CACHE_SIZE) {
+      const firstKey = this.restorationCache.keys().next().value;
+      if (firstKey) {
+        this.restorationCache.delete(firstKey);
+      }
+    }
+    this.restorationCache.set(key, value);
   }
   findBestMatch(word, baseForm) {
     const normalizedBase = baseForm || this.removeAccents(word.toLowerCase());
     const candidates = this.dictionary.get(normalizedBase);
     if (!candidates || candidates.length === 0) {
+      if (this.enableSuffixMatching) {
+        return this.findSuffixMatch(word, normalizedBase);
+      }
       return null;
     }
     const bestMatch = candidates[0].word;
     return this.preserveOriginalCase(word, bestMatch);
+  }
+  findSuffixMatch(word, normalizedBase) {
+    const wordLower = word.toLowerCase();
+    const wordLen = normalizedBase.length;
+    const minStemLen = Math.max(4, Math.floor(wordLen * 0.6));
+    const maxSuffixLen = 3;
+    for (let stemLen = wordLen - 1; stemLen >= Math.max(minStemLen, wordLen - maxSuffixLen); stemLen--) {
+      const stem = normalizedBase.substring(0, stemLen);
+      const candidates = this.dictionary.get(stem);
+      if (candidates && candidates.length > 0) {
+        const bestStem = candidates[0].word;
+        const suffix = wordLower.substring(stemLen);
+        const reconstructed = bestStem + suffix;
+        return this.preserveOriginalCase(word, reconstructed);
+      }
+    }
+    return null;
   }
   removeAccents(text) {
     return text.normalize("NFD").replace(_AccentRestorer.DIACRITIC_REGEX, "").toLowerCase();
@@ -205,6 +253,7 @@ var AccentRestorer = class _AccentRestorer {
   async changeLanguage(language) {
     this.dictionary.clear();
     this.ignoredWords.clear();
+    this.restorationCache.clear();
     this.currentLanguage = language;
     this.isReady = false;
     await this.initialize();
@@ -213,13 +262,14 @@ var AccentRestorer = class _AccentRestorer {
   dispose() {
     this.dictionary.clear();
     this.ignoredWords.clear();
+    this.restorationCache.clear();
     this.isReady = false;
     this.currentLanguage = void 0;
   }
   getMemoryUsage() {
     const entries = Array.from(this.dictionary.values()).reduce((sum, arr) => sum + arr.length, 0);
     const uniqueBaseForms = this.dictionary.size;
-    return `Dictionary: ${uniqueBaseForms} base forms, ${entries} total entries, Language: ${this.currentLanguage}`;
+    return `Dictionary: ${uniqueBaseForms} base forms, ${entries} total entries, Cache: ${this.restorationCache.size} words, Language: ${this.currentLanguage}`;
   }
 };
 var accent_default = AccentRestorer;
@@ -318,8 +368,8 @@ function activate(context) {
   const commandHandlers = {
     ["ps-replace-accents.reportIssue" /* ReportIssue */]: () => vscode2.env.openExternal(vscode2.Uri.parse("https://github.com/playfulsparkle/vscode_ps_replace_accents/issues")),
     ["ps-replace-accents.replaceAccents" /* ReplaceAccents */]: async () => {
-      const userMappings = vscode2.workspace.getConfiguration("ps-replace-accents").get("specialCharacterMappings", {});
-      const userMappingsErrors = validateSpecialCharacterMappings(userMappings);
+      const userMappings = vscode2.workspace.getConfiguration("ps-replace-accents").get("accentRemoveMapping", {});
+      const userMappingsErrors = validateAccentRemoveMapping(userMappings);
       if (userMappingsErrors) {
         vscode2.window.showErrorMessage(userMappingsErrors);
         return;
@@ -341,8 +391,8 @@ function activate(context) {
       if (!uri) {
         return;
       }
-      const userMappings = vscode2.workspace.getConfiguration("ps-replace-accents").get("specialCharacterMappings", {});
-      const userMappingsErrors = validateSpecialCharacterMappings(userMappings);
+      const userMappings = vscode2.workspace.getConfiguration("ps-replace-accents").get("accentRemoveMapping", {});
+      const userMappingsErrors = validateAccentRemoveMapping(userMappings);
       if (userMappingsErrors) {
         vscode2.window.showErrorMessage(userMappingsErrors);
         return;
@@ -358,8 +408,11 @@ function activate(context) {
       }
     },
     ["ps-replace-accents.restoreAccents" /* RestoreAccents */]: async () => {
+      const suffixMatching = vscode2.workspace.getConfiguration("ps-replace-accents").get("accentRestoreSuffixMatching", false);
+      const ignoredWordsRaw = vscode2.workspace.getConfiguration("ps-replace-accents").get("accentIgnoredWords", "");
+      const ignoredWords = normalizeIgnoreWords(ignoredWordsRaw);
       const accentDictionary = vscode2.workspace.getConfiguration("ps-replace-accents").get("accentDictionary", "hungarian");
-      const restorer = new accent_default(accentDictionary);
+      const restorer = new accent_default(accentDictionary, ignoredWords, suffixMatching);
       await restorer.initialize();
       await processTextInEditor((text) => restorer.restoreAccents(text));
       restorer.dispose();

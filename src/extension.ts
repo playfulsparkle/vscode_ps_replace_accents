@@ -137,10 +137,10 @@ export function activate(context: vscode.ExtensionContext) {
 		[CommandId.ReplaceAccents]: async () => {
 			const userMappings: { [key: string]: string } = vscode.workspace
 				.getConfiguration("ps-replace-accents")
-				.get<{ [key: string]: string }>("specialCharacterMappings", {});
+				.get<{ [key: string]: string }>("accentRemoveMapping", {});
 
 
-			const userMappingsErrors = utils.validateSpecialCharacterMappings(userMappings);
+			const userMappingsErrors = utils.validateAccentRemoveMapping(userMappings);
 
 			if (userMappingsErrors) {
 				vscode.window.showErrorMessage(userMappingsErrors);
@@ -169,10 +169,10 @@ export function activate(context: vscode.ExtensionContext) {
 
 			const userMappings: { [key: string]: string } = vscode.workspace
 				.getConfiguration("ps-replace-accents")
-				.get<{ [key: string]: string }>("specialCharacterMappings", {});
+				.get<{ [key: string]: string }>("accentRemoveMapping", {});
 
 
-			const userMappingsErrors = utils.validateSpecialCharacterMappings(userMappings);
+			const userMappingsErrors = utils.validateAccentRemoveMapping(userMappings);
 
 			if (userMappingsErrors) {
 				vscode.window.showErrorMessage(userMappingsErrors);
@@ -194,11 +194,25 @@ export function activate(context: vscode.ExtensionContext) {
 			}
 		},
 		[CommandId.RestoreAccents]: async () => {
+			// Read suffix matching setting
+			const suffixMatching: boolean = vscode.workspace
+				.getConfiguration("ps-replace-accents")
+				.get<boolean>("accentRestoreSuffixMatching", false);
+
+			// Read ignored words setting
+			const ignoredWordsRaw: string = vscode.workspace
+				.getConfiguration("ps-replace-accents")
+				.get<string>("accentIgnoredWords", "");
+
+			// Parse and filter unique ignored words
+			const ignoredWords: string[] = utils.normalizeIgnoreWords(ignoredWordsRaw);
+
+			// Read dictionary setting
 			const accentDictionary: string = vscode.workspace
 				.getConfiguration("ps-replace-accents")
 				.get<string>("accentDictionary", "hungarian");
 
-			const restorer = new AccentRestorer(accentDictionary);
+			const restorer = new AccentRestorer(accentDictionary, ignoredWords, suffixMatching);
 
 			await restorer.initialize();
 

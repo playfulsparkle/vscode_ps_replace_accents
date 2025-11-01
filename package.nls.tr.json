@@ -1,12 +1,14 @@
 {
     "extension.config.title": "Replace Accents",
     "extension.config.replaceAccents.title": "Replace Accents",
-    "extension.config.replaceAccents.description": "Özel karakterler için özel eşlemeler (örn. {'ß': 'ss', 'æ': 'ae'})",
-    "extension.config.accentDictionary.desc": "Diyakritik işaretleri geri yüklemek için kullanılacak sözlüğü seçin.",
+    "extension.config.accentRemoveMapping.desc": "Vurgu işaretlerini kaldırmak için özel karakter eşlemeleri tanımlayın. Özel karakterlerin nasıl dönüştürüleceğini belirtmek için bunu kullanın. Örneğin Almanca “ß” karakterini “ss” olarak, “æ” birleşik harfini “ae” olarak dönüştürün. Normalleştirmeden sonra uygulanır.",
+    "extension.config.accentDictionary.desc": "Vurgu işaretlerini geri yüklemek için kullanılacak diakritik sözlüğünü seçin.",
+    "extension.config.accentRestoreSuffixMatching.desc": "Kelimelerin son eklerinde vurgu işaretlerini geri yüklemeyi deneyin. Örneğin “edeny” ifadesini “edényemet” olarak. Çekimli biçimlerde sonucu iyileştirebilir, ancak hatalı eşleşmelere de yol açabilir. Gerekli olmadıkça devre dışı bırakın.",
+    "extension.config.accentIgnoredWords.desc": "Vurgu geri yüklemesinden hariç tutulacak kelimelerin listesi. Bu kelimeler sözlükte bulunsa bile değiştirilmez.",
     "extension.category.utilities.title": "Araçlar",
     "extension.category.help.title": "Yardım",
     "extension.command.reportIssue.title": "Sorun bildir",
-    "extension.command.replaceAccents.title": "Diyakritik işaretleri kaldır (áéő - aeo)",
-    "extension.command.replaceAccentsFileOrFolder.title": "Diyakritik işaretleri kaldır",
-    "extension.command.restoreAccents.title": "Diyakritik işaretleri geri yükle"
+    "extension.command.replaceAccents.title": "Vurgu işaretlerini kaldır (áéő - aeo)",
+    "extension.command.replaceAccentsFileOrFolder.title": "Vurgu işaretlerini kaldır",
+    "extension.command.restoreAccents.title": "Vurgu işaretlerini geri yükle"
 }

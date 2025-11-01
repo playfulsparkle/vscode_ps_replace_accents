@@ -9199,7 +9199,6 @@ aminő	1
 amióta	1
 ámirás	1
 amiről	1
-ámít	1
 ámítás	1
 ámítgat	1
 amitől	1
@@ -69970,15 +69969,12 @@ madárvilágnak	1
 madárvonulás	1
 madárvonulási	1
 madéfalva	1
-mádl	1
 madocsányi	1
 madonnára	1
 madrigál	1
 madzagvasút	1
 mafláskodik	1
 mafláz	1
-mág	1
-mága	1
 magába	1
 magában	1
 magabízó	1

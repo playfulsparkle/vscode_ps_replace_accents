@@ -1,12 +1,14 @@
 {
     "extension.config.title": "Replace Accents",
     "extension.config.replaceAccents.title": "Replace Accents",
-    "extension.config.replaceAccents.description": "Correspondances personnalisées pour les caractères spéciaux (p. ex. {'ß': 'ss', 'æ': 'ae'})",
-    "extension.config.accentDictionary.desc": "Sélectionner le dictionnaire des signes diacritiques pour les restaurer.",
-    "extension.category.utilities.title": "Outils",
+    "extension.config.accentRemoveMapping.desc": "Définissez des correspondances de caractères personnalisées pour supprimer les signes diacritiques. Utilisez cette option pour préciser comment convertir les caractères spéciaux (par ex. l’allemand « ß » en « ss », les ligatures « æ » en « ae »). Appliqué après la normalisation.",
+    "extension.config.accentDictionary.desc": "Sélectionnez un dictionnaire de diacritiques pour la restauration des signes diacritiques.",
+    "extension.config.accentRestoreSuffixMatching.desc": "Tentez de restaurer les accents dans les terminaisons de mots (par ex. « edeny » vers « edényemet »). Peut améliorer les résultats pour les formes fléchies, mais peut aussi provoquer des correspondances incorrectes. Laissez désactivé sauf besoin spécifique.",
+    "extension.config.accentIgnoredWords.desc": "Liste des mots à exclure de la restauration des accents. Ces mots resteront inchangés même s’ils figurent dans le dictionnaire.",
+    "extension.category.utilities.title": "Utilitaires",
     "extension.category.help.title": "Aide",
     "extension.command.reportIssue.title": "Signaler un problème",
     "extension.command.replaceAccents.title": "Supprimer les diacritiques (áéő - aeo)",
     "extension.command.replaceAccentsFileOrFolder.title": "Supprimer les diacritiques",
-    "extension.command.restoreAccents.title": "Restaurer les signes diacritiques"
+    "extension.command.restoreAccents.title": "Restaurer les diacritiques"
 }
