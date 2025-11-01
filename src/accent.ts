@@ -170,8 +170,4 @@ class AccentRestorer {
     }
 }
 
-export async function createAccentRestorer(language: string = "slovak", ignoredWords: string[] = []): Promise<AccentRestorer> {
-    const restorer = new AccentRestorer(language, ignoredWords);
-    await restorer.initialize();
-    return restorer;
-}
+export default AccentRestorer;

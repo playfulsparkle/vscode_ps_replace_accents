@@ -1,7 +1,7 @@
 import * as vscode from "vscode";
 import * as path from "path";
 import * as utils from "./utils";
-import { createAccentRestorer } from "./accent";
+import AccentRestorer from "./accent";
 
 /** Activates the extension
  * @param {vscode.ExtensionContext} context - The extension context
@@ -198,7 +198,9 @@ export function activate(context: vscode.ExtensionContext) {
 				.getConfiguration("ps-replace-accents")
 				.get<string>("accentDictionary", "hungarian");
 
-			const restorer = await createAccentRestorer(accentDictionary);
+			const restorer = new AccentRestorer(accentDictionary);
+
+			await restorer.initialize();
 
 			await processTextInEditor(text => restorer.restoreAccents(text));
 
