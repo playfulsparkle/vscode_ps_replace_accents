@@ -126,7 +126,11 @@
             "slovak",
             "czech",
             "german",
-            "polish"
+            "polish",
+            "danish",
+            "french",
+            "spanish",
+            "swedish"
           ]
         },
         "ps-replace-accents.accentRestoreSuffixMatching": {

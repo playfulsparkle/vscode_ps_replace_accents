@@ -105,7 +105,7 @@ class DictionaryManager {
      */
     extractWordFrequencies(text) {
         const frequencies = new Map();
-        const words = text.match(/[\w\u00C0-\u017F'][\w\u00C0-\u017F'-]*/g) || [];
+        const words = text.match(/[\w\u00C0-\u017F’'][\w\u00C0-\u017F’'-]*/g) || [];
         
         for (const word of words) {
             // Skip single characters
