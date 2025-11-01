@@ -43,6 +43,14 @@ If you encounter any of these or other issues, please report them on the [GitHub
 
 ## Release Notes
 
+### 0.0.10
+
+Added diacritic restoration for Danish, French, Spanish, and Swedish.
+Added suffix matching for inflected forms (off by default), 
+Added ignored words list for brands/exceptions 
+Added caching most userd words.
+Improved accent restoration ~40–60% faster via cached regex, binary search, streaming reads, fewer allocations; dictionary load ~30% less memory; clearer setting descriptions.
+
 ### 0.0.9
 
 Added diacritic restoration for Czech, German, Hungarian, Polish, and Slovak.
