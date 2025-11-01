@@ -1338,7 +1338,6 @@ přibližně	3
 příbrami	3
 přidejte	3
 přílet	3
-příliš	3
 příloha	3
 primární	3
 primáti	3
@@ -5701,6 +5700,8 @@ d'amérique	1
 dá	1
 dabā	1
 ďábel	1
+ďábelské	1
+ďábelské	1
 dabingoví	1
 dabingový	1
 ďáblem	1
@@ -8847,6 +8848,8 @@ kulturakulturní	1
 kulturní	1
 kulturního	1
 kumpáni	1
+kůň	1
+kůň	1
 kunďák	1
 kundička	1
 kundratová	1
@@ -11402,6 +11405,8 @@ odvolací	1
 odvolacího	1
 odvolání	1
 odvrávať	1
+ódy	1
+ódy	1
 oficiálně	1
 oficiální	1
 oficiálních	1
@@ -13473,6 +13478,8 @@ přikývnout	1
 přilákat	1
 příležitosti	1
 příležitostné	1
+příliš	1
+příliš	1
 příloh	1
 přiložit	1
 přímá	1
@@ -17535,6 +17542,8 @@ univerzitní	1
 upálit	1
 úpatní	1
 upéct	1
+úpěl	1
+úpěl	1
 úpěnlivě	1
 úpěnlivost	1
 úpenlivý	1
@@ -20479,6 +20488,8 @@ zlozvyků	1
 žlutit	1
 žluto-zelená	1
 žlutou	1
+žluťoučký	1
+žluťoučký	1
 žlutý	1
 žluva	1
 zmáčknutí	1

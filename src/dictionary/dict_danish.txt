@@ -97,9 +97,11 @@ få	2
 fastslå	2
 fastslår	2
 flåden	2
+fløde	2
 forhåbentlig	2
 frå	2
 gårsdagens	2
+grød	2
 håb	2
 hånd	2
 håndværk	2
@@ -132,6 +134,7 @@ rådighed	2
 râmâyana	2
 råvarer	2
 regnskabsår	2
+rød	2
 sådan	2
 samrådet	2
 sankthansbål	2

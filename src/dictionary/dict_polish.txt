@@ -4493,6 +4493,8 @@ geście	1
 gęsie	1
 gęsiej	1
 gęsiorek	1
+gęślą	1
+gęślą	1
 gęśmi	1
 gęstą	1
 gęste	1
@@ -4877,6 +4879,8 @@ jasnowidzącą	1
 jastrzębie	1
 jazdą	1
 jazdę	1
+jaźń	1
+jaźń	1
 jazów	1
 jechać	1
 jęczmieniem	1
@@ -12912,6 +12916,8 @@ zażądała	1
 zażartować	1
 zazdrość	1
 zaznaczając	1
+zażółć	1
+zażółć	1
 zażyć	1
 zażywał	1
 zbadają	1

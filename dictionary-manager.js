@@ -51,8 +51,8 @@ class DictionaryManager {
                     continue;
                 }
                 
-                // Skip words without accents
-                if (!this.hasAccents(word)) {
+                // Skip words that don't need restoration (ASCII-only)
+                if (!this.needsRestoration(word)) {
                     removedCount++;
                     continue;
                 }
@@ -82,12 +82,18 @@ class DictionaryManager {
     }
 
     /**
-     * Check if a word has accents/diacritics
+     * Check if a word needs restoration (contains non-ASCII characters)
+     * This includes accented letters (é, á), special characters (ø, æ, å, ß, ł), etc.
      */
-    hasAccents(word) {
-        // Compare normalized form (without accents) with original
-        const normalized = word.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-        return normalized !== word;
+    needsRestoration(word) {
+        // Check if word contains any non-ASCII characters (code > 127)
+        // This covers: é, á, ø, æ, å, ß, ł, ñ, ü, ő, etc.
+        for (let i = 0; i < word.length; i++) {
+            if (word.charCodeAt(i) > 127) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /**
@@ -105,18 +111,18 @@ class DictionaryManager {
      */
     extractWordFrequencies(text) {
         const frequencies = new Map();
-        const words = text.match(/[\w\u00C0-\u017F’'][\w\u00C0-\u017F’'-]*/g) || [];
-        
+        const words = text.match(/[\p{L}\p{M}][\p{L}\p{M}'\u2019\u0027-]*/gu) || [];
+
         for (const word of words) {
             // Skip single characters
             if (word.length < 2) continue;
             
-            // Skip words without accents
-            if (!this.hasAccents(word)) continue;
+            // Skip words that don't need restoration (ASCII-only)
+            if (!this.needsRestoration(word)) continue;
             
             const normalizedWord = this.normalizeWord(word);
             const lowerOriginal = word.toLowerCase(); // Always store lowercase
-            
+           
             if (frequencies.has(normalizedWord)) {
                 frequencies.get(normalizedWord).frequency++;
             } else {
@@ -126,7 +132,7 @@ class DictionaryManager {
                 });
             }
         }
-        
+                
         return frequencies;
     }
 
@@ -179,9 +185,9 @@ class DictionaryManager {
         const dir = path.dirname(filePath);
         await fs.promises.mkdir(dir, { recursive: true });
         
-        // Filter out single characters and words without accents before writing
+        // Filter out single characters and ASCII-only words before writing
         const filteredEntries = Array.from(dictionary.values())
-            .filter(entry => entry.word.length >= 2 && this.hasAccents(entry.word))
+            .filter(entry => entry.word.length >= 2 && this.needsRestoration(entry.word))
             .sort((a, b) => {
                 if (b.frequency !== a.frequency) {
                     return b.frequency - a.frequency;
@@ -202,8 +208,8 @@ class DictionaryManager {
         const merged = new Map(existing);
         
         for (const [normalizedWord, newEntry] of newEntries) {
-            // Skip single characters and words without accents
-            if (newEntry.word.length < 2 || !this.hasAccents(newEntry.word)) {
+            // Skip single characters and ASCII-only words
+            if (newEntry.word.length < 2 || !this.needsRestoration(newEntry.word)) {
                 continue;
             }
             
@@ -254,11 +260,11 @@ class DictionaryManager {
         const dictFilePath = this.resolveDictionaryPath(dictionaryName);
         const entriesWritten = await this.writeDictionary(dictFilePath, wordFrequencies);
         
-        console.log(`✅ Created dictionary with ${entriesWritten} words (accented only)`);
+        console.log(`✅ Created dictionary with ${entriesWritten} words (non-ASCII only)`);
     }
 
     /**
-     * Clean dictionary - remove single characters and words without accents
+     * Clean dictionary - remove single characters and ASCII-only words
      */
     async cleanDictionary(dictionaryName) {
         try {
@@ -274,8 +280,8 @@ class DictionaryManager {
             let removedCount = 0;
             
             for (const [word, entry] of dictionary) {
-                // Keep only words with 2+ characters and accents
-                if (word.length >= 2 && this.hasAccents(word)) {
+                // Keep only words with 2+ characters and non-ASCII characters
+                if (word.length >= 2 && this.needsRestoration(word)) {
                     cleanedDict.set(word, entry);
                 } else {
                     removedCount++;

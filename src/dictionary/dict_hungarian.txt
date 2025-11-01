@@ -10471,6 +10471,8 @@ artúr	1
 árvízkár	1
 árvízkárosult	1
 árvízkatasztrófa	1
+árvíztűrő	1
+árvíztűrő	1
 árvízvédelem	1
 árvízvédelemben	1
 árvízvédelmében	1
@@ -107318,6 +107320,8 @@ tükör	1
 tükörablak	1
 tükörfényes	1
 tükörfordítás	1
+tükörfúrógép	1
+tükörfúrógép	1
 tükörírás	1
 tükörkép	1
 tükörképe	1

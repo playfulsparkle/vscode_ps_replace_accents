@@ -945,6 +945,8 @@ copié	1
 córdoba	1
 correção	1
 cortège	1
+côté	1
+côté	1
 côtés	1
 côtoyer	1
 coude-à-coude	1
@@ -988,6 +990,8 @@ d’économies	1
 d'élaboration	1
 d’élections	1
 d’électricité	1
+d'élise	1
+d'élise	1
 d’énergie	1
 d’enquête	1
 d'entraîner	1
@@ -1068,6 +1072,8 @@ dégrader	1
 degustação	1
 délai	1
 délicats	1
+délicieux	1
+délicieux	1
 démanteler	1
 démarré	1
 dément	1
@@ -1364,6 +1370,8 @@ galilée	1
 galvão	1
 gangrène	1
 garçon	1
+gâteaux	1
+gâteaux	1
 géant	1
 gebäude-kranbau	1
 généralement	1
@@ -1492,6 +1500,7 @@ j’étais	1
 japón	1
 jazyků	1
 jérôme	1
+jérôme	1
 jerónimo	1
 jérusalem	1
 joão	1
@@ -1551,6 +1560,8 @@ l’emblème	1
 l'épisode	1
 l’ère	1
 l’état-major	1
+l'été	1
+l'été	1
 l’étranger	1
 l’événement	1
 l’éventualité	1

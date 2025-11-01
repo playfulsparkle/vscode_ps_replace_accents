@@ -1,5 +1,4 @@
 berättelser	188
-på	158
 linnés	156
 skåne	153
 linköpings	107
@@ -896,6 +895,8 @@ avstånd	1
 avtjäna	1
 avväpnas	1
 bååth	1
+bäckasiner	1
+bäckasiner	1
 bådar	1
 både	1
 bägge	1
@@ -1825,6 +1826,8 @@ ovanför	1
 övervaka	1
 övervakningsvideo	1
 övervåld	1
+på	1
+på	1
 pågår	1
 pål	1
 pansarbåtsvisan	1
@@ -2007,6 +2010,8 @@ snöiga	1
 snöklocka	1
 söderköping	1
 sök	1
+söka	1
+söka	1
 sollefteå	1
 solnedgång	1
 solnedgången	1

@@ -5529,6 +5529,7 @@ größer	1
 größere	1
 größerem	1
 größeren	1
+größeren	1
 großflächiges	1
 großklärwerke	1
 großmächten	1
@@ -7644,6 +7645,7 @@ qualitätsstandards	1
 qualitätsverbesserung	1
 qualitätszeit	1
 quält	1
+quält	1
 quartär	1
 quartären	1
 quartärforschung	1
@@ -8837,6 +8839,7 @@ u-förmige	1
 u-täler	1
 u-yüan	1
 übel	1
+üben	1
 üben	1
 überall	1
 überarbeitende	1
