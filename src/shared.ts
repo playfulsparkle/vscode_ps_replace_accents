@@ -1,9 +1,42 @@
 import * as vscode from "vscode";
 
+/**
+ * Regular expression for matching diacritical marks and combining characters
+ * 
+ * This regex uses Unicode property escapes to match:
+ * - `\p{Mn}`: Non-spacing marks (diacritics that don't take up space)
+ * - `\u0300-\u036f`: Combining diacritical marks Unicode block
+ * 
+ * @constant {RegExp}
+ * @global
+ * 
+ * @see {@link https://unicode.org/reports/tr44/#GC_Values_Table | Unicode General Category Values}
+ * @see {@link https://en.wikipedia.org/wiki/Combining_Diacritical_Marks | Combining Diacritical Marks}
+ */
 export const diacriticRegex = /[\p{Mn}\u0300-\u036f]/gu;
 
-// Language-specific character mappings
+/**
+ * Language-specific character mappings for diacritic removal
+ * 
+ * Provides comprehensive mappings for accented characters to their ASCII equivalents
+ * across multiple languages. Each language object contains case-sensitive mappings
+ * for both lowercase and uppercase characters.
+ * 
+ * @constant {Record<string, Record<string, string>>}
+ * @global
+ * 
+ * @property {Object} czech - Czech language character mappings
+ * @property {Object} danish - Danish language character mappings  
+ * @property {Object} french - French language character mappings
+ * @property {Object} german - German language character mappings
+ * @property {Object} hungarian - Hungarian language character mappings
+ * @property {Object} polish - Polish language character mappings
+ * @property {Object} slovak - Slovak language character mappings
+ * @property {Object} spanish - Spanish language character mappings
+ * @property {Object} swedish - Swedish language character mappings
+ */
 export const languageCharacterMappings: Record<string, Record<string, string>> = {
+    /** Czech language character mappings */
     "czech": {
         "á": "a", "Á": "A", "č": "c", "Č": "C", "ď": "d", "Ď": "D", "é": "e",
         "É": "E", "ě": "e", "Ě": "E", "í": "i", "Í": "I", "ň": "n", "Ň": "N",
@@ -11,9 +44,11 @@ export const languageCharacterMappings: Record<string, Record<string, string>> =
         "Ť": "T", "ú": "u", "Ú": "U", "ů": "u", "Ů": "U", "ý": "y", "Ý": "Y",
         "ž": "z", "Ž": "Z"
     },
+    /** Danish language character mappings */
     "danish": {
         "æ": "ae", "Æ": "Ae", "ø": "oe", "Ø": "Oe", "å": "aa", "Å": "Aa"
     },
+    /** French language character mappings */
     "french": {
         "à": "a", "À": "A", "â": "a", "Â": "A", "ä": "a", "Ä": "A", "æ": "ae",
         "Æ": "Ae", "ç": "c", "Ç": "C", "é": "e", "É": "E", "è": "e", "È": "E",
@@ -22,20 +57,24 @@ export const languageCharacterMappings: Record<string, Record<string, string>> =
         "ù": "u", "Ù": "U", "û": "u", "Û": "U", "ü": "u", "Ü": "U", "ÿ": "y",
         "Ÿ": "Y"
     },
+    /** German language character mappings */
     "german": {
         "ä": "ae", "Ä": "Ae", "ö": "oe", "Ö": "Oe", "ü": "ue", "Ü": "Ue",
         "ß": "ss", "ẞ": "SS"
     },
+    /** Hungarian language character mappings */
     "hungarian": {
         "á": "a", "Á": "A", "é": "e", "É": "E", "í": "i", "Í": "I", "ó": "o",
         "Ó": "O", "ö": "o", "Ö": "O", "ő": "o", "Ő": "O", "ú": "u", "Ú": "U",
         "ü": "u", "Ü": "U", "ű": "u", "Ű": "U"
     },
+    /** Polish language character mappings */
     "polish": {
         "ą": "a", "Ą": "A", "ć": "c", "Ć": "C", "ę": "e", "Ę": "E", "ł": "l",
         "Ł": "L", "ń": "n", "Ń": "N", "ó": "o", "Ó": "O", "ś": "s", "Ś": "S",
         "ź": "z", "Ź": "Z", "ż": "z", "Ż": "Z"
     },
+    /** Slovak language character mappings */
     "slovak": {
         "á": "a", "Á": "A", "ä": "a", "Ä": "A", "č": "c", "Č": "C", "ď": "d",
         "Ď": "D", "é": "e", "É": "E", "í": "i", "Í": "I", "ľ": "l", "Ľ": "L",
@@ -43,21 +82,46 @@ export const languageCharacterMappings: Record<string, Record<string, string>> =
         "Ô": "O", "ŕ": "r", "Ŕ": "R", "š": "s", "Š": "S", "ť": "t", "Ť": "T",
         "ú": "u", "Ú": "U", "ý": "y", "Ý": "Y", "ž": "z", "Ž": "Z"
     },
+    /** Spanish language character mappings */
     "spanish": {
         "á": "a", "Á": "A", "é": "e", "É": "E", "í": "i", "Í": "I", "ó": "o",
         "Ó": "O", "ú": "u", "Ú": "U", "ü": "u", "Ü": "U", "ñ": "n", "Ñ": "N"
     },
+    /** Swedish language character mappings */
     "swedish": {
         "å": "aa", "Å": "Aa", "ä": "ae", "Ä": "Ae", "ö": "oe", "Ö": "Oe"
     }
 };
 
-// Pre-computed merged mappings from all languages (for performance)
+/**
+ * Pre-computed merged mappings from all languages for optimal performance
+ * 
+ * This object combines all language-specific mappings into a single lookup table.
+ * Used when language-specific processing isn't required or for fallback handling.
+ * 
+ * @constant {Record<string, string>}
+ * @global
+ * 
+ * @see {@link languageCharacterMappings} for language-specific versions
+ */
 export const allLanguageCharacterMappings: Record<string, string> = Object.assign(
     {},
     ...Object.values(languageCharacterMappings)
 );
 
+/**
+ * Preserves the original text case pattern when replacing characters
+ * 
+ * Applies the case pattern from the original string to the replacement string,
+ * handling various case styles including uppercase, lowercase, title case, and mixed case.
+ * Optimized for performance with fast paths for common cases.
+ * 
+ * @param {string} original - The original text containing the case pattern to preserve
+ * @param {string} restored - The replacement text to apply the case pattern to
+ * @returns {string} The restored text with case pattern from the original
+ * 
+ * @throws {TypeError} If parameters are not strings (handled gracefully)
+ */
 export function searchAndReplaceCaseSensitive(original: string, restored: string): string {
     if (!original || !restored) {
         return restored;
@@ -116,15 +180,19 @@ export function searchAndReplaceCaseSensitive(original: string, restored: string
     return result.join("");
 }
 
-
 /**
- * Validates a mapping object containing special character replacements.
- * Each key in the mapping must be a single character, and each value must be a string.
+ * Validates user-provided character mappings for diacritic replacement
  * 
- * @param mappings - An object containing key-value pairs where keys are single characters
- * and values are their corresponding replacement strings
+ * Ensures that custom character mappings follow the required format:
+ * - Each key must be a single character string
+ * - Each value must be a string (can be multiple characters)
+ * - The mappings object must be a valid object
  * 
- * @returns An empty string if validation passes, or a localized error message string if validation fails
+ * @param {Object} mappings - User-provided character mappings object to validate
+ * @param {string} mappings.key - Single character keys with string values
+ * @returns {string} Empty string if validation passes, localized error message if validation fails
+ * 
+ * @throws {Error} Does not throw errors, returns localized error messages instead
  */
 export function validateUserCharacterMappings(mappings: { [key: string]: string }): string {
     if (!mappings || typeof mappings !== "object") {
@@ -144,6 +212,18 @@ export function validateUserCharacterMappings(mappings: { [key: string]: string 
     return "";
 }
 
+/**
+ * Normalizes and deduplicates a string of ignored words into a clean array
+ * 
+ * Processes a newline-separated string of words into a normalized array:
+ * - Splits by newlines
+ * - Trims whitespace from each word
+ * - Removes empty lines
+ * - Deduplicates using a Set
+ * 
+ * @param {string} str - Input string containing newline-separated words
+ * @returns {string[]} Array of unique, trimmed words
+ */
 export function normalizeIgnoreWords(str: string): string[] {
     return Array.from(
         new Set(

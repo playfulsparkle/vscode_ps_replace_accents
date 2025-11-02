@@ -7,23 +7,60 @@ import {
 import DiacriticRestorer from "./restoreDiacritic";
 import DiacriticRemover from "./removeDiacritic";
 
-/** Activates the extension
- * @param {vscode.ExtensionContext} context - The extension context
+/**
+ * VS Code Extension: Playful Sparkle Replace Accents
+ * 
+ * A comprehensive diacritic management extension that provides:
+ * - Removal of accent marks from text and file names
+ * - Restoration of accent marks using language-specific dictionaries
+ * - Support for multiple languages and custom character mappings
+ * - File and folder name processing in Explorer context menu
+ * 
+ * @module extension
+ */
+
+/**
+ * Activates the PS Replace Accents extension
+ * 
+ * This function is called by VS Code when the extension is activated.
+ * It registers all commands, sets up event handlers, and initializes
+ * the extension functionality.
+ * 
+ * @param {vscode.ExtensionContext} context - The extension context provided by VS Code
+
+ * @see {@link https://code.visualstudio.com/api/references/vscode-api#ExtensionContext | ExtensionContext}
  */
 export function activate(context: vscode.ExtensionContext) {
+	/**
+	 * Command identifiers for the extension
+	 * @enum {string}
+	 */
 	enum CommandId {
+		/** Opens the GitHub issues page to report problems */
 		ReportIssue = "ps-replace-accents.reportIssue",
-		ReplaceAccents = "ps-replace-accents.removeDiacritics",
-		ReplaceAccentsFileOrFolder = "ps-replace-accents.removeDiacriticsFileOrFolder",
-		RestoreAccents = "ps-replace-accents.restoreDiacritics",
+		/** Removes diacritics from selected text or entire document */
+		ReplaceDiacriticts = "ps-replace-accents.removeDiacritics",
+		/** Removes diacritics from file or folder names in Explorer */
+		ReplaceDiacritictsFileOrFolder = "ps-replace-accents.removeDiacriticsFileOrFolder",
+		/** Restores diacritics to normalized text using dictionary */
+		RestoreDiacritics = "ps-replace-accents.restoreDiacritics",
 	}
 
 	/**
-	 * Processes text in the editor with a transformation function
-	 * @param editor The active text editor
-	 * @param transformFn The function to transform the text
-	 * @param expandToFullLines Whether to expand selections to full lines
-	 * @param options Optional parameters to pass to the transform function
+	 * Processes text in the active editor with a transformation function
+	 * 
+	 * Handles both text selections and entire document processing with
+	 * optional line expansion for better paragraph handling.
+	 * 
+	 * @param {function} transformFn - The transformation function to apply to text
+	 * @param {boolean} [expandToFullLines=false] - Whether to expand selections to full lines
+	 * @param {any} [options] - Optional parameters to pass to the transform function
+	 * @returns {Promise<number>} Processing status code: 
+	 *   -1: No active editor
+	 *    0: Processed selections
+	 *    1: Processed entire document
+	 * 
+	 * @throws {Error} May throw errors during editor edit operations
 	 */
 	const processTextInEditor = async (
 		transformFn: (text: string, options?: any) => string,
@@ -80,6 +117,18 @@ export function activate(context: vscode.ExtensionContext) {
 		return 0;
 	};
 
+	/**
+	 * Removes diacritics from file or folder names in the file system
+	 * 
+	 * Handles the renaming process with safety checks, overwrite confirmation,
+	 * and proper error handling. Used by the Explorer context menu command.
+	 * 
+	 * @param {vscode.Uri} uri - The URI of the file or folder to rename
+	 * @param {Object} userMappings - Custom character mappings for diacritic removal
+	 * @returns {Promise<void>}
+	 * 
+	 * @throws {Error} Shows error messages to user but doesn't throw to caller
+	 */
 	const removeDiacriticsFileOrFolder = async (uri: vscode.Uri, userMappings: {}) => {
 		const remover = new DiacriticRemover();
 
@@ -138,9 +187,27 @@ export function activate(context: vscode.ExtensionContext) {
 		}
 	};
 
+	// Command handlers for all extension commands
 	const commandHandlers = {
+		/**
+		 * Opens the GitHub issues page for reporting problems or suggestions
+		 * 
+		 * @returns {void}
+		 */
 		[CommandId.ReportIssue]: () => vscode.env.openExternal(vscode.Uri.parse("https://github.com/playfulsparkle/vscode_ps_replace_accents/issues")),
-		[CommandId.ReplaceAccents]: async () => {
+
+		/**
+		 * Removes diacritics from selected text or entire active document
+		 * 
+		 * Reads user configuration for custom character mappings and validates
+		 * them before processing. Shows appropriate success messages.
+		 * 
+		 * @returns {Promise<void>}
+
+		 * @see {@link validateUserCharacterMappings} for mapping validation
+		 * @see {@link DiacriticRemover} for the processing logic
+		 */
+		[CommandId.ReplaceDiacriticts]: async () => {
 			const userMappings: { [key: string]: string } = vscode.workspace
 				.getConfiguration("ps-replace-accents")
 				.get<{ [key: string]: string }>("userCharacterMapping", {});
@@ -170,7 +237,19 @@ export function activate(context: vscode.ExtensionContext) {
 				}
 			}
 		},
-		[CommandId.ReplaceAccentsFileOrFolder]: async (uri: vscode.Uri, selectedUris?: vscode.Uri[]) => {
+
+		/**
+		 * Removes diacritics from file or folder names in Explorer context menu
+		 * 
+		 * Supports multiple selection in Explorer. Validates user mappings
+		 * and processes each selected item individually.
+		 * 
+		 * @param {vscode.Uri} uri - The primary URI from context menu
+		 * @param {vscode.Uri[]} [selectedUris] - Array of all selected URIs for multi-select
+		 * 
+		 * @returns {Promise<void>}
+		 */
+		[CommandId.ReplaceDiacritictsFileOrFolder]: async (uri: vscode.Uri, selectedUris?: vscode.Uri[]) => {
 			if (!uri) {
 				return;
 			}
@@ -201,7 +280,17 @@ export function activate(context: vscode.ExtensionContext) {
 				);
 			}
 		},
-		[CommandId.RestoreAccents]: async () => {
+
+		/**
+		 * Restores diacritics to normalized text using language dictionaries
+		 * 
+		 * Reads configuration for dictionary language, suffix matching, and
+		 * ignored words. Initializes the diacritic restorer and processes
+		 * the active editor content.
+		 * 
+		 * @returns {Promise<void>}
+		 */
+		[CommandId.RestoreDiacritics]: async () => {
 			// Read suffix matching setting
 			const suffixMatching: boolean = vscode.workspace
 				.getConfiguration("ps-replace-accents")
@@ -238,5 +327,12 @@ export function activate(context: vscode.ExtensionContext) {
 	}
 }
 
-/** Deactivates the extension */
+/**
+ * Deactivates the PS Replace Accents extension
+ * 
+ * Called by VS Code when the extension is deactivated. Currently performs
+ * no cleanup as all resources are managed by VS Code's subscription system.
+ * 
+ * @returns {void}
+ */
 export function deactivate() { }

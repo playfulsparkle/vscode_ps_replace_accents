@@ -1,13 +1,39 @@
 const fs = require("fs");
 const path = require("path");
 
+/**
+ * Manages dictionary files for diacritic restoration, including creation,
+ * updating, normalization, and statistical analysis of word frequency data.
+ * 
+ * Handles text processing, word extraction, frequency counting, and dictionary
+ * file operations in TSV (Tab-Separated Values) format.
+ */
 class DictionaryManager {
+    /**
+     * Creates a new DictionaryManager instance
+     * 
+     * @param {string} [dictionaryPath="./dictionary"] - Base directory path for dictionary files
+     * @constructor
+     */
     constructor(dictionaryPath = "./dictionary") {
+        /**
+         * Base directory path where dictionary files are stored
+         * @type {string}
+         * @public
+         */
         this.dictionaryPath = dictionaryPath;
     }
 
     /**
-     * Process a text file, extract words, normalize them, count frequencies, and update dictionary
+     * Processes a text file to extract words, normalize them, count frequencies,
+     * and update an existing dictionary with new word data
+     * 
+     * @param {string} textFilePath - Path to the source text file to process
+     * @param {string} dictionaryName - Name of the target dictionary file
+     * 
+     * @returns {Promise<void>}
+     * 
+     * @throws {Error} If file reading, processing, or writing fails
      */
     async updateDictionaryFromFile(textFilePath, dictionaryName) {
         try {
@@ -21,7 +47,7 @@ class DictionaryManager {
 
             await this.writeDictionary(dictFilePath, updatedDict);
 
-            console.log(`✅ Updated dictionary with ${wordFrequencies.size} new words, total: ${updatedDict.size}`);
+            console.log(`Updated dictionary with ${wordFrequencies.size} new words, total: ${updatedDict.size}`);
 
         } catch (error) {
             console.error(error);
@@ -30,7 +56,16 @@ class DictionaryManager {
     }
 
     /**
-     * Normalize dictionary by merging entries with same normalized form
+     * Normalizes a dictionary by merging entries with the same normalized form
+     * 
+     * Combines duplicate entries that represent the same word in different
+     * diacritic forms, summing their frequencies for accurate representation
+     * 
+     * @param {string} dictionaryName - Name of the dictionary file to normalize
+     * 
+     * @returns {Promise<void>}
+     * 
+     * @throws {Error} If dictionary reading or writing fails
      */
     async normalizeDictionary(dictionaryName) {
         try {
@@ -49,7 +84,7 @@ class DictionaryManager {
 
             for (const entry of dictionary) {
                 const normalizedWord = this.normalizeWord(entry.word);
-                
+
                 if (normalizedDict.has(normalizedWord)) {
                     const existing = normalizedDict.get(normalizedWord);
                     existing.frequency += entry.frequency;
@@ -64,7 +99,7 @@ class DictionaryManager {
 
             await this.writeDictionary(dictFilePath, normalizedDict);
 
-            console.log(`✅ Normalized: ${originalSize} → ${normalizedDict.size} entries, merged ${mergeCount}`);
+            console.log(`Normalized: ${originalSize} to ${normalizedDict.size} entries, merged ${mergeCount}`);
 
         } catch (error) {
             throw new Error(`Failed to normalize dictionary: ${error.message}`);
@@ -72,8 +107,14 @@ class DictionaryManager {
     }
 
     /**
-     * Check if a word contains non-ASCII characters that need processing
-     * This includes accented letters (é, á), special characters (ø, æ, å, ß, ł), etc.
+     * Determines if a word contains non-ASCII characters that require diacritic processing
+     * 
+     * Identifies words containing accented letters and special characters
+     * that are outside the basic ASCII range (character code > 127)
+     * 
+     * @param {string} word - The word to check for non-ASCII characters
+     * 
+     * @returns {boolean} True if word contains non-ASCII characters, false otherwise
      */
     containsNonASCII(word) {
         if (word.length < 2) {
@@ -90,7 +131,14 @@ class DictionaryManager {
     }
 
     /**
-     * Resolve dictionary path - handle both relative and absolute paths
+     * Resolves the full file system path for a dictionary file
+     * 
+     * Handles both relative paths (within dictionary directory) and
+     * absolute paths (full file system paths)
+     * 
+     * @param {string} dictionaryName - Dictionary name or full path
+     * 
+     * @returns {string} Full resolved file system path
      */
     resolveDictionaryPath(dictionaryName) {
         if (path.isAbsolute(dictionaryName) || dictionaryName.includes(path.sep)) {
@@ -100,7 +148,14 @@ class DictionaryManager {
     }
 
     /**
-     * Extract words from text and count frequencies with normalization
+     * Extracts words from text and calculates their frequencies with normalization
+     * 
+     * Processes text to identify words containing non-ASCII characters,
+     * normalizes them by removing diacritics, and counts occurrences
+     * 
+     * @param {string} text - Input text to process
+     * 
+     * @returns {Map<string, {word: string, frequency: number}>} Map of normalized words to frequency data
      */
     extractWordFrequencies(text) {
         const frequencies = new Map();
@@ -127,7 +182,14 @@ class DictionaryManager {
     }
 
     /**
-     * Normalize word: remove accents and convert to lowercase
+     * Normalizes a word by removing diacritics and converting to lowercase
+     * 
+     * Uses Unicode normalization (NFD) to decompose characters and removes
+     * combining diacritical marks
+     * 
+     * @param {string} word - Word to normalize
+     * 
+     * @returns {string} Normalized word without diacritics in lowercase
      */
     normalizeWord(word) {
         return word.normalize("NFD")
@@ -136,7 +198,16 @@ class DictionaryManager {
     }
 
     /**
-     * Read dictionary file and parse entries
+     * Reads and parses a dictionary file into an array of word entries
+     * 
+     * Processes TSV (Tab-Separated Values) format files where each line
+     * contains: word[tab]frequency
+     * 
+     * @param {string} filePath - Path to the dictionary file
+     * 
+     * @returns {Promise<Array<{word: string, frequency: number}>>} Array of dictionary entries
+     * 
+     * @throws {Error} If file format is invalid (except for non-existent files)
      */
     async readDictionary(filePath) {
         const dictionary = [];
@@ -147,10 +218,16 @@ class DictionaryManager {
 
             for (const line of lines) {
                 const trimmed = line.trim();
-                if (!trimmed || trimmed.startsWith("#")) continue;
+
+                if (!trimmed || trimmed.startsWith("#")) {
+                    continue;
+                }
 
                 const parts = trimmed.split(/\t+/);
-                if (parts.length < 2) continue;
+
+                if (parts.length < 2) {
+                    continue;
+                }
 
                 const word = parts[0].trim().toLowerCase();
                 const frequency = parseInt(parts[1].trim(), 10);
@@ -169,15 +246,25 @@ class DictionaryManager {
     }
 
     /**
-     * Write dictionary to file in TSV format
+     * Writes dictionary data to a file in TSV format
+     * 
+     * Creates directories if needed, filters ASCII-only words, and sorts
+     * entries by frequency (descending) then alphabetically
+     * 
+     * @param {string} filePath - Output file path
+     * @param {Map|Array} dictionary - Dictionary data to write
+     * 
+     * @returns {Promise<number>} Number of entries written
+     * 
+     * @throws {Error} If file writing fails
      */
     async writeDictionary(filePath, dictionary) {
         const dir = path.dirname(filePath);
         await fs.promises.mkdir(dir, { recursive: true });
 
         // Convert Map to array if needed and filter entries
-        const entries = dictionary instanceof Map ? 
-            Array.from(dictionary.values()) : 
+        const entries = dictionary instanceof Map ?
+            Array.from(dictionary.values()) :
             dictionary;
 
         const filteredEntries = entries
@@ -196,7 +283,15 @@ class DictionaryManager {
     }
 
     /**
-     * Merge two dictionaries, summing frequencies for same words
+     * Merges two dictionaries, summing frequencies for identical normalized words
+     * 
+     * Combines existing dictionary data with new entries, properly
+     * aggregating frequencies when the same word appears in both sources
+     * 
+     * @param {Array} existing - Existing dictionary entries array
+     * @param {Map} newEntries - New word entries map from extraction
+     * 
+     * @returns {Map<string, {word: string, frequency: number}>} Merged dictionary data
      */
     mergeDictionaries(existing, newEntries) {
         const merged = new Map();
@@ -204,7 +299,7 @@ class DictionaryManager {
         // Convert existing array to Map keyed by normalized word
         for (const entry of existing) {
             const normalizedWord = this.normalizeWord(entry.word);
-            
+
             if (merged.has(normalizedWord)) {
                 // Sum frequencies if same normalized word exists
                 const existingEntry = merged.get(normalizedWord);
@@ -235,19 +330,34 @@ class DictionaryManager {
     }
 
     /**
-     * Utility function to read file
+     * Utility function to read file contents with Promise interface
+     * 
+     * @param {string} filePath - Path to file to read
+     * 
+     * @returns {Promise<string>} File contents as string
+     * 
+     * @throws {Error} If file reading fails
      */
     readFile(filePath) {
         return new Promise((resolve, reject) => {
             fs.readFile(filePath, "utf8", (err, data) => {
-                if (err) reject(err);
-                else resolve(data);
+                if (err) {
+                    reject(err);
+                } else {
+                    resolve(data);
+                }
             });
         });
     }
 
     /**
-     * Get dictionary statistics
+     * Retrieves statistical information about a dictionary
+     * 
+     * @param {string} dictionaryName - Name of the dictionary to analyze
+     * 
+     * @returns {Promise<{totalWords: number, totalFrequency: number}>} Dictionary statistics
+     * 
+     * @throws {Error} If dictionary cannot be read
      */
     async getDictionaryStats(dictionaryName) {
         const dictFilePath = this.resolveDictionaryPath(dictionaryName);
@@ -261,7 +371,17 @@ class DictionaryManager {
     }
 
     /**
-     * Create a new dictionary from text file
+     * Creates a new dictionary from a text file source
+     * 
+     * Extracts words with non-ASCII characters and their frequencies,
+     * then writes them to a new dictionary file
+     * 
+     * @param {string} textFilePath - Source text file path
+     * @param {string} dictionaryName - Name for the new dictionary
+     * 
+     * @returns {Promise<void>}
+     * 
+     * @throws {Error} If file processing or writing fails
      */
     async createDictionaryFromFile(textFilePath, dictionaryName) {
         const text = await this.readFile(textFilePath);
@@ -270,11 +390,38 @@ class DictionaryManager {
         const dictFilePath = this.resolveDictionaryPath(dictionaryName);
         const entriesWritten = await this.writeDictionary(dictFilePath, wordFrequencies);
 
-        console.log(`✅ Created dictionary with ${entriesWritten} words (non-ASCII only)`);
+        console.log(`Created dictionary with ${entriesWritten} words (non-ASCII only)`);
     }
 }
 
-// Command-line interface
+/**
+ * Command-line interface for DictionaryManager operations
+ * 
+ * Provides command-line access to dictionary management functionality
+ * for scripting and batch processing operations
+ * 
+ * @async
+ * 
+ * @returns {Promise<void>}
+ * 
+ * @example
+ * ```bash
+ * # Update existing dictionary
+ * node dictionary-manager.js update novel.txt french
+ * 
+ * # Create new dictionary
+ * node dictionary-manager.js create book.txt spanish
+ * 
+ * # Normalize dictionary
+ * node dictionary-manager.js normalize german
+ * 
+ * # Get statistics
+ * node dictionary-manager.js stats french
+ * 
+ * # Custom dictionary path
+ * node dictionary-manager.js update text.txt english --path /custom/path
+ * ```
+ */
 async function main() {
     const args = process.argv.slice(2);
     const manager = new DictionaryManager();
@@ -310,46 +457,57 @@ Options:
             case "update":
                 if (!param1 || !param2) {
                     console.error("Error: update command requires text file and dictionary name");
+
                     process.exit(1);
                 }
+
                 await manager.updateDictionaryFromFile(param1, param2);
                 break;
 
             case "normalize":
                 if (!param1) {
                     console.error("Error: normalize command requires dictionary name");
+
                     process.exit(1);
                 }
+
                 await manager.normalizeDictionary(param1);
                 break;
 
             case "stats":
                 if (!param1) {
                     console.error("Error: stats command requires dictionary name");
+
                     process.exit(1);
                 }
                 const stats = await manager.getDictionaryStats(param1);
+
                 console.log(`Dictionary: ${stats.totalWords} words, ${stats.totalFrequency} total occurrences`);
                 break;
 
             case "create":
                 if (!param1 || !param2) {
                     console.error("Error: create command requires text file and dictionary name");
+
                     process.exit(1);
                 }
+
                 await manager.createDictionaryFromFile(param1, param2);
                 break;
 
             default:
                 console.error("Unknown command. Use: update, normalize, clean, create, or stats");
+
                 process.exit(1);
         }
     } catch (error) {
         console.error("Error:", error.message);
+
         process.exit(1);
     }
 }
 
+// Execute main function if script is run directly
 if (require.main === module) {
     main();
 }
