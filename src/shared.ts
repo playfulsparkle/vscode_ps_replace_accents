@@ -3,63 +3,51 @@ export const diacriticRegex = /[\p{Mn}\u0300-\u036f]/gu;
 
 // Language-specific character mappings
 export const languageSpecificMappings: Record<string, Record<string, string>> = {
-    // Czech specific: Complete mapping for Czech diacritics
-    czech: {
-        "á": "a", "č": "c", "ď": "d", "é": "e", "ě": "e",
-        "í": "i", "ň": "n", "ó": "o", "ř": "r", "š": "s",
-        "ť": "t", "ú": "u", "ů": "u", "ý": "y", "ž": "z"
+    "czech": {
+        "á": "a", "Á": "A", "č": "c", "Č": "C", "ď": "d", "Ď": "D", "é": "e",
+        "É": "E", "ě": "e", "Ě": "E", "í": "i", "Í": "I", "ň": "n", "Ň": "N",
+        "ó": "o", "Ó": "O", "ř": "r", "Ř": "R", "š": "s", "Š": "S", "ť": "t",
+        "Ť": "T", "ú": "u", "Ú": "U", "ů": "u", "Ů": "U", "ý": "y", "Ý": "Y",
+        "ž": "z", "Ž": "Z"
     },
-
-    // Danish specific: Complete mapping for Danish/Norwegian
-    danish: {
-        "å": "a", "æ": "ae", "ø": "o", "é": "e", "ü": "u",
-        "á": "a", "è": "e", "ê": "e", "ó": "o", "ô": "o"
+    "danish": {
+        "æ": "ae", "Æ": "Ae", "ø": "oe", "Ø": "Oe", "å": "aa", "Å": "Aa"
     },
-
-    // French specific: Comprehensive French accent mapping
-    french: {
-        "à": "a", "â": "a", "æ": "ae", "ç": "c", "é": "e",
-        "è": "e", "ê": "e", "ë": "e", "î": "i", "ï": "i",
-        "ô": "o", "œ": "oe", "ù": "u", "û": "u", "ü": "u",
-        "ÿ": "y"
+    "french": {
+        "à": "a", "À": "A", "â": "a", "Â": "A", "ä": "a", "Ä": "A", "æ": "ae",
+        "Æ": "Ae", "ç": "c", "Ç": "C", "é": "e", "É": "E", "è": "e", "È": "E",
+        "ê": "e", "Ê": "E", "ë": "e", "Ë": "E", "ï": "i", "Ï": "I", "î": "i",
+        "Î": "I", "ô": "o", "Ô": "O", "ö": "o", "Ö": "O", "œ": "oe", "Œ": "Oe",
+        "ù": "u", "Ù": "U", "û": "u", "Û": "U", "ü": "u", "Ü": "U", "ÿ": "y",
+        "Ÿ": "Y"
     },
-
-    // German specific: Complete German umlaut and eszett mapping
-    german: {
-        "ä": "a", "ö": "o", "ü": "u", "ß": "s", "é": "e",
-        "à": "a", "è": "e", "ù": "u"
+    "german": {
+        "ä": "ae", "Ä": "Ae", "ö": "oe", "Ö": "Oe", "ü": "ue", "Ü": "Ue",
+        "ß": "ss", "ẞ": "SS"
     },
-
-    // Hungarian specific: Comprehensive Hungarian accent mapping
-    hungarian: {
-        "á": "a", "é": "e", "í": "i", "ó": "o", "ö": "o",
-        "ő": "o", "ú": "u", "ü": "u", "ű": "u"
+    "hungarian": {
+        "á": "a", "Á": "A", "é": "e", "É": "E", "í": "i", "Í": "I", "ó": "o",
+        "Ó": "O", "ö": "o", "Ö": "O", "ő": "o", "Ő": "O", "ú": "u", "Ú": "U",
+        "ü": "u", "Ü": "U", "ű": "u", "Ű": "U"
     },
-
-    // Polish specific: Complete Polish diacritic mapping
-    polish: {
-        "ą": "a", "ć": "c", "ę": "e", "ł": "l", "ń": "n",
-        "ó": "o", "ś": "s", "ź": "z"
+    "polish": {
+        "ą": "a", "Ą": "A", "ć": "c", "Ć": "C", "ę": "e", "Ę": "E", "ł": "l",
+        "Ł": "L", "ń": "n", "Ń": "N", "ó": "o", "Ó": "O", "ś": "s", "Ś": "S",
+        "ź": "z", "Ź": "Z", "ż": "z", "Ż": "Z"
     },
-
-    // Slovak specific: Comprehensive Slovak diacritic mapping
-    slovak: {
-        "á": "a", "ä": "a", "č": "c", "ď": "d", "é": "e",
-        "í": "i", "ľ": "l", "ĺ": "l", "ň": "n", "ó": "o",
-        "ô": "o", "ŕ": "r", "š": "s", "ť": "t", "ú": "u",
-        "ý": "y", "ž": "z"
+    "slovak": {
+        "á": "a", "Á": "A", "ä": "a", "Ä": "A", "č": "c", "Č": "C", "ď": "d",
+        "Ď": "D", "é": "e", "É": "E", "í": "i", "Í": "I", "ľ": "l", "Ľ": "L",
+        "ĺ": "l", "Ĺ": "L", "ň": "n", "Ň": "N", "ó": "o", "Ó": "O", "ô": "o",
+        "Ô": "O", "ŕ": "r", "Ŕ": "R", "š": "s", "Š": "S", "ť": "t", "Ť": "T",
+        "ú": "u", "Ú": "U", "ý": "y", "Ý": "Y", "ž": "z", "Ž": "Z"
     },
-
-    // Spanish specific: Complete Spanish accent mapping
-    spanish: {
-        "á": "a", "é": "e", "í": "i", "ó": "o", "ú": "u",
-        "ü": "u", "ñ": "n"
+    "spanish": {
+        "á": "a", "Á": "A", "é": "e", "É": "E", "í": "i", "Í": "I", "ó": "o",
+        "Ó": "O", "ú": "u", "Ú": "U", "ü": "u", "Ü": "U", "ñ": "n", "Ñ": "N"
     },
-
-    // Swedish specific: Complete Swedish character mapping
-    swedish: {
-        "å": "a", "ä": "a", "ö": "o", "é": "e", "ü": "u",
-        "à": "a", "è": "e", "ô": "o"
+    "swedish": {
+        "å": "aa", "Å": "Aa", "ä": "ae", "Ä": "Ae", "ö": "oe", "Ö": "Oe"
     }
 };
 

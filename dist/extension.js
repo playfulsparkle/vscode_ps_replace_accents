@@ -43,130 +43,193 @@ var vscode = __toESM(require("vscode"));
 // src/shared.ts
 var diacriticRegex = /[\p{Mn}\u0300-\u036f]/gu;
 var languageSpecificMappings = {
-  // Czech specific: Complete mapping for Czech diacritics
-  czech: {
+  "czech": {
     "\xE1": "a",
+    "\xC1": "A",
     "\u010D": "c",
+    "\u010C": "C",
     "\u010F": "d",
+    "\u010E": "D",
     "\xE9": "e",
+    "\xC9": "E",
     "\u011B": "e",
+    "\u011A": "E",
     "\xED": "i",
+    "\xCD": "I",
     "\u0148": "n",
+    "\u0147": "N",
     "\xF3": "o",
+    "\xD3": "O",
     "\u0159": "r",
+    "\u0158": "R",
     "\u0161": "s",
+    "\u0160": "S",
     "\u0165": "t",
+    "\u0164": "T",
     "\xFA": "u",
+    "\xDA": "U",
     "\u016F": "u",
+    "\u016E": "U",
     "\xFD": "y",
-    "\u017E": "z"
+    "\xDD": "Y",
+    "\u017E": "z",
+    "\u017D": "Z"
   },
-  // Danish specific: Complete mapping for Danish/Norwegian
-  danish: {
-    "\xE5": "a",
+  "danish": {
     "\xE6": "ae",
-    "\xF8": "o",
-    "\xE9": "e",
-    "\xFC": "u",
-    "\xE1": "a",
-    "\xE8": "e",
-    "\xEA": "e",
-    "\xF3": "o",
-    "\xF4": "o"
+    "\xC6": "Ae",
+    "\xF8": "oe",
+    "\xD8": "Oe",
+    "\xE5": "aa",
+    "\xC5": "Aa"
   },
-  // French specific: Comprehensive French accent mapping
-  french: {
+  "french": {
     "\xE0": "a",
+    "\xC0": "A",
     "\xE2": "a",
+    "\xC2": "A",
+    "\xE4": "a",
+    "\xC4": "A",
     "\xE6": "ae",
+    "\xC6": "Ae",
     "\xE7": "c",
+    "\xC7": "C",
     "\xE9": "e",
+    "\xC9": "E",
     "\xE8": "e",
+    "\xC8": "E",
     "\xEA": "e",
+    "\xCA": "E",
     "\xEB": "e",
-    "\xEE": "i",
+    "\xCB": "E",
     "\xEF": "i",
+    "\xCF": "I",
+    "\xEE": "i",
+    "\xCE": "I",
     "\xF4": "o",
+    "\xD4": "O",
+    "\xF6": "o",
+    "\xD6": "O",
     "\u0153": "oe",
+    "\u0152": "Oe",
     "\xF9": "u",
+    "\xD9": "U",
     "\xFB": "u",
+    "\xDB": "U",
     "\xFC": "u",
-    "\xFF": "y"
+    "\xDC": "U",
+    "\xFF": "y",
+    "\u0178": "Y"
   },
-  // German specific: Complete German umlaut and eszett mapping
-  german: {
-    "\xE4": "a",
-    "\xF6": "o",
-    "\xFC": "u",
-    "\xDF": "s",
-    "\xE9": "e",
-    "\xE0": "a",
-    "\xE8": "e",
-    "\xF9": "u"
+  "german": {
+    "\xE4": "ae",
+    "\xC4": "Ae",
+    "\xF6": "oe",
+    "\xD6": "Oe",
+    "\xFC": "ue",
+    "\xDC": "Ue",
+    "\xDF": "ss",
+    "\u1E9E": "SS"
   },
-  // Hungarian specific: Comprehensive Hungarian accent mapping
-  hungarian: {
+  "hungarian": {
     "\xE1": "a",
+    "\xC1": "A",
     "\xE9": "e",
+    "\xC9": "E",
     "\xED": "i",
+    "\xCD": "I",
     "\xF3": "o",
+    "\xD3": "O",
     "\xF6": "o",
+    "\xD6": "O",
     "\u0151": "o",
+    "\u0150": "O",
     "\xFA": "u",
+    "\xDA": "U",
     "\xFC": "u",
-    "\u0171": "u"
+    "\xDC": "U",
+    "\u0171": "u",
+    "\u0170": "U"
   },
-  // Polish specific: Complete Polish diacritic mapping
-  polish: {
+  "polish": {
     "\u0105": "a",
+    "\u0104": "A",
     "\u0107": "c",
+    "\u0106": "C",
     "\u0119": "e",
+    "\u0118": "E",
     "\u0142": "l",
+    "\u0141": "L",
     "\u0144": "n",
+    "\u0143": "N",
     "\xF3": "o",
+    "\xD3": "O",
     "\u015B": "s",
-    "\u017A": "z"
+    "\u015A": "S",
+    "\u017A": "z",
+    "\u0179": "Z",
+    "\u017C": "z",
+    "\u017B": "Z"
   },
-  // Slovak specific: Comprehensive Slovak diacritic mapping
-  slovak: {
+  "slovak": {
     "\xE1": "a",
+    "\xC1": "A",
     "\xE4": "a",
+    "\xC4": "A",
     "\u010D": "c",
+    "\u010C": "C",
     "\u010F": "d",
+    "\u010E": "D",
     "\xE9": "e",
+    "\xC9": "E",
     "\xED": "i",
+    "\xCD": "I",
     "\u013E": "l",
+    "\u013D": "L",
     "\u013A": "l",
+    "\u0139": "L",
     "\u0148": "n",
+    "\u0147": "N",
     "\xF3": "o",
+    "\xD3": "O",
     "\xF4": "o",
+    "\xD4": "O",
     "\u0155": "r",
+    "\u0154": "R",
     "\u0161": "s",
+    "\u0160": "S",
     "\u0165": "t",
+    "\u0164": "T",
     "\xFA": "u",
+    "\xDA": "U",
     "\xFD": "y",
-    "\u017E": "z"
+    "\xDD": "Y",
+    "\u017E": "z",
+    "\u017D": "Z"
   },
-  // Spanish specific: Complete Spanish accent mapping
-  spanish: {
+  "spanish": {
     "\xE1": "a",
+    "\xC1": "A",
     "\xE9": "e",
+    "\xC9": "E",
     "\xED": "i",
+    "\xCD": "I",
     "\xF3": "o",
+    "\xD3": "O",
     "\xFA": "u",
+    "\xDA": "U",
     "\xFC": "u",
-    "\xF1": "n"
+    "\xDC": "U",
+    "\xF1": "n",
+    "\xD1": "N"
   },
-  // Swedish specific: Complete Swedish character mapping
-  swedish: {
-    "\xE5": "a",
-    "\xE4": "a",
-    "\xF6": "o",
-    "\xE9": "e",
-    "\xFC": "u",
-    "\xE0": "a",
-    "\xE8": "e",
-    "\xF4": "o"
+  "swedish": {
+    "\xE5": "aa",
+    "\xC5": "Aa",
+    "\xE4": "ae",
+    "\xC4": "Ae",
+    "\xF6": "oe",
+    "\xD6": "Oe"
   }
 };
 var mergedLanguageMappings = Object.assign(
