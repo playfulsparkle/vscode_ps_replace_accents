@@ -270,20 +270,19 @@ class DictionaryManager {
                 return;
             }
 
+            const originalSize = dictionary.size;
             const cleanedDict = new Map();
-            let removedCount = 0;
 
             for (const [word, entry] of dictionary) {
                 if (this.needsRestoration(word)) {
                     cleanedDict.set(word, entry);
-                } else {
-                    removedCount++;
                 }
             }
 
             await this.writeDictionary(dictFilePath, cleanedDict);
 
-            console.log(`✅ Cleaned dictionary: ${dictionary.size} → ${cleanedDict.size} entries, removed ${removedCount}`);
+            const removedCount = originalSize - cleanedDict.size;
+            console.log(`✅ Cleaned dictionary: ${originalSize} → ${cleanedDict.size} entries, removed ${removedCount}`);
 
         } catch (error) {
             throw new Error(`Failed to clean dictionary: ${error.message}`);
