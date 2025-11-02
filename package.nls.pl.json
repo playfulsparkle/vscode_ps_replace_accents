@@ -1,14 +1,14 @@
 {
     "extension.config.title": "Replace Accents",
-    "extension.config.replaceAccents.title": "Replace Accents",
-    "extension.config.accentRemoveMapping.desc": "Zdefiniuj własne mapowania znaków do usuwania znaków diakrytycznych. Użyj tego, aby określić, jak mają być konwertowane znaki specjalne (np. niemieckie „ß” na „ss”, ligatury „æ” na „ae”). Stosowane po normalizacji.",
-    "extension.config.accentDictionary.desc": "Wybierz słownik znaków diakrytycznych do przywracania diakrytyków.",
-    "extension.config.accentRestoreSuffixMatching.desc": "Spróbuj przywracać diakrytyki w końcówkach wyrazów (np. „edeny” na „edényemet”). Może to poprawić wyniki dla form odmienionych, ale może też powodować nieprawidłowe dopasowania. Pozostaw wyłączone, jeśli nie jest potrzebne.",
-    "extension.config.accentIgnoredWords.desc": "Lista słów wyłączonych z przywracania diakrytyków. Te słowa pozostaną niezmienione, nawet jeśli występują w słowniku.",
+    "extension.config.removeDiacritics.title": "Replace Accents",
+    "extension.config.userCharacterMapping.desc": "Zdefiniuj własne mapowania znaków do usuwania znaków diakrytycznych. Użyj tego, aby określić, jak mają być konwertowane znaki specjalne (np. niemieckie „ß” na „ss”, ligatury „æ” na „ae”). Stosowane po normalizacji.",
+    "extension.config.diacriticDictionary.desc": "Wybierz słownik znaków diakrytycznych do przywracania diakrytyków.",
+    "extension.config.diacriticRestoreSuffixMatching.desc": "Spróbuj przywracać diakrytyki w końcówkach wyrazów (np. „edeny” na „edényemet”). Może to poprawić wyniki dla form odmienionych, ale może też powodować nieprawidłowe dopasowania. Pozostaw wyłączone, jeśli nie jest potrzebne.",
+    "extension.config.diacriticIgnoredWords.desc": "Lista słów wyłączonych z przywracania diakrytyków. Te słowa pozostaną niezmienione, nawet jeśli występują w słowniku.",
     "extension.category.utilities.title": "Narzędzia",
     "extension.category.help.title": "Pomoc",
     "extension.command.reportIssue.title": "Zgłoś problem",
-    "extension.command.replaceAccents.title": "Usuń znaki diakrytyczne (áéő - aeo)",
-    "extension.command.replaceAccentsFileOrFolder.title": "Usuń znaki diakrytyczne",
-    "extension.command.restoreAccents.title": "Przywróć znaki diakrytyczne"
+    "extension.command.removeDiacritics.title": "Usuń znaki diakrytyczne (áéő - aeo)",
+    "extension.command.removeDiacriticsFileOrFolder.title": "Usuń znaki diakrytyczne",
+    "extension.command.restoreDiacritics.title": "Przywróć znaki diakrytyczne"
 }

@@ -1,14 +1,14 @@
 {
     "extension.config.title": "Replace Accents",
-    "extension.config.replaceAccents.title": "Replace Accents",
-    "extension.config.accentRemoveMapping.desc": "定義用於移除變音符號的自訂字元對應。可用來指定特殊字元的轉換方式, 例如將德文「ß」轉成「ss」, 將合字「æ」轉成「ae」。會在正規化之後套用。",
-    "extension.config.accentDictionary.desc": "選擇要用來還原變音符號的字典。",
-    "extension.config.accentRestoreSuffixMatching.desc": "嘗試在字尾還原變音符號, 例如將「edeny」還原為「edényemet」。對曲折變化的字形可能有幫助, 但也可能造成錯誤比對。除非需要, 請維持停用。",
-    "extension.config.accentIgnoredWords.desc": "要從變音符號還原中排除的字詞清單。這些字詞即使存在於字典中, 也會保持不變。",
+    "extension.config.removeDiacritics.title": "Replace Accents",
+    "extension.config.userCharacterMapping.desc": "定義用於移除變音符號的自訂字元對應。可用來指定特殊字元的轉換方式, 例如將德文「ß」轉成「ss」, 將合字「æ」轉成「ae」。會在正規化之後套用。",
+    "extension.config.diacriticDictionary.desc": "選擇要用來還原變音符號的字典。",
+    "extension.config.diacriticRestoreSuffixMatching.desc": "嘗試在字尾還原變音符號, 例如將「edeny」還原為「edényemet」。對曲折變化的字形可能有幫助, 但也可能造成錯誤比對。除非需要, 請維持停用。",
+    "extension.config.diacriticIgnoredWords.desc": "要從變音符號還原中排除的字詞清單。這些字詞即使存在於字典中, 也會保持不變。",
     "extension.category.utilities.title": "工具",
     "extension.category.help.title": "說明",
     "extension.command.reportIssue.title": "回報問題",
-    "extension.command.replaceAccents.title": "移除變音符號 (áéő - aeo)",
-    "extension.command.replaceAccentsFileOrFolder.title": "移除變音符號",
-    "extension.command.restoreAccents.title": "還原變音符號"
+    "extension.command.removeDiacritics.title": "移除變音符號 (áéő - aeo)",
+    "extension.command.removeDiacriticsFileOrFolder.title": "移除變音符號",
+    "extension.command.restoreDiacritics.title": "還原變音符號"
 }

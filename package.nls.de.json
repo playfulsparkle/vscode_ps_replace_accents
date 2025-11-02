@@ -1,14 +1,14 @@
 {
     "extension.config.title": "Replace Accents",
-    "extension.config.replaceAccents.title": "Replace Accents",
-    "extension.config.accentRemoveMapping.desc": "Definieren Sie eigene Zeichenabbildungen zum Entfernen von diakritischen Zeichen. Verwenden Sie dies, um festzulegen, wie Sonderzeichen konvertiert werden sollen (z. B. deutsches „ß“ zu „ss“, Ligaturen „æ“ zu „ae“). Wird nach der Normalisierung angewendet.",
-    "extension.config.accentDictionary.desc": "Wählen Sie ein Diakritika-Wörterbuch zur Wiederherstellung von Diakritika.",
-    "extension.config.accentRestoreSuffixMatching.desc": "Versuchen Sie, Diakritika in Wortendungen wiederherzustellen (z. B. „edeny“ zu „edényemet“). Dies kann die Ergebnisse bei flektierten Formen verbessern, kann jedoch auch zu falschen Treffern führen. Deaktiviert lassen, sofern nicht erforderlich.",
-    "extension.config.accentIgnoredWords.desc": "Liste von Wörtern, die bei der Wiederherstellung von Diakritika ignoriert werden sollen. Diese Wörter bleiben unverändert, auch wenn sie im Wörterbuch enthalten sind.",
+    "extension.config.removeDiacritics.title": "Replace Accents",
+    "extension.config.userCharacterMapping.desc": "Definieren Sie eigene Zeichenabbildungen zum Entfernen von diakritischen Zeichen. Verwenden Sie dies, um festzulegen, wie Sonderzeichen konvertiert werden sollen (z. B. deutsches „ß“ zu „ss“, Ligaturen „æ“ zu „ae“). Wird nach der Normalisierung angewendet.",
+    "extension.config.diacriticDictionary.desc": "Wählen Sie ein Diakritika-Wörterbuch zur Wiederherstellung von Diakritika.",
+    "extension.config.diacriticRestoreSuffixMatching.desc": "Versuchen Sie, Diakritika in Wortendungen wiederherzustellen (z. B. „edeny“ zu „edényemet“). Dies kann die Ergebnisse bei flektierten Formen verbessern, kann jedoch auch zu falschen Treffern führen. Deaktiviert lassen, sofern nicht erforderlich.",
+    "extension.config.diacriticIgnoredWords.desc": "Liste von Wörtern, die bei der Wiederherstellung von Diakritika ignoriert werden sollen. Diese Wörter bleiben unverändert, auch wenn sie im Wörterbuch enthalten sind.",
     "extension.category.utilities.title": "Dienstprogramme",
     "extension.category.help.title": "Hilfe",
     "extension.command.reportIssue.title": "Problem melden",
-    "extension.command.replaceAccents.title": "Diakritika entfernen (áéő - aeo)",
-    "extension.command.replaceAccentsFileOrFolder.title": "Diakritika entfernen",
-    "extension.command.restoreAccents.title": "Diakritika wiederherstellen"
+    "extension.command.removeDiacritics.title": "Diakritika entfernen (áéő - aeo)",
+    "extension.command.removeDiacriticsFileOrFolder.title": "Diakritika entfernen",
+    "extension.command.restoreDiacritics.title": "Diakritika wiederherstellen"
 }

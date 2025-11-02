@@ -68,17 +68,17 @@
   "contributes": {
     "commands": [
       {
-        "command": "ps-replace-accents.replaceAccentsFileOrFolder",
-        "title": "%extension.command.replaceAccentsFileOrFolder.title%"
+        "command": "ps-replace-accents.removeDiacriticsFileOrFolder",
+        "title": "%extension.command.removeDiacriticsFileOrFolder.title%"
       },
       {
-        "command": "ps-replace-accents.replaceAccents",
-        "title": "%extension.command.replaceAccents.title%",
+        "command": "ps-replace-accents.removeDiacritics",
+        "title": "%extension.command.removeDiacritics.title%",
         "category": "%extension.category.utilities.title%"
       },
       {
-        "command": "ps-replace-accents.restoreAccents",
-        "title": "%extension.command.restoreAccents.title%",
+        "command": "ps-replace-accents.restoreDiacritics",
+        "title": "%extension.command.restoreDiacritics.title%",
         "category": "%extension.category.utilities.title%"
       },
       {
@@ -90,12 +90,12 @@
     "menus": {
       "explorer/context": [
         {
-          "command": "ps-replace-accents.replaceAccentsFileOrFolder",
+          "command": "ps-replace-accents.removeDiacriticsFileOrFolder",
           "group": "7_modification",
           "when": "explorerResourceIsFolder == false"
         },
         {
-          "command": "ps-replace-accents.replaceAccentsFileOrFolder",
+          "command": "ps-replace-accents.removeDiacriticsFileOrFolder",
           "group": "7_modification",
           "when": "explorerResourceIsFolder == true"
         }
@@ -107,20 +107,20 @@
       ]
     },
     "configuration": {
-      "title": "%extension.config.replaceAccents.title%",
+      "title": "%extension.config.removeDiacritics.title%",
       "properties": {
-        "ps-replace-accents.accentRemoveMapping": {
+        "ps-replace-accents.userCharacterMapping": {
           "type": "object",
           "default": {},
-          "description": "%extension.config.accentRemoveMapping.desc%",
+          "description": "%extension.config.userCharacterMapping.desc%",
           "additionalProperties": {
             "type": "string"
           }
         },
-        "ps-replace-accents.accentDictionary": {
+        "ps-replace-accents.diacriticDictionary": {
           "type": "string",
           "default": "hungarian",
-          "description": "%extension.config.accentDictionary.desc%",
+          "description": "%extension.config.diacriticDictionary.desc%",
           "enum": [
             "hungarian",
             "slovak",
@@ -133,22 +133,22 @@
             "swedish"
           ]
         },
-        "ps-replace-accents.accentRestoreSuffixMatching": {
+        "ps-replace-accents.diacriticRestoreSuffixMatching": {
           "type": "boolean",
           "default": false,
-          "description": "%extension.config.accentRestoreSuffixMatching.desc%"
+          "description": "%extension.config.diacriticRestoreSuffixMatching.desc%"
         },
-        "ps-replace-accents.accentIgnoredWords": {
+        "ps-replace-accents.diacriticIgnoredWords": {
           "type": "string",
           "default": "",
-          "description": "%extension.config.accentIgnoredWords.desc%",
+          "description": "%extension.config.diacriticIgnoredWords.desc%",
           "editPresentation": "multilineText"
         }
       }
     },
     "keybindings": [
       {
-        "command": "ps-replace-accents.replaceAccents",
+        "command": "ps-replace-accents.removeDiacritics",
         "key": "ctrl+alt+r",
         "when": "editorTextFocus",
         "mac": "cmd+alt+r"

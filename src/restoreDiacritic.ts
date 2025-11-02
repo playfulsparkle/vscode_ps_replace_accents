@@ -1,13 +1,17 @@
 import * as fs from "fs";
 import * as path from "path";
-import { languageSpecificMappings, preserveOriginalCase, diacriticRegex } from "./shared";
+import {
+    languageCharacterMappings,
+    searchAndReplaceCaseSensitive,
+    diacriticRegex
+} from "./shared";
 
 interface DictionaryEntry {
     word: string;
     frequency: number;
 }
 
-class AccentRestorer {
+class DiacriticRestorer {
     private dictionary: Map<string, DictionaryEntry[]> = new Map();
     private ignoredWords: Set<string>;
     private currentLanguage: string | undefined;
@@ -28,7 +32,7 @@ class AccentRestorer {
         this.enableSuffixMatching = enableSuffixMatching;
         // Pre-normalize ignored words once during construction
         this.ignoredWords = new Set(
-            ignoredWords.map(word => this.removeAccents(word.toLowerCase()))
+            ignoredWords.map(word => this.removeDiacritics(word.toLowerCase()))
         );
         this.dictionaryBasePath = path.join(__dirname, "dictionary");
     }
@@ -104,7 +108,7 @@ class AccentRestorer {
                     continue;
                 }
 
-                const baseForm = this.removeAccents(word.toLowerCase());
+                const baseForm = this.removeDiacritics(word.toLowerCase());
 
                 // Get or create entries array
                 let entries = this.dictionary.get(baseForm);
@@ -135,27 +139,24 @@ class AccentRestorer {
                 continue;
             }
         }
-        // // Log dictionary entries
-        // for (const [key, entries] of this.dictionary.entries()) {
-        //     console.log(`Key: ${key}, Entries:`, entries);
-        // }
+
         console.log(`Loaded ${lineCount} words for language ${this.currentLanguage} (${errorCount} errors)`);
     }
 
-    restoreAccents(text: string): string {
+    restoreDiacritics(text: string): string {
         if (!this.isReady) {
             throw new Error("Accent restorer not initialized. Call initialize() first.");
         }
 
         // Cache the normalized ignored words check
-        return text.replace(AccentRestorer.WORD_REGEX, (word) => {
+        return text.replace(DiacriticRestorer.WORD_REGEX, (word) => {
             // Check cache first
             const cached = this.restorationCache.get(word);
             if (cached !== undefined) {
                 return cached;
             }
 
-            const baseForm = this.removeAccents(word.toLowerCase());
+            const baseForm = this.removeDiacritics(word.toLowerCase());
 
             if (this.ignoredWords.has(baseForm)) {
                 this.addToCache(word, word);
@@ -183,7 +184,7 @@ class AccentRestorer {
 
     private findBestMatch(word: string, baseForm?: string): string | null {
         // Accept pre-computed baseForm to avoid redundant normalization
-        const normalizedBase = baseForm || this.removeAccents(word.toLowerCase());
+        const normalizedBase = baseForm || this.removeDiacritics(word.toLowerCase());
         const candidates = this.dictionary.get(normalizedBase);
 
         if (!candidates || candidates.length === 0) {
@@ -196,7 +197,7 @@ class AccentRestorer {
 
         // Return the most frequent candidate (already sorted in buildDictionary)
         const bestMatch = candidates[0].word;
-        return preserveOriginalCase(word, bestMatch);
+        return searchAndReplaceCaseSensitive(word, bestMatch);
     }
 
     private findSuffixMatch(word: string, normalizedBase: string): string | null {
@@ -219,20 +220,20 @@ class AccentRestorer {
                 const suffix = wordLower.substring(stemLen);
                 const reconstructed = bestStem + suffix;
 
-                return preserveOriginalCase(word, reconstructed);
+                return searchAndReplaceCaseSensitive(word, reconstructed);
             }
         }
 
         return null;
     }
 
-    private removeAccents(text: string): string {
+    private removeDiacritics(text: string): string {
         if (!text || typeof text !== "string") {
             return text;
         }
 
         // Get current language mappings or use empty object
-        const allMappings = this.currentLanguage ? languageSpecificMappings[this.currentLanguage] || {} : {};
+        const allMappings = this.currentLanguage ? languageCharacterMappings[this.currentLanguage] || {} : {};
 
         // Single normalization pass with NFKD for maximum decomposition
         // Remove diacritics and combining marks using Unicode property
@@ -287,4 +288,4 @@ class AccentRestorer {
     }
 }
 
-export default AccentRestorer;
+export default DiacriticRestorer;

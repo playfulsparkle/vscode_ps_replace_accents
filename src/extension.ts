@@ -1,7 +1,11 @@
 import * as vscode from "vscode";
 import * as path from "path";
-import * as utils from "./utils";
-import AccentRestorer from "./accent";
+import {
+	validateUserCharacterMappings,
+	normalizeIgnoreWords
+} from "./shared";
+import DiacriticRestorer from "./restoreDiacritic";
+import DiacriticRemover from "./removeDiacritic";
 
 /** Activates the extension
  * @param {vscode.ExtensionContext} context - The extension context
@@ -9,9 +13,9 @@ import AccentRestorer from "./accent";
 export function activate(context: vscode.ExtensionContext) {
 	enum CommandId {
 		ReportIssue = "ps-replace-accents.reportIssue",
-		ReplaceAccents = "ps-replace-accents.replaceAccents",
-		ReplaceAccentsFileOrFolder = "ps-replace-accents.replaceAccentsFileOrFolder",
-		RestoreAccents = "ps-replace-accents.restoreAccents",
+		ReplaceAccents = "ps-replace-accents.removeDiacritics",
+		ReplaceAccentsFileOrFolder = "ps-replace-accents.removeDiacriticsFileOrFolder",
+		RestoreAccents = "ps-replace-accents.restoreDiacritics",
 	}
 
 	/**
@@ -76,12 +80,14 @@ export function activate(context: vscode.ExtensionContext) {
 		return 0;
 	};
 
-	const replaceAccentsFileOrFolder = async (uri: vscode.Uri, userMappings: {}) => {
+	const removeDiacriticsFileOrFolder = async (uri: vscode.Uri, userMappings: {}) => {
+		const remover = new DiacriticRemover();
+
 		const oldPath = uri.fsPath;
 
 		const itemName = path.basename(oldPath);
 		const parentPath = path.dirname(oldPath);
-		const itemNameWithoutAccent = utils.replaceAccents(itemName, userMappings);
+		const itemNameWithoutAccent = remover.removeDiacritics(itemName, userMappings);
 
 		if (itemNameWithoutAccent.trim().length === 0) {
 			return;
@@ -137,17 +143,19 @@ export function activate(context: vscode.ExtensionContext) {
 		[CommandId.ReplaceAccents]: async () => {
 			const userMappings: { [key: string]: string } = vscode.workspace
 				.getConfiguration("ps-replace-accents")
-				.get<{ [key: string]: string }>("accentRemoveMapping", {});
+				.get<{ [key: string]: string }>("userCharacterMapping", {});
 
 
-			const userMappingsErrors = utils.validateAccentRemoveMapping(userMappings);
+			const mappingsError = validateUserCharacterMappings(userMappings);
 
-			if (userMappingsErrors) {
-				vscode.window.showErrorMessage(userMappingsErrors);
+			if (mappingsError) {
+				vscode.window.showErrorMessage(mappingsError);
 				return;
 			}
 
-			const allSelectionsEmpty = await processTextInEditor(text => utils.replaceAccents(text, userMappings));
+			const remover = new DiacriticRemover();
+
+			const allSelectionsEmpty = await processTextInEditor(text => remover.removeDiacritics(text, userMappings));
 
 			let modified = false;
 
@@ -169,13 +177,13 @@ export function activate(context: vscode.ExtensionContext) {
 
 			const userMappings: { [key: string]: string } = vscode.workspace
 				.getConfiguration("ps-replace-accents")
-				.get<{ [key: string]: string }>("accentRemoveMapping", {});
+				.get<{ [key: string]: string }>("userCharacterMapping", {});
 
 
-			const userMappingsErrors = utils.validateAccentRemoveMapping(userMappings);
+			const mappingsError = validateUserCharacterMappings(userMappings);
 
-			if (userMappingsErrors) {
-				vscode.window.showErrorMessage(userMappingsErrors);
+			if (mappingsError) {
+				vscode.window.showErrorMessage(mappingsError);
 
 				return;
 			}
@@ -184,7 +192,7 @@ export function activate(context: vscode.ExtensionContext) {
 			const urisToRename = selectedUris && selectedUris.length > 0 ? selectedUris : [uri];
 
 			for (const currentUri of urisToRename) {
-				await replaceAccentsFileOrFolder(currentUri, userMappings);
+				await removeDiacriticsFileOrFolder(currentUri, userMappings);
 			}
 
 			if (urisToRename.length > 1) {
@@ -197,26 +205,26 @@ export function activate(context: vscode.ExtensionContext) {
 			// Read suffix matching setting
 			const suffixMatching: boolean = vscode.workspace
 				.getConfiguration("ps-replace-accents")
-				.get<boolean>("accentRestoreSuffixMatching", false);
+				.get<boolean>("diacriticRestoreSuffixMatching", false);
 
 			// Read ignored words setting
 			const ignoredWordsRaw: string = vscode.workspace
 				.getConfiguration("ps-replace-accents")
-				.get<string>("accentIgnoredWords", "");
+				.get<string>("diacriticIgnoredWords", "");
 
 			// Parse and filter unique ignored words
-			const ignoredWords: string[] = utils.normalizeIgnoreWords(ignoredWordsRaw);
+			const ignoredWords: string[] = normalizeIgnoreWords(ignoredWordsRaw);
 
 			// Read dictionary setting
-			const accentDictionary: string = vscode.workspace
+			const diacriticDictionary: string = vscode.workspace
 				.getConfiguration("ps-replace-accents")
-				.get<string>("accentDictionary", "hungarian");
+				.get<string>("diacriticDictionary", "hungarian");
 
-			const restorer = new AccentRestorer(accentDictionary, ignoredWords, suffixMatching);
+			const restorer = new DiacriticRestorer(diacriticDictionary, ignoredWords, suffixMatching);
 
 			await restorer.initialize();
 
-			await processTextInEditor(text => restorer.restoreAccents(text));
+			await processTextInEditor(text => restorer.restoreDiacritics(text));
 
 			restorer.dispose();
 		}

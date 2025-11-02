@@ -1,8 +1,9 @@
+import * as vscode from "vscode";
 
 export const diacriticRegex = /[\p{Mn}\u0300-\u036f]/gu;
 
 // Language-specific character mappings
-export const languageSpecificMappings: Record<string, Record<string, string>> = {
+export const languageCharacterMappings: Record<string, Record<string, string>> = {
     "czech": {
         "á": "a", "Á": "A", "č": "c", "Č": "C", "ď": "d", "Ď": "D", "é": "e",
         "É": "E", "ě": "e", "Ě": "E", "í": "i", "Í": "I", "ň": "n", "Ň": "N",
@@ -52,12 +53,12 @@ export const languageSpecificMappings: Record<string, Record<string, string>> = 
 };
 
 // Pre-computed merged mappings from all languages (for performance)
-export const mergedLanguageMappings: Record<string, string> = Object.assign(
+export const allLanguageCharacterMappings: Record<string, string> = Object.assign(
     {},
-    ...Object.values(languageSpecificMappings)
+    ...Object.values(languageCharacterMappings)
 );
 
-export function preserveOriginalCase(original: string, restored: string): string {
+export function searchAndReplaceCaseSensitive(original: string, restored: string): string {
     if (!original || !restored) {
         return restored;
     }
@@ -113,4 +114,43 @@ export function preserveOriginalCase(original: string, restored: string): string
     }
 
     return result.join("");
+}
+
+
+/**
+ * Validates a mapping object containing special character replacements.
+ * Each key in the mapping must be a single character, and each value must be a string.
+ * 
+ * @param mappings - An object containing key-value pairs where keys are single characters
+ * and values are their corresponding replacement strings
+ * 
+ * @returns An empty string if validation passes, or a localized error message string if validation fails
+ */
+export function validateUserCharacterMappings(mappings: { [key: string]: string }): string {
+    if (!mappings || typeof mappings !== "object") {
+        return vscode.l10n.t("Invalid mappings: Not an object.");
+    }
+
+    for (const [key, value] of Object.entries(mappings)) {
+        if (typeof key !== "string" || key.length !== 1) {
+            return vscode.l10n.t('Invalid key: "{key}". Keys must be single characters.', { key });
+        }
+
+        if (typeof value !== "string") {
+            return vscode.l10n.t('Invalid value for key "{key}": "{value}". Values must be strings.', { key, value });
+        }
+    }
+
+    return "";
+}
+
+export function normalizeIgnoreWords(str: string): string[] {
+    return Array.from(
+        new Set(
+            str
+                .split("\n")
+                .map(word => word.trim())
+                .filter(word => word.length > 0)
+        )
+    );
 }

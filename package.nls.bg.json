@@ -1,14 +1,14 @@
 {
   "extension.config.title": "Replace Accents",
-  "extension.config.replaceAccents.title": "Replace Accents",
-  "extension.config.accentRemoveMapping.desc": "Определете собствени съпоставяния на знаци за премахване на диакритични знаци. Използвайте това, за да посочите как да се конвертират специалните знаци (напр. немското „ß“ към „ss“, лигатурите „æ“ към „ae“). Прилага се след нормализиране.",
-  "extension.config.accentDictionary.desc": "Изберете речник с диакритични знаци за възстановяване на диакритиките.",
-  "extension.config.accentRestoreSuffixMatching.desc": "Опитайте да възстановявате диакритики в словоформи в края на думите (напр. „edeny“ към „edényemet“). Може да подобри резултатите при словоформи, но може да доведе и до неправилни съвпадения. Оставете изключено, ако не е необходимо.",
-  "extension.config.accentIgnoredWords.desc": "Списък с думи, които да се изключат от възстановяването на диакритики. Тези думи ще останат непроменени, дори ако съществуват в речника.",
+  "extension.config.removeDiacritics.title": "Replace Accents",
+  "extension.config.userCharacterMapping.desc": "Определете собствени съпоставяния на знаци за премахване на диакритични знаци. Използвайте това, за да посочите как да се конвертират специалните знаци (напр. немското „ß“ към „ss“, лигатурите „æ“ към „ae“). Прилага се след нормализиране.",
+  "extension.config.diacriticDictionary.desc": "Изберете речник с диакритични знаци за възстановяване на диакритиките.",
+  "extension.config.diacriticRestoreSuffixMatching.desc": "Опитайте да възстановявате диакритики в словоформи в края на думите (напр. „edeny“ към „edényemet“). Може да подобри резултатите при словоформи, но може да доведе и до неправилни съвпадения. Оставете изключено, ако не е необходимо.",
+  "extension.config.diacriticIgnoredWords.desc": "Списък с думи, които да се изключат от възстановяването на диакритики. Тези думи ще останат непроменени, дори ако съществуват в речника.",
   "extension.category.utilities.title": "Помощни инструменти",
   "extension.category.help.title": "Помощ",
   "extension.command.reportIssue.title": "Докладване на проблем",
-  "extension.command.replaceAccents.title": "Премахване на диакритични знаци (áéő - aeo)",
-  "extension.command.replaceAccentsFileOrFolder.title": "Премахване на диакритични знаци",
-  "extension.command.restoreAccents.title": "Възстановяване на диакритични знаци"
+  "extension.command.removeDiacritics.title": "Премахване на диакритични знаци (áéő - aeo)",
+  "extension.command.removeDiacriticsFileOrFolder.title": "Премахване на диакритични знаци",
+  "extension.command.restoreDiacritics.title": "Възстановяване на диакритични знаци"
 }

@@ -37,12 +37,10 @@ module.exports = __toCommonJS(extension_exports);
 var vscode2 = __toESM(require("vscode"));
 var path2 = __toESM(require("path"));
 
-// src/utils.ts
-var vscode = __toESM(require("vscode"));
-
 // src/shared.ts
+var vscode = __toESM(require("vscode"));
 var diacriticRegex = /[\p{Mn}\u0300-\u036f]/gu;
-var languageSpecificMappings = {
+var languageCharacterMappings = {
   "czech": {
     "\xE1": "a",
     "\xC1": "A",
@@ -232,11 +230,11 @@ var languageSpecificMappings = {
     "\xD6": "Oe"
   }
 };
-var mergedLanguageMappings = Object.assign(
+var allLanguageCharacterMappings = Object.assign(
   {},
-  ...Object.values(languageSpecificMappings)
+  ...Object.values(languageCharacterMappings)
 );
-function preserveOriginalCase(original, restored) {
+function searchAndReplaceCaseSensitive(original, restored) {
   if (!original || !restored) {
     return restored;
   }
@@ -270,27 +268,7 @@ function preserveOriginalCase(original, restored) {
   }
   return result.join("");
 }
-
-// src/utils.ts
-function replaceAccents(text, charMappings = {}) {
-  if (!text || typeof text !== "string") {
-    return text;
-  }
-  try {
-    const combinedMappings = { ...mergedLanguageMappings, ...charMappings };
-    const specialChars = Object.keys(combinedMappings).join("");
-    const customPattern = new RegExp(`[${specialChars}]`, "g");
-    let result = text.replace(customPattern, (match) => {
-      const replacement = combinedMappings[match];
-      return preserveOriginalCase(match, replacement);
-    });
-    return result.normalize("NFKD").replace(diacriticRegex, "");
-  } catch (error) {
-    console.error("Error in replaceAccents:", error);
-    return text;
-  }
-}
-function validateAccentRemoveMapping(mappings) {
+function validateUserCharacterMappings(mappings) {
   if (!mappings || typeof mappings !== "object") {
     return vscode.l10n.t("Invalid mappings: Not an object.");
   }
@@ -312,10 +290,10 @@ function normalizeIgnoreWords(str) {
   );
 }
 
-// src/accent.ts
+// src/restoreDiacritic.ts
 var fs = __toESM(require("fs"));
 var path = __toESM(require("path"));
-var AccentRestorer = class _AccentRestorer {
+var DiacriticRestorer = class _DiacriticRestorer {
   dictionary = /* @__PURE__ */ new Map();
   ignoredWords;
   currentLanguage;
@@ -332,7 +310,7 @@ var AccentRestorer = class _AccentRestorer {
     this.currentLanguage = language;
     this.enableSuffixMatching = enableSuffixMatching;
     this.ignoredWords = new Set(
-      ignoredWords.map((word) => this.removeAccents(word.toLowerCase()))
+      ignoredWords.map((word) => this.removeDiacritics(word.toLowerCase()))
     );
     this.dictionaryBasePath = path.join(__dirname, "dictionary");
   }
@@ -397,7 +375,7 @@ var AccentRestorer = class _AccentRestorer {
           errorCount++;
           continue;
         }
-        const baseForm = this.removeAccents(word.toLowerCase());
+        const baseForm = this.removeDiacritics(word.toLowerCase());
         let entries = this.dictionary.get(baseForm);
         if (!entries) {
           entries = [];
@@ -423,16 +401,16 @@ var AccentRestorer = class _AccentRestorer {
     }
     console.log(`Loaded ${lineCount} words for language ${this.currentLanguage} (${errorCount} errors)`);
   }
-  restoreAccents(text) {
+  restoreDiacritics(text) {
     if (!this.isReady) {
       throw new Error("Accent restorer not initialized. Call initialize() first.");
     }
-    return text.replace(_AccentRestorer.WORD_REGEX, (word) => {
+    return text.replace(_DiacriticRestorer.WORD_REGEX, (word) => {
       const cached = this.restorationCache.get(word);
       if (cached !== void 0) {
         return cached;
       }
-      const baseForm = this.removeAccents(word.toLowerCase());
+      const baseForm = this.removeDiacritics(word.toLowerCase());
       if (this.ignoredWords.has(baseForm)) {
         this.addToCache(word, word);
         return word;
@@ -453,7 +431,7 @@ var AccentRestorer = class _AccentRestorer {
     this.restorationCache.set(key, value);
   }
   findBestMatch(word, baseForm) {
-    const normalizedBase = baseForm || this.removeAccents(word.toLowerCase());
+    const normalizedBase = baseForm || this.removeDiacritics(word.toLowerCase());
     const candidates = this.dictionary.get(normalizedBase);
     if (!candidates || candidates.length === 0) {
       if (this.enableSuffixMatching) {
@@ -462,7 +440,7 @@ var AccentRestorer = class _AccentRestorer {
       return null;
     }
     const bestMatch = candidates[0].word;
-    return preserveOriginalCase(word, bestMatch);
+    return searchAndReplaceCaseSensitive(word, bestMatch);
   }
   findSuffixMatch(word, normalizedBase) {
     const wordLower = word.toLowerCase();
@@ -476,16 +454,16 @@ var AccentRestorer = class _AccentRestorer {
         const bestStem = candidates[0].word;
         const suffix = wordLower.substring(stemLen);
         const reconstructed = bestStem + suffix;
-        return preserveOriginalCase(word, reconstructed);
+        return searchAndReplaceCaseSensitive(word, reconstructed);
       }
     }
     return null;
   }
-  removeAccents(text) {
+  removeDiacritics(text) {
     if (!text || typeof text !== "string") {
       return text;
     }
-    const allMappings = this.currentLanguage ? languageSpecificMappings[this.currentLanguage] || {} : {};
+    const allMappings = this.currentLanguage ? languageCharacterMappings[this.currentLanguage] || {} : {};
     let normalized = text.toLowerCase().normalize("NFKD").replace(diacriticRegex, "");
     const specialChars = Object.keys(allMappings).join("");
     const specialCharsPattern = new RegExp(`[${specialChars}]`, "g");
@@ -526,16 +504,48 @@ var AccentRestorer = class _AccentRestorer {
     return this.currentLanguage;
   }
 };
-var accent_default = AccentRestorer;
+var restoreDiacritic_default = DiacriticRestorer;
+
+// src/removeDiacritic.ts
+var DiacriticRemover = class {
+  /**
+  * Replaces accented characters in a text string with their non-accented equivalents.
+  * Uses Unicode normalization (NFD) to decompose characters and removes diacritical marks.
+  * 
+  * @param text - The input string containing accented characters to be replaced
+  * @param charMappings - Optional custom character mapping object to override default replacements
+  * @returns The input string with accents removed, or the original text if processing fails
+  * @defaultValue charMappings = {}
+  */
+  removeDiacritics(text, charMappings = {}) {
+    if (!text || typeof text !== "string") {
+      return text;
+    }
+    try {
+      const combinedMappings = { ...allLanguageCharacterMappings, ...charMappings };
+      const specialChars = Object.keys(combinedMappings).join("");
+      const customPattern = new RegExp(`[${specialChars}]`, "g");
+      let result = text.replace(customPattern, (match) => {
+        const replacement = combinedMappings[match];
+        return searchAndReplaceCaseSensitive(match, replacement);
+      });
+      return result.normalize("NFKD").replace(diacriticRegex, "");
+    } catch (error) {
+      console.error("Error in removeDiacritics:", error);
+      return text;
+    }
+  }
+};
+var removeDiacritic_default = DiacriticRemover;
 
 // src/extension.ts
 function activate(context) {
   let CommandId;
   ((CommandId2) => {
     CommandId2["ReportIssue"] = "ps-replace-accents.reportIssue";
-    CommandId2["ReplaceAccents"] = "ps-replace-accents.replaceAccents";
-    CommandId2["ReplaceAccentsFileOrFolder"] = "ps-replace-accents.replaceAccentsFileOrFolder";
-    CommandId2["RestoreAccents"] = "ps-replace-accents.restoreAccents";
+    CommandId2["ReplaceAccents"] = "ps-replace-accents.removeDiacritics";
+    CommandId2["ReplaceAccentsFileOrFolder"] = "ps-replace-accents.removeDiacriticsFileOrFolder";
+    CommandId2["RestoreAccents"] = "ps-replace-accents.restoreDiacritics";
   })(CommandId || (CommandId = {}));
   const processTextInEditor = async (transformFn, expandToFullLines = false, options) => {
     const editor = vscode2.window.activeTextEditor;
@@ -576,11 +586,12 @@ function activate(context) {
     });
     return 0;
   };
-  const replaceAccentsFileOrFolder = async (uri, userMappings) => {
+  const removeDiacriticsFileOrFolder = async (uri, userMappings) => {
+    const remover = new removeDiacritic_default();
     const oldPath = uri.fsPath;
     const itemName = path2.basename(oldPath);
     const parentPath = path2.dirname(oldPath);
-    const itemNameWithoutAccent = replaceAccents(itemName, userMappings);
+    const itemNameWithoutAccent = remover.removeDiacritics(itemName, userMappings);
     if (itemNameWithoutAccent.trim().length === 0) {
       return;
     }
@@ -621,14 +632,15 @@ function activate(context) {
   };
   const commandHandlers = {
     ["ps-replace-accents.reportIssue" /* ReportIssue */]: () => vscode2.env.openExternal(vscode2.Uri.parse("https://github.com/playfulsparkle/vscode_ps_replace_accents/issues")),
-    ["ps-replace-accents.replaceAccents" /* ReplaceAccents */]: async () => {
-      const userMappings = vscode2.workspace.getConfiguration("ps-replace-accents").get("accentRemoveMapping", {});
-      const userMappingsErrors = validateAccentRemoveMapping(userMappings);
-      if (userMappingsErrors) {
-        vscode2.window.showErrorMessage(userMappingsErrors);
+    ["ps-replace-accents.removeDiacritics" /* ReplaceAccents */]: async () => {
+      const userMappings = vscode2.workspace.getConfiguration("ps-replace-accents").get("userCharacterMapping", {});
+      const mappingsError = validateUserCharacterMappings(userMappings);
+      if (mappingsError) {
+        vscode2.window.showErrorMessage(mappingsError);
         return;
       }
-      const allSelectionsEmpty = await processTextInEditor((text) => replaceAccents(text, userMappings));
+      const remover = new removeDiacritic_default();
+      const allSelectionsEmpty = await processTextInEditor((text) => remover.removeDiacritics(text, userMappings));
       let modified = false;
       if (modified) {
         switch (allSelectionsEmpty) {
@@ -641,19 +653,19 @@ function activate(context) {
         }
       }
     },
-    ["ps-replace-accents.replaceAccentsFileOrFolder" /* ReplaceAccentsFileOrFolder */]: async (uri, selectedUris) => {
+    ["ps-replace-accents.removeDiacriticsFileOrFolder" /* ReplaceAccentsFileOrFolder */]: async (uri, selectedUris) => {
       if (!uri) {
         return;
       }
-      const userMappings = vscode2.workspace.getConfiguration("ps-replace-accents").get("accentRemoveMapping", {});
-      const userMappingsErrors = validateAccentRemoveMapping(userMappings);
-      if (userMappingsErrors) {
-        vscode2.window.showErrorMessage(userMappingsErrors);
+      const userMappings = vscode2.workspace.getConfiguration("ps-replace-accents").get("userCharacterMapping", {});
+      const mappingsError = validateUserCharacterMappings(userMappings);
+      if (mappingsError) {
+        vscode2.window.showErrorMessage(mappingsError);
         return;
       }
       const urisToRename = selectedUris && selectedUris.length > 0 ? selectedUris : [uri];
       for (const currentUri of urisToRename) {
-        await replaceAccentsFileOrFolder(currentUri, userMappings);
+        await removeDiacriticsFileOrFolder(currentUri, userMappings);
       }
       if (urisToRename.length > 1) {
         vscode2.window.showInformationMessage(
@@ -661,14 +673,14 @@ function activate(context) {
         );
       }
     },
-    ["ps-replace-accents.restoreAccents" /* RestoreAccents */]: async () => {
-      const suffixMatching = vscode2.workspace.getConfiguration("ps-replace-accents").get("accentRestoreSuffixMatching", false);
-      const ignoredWordsRaw = vscode2.workspace.getConfiguration("ps-replace-accents").get("accentIgnoredWords", "");
+    ["ps-replace-accents.restoreDiacritics" /* RestoreAccents */]: async () => {
+      const suffixMatching = vscode2.workspace.getConfiguration("ps-replace-accents").get("diacriticRestoreSuffixMatching", false);
+      const ignoredWordsRaw = vscode2.workspace.getConfiguration("ps-replace-accents").get("diacriticIgnoredWords", "");
       const ignoredWords = normalizeIgnoreWords(ignoredWordsRaw);
-      const accentDictionary = vscode2.workspace.getConfiguration("ps-replace-accents").get("accentDictionary", "hungarian");
-      const restorer = new accent_default(accentDictionary, ignoredWords, suffixMatching);
+      const diacriticDictionary = vscode2.workspace.getConfiguration("ps-replace-accents").get("diacriticDictionary", "hungarian");
+      const restorer = new restoreDiacritic_default(diacriticDictionary, ignoredWords, suffixMatching);
       await restorer.initialize();
-      await processTextInEditor((text) => restorer.restoreAccents(text));
+      await processTextInEditor((text) => restorer.restoreDiacritics(text));
       restorer.dispose();
     }
   };

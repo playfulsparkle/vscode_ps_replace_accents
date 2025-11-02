@@ -1,14 +1,14 @@
 {
   "extension.config.title": "Replace Accents",
-  "extension.config.replaceAccents.title": "Replace Accents",
-  "extension.config.accentRemoveMapping.desc": "Adjon meg egyéni karakter-hozzárendeléseket az ékezetek eltávolításához. Ezzel tudja megadni, hogy a speciális karakterek hogyan legyenek átalakítva (pl. német „ß” → „ss”, ligatúrák „æ” → „ae”). A normalizálás után kerül alkalmazásra.",
-  "extension.config.accentDictionary.desc": "Válasszon ki egy ékezet-helyreállító szótárat az ékezetek visszaállításához.",
-  "extension.config.accentRestoreSuffixMatching.desc": "Próbálja meg az ékezeteket a szóvégi toldalékokban is visszaállítani (pl. „edeny” → „edényemet”). Javíthat a ragozott alakok felismerésén, de hibás egyezéseket is okozhat. Hagyja kikapcsolva, ha nincs rá szükség.",
-  "extension.config.accentIgnoredWords.desc": "Azoknak a szavaknak a listája, amelyeket ki kell hagyni az ékezet-visszaállításból. Ezek a szavak változatlanok maradnak akkor is, ha szerepelnek a szótárban.",
+  "extension.config.removeDiacritics.title": "Replace Accents",
+  "extension.config.userCharacterMapping.desc": "Adjon meg egyéni karakter-hozzárendeléseket az ékezetek eltávolításához. Ezzel tudja megadni, hogy a speciális karakterek hogyan legyenek átalakítva (pl. német „ß” → „ss”, ligatúrák „æ” → „ae”). A normalizálás után kerül alkalmazásra.",
+  "extension.config.diacriticDictionary.desc": "Válasszon ki egy ékezet-helyreállító szótárat az ékezetek visszaállításához.",
+  "extension.config.diacriticRestoreSuffixMatching.desc": "Próbálja meg az ékezeteket a szóvégi toldalékokban is visszaállítani (pl. „edeny” → „edényemet”). Javíthat a ragozott alakok felismerésén, de hibás egyezéseket is okozhat. Hagyja kikapcsolva, ha nincs rá szükség.",
+  "extension.config.diacriticIgnoredWords.desc": "Azoknak a szavaknak a listája, amelyeket ki kell hagyni az ékezet-visszaállításból. Ezek a szavak változatlanok maradnak akkor is, ha szerepelnek a szótárban.",
   "extension.category.utilities.title": "Segédprogramok",
   "extension.category.help.title": "Súgó",
   "extension.command.reportIssue.title": "Hiba jelentése",
-  "extension.command.replaceAccents.title": "Ékezetek eltávolítása (áéő - aeo)",
-  "extension.command.replaceAccentsFileOrFolder.title": "Ékezetek eltávolítása",
-  "extension.command.restoreAccents.title": "Ékezetek visszaállítása"
+  "extension.command.removeDiacritics.title": "Ékezetek eltávolítása (áéő - aeo)",
+  "extension.command.removeDiacriticsFileOrFolder.title": "Ékezetek eltávolítása",
+  "extension.command.restoreDiacritics.title": "Ékezetek visszaállítása"
 }
