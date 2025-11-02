@@ -18,11 +18,13 @@ class DictionaryManager {
             const existingDict = await this.readDictionary(dictFilePath);
 
             const updatedDict = this.mergeDictionaries(existingDict, wordFrequencies);
+
             await this.writeDictionary(dictFilePath, updatedDict);
 
             console.log(`✅ Updated dictionary with ${wordFrequencies.size} new words, total: ${updatedDict.size}`);
 
         } catch (error) {
+            console.error(error);
             throw new Error(`Failed to update dictionary: ${error.message}`);
         }
     }
@@ -35,32 +37,26 @@ class DictionaryManager {
             const dictFilePath = this.resolveDictionaryPath(dictionaryName);
             const dictionary = await this.readDictionary(dictFilePath);
 
-            if (dictionary.size === 0) {
+            const originalSize = dictionary.length;
+
+            if (originalSize === 0) {
                 console.log("Dictionary is empty");
                 return;
             }
 
             const normalizedDict = new Map();
             let mergeCount = 0;
-            let removedCount = 0;
 
-            for (const [word, entry] of dictionary) {
-                // Skip words that don't need restoration (ASCII-only)
-                if (!this.needsRestoration(word)) {
-                    removedCount++;
-                    continue;
-                }
-
-                const normalizedWord = this.normalizeWord(word);
-
+            for (const entry of dictionary) {
+                const normalizedWord = this.normalizeWord(entry.word);
+                
                 if (normalizedDict.has(normalizedWord)) {
                     const existing = normalizedDict.get(normalizedWord);
                     existing.frequency += entry.frequency;
                     mergeCount++;
                 } else {
-                    // Always store the lowercase version
                     normalizedDict.set(normalizedWord, {
-                        word: entry.word.toLowerCase(),
+                        word: entry.word, // Keep the original word with accents
                         frequency: entry.frequency
                     });
                 }
@@ -68,7 +64,7 @@ class DictionaryManager {
 
             await this.writeDictionary(dictFilePath, normalizedDict);
 
-            console.log(`✅ Normalized: ${dictionary.size} → ${normalizedDict.size} entries, merged ${mergeCount}, removed ${removedCount}`);
+            console.log(`✅ Normalized: ${originalSize} → ${normalizedDict.size} entries, merged ${mergeCount}`);
 
         } catch (error) {
             throw new Error(`Failed to normalize dictionary: ${error.message}`);
@@ -76,10 +72,10 @@ class DictionaryManager {
     }
 
     /**
-     * Check if a word needs restoration (contains non-ASCII characters)
+     * Check if a word contains non-ASCII characters that need processing
      * This includes accented letters (é, á), special characters (ø, æ, å, ß, ł), etc.
      */
-    needsRestoration(word) {
+    containsNonASCII(word) {
         if (word.length < 2) {
             return false;
         }
@@ -111,11 +107,11 @@ class DictionaryManager {
         const words = text.match(/[\p{L}\p{M}][\p{L}\p{M}'\u2019\-]*/gu) || [];
 
         for (const word of words) {
-            // Skip words that don't need restoration (ASCII-only)
-            if (!this.needsRestoration(word)) continue;
+            // Skip words that don't contain non-ASCII characters
+            if (!this.containsNonASCII(word)) continue;
 
             const normalizedWord = this.normalizeWord(word);
-            const lowerOriginal = word.toLowerCase(); // Always store lowercase
+            const lowerOriginal = word.toLowerCase();
 
             if (frequencies.has(normalizedWord)) {
                 frequencies.get(normalizedWord).frequency++;
@@ -143,7 +139,7 @@ class DictionaryManager {
      * Read dictionary file and parse entries
      */
     async readDictionary(filePath) {
-        const dictionary = new Map();
+        const dictionary = [];
 
         try {
             const content = await this.readFile(filePath);
@@ -156,11 +152,11 @@ class DictionaryManager {
                 const parts = trimmed.split(/\t+/);
                 if (parts.length < 2) continue;
 
-                const word = parts[0].trim().toLowerCase(); // Always read as lowercase
+                const word = parts[0].trim().toLowerCase();
                 const frequency = parseInt(parts[1].trim(), 10);
 
                 if (word && !isNaN(frequency)) {
-                    dictionary.set(word, { word, frequency });
+                    dictionary.push({ word, frequency });
                 }
             }
         } catch (error) {
@@ -173,15 +169,19 @@ class DictionaryManager {
     }
 
     /**
-     * Write dictionary to file in TSV format - always lowercase
+     * Write dictionary to file in TSV format
      */
     async writeDictionary(filePath, dictionary) {
         const dir = path.dirname(filePath);
         await fs.promises.mkdir(dir, { recursive: true });
 
-        // Filter out single characters and ASCII-only words before writing
-        const filteredEntries = Array.from(dictionary.values())
-            .filter(entry => this.needsRestoration(entry.word))
+        // Convert Map to array if needed and filter entries
+        const entries = dictionary instanceof Map ? 
+            Array.from(dictionary.values()) : 
+            dictionary;
+
+        const filteredEntries = entries
+            .filter(entry => this.containsNonASCII(entry.word))
             .sort((a, b) => {
                 if (b.frequency !== a.frequency) {
                     return b.frequency - a.frequency;
@@ -199,11 +199,27 @@ class DictionaryManager {
      * Merge two dictionaries, summing frequencies for same words
      */
     mergeDictionaries(existing, newEntries) {
-        const merged = new Map(existing);
+        const merged = new Map();
 
+        // Convert existing array to Map keyed by normalized word
+        for (const entry of existing) {
+            const normalizedWord = this.normalizeWord(entry.word);
+            
+            if (merged.has(normalizedWord)) {
+                // Sum frequencies if same normalized word exists
+                const existingEntry = merged.get(normalizedWord);
+                existingEntry.frequency += entry.frequency;
+            } else {
+                merged.set(normalizedWord, {
+                    word: entry.word,
+                    frequency: entry.frequency
+                });
+            }
+        }
+
+        // Merge new entries
         for (const [normalizedWord, newEntry] of newEntries) {
-            // Skip single characters and ASCII-only words
-            if (!this.needsRestoration(newEntry.word)) {
+            if (!this.containsNonASCII(newEntry.word)) {
                 continue;
             }
 
@@ -236,10 +252,10 @@ class DictionaryManager {
     async getDictionaryStats(dictionaryName) {
         const dictFilePath = this.resolveDictionaryPath(dictionaryName);
         const dict = await this.readDictionary(dictFilePath);
-        const totalFrequency = Array.from(dict.values()).reduce((sum, entry) => sum + entry.frequency, 0);
+        const totalFrequency = dict.reduce((sum, entry) => sum + entry.frequency, 0);
 
         return {
-            totalWords: dict.size,
+            totalWords: dict.length,
             totalFrequency
         };
     }
@@ -256,38 +272,6 @@ class DictionaryManager {
 
         console.log(`✅ Created dictionary with ${entriesWritten} words (non-ASCII only)`);
     }
-
-    /**
-     * Clean dictionary - remove single characters and ASCII-only words
-     */
-    async cleanDictionary(dictionaryName) {
-        try {
-            const dictFilePath = this.resolveDictionaryPath(dictionaryName);
-            const dictionary = await this.readDictionary(dictFilePath);
-
-            if (dictionary.size === 0) {
-                console.log("Dictionary is empty");
-                return;
-            }
-
-            const originalSize = dictionary.size;
-            const cleanedDict = new Map();
-
-            for (const [word, entry] of dictionary) {
-                if (this.needsRestoration(word)) {
-                    cleanedDict.set(word, entry);
-                }
-            }
-
-            await this.writeDictionary(dictFilePath, cleanedDict);
-
-            const removedCount = originalSize - cleanedDict.size;
-            console.log(`✅ Cleaned dictionary: ${originalSize} → ${cleanedDict.size} entries, removed ${removedCount}`);
-
-        } catch (error) {
-            throw new Error(`Failed to clean dictionary: ${error.message}`);
-        }
-    }
 }
 
 // Command-line interface
@@ -302,15 +286,8 @@ Dictionary Manager
 Usage:
   node dictionary-manager.js update <text-file> <dictionary-name>
   node dictionary-manager.js normalize <dictionary-name>
-  node dictionary-manager.js clean <dictionary-name>
   node dictionary-manager.js stats <dictionary-name>
   node dictionary-manager.js create <text-file> <dictionary-name>
-
-Examples:
-  node dictionary-manager.js update mybook.txt slovak_dict.txt
-  node dictionary-manager.js normalize dict_slovak.txt
-  node dictionary-manager.js clean dict_slovak.txt
-  node dictionary-manager.js create large_text.txt new_dict.txt
 
 Options:
   --path <directory>    Set custom dictionary path
@@ -344,14 +321,6 @@ Options:
                     process.exit(1);
                 }
                 await manager.normalizeDictionary(param1);
-                break;
-
-            case "clean":
-                if (!param1) {
-                    console.error("Error: clean command requires dictionary name");
-                    process.exit(1);
-                }
-                await manager.cleanDictionary(param1);
                 break;
 
             case "stats":

@@ -35,9 +35,9 @@ zócalo	25
 actívalas	24
 ateísmo	24
 fósforos	23
+más	23
 píxel	23
 cuánticos	22
-más	22
 óptico	22
 antropología	20
 secuenciación	20
@@ -59,6 +59,7 @@ huésped	14
 volátil	14
 biotecnología	13
 células	12
+día	12
 dinastía	12
 facción	12
 híbridos	12
@@ -66,8 +67,10 @@ líquidos	12
 localización	12
 nanómetros	12
 terminología	12
+administración	11
 batería	11
 cátodo	11
+embarcación	11
 inalámbrico	11
 manifestación	11
 refrigeración	11
@@ -81,6 +84,7 @@ lípidos	10
 mayús	10
 movilización	10
 ópera	10
+según	10
 término	10
 al-ándalus	9
 aristóteles	9
@@ -103,7 +107,7 @@ absolverá	8
 caña	8
 corrección	8
 cuántica	8
-día	8
+demócratas	8
 díaz	8
 exógeno	8
 filosófica	8
@@ -184,6 +188,7 @@ médula	6
 mirá	6
 mitraísmo	6
 pablø	6
+pacífico	6
 patógeno	6
 pérdidas	6
 políticasfrases	6
@@ -191,6 +196,7 @@ proteína-proteína	6
 retroiluminación	6
 røjas	6
 rúa	6
+sábado	6
 são	6
 sólido	6
 subpíxeles	6
@@ -219,8 +225,8 @@ contemporáneo	5
 degradación	5
 desviación	5
 échale	5
+economía	5
 eléctricamente	5
-embarcación	5
 en-línea	5
 energías	5
 enseñanzas	5
@@ -242,6 +248,7 @@ magnéticos	5
 mañanas	5
 mí	5
 mío	5
+narcotráfico	5
 partículas	5
 peregrinación	5
 prácticos	5
@@ -261,12 +268,12 @@ terapéutico	5
 típicos	5
 transgén	5
 transgénico	5
+último	5
 valentía	5
 válido	5
 actualización	4
 actúan	4
 acumulación	4
-administración	4
 aérea	4
 afgano-iraní	4
 afrikáners	4
@@ -291,7 +298,6 @@ contarás	4
 convertiría	4
 convirtió	4
 coreografía	4
-demócratas	4
 denominación	4
 dinámico	4
 diseña	4
@@ -316,6 +322,8 @@ implosión	4
 incautación	4
 indígena'	4
 indígenas	4
+informó	4
+inmigración	4
 lámina	4
 lingüistas	4
 lumínica	4
@@ -342,12 +350,13 @@ pésaj	4
 plásmidos	4
 publicó	4
 pulsación	4
+qué	4
 raúl	4
 redistribución	4
 respondió	4
 saá	4
-según	4
 señalización	4
+sesión	4
 síntesis	4
 sociólogos	4
 sonríen	4
@@ -362,6 +371,7 @@ toreó	4
 transducción	4
 túnica	4
 última	4
+últimas	4
 ábalos	3
 abarcó	3
 absorción	3
@@ -378,6 +388,7 @@ apelación	3
 aráoz	3
 aritméticas	3
 arqueológico	3
+artículo	3
 astronomía	3
 astronómica	3
 ávalos	3
@@ -392,10 +403,12 @@ biológicos	3
 boletín	3
 caiçara	3
 cárceles	3
+cárteles	3
 célula	3
 cinética	3
 clínicas	3
 codificación	3
+comité	3
 competición	3
 cómplices	3
 composición	3
@@ -403,6 +416,7 @@ confrontación	3
 consiguió	3
 consumía	3
 convocó	3
+criticó	3
 cromática	3
 dáesh	3
 decodificación	3
@@ -428,11 +442,14 @@ embarcó	3
 emitía	3
 empecé	3
 enseñado	3
+envió	3
 enzimático	3
 ergonómico	3
 eshmún	3
+españa	3
 españolfrases	3
 espectrometría	3
+están	3
 éstos	3
 excitón	3
 expedición	3
@@ -454,6 +471,7 @@ gótica	3
 grandão	3
 guillén	3
 gustaría	3
+había	3
 haití	3
 helicópteros	3
 hergé	3
@@ -466,6 +484,7 @@ innovación	3
 inscríbete	3
 íntegro	3
 invención	3
+japón	3
 jenča	3
 judías	3
 jurídicos	3
@@ -502,6 +521,7 @@ nítidas	3
 notación	3
 observó	3
 opéra-comique	3
+opinión	3
 orígenes	3
 óvulo	3
 página	3
@@ -510,6 +530,7 @@ pareció	3
 pásara	3
 patentó	3
 península	3
+pentágono	3
 perdí	3
 podría	3
 precisó	3
@@ -520,9 +541,9 @@ psicoanálisis	3
 psicología	3
 publicación	3
 puñado	3
-qué	3
 quedé	3
 quística	3
+realizó	3
 relación	3
 relés	3
 repág	3
@@ -536,6 +557,7 @@ sidón	3
 simultánea	3
 subterránea	3
 sudanés	3
+tecnología	3
 tecnológica	3
 teológica	3
 térmicamente	3
@@ -558,6 +580,7 @@ abdicación	2
 acabarían	2
 acabó	2
 académicos	2
+acción	2
 aceleración	2
 ácidos	2
 acompañamiento	2
@@ -575,6 +598,7 @@ aéreas	2
 aéreo	2
 aferró	2
 afganistán	2
+áfrica	2
 agronomía	2
 agustín	2
 aislación	2
@@ -608,6 +632,8 @@ antártico	2
 anticipación	2
 antigüedades	2
 anunciación	2
+anúnciate	2
+anunció	2
 aparecerá	2
 aparecerán	2
 ápice	2
@@ -669,23 +695,29 @@ cadáver	2
 calculó	2
 cálida	2
 camarín	2
+campaña	2
 canalón	2
 cáncer	2
 canónica	2
 cápita	2
 característica	2
+careció	2
 cartografía	2
 catalán	2
 catalítica	2
 catastrófica	2
+centroamérica	2
 cerámica	2
 chávez	2
 cilíndrica	2
 cinematográficos	2
+cinético	2
 cinturón	2
 circuitería	2
 clásico	2
 clasificación	2
+climático	2
+cocaína	2
 coincidía	2
 comenzará	2
 cómicas	2
@@ -701,6 +733,7 @@ conseguíamos	2
 conservación	2
 consistió	2
 constarían	2
+contáctanos	2
 contemporánea	2
 continúan	2
 continuarán	2
@@ -720,9 +753,10 @@ crías	2
 crímenes	2
 cristóbal	2
 críticas	2
-criticó	2
+críticos	2
 cromatografía	2
 crónicas	2
+cronología	2
 cronológica	2
 cúbico	2
 cubría	2
@@ -733,6 +767,7 @@ décima	2
 déficit	2
 definición	2
 deflexión	2
+demócrata	2
 dendrímero	2
 desempeño	2
 desinfección	2
@@ -751,17 +786,19 @@ distinción	2
 distribución	2
 diversificación	2
 documentación	2
+dólar	2
 dóriga	2
 dramática	2
 echeverría	2
 eclesiásticas	2
 ecológicas	2
-economía	2
 económicos	2
 edítalo	2
 efemérides	2
 egiptólogo	2
 éibar	2
+ejecución	2
+él	2
 eléctrico	2
 electro-óptico	2
 electromagnético	2
@@ -776,7 +813,6 @@ ensueño	2
 entalpía	2
 entrará	2
 envían	2
-envió	2
 epidemiología	2
 época	2
 erótico	2
@@ -785,14 +821,13 @@ escáneres	2
 escaños	2
 escotópica	2
 escribí	2
-españa	2
+español	2
 españolrefranes	2
 especiación	2
 espécimen	2
 espíritus	2
 estadístico	2
 estalló	2
-están	2
 estaño	2
 estantería	2
 estarás	2
@@ -811,6 +846,7 @@ etnografía	2
 euríbor	2
 eurovisión	2
 exclamación	2
+éxito	2
 expandió	2
 expectación	2
 experimentación	2
@@ -840,10 +876,12 @@ flexibilización	2
 formará	2
 fotobiológicos	2
 fotoexcitación	2
+fotografía	2
 fotográfico	2
 fotosíntesis	2
 frágiles	2
 francés	2
+frenaría	2
 fría	2
 frías	2
 fríos	2
@@ -851,6 +889,7 @@ frustró	2
 función	2
 funcionó	2
 fundación	2
+fútbol	2
 gabón	2
 ganó	2
 gardênia	2
@@ -878,7 +917,6 @@ guía	2
 guiaré	2
 guiñazú	2
 guzmán	2
-había	2
 habrás	2
 hachís	2
 halló	2
@@ -897,6 +935,7 @@ hoshaná	2
 ℹ️	2
 íbamos	2
 ibérica	2
+identificó	2
 ilustración	2
 imágenes	2
 impedía	2
@@ -906,13 +945,15 @@ inalámbricos	2
 incluirán	2
 increíblemente	2
 inecuación	2
+información	2
 informáticas	2
 inglés	2
 ingresó	2
 iniciaría	2
+inició	2
 iñigo	2
-inmigración	2
 inquisición	2
+insistió	2
 intención	2
 interacción	2
 interferón	2
@@ -940,11 +981,13 @@ legalización	2
 león	2
 lexicógrafa	2
 lexicólogo	2
+líderes	2
 lideró	2
 limeño	2
 límites	2
 línea	2
 lingüísticas	2
+llevó	2
 lumières	2
 madrileñas	2
 máel	2
@@ -960,6 +1003,7 @@ marqués	2
 martín	2
 máscaras	2
 matías	2
+mató	2
 máxima	2
 máximas	2
 máximos	2
@@ -979,6 +1023,7 @@ meteorológica	2
 meteorólogo	2
 meteorólogos	2
 metodología	2
+méxico	2
 méxicoperiodismo	2
 microbiología	2
 miklán	2
@@ -999,15 +1044,18 @@ monoteísta	2
 mu’	2
 muchísima	2
 multiplicación	2
+música	2
 na’	2
 nanométrica	2
 napoleón	2
+narcóticos	2
 natación	2
 necesitarán	2
 necrópolis	2
 neerlandés	2
 neogótico	2
 ñerito	2
+nicolás	2
 niño	2
 nitrógeno	2
 noemí	2
@@ -1018,24 +1066,27 @@ numéricos	2
 número	2
 numismática	2
 obtención	2
+oceanía	2
+océano	2
 óctuple	2
 odín	2
 olímpicos	2
 ómica	2
 oncología	2
 opción	2
-opinión	2
+operación	2
 opondré	2
 óptica	2
 ópticamente	2
 optoelectrónica	2
 órbitas	2
+organización	2
 óvulos	2
-pacífico	2
 padrón	2
 páginas	2
 paleolítico	2
 panadería	2
+panamá	2
 panibérico	2
 parábola	2
 parácuaro	2
@@ -1049,8 +1100,10 @@ pérmico	2
 permitiría	2
 perón	2
 personalización	2
+perú	2
 pestaña	2
 pictóricos	2
+pidió	2
 piñata	2
 pitágoras	2
 plasmídicos	2
@@ -1073,6 +1126,7 @@ presentará	2
 producirá	2
 profecía	2
 prófugo	2
+programación	2
 prolongó	2
 promulgación	2
 propón	2
@@ -1095,26 +1149,30 @@ realización	2
 recibirán	2
 recogía	2
 recopilará	2
+redirigió	2
 rediseño	2
 reflexión	2
 regalías	2
+región	2
 regulación	2
 rendición	2
 repartía	2
 repercutió	2
 representación	2
+república	2
 respondía	2
 resucitó	2
+resultó	2
 reunión	2
 riñones	2
 rococó	2
 románico	2
 röntgen	2
-sábado	2
 sabíamos'	2
 sabías	2
 salomón	2
 salón	2
+sánchez	2
 satélite	2
 saturación	2
 saurópsidos	2
@@ -1122,6 +1180,8 @@ schrödinger	2
 seguían	2
 selectrón	2
 semiesférico	2
+señal	2
+señaló	2
 separó	2
 serguéi	2
 sería	2
@@ -1138,11 +1198,13 @@ sintético	2
 sintoísmo	2
 sobrevoló	2
 socialdemócrata	2
+sólidas	2
 solución	2
 soñé	2
 sostendría	2
 sótano	2
 soviético	2
+sudamérica	2
 sudán	2
 sugirió	2
 sujeción	2
@@ -1160,8 +1222,11 @@ teísta	2
 télam	2
 telefonía	2
 telefónicas	2
+televisión	2
+tendrán	2
 tendrás	2
 teníamos	2
+tensión	2
 teoría	2
 teóricamente	2
 teóricas	2
@@ -1179,14 +1244,14 @@ tóxicos	2
 trabajó	2
 transgénica	2
 transposición	2
+tratará	2
 trazó	2
 triángulo	2
 tripulación	2
 tú	2
 tuberías	2
+türk	2
 tutankamón	2
-últimas	2
-último	2
 varían	2
 véase	2
 vehículo	2
@@ -1235,7 +1300,6 @@ académie	1
 acaparó	1
 accedía	1
 accedió	1
-acción	1
 acefalía	1
 acentúa	1
 acepción	1
@@ -1324,7 +1388,6 @@ afirmación	1
 afirmó	1
 aflicción	1
 aflojó	1
-áfrica	1
 afrikáner	1
 afutā	1
 ágil	1
@@ -1490,8 +1553,6 @@ antipartícula	1
 antirreligión	1
 antropólogo	1
 anulación	1
-anúnciate	1
-anunció	1
 apagón	1
 aparearán	1
 aparecería	1
@@ -1577,7 +1638,6 @@ arquitecturateoría	1
 arrestó	1
 arriesgándose	1
 arrojaría	1
-artículo	1
 artículos	1
 artículosmovimiento	1
 artillería	1
@@ -1858,7 +1918,6 @@ cambié	1
 cambió	1
 camerún	1
 camión	1
-campaña	1
 campañas	1
 campo-rodríguez	1
 cámpora	1
@@ -1906,13 +1965,11 @@ cardíaca	1
 cardiología	1
 carecía	1
 carecían	1
-careció	1
 caribeña	1
 cariño	1
 cariñosamente	1
 carnicería	1
 cartaginés	1
-cárteles	1
 cartón	1
 casarán	1
 castán	1
@@ -1960,7 +2017,6 @@ centrarán	1
 céntricas	1
 centrifugación	1
 centró	1
-centroamérica	1
 centrómero	1
 cerámicas	1
 cerámicos	1
@@ -1999,7 +2055,6 @@ científico	1
 científicos	1
 cinemática	1
 cinematográfico	1
-cinético	1
 cínica	1
 círculo	1
 círculos	1
@@ -2029,7 +2084,6 @@ clasificó	1
 cláudio	1
 clérigos	1
 climática	1
-climático	1
 clímax	1
 clínica	1
 clínicamente	1
@@ -2042,7 +2096,6 @@ clos-lucé	1
 clústeres	1
 coagulación	1
 coalición	1
-cocaína	1
 códices	1
 código	1
 coerción	1
@@ -2076,7 +2129,6 @@ cómica	1
 cómico	1
 comió	1
 comisaría	1
-comité	1
 comités	1
 cómoda	1
 cómodamente	1
@@ -2171,7 +2223,6 @@ construcción	1
 construcciónhistoria	1
 construyó	1
 consumirá	1
-contáctanos	1
 contactó	1
 contaminación	1
 contaminación-luminica-calidad-del-cielo	1
@@ -2272,10 +2323,8 @@ criptografía	1
 cristalización	1
 cristalografía	1
 crítica	1
-críticos	1
 cromosómicas	1
 cromosómicos	1
-cronología	1
 cronologías	1
 cronológicamente	1
 cronológico	1
@@ -2399,7 +2448,6 @@ delimitación	1
 demandée	1
 demarcación	1
 demás	1
-demócrata	1
 democrática	1
 democrático	1
 demócrito	1
@@ -2611,7 +2659,6 @@ diviértete	1
 división	1
 divorciaría	1
 divulgación	1
-dólar	1
 dólares	1
 doméstica	1
 domesticación	1
@@ -2661,12 +2708,10 @@ efectúe	1
 egiptología	1
 egoístas	1
 éire	1
-ejecución	1
 ejecutará	1
 ejercería	1
 ejército	1
 ejércitos	1
-él	1
 elaboración	1
 elástica	1
 elásticas	1
@@ -2868,7 +2913,6 @@ eslavófilos	1
 esnórquel	1
 esotérico	1
 españajergaspalabras	1
-español	1
 española	1
 españolacoso	1
 españolargentina	1
@@ -3002,7 +3046,6 @@ existía	1
 existían	1
 existió	1
 existirá	1
-éxito	1
 exlíderes	1
 exmédico	1
 exógena	1
@@ -3126,7 +3169,6 @@ formuló	1
 fósforo	1
 fotobiológica	1
 fotoeléctrico	1
-fotografía	1
 fotografías	1
 fotográfica	1
 fotográficas	1
@@ -3146,7 +3188,6 @@ fráncfort	1
 franchín	1
 françois	1
 freír	1
-frenaría	1
 frenesí	1
 frenética	1
 fricción	1
@@ -3165,7 +3206,6 @@ für	1
 fusión	1
 fusionándose	1
 fusogénicos	1
-fútbol	1
 gaélico	1
 gagné	1
 galán	1
@@ -3383,7 +3423,6 @@ idéntica	1
 idénticas	1
 idéntico	1
 identificación	1
-identificó	1
 identifiqué	1
 ideó	1
 ideología	1
@@ -3476,18 +3515,15 @@ inflación	1
 inflexión	1
 influiría	1
 infografía	1
-información	1
 informalización	1
 informará	1
 informáticaselectrónica	1
 informático	1
 informatización	1
-informó	1
 infracción	1
 ingeniería	1
 iniciación	1
 iniciará	1
-inició	1
 inmersión	1
 inmóviles	1
 inmunodiagnóstico	1
@@ -3505,7 +3541,6 @@ inseminación	1
 inserción	1
 insertará	1
 insertó	1
-insistió	1
 insólito	1
 inspección	1
 inspiración	1
@@ -3594,7 +3629,6 @@ jaldún	1
 jamás	1
 jamón	1
 jané	1
-japón	1
 jardín	1
 jardinería	1
 jarquín	1
@@ -3697,7 +3731,6 @@ librería	1
 librerías	1
 libró	1
 líder	1
-líderes	1
 liébana	1
 limitará	1
 limitarán	1
@@ -3734,7 +3767,6 @@ llevándose	1
 llevará	1
 llevarán	1
 llevaría	1
-llevó	1
 llinás	1
 lóbulo	1
 locución	1
@@ -3820,7 +3852,6 @@ massó	1
 matemática	1
 máthema	1
 mathematikós	1
-mató	1
 matón	1
 máximo	1
 mayorías	1
@@ -3894,7 +3925,6 @@ metodológicos	1
 métrica	1
 métricas	1
 mettā	1
-méxico	1
 méxico-tenochtitlan	1
 méxicocensura	1
 méxicocorrección	1
@@ -4037,7 +4067,6 @@ músculos	1
 museístico	1
 museología	1
 músic	1
-música	1
 músico	1
 musicóloga	1
 musicología	1
@@ -4059,8 +4088,6 @@ nanotecnología	1
 napoleónica	1
 napoleónicas	1
 narcótico	1
-narcóticos	1
-narcotráfico	1
 narraría	1
 narró	1
 naturalesfísica	1
@@ -4094,7 +4121,6 @@ neurología	1
 neutrófilo	1
 neutrófilos	1
 neutrón	1
-nicolás	1
 níger	1
 niña	1
 niñez	1
@@ -4144,10 +4170,8 @@ obstáculos	1
 obtendrá	1
 obtenía	1
 ocasión	1
-oceanía	1
 oceánica	1
 oceánico	1
-océano	1
 oceanografía	1
 océanos	1
 oclusión	1
@@ -4187,7 +4211,6 @@ omisión	1
 onís	1
 ontología	1
 óoorale	1
-operación	1
 opération	1
 operístico	1
 öpik	1
@@ -4213,7 +4236,6 @@ orgánica	1
 orgánicas	1
 orgánico	1
 orgánicosproductos	1
-organización	1
 organizó	1
 órgano	1
 organolépticas	1
@@ -4258,7 +4280,6 @@ paleogeografía	1
 paleografía	1
 paliación	1
 pañales	1
-panamá	1
 panhispánico	1
 paño	1
 panorámica	1
@@ -4329,7 +4350,6 @@ pensarás	1
 pensé	1
 pensión	1
 pensó	1
-pentágono	1
 peón	1
 pequeña	1
 pequeñas	1
@@ -4369,7 +4389,6 @@ pertenecéis	1
 pertenecían	1
 pértiga	1
 perturbación	1
-perú	1
 perúcanciones	1
 pestañas	1
 petición	1
@@ -4381,7 +4400,6 @@ pícaro’	1
 pícaros	1
 pictóricas	1
 pidiéndole	1
-pidió	1
 pigmentación	1
 píldoras	1
 piña	1
@@ -4548,7 +4566,6 @@ producirán	1
 produciría	1
 profesión	1
 profundización	1
-programación	1
 programática	1
 progresión	1
 prohíbe	1
@@ -4692,7 +4709,6 @@ reaccionó	1
 realimentación	1
 realizará	1
 realizaría	1
-realizó	1
 reasignarán	1
 reasunción	1
 réaumur	1
@@ -4744,7 +4760,6 @@ redacción	1
 redactó	1
 redención	1
 redireccionarán	1
-redirigió	1
 rédito	1
 reducción	1
 reducían	1
@@ -4766,7 +4781,6 @@ reforzarán	1
 refracción	1
 regaló	1
 régimen	1
-región	1
 regirá	1
 registró	1
 regresó	1
@@ -4810,7 +4824,6 @@ representó	1
 represión	1
 reproducción	1
 reprogenética	1
-república	1
 republicación	1
 repúblicas	1
 republicó	1
@@ -4834,7 +4847,6 @@ respiración	1
 respondería	1
 restauración	1
 restricción	1
-resultó	1
 resúmenes	1
 resurrección	1
 retendrá	1
@@ -4916,7 +4928,6 @@ salserísimo	1
 saltó	1
 salvación	1
 salvadoreño	1
-sánchez	1
 sancionó	1
 sanguíneas	1
 santafé	1
@@ -4958,7 +4969,6 @@ semi-héroe	1
 semióloga	1
 semíticas	1
 seña	1
-señal	1
 señala	1
 señalada	1
 señalado	1
@@ -4969,7 +4979,6 @@ señalándose	1
 señalar	1
 señalaron	1
 señales	1
-señaló	1
 séneca	1
 señor	1
 señora	1
@@ -4993,7 +5002,6 @@ serían	1
 sermón	1
 servía	1
 servirá	1
-sesión	1
 seudoperiodístico	1
 sexología	1
 sextorsión	1
@@ -5076,7 +5084,6 @@ solía	1
 solicitarán	1
 solicitó	1
 sólida	1
-sólidas	1
 sólidos	1
 solís	1
 sólo	1
@@ -5124,7 +5131,6 @@ sucediéndose	1
 sucedió	1
 sucesión	1
 sudáfrica	1
-sudamérica	1
 südtirol	1
 sueñan	1
 sueño	1
@@ -5189,7 +5195,6 @@ técnicamente	1
 técnicas	1
 técnico	1
 técnicos	1
-tecnología	1
 tecnologíaarquitecturahistoria	1
 tecnologíainformática	1
 tecnológico	1
@@ -5203,7 +5208,6 @@ telefónica	1
 teléfono	1
 teléfonos	1
 telescópicos	1
-televisión	1
 televisiónhardware	1
 televisióninventos	1
 téllez	1
@@ -5214,14 +5218,12 @@ temáticas	1
 temáticos	1
 temía	1
 tendrá	1
-tendrán	1
 tendría	1
 tendrían	1
 tenía	1
 tenían	1
 teñido	1
 tensiómetros	1
-tensión	1
 tentempié	1
 teológicas	1
 teológicos	1
@@ -5318,7 +5320,6 @@ traslúcidas	1
 trasmitió	1
 traspasó	1
 tratándose	1
-tratará	1
 trató	1
 traumatología	1
 través	1
@@ -5343,7 +5344,6 @@ turbohélice	1
 turística	1
 turístico	1
 turísticos	1
-türk	1
 ufá	1
 últimamente	1
 últimos	1
