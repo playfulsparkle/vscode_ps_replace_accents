@@ -1044,7 +1044,6 @@ anhållanden	1
 anhöriga	1
 anhörigas	1
 anhörigvård	1
-anhörigvårdeldainköpskassarveckohandlaved	1
 anhörigvårdsdag	1
 anläggning	1
 anläggningar	1
@@ -1082,7 +1081,6 @@ applåderat	1
 arbetsbörda	1
 arbetsbördan	1
 arbetsflöden	1
-areenainnebandyklistermärkenkonstlovisaskyltsöndag	1
 åren	1
 arenafången	1
 ärende	1
@@ -1309,7 +1307,6 @@ bibehållas	1
 bildbyrån	1
 bilsäkerhetspaket	1
 bilvägar	1
-bioavfallhöstfärgerlövblåsarestäda	1
 biträden	1
 bjåljustjänsternas	1
 bjällra	1
@@ -1334,13 +1331,11 @@ bloggväninna	1
 blomström	1
 blöt	1
 böcker	1
-böckerbokmässacointreaukatja	1
 böhme	1
 böj	1
 böja	1
 böjda	1
 böjer	1
-bokbinderibiträdes-	1
 bokcafé	1
 bokcaféet	1
 boklådor	1
@@ -1387,7 +1382,6 @@ bränvinsfrågan	1
 bråttom	1
 bröderne	1
 brödet	1
-brödförsäljningsprisets	1
 brödh	1
 brödra-sång	1
 bröllops-gåln	1
@@ -1407,7 +1401,6 @@ brudklänningen	1
 cadett-sång	1
 carlén	1
 català	1
-cellförändringarlaboratoriumoktoberpapa-provvacker	1
 čeština	1
 chaufför	1
 cointreau-ståndet	1
@@ -1419,7 +1412,6 @@ d’autremont	1
 d'orléans	1
 däcktyper	1
 dagböckerfem	1
-dagboklånggrändlovisaoskrivna	1
 dagligvaruaffärer	1
 dålig	1
 dåligt	1
@@ -1493,7 +1485,6 @@ drönarjakt	1
 drönarna	1
 drönaroperatörer	1
 drönarvy	1
-drottninggatanfaluplastinnebandyskyltsöndagsocietetshusettidstrandveckans	1
 dubân	1
 dufwo-röst	1
 dufworöst	1
@@ -1528,7 +1519,6 @@ eröfring	1
 erövrade	1
 erövrarnas	1
 español	1
-esplanadsimbassängtävlingvolleyboll	1
 että	1
 få	1
 fäder	1
@@ -1725,14 +1715,11 @@ förlita	1
 förlofningskort	1
 förlorade	1
 förlusten	1
-förlustergrännainnebandypusseltystnad	1
 förlusterna	1
-förlustinnebandykokkolalovisa	1
 förlustmatch	1
 förlustsvit	1
 förlustsviten	1
 förmaksflimmer	1
-förmaksflimmerattacker	1
 förmåner	1
 förmiddag	1
 förmiddagen	1
@@ -1872,7 +1859,6 @@ fridlös	1
 frihetsberövade	1
 frihetsberövats	1
 frissabesök	1
-frissafrisyrmarängmästaregrändpavlovabakelse	1
 frivilligkåren	1
 frö	1
 frögda	1
@@ -1904,8 +1890,6 @@ gårdar	1
 gårdestig	1
 gårdglad	1
 gårdskarl-eldarbefattningen	1
-gårdskarlsbefattning	1
-gårdsparkeringen	1
 gärna	1
 gärningsmännen	1
 gäss	1
@@ -1918,7 +1902,6 @@ gåvor	1
 gehör	1
 geléer	1
 generaldirektör	1
-generalprokuratorsämbetet	1
 genève	1
 genfärd	1
 gengångare	1
@@ -2270,10 +2253,6 @@ järfälla	1
 järfällabo	1
 järnväg	1
 järnvägen	1
-järnvägsanläggningar	1
-järnvägsstation	1
-järnvägsstationenlovisalovisabyggnadersmedsgränd	1
-järnvägstation	1
 jättebra	1
 jättefina	1
 jättefort	1
@@ -2294,7 +2273,6 @@ jönköping	1
 jönsson	1
 jordafärd	1
 jordbävning	1
-journallövvardagsrutiner	1
 juglans-träd	1
 julgåfva	1
 julkänslan	1
@@ -2340,7 +2318,6 @@ karriär	1
 karriären	1
 kärt	1
 kartlägga	1
-kartongfabrikenhöstlovisalovisabyggnader	1
 kasténs	1
 käyt	1
 kesä	1
@@ -2572,18 +2549,14 @@ limegrönt	1
 lindbäck	1
 lindelöf	1
 linköping	1
-linköpingsutställningen	1
 linné-minne	1
 listaså	1
-litteraturhänvisningar	1
-litteraturoktoberrönnbärsklasar	1
 livesändning	1
 ljungström	1
 löf	1
 löftets	1
 lögn	1
 lokalbedövning	1
-lokalpolisområdeschef	1
 lönen	1
 lonkero-grå	1
 lönliga	1
@@ -2978,7 +2951,6 @@ osällheten	1
 östersjöuppropet	1
 östersky	1
 östersunds-posten	1
-östispusselsömnproblemträdgårdsgatan	1
 östra	1
 östrbotten	1
 östros	1
@@ -3057,7 +3029,6 @@ påverkades	1
 pelargångar	1
 pensionär	1
 pensionärer	1
-pepparkakorkronobronlovisavikenpaddlareskyltsöndagveckans	1
 pernå	1
 phrénologien	1
 pingsthögtiden	1
@@ -3315,7 +3286,6 @@ skådespelare	1
 skafferidörrar	1
 skäll	1
 skämtade	1
-skandinaviakaffelovisamariegatanparkerskyltsöndagstickade	1
 skänker	1
 skänkt	1
 skåp	1

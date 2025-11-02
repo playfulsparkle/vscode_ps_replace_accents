@@ -3395,7 +3395,6 @@ białowieży	1
 bibliografię	1
 biblioteczkę	1
 biblioteką	1
-bibliotekazapomnianychksiążek	1
 bić	1
 biedronówka	1
 biegać	1

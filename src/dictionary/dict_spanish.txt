@@ -29,7 +29,6 @@ atribución-compartirigual	27
 cláusulas	27
 derrotó	27
 economía	27
-economíacienciasaludculturatecnologíahay	27
 editó	27
 festivalcentroamérica	27
 limitación	27
@@ -2023,7 +2022,6 @@ biofármacos	1
 biogás	1
 biogeografía	1
 biografía	1
-bioinformáticabioingenieríabiología	1
 bioingeniería	1
 biolística	1
 bióloga	1
@@ -2414,11 +2412,9 @@ construyó	1
 consumirá	1
 contactó	1
 contaminación	1
-contaminación-luminica-calidad-del-cielo	1
 contarán	1
 contarían	1
 conté	1
-contemporáneacronología	1
 contemporáneaedad	1
 contemporáneas	1
 contemporáneos	1
@@ -2900,9 +2896,7 @@ electromagnéticos	1
 electromecánica	1
 electromecánico	1
 electrón	1
-electrónicadiodosiluminaciónlámparasacrónimosciencia	1
 electrónicas	1
-electrónicatransistoresmonitores	1
 electrónicos	1
 électronique	1
 electroóptico	1
@@ -2920,7 +2914,6 @@ emancipación	1
 emblemática	1
 emblemáticas	1
 embrión	1
-emergentesbiotecnología	1
 emergía	1
 emergió	1
 emérito	1
@@ -3087,7 +3080,6 @@ española	1
 españolacoso	1
 españolargentina	1
 españolas	1
-españolchicanopacifismono	1
 españolcuba	1
 españoldichos	1
 españolel	1
@@ -3096,14 +3088,9 @@ españolespañol	1
 españolfenómenos	1
 españoljapón	1
 españollemas	1
-españolocupaciones	1
 españolperú	1
 españolpolítica	1
 españolpop	1
-españolprogramas	1
-españolsímbolos	1
-españolterminología	1
-españolwikiproyecto	1
 espástica	1
 especialización	1
 especializándose	1
@@ -3527,14 +3514,12 @@ hispánica	1
 hispanoamérica	1
 hispanoárabe	1
 histología	1
-historiahistoriacronología	1
 históricamente	1
 históricas	1
 histórico	1
 históricos	1
 historiografía	1
 historiográficas	1
-historiográficasseudohistoria	1
 historiología	1
 holandés	1
 holístico	1
@@ -3566,7 +3551,6 @@ humorístico	1
 humorísticos	1
 hundió	1
 húngaro	1
-hungríainventos	1
 hutíes	1
 huyó	1
 ibéricas	1
@@ -3887,8 +3871,6 @@ limítrofes	1
 limón	1
 líneas	1
 lingüista	1
-lingüísticamente	1
-lingüísticawikipedia	1
 lingüístico	1
 linternón	1
 lío	1
@@ -4121,18 +4103,15 @@ mismísimo	1
 mistérica	1
 míticos	1
 mitografía	1
-mitologíawikipedia	1
 mitológico	1
 mitráica	1
 mitraístas	1
 módems	1
 moderación	1
-modernacronología	1
 modernización	1
 modificación	1
 módulo	1
 moiré	1
-molecularbioéticabiotecnologíatecnologías	1
 molestaría	1
 monarquía	1
 monárquica	1
@@ -4353,7 +4332,6 @@ opresión	1
 optimización	1
 óptimo	1
 opto-electrónicos	1
-optoelectrónicaterminología	1
 optoelectrónics	1
 opúsculo	1
 oración	1
@@ -4396,7 +4374,6 @@ pagará	1
 pagarán	1
 pagarían	1
 paisajístico	1
-paísarquitectosarquitectura	1
 paíscategorías	1
 pakistaní	1
 pakistaníes	1
@@ -5272,8 +5249,6 @@ técnica	1
 técnicamente	1
 técnicas	1
 técnico	1
-tecnologíaarquitecturahistoria	1
-tecnologíainformática	1
 tecnológico	1
 tecnológicos	1
 tecnopolítica	1
@@ -5285,8 +5260,6 @@ telefónica	1
 teléfono	1
 teléfonos	1
 telescópicos	1
-televisiónhardware	1
-televisióninventos	1
 téllez	1
 telómeros	1
 telón	1
@@ -5427,7 +5400,6 @@ unía	1
 únicas	1
 único	1
 únicos	1
-unidosmonitoresaviónicaciencia	1
 uniéndote	1
 unificó	1
 unió	1
@@ -5511,7 +5483,6 @@ vladímir	1
 vocación	1
 volátiles	1
 volcánico	1
-völkerpsychologie	1
 voló	1
 volverán	1
 volverían	1
@@ -5526,8 +5497,6 @@ wôdan	1
 wóden	1
 xämät	1
 xenófobos	1
-xxtecnologías	1
-zapatería	1
 zárate	1
 zebadúa	1
 zempoalxóchitl	1
