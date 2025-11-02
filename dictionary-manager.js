@@ -108,7 +108,7 @@ class DictionaryManager {
      */
     extractWordFrequencies(text) {
         const frequencies = new Map();
-        const words = text.match(/[\p{L}\p{M}'\u2019-]+/gu) || [];
+        const words = text.match(/[\p{L}\p{M}][\p{L}\p{M}'\u2019\-]*/gu) || [];
 
         for (const word of words) {
             // Skip words that don't need restoration (ASCII-only)
