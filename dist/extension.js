@@ -242,28 +242,33 @@ function preserveOriginalCase(original, restored) {
   }
   const origLen = original.length;
   const restLen = restored.length;
-  if (original === original.toUpperCase()) {
+  const upperOrig = original.toUpperCase();
+  const lowerOrig = original.toLowerCase();
+  if (original === upperOrig) {
     return restored.toUpperCase();
   }
-  if (origLen > 0 && original[0] === original[0].toUpperCase() && (origLen === 1 || original.slice(1) === original.slice(1).toLowerCase())) {
-    return restored[0].toUpperCase() + restored.slice(1).toLowerCase();
-  }
-  if (original === original.toLowerCase()) {
+  if (original === lowerOrig) {
     return restored.toLowerCase();
   }
-  let result = "";
+  if (origLen > 0 && original[0] === upperOrig[0] && original.slice(1) === lowerOrig.slice(1)) {
+    return restored[0].toUpperCase() + restored.slice(1).toLowerCase();
+  }
+  const result = new Array(restLen);
   const minLength = Math.min(origLen, restLen);
   for (let i = 0; i < minLength; i++) {
     const origChar = original[i];
-    result += origChar === origChar.toUpperCase() ? restored[i].toUpperCase() : restored[i].toLowerCase();
+    const origLower = lowerOrig[i];
+    result[i] = origChar === origLower ? restored[i].toLowerCase() : restored[i].toUpperCase();
   }
   if (restLen > minLength) {
-    const lastCharIsUpper = origLen > 0 && original[origLen - 1] === original[origLen - 1].toUpperCase();
+    const lastOrigChar = original[origLen - 1];
+    const lastIsUpper = lastOrigChar !== lowerOrig[origLen - 1];
+    const transform = lastIsUpper ? (c) => c.toUpperCase() : (c) => c.toLowerCase();
     for (let i = minLength; i < restLen; i++) {
-      result += lastCharIsUpper ? restored[i].toUpperCase() : restored[i].toLowerCase();
+      result[i] = transform(restored[i]);
     }
   }
-  return result;
+  return result.join("");
 }
 
 // src/utils.ts

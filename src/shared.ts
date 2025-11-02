@@ -65,45 +65,52 @@ export function preserveOriginalCase(original: string, restored: string): string
     const origLen = original.length;
     const restLen = restored.length;
 
+    // Check case pattern once
+    const upperOrig = original.toUpperCase();
+    const lowerOrig = original.toLowerCase();
+
     // Fast path: all uppercase
-    if (original === original.toUpperCase()) {
+    if (original === upperOrig) {
         return restored.toUpperCase();
     }
 
-    // Fast path: title case (first letter uppercase, rest lowercase)
-    if (origLen > 0 &&
-        original[0] === original[0].toUpperCase() &&
-        (origLen === 1 || original.slice(1) === original.slice(1).toLowerCase())) {
-        return restored[0].toUpperCase() + restored.slice(1).toLowerCase();
-    }
-
     // Fast path: all lowercase
-    if (original === original.toLowerCase()) {
+    if (original === lowerOrig) {
         return restored.toLowerCase();
     }
 
-    // Character-by-character case preservation for mixed case
-    let result = "";
+    // Fast path: title case
+    if (origLen > 0 &&
+        original[0] === upperOrig[0] &&
+        original.slice(1) === lowerOrig.slice(1)) {
+        return restored[0].toUpperCase() + restored.slice(1).toLowerCase();
+    }
+
+    // Mixed case: use array for efficient string building
+    const result: string[] = new Array(restLen);
     const minLength = Math.min(origLen, restLen);
 
     for (let i = 0; i < minLength; i++) {
         const origChar = original[i];
-        result += origChar === origChar.toUpperCase()
-            ? restored[i].toUpperCase()
-            : restored[i].toLowerCase();
+        const origLower = lowerOrig[i];
+        // Only apply casing to alphabetic characters
+        result[i] = origChar === origLower
+            ? restored[i].toLowerCase()
+            : restored[i].toUpperCase();
     }
 
     // Handle remaining characters if restored is longer
     if (restLen > minLength) {
-        const lastCharIsUpper = origLen > 0 &&
-            original[origLen - 1] === original[origLen - 1].toUpperCase();
+        const lastOrigChar = original[origLen - 1];
+        const lastIsUpper = lastOrigChar !== lowerOrig[origLen - 1];
+        const transform = lastIsUpper ?
+            (c: string) => c.toUpperCase() :
+            (c: string) => c.toLowerCase();
 
         for (let i = minLength; i < restLen; i++) {
-            result += lastCharIsUpper
-                ? restored[i].toUpperCase()
-                : restored[i].toLowerCase();
+            result[i] = transform(restored[i]);
         }
     }
 
-    return result;
+    return result.join("");
 }
