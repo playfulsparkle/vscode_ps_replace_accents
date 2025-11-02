@@ -4,7 +4,7 @@ All notable changes to the "Playful Sparkle: Replace Accents" extension will be 
 
 ## [0.0.10] - 2025-11-01
 
-Added diacritic restoration for Danish, French, Spanish, and Swedish.
+Added diacritic restoration for Danish, French, Spanish, Swedish, and Italian.
 Added suffix matching for inflected forms (off by default), 
 Added ignored words list for brands/exceptions 
 Added caching most userd words.

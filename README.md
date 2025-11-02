@@ -66,7 +66,7 @@ If you encounter any of these or other issues, please report them on the [GitHub
 
 ### 0.0.10
 
-Added diacritic restoration for Danish, French, Spanish, and Swedish.
+Added diacritic restoration for Danish, French, Spanish, Swedish, and Italian.
 Added suffix matching for inflected forms (off by default), 
 Added ignored words list for brands/exceptions 
 Added caching most userd words.
