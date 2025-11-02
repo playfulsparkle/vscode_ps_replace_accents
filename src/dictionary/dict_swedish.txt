@@ -1,16 +1,16 @@
 berättelser	188
 linnés	156
 linköpings	107
-sång	75
+sång	77
 musketörerna	70
+år	67
 wirsén	58
 sånger	57
-år	46
 regnbågens	38
+förstå	34
 grönan	33
 gröda	32
 öwer	32
-förstå	31
 regeringsförklaringen	28
 förord	27
 angående	26
@@ -20,7 +20,6 @@ beckfjäll	22
 böckerna	22
 fiskmåsen	22
 nåt	22
-är	21
 julsång	20
 allmänna	19
 företal	19
@@ -63,16 +62,21 @@ fågel	9
 fiskfångst	9
 husägare	9
 malmköping	9
+sängen	9
 sköna	9
 åkte	8
 åmåls	8
 berättelse	8
 fångade	8
 fröjd	8
+län	8
+låt	8
 nåd	8
 rättelser	8
 sådant	8
+värt	8
 ädlings	7
+åter	7
 hjältedikt	7
 öst	7
 sällan	7
@@ -84,7 +88,6 @@ väckning	7
 wikisource-översättning	7
 ämnen	6
 årsdagen	6
-åter	6
 björck	6
 dödsolyckan	6
 föreslagna	6
@@ -96,7 +99,7 @@ iväg	6
 knarkbåtar	6
 kräftfångst	6
 krönikören	6
-län	6
+mån	6
 nådiga	6
 överallt	6
 så	6
@@ -106,7 +109,6 @@ tårta	6
 tisdagsträd	6
 tröst	6
 värme	6
-värt	6
 äro	5
 åtta	5
 brynäs	5
@@ -119,7 +121,6 @@ fiskare-sång	5
 hjärne	5
 hörer	5
 jylhä	5
-låt	5
 majestäts	5
 möjligt	5
 nämn	5
@@ -127,12 +128,12 @@ nån	5
 när	5
 norrlänningens	5
 ögonbryn	5
-sängen	5
 spår	5
 sträng	5
 tävlat	5
 trädet	5
 uppstår	5
+värden	5
 wår	5
 aftonbön	4
 åmål	4
@@ -177,9 +178,9 @@ insändarskribenten	4
 klistermärken	4
 lägenheten	4
 längdskidordärför	4
+lästa	4
 läste	4
 linné	4
-mån	4
 månads	4
 måndagen	4
 måndagskram	4
@@ -195,7 +196,6 @@ onödiga	4
 översättning	4
 pekskärmen	4
 sågningen	4
-sången	4
 sarah-ärenden	4
 sjätte	4
 skogsåverkan	4
@@ -209,7 +209,6 @@ trädgården	4
 två	4
 ungdomsförbund	4
 vårdcentralen	4
-värden	4
 värre	4
 västbanken	4
 vučić	4
@@ -256,7 +255,6 @@ förebyggande	3
 föregående	3
 författare	3
 förluster	3
-första	3
 förstahandskällor	3
 förstöras	3
 frälsning	3
@@ -284,6 +282,7 @@ hjärtans	3
 höjdhopp	3
 höstbukett	3
 hushållssysslor	3
+ifrågasatta	3
 igår	3
 inläggsnavigering	3
 inrättande	3
@@ -300,12 +299,11 @@ länka	3
 läsa	3
 läser	3
 läskig	3
-lästa	3
-lät	3
 lätt	3
 liverapportklassikermöte	3
 löpare	3
 lövblåsarna	3
+löven	3
 måndagsbidrag	3
 människor	3
 månskenet	3
@@ -319,6 +317,7 @@ nuförtiden	3
 öfwer	3
 öga	3
 ögonbrynen	3
+okända	3
 önskas	3
 österbotten	3
 östis	3
@@ -336,6 +335,7 @@ rålamb	3
 rättegången	3
 rättigheterna	3
 rättsexperten	3
+säg	3
 säkrare	3
 sällheten	3
 samhällstjänst	3
@@ -358,6 +358,7 @@ stjäl	3
 stjärnan	3
 stjärnans	3
 stormäktigste	3
+störta	3
 strålning	3
 strävar	3
 svårt	3
@@ -381,6 +382,7 @@ undersöks	3
 uppföljning	3
 utför	3
 vädret	3
+vågar	3
 vänners	3
 väns	3
 väntan	3
@@ -422,6 +424,7 @@ arméns	2
 assistpoäng	2
 äst	2
 åstad	2
+åta	2
 återgår	2
 återlämnas	2
 avgörande	2
@@ -612,7 +615,6 @@ humanitär	2
 hushållet	2
 idéer	2
 idén	2
-ifrågasatta	2
 infälld	2
 införa	2
 inlägg	2
@@ -666,7 +668,6 @@ låga	2
 läge	2
 lägenhet	2
 lämnar	2
-lån	2
 ländernas	2
 landsväg	2
 landsvägs-poesi	2
@@ -691,13 +692,11 @@ ljudböcker	2
 lokomotiv-förare	2
 lööfs	2
 lösa	2
-löven	2
 lovsång	2
 löwenhjelm	2
 mackabéerboken	2
 målar	2
 mållös	2
-män	2
 månaden	2
 måndag-bidrag	2
 måndagskväll	2
@@ -707,6 +706,7 @@ mäns	2
 mänska	2
 marseljäsen	2
 mätt	2
+måtte	2
 mervärde	2
 militärbasen	2
 militärinstruktör	2
@@ -732,7 +732,6 @@ nödgas	2
 nyår	2
 nyhetslägen	2
 oändliga	2
-okända	2
 öl	2
 omedelbums-värld	2
 onlineredaktör	2
@@ -787,7 +786,8 @@ rört	2
 rosén	2
 sååååå	2
 sådana	2
-säg	2
+sågas	2
+sågs	2
 säkerhets	2
 säkerhetsrisker	2
 säkerhetssystem	2
@@ -803,7 +803,6 @@ såna	2
 sände	2
 sänder	2
 sänds	2
-säng	2
 sarah-anmälningar	2
 särskilda	2
 säters	2
@@ -819,6 +818,7 @@ sjömil	2
 sjukvård	2
 skådespelaren	2
 skådespelarna	2
+skål	2
 skärgården	2
 sköta	2
 skräckskildringar	2
@@ -855,7 +855,6 @@ stått	2
 stödet	2
 stön	2
 störande	2
-störta	2
 sträck	2
 sträva	2
 sväng	2
@@ -921,7 +920,6 @@ utställare	2
 utvärdera	2
 väcka	2
 väckta	2
-vågar	2
 vågat	2
 väggar	2
 vägval	2
@@ -945,7 +943,6 @@ världscupen	2
 världscuppremiären	2
 värnplikt	2
 varsågod	2
-vårt	2
 växt	2
 vestgötalagen	2
 vielä	2
@@ -1120,13 +1117,10 @@ asbjörnsen	1
 åskrädd	1
 åskväder	1
 åt	1
-åta	1
-äta	1
 åtalad	1
 åtalade	1
 åtalades	1
 åtalas	1
-äter	1
 återanvändas	1
 återblick	1
 återfall	1
@@ -2214,7 +2208,6 @@ idrottsförbund	1
 idrottsstjärna	1
 iförd	1
 ifrågasatt	1
-ifrågasätta	1
 ifrågasatts	1
 ifrån	1
 igång	1
@@ -2551,7 +2544,6 @@ läsarresa	1
 läskande	1
 läskigt	1
 läsplatta	1
-låsta	1
 läsvärt	1
 låta	1
 låter	1
@@ -2621,7 +2613,6 @@ lösnummer	1
 löste	1
 löv	1
 lövblåsten	1
-lovén	1
 löwenhielm	1
 löwenhjelms	1
 luftförsvar	1
@@ -2718,8 +2709,6 @@ matinköp	1
 matmödrars	1
 mätningarna	1
 mätserie	1
-måtte	1
-mätte	1
 måttlighetsdrickare	1
 matväg	1
 medborgarsång	1
@@ -2932,7 +2921,6 @@ oförtänkt	1
 ökad	1
 ökade	1
 okänd	1
-ökända	1
 okändt	1
 okänt	1
 ökat	1
@@ -3222,14 +3210,9 @@ säckar	1
 sådan	1
 sådär	1
 säfström	1
-såg	1
 säga	1
 sågar	1
-sågas	1
-sägas	1
 sägern	1
-sågs	1
-sägs	1
 säj	1
 säker	1
 säkerhet	1
@@ -3330,8 +3313,6 @@ skadeförebyggande	1
 skådespel	1
 skådespelare	1
 skafferidörrar	1
-skål	1
-skäl	1
 skäll	1
 skämtade	1
 skandinaviakaffelovisamariegatanparkerskyltsöndagstickade	1
@@ -3534,7 +3515,6 @@ större	1
 störst	1
 största	1
 storstäderna	1
-stortå	1
 stöter	1
 stötte	1
 sträckan	1
@@ -3815,7 +3795,6 @@ vädjan	1
 väg	1
 våga	1
 vågade	1
-vägar	1
 vägarna	1
 vägavspärrningar	1
 vägbygget	1
@@ -3912,7 +3891,6 @@ vardagshändelser	1
 vårdas	1
 vårdcentral	1
 värde	1
-vården	1
 värdes	1
 värdig	1
 värdinna	1

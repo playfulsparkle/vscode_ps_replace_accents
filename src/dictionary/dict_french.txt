@@ -1,5 +1,5 @@
 abonnés	279
-réservé	240
+réservé	241
 sous-catégories	96
 catégories	73
 économie	55
@@ -9,6 +9,7 @@ débats	36
 spécifiées	34
 structuré	34
 structurées	34
+générale	33
 téléverser	33
 autorité	32
 infoboîte	32
@@ -16,13 +17,13 @@ précédente	32
 représentations	32
 goût	30
 élément	28
-générale	28
 cachées	27
 cinéma	26
 réutiliser	26
 diète	25
+evènements	25
+nécessite	25
 tchèque	25
-evènements	24
 générales	24
 l’assemblée	24
 enquête	22
@@ -44,15 +45,14 @@ volonté	16
 résultats	15
 rôles	15
 appropriées	14
+côte	14
 déplacés	14
 israël	14
 mémorable	14
-nécessite	14
 précises	14
 publié	14
 répertorier	14
 surchargée	14
-côte	13
 dégage	13
 écrite	13
 expérience	13
@@ -75,14 +75,13 @@ qu’abonné	12
 réalisateur	12
 sûre	12
 télérama	12
+très	12
 d’après	11
 d’égalité	11
 déjà	11
 éditorial	11
 l’incarcération	11
 manière	11
-nécessité	11
-très	11
 agressivité	10
 américaine	10
 clé	10
@@ -136,6 +135,7 @@ votée	8
 aggravé	7
 étrangères	7
 près	7
+région	7
 sous-catégorie	7
 trouvés	7
 activité	6
@@ -161,11 +161,13 @@ rejeté	6
 américains	5
 août	5
 coïncide	5
+contrôle	5
 coordonnées	5
 créations	5
 d'activité	5
 d’armée	5
 d’extrême	5
+décidé	5
 déclaré	5
 démarrage	5
 dénonce	5
@@ -176,7 +178,6 @@ expliqué	5
 fosilización	5
 für	5
 garcía	5
-ĝenerale	5
 israélien	5
 journée	5
 l’évolution	5
@@ -189,7 +190,6 @@ pluralité	5
 présence	5
 procès	5
 qu’israël	5
-région	5
 rémi-françois	5
 répression	5
 rétablissement	5
@@ -208,7 +208,6 @@ belén	4
 brûlée	4
 croisière	4
 daté	4
-décidé	4
 déjeuner	4
 demandé	4
 déroulant	4
@@ -255,6 +254,7 @@ aérien	3
 allégée	3
 améliorer	3
 années	3
+apprécie	3
 astéroïdes	3
 bénéfice	3
 béton	3
@@ -265,13 +265,13 @@ château	3
 collégiens	3
 comédien	3
 contemporánea-96	3
-contrôle	3
 controversé	3
 crédible	3
 d’après-midi	3
 d'écran	3
 débutant	3
 décembre	3
+démontré	3
 dénonciation	3
 départements	3
 dépenses	3
@@ -281,6 +281,7 @@ détail	3
 edifício	3
 élargir	3
 électoral	3
+entraîné	3
 équipe	3
 escondío	3
 ética	3
@@ -353,7 +354,6 @@ anti-aérienne	2
 anticipées	2
 aplicação	2
 appliquée	2
-apprécie	2
 appropriée	2
 araújo	2
 arménien	2
@@ -397,7 +397,6 @@ conservação	2
 construcción	2
 contemporánea	2
 contesté	2
-contrôlé	2
 créer	2
 cuiabá	2
 d’écran	2
@@ -414,7 +413,6 @@ défiler	2
 définitifs	2
 définition	2
 démocratique	2
-démontré	2
 déplacées	2
 déplacer	2
 déplore-t-elle	2
@@ -457,7 +455,6 @@ energéticos	2
 enfoncées	2
 engagé	2
 entouré	2
-entraîné	2
 entraînement	2
 entraîneur	2
 éphéméride	2
@@ -541,17 +538,20 @@ laïcité	2
 leçon	2
 leçons	2
 législatives	2
+león	2
 liên	2
 línguas	2
 loués	2
 lycéens	2
 maître	2
 marché	2
+marqués	2
 médecine	2
 média	2
 même	2
 mémorial	2
 mémorisation	2
+mené	2
 menées	2
 mercês	2
 mère	2
@@ -563,6 +563,7 @@ música	2
 müzisyen	2
 n’étant	2
 n’inquiète	2
+né	2
 nécessaire	2
 néerlandaises	2
 négatif	2
@@ -612,13 +613,14 @@ ramírez	2
 réagi	2
 réalisée	2
 récit	2
+réclame	2
 reçoit	2
 réduire	2
 réelle	2
 référence	2
 réfléchit	2
+reflexión	2
 régiment	2
-región	2
 régis	2
 régissent	2
 relayée	2
@@ -634,6 +636,7 @@ résilience	2
 résistance	2
 resistência	2
 résultat	2
+résume	2
 retrouvé	2
 réunions	2
 réunissant	2
@@ -738,7 +741,6 @@ apéro	1
 apparentés	1
 appelé	1
 appelées	1
-apprécié	1
 approuvé	1
 appuyés	1
 après-midi	1
@@ -944,7 +946,6 @@ copié	1
 córdoba	1
 correção	1
 cortège	1
-côté	1
 côtés	1
 côtoyer	1
 coude-à-coude	1
@@ -1023,7 +1024,6 @@ décalage	1
 décédées	1
 décennies	1
 décès	1
-décide	1
 décidée	1
 décimale	1
 décimo	1
@@ -1081,7 +1081,6 @@ démocrate	1
 démocrates	1
 démocratie	1
 demolição	1
-démontre	1
 démontrent	1
 démontrer	1
 déontologie	1
@@ -1247,7 +1246,6 @@ enterré	1
 entièrement	1
 entités	1
 entraînant	1
-entraîne	1
 entraîner	1
 entraîneurs	1
 entré	1
@@ -1298,7 +1296,6 @@ européen	1
 eusébio	1
 eux-mêmes	1
 evasión	1
-événements	1
 éventuel	1
 éventuelle	1
 évêque	1
@@ -1593,8 +1590,6 @@ légèreté	1
 légion	1
 léglise	1
 léo	1
-león	1
-léon	1
 léon-dierx	1
 léopoldville	1
 lepéniste	1
@@ -1646,8 +1641,6 @@ mariné	1
 marinosão	1
 markundersökning	1
 marquée	1
-marqués	1
-marquês	1
 massé	1
 matériel	1
 matériels	1
@@ -1672,8 +1665,6 @@ mêmes	1
 menaçant	1
 menaçants	1
 menções	1
-mené	1
-mène	1
 mènent	1
 mensongère	1
 mérignac	1
@@ -1731,8 +1722,6 @@ nápoles	1
 natación	1
 natalité	1
 này	1
-né	1
-në	1
 nécessitent	1
 nécessitera	1
 nécrologie	1
@@ -1917,8 +1906,6 @@ récemment	1
 recensé	1
 réchauffement	1
 récitl’éditeur	1
-réclame	1
-réclamé	1
 recollé	1
 réconfort	1
 reconnaît	1
@@ -1941,8 +1928,6 @@ réexportations	1
 réfère	1
 référendum	1
 réfléchirait	1
-reflexión	1
-réflexion	1
 réflexions	1
 réforme	1
 refusé	1
@@ -2002,7 +1987,6 @@ républicains	1
 république	1
 réputation	1
 réseau	1
-réserve	1
 réserves	1
 résidant	1
 réside	1
@@ -2012,8 +1996,6 @@ résorbent	1
 responsabilité	1
 responsabilités	1
 restauração	1
-résume	1
-résumé	1
 rétention	1
 réticences	1
 rétorqué	1
@@ -2197,7 +2179,6 @@ transformación	1
 transformé	1
 transição	1
 traversé	1
-três	1
 trêve	1
 trinité-et-tobago	1
 troisième	1
