@@ -316,6 +316,206 @@ var languageCharacterMappings = [
       { letter: "\xF6", ascii: "oe" },
       { letter: "\xD6", ascii: "Oe" }
     ]
+  },
+  {
+    language: "portuguese",
+    letters: [
+      { letter: "\xE1", ascii: "a" },
+      { letter: "\xC1", ascii: "A" },
+      { letter: "\xE2", ascii: "a" },
+      { letter: "\xC2", ascii: "A" },
+      { letter: "\xE3", ascii: "a" },
+      { letter: "\xC3", ascii: "A" },
+      { letter: "\xE0", ascii: "a" },
+      { letter: "\xC0", ascii: "A" },
+      { letter: "\xE9", ascii: "e" },
+      { letter: "\xC9", ascii: "E" },
+      { letter: "\xEA", ascii: "e" },
+      { letter: "\xCA", ascii: "E" },
+      { letter: "\xED", ascii: "i" },
+      { letter: "\xCD", ascii: "I" },
+      { letter: "\xF3", ascii: "o" },
+      { letter: "\xD3", ascii: "O" },
+      { letter: "\xF4", ascii: "o" },
+      { letter: "\xD4", ascii: "O" },
+      { letter: "\xF5", ascii: "o" },
+      { letter: "\xD5", ascii: "O" },
+      { letter: "\xFA", ascii: "u" },
+      { letter: "\xDA", ascii: "U" },
+      { letter: "\xE7", ascii: "c" },
+      { letter: "\xC7", ascii: "C" }
+    ]
+  },
+  {
+    language: "italian",
+    letters: [
+      { letter: "\xE0", ascii: "a" },
+      { letter: "\xC0", ascii: "A" },
+      { letter: "\xE8", ascii: "e" },
+      { letter: "\xC8", ascii: "E" },
+      { letter: "\xE9", ascii: "e" },
+      { letter: "\xC9", ascii: "E" },
+      { letter: "\xEC", ascii: "i" },
+      { letter: "\xCC", ascii: "I" },
+      { letter: "\xF2", ascii: "o" },
+      { letter: "\xD2", ascii: "O" },
+      { letter: "\xF3", ascii: "o" },
+      { letter: "\xD3", ascii: "O" },
+      { letter: "\xF9", ascii: "u" },
+      { letter: "\xD9", ascii: "U" }
+    ]
+  },
+  {
+    language: "norwegian",
+    letters: [
+      { letter: "\xE6", ascii: "ae" },
+      { letter: "\xC6", ascii: "Ae" },
+      { letter: "\xF8", ascii: "oe" },
+      { letter: "\xD8", ascii: "Oe" },
+      { letter: "\xE5", ascii: "aa" },
+      { letter: "\xC5", ascii: "Aa" }
+    ]
+  },
+  {
+    language: "icelandic",
+    letters: [
+      { letter: "\xE1", ascii: "a" },
+      { letter: "\xC1", ascii: "A" },
+      { letter: "\xE9", ascii: "e" },
+      { letter: "\xC9", ascii: "E" },
+      { letter: "\xED", ascii: "i" },
+      { letter: "\xCD", ascii: "I" },
+      { letter: "\xF3", ascii: "o" },
+      { letter: "\xD3", ascii: "O" },
+      { letter: "\xFA", ascii: "u" },
+      { letter: "\xDA", ascii: "U" },
+      { letter: "\xFD", ascii: "y" },
+      { letter: "\xDD", ascii: "Y" },
+      { letter: "\xF0", ascii: "d" },
+      { letter: "\xD0", ascii: "D" },
+      { letter: "\xFE", ascii: "th" },
+      { letter: "\xDE", ascii: "Th" },
+      { letter: "\xE6", ascii: "ae" },
+      { letter: "\xC6", ascii: "Ae" },
+      { letter: "\xF6", ascii: "o" },
+      { letter: "\xD6", ascii: "O" }
+    ]
+  },
+  {
+    language: "dutch",
+    letters: [
+      { letter: "\xE1", ascii: "a" },
+      { letter: "\xC1", ascii: "A" },
+      { letter: "\xE9", ascii: "e" },
+      { letter: "\xC9", ascii: "E" },
+      { letter: "\xEB", ascii: "e" },
+      { letter: "\xCB", ascii: "E" },
+      { letter: "\xED", ascii: "i" },
+      { letter: "\xCD", ascii: "I" },
+      { letter: "\xEF", ascii: "i" },
+      { letter: "\xCF", ascii: "I" },
+      { letter: "\xF3", ascii: "o" },
+      { letter: "\xD3", ascii: "O" },
+      { letter: "\xF6", ascii: "o" },
+      { letter: "\xD6", ascii: "O" },
+      { letter: "\xFA", ascii: "u" },
+      { letter: "\xDA", ascii: "U" },
+      { letter: "\xFC", ascii: "u" },
+      { letter: "\xDC", ascii: "U" }
+    ]
+  },
+  {
+    language: "croatian",
+    letters: [
+      { letter: "\u010D", ascii: "c" },
+      { letter: "\u010C", ascii: "C" },
+      { letter: "\u0107", ascii: "c" },
+      { letter: "\u0106", ascii: "C" },
+      { letter: "\u0111", ascii: "d" },
+      { letter: "\u0110", ascii: "D" },
+      { letter: "\u0161", ascii: "s" },
+      { letter: "\u0160", ascii: "S" },
+      { letter: "\u017E", ascii: "z" },
+      { letter: "\u017D", ascii: "Z" }
+    ]
+  },
+  {
+    language: "slovenian",
+    letters: [
+      { letter: "\u010D", ascii: "c" },
+      { letter: "\u010C", ascii: "C" },
+      { letter: "\u0161", ascii: "s" },
+      { letter: "\u0160", ascii: "S" },
+      { letter: "\u017E", ascii: "z" },
+      { letter: "\u017D", ascii: "Z" }
+    ]
+  },
+  {
+    language: "romanian",
+    letters: [
+      { letter: "\u0103", ascii: "a" },
+      { letter: "\u0102", ascii: "A" },
+      { letter: "\xE2", ascii: "a" },
+      { letter: "\xC2", ascii: "A" },
+      { letter: "\xEE", ascii: "i" },
+      { letter: "\xCE", ascii: "I" },
+      { letter: "\u0219", ascii: "s" },
+      { letter: "\u0218", ascii: "S" },
+      { letter: "\u0163", ascii: "t" },
+      { letter: "\u0162", ascii: "T" },
+      { letter: "\u021B", ascii: "t" },
+      { letter: "\u021A", ascii: "T" }
+    ]
+  },
+  {
+    language: "lithuanian",
+    letters: [
+      { letter: "\u0105", ascii: "a" },
+      { letter: "\u0104", ascii: "A" },
+      { letter: "\u010D", ascii: "c" },
+      { letter: "\u010C", ascii: "C" },
+      { letter: "\u0119", ascii: "e" },
+      { letter: "\u0118", ascii: "E" },
+      { letter: "\u0117", ascii: "e" },
+      { letter: "\u0116", ascii: "E" },
+      { letter: "\u012F", ascii: "i" },
+      { letter: "\u012E", ascii: "I" },
+      { letter: "\u0161", ascii: "s" },
+      { letter: "\u0160", ascii: "S" },
+      { letter: "\u0173", ascii: "u" },
+      { letter: "\u0172", ascii: "U" },
+      { letter: "\u016B", ascii: "u" },
+      { letter: "\u016A", ascii: "U" },
+      { letter: "\u017E", ascii: "z" },
+      { letter: "\u017D", ascii: "Z" }
+    ]
+  },
+  {
+    language: "latvian",
+    letters: [
+      { letter: "\u0101", ascii: "a" },
+      { letter: "\u0100", ascii: "A" },
+      { letter: "\u010D", ascii: "c" },
+      { letter: "\u010C", ascii: "C" },
+      { letter: "\u0113", ascii: "e" },
+      { letter: "\u0112", ascii: "E" },
+      { letter: "\u0123", ascii: "g" },
+      { letter: "\u0122", ascii: "G" },
+      { letter: "\u012B", ascii: "i" },
+      { letter: "\u012A", ascii: "I" },
+      { letter: "\u0137", ascii: "k" },
+      { letter: "\u0136", ascii: "K" },
+      { letter: "\u013C", ascii: "l" },
+      { letter: "\u013B", ascii: "L" },
+      { letter: "\u0146", ascii: "n" },
+      { letter: "\u0145", ascii: "N" },
+      { letter: "\u0161", ascii: "s" },
+      { letter: "\u0160", ascii: "S" },
+      { letter: "\u016B", ascii: "u" },
+      { letter: "\u016A", ascii: "U" },
+      { letter: "\u017E", ascii: "z" },
+      { letter: "\u017D", ascii: "Z" }
+    ]
   }
 ];
 var allLanguageCharacterMappings = Object.fromEntries(

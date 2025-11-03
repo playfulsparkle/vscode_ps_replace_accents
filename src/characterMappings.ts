@@ -161,6 +161,131 @@ export const languageCharacterMappings: LanguageLetters[] = [
             { letter: "ä", ascii: "ae" }, { letter: "Ä", ascii: "Ae" },
             { letter: "ö", ascii: "oe" }, { letter: "Ö", ascii: "Oe" }
         ]
+    },
+    {
+        language: "portuguese",
+        letters: [
+            { letter: "á", ascii: "a" }, { letter: "Á", ascii: "A" },
+            { letter: "â", ascii: "a" }, { letter: "Â", ascii: "A" },
+            { letter: "ã", ascii: "a" }, { letter: "Ã", ascii: "A" },
+            { letter: "à", ascii: "a" }, { letter: "À", ascii: "A" },
+            { letter: "é", ascii: "e" }, { letter: "É", ascii: "E" },
+            { letter: "ê", ascii: "e" }, { letter: "Ê", ascii: "E" },
+            { letter: "í", ascii: "i" }, { letter: "Í", ascii: "I" },
+            { letter: "ó", ascii: "o" }, { letter: "Ó", ascii: "O" },
+            { letter: "ô", ascii: "o" }, { letter: "Ô", ascii: "O" },
+            { letter: "õ", ascii: "o" }, { letter: "Õ", ascii: "O" },
+            { letter: "ú", ascii: "u" }, { letter: "Ú", ascii: "U" },
+            { letter: "ç", ascii: "c" }, { letter: "Ç", ascii: "C" }
+        ]
+    },
+    {
+        language: "italian",
+        letters: [
+            { letter: "à", ascii: "a" }, { letter: "À", ascii: "A" },
+            { letter: "è", ascii: "e" }, { letter: "È", ascii: "E" },
+            { letter: "é", ascii: "e" }, { letter: "É", ascii: "E" },
+            { letter: "ì", ascii: "i" }, { letter: "Ì", ascii: "I" },
+            { letter: "ò", ascii: "o" }, { letter: "Ò", ascii: "O" },
+            { letter: "ó", ascii: "o" }, { letter: "Ó", ascii: "O" },
+            { letter: "ù", ascii: "u" }, { letter: "Ù", ascii: "U" }
+        ]
+    },
+    {
+        language: "norwegian",
+        letters: [
+            { letter: "æ", ascii: "ae" }, { letter: "Æ", ascii: "Ae" },
+            { letter: "ø", ascii: "oe" }, { letter: "Ø", ascii: "Oe" },
+            { letter: "å", ascii: "aa" }, { letter: "Å", ascii: "Aa" }
+        ]
+    },
+    {
+        language: "icelandic",
+        letters: [
+            { letter: "á", ascii: "a" }, { letter: "Á", ascii: "A" },
+            { letter: "é", ascii: "e" }, { letter: "É", ascii: "E" },
+            { letter: "í", ascii: "i" }, { letter: "Í", ascii: "I" },
+            { letter: "ó", ascii: "o" }, { letter: "Ó", ascii: "O" },
+            { letter: "ú", ascii: "u" }, { letter: "Ú", ascii: "U" },
+            { letter: "ý", ascii: "y" }, { letter: "Ý", ascii: "Y" },
+            { letter: "ð", ascii: "d" }, { letter: "Ð", ascii: "D" },
+            { letter: "þ", ascii: "th" }, { letter: "Þ", ascii: "Th" },
+            { letter: "æ", ascii: "ae" }, { letter: "Æ", ascii: "Ae" },
+            { letter: "ö", ascii: "o" }, { letter: "Ö", ascii: "O" }
+        ]
+    },
+    {
+        language: "dutch",
+        letters: [
+            { letter: "á", ascii: "a" }, { letter: "Á", ascii: "A" },
+            { letter: "é", ascii: "e" }, { letter: "É", ascii: "E" },
+            { letter: "ë", ascii: "e" }, { letter: "Ë", ascii: "E" },
+            { letter: "í", ascii: "i" }, { letter: "Í", ascii: "I" },
+            { letter: "ï", ascii: "i" }, { letter: "Ï", ascii: "I" },
+            { letter: "ó", ascii: "o" }, { letter: "Ó", ascii: "O" },
+            { letter: "ö", ascii: "o" }, { letter: "Ö", ascii: "O" },
+            { letter: "ú", ascii: "u" }, { letter: "Ú", ascii: "U" },
+            { letter: "ü", ascii: "u" }, { letter: "Ü", ascii: "U" }
+        ]
+    },
+    {
+        language: "croatian",
+        letters: [
+            { letter: "č", ascii: "c" }, { letter: "Č", ascii: "C" },
+            { letter: "ć", ascii: "c" }, { letter: "Ć", ascii: "C" },
+            { letter: "đ", ascii: "d" }, { letter: "Đ", ascii: "D" },
+            { letter: "š", ascii: "s" }, { letter: "Š", ascii: "S" },
+            { letter: "ž", ascii: "z" }, { letter: "Ž", ascii: "Z" }
+        ]
+    },
+    {
+        language: "slovenian",
+        letters: [
+            { letter: "č", ascii: "c" }, { letter: "Č", ascii: "C" },
+            { letter: "š", ascii: "s" }, { letter: "Š", ascii: "S" },
+            { letter: "ž", ascii: "z" }, { letter: "Ž", ascii: "Z" }
+        ]
+    },
+    {
+        language: "romanian",
+        letters: [
+            { letter: "ă", ascii: "a" }, { letter: "Ă", ascii: "A" },
+            { letter: "â", ascii: "a" }, { letter: "Â", ascii: "A" },
+            { letter: "î", ascii: "i" }, { letter: "Î", ascii: "I" },
+            { letter: "ș", ascii: "s" }, { letter: "Ș", ascii: "S" },
+            { letter: "ţ", ascii: "t" }, { letter: "Ţ", ascii: "T" },
+            { letter: "ț", ascii: "t" }, { letter: "Ț", ascii: "T" }
+        ]
+    },
+    {
+        language: "lithuanian",
+        letters: [
+            { letter: "ą", ascii: "a" }, { letter: "Ą", ascii: "A" },
+            { letter: "č", ascii: "c" }, { letter: "Č", ascii: "C" },
+            { letter: "ę", ascii: "e" }, { letter: "Ę", ascii: "E" },
+            { letter: "ė", ascii: "e" }, { letter: "Ė", ascii: "E" },
+            { letter: "į", ascii: "i" }, { letter: "Į", ascii: "I" },
+            { letter: "š", ascii: "s" }, { letter: "Š", ascii: "S" },
+            { letter: "ų", ascii: "u" }, { letter: "Ų", ascii: "U" },
+            { letter: "ū", ascii: "u" }, { letter: "Ū", ascii: "U" },
+            { letter: "ž", ascii: "z" }, { letter: "Ž", ascii: "Z" }
+        ]
+    },
+    {
+        language: "latvian",
+        letters: [
+            { letter: "ā", ascii: "a" }, { letter: "Ā", ascii: "A" },
+            { letter: "č", ascii: "c" }, { letter: "Č", ascii: "C" },
+            { letter: "ē", ascii: "e" }, { letter: "Ē", ascii: "E" },
+            { letter: "ģ", ascii: "g" }, { letter: "Ģ", ascii: "G" },
+            { letter: "ī", ascii: "i" }, { letter: "Ī", ascii: "I" },
+            { letter: "ķ", ascii: "k" }, { letter: "Ķ", ascii: "K" },
+            { letter: "ļ", ascii: "l" }, { letter: "Ļ", ascii: "L" },
+            { letter: "ņ", ascii: "n" }, { letter: "Ņ", ascii: "N" },
+            { letter: "š", ascii: "s" }, { letter: "Š", ascii: "S" },
+            { letter: "ū", ascii: "u" }, { letter: "Ū", ascii: "U" },
+            { letter: "ž", ascii: "z" }, { letter: "Ž", ascii: "Z" }
+        ]
     }
 ];
 
