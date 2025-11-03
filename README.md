@@ -64,6 +64,13 @@ If you encounter any of these or other issues, please report them on the [GitHub
 
 ## Release Notes
 
+### 0.0.11
+
+**Fixed:**
+    - **Accent Restoration for Inflected Words:** Resolved issue where words without diacritics weren't properly restored to their correct diacritic forms, especially in inflected words with suffixes.
+    - **Enhanced Suffix Matching:** Improved handling of cases like "edenyemet" → "edényemet" by preserving original suffixes while restoring diacritic stems.
+    - **Extended Stem Detection:** Expanded dictionary lookup to consider shorter stems (down to 2 characters) for better coverage of inflected forms.
+
 ### 0.0.10
 
 Added diacritic restoration for Danish, French, Spanish, Swedish, Italian, Portuguese, Italian, Norwegian, Icelandic, Dutch, Croatian, Slovenian, Romanian, Lithuanian, and Latvian.
