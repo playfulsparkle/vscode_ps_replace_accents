@@ -1,8 +1,7 @@
 {
   "Invalid mappings: Not an object.": "無効なマッピングです。オブジェクトではありません。",
   "Invalid key: '{key}'. Keys must be single characters.": "無効なキー: 「{key}」。キーは1文字である必要があります。",
-  "Invalid value for key '${key}': '${value}'. Values must be strings.": "キー「${key}」の値が無効です: 「${value}」。値は文字列である必要があります。",
-  "Cannot modify '{type}' type of document": "「{type}」タイプのドキュメントは変更できません。",
+  "Invalid value for key '{key}': '{value}'. Values must be strings.": "キー「{key}」の値が無効です: 「{value}」。値は文字列である必要があります。",
   "All accented characters were replaced in the entire document.": "ドキュメント全体でダイアクリティカルマーク付き文字をすべて置換しました。",
   "All accented characters were replaced in the selected text.": "選択したテキスト内のダイアクリティカルマーク付き文字をすべて置換しました。",
   "Unable to replace accents: '{message}'. If this persists, please try reopening the file or restarting Visual Studio Code.": "アクセントを置換できませんでした: 「{message}」。解決しない場合は、ファイルを再度開くか Visual Studio Code を再起動してください。",

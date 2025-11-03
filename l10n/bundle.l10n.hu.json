@@ -1,8 +1,7 @@
 {
   "Invalid mappings: Not an object.": "Érvénytelen leképezések: nem objektum.",
   "Invalid key: '{key}'. Keys must be single characters.": "Érvénytelen kulcs: „{key}”. A kulcsoknak egyetlen karakterből kell állniuk.",
-  "Invalid value for key '${key}': '${value}'. Values must be strings.": "Érvénytelen érték a(z) „${key}” kulcshoz: „${value}”. Az értékeknek szövegesnek kell lenniük.",
-  "Cannot modify '{type}' type of document": "A(z) „{type}” típusú dokumentum nem módosítható.",
+  "Invalid value for key '{key}': '{value}'. Values must be strings.": "Érvénytelen érték a(z) „{key}” kulcshoz: „{value}”. Az értékeknek szövegesnek kell lenniük.",
   "All accented characters were replaced in the entire document.": "A teljes dokumentumban minden ékezetes karakter lecserélésre került.",
   "All accented characters were replaced in the selected text.": "A kijelölt szövegben minden ékezetes karakter lecserélésre került.",
   "Unable to replace accents: '{message}'. If this persists, please try reopening the file or restarting Visual Studio Code.": "Az ékezetek cseréje nem sikerült: „{message}”. Ha a probléma fennáll, próbálja meg újranyitni a fájlt vagy indítsa újra a Visual Studio Code-ot.",

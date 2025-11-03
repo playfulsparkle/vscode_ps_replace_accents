@@ -134,11 +134,11 @@ export function validateUserCharacterMappings(mappings: { [key: string]: string 
 
     for (const [key, value] of Object.entries(mappings)) {
         if (typeof key !== "string" || key.length !== 1) {
-            return vscode.l10n.t('Invalid key: "{key}". Keys must be single characters.', { key });
+            return vscode.l10n.t("Invalid key: '{key}'. Keys must be single characters.", { key });
         }
 
         if (typeof value !== "string") {
-            return vscode.l10n.t('Invalid value for key "{key}": "{value}". Values must be strings.', { key, value });
+            return vscode.l10n.t("Invalid value for key '{key}': '{value}'. Values must be strings.", { key, value });
         }
     }
 

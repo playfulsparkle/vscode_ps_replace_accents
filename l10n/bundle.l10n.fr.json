@@ -1,8 +1,7 @@
 {
   "Invalid mappings: Not an object.": "Mappages non valides : n’est pas un objet.",
   "Invalid key: '{key}'. Keys must be single characters.": "Clé non valide : « {key} ». Les clés doivent comporter un seul caractère.",
-  "Invalid value for key '${key}': '${value}'. Values must be strings.": "Valeur non valide pour la clé « ${key} » : « ${value} ». Les valeurs doivent être des chaînes.",
-  "Cannot modify '{type}' type of document": "Impossible de modifier un document de type « {type} ».",
+  "Invalid value for key '{key}': '{value}'. Values must be strings.": "Valeur non valide pour la clé « {key} » : « {value} ». Les valeurs doivent être des chaînes.",
   "All accented characters were replaced in the entire document.": "Tous les caractères accentués ont été remplacés dans l’ensemble du document.",
   "All accented characters were replaced in the selected text.": "Tous les caractères accentués ont été remplacés dans le texte sélectionné.",
   "Unable to replace accents: '{message}'. If this persists, please try reopening the file or restarting Visual Studio Code.": "Impossible de remplacer les accents : « {message} ». Si le problème persiste, essayez de rouvrir le fichier ou de redémarrer Visual Studio Code.",

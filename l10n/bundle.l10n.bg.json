@@ -1,8 +1,7 @@
 {
   "Invalid mappings: Not an object.": "Невалидни съпоставяния: не е обект.",
   "Invalid key: '{key}'. Keys must be single characters.": "Невалиден ключ: „{key}“. Ключовете трябва да са единични знаци.",
-  "Invalid value for key '${key}': '${value}'. Values must be strings.": "Невалидна стойност за ключ „${key}“: „${value}“. Стойностите трябва да са низове.",
-  "Cannot modify '{type}' type of document": "Не може да се променя документ от тип „{type}“.",
+  "Invalid value for key '{key}': '{value}'. Values must be strings.": "Невалидна стойност за ключ „{key}“: „{value}“. Стойностите трябва да са низове.",
   "All accented characters were replaced in the entire document.": "Всички символи с диакритици бяха заменени в целия документ.",
   "All accented characters were replaced in the selected text.": "Всички символи с диакритици бяха заменени в избрания текст.",
   "Unable to replace accents: '{message}'. If this persists, please try reopening the file or restarting Visual Studio Code.": "Неуспешна замяна на диакритични знаци: „{message}“. Ако проблемът продължава, опитайте да отворите файла отново или рестартирайте Visual Studio Code.",

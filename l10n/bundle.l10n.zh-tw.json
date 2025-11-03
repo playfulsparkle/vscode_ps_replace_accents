@@ -1,8 +1,7 @@
 {
   "Invalid mappings: Not an object.": "無效的對映：不是物件。",
   "Invalid key: '{key}'. Keys must be single characters.": "無效的鍵：「{key}」。鍵必須是單一字元。",
-  "Invalid value for key '${key}': '${value}'. Values must be strings.": "鍵「${key}」的值無效：「${value}」。值必須為字串。",
-  "Cannot modify '{type}' type of document": "無法修改「{type}」類型的文件。",
+  "Invalid value for key '{key}': '{value}'. Values must be strings.": "鍵「{key}」的值無效：「{value}」。值必須為字串。",
   "All accented characters were replaced in the entire document.": "已在整份文件中取代所有含變音符號的字元。",
   "All accented characters were replaced in the selected text.": "已在選取的文字中取代所有含變音符號的字元。",
   "Unable to replace accents: '{message}'. If this persists, please try reopening the file or restarting Visual Studio Code.": "無法取代變音符號：「{message}」。若問題持續，請嘗試重新開啟檔案或重新啟動 Visual Studio Code。",

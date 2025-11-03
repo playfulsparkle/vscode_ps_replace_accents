@@ -1,8 +1,7 @@
 {
   "Invalid mappings: Not an object.": "无效的映射：不是对象。",
   "Invalid key: '{key}'. Keys must be single characters.": "无效的键：“{key}”。键必须是单个字符。",
-  "Invalid value for key '${key}': '${value}'. Values must be strings.": "键“${key}”的值无效：“${value}”。值必须是字符串。",
-  "Cannot modify '{type}' type of document": "无法修改“{type}”类型的文档。",
+  "Invalid value for key '{key}': '{value}'. Values must be strings.": "键“{key}”的值无效：“{value}”。值必须是字符串。",
   "All accented characters were replaced in the entire document.": "已在整个文档中替换所有变音符字符。",
   "All accented characters were replaced in the selected text.": "已在所选文本中替换所有变音符字符。",
   "Unable to replace accents: '{message}'. If this persists, please try reopening the file or restarting Visual Studio Code.": "无法替换变音符：“{message}”。如果问题仍然存在，请尝试重新打开文件或重启 Visual Studio Code。",

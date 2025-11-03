@@ -1,8 +1,7 @@
 {
   "Invalid mappings: Not an object.": "Asignaciones no válidas: no es un objeto.",
   "Invalid key: '{key}'. Keys must be single characters.": "Clave no válida: «{key}». Las claves deben ser un único carácter.",
-  "Invalid value for key '${key}': '${value}'. Values must be strings.": "Valor no válido para la clave «${key}»: «${value}». Los valores deben ser cadenas de texto.",
-  "Cannot modify '{type}' type of document": "No se puede modificar el tipo de documento «{type}».",
+  "Invalid value for key '{key}': '{value}'. Values must be strings.": "Valor no válido para la clave «{key}»: «{value}». Los valores deben ser cadenas de texto.",
   "All accented characters were replaced in the entire document.": "Se reemplazaron todos los caracteres con diacríticos en todo el documento.",
   "All accented characters were replaced in the selected text.": "Se reemplazaron todos los caracteres con diacríticos en el texto seleccionado.",
   "Unable to replace accents: '{message}'. If this persists, please try reopening the file or restarting Visual Studio Code.": "No se pueden reemplazar los acentos: «{message}». Si el problema continúa, intente volver a abrir el archivo o reiniciar Visual Studio Code.",

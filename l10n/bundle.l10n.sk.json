@@ -1,8 +1,7 @@
 {
   "Invalid mappings: Not an object.": "Neplatné mapovania: nejde o objekt.",
   "Invalid key: '{key}'. Keys must be single characters.": "Neplatný kľúč: „{key}“. Kľúče musia byť jedným znakom.",
-  "Invalid value for key '${key}': '${value}'. Values must be strings.": "Neplatná hodnota pre kľúč „${key}“: „${value}“. Hodnoty musia byť reťazce.",
-  "Cannot modify '{type}' type of document": "Nie je možné upraviť dokument typu „{type}“.",
+  "Invalid value for key '{key}': '{value}'. Values must be strings.": "Neplatná hodnota pre kľúč „{key}“: „{value}“. Hodnoty musia byť reťazce.",
   "All accented characters were replaced in the entire document.": "V celom dokumente boli nahradené všetky znaky s diakritikou.",
   "All accented characters were replaced in the selected text.": "Vo vybranom texte boli nahradené všetky znaky s diakritikou.",
   "Unable to replace accents: '{message}'. If this persists, please try reopening the file or restarting Visual Studio Code.": "Nie je možné nahradiť diakritiku: „{message}“. Ak problém pretrváva, skúste súbor znovu otvoriť alebo reštartovať Visual Studio Code.",

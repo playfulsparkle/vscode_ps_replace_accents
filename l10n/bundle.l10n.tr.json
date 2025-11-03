@@ -1,8 +1,7 @@
 {
   "Invalid mappings: Not an object.": "Geçersiz eşlemeler: nesne değil.",
   "Invalid key: '{key}'. Keys must be single characters.": "Geçersiz anahtar: “{key}”. Anahtarlar tek bir karakter olmalıdır.",
-  "Invalid value for key '${key}': '${value}'. Values must be strings.": "“${key}” anahtarı için geçersiz değer: “${value}”. Değerler dize olmalıdır.",
-  "Cannot modify '{type}' type of document": "“{type}” türündeki belge değiştirilemez.",
+  "Invalid value for key '{key}': '{value}'. Values must be strings.": "“{key}” anahtarı için geçersiz değer: “{value}”. Değerler dize olmalıdır.",
   "All accented characters were replaced in the entire document.": "Belgenin tamamındaki tüm aksanlı karakterler değiştirildi.",
   "All accented characters were replaced in the selected text.": "Seçili metindeki tüm aksanlı karakterler değiştirildi.",
   "Unable to replace accents: '{message}'. If this persists, please try reopening the file or restarting Visual Studio Code.": "Aksanlar değiştirilemedi: “{message}”. Sorun devam ederse dosyayı yeniden açmayı veya Visual Studio Code’u yeniden başlatmayı deneyin.",
