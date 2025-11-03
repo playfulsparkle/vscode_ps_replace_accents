@@ -18,7 +18,7 @@ When needed, it can restore diacritics from language dictionaries. You select th
 
 * **Unicode based accent and diacritic removal**: Uses Unicode normalization (NFD or NFKD) to decompose characters, then strips combining marks. Works with multibyte text and emoji.
 
-* **Language specific orthographic mappings**: After normalization applies language aware mappings for Czech, Danish, French, German, Hungarian, Polish, Slovak, Spanish and Swedish. This keeps common ASCII fallbacks for these languages.
+* **Language specific orthographic mappings**: After normalization applies language aware mappings for Hrvatski [Croatian, hr], Čeština [Czech, cs], Dansk [Danish, da], Nederlands [Dutch, nl], Français [French, fr], Deutsch [German, de], Magyar [Hungarian, hu], Íslenska [Icelandic, is], Italiano [Italian, it], Latviešu [Latvian, lv], Lietuvių [Lithuanian, lt], Norsk [Norwegian, no], Polski [Polish, pl], Português [Portuguese, pt], Română [Romanian, ro], Slovenčina [Slovak, sk], Slovenščina [Slovenian, sl], Español [Spanish, es], and Svenska [Swedish, sv]. This keeps common ASCII fallbacks for these languages.
 
 * **Accent and diacritic restoration**: Restores accents from language dictionaries. Uses frequency ordered entries and optional suffix matching to restore inflected forms. You can pick the language and you can ignore words.
 
