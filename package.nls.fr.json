@@ -3,7 +3,7 @@
     "extension.config.removeDiacritics.title": "Replace Accents",
     "extension.config.userCharacterMapping.desc": "Définissez des correspondances de caractères personnalisées pour supprimer les signes diacritiques. Utilisez cette option pour préciser comment convertir les caractères spéciaux (par ex. l’allemand « ß » en « ss », les ligatures « æ » en « ae »). Appliqué après la normalisation.",
     "extension.config.diacriticDictionary.desc": "Sélectionnez un dictionnaire de diacritiques pour la restauration des signes diacritiques.",
-    "extension.config.diacriticRestoreSuffixMatching.desc": "Tentez de restaurer les accents dans les terminaisons de mots (par ex. « edeny » vers « edényemet »). Peut améliorer les résultats pour les formes fléchies, mais peut aussi provoquer des correspondances incorrectes. Laissez désactivé sauf besoin spécifique.",
+    "extension.config.diacriticRestoreSuffixMatching.desc": "Tenter de restaurer les accents à l’intérieur des mots fléchis en faisant correspondre les radicaux du dictionnaire et en conservant leurs suffixes (p. ex. « edenyemet » → « edény » + « emet » → « edényemet »). Améliore la couverture des formes fléchies, mais peut entraîner des correspondances incorrectes. Laisser désactivé sauf en cas de besoin.",
     "extension.config.diacriticIgnoredWords.desc": "Liste des mots à exclure de la restauration des accents. Ces mots resteront inchangés même s’ils figurent dans le dictionnaire.",
     "extension.category.utilities.title": "Utilitaires",
     "extension.category.help.title": "Aide",

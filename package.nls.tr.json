@@ -3,7 +3,7 @@
     "extension.config.removeDiacritics.title": "Replace Accents",
     "extension.config.userCharacterMapping.desc": "Vurgu işaretlerini kaldırmak için özel karakter eşlemeleri tanımlayın. Özel karakterlerin nasıl dönüştürüleceğini belirtmek için bunu kullanın. Örneğin Almanca “ß” karakterini “ss” olarak, “æ” birleşik harfini “ae” olarak dönüştürün. Normalleştirmeden sonra uygulanır.",
     "extension.config.diacriticDictionary.desc": "Vurgu işaretlerini geri yüklemek için kullanılacak diakritik sözlüğünü seçin.",
-    "extension.config.diacriticRestoreSuffixMatching.desc": "Kelimelerin son eklerinde vurgu işaretlerini geri yüklemeyi deneyin. Örneğin “edeny” ifadesini “edényemet” olarak. Çekimli biçimlerde sonucu iyileştirebilir, ancak hatalı eşleşmelere de yol açabilir. Gerekli olmadıkça devre dışı bırakın.",
+    "extension.config.diacriticRestoreSuffixMatching.desc": "Sözlük köklerini eşleştirip eklerini koruyarak, çekimli sözcüklerin içinde vurgu işaretlerini geri yüklemeyi dener (örn. ‘edenyemet’ → ‘edény’ + ‘emet’ → ‘edényemet’). Çekim biçimlerinde kapsamı artırır, ancak hatalı eşleşmelere yol açabilir. Gerekmedikçe devre dışı bırakın.",
     "extension.config.diacriticIgnoredWords.desc": "Vurgu geri yüklemesinden hariç tutulacak kelimelerin listesi. Bu kelimeler sözlükte bulunsa bile değiştirilmez.",
     "extension.category.utilities.title": "Araçlar",
     "extension.category.help.title": "Yardım",

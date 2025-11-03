@@ -3,7 +3,7 @@
     "extension.config.removeDiacritics.title": "Replace Accents",
     "extension.config.userCharacterMapping.desc": "Defina asignaciones personalizadas de caracteres para eliminar diacríticos. Use esto para indicar cómo deben convertirse los caracteres especiales (por ejemplo, el alemán «ß» en «ss», las ligaduras «æ» en «ae»). Se aplica después de la normalización.",
     "extension.config.diacriticDictionary.desc": "Seleccione el diccionario de diacríticos para restaurar los diacríticos.",
-    "extension.config.diacriticRestoreSuffixMatching.desc": "Intente restaurar diacríticos en terminaciones de palabras (por ejemplo, «edeny» a «edényemet»). Puede mejorar los resultados en formas flexionadas, pero puede causar coincidencias incorrectas. Déjelo desactivado salvo que sea necesario.",
+    "extension.config.diacriticRestoreSuffixMatching.desc": "Intentar restaurar acentos dentro de palabras flexionadas mediante la coincidencia de raíces del diccionario y el mantenimiento de sus sufijos (p. ej., «edenyemet» → «edény» + «emet» → «edényemet»). Mejora la cobertura de las flexiones, pero puede provocar coincidencias incorrectas. Déjelo desactivado salvo que sea necesario.",
     "extension.config.diacriticIgnoredWords.desc": "Lista de palabras que se excluirán de la restauración de diacríticos. Estas palabras permanecerán sin cambios aunque existan en el diccionario.",
     "extension.category.utilities.title": "Utilidades",
     "extension.category.help.title": "Ayuda",

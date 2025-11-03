@@ -3,7 +3,7 @@
     "extension.config.removeDiacritics.title": "Replace Accents",
     "extension.config.userCharacterMapping.desc": "Definieren Sie eigene Zeichenabbildungen zum Entfernen von diakritischen Zeichen. Verwenden Sie dies, um festzulegen, wie Sonderzeichen konvertiert werden sollen (z. B. deutsches „ß“ zu „ss“, Ligaturen „æ“ zu „ae“). Wird nach der Normalisierung angewendet.",
     "extension.config.diacriticDictionary.desc": "Wählen Sie ein Diakritika-Wörterbuch zur Wiederherstellung von Diakritika.",
-    "extension.config.diacriticRestoreSuffixMatching.desc": "Versuchen Sie, Diakritika in Wortendungen wiederherzustellen (z. B. „edeny“ zu „edényemet“). Dies kann die Ergebnisse bei flektierten Formen verbessern, kann jedoch auch zu falschen Treffern führen. Deaktiviert lassen, sofern nicht erforderlich.",
+    "extension.config.diacriticRestoreSuffixMatching.desc": "Versuch, Akzente innerhalb flektierter Wörter wiederherzustellen, indem Wörterbuchstämme abgeglichen und ihre Suffixe beibehalten werden (z. B. „edenyemet“ → „edény“ + „emet“ → „edényemet“). Verbessert die Abdeckung von Flexionsformen, kann jedoch zu falschen Treffern führen. Deaktiviert lassen, sofern nicht erforderlich.",
     "extension.config.diacriticIgnoredWords.desc": "Liste von Wörtern, die bei der Wiederherstellung von Diakritika ignoriert werden sollen. Diese Wörter bleiben unverändert, auch wenn sie im Wörterbuch enthalten sind.",
     "extension.category.utilities.title": "Dienstprogramme",
     "extension.category.help.title": "Hilfe",

@@ -344,20 +344,20 @@ class DiacriticRestorer {
      * @private
      * @param {string} word - Original word
      * @param {string} normalizedBase - Normalized base form
-     * @param {number} maxSuffixLen - Maximum suffix length
      * 
      * @returns {string | null} Reconstructed word with diacritics, or null if no match
      */
-    private findSuffixMatch(word: string, normalizedBase: string, maxSuffixLen: number = 3): string | null {
+    private findSuffixMatch(word: string, normalizedBase: string, minWordLength: number = 2): string | null {
         const wordLower = word.toLowerCase();
         const wordLen = normalizedBase.length;
 
-        // Try progressively shorter stems (e.g., "kalacsot" -> "kalacso" -> "kalacs")
-        // Minimum stem length is 4 characters OR 60% of original word length (whichever is larger)
-        const minStemLen = Math.max(4, Math.floor(wordLen * 0.6));
+        // Try progressively shorter stems, going down to minimum 2 characters
+        // Minimum stem length is user configurable characters OR 60% of original word length (whichever is larger)
+        const minStemLen = Math.max(minWordLength, Math.floor(wordLen * 0.6));
 
-        for (let stemLen = wordLen - 1; stemLen >= Math.max(minStemLen, wordLen - maxSuffixLen); stemLen--) {
+        for (let stemLen = wordLen - 1; stemLen >= minStemLen; stemLen--) {
             const stem = normalizedBase.substring(0, stemLen);
+
             const candidates = this.dictionary.get(stem);
 
             if (candidates && candidates.length > 0) {

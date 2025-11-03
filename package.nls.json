@@ -3,7 +3,7 @@
     "extension.config.removeDiacritics.title": "Replace Accents",
     "extension.config.userCharacterMapping.desc": "Define custom character mappings for accent removal. Use this to specify how special characters should be converted (e.g., German 'ß' to 'ss', ligatures 'æ' to 'ae'). Applied after normalization.",
     "extension.config.diacriticDictionary.desc": "Select diacritic dictionary for restoring diacritics",
-    "extension.config.diacriticRestoreSuffixMatching.desc": "Try to restore accents in word endings (e.g., 'edeny' to 'edényemet'). May improve results for inflected forms but can cause incorrect matches. Leave disabled unless needed.",
+    "extension.config.diacriticRestoreSuffixMatching.desc": "Attempt to restore accents inside inflected words by matching dictionary stems and keeping their suffixes (e.g., 'edenyemet' → 'edény' + 'emet' → 'edényemet'). Improves coverage for inflections but can cause incorrect matches. Leave disabled unless needed.",
     "extension.config.diacriticIgnoredWords.desc": "List of words to exclude from accent restoration. These words will remain unchanged even if they exist in the dictionary.",
     "extension.category.utilities.title": "Utilities",
     "extension.category.help.title": "Help",

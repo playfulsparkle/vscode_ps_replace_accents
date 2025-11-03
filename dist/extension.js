@@ -46,6 +46,19 @@ function searchAndReplaceCaseSensitive(original, restored) {
   }
   const origLen = original.length;
   const restLen = restored.length;
+  if (restLen >= origLen) {
+    return applyCasePattern(original, restored);
+  }
+  const restoredWithCase = applyCasePattern(original.substring(0, restLen), restored);
+  const suffix = original.substring(restLen);
+  return restoredWithCase + suffix;
+}
+function applyCasePattern(original, restored) {
+  if (!original || !restored) {
+    return restored;
+  }
+  const origLen = original.length;
+  const restLen = restored.length;
   const upperOrig = original.toUpperCase();
   const lowerOrig = original.toLowerCase();
   if (original === upperOrig) {
@@ -798,15 +811,14 @@ var DiacriticRestorer = class _DiacriticRestorer {
    * @private
    * @param {string} word - Original word
    * @param {string} normalizedBase - Normalized base form
-   * @param {number} maxSuffixLen - Maximum suffix length
    * 
    * @returns {string | null} Reconstructed word with diacritics, or null if no match
    */
-  findSuffixMatch(word, normalizedBase, maxSuffixLen = 3) {
+  findSuffixMatch(word, normalizedBase, minWordLength = 2) {
     const wordLower = word.toLowerCase();
     const wordLen = normalizedBase.length;
-    const minStemLen = Math.max(4, Math.floor(wordLen * 0.6));
-    for (let stemLen = wordLen - 1; stemLen >= Math.max(minStemLen, wordLen - maxSuffixLen); stemLen--) {
+    const minStemLen = Math.max(minWordLength, Math.floor(wordLen * 0.6));
+    for (let stemLen = wordLen - 1; stemLen >= minStemLen; stemLen--) {
       const stem = normalizedBase.substring(0, stemLen);
       const candidates = this.dictionary.get(stem);
       if (candidates && candidates.length > 0) {

@@ -3,7 +3,7 @@
   "extension.config.removeDiacritics.title": "Replace Accents",
   "extension.config.userCharacterMapping.desc": "Definujte vlastné mapovania znakov na odstránenie diakritiky. Použite to na určenie, ako sa majú špeciálne znaky prevádzať (napr. nemecké „ß“ na „ss“, ligatúry „æ“ na „ae“). Uplatní sa po normalizácii.",
   "extension.config.diacriticDictionary.desc": "Vyberte slovník diakritiky na obnovu diakritických znamienok.",
-  "extension.config.diacriticRestoreSuffixMatching.desc": "Skúste obnovovať diakritiku v koncovkách slov (napr. „edeny“ na „edényemet“). Môže to zlepšiť výsledky pri ohýbaných tvaroch, môže to však spôsobiť aj nesprávne zhody. Nechajte vypnuté, ak to nie je potrebné.",
+  "extension.config.diacriticRestoreSuffixMatching.desc": "Pokus o obnovu diakritiky v rámci ohýbaných slov porovnaním slovníkových kmeňov a ponechaním ich sufixov (napr. „edenyemet“ → „edény“ + „emet“ → „edényemet“). Zlepšuje pokrytie ohýbaných tvarov, no môže viesť k nesprávnym zhodám. Nechajte vypnuté, ak to nie je potrebné.",
   "extension.config.diacriticIgnoredWords.desc": "Zoznam slov, ktoré sa majú z obnovy diakritiky vylúčiť. Tieto slová zostanú bez zmeny aj vtedy, ak sú v slovníku.",
   "extension.category.utilities.title": "Nástroje",
   "extension.category.help.title": "Pomoc",

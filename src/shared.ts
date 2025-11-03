@@ -16,15 +16,17 @@ import * as vscode from "vscode";
 export const diacriticRegex = /[\p{Mn}\u0300-\u036f]/gu;
 
 /**
- * Preserves the original text case pattern when replacing characters
+ * Preserves the original text case pattern when replacing characters and
+ * attempts to restore accents in inflected words by keeping original suffixes
  * 
  * Applies the case pattern from the original string to the replacement string,
  * handling various case styles including uppercase, lowercase, title case, and mixed case.
+ * For inflected words, preserves the suffix from the original when the restored form is shorter.
  * Optimized for performance with fast paths for common cases.
  * 
  * @param {string} original - The original text containing the case pattern to preserve
  * @param {string} restored - The replacement text to apply the case pattern to
- * @returns {string} The restored text with case pattern from the original
+ * @returns {string} The restored text with case pattern from the original, potentially with preserved suffixes
  * 
  * @throws {TypeError} If parameters are not strings (handled gracefully)
  */
@@ -35,32 +37,58 @@ export function searchAndReplaceCaseSensitive(original: string, restored: string
 
     const origLen = original.length;
     const restLen = restored.length;
+    
+    // If restored is longer than original, use the original logic
+    if (restLen >= origLen) {
+        return applyCasePattern(original, restored);
+    }
+    
+    // Handle inflected words: restored is shorter than original
+    // This suggests we have a stem + suffix pattern
+    // Try to preserve the suffix from the original
+    const restoredWithCase = applyCasePattern(original.substring(0, restLen), restored);
+    const suffix = original.substring(restLen);
+    
+    return restoredWithCase + suffix;
+}
 
+/**
+ * Applies case pattern from original text to restored text
+ * Helper function that contains the original logic
+ */
+function applyCasePattern(original: string, restored: string): string {
+    if (!original || !restored) {
+        return restored;
+    }
+    
+    const origLen = original.length;
+    const restLen = restored.length;
+    
     // Check case pattern once
     const upperOrig = original.toUpperCase();
     const lowerOrig = original.toLowerCase();
-
+    
     // Fast path: all uppercase
     if (original === upperOrig) {
         return restored.toUpperCase();
     }
-
+    
     // Fast path: all lowercase
     if (original === lowerOrig) {
         return restored.toLowerCase();
     }
-
+    
     // Fast path: title case
     if (origLen > 0 &&
         original[0] === upperOrig[0] &&
         original.slice(1) === lowerOrig.slice(1)) {
         return restored[0].toUpperCase() + restored.slice(1).toLowerCase();
     }
-
+    
     // Mixed case: use array for efficient string building
     const result: string[] = new Array(restLen);
     const minLength = Math.min(origLen, restLen);
-
+    
     for (let i = 0; i < minLength; i++) {
         const origChar = original[i];
         const origLower = lowerOrig[i];
@@ -69,7 +97,7 @@ export function searchAndReplaceCaseSensitive(original: string, restored: string
             ? restored[i].toLowerCase()
             : restored[i].toUpperCase();
     }
-
+    
     // Handle remaining characters if restored is longer
     if (restLen > minLength) {
         const lastOrigChar = original[origLen - 1];
@@ -77,12 +105,11 @@ export function searchAndReplaceCaseSensitive(original: string, restored: string
         const transform = lastIsUpper ?
             (c: string) => c.toUpperCase() :
             (c: string) => c.toLowerCase();
-
         for (let i = minLength; i < restLen; i++) {
             result[i] = transform(restored[i]);
         }
     }
-
+    
     return result.join("");
 }
 

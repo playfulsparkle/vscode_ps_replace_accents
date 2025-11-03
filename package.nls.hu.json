@@ -3,7 +3,7 @@
   "extension.config.removeDiacritics.title": "Replace Accents",
   "extension.config.userCharacterMapping.desc": "Adjon meg egyéni karakter-hozzárendeléseket az ékezetek eltávolításához. Ezzel tudja megadni, hogy a speciális karakterek hogyan legyenek átalakítva (pl. német „ß” → „ss”, ligatúrák „æ” → „ae”). A normalizálás után kerül alkalmazásra.",
   "extension.config.diacriticDictionary.desc": "Válasszon ki egy ékezet-helyreállító szótárat az ékezetek visszaállításához.",
-  "extension.config.diacriticRestoreSuffixMatching.desc": "Próbálja meg az ékezeteket a szóvégi toldalékokban is visszaállítani (pl. „edeny” → „edényemet”). Javíthat a ragozott alakok felismerésén, de hibás egyezéseket is okozhat. Hagyja kikapcsolva, ha nincs rá szükség.",
+  "extension.config.diacriticRestoreSuffixMatching.desc": "Ékezetek visszaállításának kísérlete ragozott szavakon belül a szótári szótövek illesztésével és a toldalékok megtartásával (pl. „edenyemet” → „edény” + „emet” → „edényemet”). Javítja a ragozott alakok lefedettségét, de hibás egyezéseket okozhat. Hagyja kikapcsolva, ha nincs rá szükség.",
   "extension.config.diacriticIgnoredWords.desc": "Azoknak a szavaknak a listája, amelyeket ki kell hagyni az ékezet-visszaállításból. Ezek a szavak változatlanok maradnak akkor is, ha szerepelnek a szótárban.",
   "extension.category.utilities.title": "Segédprogramok",
   "extension.category.help.title": "Súgó",
