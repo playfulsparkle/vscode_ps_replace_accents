@@ -117,7 +117,7 @@ class DictionaryManager {
      * @returns {boolean} True if word contains non-ASCII characters, false otherwise
      */
     containsNonASCII(word) {
-        if (word.length < 2) {
+        if (word.length === 0) {
             return false;
         }
 
@@ -213,6 +213,7 @@ class DictionaryManager {
         const dictionary = [];
 
         try {
+            const DATA_COLUMN_SIZE = 2;
             const content = await this.readFile(filePath);
             const lines = content.split(/\r?\n/);
 
@@ -225,7 +226,7 @@ class DictionaryManager {
 
                 const parts = trimmed.split(/\t+/);
 
-                if (parts.length < 2) {
+                if (parts.length < DATA_COLUMN_SIZE) {
                     continue;
                 }
 
