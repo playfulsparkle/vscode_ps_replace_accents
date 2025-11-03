@@ -40,209 +40,6 @@ var path2 = __toESM(require("path"));
 // src/shared.ts
 var vscode = __toESM(require("vscode"));
 var diacriticRegex = /[\p{Mn}\u0300-\u036f]/gu;
-var languageCharacterMappings = {
-  /** Czech language character mappings */
-  "czech": {
-    "\xE1": "a",
-    "\xC1": "A",
-    "\u010D": "c",
-    "\u010C": "C",
-    "\u010F": "d",
-    "\u010E": "D",
-    "\xE9": "e",
-    "\xC9": "E",
-    "\u011B": "e",
-    "\u011A": "E",
-    "\xED": "i",
-    "\xCD": "I",
-    "\u0148": "n",
-    "\u0147": "N",
-    "\xF3": "o",
-    "\xD3": "O",
-    "\u0159": "r",
-    "\u0158": "R",
-    "\u0161": "s",
-    "\u0160": "S",
-    "\u0165": "t",
-    "\u0164": "T",
-    "\xFA": "u",
-    "\xDA": "U",
-    "\u016F": "u",
-    "\u016E": "U",
-    "\xFD": "y",
-    "\xDD": "Y",
-    "\u017E": "z",
-    "\u017D": "Z"
-  },
-  /** Danish language character mappings */
-  "danish": {
-    "\xE6": "ae",
-    "\xC6": "Ae",
-    "\xF8": "oe",
-    "\xD8": "Oe",
-    "\xE5": "aa",
-    "\xC5": "Aa"
-  },
-  /** French language character mappings */
-  "french": {
-    "\xE0": "a",
-    "\xC0": "A",
-    "\xE2": "a",
-    "\xC2": "A",
-    "\xE4": "a",
-    "\xC4": "A",
-    "\xE6": "ae",
-    "\xC6": "Ae",
-    "\xE7": "c",
-    "\xC7": "C",
-    "\xE9": "e",
-    "\xC9": "E",
-    "\xE8": "e",
-    "\xC8": "E",
-    "\xEA": "e",
-    "\xCA": "E",
-    "\xEB": "e",
-    "\xCB": "E",
-    "\xEF": "i",
-    "\xCF": "I",
-    "\xEE": "i",
-    "\xCE": "I",
-    "\xF4": "o",
-    "\xD4": "O",
-    "\xF6": "o",
-    "\xD6": "O",
-    "\u0153": "oe",
-    "\u0152": "Oe",
-    "\xF9": "u",
-    "\xD9": "U",
-    "\xFB": "u",
-    "\xDB": "U",
-    "\xFC": "u",
-    "\xDC": "U",
-    "\xFF": "y",
-    "\u0178": "Y"
-  },
-  /** German language character mappings */
-  "german": {
-    "\xE4": "ae",
-    "\xC4": "Ae",
-    "\xF6": "oe",
-    "\xD6": "Oe",
-    "\xFC": "ue",
-    "\xDC": "Ue",
-    "\xDF": "ss",
-    "\u1E9E": "SS"
-  },
-  /** Hungarian language character mappings */
-  "hungarian": {
-    "\xE1": "a",
-    "\xC1": "A",
-    "\xE9": "e",
-    "\xC9": "E",
-    "\xED": "i",
-    "\xCD": "I",
-    "\xF3": "o",
-    "\xD3": "O",
-    "\xF6": "o",
-    "\xD6": "O",
-    "\u0151": "o",
-    "\u0150": "O",
-    "\xFA": "u",
-    "\xDA": "U",
-    "\xFC": "u",
-    "\xDC": "U",
-    "\u0171": "u",
-    "\u0170": "U"
-  },
-  /** Polish language character mappings */
-  "polish": {
-    "\u0105": "a",
-    "\u0104": "A",
-    "\u0107": "c",
-    "\u0106": "C",
-    "\u0119": "e",
-    "\u0118": "E",
-    "\u0142": "l",
-    "\u0141": "L",
-    "\u0144": "n",
-    "\u0143": "N",
-    "\xF3": "o",
-    "\xD3": "O",
-    "\u015B": "s",
-    "\u015A": "S",
-    "\u017A": "z",
-    "\u0179": "Z",
-    "\u017C": "z",
-    "\u017B": "Z"
-  },
-  /** Slovak language character mappings */
-  "slovak": {
-    "\xE1": "a",
-    "\xC1": "A",
-    "\xE4": "a",
-    "\xC4": "A",
-    "\u010D": "c",
-    "\u010C": "C",
-    "\u010F": "d",
-    "\u010E": "D",
-    "\xE9": "e",
-    "\xC9": "E",
-    "\xED": "i",
-    "\xCD": "I",
-    "\u013E": "l",
-    "\u013D": "L",
-    "\u013A": "l",
-    "\u0139": "L",
-    "\u0148": "n",
-    "\u0147": "N",
-    "\xF3": "o",
-    "\xD3": "O",
-    "\xF4": "o",
-    "\xD4": "O",
-    "\u0155": "r",
-    "\u0154": "R",
-    "\u0161": "s",
-    "\u0160": "S",
-    "\u0165": "t",
-    "\u0164": "T",
-    "\xFA": "u",
-    "\xDA": "U",
-    "\xFD": "y",
-    "\xDD": "Y",
-    "\u017E": "z",
-    "\u017D": "Z"
-  },
-  /** Spanish language character mappings */
-  "spanish": {
-    "\xE1": "a",
-    "\xC1": "A",
-    "\xE9": "e",
-    "\xC9": "E",
-    "\xED": "i",
-    "\xCD": "I",
-    "\xF3": "o",
-    "\xD3": "O",
-    "\xFA": "u",
-    "\xDA": "U",
-    "\xFC": "u",
-    "\xDC": "U",
-    "\xF1": "n",
-    "\xD1": "N"
-  },
-  /** Swedish language character mappings */
-  "swedish": {
-    "\xE5": "aa",
-    "\xC5": "Aa",
-    "\xE4": "ae",
-    "\xC4": "Ae",
-    "\xF6": "oe",
-    "\xD6": "Oe"
-  }
-};
-var allLanguageCharacterMappings = Object.assign(
-  {},
-  ...Object.values(languageCharacterMappings)
-);
 function searchAndReplaceCaseSensitive(original, restored) {
   if (!original || !restored) {
     return restored;
@@ -302,6 +99,230 @@ function normalizeIgnoreWords(str) {
 // src/restoreDiacritic.ts
 var fs = __toESM(require("fs"));
 var path = __toESM(require("path"));
+
+// src/characterMappings.ts
+var languageCharacterMappings = [
+  {
+    language: "czech",
+    letters: [
+      { letter: "\xE1", ascii: "a" },
+      { letter: "\xC1", ascii: "A" },
+      { letter: "\u010D", ascii: "c" },
+      { letter: "\u010C", ascii: "C" },
+      { letter: "\u010F", ascii: "d" },
+      { letter: "\u010E", ascii: "D" },
+      { letter: "\xE9", ascii: "e" },
+      { letter: "\xC9", ascii: "E" },
+      { letter: "\u011B", ascii: "e" },
+      { letter: "\u011A", ascii: "E" },
+      { letter: "\xED", ascii: "i" },
+      { letter: "\xCD", ascii: "I" },
+      { letter: "\u0148", ascii: "n" },
+      { letter: "\u0147", ascii: "N" },
+      { letter: "\xF3", ascii: "o" },
+      { letter: "\xD3", ascii: "O" },
+      { letter: "\u0159", ascii: "r" },
+      { letter: "\u0158", ascii: "R" },
+      { letter: "\u0161", ascii: "s" },
+      { letter: "\u0160", ascii: "S" },
+      { letter: "\u0165", ascii: "t" },
+      { letter: "\u0164", ascii: "T" },
+      { letter: "\xFA", ascii: "u" },
+      { letter: "\xDA", ascii: "U" },
+      { letter: "\u016F", ascii: "u" },
+      { letter: "\u016E", ascii: "U" },
+      { letter: "\xFD", ascii: "y" },
+      { letter: "\xDD", ascii: "Y" },
+      { letter: "\u017E", ascii: "z" },
+      { letter: "\u017D", ascii: "Z" }
+    ]
+  },
+  {
+    language: "danish",
+    letters: [
+      { letter: "\xE6", ascii: "ae" },
+      { letter: "\xC6", ascii: "Ae" },
+      { letter: "\xF8", ascii: "oe" },
+      { letter: "\xD8", ascii: "Oe" },
+      { letter: "\xE5", ascii: "aa" },
+      { letter: "\xC5", ascii: "Aa" }
+    ]
+  },
+  {
+    language: "french",
+    letters: [
+      { letter: "\xE0", ascii: "a" },
+      { letter: "\xC0", ascii: "A" },
+      { letter: "\xE2", ascii: "a" },
+      { letter: "\xC2", ascii: "A" },
+      { letter: "\xE4", ascii: "a" },
+      { letter: "\xC4", ascii: "A" },
+      { letter: "\xE6", ascii: "ae" },
+      { letter: "\xC6", ascii: "Ae" },
+      { letter: "\xE7", ascii: "c" },
+      { letter: "\xC7", ascii: "C" },
+      { letter: "\xE9", ascii: "e" },
+      { letter: "\xC9", ascii: "E" },
+      { letter: "\xE8", ascii: "e" },
+      { letter: "\xC8", ascii: "E" },
+      { letter: "\xEA", ascii: "e" },
+      { letter: "\xCA", ascii: "E" },
+      { letter: "\xEB", ascii: "e" },
+      { letter: "\xCB", ascii: "E" },
+      { letter: "\xEF", ascii: "i" },
+      { letter: "\xCF", ascii: "I" },
+      { letter: "\xEE", ascii: "i" },
+      { letter: "\xCE", ascii: "I" },
+      { letter: "\xF4", ascii: "o" },
+      { letter: "\xD4", ascii: "O" },
+      { letter: "\xF6", ascii: "o" },
+      { letter: "\xD6", ascii: "O" },
+      { letter: "\u0153", ascii: "oe" },
+      { letter: "\u0152", ascii: "Oe" },
+      { letter: "\xF9", ascii: "u" },
+      { letter: "\xD9", ascii: "U" },
+      { letter: "\xFB", ascii: "u" },
+      { letter: "\xDB", ascii: "U" },
+      { letter: "\xFC", ascii: "u" },
+      { letter: "\xDC", ascii: "U" },
+      { letter: "\xFF", ascii: "y" },
+      { letter: "\u0178", ascii: "Y" }
+    ]
+  },
+  {
+    language: "german",
+    letters: [
+      { letter: "\xE4", ascii: "ae" },
+      { letter: "\xC4", ascii: "Ae" },
+      { letter: "\xF6", ascii: "oe" },
+      { letter: "\xD6", ascii: "Oe" },
+      { letter: "\xFC", ascii: "ue" },
+      { letter: "\xDC", ascii: "Ue" },
+      { letter: "\xDF", ascii: "ss" },
+      { letter: "\u1E9E", ascii: "SS" }
+    ]
+  },
+  {
+    language: "hungarian",
+    letters: [
+      { letter: "\xE1", ascii: "a" },
+      { letter: "\xC1", ascii: "A" },
+      { letter: "\xE9", ascii: "e" },
+      { letter: "\xC9", ascii: "E" },
+      { letter: "\xED", ascii: "i" },
+      { letter: "\xCD", ascii: "I" },
+      { letter: "\xF3", ascii: "o" },
+      { letter: "\xD3", ascii: "O" },
+      { letter: "\xF6", ascii: "o" },
+      { letter: "\xD6", ascii: "O" },
+      { letter: "\u0151", ascii: "o" },
+      { letter: "\u0150", ascii: "O" },
+      { letter: "\xFA", ascii: "u" },
+      { letter: "\xDA", ascii: "U" },
+      { letter: "\xFC", ascii: "u" },
+      { letter: "\xDC", ascii: "U" },
+      { letter: "\u0171", ascii: "u" },
+      { letter: "\u0170", ascii: "U" }
+    ]
+  },
+  {
+    language: "polish",
+    letters: [
+      { letter: "\u0105", ascii: "a" },
+      { letter: "\u0104", ascii: "A" },
+      { letter: "\u0107", ascii: "c" },
+      { letter: "\u0106", ascii: "C" },
+      { letter: "\u0119", ascii: "e" },
+      { letter: "\u0118", ascii: "E" },
+      { letter: "\u0142", ascii: "l" },
+      { letter: "\u0141", ascii: "L" },
+      { letter: "\u0144", ascii: "n" },
+      { letter: "\u0143", ascii: "N" },
+      { letter: "\xF3", ascii: "o" },
+      { letter: "\xD3", ascii: "O" },
+      { letter: "\u015B", ascii: "s" },
+      { letter: "\u015A", ascii: "S" },
+      { letter: "\u017A", ascii: "z" },
+      { letter: "\u0179", ascii: "Z" },
+      { letter: "\u017C", ascii: "z" },
+      { letter: "\u017B", ascii: "Z" }
+    ]
+  },
+  {
+    language: "slovak",
+    letters: [
+      { letter: "\xE1", ascii: "a" },
+      { letter: "\xC1", ascii: "A" },
+      { letter: "\xE4", ascii: "a" },
+      { letter: "\xC4", ascii: "A" },
+      { letter: "\u010D", ascii: "c" },
+      { letter: "\u010C", ascii: "C" },
+      { letter: "\u010F", ascii: "d" },
+      { letter: "\u010E", ascii: "D" },
+      { letter: "\xE9", ascii: "e" },
+      { letter: "\xC9", ascii: "E" },
+      { letter: "\xED", ascii: "i" },
+      { letter: "\xCD", ascii: "I" },
+      { letter: "\u013E", ascii: "l" },
+      { letter: "\u013D", ascii: "L" },
+      { letter: "\u013A", ascii: "l" },
+      { letter: "\u0139", ascii: "L" },
+      { letter: "\u0148", ascii: "n" },
+      { letter: "\u0147", ascii: "N" },
+      { letter: "\xF3", ascii: "o" },
+      { letter: "\xD3", ascii: "O" },
+      { letter: "\xF4", ascii: "o" },
+      { letter: "\xD4", ascii: "O" },
+      { letter: "\u0155", ascii: "r" },
+      { letter: "\u0154", ascii: "R" },
+      { letter: "\u0161", ascii: "s" },
+      { letter: "\u0160", ascii: "S" },
+      { letter: "\u0165", ascii: "t" },
+      { letter: "\u0164", ascii: "T" },
+      { letter: "\xFA", ascii: "u" },
+      { letter: "\xDA", ascii: "U" },
+      { letter: "\xFD", ascii: "y" },
+      { letter: "\xDD", ascii: "Y" },
+      { letter: "\u017E", ascii: "z" },
+      { letter: "\u017D", ascii: "Z" }
+    ]
+  },
+  {
+    language: "spanish",
+    letters: [
+      { letter: "\xE1", ascii: "a" },
+      { letter: "\xC1", ascii: "A" },
+      { letter: "\xE9", ascii: "e" },
+      { letter: "\xC9", ascii: "E" },
+      { letter: "\xED", ascii: "i" },
+      { letter: "\xCD", ascii: "I" },
+      { letter: "\xF3", ascii: "o" },
+      { letter: "\xD3", ascii: "O" },
+      { letter: "\xFA", ascii: "u" },
+      { letter: "\xDA", ascii: "U" },
+      { letter: "\xFC", ascii: "u" },
+      { letter: "\xDC", ascii: "U" },
+      { letter: "\xF1", ascii: "n" },
+      { letter: "\xD1", ascii: "N" }
+    ]
+  },
+  {
+    language: "swedish",
+    letters: [
+      { letter: "\xE5", ascii: "aa" },
+      { letter: "\xC5", ascii: "Aa" },
+      { letter: "\xE4", ascii: "ae" },
+      { letter: "\xC4", ascii: "Ae" },
+      { letter: "\xF6", ascii: "oe" },
+      { letter: "\xD6", ascii: "Oe" }
+    ]
+  }
+];
+var allLanguageCharacterMappings = Object.fromEntries(
+  languageCharacterMappings.flatMap((lang) => lang.letters.map((o) => [o.letter, o.ascii]))
+);
+
+// src/restoreDiacritic.ts
 var DiacriticRestorer = class _DiacriticRestorer {
   /**
    * Main dictionary storage mapping base forms to possible diacritic variations
@@ -609,13 +630,17 @@ var DiacriticRestorer = class _DiacriticRestorer {
     if (!text || typeof text !== "string") {
       return text;
     }
-    const allMappings = this.currentLanguage ? languageCharacterMappings[this.currentLanguage] || {} : {};
+    const currentMappings = this.currentLanguage ? languageCharacterMappings.find((lang) => lang.language === this.currentLanguage) : void 0;
     let normalized = text.toLowerCase().normalize("NFKD").replace(diacriticRegex, "");
-    const specialChars = Object.keys(allMappings).join("");
+    if (!currentMappings?.letters.length) {
+      return normalized;
+    }
+    const allMappings = Object.fromEntries(currentMappings.letters.map((o) => [o.letter, o.ascii]));
+    const specialChars = currentMappings.letters.map((o) => o.letter).join("");
     const specialCharsPattern = new RegExp(`[${specialChars}]`, "g");
     return normalized.replace(
       specialCharsPattern,
-      (match) => allMappings[match]
+      (match) => allMappings[match] ?? match
     );
   }
   /**
@@ -705,17 +730,23 @@ var DiacriticRemover = class {
     }
     try {
       const combinedMappings = { ...allLanguageCharacterMappings, ...userCharacterMappings };
-      const specialChars = Object.keys(combinedMappings).join("");
+      if (Object.keys(combinedMappings).length === 0) {
+        return this.normalize(text);
+      }
+      const specialChars = Object.keys(combinedMappings).map((letter) => letter).join("");
       const customPattern = new RegExp(`[${specialChars}]`, "g");
-      let result = text.replace(customPattern, (match) => {
+      const result = text.replace(customPattern, (match) => {
         const replacement = combinedMappings[match];
         return searchAndReplaceCaseSensitive(match, replacement);
       });
-      return result.normalize("NFKD").replace(diacriticRegex, "");
+      return this.normalize(result);
     } catch (error) {
       console.error("Error in removeDiacritics:", error);
       return text;
     }
+  }
+  normalize(str) {
+    return str.normalize("NFKD").replace(diacriticRegex, "");
   }
 };
 var removeDiacritic_default = DiacriticRemover;

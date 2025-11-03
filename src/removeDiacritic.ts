@@ -1,8 +1,5 @@
-import {
-    allLanguageCharacterMappings,
-    diacriticRegex,
-    searchAndReplaceCaseSensitive
-} from "./shared";
+import { searchAndReplaceCaseSensitive, diacriticRegex } from "./shared";
+import { allLanguageCharacterMappings } from "./characterMappings";
 
 /**
  * A utility class for removing diacritics and accent marks from text while preserving case.
@@ -40,23 +37,33 @@ class DiacriticRemover {
         try {
             // Merge default mappings with custom overrides
             const combinedMappings = { ...allLanguageCharacterMappings, ...userCharacterMappings };
-            const specialChars = Object.keys(combinedMappings).join("");
+
+            // Early return if no mappings
+            if (Object.keys(combinedMappings).length === 0) {
+                return this.normalize(text);
+            }
+
+            // Escape special regex characters and build pattern
+            const specialChars = Object.keys(combinedMappings).map(letter => letter).join("");
             const customPattern = new RegExp(`[${specialChars}]`, "g");
 
             // Apply custom mappings FIRST (before normalization)
-            let result = text.replace(customPattern, match => {
+            const result = text.replace(customPattern, match => {
                 const replacement = combinedMappings[match];
 
                 return searchAndReplaceCaseSensitive(match, replacement);
             });
 
             // Then normalize remaining characters using Unicode decomposition
-            return result.normalize("NFKD").replace(diacriticRegex, "");
+            return this.normalize(result);
         } catch (error) {
             console.error("Error in removeDiacritics:", error);
-
             return text;
         }
+    }
+
+    private normalize(str: string): string {
+        return str.normalize("NFKD").replace(diacriticRegex, "");
     }
 }
 

@@ -1,10 +1,7 @@
 import * as fs from "fs";
 import * as path from "path";
-import {
-    languageCharacterMappings,
-    searchAndReplaceCaseSensitive,
-    diacriticRegex
-} from "./shared";
+import { searchAndReplaceCaseSensitive, diacriticRegex } from "./shared";
+import { languageCharacterMappings } from "./characterMappings";
 
 /**
  * Dictionary entry interface representing a word and its frequency
@@ -389,20 +386,28 @@ class DiacriticRestorer {
             return text;
         }
 
-        // Get current language mappings or use empty object
-        const allMappings = this.currentLanguage ? languageCharacterMappings[this.currentLanguage] || {} : {};
+        // Get current language mappings
+        const currentMappings = this.currentLanguage
+            ? languageCharacterMappings.find(lang => lang.language === this.currentLanguage)
+            : undefined;
 
         // Single normalization pass with NFKD for maximum decomposition
-        // Remove diacritics and combining marks using Unicode property
         let normalized = text.toLowerCase().normalize("NFKD").replace(diacriticRegex, "");
 
-        // Handle remaining special characters
-        const specialChars = Object.keys(allMappings).join("");
+        // Handle remaining special characters if mappings exist
+        if (!currentMappings?.letters.length) {
+            return normalized;
+        }
+
+        const allMappings = Object.fromEntries(currentMappings.letters.map(o => [o.letter, o.ascii]));
+
+        // Build regex pattern from special characters
+        const specialChars = currentMappings.letters.map(o => o.letter).join("");
         const specialCharsPattern = new RegExp(`[${specialChars}]`, "g");
 
         return normalized.replace(
             specialCharsPattern,
-            match => allMappings[match]
+            match => allMappings[match] ?? match
         );
     }
 
