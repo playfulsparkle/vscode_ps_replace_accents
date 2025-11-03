@@ -64,6 +64,10 @@ If you encounter any of these or other issues, please report them on the [GitHub
 
 ## Release Notes
 
+### 0.0.12
+
+Fixed translate key name spelling and removed unused translation.
+
 ### 0.0.11
 
 **Fixed:**
