@@ -122,16 +122,25 @@
           "default": "hungarian",
           "description": "%extension.config.diacriticDictionary.desc%",
           "enum": [
-            "hungarian",
-            "slovak",
+            "croatian",
             "czech",
-            "german",
-            "polish",
             "danish",
+            "dutch",
             "french",
+            "german",
+            "hungarian",
+            "icelandic",
+            "italian",
+            "latvian",
+            "lithuanian",
+            "norwegian",
+            "polish",
+            "portuguese",
+            "romanian",
+            "slovak",
+            "slovenian",
             "spanish",
-            "swedish",
-            "italian"
+            "swedish"
           ]
         },
         "ps-replace-accents.diacriticRestoreSuffixMatching": {
