@@ -193,13 +193,16 @@ class DiacriticRestorer {
         let lineCount = 0;
         let errorCount = 0;
 
-        for (let i = 1; i < lines.length; i++) { // Skip header
+        for (let i = 0; i < lines.length; i++) {
             const line = lines[i].trim();
+
             if (!line) { continue; }
 
             const tabIndex = line.indexOf("\t");
+
             if (tabIndex === -1) {
                 errorCount++;
+
                 continue;
             }
 
@@ -209,19 +212,23 @@ class DiacriticRestorer {
 
                 if (!word || !frequencyStr) {
                     errorCount++;
+
                     continue;
                 }
 
                 const frequency = parseInt(frequencyStr, 10);
+
                 if (isNaN(frequency)) {
                     errorCount++;
+
                     continue;
                 }
 
-                const baseForm = this.removeDiacritics(word.toLowerCase());
+                const baseForm = this.removeDiacritics(word);
 
                 // Get or create entries array
                 let entries = this.dictionary.get(baseForm);
+
                 if (!entries) {
                     entries = [];
                     this.dictionary.set(baseForm, entries);
@@ -235,6 +242,7 @@ class DiacriticRestorer {
 
                 while (left < right) {
                     const mid = (left + right) >>> 1; // Unsigned right shift for floor division
+
                     if (entries[mid].frequency > frequency) {
                         left = mid + 1;
                     } else {
@@ -243,9 +251,11 @@ class DiacriticRestorer {
                 }
 
                 entries.splice(left, 0, entry);
+
                 lineCount++;
             } catch (error) {
                 errorCount++;
+                
                 continue;
             }
         }

@@ -1,7 +1,7 @@
-és	1695
+és	195
 mesék	1601
-még	347
-tovább	326
+még	348
+tovább	328
 több	282
 mesére	240
 helységnévtára	230
@@ -13,7 +13,7 @@ rövid	159
 július	148
 panoráma	140
 így	134
-válasz	132
+válasz	133
 június	125
 május	120
 október	120
@@ -70,10 +70,10 @@ kormány	64
 külföld	64
 szlovákiai	64
 barátok	63
+előtt	62
 január	62
 öreg	62
 bosszúállók	61
-előtt	61
 közélet	61
 mesés	61
 sütőtökkrémleves	61
@@ -112,27 +112,27 @@ frontálisan	54
 nyúl	54
 nélkül	53
 világítani	53
+azért	52
 február	52
 hableány	52
 saját	52
+világ	52
 zöld	52
-azért	51
 néhány	51
-világ	51
 beállítások	50
 boltját	50
+hosszú	50
 ország	50
 boszorkány	49
-hosszú	49
 nyugtató	49
 kérünk	48
 mészáros	48
 bátor	47
 előző	47
 év	47
+arról	46
 székhelye	46
 tövében	46
-arról	45
 nigériai	45
 születésnapok	45
 területet	45
@@ -183,6 +183,7 @@ tánc	39
 tökre	39
 varázsolni	39
 ám	38
+aztán	38
 barátokat	38
 fák	38
 kategóriák	38
@@ -190,7 +191,7 @@ komáromi	38
 kulturális	38
 sütiszellemek	38
 utóbbi	38
-aztán	37
+vezető	38
 fiús	37
 fogászati	37
 hozzászólások	37
@@ -202,7 +203,6 @@ más	37
 szívekbe	37
 talán	37
 többet	37
-vezető	37
 vezetője	37
 böngészőben	36
 címem	36
@@ -269,6 +269,7 @@ tükrös	33
 gyertyácska	32
 győzelemmel	32
 hercegnős	32
+jön	32
 képviselő	32
 kínoztak	32
 királylányos	32
@@ -297,7 +298,6 @@ euróra	31
 fordulójában	31
 győri	31
 implantátum	31
-jön	31
 kártérítést	31
 képzeljétek	31
 luxusbirtokához	31
@@ -482,6 +482,7 @@ töpi	27
 utalványt	27
 vármegyeszékhely	27
 visszautasítja	27
+áll	26
 érzelmek	26
 iskoláról	26
 kihívás	26
@@ -496,7 +497,6 @@ sárga	26
 szlovák	26
 találhatók	26
 afrika-utazó	25
-áll	25
 bár	25
 béka	25
 drogügyben	25
@@ -651,6 +651,7 @@ bulvárban	20
 cookie-kezelési	20
 csatlakozásáról	20
 csutkamanó	20
+életében	20
 ellenünk	20
 előfizetek	20
 energiabeszerzésében	20
@@ -706,7 +707,6 @@ zenéi	20
 árfolyamának	19
 csongrád-csanád	19
 ébredt	19
-életében	19
 épületeket	19
 érintő	19
 felvidéki	19
@@ -714,6 +714,7 @@ flóravidék	19
 frisnyák	19
 hűvös	19
 imréné	19
+jól	19
 karácsony	19
 lakossága	19
 lakosságának	19
@@ -729,6 +730,7 @@ alapján	18
 autósok	18
 barátai	18
 biatorbágyi	18
+dániel	18
 éhes	18
 ellenzéknek	18
 esernyő	18
@@ -736,7 +738,7 @@ felhő	18
 gazdasági	18
 hallanánk	18
 hídját	18
-jól	18
+kérdés	18
 kérdést	18
 kétmilliárd	18
 korán	18
@@ -771,7 +773,7 @@ bosszúságok	17
 célját	17
 címkék	17
 címlap	17
-dániel	17
+családi	17
 délutánon	17
 döntéshozatalban	17
 egészségügybe	17
@@ -825,6 +827,7 @@ sárguló	17
 sárika	17
 segíted	17
 szabályzatot	17
+számít	17
 szövetség	17
 tájékoztató	17
 találtam	17
@@ -841,6 +844,7 @@ adószám	16
 általános	16
 andrás	16
 árutőzsdei	16
+attól	16
 autóteszt	16
 barátnőmet	16
 blogtémák	16
@@ -855,6 +859,7 @@ ellenére	16
 energiadús	16
 engedélyével	16
 engedélyezik	16
+éppen	16
 érdekelhetnek	16
 értesülsz	16
 felbőgtek	16
@@ -891,8 +896,8 @@ népszámlálási	16
 országban	16
 óvodákban	16
 róna	16
-számít	16
 szirénák	16
+szól	16
 tájékoztatót	16
 tárhelyszolgáltató	16
 téligumi	16
@@ -903,14 +908,11 @@ zoknibolygató	16
 án	15
 andorrába	15
 aprópecsenye	15
-attól	15
 bató	15
 belül	15
-családi	15
 dédoublement	15
 dél-franciaországba	15
 elmúlt	15
-éppen	15
 eszmefuttatást	15
 fél	15
 frontról	15
@@ -920,7 +922,6 @@ időjárásjelentés	15
 irományok	15
 kánikulával	15
 képviselőből	15
-kérdés	15
 kiruccanásunk	15
 kisvárdai	15
 kiűzetés	15
@@ -958,7 +959,6 @@ szenderülő	15
 szerteszét	15
 szikszói	15
 szintén	15
-szól	15
 szurkoló	15
 tamás	15
 támogatásával	15
@@ -1047,6 +1047,7 @@ például	13
 tájvédelmi	13
 találhatóak	13
 tartozók	13
+tehát	13
 területén	13
 tiszafüred	13
 tölti	13
@@ -1101,10 +1102,10 @@ székhellyel	12
 szolgáljak	12
 szóló	12
 szólt	12
-tehát	12
 terén	12
 tiszafüredi	12
 tölgyessy	12
+tűnik	12
 tűzesetben	12
 varázslat	12
 videán	12
@@ -1188,6 +1189,7 @@ díjkedvezménnyel	10
 égesd	10
 éjsza	10
 elé	10
+elég	10
 elérhetőségeken	10
 élesbe	10
 élesben	10
@@ -1302,7 +1304,6 @@ történik	10
 tőzsdézéshez	10
 tőzsdézőknek	10
 tulajdonítanak	10
-tűnik	10
 ügyfélként	10
 ukrán	10
 vá	10
@@ -1331,7 +1332,6 @@ délről	9
 egymást	9
 egységét	9
 elefánt	9
-elég	9
 ellenőrzi	9
 előbb	9
 érdekeit	9
@@ -1451,6 +1451,7 @@ cseréptálban	8
 donáth	8
 édesburgonya-püré	8
 édesburgonyával	8
+egyszerű	8
 egytálételek	8
 él	8
 elérhetőségeimen	8
@@ -1513,6 +1514,7 @@ követően	8
 kőzetek	8
 közötti	8
 közt	8
+köztük	8
 közül	8
 közúti	8
 közvetlenül	8
@@ -1526,6 +1528,7 @@ léptek-e	8
 létrehozott	8
 liberális	8
 mágikus	8
+megszerzése	8
 megszólalt	8
 megszűnésekor	8
 menedékházak	8
@@ -1643,7 +1646,6 @@ egyáltalán	7
 egyelőre	7
 egyéni	7
 egyértelmű	7
-egyszerű	7
 elején	7
 élén	7
 elnöke	7
@@ -1718,7 +1720,6 @@ következik	7
 közelebb	7
 közelsége	7
 közepén	7
-köztük	7
 külföldi	7
 látásra	7
 látnivalók	7
@@ -1817,6 +1818,8 @@ tisztaságáról	7
 többnyire	7
 túrázó	7
 ült	7
+űr	7
+út	7
 üzemanyagárak	7
 üzemét	7
 üzleti	7
@@ -1833,6 +1836,7 @@ védelmét	7
 végétől	7
 véleménye	7
 vendégeit	7
+vették	7
 vezethető	7
 világot	7
 vörösök	7
@@ -1913,6 +1917,7 @@ ezelőtt	6
 fejlesztése	6
 félelem	6
 félelmet	6
+felelősséget	6
 feltétellel	6
 fénye	6
 férfit	6
@@ -1999,6 +2004,7 @@ kövesse	6
 köze	6
 közigazgatása	6
 közigazgatásban	6
+közlekedés	6
 közösségük	6
 küldene	6
 külső-szolnok	6
@@ -2022,6 +2028,7 @@ magyarország	6
 magyarországon	6
 márkabiztonság	6
 máté	6
+megállni	6
 megértette	6
 megrázta	6
 megyéje	6
@@ -2046,6 +2053,7 @@ nálunk	6
 nélküli	6
 népességszáma	6
 népszerű	6
+nevén	6
 nézheti	6
 nézte	6
 nyilatkozatát	6
@@ -2140,8 +2148,6 @@ tünetei	6
 ügyben	6
 újdonságok	6
 újvidékre	6
-űr	6
-út	6
 úz	6
 üzemek	6
 üzemnél	6
@@ -2211,6 +2217,7 @@ beszélők	5
 betegség	5
 biró	5
 biztonságos	5
+biztonságosan	5
 biztonságot	5
 börtönbe	5
 börzsönyben	5
@@ -2296,7 +2303,6 @@ fegyházat	5
 fejlődésében	5
 fejlődésére	5
 felelősök	5
-felelősséget	5
 felén	5
 felénk	5
 felépítése	5
@@ -2329,6 +2335,8 @@ fülü	5
 gazdád	5
 gazdaság	5
 göböljárás	5
+gondolják	5
+gondolták	5
 gyászolja	5
 gyilkosság	5
 gyökerekkel	5
@@ -2423,7 +2431,6 @@ korrupció	5
 követő	5
 közéleti	5
 közép-duna-vidék	5
-közlekedés	5
 közművek	5
 közöltek	5
 közönséget	5
@@ -2447,6 +2454,7 @@ lázár	5
 leánya	5
 legidősebb	5
 legrégibb	5
+legtöbben	5
 lenyűgöző	5
 lép	5
 lépjenek	5
@@ -2463,10 +2471,11 @@ másfél	5
 másnap	5
 mázs	5
 médiacsoport	5
+megdöbbentő	5
 megjelenő	5
 megkérdezettek	5
+meglepetés	5
 megöleltük	5
-megszerzése	5
 megyén	5
 megyének	5
 megyeszékhelyen	5
@@ -2503,7 +2512,6 @@ nekünk	5
 népességű	5
 népszerűsítésében	5
 nevelő	5
-nevén	5
 nevét	5
 névtelen2	5
 néztem	5
@@ -2575,6 +2583,7 @@ sorozatlövő	5
 spórolhatsz	5
 súlya	5
 súlyosan	5
+szabadságot	5
 szabályozása	5
 szabályzatok	5
 szakszerű	5
@@ -2646,6 +2655,7 @@ utána	5
 üzeni	5
 üzletét	5
 vágd	5
+választ	5
 választáson	5
 választotta	5
 vállalat	5
@@ -2667,7 +2677,6 @@ védelem	5
 véleményhírlevéljobban	5
 véletlen	5
 verziót	5
-vették	5
 videót	5
 virágot	5
 vízgyűjtőjéhez	5
@@ -2715,6 +2724,7 @@ atány	4
 ateisták	4
 átlagnál	4
 átláthatóság	4
+autója	4
 autók	4
 autóközlekedési	4
 avokádókrém	4
@@ -2742,7 +2752,6 @@ bízná	4
 bíznak	4
 bizonyítékkal	4
 biztonságosabbá	4
-biztonságosan	4
 bocskai-vár	4
 boglárka	4
 bombanő	4
@@ -2872,6 +2881,7 @@ eurót	4
 fából	4
 facebookkövetem	4
 fáról	4
+fehér	4
 fehéroroszországba	4
 feküdjünk	4
 felfedezték	4
@@ -2908,6 +2918,7 @@ fővárossal	4
 főzést	4
 főzőtejszín	4
 főztem	4
+függ	4
 független	4
 fűszerkömény	4
 futás	4
@@ -2921,7 +2932,6 @@ globális	4
 gól	4
 gólyák	4
 gombapástétom	4
-gondolják	4
 gondozásában	4
 göngyölt	4
 grassalkovich-kastély	4
@@ -3042,8 +3052,10 @@ jéghal	4
 jelentése	4
 jelszóval	4
 jén	4
+jogosítvány	4
 jöhet	4
 jöttek	4
+kamerával	4
 kandúr	4
 kánya	4
 kapcsolatát	4
@@ -3102,6 +3114,7 @@ korösszetétele	4
 korosztályom	4
 körül	4
 körülötte	4
+kötelező	4
 köti	4
 kovászos-öregtésztás	4
 közeli	4
@@ -3149,7 +3162,6 @@ legnépesebb	4
 legsűrűbben	4
 legszemélyesebb	4
 legszomorúbb	4
-legtöbben	4
 légy	4
 lélekszáma	4
 lemondásához	4
@@ -3184,7 +3196,6 @@ megfelelő	4
 meghatározó	4
 megjelenést	4
 megkerestük	4
-meglepetés	4
 meglepődtem	4
 megoldást	4
 megőrizték	4
@@ -3355,7 +3366,7 @@ sütőből	4
 sütőpapírra	4
 sütőpapírral	4
 sütőtökleves	4
-szabadságot	4
+szabály	4
 szabályai	4
 szabályozás	4
 szabolcs-szatmár-bereg	4
@@ -3396,6 +3407,7 @@ szűcs	4
 szűk	4
 szúrja	4
 szúrjuk	4
+tábla	4
 találd	4
 találják	4
 találkozás	4
@@ -3479,6 +3491,7 @@ uralkodása	4
 úsz	4
 utánpótlás-nevelés	4
 utólag	4
+úton	4
 úttörője	4
 üzemelt	4
 üzenetekben	4
@@ -3665,6 +3678,7 @@ belüli	3
 bemutatása	3
 bemutatták	3
 benyújtani	3
+benzinkúton	3
 besorolását	3
 beszéd	3
 beszélgetett	3
@@ -3702,6 +3716,7 @@ bonyhádi	3
 bőr	3
 borítja	3
 borítjuk	3
+borítókép	3
 ború	3
 bosszúja	3
 botrányos	3
@@ -3781,6 +3796,7 @@ dohányzást	3
 dombvidékek	3
 dombvidéki	3
 dönt	3
+döntenek	3
 döntéseket	3
 döntéssel	3
 döntő	3
@@ -3820,6 +3836,7 @@ egységben	3
 egysége	3
 egyszemélyes	3
 egyszerűen	3
+egyszerűnek	3
 egyúttal	3
 együttműködés	3
 együttműködésre	3
@@ -3944,7 +3961,6 @@ fantázia	3
 faunajárás	3
 februárban	3
 fedőt	3
-fehér	3
 fehércsoki	3
 fejlesztést	3
 fejlődést	3
@@ -3970,6 +3986,7 @@ feltárta	3
 feltűnt	3
 felületen	3
 felületet	3
+felvételen	3
 félvezető	3
 felvonás	3
 fennmaradó	3
@@ -4021,7 +4038,6 @@ fővárosának	3
 fövény	3
 franciául	3
 frissítik	3
-függ	3
 függetlenséget	3
 függetlenül	3
 fújták	3
@@ -4055,7 +4071,6 @@ gombóc	3
 gömbölyítjük	3
 gömbölyű	3
 gómez	3
-gondolták	3
 görényezés	3
 görögül	3
 gyakorlatorientált	3
@@ -4163,6 +4178,7 @@ hófehér	3
 hollandiában	3
 holtágak	3
 hőmérsékleten	3
+hón	3
 hónapok	3
 hónappal	3
 horvátország	3
@@ -4301,6 +4317,7 @@ kategória	3
 kavarodás	3
 kelet-magyarország	3
 keleti-főcsatorna	3
+keményen	3
 kenéz	3
 kényelmesebbé	3
 kényelmesen	3
@@ -4352,6 +4369,7 @@ kezelés	3
 kezelési	3
 kezén	3
 kezét	3
+kézhez	3
 kézműves	3
 kiadási	3
 kiadásokat	3
@@ -4443,7 +4461,6 @@ koszorú	3
 köt	3
 kötelesek	3
 kötelezettség	3
-kötelező	3
 kötődést	3
 kovászt	3
 köve	3
@@ -4484,6 +4501,7 @@ közte	3
 köztéri	3
 közúthálózat	3
 közvetlen	3
+közzé	3
 krémhez	3
 kristály	3
 kritériumok	3
@@ -4526,6 +4544,7 @@ látványos	3
 leegyszerűsítve	3
 legdrágább	3
 legegyszerűbb	3
+legelső	3
 légionárius	3
 legjelentősebbek	3
 legközelebb	3
@@ -4597,9 +4616,7 @@ megállapodás	3
 megállapodást	3
 megállítani	3
 megállítása	3
-megállni	3
 megcsináljuk	3
-megdöbbentő	3
 megdöntötte	3
 mégegyszer	3
 megépült	3
@@ -4627,6 +4644,7 @@ megszűnése	3
 megszűnt	3
 megtalálják	3
 megtalálta	3
+megtalálták	3
 megtiszteltetés	3
 megvárjuk	3
 megyéi	3
@@ -4781,6 +4799,7 @@ odafigyelés	3
 oktatása	3
 oktatásban	3
 oktatásra	3
+oktató	3
 októberétől	3
 olcsóbb	3
 ölik	3
@@ -4921,6 +4940,7 @@ részesülnek	3
 részesült	3
 részévé	3
 részint	3
+részletek	3
 részleteket	3
 részletes	3
 részletesen	3
@@ -5235,6 +5255,7 @@ túlélte	3
 túli	3
 túlnyomó	3
 tünde	3
+tűnő	3
 túr	3
 túraautó	3
 túri	3
@@ -5276,7 +5297,6 @@ utcákban	3
 útmenti	3
 útnak	3
 utoljára	3
-úton	3
 útra	3
 útvonalát	3
 üveg	3
@@ -5369,6 +5389,7 @@ vietnám	3
 viktória	3
 világi	3
 világra	3
+világszenzáció	3
 világvárossá	3
 villamosított	3
 villányi	3
@@ -5450,6 +5471,7 @@ agresszió	2
 ágyas	2
 agyonverését	2
 agyú	2
+áhított	2
 ahülye	2
 ai-befektetés	2
 ajándékait	2
@@ -5466,6 +5488,7 @@ ajtajáig	2
 ajtók	2
 ajtón	2
 ajtót	2
+akadály	2
 akadályt	2
 akadémikus	2
 akadémikust	2
@@ -5729,7 +5752,6 @@ autóbuszt	2
 autód	2
 autógyárat	2
 autóipar	2
-autója	2
 autójával	2
 autókat	2
 autóknál	2
@@ -5875,6 +5897,7 @@ bekövetkezhet	2
 bekövetkező	2
 bél	2
 beláthatatlan	2
+belátható	2
 belebódul	2
 beleevődik	2
 belég	2
@@ -5994,6 +6017,7 @@ bízhat	2
 bizonyítási	2
 bizonyíték	2
 bizonyítékok	2
+bizonyítja	2
 bizonyítottan	2
 bizonytalanság	2
 bizottságának	2
@@ -6028,6 +6052,7 @@ bojtorjános	2
 bók	2
 bóklászva	2
 bokodi-tó	2
+ból	2
 bölcsességfog	2
 bölcsődei	2
 boldogkőváraljánál	2
@@ -6044,7 +6069,6 @@ borbetegség	2
 borbiró	2
 börcs	2
 bőre	2
-borítókép	2
 borkát	2
 borókás	2
 borókás-tebri	2
@@ -6350,7 +6374,6 @@ dolmány	2
 dominanciájával	2
 domináns	2
 dönci	2
-döntenek	2
 dönteni	2
 döntése	2
 döntéshozatal	2
@@ -6446,6 +6469,7 @@ egyoldalúan	2
 egységeiben	2
 egységköltségét	2
 egységünk	2
+egyszerűbb	2
 egyszerűsítve	2
 egytál	2
 együgyű	2
@@ -6572,6 +6596,7 @@ ellentétes	2
 ellentmondásos	2
 ellenzéket	2
 ellopásával	2
+elméleti	2
 elmenekült	2
 elmentünk	2
 élmények	2
@@ -6648,6 +6673,7 @@ előzetese	2
 előzmények	2
 elrepült	2
 elrontják	2
+elsőbbségadás	2
 elsődlegesen	2
 elsöprő	2
 elsőrangúvá	2
@@ -7101,7 +7127,6 @@ félünk	2
 felüt	2
 félvállról	2
 felvétele	2
-felvételen	2
 felvételéről	2
 felvételt	2
 felvetődött	2
@@ -7750,7 +7775,6 @@ holnaptól	2
 holttérfigyelő	2
 homokbuckás	2
 homokszámlálás	2
-hón	2
 hónapjában	2
 hónapján	2
 hónapot	2
@@ -8010,6 +8034,7 @@ jellemzők	2
 jelölte	2
 jelöltet	2
 jelölve	2
+jelzés	2
 jelzést	2
 jelzőként	2
 jénei	2
@@ -8044,6 +8069,7 @@ jonesról	2
 jóra	2
 jótett	2
 jöttetek	2
+jöttünk	2
 jövedelem	2
 jövedelmek	2
 jövedelmi	2
@@ -8078,7 +8104,6 @@ kalász	2
 kálomista	2
 kálvária-kápolna	2
 kamatcsökkentés	2
-kamerával	2
 kampányban	2
 kampányokat	2
 kampányüzenete	2
@@ -8152,7 +8177,6 @@ kellőképpen	2
 kém	2
 kemencében	2
 keményebb	2
-keményen	2
 keményítővel	2
 kemerovó-lakótelep	2
 kemoterápiás	2
@@ -8216,6 +8240,7 @@ kereső	2
 keresőrendszer	2
 keresték	2
 kereszténység	2
+kereszteződés	2
 keresztülomlik	2
 keresztülszúr	2
 keretegyezménye	2
@@ -8285,7 +8310,6 @@ kezében	2
 kézelő	2
 kézenfekvő	2
 kezére	2
-kézhez	2
 kézi	2
 kézművesek	2
 kézzelfogható	2
@@ -8463,6 +8487,7 @@ költője	2
 költözés	2
 költözik	2
 költségei	2
+költséges	2
 költséget	2
 költségvetés	2
 költségvetési	2
@@ -8646,6 +8671,7 @@ közgyűlések	2
 közgyűlési	2
 közigazgatás	2
 közigazgatásával	2
+közlekedésben	2
 közlekedésföldrajzi	2
 közlekedéssel	2
 közlekedést	2
@@ -8683,7 +8709,6 @@ közutak	2
 közúthálózata	2
 közúton	2
 közvélemény-kutatási	2
-közzé	2
 kraków	2
 kreatív	2
 kreativitást	2
@@ -8804,6 +8829,7 @@ látogatóközpont	2
 látszik	2
 látszott	2
 láttál	2
+láttán	2
 láttunk	2
 látványa	2
 látványosan	2
@@ -8830,7 +8856,6 @@ legalábbis	2
 legalsó	2
 legcsapadékosabb	2
 legédesebb	2
-legelső	2
 legendája	2
 legendának	2
 legendás	2
@@ -8896,6 +8921,7 @@ lengyelül	2
 leninvárosi	2
 lennének	2
 lényeg	2
+lényege	2
 lényegesen	2
 lényeget	2
 leomlása	2
@@ -8995,6 +9021,7 @@ magánhangzókat	2
 magánszemély	2
 magányosan	2
 magas-tátrai	2
+magától	2
 magával	2
 magazinműsorában	2
 mágia	2
@@ -9293,6 +9320,7 @@ méregdrága	2
 merényletet	2
 mérés	2
 mérete	2
+mérföldkő	2
 mérges	2
 mérgezés	2
 méri	2
@@ -9311,6 +9339,7 @@ mértékegysége	2
 merül	2
 merülnek	2
 merülnének	2
+mérvadó	2
 mesekincstáron	2
 meséltek	2
 meséltem	2
@@ -9721,6 +9750,7 @@ olvasóknak	2
 olvasták	2
 omladozó	2
 önálló	2
+önbizalmat	2
 önfeláldozó	2
 öngól	2
 öngyilkosság-megelőzés	2
@@ -9750,6 +9780,7 @@ opció	2
 operatőr	2
 operatőrök	2
 operettszínház	2
+órák	2
 órákat	2
 órákban	2
 órakor	2
@@ -9791,6 +9822,7 @@ ortopédiai	2
 orvos-tóth	2
 orvostudomány	2
 őrzésére	2
+őshazát	2
 ősi	2
 őskeresztények	2
 őskohó	2
@@ -10211,7 +10243,7 @@ részesüljenek	2
 részesültek	2
 részlege	2
 részleges	2
-részletek	2
+részletekkel	2
 részletesebb	2
 részletesebben	2
 részterülete	2
@@ -10423,7 +10455,6 @@ svédasztallal	2
 symphonia-füstbe	2
 szabadságáról	2
 szabadságharcban	2
-szabály	2
 szabályainak	2
 szabályait	2
 szabályok	2
@@ -10804,7 +10835,9 @@ tanév	2
 tanításának	2
 tankönyvkiadó	2
 tanösvény	2
+tanulással	2
 tanulmányozta	2
+tanuló	2
 tanulság	2
 tányéron	2
 tányérunkra	2
@@ -11099,6 +11132,7 @@ trolltúra	2
 trópusi	2
 trükk	2
 trükkökkel	2
+trükkös	2
 trump-putyin-csúcs	2
 trump-találkozótól	2
 tubusmagtárak	2
@@ -11122,6 +11156,7 @@ tükröz	2
 tükrözi	2
 tulajdonában	2
 tulajdonát	2
+tulajdonképpen	2
 tulajdonságai	2
 tulajdonú	2
 túlélni	2
@@ -11136,7 +11171,6 @@ túlszaporodott	2
 túlzásba	2
 tündérmesék	2
 tünetek	2
-tűnő	2
 tüntetők	2
 túrák	2
 túrázás	2
@@ -11176,6 +11210,7 @@ udvarhölgy	2
 ügynökség	2
 ügynökségét	2
 ügynökségünk	2
+újat	2
 újdonsült	2
 újfundland	2
 újít	2
@@ -11321,7 +11356,6 @@ válassz	2
 válaszadó	2
 válaszoljon	2
 válaszolva	2
-választ	2
 választások	2
 választásokon	2
 választásom	2
@@ -12527,7 +12561,6 @@ ahidrálás	1
 áhítatos	1
 áhítatoskodik	1
 áhítatosság	1
-áhított	1
 áhítozik	1
 ahonnét	1
 ahová	1
@@ -12659,7 +12692,6 @@ akácsor	1
 akáctörzs	1
 akáctuskó	1
 akácvirág	1
-akadály	1
 akadályfutás	1
 akadálymentes	1
 akadálymentesítési	1
@@ -14057,6 +14089,7 @@ alliterál	1
 állíttatik	1
 állítunk	1
 állítva	1
+állj	1
 állkapca	1
 állkapcsú	1
 állkapocs	1
@@ -18518,6 +18551,7 @@ autópark	1
 autóra	1
 autórádió	1
 autóscsárda	1
+autósiskolában	1
 autósokat	1
 autósport	1
 autóstopp	1
@@ -20967,7 +21001,6 @@ belátás	1
 belátást	1
 bélátfúródás	1
 beláthat	1
-belátható	1
 belátó	1
 belátogat	1
 belátom	1
@@ -22434,7 +22467,6 @@ benzingőz	1
 benzinköltség	1
 benzinkút	1
 benzinkútba	1
-benzinkúton	1
 benzinkútra	1
 benzintartály	1
 benzintöltő	1
@@ -24042,7 +24074,6 @@ bizonyíthatatlan	1
 bizonyíthatja	1
 bizonyítható	1
 bizonyíthatóan	1
-bizonyítja	1
 bizonyítják	1
 bizonyító	1
 bizonyított	1
@@ -24385,7 +24416,6 @@ bokszkesztyű	1
 bokszmérkőzés	1
 bokszoló	1
 bökvers	1
-ból	1
 bölcsebbé	1
 bölcsebbek	1
 bölcsei	1
@@ -31193,8 +31223,6 @@ egyszemélyi	1
 egyszer-kétszer	1
 egyszer-máskor	1
 egyszer-másszor	1
-egyszerűbb	1
-egyszerűnek	1
 egyszerűség	1
 egyszerűsít	1
 egyszerűsítés	1
@@ -32158,6 +32186,7 @@ elesettség	1
 életciklus	1
 életciklusú	1
 életéből	1
+életek	1
 életelem	1
 életelixír	1
 életellenes	1
@@ -33544,7 +33573,6 @@ elmelegít	1
 elmélet	1
 elméletek	1
 elméletet	1
-elméleti	1
 elméletileg	1
 elmélkedés	1
 elmélkedésedben	1
@@ -35755,7 +35783,6 @@ elskandál	1
 elsőáldozás	1
 elsőáldozó	1
 elsőbbség	1
-elsőbbségadás	1
 elsőbbséget	1
 elsődleges	1
 elsodorták	1
@@ -37968,6 +37995,7 @@ erszényes	1
 értetlenül	1
 értetődik	1
 értetődő	1
+értetődőnek	1
 értetődött	1
 értetted	1
 értettem	1
@@ -58552,7 +58580,6 @@ jelzáloghitel	1
 jelzálogjog	1
 jelzálogkölcsön	1
 jelzálogteher	1
-jelzés	1
 jelzése	1
 jelzésrendszer	1
 jelzésű	1
@@ -58733,7 +58760,6 @@ jogosít	1
 jogosítatlan	1
 jogosító	1
 jogosított	1
-jogosítvány	1
 jogosítvány-szerzés	1
 jogosság	1
 jogosultsága	1
@@ -61354,7 +61380,7 @@ keresztényüldözéseket	1
 keresztespók	1
 keresztéte	1
 keresztezés	1
-kereszteződés	1
+kereszteződésbe	1
 kereszteződését	1
 kereszteződik	1
 keresztféléves	1
@@ -66597,7 +66623,6 @@ költségeit	1
 költségeket	1
 költségelemet	1
 költségének	1
-költséges	1
 költségesebb	1
 költségesebbek	1
 költséghatékonyság	1
@@ -69868,7 +69893,6 @@ közkórház	1
 közkút	1
 közlegelő	1
 közlekedek	1
-közlekedésben	1
 közlekedése	1
 közlekedésében	1
 közlekedését	1
@@ -70263,6 +70287,7 @@ krémtorta	1
 krénusz	1
 krepál	1
 krepp-papír	1
+kresz-kérdése	1
 kresztomátia	1
 kréta	1
 krétafehér	1
@@ -71818,6 +71843,7 @@ lassúbbodás	1
 lassúbbodik	1
 lassúdik	1
 lassulás	1
+lássunk	1
 lassúság	1
 lassúzik	1
 lasszó	1
@@ -71942,7 +71968,6 @@ látszottak	1
 láttamoz	1
 láttamozás	1
 láttamoztat	1
-láttán	1
 láttára	1
 láttat	1
 láttuk	1
@@ -73835,7 +73860,6 @@ lenvászon	1
 lenyálaz	1
 lényed	1
 lényegbevágó	1
-lényege	1
 lényeges	1
 lényegesebb	1
 lényeggel	1
@@ -75987,7 +76011,6 @@ magatartás	1
 magatartás-norma	1
 magatartási	1
 magatartású	1
-magától	1
 magáz	1
 magázás	1
 magázódik	1
@@ -78610,6 +78633,7 @@ megkérte	1
 megkerül	1
 megkerülésére	1
 megkerülget	1
+megkerülhetetlen	1
 megkerülték	1
 megkerülve	1
 megkérvényez	1
@@ -79904,7 +79928,6 @@ megtalálkozik	1
 megtalálnod	1
 megtaláló	1
 megtalálod	1
-megtalálták	1
 megtáltosodik	1
 megtámad	1
 megtámadásáról	1
@@ -81231,7 +81254,6 @@ merevség	1
 merevül	1
 mérföld	1
 mérföldes	1
-mérföldkő	1
 mérföldkőhöz	1
 mérföldkőnek	1
 mérföldköveként	1
@@ -81363,7 +81385,6 @@ merült	1
 merültek	1
 mérünk	1
 mérv	1
-mérvadó	1
 mérve	1
 mérvű	1
 merzse-mocsárral	1
@@ -81828,6 +81849,7 @@ mindenség	1
 mindentudás	1
 mindentudó	1
 mindenünnen	1
+mindezért	1
 mindhalálig	1
 mindhárman	1
 mindhárom	1
@@ -86840,7 +86862,6 @@ oktatásnak	1
 oktatást	1
 oktatástan	1
 oktatásügy	1
-oktató	1
 oktatófilm	1
 oktatógép	1
 oktatói	1
@@ -87283,7 +87304,6 @@ onanizál	1
 önbírálat	1
 önbíráló	1
 önbíráskodás	1
-önbizalmat	1
 önbizalom	1
 önbizalommal	1
 önbiztosítás	1
@@ -87639,7 +87659,6 @@ optimizál	1
 órájában	1
 órajelző	1
 órájuk	1
-órák	1
 órakészítés	1
 órákig	1
 órákon	1
@@ -89890,6 +89909,7 @@ osgyániak	1
 összetetovál	1
 összetett	1
 összetettben	1
+összetettebb	1
 összetettet	1
 összetettségére	1
 összetettségét	1
@@ -91437,6 +91457,7 @@ párosul	1
 pároztat	1
 párral	1
 párrím	1
+párszázezer	1
 párszi	1
 párszor	1
 párt-keret	1
@@ -92644,6 +92665,7 @@ planktonmaradványoktól	1
 plántál	1
 plánum	1
 plaszticitás	1
+plasztikkártyát	1
 platán	1
 platánfa	1
 platformját	1
@@ -96551,7 +96573,6 @@ részletei	1
 részletein	1
 részleteit	1
 részletekért	1
-részletekkel	1
 részletekre	1
 részletekről	1
 részletesség	1
@@ -98907,6 +98928,7 @@ sofőrje	1
 sofőrök	1
 sofőröket	1
 sofőröknek	1
+sofőrökön	1
 sofőrülés	1
 sógor	1
 sógorasszony	1
@@ -105710,7 +105732,6 @@ tabánnak	1
 tabánt	1
 tabernákulum	1
 tábesz	1
-tábla	1
 táblabírája	1
 táblabíró	1
 táblácska	1
@@ -106398,6 +106419,7 @@ tankhajó	1
 tankolásra	1
 tanköltemény	1
 tankönyv	1
+tankönyvek	1
 tankönyvszerű	1
 tanköteles	1
 tankötelezettség	1
@@ -106439,7 +106461,6 @@ tanulás	1
 tanulásban	1
 tanulási	1
 tanulásra	1
-tanulással	1
 tanulékony	1
 tanulják	1
 tanulmány	1
@@ -106460,7 +106481,6 @@ tanulmányt	1
 tanulmányterv	1
 tanulmányút	1
 tanulnivaló	1
-tanuló	1
 tanulóév	1
 tanulóifjúság	1
 tanulója	1
@@ -108895,6 +108915,7 @@ tihamér	1
 tikkasztó	1
 tiktok-sztár	1
 tiktok-tánc	1
+tiktok-videó	1
 tiktok-videóit	1
 tiktok-videójában	1
 tiktok-videókat	1
@@ -111301,7 +111322,6 @@ trösztvezér	1
 trubadúr	1
 trükkfilm	1
 trükkje	1
-trükkös	1
 trump-kormány	1
 trump-találkozó	1
 trüszköl	1
@@ -111485,7 +111505,6 @@ túláhítozik	1
 tulajdonít	1
 tulajdonította	1
 tulajdonították	1
-tulajdonképpen	1
 tulajdonképpeni	1
 tulajdonnév	1
 tulajdonnevesül	1
@@ -113100,7 +113119,6 @@ uhlárik	1
 újak	1
 újarad	1
 újasszír	1
-újat	1
 újbabiloni	1
 újbálinc	1
 újbaloldali	1
@@ -114930,6 +114948,7 @@ utazóval	1
 útbiztos	1
 útból	1
 útburkolat	1
+útburkolati	1
 útburkoló	1
 utcaajtó	1
 utcába	1
@@ -119165,6 +119184,7 @@ videófelvételt	1
 videógenerálás	1
 videóhirdetéseket	1
 videóidat	1
+videója	1
 videójában	1
 videojátékok	1
 videójátékszerű	1
@@ -119406,7 +119426,6 @@ világszabadalom	1
 világszabadság	1
 világszám	1
 világszemlélet	1
-világszenzáció	1
 világszép	1
 világszépe	1
 világszínvonal	1
@@ -121136,6 +121155,7 @@ vízrendszer	1
 vízrendszerének	1
 vizsgabizottság	1
 vizsgadíj	1
+vizsgadíjak	1
 vizsgaelnök	1
 vizsgaelőadás	1
 vizsgaengedély	1
@@ -121169,6 +121189,7 @@ vizsgálódtak	1
 vizsgálták	1
 vizsgálva	1
 vizsgán	1
+vizsgáról	1
 vizsgát	1
 vizsgatárgy	1
 vizsgatétel	1

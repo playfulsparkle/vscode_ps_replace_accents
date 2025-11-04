@@ -689,7 +689,7 @@ var DiacriticRestorer = class _DiacriticRestorer {
     const lines = csvData.split("\n");
     let lineCount = 0;
     let errorCount = 0;
-    for (let i = 1; i < lines.length; i++) {
+    for (let i = 0; i < lines.length; i++) {
       const line = lines[i].trim();
       if (!line) {
         continue;
@@ -711,7 +711,7 @@ var DiacriticRestorer = class _DiacriticRestorer {
           errorCount++;
           continue;
         }
-        const baseForm = this.removeDiacritics(word.toLowerCase());
+        const baseForm = this.removeDiacritics(word);
         let entries = this.dictionary.get(baseForm);
         if (!entries) {
           entries = [];
@@ -987,10 +987,10 @@ function activate(context) {
         document.lineAt(document.lineCount - 1).text.length
       );
       const text = document.getText(entireDocumentRange);
-      const processedText = transformFn(text, options);
-      await editor.edit((editBuilder) => {
-        editBuilder.replace(entireDocumentRange, processedText);
-      });
+      const processedText = text.length > 0 ? transformFn(text, options) : "";
+      if (text !== processedText) {
+        await editor.edit((editBuilder) => editBuilder.replace(entireDocumentRange, processedText));
+      }
       return 1;
     }
     await editor.edit((editBuilder) => {
@@ -1005,8 +1005,10 @@ function activate(context) {
           rangeToProcess = new vscode2.Selection(startLine.range.start, endLine.range.end);
         }
         const selectedText = document.getText(rangeToProcess);
-        const processedText = transformFn(selectedText, options);
-        editBuilder.replace(rangeToProcess, processedText);
+        const processedText = selectedText.length > 0 ? transformFn(selectedText, options) : "";
+        if (selectedText !== processedText) {
+          editBuilder.replace(rangeToProcess, processedText);
+        }
       }
     });
     return 0;

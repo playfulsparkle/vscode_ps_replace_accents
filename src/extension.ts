@@ -83,11 +83,12 @@ export function activate(context: vscode.ExtensionContext) {
 				document.lineCount - 1, document.lineAt(document.lineCount - 1).text.length
 			);
 			const text = document.getText(entireDocumentRange);
-			const processedText = transformFn(text, options);
+			const processedText = text.length > 0 ? transformFn(text, options) : "";
 
-			await editor.edit(editBuilder => {
-				editBuilder.replace(entireDocumentRange, processedText);
-			});
+			if (text !== processedText) {
+				await editor.edit(editBuilder => editBuilder.replace(entireDocumentRange, processedText));
+			}
+
 			return 1;
 		}
 
@@ -108,9 +109,11 @@ export function activate(context: vscode.ExtensionContext) {
 				}
 
 				const selectedText = document.getText(rangeToProcess);
-				const processedText = transformFn(selectedText, options);
+				const processedText = selectedText.length > 0 ? transformFn(selectedText, options) : "";
 
-				editBuilder.replace(rangeToProcess, processedText);
+				if (selectedText !== processedText) {
+					editBuilder.replace(rangeToProcess, processedText);
+				}
 			}
 		});
 
