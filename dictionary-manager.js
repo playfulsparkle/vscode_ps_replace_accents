@@ -166,7 +166,7 @@ class DictionaryManager {
             if (!this.containsNonASCII(word)) continue;
 
             const normalizedWord = this.normalizeWord(word);
-            const lowerOriginal = word.toLowerCase();
+            const lowerOriginal = word.toLowerCase().trim("’'-");
 
             if (frequencies.has(normalizedWord)) {
                 frequencies.get(normalizedWord).frequency++;

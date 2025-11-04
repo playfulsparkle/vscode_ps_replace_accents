@@ -141,6 +141,27 @@
             "slovenian",
             "spanish",
             "swedish"
+          ],
+          "enumDescriptions": [
+            "%extension.config.diacriticDictionary.croatian.desc%",
+            "%extension.config.diacriticDictionary.czech.desc%",
+            "%extension.config.diacriticDictionary.danish.desc%",
+            "%extension.config.diacriticDictionary.dutch.desc%",
+            "%extension.config.diacriticDictionary.french.desc%",
+            "%extension.config.diacriticDictionary.german.desc%",
+            "%extension.config.diacriticDictionary.hungarian.desc%",
+            "%extension.config.diacriticDictionary.icelandic.desc%",
+            "%extension.config.diacriticDictionary.italian.desc%",
+            "%extension.config.diacriticDictionary.latvian.desc%",
+            "%extension.config.diacriticDictionary.lithuanian.desc%",
+            "%extension.config.diacriticDictionary.norwegian.desc%",
+            "%extension.config.diacriticDictionary.polish.desc%",
+            "%extension.config.diacriticDictionary.portuguese.desc%",
+            "%extension.config.diacriticDictionary.romanian.desc%",
+            "%extension.config.diacriticDictionary.slovak.desc%",
+            "%extension.config.diacriticDictionary.slovenian.desc%",
+            "%extension.config.diacriticDictionary.spanish.desc%",
+            "%extension.config.diacriticDictionary.swedish.desc%"
           ]
         },
         "ps-replace-accents.diacriticRestoreSuffixMatching": {
