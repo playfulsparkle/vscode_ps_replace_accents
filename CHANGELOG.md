@@ -4,7 +4,8 @@ All notable changes to the "Playful Sparkle: Replace Accents" extension will be 
 
 ## [0.0.12] - 2025-11-04
 
-Fixed translate key name spelling and removed unused translation.
+* Fixed translate key name spelling and removed unused translation.
+* Fixed reading and processing dictionaries
 
 ## [0.0.11] - 2025-11-03
 
@@ -15,23 +16,23 @@ Fixed translate key name spelling and removed unused translation.
 
 ## [0.0.10] - 2025-11-01
 
-Added diacritic restoration for Danish, French, Spanish, Swedish, Italian, Portuguese, Italian, Norwegian, Icelandic, Dutch, Croatian, Slovenian, Romanian, Lithuanian, and Latvian.
-Added suffix matching for inflected forms (off by default), 
-Added ignored words list for brands/exceptions 
-Added caching most userd words.
-Improved accent restoration ~40–60% faster via cached regex, binary search, streaming reads, fewer allocations; dictionary load ~30% less memory; clearer setting descriptions.
+* Added diacritic restoration for Danish, French, Spanish, Swedish, Italian, Portuguese, Italian, Norwegian, Icelandic, Dutch, Croatian, Slovenian, Romanian, Lithuanian, and Latvian.
+* Added suffix matching for inflected forms (off by default), 
+* Added ignored words list for brands/exceptions 
+* Added caching most userd words.
+* Improved accent restoration ~40–60% faster via cached regex, binary search, streaming reads, fewer allocations; dictionary load ~30% less memory; clearer setting descriptions.
 
 ## [0.0.9] - 2025-10-31
 
-Added diacritic restoration for Czech, German, Hungarian, Polish, and Slovak.
+* Added diacritic restoration for Czech, German, Hungarian, Polish, and Slovak.
 
 ## [0.0.8] - 2025-10-29
 
-Translated Command Palette category
+* Translated Command Palette category
 
 ## [0.0.7] - 2025-10-28
 
-Add support for removing diacritics from file and folder names.
+* Add support for removing diacritics from file and folder names.
 
 ## [0.0.6] - 2025-05-02
 
