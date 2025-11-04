@@ -10,7 +10,13 @@ It uses Unicode normalization (NFKD) to split characters into base letters and m
 
 When needed, it can restore diacritics from language dictionaries. You select the language in the settings, you can enable suffix matching for inflected forms, and you can exclude words that must stay unchanged.
 
-![Usage preview](img/preview.gif "Usage preview")
+## Remove Diacritics
+
+![Demonstration of converting accented characters to their base Latin equivalents](img/remove-diacritic.gif "Shows text transformation from accented characters like 'č, š, ž' to plain 'c, s, z'")
+
+## Restore Diacritics
+
+![Demonstration of restoring proper diacritics to Latin text](img/restore-diacritic.gif "Shows text transformation from plain characters back to properly accented forms")
 
 ---
 
