@@ -2,6 +2,11 @@
 
 All notable changes to the "Playful Sparkle: Replace Accents" extension will be documented in this file.
 
+## [0.0.13] - 2025-11-04
+
+- Improved UI message about actions.
+- Removed unused UI translations.
+
 ## [0.0.12] - 2025-11-04
 
 - Fixed translation key spelling and removed unused entries.

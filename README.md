@@ -86,6 +86,11 @@ When restoring, it uses **per-language dictionaries**, optional **suffix matchin
 
 ## Release Notes
 
+### 0.0.13
+
+- Improved UI message about actions.
+- Removed unused UI translations.
+
 ### 0.0.12
 
 - Fixed translation key spelling and removed unused entries.

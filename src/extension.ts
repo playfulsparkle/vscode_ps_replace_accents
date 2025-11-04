@@ -20,6 +20,26 @@ import DiacriticRemover from "./removeDiacritic";
  */
 
 /**
+ * Represents the result of a text editor operation.
+ */
+const enum TextEditorResult {
+	/**
+	 * No changes were made to the editor state.
+	 */
+	None = 0,
+
+	/**
+	 * Only the text selection or cursor position was modified.
+	 */
+	SelectionModified = 1,
+
+	/**
+	 * The document content was modified.
+	 */
+	DocumentModified = 2
+}
+
+/**
  * Activates the PS Replace Accents extension
  * 
  * This function is called by VS Code when the extension is activated.
@@ -56,7 +76,7 @@ export function activate(context: vscode.ExtensionContext) {
 	 * @param {boolean} [expandToFullLines=false] - Whether to expand selections to full lines
 	 * @param {any} [options] - Optional parameters to pass to the transform function
 	 * @returns {Promise<number>} Processing status code: 
-	 *   -1: No active editor
+	 *   -1: No change
 	 *    0: Processed selections
 	 *    1: Processed entire document
 	 * 
@@ -66,13 +86,14 @@ export function activate(context: vscode.ExtensionContext) {
 		transformFn: (text: string, options?: any) => string,
 		expandToFullLines: boolean = false,
 		options?: any
-	): Promise<number> => {
+	): Promise<TextEditorResult> => {
 		const editor = vscode.window.activeTextEditor;
 
 		if (!editor) {
-			return -1;
+			return TextEditorResult.None;
 		}
 
+		let modified = false;
 		const document = editor.document;
 		const selections = editor.selections;
 
@@ -87,13 +108,18 @@ export function activate(context: vscode.ExtensionContext) {
 
 			if (text !== processedText) {
 				await editor.edit(editBuilder => editBuilder.replace(entireDocumentRange, processedText));
+
+				modified = true;
 			}
 
-			return 1;
+			if (modified) {
+				return TextEditorResult.DocumentModified;
+			}
+
+			return TextEditorResult.None;
 		}
 
-		// Process each selection
-		await editor.edit(editBuilder => {
+		await editor.edit(editBuilder => { // Process each selection
 			for (const selection of selections) {
 				if (selection.isEmpty) {
 					continue;
@@ -113,11 +139,18 @@ export function activate(context: vscode.ExtensionContext) {
 
 				if (selectedText !== processedText) {
 					editBuilder.replace(rangeToProcess, processedText);
+
+					modified = true;
 				}
 			}
 		});
 
-		return 0;
+
+		if (modified) {
+			return TextEditorResult.SelectionModified;
+		}
+
+		return TextEditorResult.None;
 	};
 
 	/**
@@ -225,19 +258,15 @@ export function activate(context: vscode.ExtensionContext) {
 
 			const remover = new DiacriticRemover();
 
-			const allSelectionsEmpty = await processTextInEditor(text => remover.removeDiacritics(text, userMappings));
+			const result = await processTextInEditor(text => remover.removeDiacritics(text, userMappings));
 
-			let modified = false;
-
-			if (modified) {
-				switch (allSelectionsEmpty) {
-					case 1: // selection
-						vscode.window.showInformationMessage(vscode.l10n.t("All accented characters were replaced in the selected text."));
-						break;
-					case 0: // entire document
-						vscode.window.showInformationMessage(vscode.l10n.t("All accented characters were replaced in the entire document."));
-						break;
-				}
+			switch (result) {
+				case TextEditorResult.SelectionModified:
+					vscode.window.showInformationMessage(vscode.l10n.t("Removed diacritics in selection."));
+					break;
+				case TextEditorResult.DocumentModified:
+					vscode.window.showInformationMessage(vscode.l10n.t("Removed diacritics in document."));
+					break;
 			}
 		},
 
@@ -316,9 +345,18 @@ export function activate(context: vscode.ExtensionContext) {
 
 			await restorer.initialize();
 
-			await processTextInEditor(text => restorer.restoreDiacritics(text));
+			const result = await processTextInEditor(text => restorer.restoreDiacritics(text));
 
 			restorer.dispose();
+
+			switch (result) {
+				case TextEditorResult.SelectionModified:
+					vscode.window.showInformationMessage(vscode.l10n.t("Restored diacritics in selection."));
+					break;
+				case TextEditorResult.DocumentModified:
+					vscode.window.showInformationMessage(vscode.l10n.t("Restored diacritics in document."));
+					break;
+			}
 		}
 	};
 

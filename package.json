@@ -1,7 +1,7 @@
 {
   "name": "ps-replace-accents",
   "displayName": "Replace Accents",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "publisher": "playful-sparkle",
   "description": "Remove accents/diacritics from text to generate clean text through Unicode normalization and custom character mappings.",
   "author": {
