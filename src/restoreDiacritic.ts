@@ -408,19 +408,16 @@ class DiacriticRestorer {
         const candidates = this.dictionary.get(baseForm);
 
         if (!candidates || candidates.length === 0) {
-            // Try suffix matching for inflected forms (only if enabled)
             if (this.enableSuffixMatching) {
                 return this.findSuffixMatch(word, lowerWord, baseForm);
             }
-
             return null;
         }
 
-        // Return the most frequent candidate (at index 0 due to descending sort),
-        // array is already sorted by frequency in descending order
         const bestMatch = candidates[0].word;
+        const mappings = this.getAllMappings();
 
-        return searchAndReplaceCaseSensitive(word, bestMatch);
+        return searchAndReplaceCaseSensitive(word, bestMatch, mappings);
     }
 
     /**

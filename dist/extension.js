@@ -40,18 +40,30 @@ var path2 = __toESM(require("path"));
 // src/shared.ts
 var vscode = __toESM(require("vscode"));
 var diacriticRegex = /[\p{Mn}\u0300-\u036f]/gu;
-function searchAndReplaceCaseSensitive(original, restored) {
+function searchAndReplaceCaseSensitive(original, restored, characterMappings) {
   if (!original || !restored) {
     return restored;
   }
-  const origLen = original.length;
-  const restLen = restored.length;
-  if (restLen >= origLen) {
-    return applyCasePattern(original, restored);
+  if (characterMappings && original.length !== restored.length) {
+    return applyCasePatternWithAlignment(original, restored, characterMappings);
   }
-  const restoredWithCase = applyCasePattern(original.substring(0, restLen), restored);
-  const suffix = original.substring(restLen);
-  return restoredWithCase + suffix;
+  return applyCasePattern(original, restored);
+}
+function applyCasePatternWithAlignment(original, restored, characterMappings) {
+  const reverseMappings = {};
+  for (const [diacritic, ascii] of Object.entries(characterMappings)) {
+    if (!reverseMappings[ascii] || ascii.length > reverseMappings[ascii].length) {
+      reverseMappings[ascii] = diacritic;
+    }
+  }
+  let alignedOriginal = original;
+  let alignedRestored = restored;
+  for (const [ascii, diacritic] of Object.entries(reverseMappings)) {
+    if (ascii.length > 1) {
+      alignedOriginal = alignedOriginal.replace(new RegExp(ascii, "gi"), diacritic);
+    }
+  }
+  return applyCasePattern(alignedOriginal, alignedRestored);
 }
 function applyCasePattern(original, restored) {
   if (!original || !restored) {
@@ -855,7 +867,8 @@ var DiacriticRestorer = class _DiacriticRestorer {
       return null;
     }
     const bestMatch = candidates[0].word;
-    return searchAndReplaceCaseSensitive(word, bestMatch);
+    const mappings = this.getAllMappings();
+    return searchAndReplaceCaseSensitive(word, bestMatch, mappings);
   }
   /**
    * Attempts to match inflected word forms by progressively shortening the stem
