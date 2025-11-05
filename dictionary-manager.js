@@ -43,11 +43,25 @@ class DictionaryManager {
             const dictFilePath = this.resolveDictionaryPath(dictionaryName);
             const existingDict = await this.readDictionary(dictFilePath);
 
+            // Track statistics
+            let newCount = 0;
+            const existingNormalized = new Set(
+                existingDict.map(entry => this.normalizeWord(entry.word))
+            );
+
             const updatedDict = this.mergeDictionaries(existingDict, wordFrequencies);
+
+            // Count what's actually new
+            for (const [normalizedWord] of wordFrequencies) {
+                if (!existingNormalized.has(normalizedWord) &&
+                    this.containsNonASCII(wordFrequencies.get(normalizedWord).word)) {
+                    newCount++;
+                }
+            }
 
             await this.writeDictionary(dictFilePath, updatedDict);
 
-            console.log(`Updated dictionary with ${wordFrequencies.size} new words, total: ${updatedDict.size}`);
+            console.log(`Updated dictionary with ${newCount} new words, total: ${updatedDict.size}`);
 
         } catch (error) {
             console.error(error);
@@ -163,7 +177,9 @@ class DictionaryManager {
 
         for (const word of words) {
             // Skip words that don't contain non-ASCII characters
-            if (!this.containsNonASCII(word)) continue;
+            if (!this.containsNonASCII(word)) {
+                continue;
+            }
 
             const normalizedWord = this.normalizeWord(word);
             const lowerOriginal = word.toLowerCase().trim("’'-");
