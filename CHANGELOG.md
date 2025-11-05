@@ -2,6 +2,10 @@
 
 All notable changes to the "Playful Sparkle: Replace Accents" extension will be documented in this file.
 
+## [0.0.14] - 2025-11-05
+
+- Fixed restoration of multi-character ASCII sequences (e.g., `oe` to `ø`, `Oe` to `Ø`, `AE` to `Æ`) to single letters with correct case.
+
 ## [0.0.13] - 2025-11-04
 
 - Improved UI message about actions.

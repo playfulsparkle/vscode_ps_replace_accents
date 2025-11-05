@@ -86,6 +86,10 @@ When restoring, it uses **per-language dictionaries**, optional **suffix matchin
 
 ## Release Notes
 
+### 0.0.14
+
+- Fixed restoration of multi-character ASCII sequences (e.g., `oe` to `ø`, `Oe` to `Ø`, `AE` to `Æ`) to single letters with correct case.
+
 ### 0.0.13
 
 - Improved UI message about actions.
