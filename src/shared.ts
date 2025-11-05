@@ -26,68 +26,120 @@ export const diacriticRegex = /[\p{Mn}\u0300-\u036f]/gu;
  * 
  * @param {string} original - The original normalized text (without diacritics)
  * @param {string} restored - The restored text with diacritics
- * @param {Object} [characterMappings] - Optional character mappings for alignment
+ * @param {Object} [characterMappings] - Optional character mappings for alignmen
  * @returns {string} The restored text with proper case pattern applied
- * 
- * @example
- * // With Norwegian mappings: "Grydebroed" → "Grydebrød" (not "Grydebrødd")
- * searchAndReplaceCaseSensitive("Grydebroed", "Grydebrød", norwegianMappings);
  */
 export function searchAndReplaceCaseSensitive(
-    original: string,
-    restored: string,
+    original: string, 
+    restored: string, 
     characterMappings?: { [key: string]: string }
 ): string {
     if (!original || !restored) {
         return restored;
     }
 
-    // If character mappings are provided and lengths differ, use advanced alignment
-    if (characterMappings && original.length !== restored.length) {
-        return applyCasePatternWithAlignment(original, restored, characterMappings);
+    // If character mappings are provided, use advanced processing
+    if (characterMappings && Object.keys(characterMappings).length > 0) {
+        return applyCasePatternWithMappings(original, restored, characterMappings);
     }
-
-    // Standard case: use original logic when lengths match or no mappings provided
+    
+    // Fallback to standard case pattern application
     return applyCasePattern(original, restored);
 }
 
 /**
- * Applies case pattern with proper alignment for diacritic expansions
- * Handles cases where character counts differ due to multi-character expansions
+ * Applies case pattern using character mappings to handle multi-character expansions
  * 
  * @private
  * @param {string} original - Original normalized text
  * @param {string} restored - Restored text with diacritics  
- * @param {Object} characterMappings - Character mappings for alignment
- * @returns {string} Properly aligned and cased result
+ * @param {Object} characterMappings - Character mappings for expansions
+ * @returns {string} Properly transformed result
  */
-function applyCasePatternWithAlignment(
-    original: string,
-    restored: string,
+function applyCasePatternWithMappings(
+    original: string, 
+    restored: string, 
     characterMappings: { [key: string]: string }
 ): string {
-    // Create reverse mappings (ASCII → diacritic) for alignment
+    // Create reverse lookup: ascii -> diacritic
     const reverseMappings: { [key: string]: string } = {};
     for (const [diacritic, ascii] of Object.entries(characterMappings)) {
-        // Handle multi-character ASCII sequences that map to single diacritic
-        if (!reverseMappings[ascii] || ascii.length > reverseMappings[ascii].length) {
-            reverseMappings[ascii] = diacritic;
+        reverseMappings[ascii] = diacritic;
+    }
+
+    let result = "";
+    let i = 0;
+    let j = 0;
+
+    // Process both strings character by character, handling multi-character expansions
+    while (i < original.length && j < restored.length) {
+        // Check for multi-character sequences in original that map to single diacritic
+        let matched = false;
+        
+        // Try 2-character sequences first (like "oe", "ae", "Oe", "AE", etc.)
+        if (i + 1 < original.length) {
+            const twoChar = original.substring(i, i + 2);
+            const diacritic = reverseMappings[twoChar];
+            
+            if (diacritic && diacritic === restored[j]) {
+                // Found a multi-character sequence that matches the restored diacritic
+                // Apply case logic based on the multi-character sequence
+                result += applyCaseToCharacter(twoChar, restored[j]);
+                i += 2;
+                j += 1;
+                matched = true;
+            }
+        }
+
+        if (!matched) {
+            // Standard single character replacement
+            result += applyCaseToCharacter(original[i], restored[j]);
+            i += 1;
+            j += 1;
         }
     }
 
-    // Align the strings by expanding the original using reverse mappings
-    let alignedOriginal = original;
-    let alignedRestored = restored;
-
-    // Apply reverse mappings to handle expansions in original
-    for (const [ascii, diacritic] of Object.entries(reverseMappings)) {
-        if (ascii.length > 1) { // Only handle multi-character expansions
-            alignedOriginal = alignedOriginal.replace(new RegExp(ascii, "gi"), diacritic);
+    // Handle any remaining characters in restored string
+    if (j < restored.length) {
+        // Use the case pattern from the last character of original
+        const lastOrigChar = original[original.length - 1] || "";
+        const lastIsUpper = lastOrigChar === lastOrigChar.toUpperCase() && lastOrigChar !== lastOrigChar.toLowerCase();
+        const transform = lastIsUpper ? 
+            (c: string) => c.toUpperCase() : 
+            (c: string) => c.toLowerCase();
+            
+        for (let k = j; k < restored.length; k++) {
+            result += transform(restored[k]);
         }
     }
 
-    // Now apply standard case pattern to aligned strings
-    return applyCasePattern(alignedOriginal, alignedRestored);
+    return result;
+}
+
+/**
+ * Applies case pattern from source character to target character
+ * 
+ * @private
+ * @param {string} sourceChar - Character providing the case pattern
+ * @param {string} targetChar - Character to apply case to
+ * 
+ * @returns {string} Target character with appropriate case
+ */
+function applyCaseToCharacter(sourceChar: string, targetChar: string): string {
+    if (sourceChar === sourceChar.toUpperCase()) {
+        return targetChar.toUpperCase();
+    } else if (sourceChar === sourceChar.toLowerCase()) {
+        return targetChar.toLowerCase();
+    } else {
+        // Mixed case or special handling for multi-character sequences
+        // For multi-character sequences, use the case of the first character
+        if (sourceChar.length > 1) {
+            return sourceChar[0] === sourceChar[0].toUpperCase() 
+                ? targetChar.toUpperCase() 
+                : targetChar.toLowerCase();
+        }
+        return targetChar;
+    }
 }
 
 /**

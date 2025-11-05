@@ -44,26 +44,58 @@ function searchAndReplaceCaseSensitive(original, restored, characterMappings) {
   if (!original || !restored) {
     return restored;
   }
-  if (characterMappings && original.length !== restored.length) {
-    return applyCasePatternWithAlignment(original, restored, characterMappings);
+  if (characterMappings && Object.keys(characterMappings).length > 0) {
+    return applyCasePatternWithMappings(original, restored, characterMappings);
   }
   return applyCasePattern(original, restored);
 }
-function applyCasePatternWithAlignment(original, restored, characterMappings) {
+function applyCasePatternWithMappings(original, restored, characterMappings) {
   const reverseMappings = {};
   for (const [diacritic, ascii] of Object.entries(characterMappings)) {
-    if (!reverseMappings[ascii] || ascii.length > reverseMappings[ascii].length) {
-      reverseMappings[ascii] = diacritic;
+    reverseMappings[ascii] = diacritic;
+  }
+  let result = "";
+  let i = 0;
+  let j = 0;
+  while (i < original.length && j < restored.length) {
+    let matched = false;
+    if (i + 1 < original.length) {
+      const twoChar = original.substring(i, i + 2);
+      const diacritic = reverseMappings[twoChar];
+      if (diacritic && diacritic === restored[j]) {
+        result += applyCaseToCharacter(twoChar, restored[j]);
+        i += 2;
+        j += 1;
+        matched = true;
+      }
+    }
+    if (!matched) {
+      result += applyCaseToCharacter(original[i], restored[j]);
+      i += 1;
+      j += 1;
     }
   }
-  let alignedOriginal = original;
-  let alignedRestored = restored;
-  for (const [ascii, diacritic] of Object.entries(reverseMappings)) {
-    if (ascii.length > 1) {
-      alignedOriginal = alignedOriginal.replace(new RegExp(ascii, "gi"), diacritic);
+  if (j < restored.length) {
+    const lastOrigChar = original[original.length - 1] || "";
+    const lastIsUpper = lastOrigChar === lastOrigChar.toUpperCase() && lastOrigChar !== lastOrigChar.toLowerCase();
+    const transform = lastIsUpper ? (c) => c.toUpperCase() : (c) => c.toLowerCase();
+    for (let k = j; k < restored.length; k++) {
+      result += transform(restored[k]);
     }
   }
-  return applyCasePattern(alignedOriginal, alignedRestored);
+  return result;
+}
+function applyCaseToCharacter(sourceChar, targetChar) {
+  if (sourceChar === sourceChar.toUpperCase()) {
+    return targetChar.toUpperCase();
+  } else if (sourceChar === sourceChar.toLowerCase()) {
+    return targetChar.toLowerCase();
+  } else {
+    if (sourceChar.length > 1) {
+      return sourceChar[0] === sourceChar[0].toUpperCase() ? targetChar.toUpperCase() : targetChar.toLowerCase();
+    }
+    return targetChar;
+  }
 }
 function applyCasePattern(original, restored) {
   if (!original || !restored) {
