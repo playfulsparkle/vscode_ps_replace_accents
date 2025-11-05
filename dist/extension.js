@@ -545,6 +545,16 @@ var DiacriticRestorer = class _DiacriticRestorer {
    * @private
    */
   dictionary = /* @__PURE__ */ new Map();
+  /**
+   * Language-specific character mappings for the currently active language
+   * 
+   * Contains the complete set of special characters and their ASCII equivalents
+   * for the current language. This is used to handle language-specific diacritics
+   * and special characters that aren't covered by standard Unicode normalization.
+   * 
+   * @private
+   * @type {LanguageLetters | undefined}
+   */
   currentMappings;
   /**
    * Set of words to ignore during restoration (in normalized form)
@@ -928,6 +938,7 @@ var DiacriticRestorer = class _DiacriticRestorer {
     this.restorationCache.clear();
     this.isReady = false;
     this.currentLanguage = void 0;
+    this.currentMappings = void 0;
   }
   /**
    * Returns memory usage statistics for monitoring and debugging

@@ -30,6 +30,16 @@ class DiacriticRestorer {
      */
     private dictionary: Map<string, DictionaryEntry[]> = new Map();
 
+    /**
+     * Language-specific character mappings for the currently active language
+     * 
+     * Contains the complete set of special characters and their ASCII equivalents
+     * for the current language. This is used to handle language-specific diacritics
+     * and special characters that aren't covered by standard Unicode normalization.
+     * 
+     * @private
+     * @type {LanguageLetters | undefined}
+     */
     private currentMappings: LanguageLetters | undefined;
 
     /**
@@ -130,7 +140,6 @@ class DiacriticRestorer {
         this.currentLanguage = language;
         this.enableSuffixMatching = enableSuffixMatching;
         this.minSuffixStemLength = minSuffixStemLength;
-
         this.currentMappings = language
             ? languageCharacterMappings.find(lang => lang.language === language)
             : undefined;
@@ -152,6 +161,7 @@ class DiacriticRestorer {
         if (!this.currentMappings) {
             return {};
         }
+
         return Object.fromEntries(
             this.currentMappings.letters.map(o => [o.letter, o.ascii])
         );
@@ -514,6 +524,7 @@ class DiacriticRestorer {
         this.restorationCache.clear();
         this.isReady = false;
         this.currentLanguage = undefined;
+        this.currentMappings = undefined;
     }
 
     /**
