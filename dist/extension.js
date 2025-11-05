@@ -545,6 +545,7 @@ var DiacriticRestorer = class _DiacriticRestorer {
    * @private
    */
   dictionary = /* @__PURE__ */ new Map();
+  currentMappings;
   /**
    * Set of words to ignore during restoration (in normalized form)
    * 
@@ -628,10 +629,38 @@ var DiacriticRestorer = class _DiacriticRestorer {
     this.currentLanguage = language;
     this.enableSuffixMatching = enableSuffixMatching;
     this.minSuffixStemLength = minSuffixStemLength;
+    this.currentMappings = language ? languageCharacterMappings.find((lang) => lang.language === language) : void 0;
     this.ignoredWords = new Set(
       ignoredWords.map((word) => this.removeDiacritics(word.toLowerCase()))
     );
     this.dictionaryBasePath = path.join(__dirname, "dictionary");
+  }
+  /**
+   * Gets the allMappings object computed from currentMappings
+   * Computed on demand to save memory
+   * 
+   * @private
+   */
+  getAllMappings() {
+    if (!this.currentMappings) {
+      return {};
+    }
+    return Object.fromEntries(
+      this.currentMappings.letters.map((o) => [o.letter, o.ascii])
+    );
+  }
+  /**
+   * Gets the special characters pattern computed from currentMappings
+   * Computed on demand to save memory
+   * 
+   * @private
+   */
+  getSpecialCharsPattern() {
+    if (!this.currentMappings?.letters.length) {
+      return void 0;
+    }
+    const specialChars = this.currentMappings.letters.map((o) => o.letter).map((char) => char).join("");
+    return new RegExp(`[${specialChars}]`, "g");
   }
   /**
    * Initializes the diacritic restorer by loading and building the dictionary
@@ -859,16 +888,12 @@ var DiacriticRestorer = class _DiacriticRestorer {
     if (!text || typeof text !== "string") {
       return text;
     }
-    const currentMappings = this.currentLanguage ? languageCharacterMappings.find((lang) => lang.language === this.currentLanguage) : void 0;
     let normalized = text.normalize("NFKD").replace(diacriticRegex, "");
-    if (!currentMappings?.letters.length) {
+    const specialCharsPattern = this.getSpecialCharsPattern();
+    if (!specialCharsPattern) {
       return normalized;
     }
-    const allMappings = Object.fromEntries(
-      currentMappings.letters.map((o) => [o.letter, o.ascii])
-    );
-    const specialChars = currentMappings.letters.map((o) => o.letter).join("");
-    const specialCharsPattern = new RegExp(`[${specialChars}]`, "g");
+    const allMappings = this.getAllMappings();
     return normalized.replace(
       specialCharsPattern,
       (match) => allMappings[match] ?? match

@@ -5,7 +5,7 @@
  * @property {string} letter - The accented character (e.g., 'é', 'ñ')
  * @property {string} ascii - The ASCII representation (e.g., 'e', 'n')
  */
-interface AccentedLetter {
+export interface AccentedLetter {
     letter: string;
     ascii: string;
 }
@@ -16,7 +16,7 @@ interface AccentedLetter {
  * @property {string} language - The name of the language (e.g., 'Spanish', 'French')
  * @property {AccentedLetter[]} letters - Array of accented letters used in the language
  */
-interface LanguageLetters {
+export interface LanguageLetters {
     language: string;
     letters: AccentedLetter[];
 }
