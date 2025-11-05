@@ -23,6 +23,7 @@ interface DictionaryEntry {
 class DiacriticRestorer {
     /**
      * Main dictionary storage mapping base forms to possible diacritic variations
+     * Stored as arrays sorted by frequency (descending - most frequent first)
      * 
      * @type {Map<string, DictionaryEntry[]>}
      * @private
@@ -87,6 +88,14 @@ class DiacriticRestorer {
     private enableSuffixMatching: boolean;
 
     /**
+     * Minimum stem length for suffix matching (default: 2)
+     * 
+     * @type {number}
+     * @private
+     */
+    private minSuffixStemLength: number;
+
+    /**
      * Cached regex pattern for identifying words (including Unicode letters and combining marks)
      * Matches: Unicode letters, combining marks, apostrophes, and hyphens
      * 
@@ -102,16 +111,23 @@ class DiacriticRestorer {
      * @param {string} language - Language code for dictionary loading (e.g., 'hu', 'fr')
      * @param {string[]} [ignoredWords=[]] - Array of words to skip during restoration
      * @param {boolean} [enableSuffixMatching=false] - Whether to enable suffix matching for inflected forms
+     * @param {number} [minSuffixStemLength=2] - Minimum stem length for suffix matching
      * 
      * @throws {Error} If language is not provided
      */
-    constructor(language: string, ignoredWords: string[] = [], enableSuffixMatching: boolean = false) {
+    constructor(
+        language: string,
+        ignoredWords: string[] = [],
+        enableSuffixMatching: boolean = false,
+        minSuffixStemLength: number = 2
+    ) {
         if (!language) {
             throw new Error("Language parameter is required");
         }
 
         this.currentLanguage = language;
         this.enableSuffixMatching = enableSuffixMatching;
+        this.minSuffixStemLength = minSuffixStemLength;
 
         // Pre-normalize ignored words once during construction for performance
         this.ignoredWords = new Set(
@@ -183,6 +199,8 @@ class DiacriticRestorer {
     /**
      * Builds the in-memory dictionary from CSV data with frequency-based sorting
      * 
+     * Uses optimized insertion sort for memory efficiency
+     * 
      * @private
      * @param {string} csvData - Tab-separated CSV data (word\tfrequency)
      * 
@@ -234,16 +252,17 @@ class DiacriticRestorer {
                     this.dictionary.set(baseForm, entries);
                 }
 
-                const entry = { word, frequency };
+                const entry: DictionaryEntry = { word, frequency };
 
-                // Binary search for insertion point (more efficient for large arrays)
+                // Binary search for insertion point
+                // We want entries sorted by DESCENDING frequency (highest first)
                 let left = 0;
                 let right = entries.length;
 
                 while (left < right) {
                     const mid = (left + right) >>> 1; // Unsigned right shift for floor division
 
-                    if (entries[mid].frequency > frequency) {
+                    if (entries[mid].frequency >= frequency) {
                         left = mid + 1;
                     } else {
                         right = mid;
@@ -255,7 +274,7 @@ class DiacriticRestorer {
                 lineCount++;
             } catch (error) {
                 errorCount++;
-                
+
                 continue;
             }
         }
@@ -286,17 +305,21 @@ class DiacriticRestorer {
                 return cached;
             }
 
-            const baseForm = this.removeDiacritics(word.toLowerCase());
+            const lowerWord = word.toLowerCase();
+            const baseForm = this.removeDiacritics(lowerWord);
 
+            // Check if word should be ignored
             if (this.ignoredWords.has(baseForm)) {
                 this.addToCache(word, word);
                 return word;
             }
 
-            const restored = this.findBestMatch(word, baseForm);
+            // Try to find best match
+            const restored = this.findBestMatch(word, lowerWord, baseForm);
             const result = restored || word;
 
             this.addToCache(word, result);
+
             return result;
         });
     }
@@ -326,54 +349,57 @@ class DiacriticRestorer {
      * 
      * @private
      * @param {string} word - Original word (for case preservation)
-     * @param {string} [baseForm] - Pre-computed base form for performance
+     * @param {string} lowerWord - Pre-computed lowercase version
+     * @param {string} baseForm - Pre-computed normalized base form
      * 
      * @returns {string | null} Best matching word with diacritics, or null if no match found
      */
-    private findBestMatch(word: string, baseForm?: string): string | null {
-        // Accept pre-computed baseForm to avoid redundant normalization
-        const normalizedBase = baseForm || this.removeDiacritics(word.toLowerCase());
-        const candidates = this.dictionary.get(normalizedBase);
+    private findBestMatch(word: string, lowerWord: string, baseForm: string): string | null {
+        const candidates = this.dictionary.get(baseForm);
 
         if (!candidates || candidates.length === 0) {
             // Try suffix matching for inflected forms (only if enabled)
             if (this.enableSuffixMatching) {
-                return this.findSuffixMatch(word, normalizedBase);
+                return this.findSuffixMatch(word, lowerWord, baseForm);
             }
+
             return null;
         }
 
-        // Return the most frequent candidate (already sorted in buildDictionary)
+        // Return the most frequent candidate (at index 0 due to descending sort),
+        // array is already sorted by frequency in descending order
         const bestMatch = candidates[0].word;
+
         return searchAndReplaceCaseSensitive(word, bestMatch);
     }
 
     /**
      * Attempts to match inflected word forms by progressively shortening the stem
      * 
+     * Optimized to check larger stems first (more likely to match)
+     * 
      * @private
      * @param {string} word - Original word
+     * @param {string} lowerWord - Pre-computed lowercase version
      * @param {string} normalizedBase - Normalized base form
      * 
      * @returns {string | null} Reconstructed word with diacritics, or null if no match
      */
-    private findSuffixMatch(word: string, normalizedBase: string, minWordLength: number = 2): string | null {
-        const wordLower = word.toLowerCase();
+    private findSuffixMatch(word: string, lowerWord: string, normalizedBase: string): string | null {
         const wordLen = normalizedBase.length;
 
-        // Try progressively shorter stems, going down to minimum 2 characters
-        // Minimum stem length is user configurable characters OR 60% of original word length (whichever is larger)
-        const minStemLen = Math.max(minWordLength, Math.floor(wordLen * 0.6));
+        // Calculate minimum stem length: user-defined minimum OR 60% of word length (whichever is larger)
+        const minStemLen = Math.max(this.minSuffixStemLength, Math.floor(wordLen * 0.6));
 
+        // Try progressively shorter stems, starting from full word - 1
         for (let stemLen = wordLen - 1; stemLen >= minStemLen; stemLen--) {
             const stem = normalizedBase.substring(0, stemLen);
-
             const candidates = this.dictionary.get(stem);
 
             if (candidates && candidates.length > 0) {
-                // Found a stem match - reconstruct with suffix
+                // Found a stem match - use most frequent candidate (first in array)
                 const bestStem = candidates[0].word;
-                const suffix = wordLower.substring(stemLen);
+                const suffix = lowerWord.substring(stemLen);
                 const reconstructed = bestStem + suffix;
 
                 return searchAndReplaceCaseSensitive(word, reconstructed);
@@ -385,6 +411,8 @@ class DiacriticRestorer {
 
     /**
      * Removes diacritics and normalizes text to base form for dictionary lookup
+     * 
+     * Optimized for performance with minimal string operations
      * 
      * @private
      * @param {string} text - Input text with potential diacritics
@@ -402,14 +430,17 @@ class DiacriticRestorer {
             : undefined;
 
         // Single normalization pass with NFKD for maximum decomposition
-        let normalized = text.toLowerCase().normalize("NFKD").replace(diacriticRegex, "");
+        let normalized = text.normalize("NFKD").replace(diacriticRegex, "");
 
         // Handle remaining special characters if mappings exist
         if (!currentMappings?.letters.length) {
             return normalized;
         }
 
-        const allMappings = Object.fromEntries(currentMappings.letters.map(o => [o.letter, o.ascii]));
+        // Build mapping object for O(1) lookups
+        const allMappings = Object.fromEntries(
+            currentMappings.letters.map(o => [o.letter, o.ascii])
+        );
 
         // Build regex pattern from special characters
         const specialChars = currentMappings.letters.map(o => o.letter).join("");
