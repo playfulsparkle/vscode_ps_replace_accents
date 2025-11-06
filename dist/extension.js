@@ -686,10 +686,30 @@ var DiacriticRestorer = class _DiacriticRestorer {
     this.dictionaryBasePath = path.join(__dirname, "dictionary");
   }
   /**
-   * Gets the allMappings object computed from currentMappings
-   * Computed on demand to save memory
+   * Generates character mappings for diacritic restoration operations
+   * 
+   * Provides bidirectional mapping capabilities between diacritic characters and their
+   * ASCII equivalents. When `reversed` is false, returns mappings from diacritic characters
+   * to ASCII equivalents (used for normalization). When `reversed` is true, returns mappings
+   * from ASCII sequences to diacritic characters (used for restoration and case alignment).
    * 
    * @private
+   * @param {boolean} [reversed=false] - When true, returns reverse mappings (ASCII → diacritic)
+   *                                     When false, returns normal mappings (diacritic → ASCII)
+   * @returns {{[key: string]: string}} Object containing character mappings
+   * 
+   * @example
+   * // Normal mappings for normalization:
+   * // { 'á': 'a', 'é': 'e', 'ø': 'oe', 'æ': 'ae' }
+   * const normalMappings = getAllMappings();
+   * 
+   * @example
+   * // Reverse mappings for restoration:
+   * // { 'a': 'á', 'e': 'é', 'oe': 'ø', 'ae': 'æ' }  
+   * const reverseMappings = getAllMappings(true);
+   * 
+   * @see {@link removeDiacritics} - Uses normal mappings
+   * @see {@link searchAndReplaceCaseSensitive} - Uses reverse mappings
    */
   getAllMappings(reversed = false) {
     if (!this.currentMappings) {
