@@ -30,8 +30,8 @@ export const diacriticRegex = /[\p{Mn}\u0300-\u036f]/gu;
  * @returns {string} The restored text with proper case pattern applied
  */
 export function searchAndReplaceCaseSensitive(
-    original: string, 
-    restored: string, 
+    original: string,
+    restored: string,
     characterMappings?: { [key: string]: string }
 ): string {
     if (!original || !restored) {
@@ -42,7 +42,7 @@ export function searchAndReplaceCaseSensitive(
     if (characterMappings && Object.keys(characterMappings).length > 0) {
         return applyCasePatternWithMappings(original, restored, characterMappings);
     }
-    
+
     // Fallback to standard case pattern application
     return applyCasePattern(original, restored);
 }
@@ -57,72 +57,68 @@ export function searchAndReplaceCaseSensitive(
  * @returns {string} Properly transformed result
  */
 function applyCasePatternWithMappings(
-    original: string, 
-    restored: string, 
+    original: string,
+    restored: string,
     characterMappings: { [key: string]: string }
 ): string {
-    let result = "";
+    const origLen = original.length;
+    const restLen = restored.length;
+    const result: string[] = new Array(restLen);
     let i = 0;
     let j = 0;
 
     // Process both strings character by character, handling multi-character expansions
-    while (i < original.length && j < restored.length) {
-        // Check for multi-character sequences in original that map to single diacritic
-        let matched = false;
-        
+    while (i < origLen && j < restLen) {
         // Try 2-character sequences first (like "oe", "ae", "Oe", "AE", etc.)
-        if (i + 1 < original.length) {
+        if (i + 1 < origLen) {
             const twoChar = original.substring(i, i + 2);
             const diacritic = characterMappings[twoChar];
-            
+
             if (diacritic && diacritic === restored[j]) {
                 // Found a multi-character sequence that matches the restored diacritic
-                // Apply case logic based on the multi-character sequence
-                result += applyCaseToCharacter(twoChar, restored[j]);
+                const restoredChar = restored[j];
+
+                result[j] = twoChar[0] === twoChar[0].toUpperCase()
+                    ? restoredChar.toUpperCase()
+                    : restoredChar.toLowerCase();
+                    
                 i += 2;
-                j += 1;
-                matched = true;
+                j++;
+
+                continue;
             }
         }
 
-        if (!matched) {
-            // Standard single character replacement
-            result += applyCaseToCharacter(original[i], restored[j]);
-            i += 1;
-            j += 1;
-        }
+        // Standard single character replacement
+        const origChar = original[i];
+        const restoredChar = restored[j];
+
+        result[j] = origChar === origChar.toUpperCase()
+            ? restoredChar.toUpperCase()
+            : restoredChar.toLowerCase();
+
+        i++;
+        j++;
     }
 
     // Handle any remaining characters in restored string
-    if (j < restored.length) {
-        // Use the case pattern from the last character of original
-        const lastOrigChar = original[original.length - 1] || "";
-        const lastIsUpper = lastOrigChar === lastOrigChar.toUpperCase() && lastOrigChar !== lastOrigChar.toLowerCase();
-        const transform = lastIsUpper ? 
-            (c: string) => c.toUpperCase() : 
-            (c: string) => c.toLowerCase();
-            
-        for (let k = j; k < restored.length; k++) {
-            result += transform(restored[k]);
+    if (j < restLen) {
+        const lastOrigChar = original[origLen - 1];
+        const isUpper = lastOrigChar === lastOrigChar.toUpperCase() &&
+            lastOrigChar !== lastOrigChar.toLowerCase();
+
+        if (isUpper) {
+            for (; j < restLen; j++) {
+                result[j] = restored[j].toUpperCase();
+            }
+        } else {
+            for (; j < restLen; j++) {
+                result[j] = restored[j].toLowerCase();
+            }
         }
     }
 
-    return result;
-}
-
-/**
- * Applies case pattern from source character to target character
- * 
- * @private
- * @param {string} sourceChar - Character providing the case pattern
- * @param {string} targetChar - Character to apply case to
- * 
- * @returns {string} Target character with appropriate case
- */
-function applyCaseToCharacter(sourceChar: string, targetChar: string): string {
-    return sourceChar[0] === sourceChar[0].toUpperCase() 
-        ? targetChar.toUpperCase() 
-        : targetChar.toLowerCase();
+    return result.join("");
 }
 
 /**

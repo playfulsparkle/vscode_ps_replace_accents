@@ -50,39 +50,43 @@ function searchAndReplaceCaseSensitive(original, restored, characterMappings) {
   return applyCasePattern(original, restored);
 }
 function applyCasePatternWithMappings(original, restored, characterMappings) {
-  let result = "";
+  const origLen = original.length;
+  const restLen = restored.length;
+  const result = new Array(restLen);
   let i = 0;
   let j = 0;
-  while (i < original.length && j < restored.length) {
-    let matched = false;
-    if (i + 1 < original.length) {
+  while (i < origLen && j < restLen) {
+    if (i + 1 < origLen) {
       const twoChar = original.substring(i, i + 2);
       const diacritic = characterMappings[twoChar];
       if (diacritic && diacritic === restored[j]) {
-        result += applyCaseToCharacter(twoChar, restored[j]);
+        const restoredChar2 = restored[j];
+        result[j] = twoChar[0] === twoChar[0].toUpperCase() ? restoredChar2.toUpperCase() : restoredChar2.toLowerCase();
         i += 2;
-        j += 1;
-        matched = true;
+        j++;
+        continue;
       }
     }
-    if (!matched) {
-      result += applyCaseToCharacter(original[i], restored[j]);
-      i += 1;
-      j += 1;
+    const origChar = original[i];
+    const restoredChar = restored[j];
+    result[j] = origChar === origChar.toUpperCase() ? restoredChar.toUpperCase() : restoredChar.toLowerCase();
+    i++;
+    j++;
+  }
+  if (j < restLen) {
+    const lastOrigChar = original[origLen - 1];
+    const isUpper = lastOrigChar === lastOrigChar.toUpperCase() && lastOrigChar !== lastOrigChar.toLowerCase();
+    if (isUpper) {
+      for (; j < restLen; j++) {
+        result[j] = restored[j].toUpperCase();
+      }
+    } else {
+      for (; j < restLen; j++) {
+        result[j] = restored[j].toLowerCase();
+      }
     }
   }
-  if (j < restored.length) {
-    const lastOrigChar = original[original.length - 1] || "";
-    const lastIsUpper = lastOrigChar === lastOrigChar.toUpperCase() && lastOrigChar !== lastOrigChar.toLowerCase();
-    const transform = lastIsUpper ? (c) => c.toUpperCase() : (c) => c.toLowerCase();
-    for (let k = j; k < restored.length; k++) {
-      result += transform(restored[k]);
-    }
-  }
-  return result;
-}
-function applyCaseToCharacter(sourceChar, targetChar) {
-  return sourceChar[0] === sourceChar[0].toUpperCase() ? targetChar.toUpperCase() : targetChar.toLowerCase();
+  return result.join("");
 }
 function applyCasePattern(original, restored) {
   if (!original || !restored) {
