@@ -86,6 +86,14 @@ When restoring, it uses **per-language dictionaries**, optional **suffix matchin
 
 ## Release Notes
 
+### 0.0.15
+
+- Added language setting for diacritic removal and restoration; default `off`.
+- For diacritic removal:
+  - When `off`, uses user mappings and Unicode normalization NFKD (Compatibility Decomposition).
+  - When set, uses language-specific, user mappings, and Unicode normalization NFKD (Compatibility Decomposition).
+- For diacritic restoration uses language-specific mappings and dictionary.
+
 ### 0.0.14
 
 - Fixed restoration of multi-character ASCII sequences (e.g., `oe` to `ø`, `Oe` to `Ø`, `AE` to `Æ`) to single letters with correct case.

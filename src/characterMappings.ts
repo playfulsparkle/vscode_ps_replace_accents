@@ -288,18 +288,3 @@ export const languageCharacterMappings: LanguageLetters[] = [
         ]
     }
 ];
-
-/**
- * Pre-computed merged mappings from all languages for optimal performance
- * 
- * This object combines all language-specific mappings into a single lookup table.
- * Used when language-specific processing isn't required or for fallback handling.
- * 
- * @constant {Record<string, string>}
- * @global
- * 
- * @see {@link languageCharacterMappings} for language-specific versions
- */
-export const allLanguageCharacterMappings: Record<string, string> = Object.fromEntries(
-    languageCharacterMappings.flatMap(lang => lang.letters.map(o => [o.letter, o.ascii]))
-);

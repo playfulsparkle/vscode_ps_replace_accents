@@ -553,9 +553,6 @@ var languageCharacterMappings = [
     ]
   }
 ];
-var allLanguageCharacterMappings = Object.fromEntries(
-  languageCharacterMappings.flatMap((lang) => lang.letters.map((o) => [o.letter, o.ascii]))
-);
 
 // src/restoreDiacritic.ts
 var DiacriticRestorer = class _DiacriticRestorer {
@@ -655,9 +652,6 @@ var DiacriticRestorer = class _DiacriticRestorer {
    * @throws {Error} If language is not provided
    */
   constructor(language, ignoredWords = [], enableSuffixMatching = false, minSuffixStemLength = 2) {
-    if (!language) {
-      throw new Error("Language parameter is required");
-    }
     this.currentLanguage = language;
     this.enableSuffixMatching = enableSuffixMatching;
     this.minSuffixStemLength = minSuffixStemLength;
@@ -712,7 +706,7 @@ var DiacriticRestorer = class _DiacriticRestorer {
       return void 0;
     }
     const specialChars = this.currentMappings.letters.map((o) => o.letter).map((char) => char).join("");
-    return new RegExp(`[${specialChars}]`, "g");
+    return new RegExp(`[${specialChars}]`, "gu");
   }
   /**
    * Initializes the diacritic restorer by loading and building the dictionary
@@ -727,12 +721,11 @@ var DiacriticRestorer = class _DiacriticRestorer {
     if (this.isReady) {
       return;
     }
-    if (!this.currentLanguage) {
-      throw new Error("No language specified for initialization");
+    if (this.currentLanguage) {
+      const dictionaryFile = path.join(this.dictionaryBasePath, `dict_${this.currentLanguage}.txt`);
+      const data = await this.readDictionaryFile(dictionaryFile);
+      this.buildDictionary(data);
     }
-    const dictionaryFile = path.join(this.dictionaryBasePath, `dict_${this.currentLanguage}.txt`);
-    const data = await this.readDictionaryFile(dictionaryFile);
-    this.buildDictionary(data);
     this.isReady = true;
   }
   /**
@@ -942,16 +935,22 @@ var DiacriticRestorer = class _DiacriticRestorer {
     if (!text || typeof text !== "string") {
       return text;
     }
-    let normalized = text.normalize("NFKD").replace(diacriticRegex, "");
+    const allMappings = this.getAllMappings();
+    if (Object.keys(allMappings).length === 0) {
+      return this.normalize(text);
+    }
     const specialCharsPattern = this.getSpecialCharsPattern();
     if (!specialCharsPattern) {
-      return normalized;
+      return this.normalize(text);
     }
-    const allMappings = this.getAllMappings();
-    return normalized.replace(
+    let result = text.replace(
       specialCharsPattern,
       (match) => allMappings[match] ?? match
     );
+    return this.normalize(result);
+  }
+  normalize(str) {
+    return str.normalize("NFKD").replace(diacriticRegex, "");
   }
   /**
    * Changes the active language and reloads the appropriate dictionary
@@ -1016,6 +1015,82 @@ var restoreDiacritic_default = DiacriticRestorer;
 // src/removeDiacritic.ts
 var DiacriticRemover = class {
   /**
+   * Currently active language code (e.g., 'hu', 'fr', 'es')
+   * 
+   * @type {string | undefined}
+   * @private
+   */
+  currentLanguage;
+  /**
+   * Language-specific character mappings for the currently active language
+   * 
+   * Contains the complete set of special characters and their ASCII equivalents
+   * for the current language. This is used to handle language-specific diacritics
+   * and special characters that aren't covered by standard Unicode normalization.
+   * 
+   * @private
+   * @type {LanguageLetters | undefined}
+   */
+  currentMappings;
+  /**
+   * Creates a new DiacriticRemover instance
+   * 
+   * @param {string} language - Language code for dictionary loading (e.g., 'hu', 'fr')
+   * 
+   * @throws {Error} If language is not provided
+   */
+  constructor(language = void 0, userCharacterMappings = {}) {
+    this.currentLanguage = language;
+    const languageMappings = language ? languageCharacterMappings.find((lang) => lang.language === language) : void 0;
+    const userLetters = Object.entries(userCharacterMappings).map(
+      ([letter, ascii]) => ({ letter, ascii })
+    );
+    if (languageMappings) {
+      this.currentMappings = {
+        language: languageMappings.language,
+        letters: [...languageMappings.letters, ...userLetters]
+      };
+    } else {
+      this.currentMappings = {
+        language: "",
+        letters: userLetters
+      };
+    }
+  }
+  /**
+   * Generates character mappings for diacritic restoration operations
+   * 
+   * Provides bidirectional mapping capabilities between diacritic characters and their
+   * ASCII equivalents. When `reversed` is false, returns mappings from diacritic characters
+   * to ASCII equivalents (used for normalization). When `reversed` is true, returns mappings
+   * from ASCII sequences to diacritic characters (used for restoration and case alignment).
+   * 
+   * @private
+   * 
+   * @returns {{[key: string]: string}} Object containing character mappings
+   */
+  getAllMappings() {
+    if (!this.currentMappings) {
+      return {};
+    }
+    return Object.fromEntries(
+      this.currentMappings.letters.map((o) => [o.letter, o.ascii])
+    );
+  }
+  /**
+   * Gets the special characters pattern computed from currentMappings
+   * Computed on demand to save memory
+   * 
+   * @private
+   */
+  getSpecialCharsPattern() {
+    if (!this.currentMappings?.letters.length) {
+      return void 0;
+    }
+    const specialChars = this.currentMappings.letters.map((o) => o.letter).map((char) => char).join("");
+    return new RegExp(`[${specialChars}]`, "gu");
+  }
+  /**
    * Replaces accented characters in a text string with their non-accented equivalents.
    * Uses a two-step process: custom character mappings followed by Unicode normalization.
    * 
@@ -1035,26 +1110,23 @@ var DiacriticRemover = class {
    * @see {@link searchAndReplaceCaseSensitive} for case preservation logic
    * @see {@link diacriticRegex} for Unicode diacritic matching pattern
    */
-  removeDiacritics(text, userCharacterMappings = {}) {
+  removeDiacritics(text) {
     if (!text || typeof text !== "string") {
       return text;
     }
-    try {
-      const combinedMappings = { ...allLanguageCharacterMappings, ...userCharacterMappings };
-      if (Object.keys(combinedMappings).length === 0) {
-        return this.normalize(text);
-      }
-      const specialChars = Object.keys(combinedMappings).map((letter) => letter).join("");
-      const customPattern = new RegExp(`[${specialChars}]`, "g");
-      const result = text.replace(customPattern, (match) => {
-        const replacement = combinedMappings[match];
-        return searchAndReplaceCaseSensitive(match, replacement);
-      });
-      return this.normalize(result);
-    } catch (error) {
-      console.error("Error in removeDiacritics:", error);
-      return text;
+    const allMappings = this.getAllMappings();
+    if (Object.keys(allMappings).length === 0) {
+      return this.normalize(text);
     }
+    const specialCharsPattern = this.getSpecialCharsPattern();
+    if (!specialCharsPattern) {
+      return this.normalize(text);
+    }
+    let result = text.replace(
+      specialCharsPattern,
+      (match) => allMappings[match] ?? match
+    );
+    return this.normalize(result);
   }
   normalize(str) {
     return str.normalize("NFKD").replace(diacriticRegex, "");
@@ -1121,12 +1193,12 @@ function activate(context) {
     }
     return 0 /* None */;
   };
-  const removeDiacriticsFileOrFolder = async (uri, userMappings) => {
-    const remover = new removeDiacritic_default();
+  const removeDiacriticsFileOrFolder = async (language, userMappings = {}, uri) => {
+    const remover = new removeDiacritic_default(language, userMappings);
     const oldPath = uri.fsPath;
     const itemName = path2.basename(oldPath);
     const parentPath = path2.dirname(oldPath);
-    const itemNameWithoutAccent = remover.removeDiacritics(itemName, userMappings);
+    const itemNameWithoutAccent = remover.removeDiacritics(itemName);
     if (itemNameWithoutAccent.trim().length === 0) {
       return;
     }
@@ -1165,6 +1237,23 @@ function activate(context) {
       );
     }
   };
+  const showLanguageSelectionDialog = async () => {
+    const language = vscode2.workspace.getConfiguration("ps-replace-accents").get("textLanguage", "off");
+    if (language === "off") {
+      const open = await vscode2.window.showWarningMessage(
+        vscode2.l10n.t("Select a text language in Settings to restore diacritics."),
+        vscode2.l10n.t("Open Settings"),
+        vscode2.l10n.t("Cancel")
+      );
+      if (open === vscode2.l10n.t("Open Settings")) {
+        await vscode2.commands.executeCommand(
+          "workbench.action.openSettings",
+          "ps-replace-accents.textLanguage"
+        );
+      }
+    }
+    return language;
+  };
   const commandHandlers = {
     /**
      * Opens the GitHub issues page for reporting problems or suggestions
@@ -1190,8 +1279,10 @@ function activate(context) {
         vscode2.window.showErrorMessage(mappingsError);
         return;
       }
-      const remover = new removeDiacritic_default();
-      const result = await processTextInEditor((text) => remover.removeDiacritics(text, userMappings));
+      const language = vscode2.workspace.getConfiguration("ps-replace-accents").get("textLanguage", "off");
+      const languageValue = language === "off" ? void 0 : language;
+      const remover = new removeDiacritic_default(languageValue, userMappings);
+      const result = await processTextInEditor((text) => remover.removeDiacritics(text));
       switch (result) {
         case 1 /* SelectionModified */:
           vscode2.window.showInformationMessage(vscode2.l10n.t("Removed diacritics in selection."));
@@ -1222,9 +1313,13 @@ function activate(context) {
         vscode2.window.showErrorMessage(mappingsError);
         return;
       }
+      const language = await showLanguageSelectionDialog();
+      if (language === "off") {
+        return;
+      }
       const urisToRename = selectedUris && selectedUris.length > 0 ? selectedUris : [uri];
       for (const currentUri of urisToRename) {
-        await removeDiacriticsFileOrFolder(currentUri, userMappings);
+        await removeDiacriticsFileOrFolder(language, userMappings, currentUri);
       }
       if (urisToRename.length > 1) {
         vscode2.window.showInformationMessage(
@@ -1245,8 +1340,11 @@ function activate(context) {
       const suffixMatching = vscode2.workspace.getConfiguration("ps-replace-accents").get("diacriticRestoreSuffixMatching", false);
       const ignoredWordsRaw = vscode2.workspace.getConfiguration("ps-replace-accents").get("diacriticIgnoredWords", "");
       const ignoredWords = normalizeIgnoreWords(ignoredWordsRaw);
-      const diacriticDictionary = vscode2.workspace.getConfiguration("ps-replace-accents").get("diacriticDictionary", "hungarian");
-      const restorer = new restoreDiacritic_default(diacriticDictionary, ignoredWords, suffixMatching);
+      const language = await showLanguageSelectionDialog();
+      if (language === "off") {
+        return;
+      }
+      const restorer = new restoreDiacritic_default(language, ignoredWords, suffixMatching);
       await restorer.initialize();
       const result = await processTextInEditor((text) => restorer.restoreDiacritics(text));
       restorer.dispose();

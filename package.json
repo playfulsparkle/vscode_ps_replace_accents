@@ -1,7 +1,7 @@
 {
   "name": "ps-replace-accents",
   "displayName": "Replace Accents",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "publisher": "playful-sparkle",
   "description": "Remove accents/diacritics from text to generate clean text through Unicode normalization and custom character mappings.",
   "author": {
@@ -117,11 +117,12 @@
             "type": "string"
           }
         },
-        "ps-replace-accents.diacriticDictionary": {
+        "ps-replace-accents.textLanguage": {
           "type": "string",
-          "default": "hungarian",
-          "description": "%extension.config.diacriticDictionary.desc%",
+          "default": "off",
+          "description": "%extension.config.textLanguage.desc%",
           "enum": [
+            "off",
             "croatian",
             "czech",
             "danish",
@@ -143,25 +144,26 @@
             "swedish"
           ],
           "enumDescriptions": [
-            "%extension.config.diacriticDictionary.croatian.desc%",
-            "%extension.config.diacriticDictionary.czech.desc%",
-            "%extension.config.diacriticDictionary.danish.desc%",
-            "%extension.config.diacriticDictionary.dutch.desc%",
-            "%extension.config.diacriticDictionary.french.desc%",
-            "%extension.config.diacriticDictionary.german.desc%",
-            "%extension.config.diacriticDictionary.hungarian.desc%",
-            "%extension.config.diacriticDictionary.icelandic.desc%",
-            "%extension.config.diacriticDictionary.italian.desc%",
-            "%extension.config.diacriticDictionary.latvian.desc%",
-            "%extension.config.diacriticDictionary.lithuanian.desc%",
-            "%extension.config.diacriticDictionary.norwegian.desc%",
-            "%extension.config.diacriticDictionary.polish.desc%",
-            "%extension.config.diacriticDictionary.portuguese.desc%",
-            "%extension.config.diacriticDictionary.romanian.desc%",
-            "%extension.config.diacriticDictionary.slovak.desc%",
-            "%extension.config.diacriticDictionary.slovenian.desc%",
-            "%extension.config.diacriticDictionary.spanish.desc%",
-            "%extension.config.diacriticDictionary.swedish.desc%"
+            "%extension.config.textLanguage.off.desc%",
+            "%extension.config.textLanguage.croatian.desc%",
+            "%extension.config.textLanguage.czech.desc%",
+            "%extension.config.textLanguage.danish.desc%",
+            "%extension.config.textLanguage.dutch.desc%",
+            "%extension.config.textLanguage.french.desc%",
+            "%extension.config.textLanguage.german.desc%",
+            "%extension.config.textLanguage.hungarian.desc%",
+            "%extension.config.textLanguage.icelandic.desc%",
+            "%extension.config.textLanguage.italian.desc%",
+            "%extension.config.textLanguage.latvian.desc%",
+            "%extension.config.textLanguage.lithuanian.desc%",
+            "%extension.config.textLanguage.norwegian.desc%",
+            "%extension.config.textLanguage.polish.desc%",
+            "%extension.config.textLanguage.portuguese.desc%",
+            "%extension.config.textLanguage.romanian.desc%",
+            "%extension.config.textLanguage.slovak.desc%",
+            "%extension.config.textLanguage.slovenian.desc%",
+            "%extension.config.textLanguage.spanish.desc%",
+            "%extension.config.textLanguage.swedish.desc%"
           ]
         },
         "ps-replace-accents.diacriticRestoreSuffixMatching": {

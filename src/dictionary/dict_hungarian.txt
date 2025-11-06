@@ -23652,6 +23652,7 @@ bevegyül	1
 bevégzés	1
 bevégződik	1
 bevendégeskedik	1
+ennék	1
 bevennék	1
 beverbuvál	1
 bevérez	1

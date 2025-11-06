@@ -128,15 +128,11 @@ class DiacriticRestorer {
      * @throws {Error} If language is not provided
      */
     constructor(
-        language: string,
+        language: string | undefined,
         ignoredWords: string[] = [],
         enableSuffixMatching: boolean = false,
         minSuffixStemLength: number = 2
     ) {
-        if (!language) {
-            throw new Error("Language parameter is required");
-        }
-
         this.currentLanguage = language;
         this.enableSuffixMatching = enableSuffixMatching;
         this.minSuffixStemLength = minSuffixStemLength;
@@ -203,7 +199,7 @@ class DiacriticRestorer {
             .map(char => char)
             .join("");
 
-        return new RegExp(`[${specialChars}]`, "g");
+        return new RegExp(`[${specialChars}]`, "gu");
     }
 
     /**
@@ -220,14 +216,14 @@ class DiacriticRestorer {
             return;
         }
 
-        if (!this.currentLanguage) {
-            throw new Error("No language specified for initialization");
+        if (this.currentLanguage) {
+            const dictionaryFile = path.join(this.dictionaryBasePath, `dict_${this.currentLanguage}.txt`);
+
+            const data = await this.readDictionaryFile(dictionaryFile);
+
+            this.buildDictionary(data);
         }
 
-        const dictionaryFile = path.join(this.dictionaryBasePath, `dict_${this.currentLanguage}.txt`);
-
-        const data = await this.readDictionaryFile(dictionaryFile);
-        this.buildDictionary(data);
         this.isReady = true;
     }
 
@@ -426,7 +422,7 @@ class DiacriticRestorer {
      */
     private findBestMatch(word: string, lowerWord: string, baseForm: string): string | null {
         const candidates = this.dictionary.get(baseForm);
-
+        // console.log(word, lowerWord, candidates);
         if (!candidates || candidates.length === 0) {
             if (this.enableSuffixMatching) {
                 return this.findSuffixMatch(word, lowerWord, baseForm);
@@ -493,22 +489,29 @@ class DiacriticRestorer {
             return text;
         }
 
-        // Single normalization pass with NFKD for maximum decomposition
-        let normalized = text.normalize("NFKD").replace(diacriticRegex, "");
-
-        // Handle remaining special characters if mappings exist
-        const specialCharsPattern = this.getSpecialCharsPattern();
-
-        if (!specialCharsPattern) {
-            return normalized;
-        }
-
         const allMappings = this.getAllMappings();
 
-        return normalized.replace(
+        if (Object.keys(allMappings).length === 0) {
+            return this.normalize(text);
+        }
+
+        // Handle remaining special characters if mappings exist
+        const specialCharsPattern: RegExp | undefined = this.getSpecialCharsPattern();
+
+        if (!specialCharsPattern) {
+            return this.normalize(text);
+        }
+
+        let result = text.replace(
             specialCharsPattern,
             match => allMappings[match] ?? match
         );
+
+        return this.normalize(result);
+    }
+
+    private normalize(str: string): string {
+        return str.normalize("NFKD").replace(diacriticRegex, "");
     }
 
     /**

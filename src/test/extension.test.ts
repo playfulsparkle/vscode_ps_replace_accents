@@ -13,11 +13,11 @@ suite("Replace Accents Tests", () => {
 		});
 
 		test("handles custom character mappings", () => {
-			const remover = new DiacriticRemover();
-			const input = "áéíóúßð";
 			const charMappings = { "ß": "ss", "ð": "d" };
+			const remover = new DiacriticRemover(undefined, charMappings);
+			const input = "áéíóúßð";
 			const expected = "aeioussd";
-			assert.strictEqual(remover.removeDiacritics(input, charMappings), expected);
+			assert.strictEqual(remover.removeDiacritics(input), expected);
 		});
 
 		test("returns original text on error", () => {
@@ -45,11 +45,11 @@ suite("Replace Accents Tests", () => {
 		});
 
 		test("handles overlapping custom mappings", () => {
-			const remover = new DiacriticRemover();
-			const input = "ßßß";
 			const charMappings = { "ß": "ss", "ss": "z" };
+			const remover = new DiacriticRemover(undefined, charMappings);
+			const input = "ßßß";
 			const expected = "ssssss";
-			assert.strictEqual(remover.removeDiacritics(input, charMappings), expected);
+			assert.strictEqual(remover.removeDiacritics(input), expected);
 		});
 
 		test("preserves whitespace and special characters", () => {
@@ -160,7 +160,7 @@ suite("Replace Accents Tests", () => {
 		test("German dictionary restores diacritics", async () => {
 			const restorer = new DiacriticRestorer("german");
 			await restorer.initialize();
-			const input = "Victor jagt zwolf Boxkampfer quer uber den Sylter Deich.";
+			const input = "Victor jagt zwoelf Boxkaempfer quer ueber den Sylter Deich.";
 			const expected = "Victor jagt zwölf Boxkämpfer quer über den Sylter Deich."; // ok
 			assert.strictEqual(restorer.restoreDiacritics(input), expected);
 			restorer.dispose();
@@ -205,7 +205,7 @@ suite("Replace Accents Tests", () => {
 		test("Swedish dictionary restores diacritics", async () => {
 			const restorer = new DiacriticRestorer("swedish");
 			await restorer.initialize();
-			const input = "Flygande backasiner soka hwila pa mjuka tuvor.";
+			const input = "Flygande baeckasiner soeka hwila paa mjuka tuvor.";
 			const expected = "Flygande bäckasiner söka hwila på mjuka tuvor."; // ok
 			assert.strictEqual(restorer.restoreDiacritics(input), expected);
 			restorer.dispose();

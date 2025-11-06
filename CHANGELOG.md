@@ -2,6 +2,14 @@
 
 All notable changes to the "Playful Sparkle: Replace Accents" extension will be documented in this file.
 
+## [0.0.15] - 2025-11-06
+
+- Added language setting for diacritic removal and restoration; default `off`.
+- For diacritic removal:
+  - When `off`, uses user mappings and Unicode normalization NFKD (Compatibility Decomposition).
+  - When set, uses language-specific, user mappings, and Unicode normalization NFKD (Compatibility Decomposition).
+- For diacritic restoration uses language-specific mappings and dictionary.
+
 ## [0.0.14] - 2025-11-05
 
 - Fixed restoration of multi-character ASCII sequences (e.g., `oe` to `ø`, `Oe` to `Ø`, `AE` to `Æ`) to single letters with correct case.
