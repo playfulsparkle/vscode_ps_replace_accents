@@ -92,6 +92,43 @@ suite("Replace Accents Tests", () => {
 		});
 	});
 
+	suite("Restoration of multi-character ASCII sequence Tests", () => {
+		test("GrydebrOed – saftigt og aeltefrit!", async () => {
+			const restorer = new DiacriticRestorer("danish");
+			await restorer.initialize();
+			assert.strictEqual(restorer.restoreDiacritics("GrydebrOed – saftigt og aeltefrit!"), "GrydebrØd – saftigt og æltefrit!");
+			restorer.dispose();
+		});
+
+		test("GrydebrOEd – saftigt og aeltefrit!", async () => {
+			const restorer = new DiacriticRestorer("danish");
+			await restorer.initialize();
+			assert.strictEqual(restorer.restoreDiacritics("GrydebrOEd – saftigt og aeltefrit!"), "GrydebrØD – saftigt og æltefrit!");
+			restorer.dispose();
+		});
+
+		test("Grydebroed – saftigt og Aeltefrit!", async () => {
+			const restorer = new DiacriticRestorer("danish");
+			await restorer.initialize();
+			assert.strictEqual(restorer.restoreDiacritics("Grydebroed – saftigt og Aeltefrit!"), "Grydebrød – saftigt og Æltefrit!");
+			restorer.dispose();
+		});
+
+		test("Grydebroed – saftigt og AEltefrit!", async () => {
+			const restorer = new DiacriticRestorer("danish");
+			await restorer.initialize();
+			assert.strictEqual(restorer.restoreDiacritics("Grydebroed – saftigt og AEltefrit!"), "Grydebrød – saftigt og ÆLtefrit!");
+			restorer.dispose();
+		});
+
+		test("Grydebroed – saftigt og aeltefrit!", async () => {
+			const restorer = new DiacriticRestorer("danish");
+			await restorer.initialize();
+			assert.strictEqual(restorer.restoreDiacritics("Grydebroed – saftigt og aeltefrit!"), "Grydebrød – saftigt og æltefrit!");
+			restorer.dispose();
+		});
+	});
+
 	suite("Accent Restoration Dictionary Tests", () => {
 		test("Czech dictionary restores diacritics", async () => {
 			const restorer = new DiacriticRestorer("czech");
@@ -105,7 +142,7 @@ suite("Replace Accents Tests", () => {
 		test("Danish dictionary restores diacritics", async () => {
 			const restorer = new DiacriticRestorer("danish");
 			await restorer.initialize();
-			const input = "Quizdeltagerne spiste jordbaer med flode, mens cirkusklovnen Walther spillede pa xylofon.";
+			const input = "Quizdeltagerne spiste jordbaer med floede, mens cirkusklovnen Walther spillede paa xylofon.";
 			const expected = "Quizdeltagerne spiste jordbær med fløde, mens cirkusklovnen Walther spillede på xylofon."; // ok
 			assert.strictEqual(restorer.restoreDiacritics(input), expected);
 			restorer.dispose();
