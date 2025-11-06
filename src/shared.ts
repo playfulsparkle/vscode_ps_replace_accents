@@ -61,12 +61,6 @@ function applyCasePatternWithMappings(
     restored: string, 
     characterMappings: { [key: string]: string }
 ): string {
-    // Create reverse lookup: ascii -> diacritic
-    const reverseMappings: { [key: string]: string } = {};
-    for (const [diacritic, ascii] of Object.entries(characterMappings)) {
-        reverseMappings[ascii] = diacritic;
-    }
-
     let result = "";
     let i = 0;
     let j = 0;
@@ -79,7 +73,7 @@ function applyCasePatternWithMappings(
         // Try 2-character sequences first (like "oe", "ae", "Oe", "AE", etc.)
         if (i + 1 < original.length) {
             const twoChar = original.substring(i, i + 2);
-            const diacritic = reverseMappings[twoChar];
+            const diacritic = characterMappings[twoChar];
             
             if (diacritic && diacritic === restored[j]) {
                 // Found a multi-character sequence that matches the restored diacritic

@@ -157,13 +157,13 @@ class DiacriticRestorer {
      * 
      * @private
      */
-    private getAllMappings(): { [key: string]: string } {
+    private getAllMappings(reversed: boolean = false): { [key: string]: string } {
         if (!this.currentMappings) {
             return {};
         }
 
         return Object.fromEntries(
-            this.currentMappings.letters.map(o => [o.letter, o.ascii])
+            this.currentMappings.letters.map(o => reversed ? [o.ascii, o.letter] : [o.letter, o.ascii])
         );
     }
 
@@ -415,7 +415,7 @@ class DiacriticRestorer {
         }
 
         const bestMatch = candidates[0].word;
-        const mappings = this.getAllMappings();
+        const mappings = this.getAllMappings(true);
 
         return searchAndReplaceCaseSensitive(word, bestMatch, mappings);
     }
@@ -435,6 +435,8 @@ class DiacriticRestorer {
     private findSuffixMatch(word: string, lowerWord: string, normalizedBase: string): string | null {
         const wordLen = normalizedBase.length;
 
+        const mappings = this.getAllMappings(true);
+
         // Calculate minimum stem length: user-defined minimum OR 60% of word length (whichever is larger)
         const minStemLen = Math.max(this.minSuffixStemLength, Math.floor(wordLen * 0.6));
 
@@ -449,7 +451,7 @@ class DiacriticRestorer {
                 const suffix = lowerWord.substring(stemLen);
                 const reconstructed = bestStem + suffix;
 
-                return searchAndReplaceCaseSensitive(word, reconstructed);
+                return searchAndReplaceCaseSensitive(word, reconstructed, mappings);
             }
         }
 

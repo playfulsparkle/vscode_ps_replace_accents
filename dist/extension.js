@@ -50,10 +50,6 @@ function searchAndReplaceCaseSensitive(original, restored, characterMappings) {
   return applyCasePattern(original, restored);
 }
 function applyCasePatternWithMappings(original, restored, characterMappings) {
-  const reverseMappings = {};
-  for (const [diacritic, ascii] of Object.entries(characterMappings)) {
-    reverseMappings[ascii] = diacritic;
-  }
   let result = "";
   let i = 0;
   let j = 0;
@@ -61,7 +57,7 @@ function applyCasePatternWithMappings(original, restored, characterMappings) {
     let matched = false;
     if (i + 1 < original.length) {
       const twoChar = original.substring(i, i + 2);
-      const diacritic = reverseMappings[twoChar];
+      const diacritic = characterMappings[twoChar];
       if (diacritic && diacritic === restored[j]) {
         result += applyCaseToCharacter(twoChar, restored[j]);
         i += 2;
@@ -695,12 +691,12 @@ var DiacriticRestorer = class _DiacriticRestorer {
    * 
    * @private
    */
-  getAllMappings() {
+  getAllMappings(reversed = false) {
     if (!this.currentMappings) {
       return {};
     }
     return Object.fromEntries(
-      this.currentMappings.letters.map((o) => [o.letter, o.ascii])
+      this.currentMappings.letters.map((o) => reversed ? [o.ascii, o.letter] : [o.letter, o.ascii])
     );
   }
   /**
@@ -899,7 +895,7 @@ var DiacriticRestorer = class _DiacriticRestorer {
       return null;
     }
     const bestMatch = candidates[0].word;
-    const mappings = this.getAllMappings();
+    const mappings = this.getAllMappings(true);
     return searchAndReplaceCaseSensitive(word, bestMatch, mappings);
   }
   /**
@@ -916,6 +912,7 @@ var DiacriticRestorer = class _DiacriticRestorer {
    */
   findSuffixMatch(word, lowerWord, normalizedBase) {
     const wordLen = normalizedBase.length;
+    const mappings = this.getAllMappings(true);
     const minStemLen = Math.max(this.minSuffixStemLength, Math.floor(wordLen * 0.6));
     for (let stemLen = wordLen - 1; stemLen >= minStemLen; stemLen--) {
       const stem = normalizedBase.substring(0, stemLen);
@@ -924,7 +921,7 @@ var DiacriticRestorer = class _DiacriticRestorer {
         const bestStem = candidates[0].word;
         const suffix = lowerWord.substring(stemLen);
         const reconstructed = bestStem + suffix;
-        return searchAndReplaceCaseSensitive(word, reconstructed);
+        return searchAndReplaceCaseSensitive(word, reconstructed, mappings);
       }
     }
     return null;
