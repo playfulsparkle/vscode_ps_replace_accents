@@ -3,6 +3,7 @@
   "extension.config.removeDiacritics.title": "Replace Accents",
   "extension.config.userCharacterMapping.desc": "Adjon meg egyéni karakter-hozzárendeléseket az ékezetek eltávolításához. Ezzel tudja megadni, hogy a speciális karakterek hogyan legyenek átalakítva (pl. német „ß” → „ss”, ligatúrák „æ” → „ae”). A normalizálás után kerül alkalmazásra.",
   "extension.config.textLanguage.desc": "Válassza ki a szöveg nyelvét az ékezetek eltávolításának és visszaállításának javításához.",
+  "extension.config.textLanguage.off.desc": "Kikapcsolva",
   "extension.config.textLanguage.croatian.desc": "Horvát",
   "extension.config.textLanguage.czech.desc": "Cseh",
   "extension.config.textLanguage.danish.desc": "Dán",

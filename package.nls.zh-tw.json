@@ -3,6 +3,7 @@
     "extension.config.removeDiacritics.title": "Replace Accents",
     "extension.config.userCharacterMapping.desc": "定義用於移除變音符號的自訂字元對應。可用來指定特殊字元的轉換方式, 例如將德文「ß」轉成「ss」, 將合字「æ」轉成「ae」。會在正規化之後套用。",
     "extension.config.textLanguage.desc": "選擇文字的語言，以改進變音符號的移除與還原。",
+    "extension.config.textLanguage.off.desc": "關閉",
     "extension.config.textLanguage.croatian.desc": "克羅埃西亞語",
     "extension.config.textLanguage.czech.desc": "捷克語",
     "extension.config.textLanguage.danish.desc": "丹麥語",

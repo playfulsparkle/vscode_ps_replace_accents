@@ -3,6 +3,7 @@
     "extension.config.removeDiacritics.title": "Replace Accents",
     "extension.config.userCharacterMapping.desc": "Definujte vlastní mapování znaků pro odstranění diakritiky. Použijte to k určení, jak mají být speciální znaky převedeny (např. německé „ß“ na „ss“, ligatury „æ“ na „ae“). Použije se po normalizaci.",
     "extension.config.textLanguage.desc": "Zvolte jazyk svého textu pro lepší odstraňování a obnovování diakritiky.",
+    "extension.config.textLanguage.off.desc": "Vypnuto",
     "extension.config.textLanguage.croatian.desc": "Chorvatština",
     "extension.config.textLanguage.czech.desc": "Čeština",
     "extension.config.textLanguage.danish.desc": "Dánština",
