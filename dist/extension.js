@@ -82,16 +82,7 @@ function applyCasePatternWithMappings(original, restored, characterMappings) {
   return result;
 }
 function applyCaseToCharacter(sourceChar, targetChar) {
-  if (sourceChar === sourceChar.toUpperCase()) {
-    return targetChar.toUpperCase();
-  } else if (sourceChar === sourceChar.toLowerCase()) {
-    return targetChar.toLowerCase();
-  } else {
-    if (sourceChar.length > 1) {
-      return sourceChar[0] === sourceChar[0].toUpperCase() ? targetChar.toUpperCase() : targetChar.toLowerCase();
-    }
-    return targetChar;
-  }
+  return sourceChar[0] === sourceChar[0].toUpperCase() ? targetChar.toUpperCase() : targetChar.toLowerCase();
 }
 function applyCasePattern(original, restored) {
   if (!original || !restored) {

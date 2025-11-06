@@ -120,20 +120,9 @@ function applyCasePatternWithMappings(
  * @returns {string} Target character with appropriate case
  */
 function applyCaseToCharacter(sourceChar: string, targetChar: string): string {
-    if (sourceChar === sourceChar.toUpperCase()) {
-        return targetChar.toUpperCase();
-    } else if (sourceChar === sourceChar.toLowerCase()) {
-        return targetChar.toLowerCase();
-    } else {
-        // Mixed case or special handling for multi-character sequences
-        // For multi-character sequences, use the case of the first character
-        if (sourceChar.length > 1) {
-            return sourceChar[0] === sourceChar[0].toUpperCase() 
-                ? targetChar.toUpperCase() 
-                : targetChar.toLowerCase();
-        }
-        return targetChar;
-    }
+    return sourceChar[0] === sourceChar[0].toUpperCase() 
+        ? targetChar.toUpperCase() 
+        : targetChar.toLowerCase();
 }
 
 /**
