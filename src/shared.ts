@@ -81,7 +81,7 @@ function applyCasePatternWithMappings(
                 result[j] = twoChar[0] === twoChar[0].toUpperCase()
                     ? restoredChar.toUpperCase()
                     : restoredChar.toLowerCase();
-                    
+
                 i += 2;
                 j++;
 
@@ -99,23 +99,6 @@ function applyCasePatternWithMappings(
 
         i++;
         j++;
-    }
-
-    // Handle any remaining characters in restored string
-    if (j < restLen) {
-        const lastOrigChar = original[origLen - 1];
-        const isUpper = lastOrigChar === lastOrigChar.toUpperCase() &&
-            lastOrigChar !== lastOrigChar.toLowerCase();
-
-        if (isUpper) {
-            for (; j < restLen; j++) {
-                result[j] = restored[j].toUpperCase();
-            }
-        } else {
-            for (; j < restLen; j++) {
-                result[j] = restored[j].toLowerCase();
-            }
-        }
     }
 
     return result.join("");

@@ -73,19 +73,6 @@ function applyCasePatternWithMappings(original, restored, characterMappings) {
     i++;
     j++;
   }
-  if (j < restLen) {
-    const lastOrigChar = original[origLen - 1];
-    const isUpper = lastOrigChar === lastOrigChar.toUpperCase() && lastOrigChar !== lastOrigChar.toLowerCase();
-    if (isUpper) {
-      for (; j < restLen; j++) {
-        result[j] = restored[j].toUpperCase();
-      }
-    } else {
-      for (; j < restLen; j++) {
-        result[j] = restored[j].toLowerCase();
-      }
-    }
-  }
   return result.join("");
 }
 function applyCasePattern(original, restored) {
