@@ -2,6 +2,10 @@
 
 All notable changes to the "Playful Sparkle: Replace Accents" extension will be documented in this file.
 
+## [0.0.16] - 2025-11-09
+
+- Optimized dictionary loading and processing, safeguards for word and frequncy.
+
 ## [0.0.15] - 2025-11-06
 
 - Added language setting for diacritic removal and restoration; default `off`.

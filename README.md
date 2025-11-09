@@ -86,6 +86,10 @@ When restoring, it uses **per-language dictionaries**, optional **suffix matchin
 
 ## Release Notes
 
+### 0.0.16
+
+- Optimized dictionary loading and processing, safeguards for word and frequncy.
+
 ### 0.0.15
 
 - Added language setting for diacritic removal and restoration; default `off`.

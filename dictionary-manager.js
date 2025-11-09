@@ -65,7 +65,6 @@ class DictionaryManager {
             console.log(`Updated dictionary with ${newCount} new words, total: ${updatedDict.size}`);
 
         } catch (error) {
-            console.error(error);
             throw new Error(`Failed to update dictionary: ${error.message}`);
         }
     }
@@ -215,74 +214,6 @@ class DictionaryManager {
     }
 
     /**
-     * Reads and parses a dictionary file as an async iterable stream
-     * 
-     * Processes TSV (Tab-Separated Values) format files where each line
-     * contains: word[tab]frequency
-     * 
-     * This generator yields entries one at a time, allowing for memory-efficient
-     * processing of large files without loading everything into memory at once.
-     * Uses true streaming to process files of any size with constant memory usage.
-     * 
-     * @param {string} filePath - Path to the dictionary file
-     * 
-     * @yields {{word: string, frequency: number}} Individual dictionary entries
-     * 
-     * @throws {Error} If file format is invalid (except for non-existent files)
-     */
-    async *readDictionaryStream(filePath) {
-        try {
-            // Check if file exists first
-            await fs.promises.access(filePath);
-        } catch (error) {
-            if (error.code === "ENOENT") {
-                return; // File doesn't exist, yield nothing
-            }
-            throw error;
-        }
-
-        const fileStream = fs.createReadStream(filePath, {
-            encoding: "utf8",
-            highWaterMark: 64 * 1024 // 64KB chunks for optimal performance
-        });
-
-        const rl = readline.createInterface({
-            input: fileStream,
-            crlfDelay: Infinity, // Handle all line endings properly
-            terminal: false
-        });
-
-        try {
-            for await (const line of rl) {
-                const trimmed = line.trim();
-
-                // Skip empty lines and comments
-                if (!trimmed || trimmed.startsWith("#")) {
-                    continue;
-                }
-
-                const parts = trimmed.split(/\t+/, 2);
-
-                // Skip lines that don't have at least 2 columns
-                if (parts.length < 2) {
-                    continue;
-                }
-
-                const word = parts[0].trim();
-                const frequency = parseInt(parts[1].trim(), 10);
-
-                // Only yield valid entries
-                if (word && !isNaN(frequency) && frequency >= 0) {
-                    yield { word, frequency };
-                }
-            }
-        } finally {
-            // Ensure proper cleanup even if iteration is broken
-            fileStream.destroy();
-        }
-    }
-
-    /**
      * Reads and parses a dictionary file into an array of word entries
      * 
      * Processes TSV (Tab-Separated Values) format files where each line
@@ -297,8 +228,44 @@ class DictionaryManager {
     async readDictionary(filePath) {
         const dictionary = [];
 
-        for await (const entry of this.readDictionaryStream(filePath)) {
-            dictionary.push(entry);
+        try {
+            const content = await this.readFile(filePath);
+
+            const lines = content.split(/(\r?\n|\r)/);
+
+            for (const line of lines) {
+                const trimmed = line.trim();
+
+                if (!trimmed) {
+                    continue;
+                }
+
+                const tabIndex = line.indexOf("\t");
+
+                if (tabIndex === -1) {
+                    continue;
+                }
+
+                const wordRaw = line.substring(0, tabIndex);
+                const frequencyRaw = line.substring(tabIndex + 1);
+
+                const word = wordRaw.trim().toLowerCase();
+                const frequency = parseInt(frequencyRaw.trim(), 10);
+
+                if (isNaN(frequency) || frequency <= 0 || frequency > Number.MAX_SAFE_INTEGER) {
+                    continue;
+                }
+
+                if (!word) {
+                    continue;
+                }
+
+                dictionary.push({ word, frequency });
+            }
+        } catch (error) {
+            if (error.code !== "ENOENT") {
+                throw error;
+            }
         }
 
         return dictionary;

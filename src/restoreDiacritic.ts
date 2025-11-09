@@ -280,7 +280,9 @@ class DiacriticRestorer {
         for (let i = 0; i < lines.length; i++) {
             const line = lines[i].trim();
 
-            if (!line) { continue; }
+            if (!line) {
+                continue;
+            }
 
             const tabIndex = line.indexOf("\t");
 
@@ -290,59 +292,55 @@ class DiacriticRestorer {
                 continue;
             }
 
-            try {
-                const word = line.substring(0, tabIndex);
-                const frequencyStr = line.substring(tabIndex + 1);
+            const wordRaw = line.substring(0, tabIndex);
+            const frequencyRaw = line.substring(tabIndex + 1);
 
-                if (!word || !frequencyStr) {
-                    errorCount++;
+            const word = wordRaw.trim().toLowerCase();
+            const frequency = parseInt(frequencyRaw.trim(), 10);
 
-                    continue;
-                }
-
-                const frequency = parseInt(frequencyStr, 10);
-
-                if (isNaN(frequency)) {
-                    errorCount++;
-
-                    continue;
-                }
-
-                const baseForm = this.removeDiacritics(word);
-
-                // Get or create entries array
-                let entries = this.dictionary.get(baseForm);
-
-                if (!entries) {
-                    entries = [];
-                    this.dictionary.set(baseForm, entries);
-                }
-
-                const entry: DictionaryEntry = { word, frequency };
-
-                // Binary search for insertion point
-                // We want entries sorted by DESCENDING frequency (highest first)
-                let left = 0;
-                let right = entries.length;
-
-                while (left < right) {
-                    const mid = (left + right) >>> 1; // Unsigned right shift for floor division
-
-                    if (entries[mid].frequency >= frequency) {
-                        left = mid + 1;
-                    } else {
-                        right = mid;
-                    }
-                }
-
-                entries.splice(left, 0, entry);
-
-                lineCount++;
-            } catch (error) {
+            if (isNaN(frequency) || frequency <= 0 || frequency > Number.MAX_SAFE_INTEGER) {
                 errorCount++;
 
                 continue;
             }
+
+            if (!word) {
+                errorCount++;
+
+                continue;
+            }
+
+            const baseForm = this.removeDiacritics(word);
+
+            // Get or create entries array
+            let entries = this.dictionary.get(baseForm);
+
+            if (!entries) {
+                entries = [];
+
+                this.dictionary.set(baseForm, entries);
+            }
+
+            const entry: DictionaryEntry = { word, frequency };
+
+            // Binary search for insertion point
+            // We want entries sorted by DESCENDING frequency (highest first)
+            let left = 0;
+            let right = entries.length;
+
+            while (left < right) {
+                const mid = (left + right) >>> 1; // Unsigned right shift for floor division
+
+                if (entries[mid].frequency >= frequency) {
+                    left = mid + 1;
+                } else {
+                    right = mid;
+                }
+            }
+
+            entries.splice(left, 0, entry);
+
+            lineCount++;
         }
 
         console.log(`Loaded ${lineCount} words for language ${this.currentLanguage} (${errorCount} errors)`);
