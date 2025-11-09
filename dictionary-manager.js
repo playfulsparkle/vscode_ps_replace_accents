@@ -231,7 +231,7 @@ class DictionaryManager {
         try {
             const DATA_COLUMN_SIZE = 2;
             const content = await this.readFile(filePath);
-            const lines = content.split(/\r?\n/);
+            const lines = content.split(/(\r?\n|\r)/);
 
             for (const line of lines) {
                 const trimmed = line.trim();
