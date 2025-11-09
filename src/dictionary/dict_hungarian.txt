@@ -1,4 +1,3 @@
-és	195
 mesék	1601
 még	348
 tovább	328
@@ -7,6 +6,7 @@ mesére	240
 helységnévtára	230
 rész	223
 már	216
+és	195
 új	195
 után	187
 rövid	159
@@ -1702,6 +1702,7 @@ jelszó	7
 kapcsán	7
 karán	7
 képviseletet	7
+kérek	7
 kereszteződések	7
 kerületnek	7
 készített	7
@@ -4336,8 +4337,6 @@ képzettek	3
 kérdéseket	3
 kérdésére	3
 kérdésünkre	3
-kérek	4
-kerék	3
 kerékpársport	3
 kérelmét	3
 kérem	3
@@ -23652,7 +23651,6 @@ bevegyül	1
 bevégzés	1
 bevégződik	1
 bevendégeskedik	1
-ennék	1
 bevennék	1
 beverbuvál	1
 bevérez	1
@@ -37049,6 +37047,7 @@ engesztelődik	1
 enkefalográfia	1
 énkép	1
 énlaka	1
+ennék	1
 énnekem	1
 ennélfogva	1
 ennétek	1
