@@ -61,7 +61,7 @@ export function activate(context: vscode.ExtensionContext) {
 		/** Removes diacritics from selected text or entire document */
 		ReplaceDiacriticts = "ps-replace-accents.removeDiacritics",
 		/** Removes diacritics from file or folder names in Explorer */
-		ReplaceDiacritictsFileOrFolder = "ps-replace-accents.removeDiacriticsFileOrFolder",
+		RemoveDiacritictsFileOrFolder = "ps-replace-accents.removeDiacriticsFileOrFolder",
 		/** Restores diacritics to normalized text using dictionary */
 		RestoreDiacritics = "ps-replace-accents.restoreDiacritics",
 	}
@@ -165,7 +165,7 @@ export function activate(context: vscode.ExtensionContext) {
 	 * 
 	 * @throws {Error} Shows error messages to user but doesn't throw to caller
 	 */
-	const removeDiacriticsFileOrFolder = async (
+	const removeDiacritictsFileOrFolder = async (
 		language: string | undefined,
 		userMappings: Record<string, string> = {},
 		uri: vscode.Uri
@@ -178,7 +178,7 @@ export function activate(context: vscode.ExtensionContext) {
 		const parentPath = path.dirname(oldPath);
 		const itemNameWithoutAccent = remover.removeDiacritics(itemName);
 
-		if (itemNameWithoutAccent.trim().length === 0) {
+		if (itemNameWithoutAccent.length === 0) {
 			return;
 		}
 
@@ -193,11 +193,7 @@ export function activate(context: vscode.ExtensionContext) {
 		const newUri = vscode.Uri.file(newPath);
 		let shouldOverwrite = false;
 
-		// Check existence using Visual Studio Code API (avoids race condition)
-		try {
-			await vscode.workspace.fs.stat(newUri);
-
-			// File exists - prompt user
+		if (await isFileExists(newUri)) {
 			const overwritePrompt = await vscode.window.showWarningMessage(
 				vscode.l10n.t("'{0}' already exists. Do you want to overwrite it?", itemNameWithoutAccent),
 				{ modal: true },
@@ -207,15 +203,13 @@ export function activate(context: vscode.ExtensionContext) {
 
 			if (overwritePrompt === vscode.l10n.t("Yes")) {
 				shouldOverwrite = true;
-			} else if (overwritePrompt === vscode.l10n.t("No")) {
-				return; // User chose not to overwrite
+			} else {
+				return;
 			}
-		} catch (_) {
-			// File doesn't exist - this is fine, continue
 		}
 
 		try {
-			await vscode.workspace.fs.rename(uri, vscode.Uri.file(newPath), { overwrite: shouldOverwrite });
+			await vscode.workspace.fs.rename(uri, newUri, { overwrite: shouldOverwrite });
 
 			vscode.window.showInformationMessage(
 				vscode.l10n.t("Renamed: {0} to {1}", itemName, itemNameWithoutAccent)
@@ -224,6 +218,15 @@ export function activate(context: vscode.ExtensionContext) {
 			vscode.window.showErrorMessage(
 				vscode.l10n.t("Failed to rename '{0}': {1}", itemName, (error as Error).message)
 			);
+		}
+	};
+
+	const isFileExists = async (uri: vscode.Uri): Promise<boolean> => {
+		try {
+			await vscode.workspace.fs.stat(uri);
+			return true;  // File exists - stat succeeded
+		} catch (error) {
+			return false; // File doesn't exist - stat threw an error
 		}
 	};
 
@@ -315,7 +318,7 @@ export function activate(context: vscode.ExtensionContext) {
 		 * 
 		 * @returns {Promise<void>}
 		 */
-		[CommandId.ReplaceDiacritictsFileOrFolder]: async (uri: vscode.Uri, selectedUris?: vscode.Uri[]) => {
+		[CommandId.RemoveDiacritictsFileOrFolder]: async (uri: vscode.Uri, selectedUris?: vscode.Uri[]) => {
 			if (!uri) {
 				return;
 			}
@@ -344,7 +347,7 @@ export function activate(context: vscode.ExtensionContext) {
 			const urisToRename = selectedUris && selectedUris.length > 0 ? selectedUris : [uri];
 
 			for (const currentUri of urisToRename) {
-				await removeDiacriticsFileOrFolder(language, userMappings, currentUri);
+				await removeDiacritictsFileOrFolder(language, userMappings, currentUri);
 			}
 
 			if (urisToRename.length > 1) {
