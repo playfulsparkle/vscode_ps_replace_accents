@@ -173,7 +173,7 @@ class DictionaryManager {
      */
     extractWordFrequencies(text) {
         const frequencies = new Map();
-        const words = text.match(/[\p{L}\p{M}][\p{L}\p{M}'\u2019\-]*/gu) || [];
+        const words = text.match(/[\p{L}\p{M}][\p{L}\p{M}'\u2018\u2019]*/gu) || [];
 
         for (const word of words) {
             // Skip words that don't contain non-ASCII characters
@@ -182,7 +182,7 @@ class DictionaryManager {
             }
 
             const normalizedWord = this.normalizeWord(word);
-            const lowerOriginal = word.toLowerCase().trim("’'-");
+            const lowerOriginal = word.toLowerCase();
 
             if (frequencies.has(normalizedWord)) {
                 frequencies.get(normalizedWord).frequency++;
