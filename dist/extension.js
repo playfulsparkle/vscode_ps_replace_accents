@@ -1130,6 +1130,475 @@ var DiacriticRemover = class {
 };
 var removeDiacritic_default = DiacriticRemover;
 
+// src/languageDetector.ts
+var LanguageDetector = class {
+  SUPPORTED_LANGUAGES = [
+    "czech",
+    "danish",
+    "french",
+    "german",
+    "hungarian",
+    "polish",
+    "slovak",
+    "spanish",
+    "swedish",
+    "portuguese",
+    "italian",
+    "norwegian",
+    "icelandic",
+    "dutch",
+    "croatian",
+    "slovenian",
+    "romanian",
+    "lithuanian",
+    "latvian"
+  ];
+  MIN_TEXT_LENGTH = 50;
+  // characters
+  MIN_WORD_COUNT = 10;
+  // words
+  CONFIDENCE_THRESHOLD = 0.25;
+  // Character frequency profiles for each language (top distinctive characters)
+  CHAR_FREQUENCIES = {
+    polish: { "z": 0.065, "w": 0.045, "y": 0.038, "k": 0.035 },
+    czech: { "v": 0.055, "k": 0.042, "p": 0.031, "t": 0.062 },
+    slovak: { "v": 0.055, "k": 0.044, "o": 0.087, "t": 0.059 },
+    german: { "e": 0.174, "n": 0.098, "r": 0.07, "s": 0.073 },
+    french: { "e": 0.147, "s": 0.079, "a": 0.076, "i": 0.066 },
+    spanish: { "e": 0.137, "a": 0.125, "o": 0.092, "s": 0.072 },
+    italian: { "e": 0.118, "a": 0.117, "i": 0.101, "o": 0.098 },
+    portuguese: { "a": 0.146, "e": 0.126, "o": 0.103, "s": 0.067 },
+    hungarian: { "e": 0.098, "a": 0.088, "t": 0.071, "l": 0.051 },
+    swedish: { "e": 0.1, "a": 0.095, "n": 0.085, "r": 0.084 },
+    norwegian: { "e": 0.156, "r": 0.089, "n": 0.076, "t": 0.073 },
+    danish: { "e": 0.155, "r": 0.089, "n": 0.073, "t": 0.07 },
+    dutch: { "e": 0.189, "n": 0.1, "a": 0.076, "t": 0.069 },
+    icelandic: { "a": 0.109, "r": 0.087, "n": 0.077, "i": 0.076 },
+    croatian: { "a": 0.107, "i": 0.097, "o": 0.089, "e": 0.087 },
+    slovenian: { "e": 0.105, "a": 0.089, "i": 0.088, "o": 0.079 },
+    romanian: { "e": 0.109, "i": 0.108, "a": 0.107, "r": 0.066 },
+    lithuanian: { "i": 0.09, "a": 0.087, "s": 0.062, "o": 0.06 },
+    latvian: { "a": 0.107, "i": 0.09, "s": 0.074, "e": 0.072 }
+  };
+  constructor() {
+  }
+  /**
+   * Detects the most likely language of the input text using advanced pattern analysis
+   * 
+   * @param text - Input text in pure ASCII (no diacritics)
+   * @returns Language detection result with confidence scores and reliability indicator
+   */
+  detect(text) {
+    if (!text || text.trim().length === 0) {
+      return {
+        language: "unknown",
+        confidence: 0,
+        scores: {},
+        isReliable: false
+      };
+    }
+    const trimmedText = text.trim();
+    const wordCount = trimmedText.split(/\s+/).length;
+    if (trimmedText.length < this.MIN_TEXT_LENGTH || wordCount < this.MIN_WORD_COUNT) {
+      return {
+        language: "unknown",
+        confidence: 0,
+        scores: {},
+        isReliable: false,
+        ambiguousLanguages: ["Text too short for reliable detection"]
+      };
+    }
+    const scores = {};
+    for (const language of this.SUPPORTED_LANGUAGES) {
+      scores[language] = this.calculateLanguageScore(trimmedText, language);
+    }
+    const sortedLanguages = Object.entries(scores).sort(([, a], [, b]) => b - a).filter(([, score]) => score > 0);
+    if (sortedLanguages.length === 0) {
+      return {
+        language: "unknown",
+        confidence: 0,
+        scores,
+        isReliable: false
+      };
+    }
+    const [bestLang, bestScore] = sortedLanguages[0];
+    const [secondLang, secondScore] = sortedLanguages[1] || [null, 0];
+    const confidence = secondScore > 0 ? Math.min((bestScore - secondScore) / bestScore, 1) : bestScore > 0 ? 1 : 0;
+    const isReliable = confidence >= this.CONFIDENCE_THRESHOLD;
+    const ambiguousLanguages = sortedLanguages.slice(1, 4).filter(([, score]) => score > bestScore * 0.7).map(([lang]) => lang);
+    return {
+      language: bestLang,
+      confidence,
+      scores,
+      isReliable,
+      ambiguousLanguages: ambiguousLanguages.length > 0 ? ambiguousLanguages : void 0
+    };
+  }
+  /**
+   * Calculates a comprehensive language similarity score
+   */
+  calculateLanguageScore(text, language) {
+    const words = text.toLowerCase().split(/\s+/).filter((w) => w.length > 0);
+    if (words.length === 0) {
+      return 0;
+    }
+    let score = 0;
+    const stopwordScore = this.calculateStopwordRatio(words, language);
+    score += stopwordScore * 100;
+    const charFreqScore = this.analyzeCharacterFrequency(text, language);
+    score += charFreqScore * 50;
+    for (const word of words) {
+      score += this.scoreWordPatterns(word, language) * 0.8;
+      score += this.scoreWordStructure(word, language) * 0.6;
+    }
+    score += this.analyzeBigrams(text, language) * 30;
+    score += this.applyNegativePatterns(words, language);
+    return Math.max(score, 0);
+  }
+  /**
+   * Calculates the ratio of stopwords (most reliable indicator)
+   */
+  calculateStopwordRatio(words, language) {
+    const stopwords = this.getStopwords(language);
+    const stopwordCount = words.filter((w) => stopwords.has(w)).length;
+    return stopwordCount / words.length;
+  }
+  /**
+   * Returns comprehensive stopword sets for each language
+   */
+  getStopwords(language) {
+    const stopwordLists = {
+      hungarian: ["a", "az", "es", "hogy", "nem", "van", "egy", "meg", "ki", "de", "is", "be", "le", "fel", "ez", "azt"],
+      german: ["der", "die", "das", "und", "ist", "zu", "den", "von", "mit", "sich", "ein", "sie", "auf", "des", "im", "dem"],
+      french: ["le", "la", "et", "est", "pas", "vous", "nous", "dans", "qui", "que", "il", "ce", "ne", "se", "une", "ont"],
+      spanish: ["el", "la", "de", "que", "y", "en", "un", "es", "se", "no", "por", "los", "las", "del", "al", "una"],
+      italian: ["il", "la", "e", "di", "che", "in", "un", "non", "per", "una", "le", "del", "da", "al", "sono", "si"],
+      portuguese: ["o", "a", "e", "de", "do", "da", "em", "um", "para", "com", "os", "as", "dos", "das", "uma", "no"],
+      swedish: ["och", "att", "i", "av", "med", "som", "en", "det", "den", "ett", "har", "inte", "om", "var", "till", "kan"],
+      norwegian: ["og", "i", "er", "av", "med", "for", "som", "en", "det", "at", "til", "har", "ikke", "den", "om", "var"],
+      danish: ["og", "i", "er", "af", "med", "for", "som", "en", "det", "at", "til", "har", "ikke", "den", "om", "var"],
+      dutch: ["de", "en", "het", "van", "een", "te", "dat", "ie", "niet", "met", "op", "is", "voor", "in", "die", "zijn"],
+      czech: ["a", "se", "na", "je", "v", "s", "o", "z", "k", "i", "to", "do", "po", "ve", "by", "ze", "aby", "ale"],
+      polish: ["i", "w", "sie", "na", "nie", "do", "o", "z", "co", "to", "ze", "jak", "za", "od", "po", "jest", "byl"],
+      slovak: ["a", "sa", "na", "je", "v", "s", "o", "z", "k", "i", "to", "do", "po", "ve", "by", "zo", "aby", "ale"],
+      icelandic: ["og", "i", "er", "a", "ad", "um", "en", "ef", "ekki", "ha", "sem", "vid", "til", "med", "fra", "var"],
+      croatian: ["i", "u", "se", "na", "je", "s", "o", "z", "k", "da", "su", "za", "od", "do", "po", "bio", "ali"],
+      slovenian: ["in", "je", "se", "na", "ni", "za", "s", "o", "z", "k", "v", "so", "da", "do", "po", "ki", "od"],
+      romanian: ["si", "cu", "in", "se", "la", "este", "un", "o", "ca", "pe", "de", "nu", "sunt", "ii", "din", "sau"],
+      lithuanian: ["ir", "yra", "su", "i", "o", "is", "kaip", "ne", "tai", "kad", "bet", "ar", "bus", "uz", "del", "nuo"],
+      latvian: ["un", "ir", "ar", "ka", "no", "uz", "par", "bet", "vai", "kas", "tas", "lai", "to", "so", "vai", "ir"]
+    };
+    return new Set(stopwordLists[language] || []);
+  }
+  /**
+   * Analyzes character frequency distribution
+   */
+  analyzeCharacterFrequency(text, language) {
+    const lowerText = text.toLowerCase();
+    const charCount = {};
+    let totalChars = 0;
+    for (const char of lowerText) {
+      if (/[a-z]/.test(char)) {
+        charCount[char] = (charCount[char] || 0) + 1;
+        totalChars++;
+      }
+    }
+    if (totalChars === 0) {
+      return 0;
+    }
+    const langProfile = this.CHAR_FREQUENCIES[language];
+    if (!langProfile) {
+      return 0;
+    }
+    let score = 0;
+    for (const [char, expectedFreq] of Object.entries(langProfile)) {
+      const actualFreq = (charCount[char] || 0) / totalChars;
+      const deviation = Math.abs(actualFreq - expectedFreq);
+      score += Math.max(0, 1 - deviation * 10);
+    }
+    return score / Object.keys(langProfile).length;
+  }
+  /**
+   * Analyzes character bigrams (two-character sequences)
+   */
+  analyzeBigrams(text, language) {
+    const bigrams = {
+      german: ["ch", "en", "er", "ie", "de", "te", "sc", "nd"],
+      french: ["es", "de", "en", "le", "re", "nt", "on", "ou"],
+      spanish: ["de", "es", "en", "el", "la", "os", "ar", "er"],
+      italian: ["er", "re", "la", "io", "no", "to", "el", "li"],
+      portuguese: ["os", "de", "es", "as", "en", "ra", "te", "ao"],
+      polish: ["rz", "cz", "sz", "ie", "ni", "ie", "na", "go"],
+      hungarian: ["sz", "gy", "ny", "ly", "et", "en", "tt", "ek"],
+      swedish: ["en", "er", "et", "tt", "an", "de", "om", "ar"],
+      norwegian: ["en", "er", "et", "or", "de", "sk", "te", "le"],
+      danish: ["en", "er", "de", "et", "or", "nd", "te", "ge"],
+      dutch: ["en", "de", "er", "te", "aa", "ij", "ee", "oo"],
+      czech: ["st", "pr", "ov", "ni", "te", "ne", "le", "je"],
+      slovak: ["st", "pr", "ov", "ni", "te", "ne", "le", "je"],
+      icelandic: ["ur", "ar", "ir", "um", "ri", "st", "nn", "ad"],
+      croatian: ["je", "na", "st", "pr", "ra", "no", "ti", "ko"],
+      slovenian: ["je", "na", "st", "pr", "ra", "no", "ti", "ko"],
+      romanian: ["de", "re", "ul", "ar", "ea", "le", "te", "ii"],
+      lithuanian: ["as", "is", "us", "ai", "ei", "au", "ta", "ti"],
+      latvian: ["as", "is", "aj", "am", "ie", "ar", "ka", "ta"]
+    };
+    const langBigrams = bigrams[language] || [];
+    if (langBigrams.length === 0) {
+      return 0;
+    }
+    let score = 0;
+    const lowerText = text.toLowerCase();
+    for (const bigram of langBigrams) {
+      const regex = new RegExp(bigram, "g");
+      const matches = lowerText.match(regex);
+      if (matches) {
+        score += matches.length / 10;
+      }
+    }
+    return Math.min(score, 1);
+  }
+  /**
+   * Scores word based on character patterns typical for the language
+   */
+  scoreWordPatterns(word, language) {
+    if (word.length < 3) {
+      return 0;
+    }
+    let score = 0;
+    switch (language) {
+      case "hungarian":
+        if (/(sz|cs|gy|ly|ny|ty|zs)/.test(word)) {
+          score += 3;
+        }
+        if (word.length > 4 && /[bcdfghjklmnpqrstvwxz]{3}/.test(word)) {
+          score += 1;
+        }
+        break;
+      case "german":
+        if (/(sch|ch)/.test(word)) {
+          score += 3;
+        }
+        if (/(^ge|^be|^er|^ver|^zer|^ent)/.test(word)) {
+          score += 2;
+        }
+        if (/(ung|lich|keit)$/.test(word)) {
+          score += 2;
+        }
+        break;
+      case "french":
+        if (/(eau|eux|aux)/.test(word)) {
+          score += 4;
+        }
+        if (/(qu|ou|ai|eu)/.test(word)) {
+          score += 2;
+        }
+        if (/(tion|ment)$/.test(word)) {
+          score += 2;
+        }
+        break;
+      case "spanish":
+        if (/(ll|rr)/.test(word)) {
+          score += 4;
+        }
+        if (/(qu|gu|ci|gi)/.test(word)) {
+          score += 2;
+        }
+        if (/(cion|dad|mente)$/.test(word)) {
+          score += 2;
+        }
+        break;
+      case "czech":
+      case "slovak":
+        if (/(ch|ck)/.test(word)) {
+          score += 2;
+        }
+        if (word.length > 5 && /[bcdfghjklmnpqrstvwxz]{3}/.test(word)) {
+          score += 2;
+        }
+        if (/(stv|ckn)/.test(word)) {
+          score += 3;
+        }
+        break;
+      case "polish":
+        if (/(sz|cz|rz|dz)/.test(word)) {
+          score += 4;
+        }
+        if (/(prz|trz|krz|szcz)/.test(word)) {
+          score += 5;
+        }
+        break;
+      case "swedish":
+      case "norwegian":
+      case "danish":
+        if (/(sj|skj|tj)/.test(word)) {
+          score += 3;
+        }
+        if (/(het|skap|else|ning)$/.test(word)) {
+          score += 2;
+        }
+        break;
+      case "italian":
+        if (/(cc|ff|gg|ll|mm|nn|pp|rr|ss|tt|zz)/.test(word)) {
+          score += 3;
+        }
+        if (/(zione|mento|aggio)$/.test(word)) {
+          score += 3;
+        }
+        break;
+      case "portuguese":
+        if (/(ao|oe|ae|ca)/.test(word)) {
+          score += 3;
+        }
+        if (/(mente|cao|dade|agem)$/.test(word)) {
+          score += 3;
+        }
+        break;
+      case "icelandic":
+        if (word.length > 3 && /(ur|ir|ar|un)$/.test(word)) {
+          score += 3;
+        }
+        break;
+      case "dutch":
+        if (/(ij|sch|ijk)/.test(word)) {
+          score += 4;
+        }
+        if (/(heid|schap|ing|tje)$/.test(word)) {
+          score += 2;
+        }
+        break;
+      case "croatian":
+      case "slovenian":
+        if (word.length > 5 && /[bcdfghjklmnpqrstvwxz]{3}/.test(word)) {
+          score += 2;
+        }
+        if (/(anj|enj|ost|stv)/.test(word)) {
+          score += 2;
+        }
+        break;
+      case "romanian":
+        if (/(esc|ire|tor|tii)/.test(word)) {
+          score += 2;
+        }
+        break;
+      case "lithuanian":
+      case "latvian":
+        if (/(tion|mas|ien)/.test(word)) {
+          score += 2;
+        }
+        break;
+    }
+    return score;
+  }
+  /**
+   * Scores word based on structural patterns (endings, prefixes)
+   */
+  scoreWordStructure(word, language) {
+    if (word.length < 4) {
+      return 0;
+    }
+    let score = 0;
+    const endings = {
+      hungarian: ["ban", "ben", "nak", "nek", "val", "vel", "tol", "kent", "hoz", "hez"],
+      german: ["ung", "heit", "keit", "schaft", "chen", "lein", "lich", "bar", "sam"],
+      french: ["ment", "tion", "eur", "euse", "ique", "iste", "ance", "ence"],
+      spanish: ["cion", "miento", "dad", "tad", "eza", "aje", "ero", "ismo"],
+      italian: ["zione", "mento", "tore", "trice", "ezza", "aggio", "iere", "ismo"],
+      polish: ["anie", "enie", "osc", "stwo", "cja", "dzki", "ski", "owy"],
+      czech: ["ani", "eni", "stvi", "ost", "cny", "ovat", "ovani"],
+      slovak: ["anie", "enie", "stvo", "ost", "cny", "ovat", "ovanie"],
+      swedish: ["het", "skap", "else", "ning", "ande", "ende", "are"],
+      portuguese: ["cao", "mente", "dade", "agem", "ario", "orio", "ismo"],
+      norwegian: ["het", "skap", "else", "ning", "ende", "ande", "ere"],
+      icelandic: ["ur", "ir", "ar", "un", "ing", "ana", "legur"],
+      dutch: ["heid", "schap", "ing", "tje", "atie", "iteit", "lijk"],
+      croatian: ["anje", "enje", "ost", "stvo", "acija", "iranje", "itelj"],
+      slovenian: ["anje", "enje", "ost", "stvo", "cija", "iranje", "itelj"],
+      romanian: ["are", "ire", "tor", "tie", "ism", "ist", "esc"],
+      lithuanian: ["imas", "ymas", "tis", "tys", "umas", "ybe", "tojas"],
+      latvian: ["sana", "sanas", "tajs", "taja", "ums", "iens", "ejais"]
+    };
+    const langEndings = endings[language] || [];
+    for (const ending of langEndings) {
+      if (word.endsWith(ending) && word.length > ending.length + 2) {
+        score += 2;
+        break;
+      }
+    }
+    return score;
+  }
+  /**
+   * Applies negative patterns (impossible combinations for certain languages)
+   */
+  applyNegativePatterns(words, language) {
+    let penalty = 0;
+    for (const word of words) {
+      if (word.length < 3) {
+        continue;
+      }
+      switch (language) {
+        case "hungarian":
+          if (/th|ph|qu|x/.test(word)) {
+            penalty -= 2;
+          }
+          break;
+        case "polish":
+          if (/qu|x/.test(word)) {
+            penalty -= 2;
+          }
+          break;
+        case "italian":
+          if (/[kxy]/.test(word)) {
+            penalty -= 1;
+          }
+          break;
+        case "spanish":
+          if (/[kw]/.test(word) && word !== "whisky") {
+            penalty -= 1;
+          }
+          break;
+        case "czech":
+        case "slovak":
+          if (/qu|x/.test(word)) {
+            penalty -= 1;
+          }
+          break;
+      }
+    }
+    return penalty;
+  }
+  /**
+   * Gets list of supported languages
+   */
+  getSupportedLanguages() {
+    return [...this.SUPPORTED_LANGUAGES];
+  }
+  /**
+   * Gets the confidence threshold for reliable detection
+   * @returns Minimum confidence score for reliable detection (0-1)
+   */
+  getConfidenceThreshold() {
+    return this.CONFIDENCE_THRESHOLD;
+  }
+  /**
+   * Checks if a language is supported by the detector
+   * @param language - Language code to check
+   * @returns True if language is supported
+   */
+  isLanguageSupported(language) {
+    return this.SUPPORTED_LANGUAGES.includes(language.toLowerCase());
+  }
+  /**
+   * Gets minimum text requirements for reliable detection
+   */
+  getMinimumRequirements() {
+    return {
+      minTextLength: this.MIN_TEXT_LENGTH,
+      minWordCount: this.MIN_WORD_COUNT
+    };
+  }
+};
+
 // src/extension.ts
 function activate(context) {
   let CommandId;
@@ -1189,6 +1658,30 @@ function activate(context) {
     }
     return 0 /* None */;
   };
+  const getEditorTextSample = () => {
+    const editor = vscode2.window.activeTextEditor;
+    if (!editor) {
+      return "";
+    }
+    const document = editor.document;
+    const selections = editor.selections;
+    if (selections.length && !selections.every((s) => s.isEmpty)) {
+      for (const selection of selections) {
+        if (!selection.isEmpty) {
+          const text2 = document.getText(selection);
+          return text2.substring(0, 125);
+        }
+      }
+    }
+    const entireDocumentRange = new vscode2.Range(
+      0,
+      0,
+      document.lineCount - 1,
+      document.lineAt(document.lineCount - 1).text.length
+    );
+    const text = document.getText(entireDocumentRange);
+    return text.substring(0, 125);
+  };
   const removeDiacritictsFileOrFolder = async (language, userMappings = {}, uri) => {
     const remover = new removeDiacritic_default(language, userMappings);
     const oldPath = uri.fsPath;
@@ -1239,9 +1732,17 @@ function activate(context) {
       return false;
     }
   };
-  const showLanguageSelectionDialog = async () => {
+  const showLanguageSelectionDialog = async (sample = void 0) => {
     const language = vscode2.workspace.getConfiguration("ps-replace-accents").get("textLanguage", "off");
     if (language === "off") {
+      if (sample) {
+        const detector = new LanguageDetector();
+        const result = detector.detect(sample);
+        console.log(result);
+        if (result.language !== "unknown") {
+          return result.language;
+        }
+      }
       const open = await vscode2.window.showWarningMessage(
         vscode2.l10n.t("Select a text language in Settings to restore diacritics."),
         vscode2.l10n.t("Open Settings"),
@@ -1315,11 +1816,11 @@ function activate(context) {
         vscode2.window.showErrorMessage(mappingsError);
         return;
       }
+      const urisToRename = selectedUris && selectedUris.length > 0 ? selectedUris : [uri];
       const language = await showLanguageSelectionDialog();
       if (language === "off") {
         return;
       }
-      const urisToRename = selectedUris && selectedUris.length > 0 ? selectedUris : [uri];
       for (const currentUri of urisToRename) {
         await removeDiacritictsFileOrFolder(language, userMappings, currentUri);
       }
@@ -1342,7 +1843,8 @@ function activate(context) {
       const suffixMatching = vscode2.workspace.getConfiguration("ps-replace-accents").get("diacriticRestoreSuffixMatching", false);
       const ignoredWordsRaw = vscode2.workspace.getConfiguration("ps-replace-accents").get("diacriticIgnoredWords", "");
       const ignoredWords = normalizeIgnoreWords(ignoredWordsRaw);
-      const language = await showLanguageSelectionDialog();
+      const textSample = getEditorTextSample();
+      const language = await showLanguageSelectionDialog(textSample);
       if (language === "off") {
         return;
       }

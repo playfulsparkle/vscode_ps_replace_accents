@@ -6,6 +6,7 @@ import {
 } from "./shared";
 import DiacriticRestorer from "./restoreDiacritic";
 import DiacriticRemover from "./removeDiacritic";
+import { LanguageDetector } from "./languageDetector";
 
 /**
  * VS Code Extension: Playful Sparkle Replace Accents
@@ -153,6 +154,37 @@ export function activate(context: vscode.ExtensionContext) {
 		return TextEditorResult.None;
 	};
 
+	const getEditorTextSample = (): string => {
+		const editor = vscode.window.activeTextEditor;
+
+		if (!editor) {
+			return "";
+		}
+
+		const document = editor.document;
+		const selections = editor.selections;
+
+		// If there are selections, get text from first non-empty selection
+		if (selections.length && !selections.every(s => s.isEmpty)) {
+			for (const selection of selections) {
+				if (!selection.isEmpty) {
+					const text = document.getText(selection);
+					return text.substring(0, 125);
+				}
+			}
+		}
+
+		// Otherwise get text from the entire document
+		const entireDocumentRange = new vscode.Range(
+			0, 0,
+			document.lineCount - 1,
+			document.lineAt(document.lineCount - 1).text.length
+		);
+		const text = document.getText(entireDocumentRange);
+
+		return text.substring(0, 125);
+	};
+
 	/**
 	 * Removes diacritics from file or folder names in the file system
 	 * 
@@ -230,12 +262,24 @@ export function activate(context: vscode.ExtensionContext) {
 		}
 	};
 
-	const showLanguageSelectionDialog = async (): Promise<string> => {
+	const showLanguageSelectionDialog = async (sample: string | undefined = undefined): Promise<string> => {
 		const language: string = vscode.workspace
 			.getConfiguration("ps-replace-accents")
 			.get<string>("textLanguage", "off");
 
 		if (language === "off") {
+			if (sample) {
+				const detector = new LanguageDetector();
+
+				const result = detector.detect(sample);
+
+				console.log(result);
+
+				if (result.language !== "unknown") {
+					return result.language;
+				}
+			}
+
 			const open = await vscode.window.showWarningMessage(
 				vscode.l10n.t("Select a text language in Settings to restore diacritics."),
 				vscode.l10n.t("Open Settings"),
@@ -336,15 +380,15 @@ export function activate(context: vscode.ExtensionContext) {
 				return;
 			}
 
+			// Handle multiple selection
+			const urisToRename = selectedUris && selectedUris.length > 0 ? selectedUris : [uri];
+
 			// Read language setting
 			const language: string = await showLanguageSelectionDialog();
 
 			if (language === "off") {
 				return;
 			}
-
-			// Handle multiple selection
-			const urisToRename = selectedUris && selectedUris.length > 0 ? selectedUris : [uri];
 
 			for (const currentUri of urisToRename) {
 				await removeDiacritictsFileOrFolder(language, userMappings, currentUri);
@@ -380,8 +424,10 @@ export function activate(context: vscode.ExtensionContext) {
 			// Parse and filter unique ignored words
 			const ignoredWords: string[] = normalizeIgnoreWords(ignoredWordsRaw);
 
+			const textSample = getEditorTextSample();
+
 			// Read language setting
-			const language: string = await showLanguageSelectionDialog();
+			const language: string = await showLanguageSelectionDialog(textSample);
 
 			if (language === "off") {
 				return;
