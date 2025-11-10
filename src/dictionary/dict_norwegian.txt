@@ -33,7 +33,6 @@ unngå	58
 vårt	58
 står	57
 hæren	55
-ness’	54
 nyhetsredaktør	47
 personvernerklæring	47
 militære	44
@@ -127,7 +126,6 @@ håper	11
 møter	11
 nær	11
 innebære	10
-lindbäck	10
 mindreårige	10
 overvåkningen	10
 tiår	10
@@ -197,7 +195,6 @@ dahlstrøm	5
 daværende	5
 fødsel	5
 føre	5
-försäkringskassan	5
 høyre	5
 itromsø	5
 kjøreforhold	5
@@ -525,7 +522,6 @@ avslørende	1
 avslørte	1
 bakkenivå	1
 bål	1
-bärsäkarna	1
 båtene	1
 belønningssenteret	1
 besøk	1
@@ -545,12 +541,10 @@ bortført	1
 bøter	1
 bråk	1
 brålanda	1
-brasília	1
 bråstopp	1
 brød	1
 brøytemannskap	1
 brunbjørnen	1
-c’est	1
 católica	1
 celledøra	1
 denstørste	1
@@ -622,7 +616,6 @@ funnområdet	1
 gårde	1
 gåtemester	1
 generalprøven	1
-giftmördare	1
 gjennomføres	1
 gjennomgå	1
 gjenstår	1
@@ -672,7 +665,6 @@ innkjøpt	1
 innrømmet	1
 innså	1
 jamfør	1
-jävlar'	1
 jødene	1
 jørgen	1
 jøss	1
@@ -706,9 +698,7 @@ lå	1
 lærdommer	1
 lærer	1
 landområder	1
-länscellfängelset	1
 låst	1
-lindbäck-saken	1
 livløse	1
 løftes	1
 løftet	1
@@ -740,7 +730,6 @@ mangemilliardærer	1
 måper	1
 måpte	1
 mår	1
-maría	1
 marinefartøy	1
 medføre	1
 mén	1
@@ -847,9 +836,7 @@ påtale	1
 påtalemessig	1
 påvirkes	1
 påvist	1
-pontifícia	1
 populærkulturelle	1
-prästen	1
 primært	1
 prøv	1
 prøvde	1
@@ -981,7 +968,6 @@ vanæret	1
 våpenbesittelse	1
 våpenindustri	1
 våpnene	1
-värmland	1
 videregående	1
 vindmøller	1
 yrkessjåføren	1

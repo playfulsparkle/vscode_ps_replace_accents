@@ -65,8 +65,6 @@ specialistės	25
 suaugusiųjų	25
 televizorių	25
 vertybės	25
-слава	25
-україні	25
 kalbėjo	23
 nėra	22
 naujienų	21
@@ -357,7 +355,6 @@ erdvės	5
 galėčiau	5
 galėjo	5
 galimybės	5
-giedraitienė	5
 gimė	5
 ginkluotųjų	5
 grupė	5
@@ -1664,7 +1661,6 @@ aplinkybių	1
 apmąstyti	1
 apmokėjimo	1
 apniukęs	1
-apollinaire’o	1
 aprašą	1
 aprašymuose	1
 aprūpinimui	1
@@ -2021,7 +2017,6 @@ gaminančios	1
 garantijų	1
 garbė	1
 garbės	1
-garcía	1
 garsumą	1
 gastrolių	1
 gatvėje	1
@@ -2090,7 +2085,6 @@ grupėms	1
 grupuotės	1
 grybauskaitė	1
 gūdus	1
-guillaume’o	1
 gulevičius	1
 gydančių	1
 gynėjui	1
@@ -2650,7 +2644,6 @@ literatūriniai	1
 liturgiją	1
 liūdniausių	1
 lojalūs	1
-lorca’os	1
 lotynų	1
 lovą	1
 lozoraičio	1
@@ -2666,7 +2659,6 @@ maištaujantys	1
 malonių	1
 malonų	1
 manė	1
-manford’s	1
 maniežą	1
 mankšta	1
 markelevičiaus	1
@@ -2734,7 +2726,6 @@ mininčiu	1
 ministrės	1
 minkština	1
 minkštuosius	1
-miridonovмиридонов	1
 mirtį	1
 močiute	1
 modelį	1
@@ -2744,9 +2735,6 @@ mokėsi	1
 mokomąją	1
 mokslinę	1
 mokymą	1
-molière	1
-molière’as	1
-molière’o	1
 moralę	1
 moralės	1
 moterį	1
@@ -2928,7 +2916,6 @@ nutraukė	1
 nuvažiuodavome	1
 okupaciją	1
 onkologinės	1
-openwearׅ	1
 operatyvinių-taktinių	1
 opoziciją	1
 optimalų	1
@@ -4115,7 +4102,6 @@ zenitinių	1
 žodžiams	1
 žodžių	1
 žukovskienės	1
-zürich	1
 žurnalinio	1
 žurnalistai	1
 žurnalu	1
@@ -4138,4 +4124,3 @@ zürich	1
 žymiems	1
 žymioje	1
 žymus	1
-александр	1

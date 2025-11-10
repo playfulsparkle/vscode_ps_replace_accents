@@ -126,7 +126,6 @@ sporočila	8
 številu	8
 štiri	8
 večinoma	8
-ćacilendom'	7
 čaka	7
 državi	7
 moškega	7
@@ -211,7 +210,6 @@ sreča	5
 šutarjevega	5
 točk	5
 večkrat	5
-vućko	5
 začel	5
 življenje	5
 ameriškega	4
@@ -261,13 +259,11 @@ prinašajo	4
 prišlo	4
 različice	4
 reševanjem	4
-runtić	4
 šele	4
 šla	4
 smučarje	4
 smučarji	4
 sončno	4
-srzić	4
 starše	4
 štimac	4
 študentov	4
@@ -297,7 +293,6 @@ združenem	4
 ženo	4
 življenja	4
 zmanjšujejo	4
-️	3
 buča	3
 čelu	3
 černobilu	3
@@ -421,7 +416,6 @@ boljše	2
 božanje	2
 brač	2
 brezplačen	2
-ćacilanda	2
 čarovnic	2
 čeljust	2
 cenejših	2
@@ -492,7 +486,6 @@ kič	2
 klinične	2
 kliničnih	2
 ključne	2
-københavn	2
 končal	2
 končali	2
 konečnik	2
@@ -789,7 +782,6 @@ brezplačnih	1
 brezplačno	1
 buldožerje	1
 ča	1
-ćacilend	1
 čakamo	1
 čakat	1
 čarovnic'	1
@@ -917,7 +909,6 @@ držali	1
 državljani	1
 državljanom	1
 državljanski	1
-đukele	1
 duševni	1
 dž	1
 džindzic	1
@@ -958,7 +949,6 @@ hrvaški	1
 hrvaško	1
 hudiča	1
 hujših	1
-husejnović	1
 hvaležen	1
 igrač	1
 inšpekcija	1
@@ -989,7 +979,6 @@ izživljanje	1
 jajčeca	1
 jankovič	1
 jankoviča	1
-jankoviću	1
 janšisti	1
 japončki	1
 jasnejši	1
@@ -1074,7 +1063,6 @@ mešani	1
 mešano	1
 mesečno	1
 metodološko	1
-milanović	1
 miloševićeve	1
 mimoidoče	1
 mimoidočega	1
@@ -1101,9 +1089,6 @@ možno	1
 mreži	1
 mrežo	1
 muči	1
-münchen	1
-münchna	1
-münchnu	1
 načrti	1
 načrtoval	1
 načrtovali	1
@@ -1138,7 +1123,6 @@ narediš	1
 našega	1
 našel	1
 našim	1
-naslonjać	1
 našo	1
 natančen	1
 navdušenje	1
@@ -1166,7 +1150,6 @@ nevoščljivi	1
 newyorškega	1
 newyorški	1
 nezadovoljnež	1
-nikoĺil	1
 nižje	1
 nočna	1
 nočne	1
@@ -1289,7 +1272,6 @@ počutijo	1
 podaljšal	1
 podaljšanja	1
 podaljšat	1
-podlesnićar	1
 področjih	1
 pogledaš	1
 pogostejšimi	1
@@ -1622,7 +1604,6 @@ tržiča	1
 tržna	1
 turčijo	1
 turistične	1
-türk	1
 turška	1
 turške	1
 turškega	1
@@ -1719,8 +1700,6 @@ vsakršno	1
 všeč	1
 vseživljenjskega	1
 vučanović	1
-vućiću	1
-vućki	1
 vučkotu	1
 vzdržnosti	1
 žabica	1

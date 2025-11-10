@@ -211,7 +211,6 @@ ungdomsförbund	4
 vårdcentralen	4
 värre	4
 västbanken	4
-vučić	4
 wäl	4
 å-ljud	3
 adjö	3
@@ -769,7 +768,6 @@ qwäljer	2
 räcken	2
 räddas	2
 rådhuset	2
-rafaël	2
 räkning	2
 rälsbuss	2
 redaktör	2
@@ -1200,7 +1198,6 @@ balkongdörren	1
 balkonghäng	1
 balstämning	1
 bälteskärare	1
-bân-lâm-gú	1
 bankärenden	1
 bänken	1
 båond	1
@@ -1401,14 +1398,12 @@ brudklänningen	1
 cadett-sång	1
 carlén	1
 català	1
-čeština	1
 chaufför	1
 cointreau-ståndet	1
 con-besökarna	1
 crèmer	1
 cröneka	1
 cup-hånet	1
-d’autremont	1
 d'orléans	1
 däcktyper	1
 dagböckerfem	1
@@ -1485,7 +1480,6 @@ drönarjakt	1
 drönarna	1
 drönaroperatörer	1
 drönarvy	1
-dubân	1
 dufwo-röst	1
 dufworöst	1
 e-handelsjättarna	1
@@ -1518,7 +1512,6 @@ erkänner	1
 eröfring	1
 erövrade	1
 erövrarnas	1
-español	1
 että	1
 få	1
 fäder	1
@@ -1606,7 +1599,6 @@ följde	1
 följer	1
 följetong	1
 följt	1
-fôlk	1
 folkhögskolor	1
 folksång	1
 föll	1
@@ -1844,7 +1836,6 @@ framöver	1
 främst	1
 framträdande	1
 framträder	1
-français	1
 fränder	1
 frånta	1
 frånvarande	1
@@ -2278,7 +2269,6 @@ julgåfva	1
 julkänslan	1
 julsång-o	1
 julutställning	1
-junân	1
 käännöksissa	1
 kafé	1
 kåhl	1
@@ -2537,7 +2527,6 @@ lefnadssätt	1
 lejontämjarens	1
 lennström	1
 léopoldville	1
-leszczyński	1
 leveä	1
 levebrödet	1
 leverantörer	1
@@ -2708,7 +2697,6 @@ miljö	1
 miljöbovar	1
 miljön	1
 miljöskyddskonventionen	1
-miloš	1
 minnes-skål	1
 minnesmärken	1
 missförhållandet	1
@@ -2830,7 +2818,6 @@ nedför	1
 nedförsbacke	1
 nedgång	1
 nedgrävda	1
-neuchâtel	1
 nhl-säsong	1
 nils-uttermans-räggla	1
 nivå	1
@@ -3046,8 +3033,6 @@ pö	1
 poäng	1
 poängmaskin	1
 poängplockare	1
-poët	1
-poëtisk	1
 politie-rättens	1
 populär-philosophi	1
 populära	1
@@ -3056,7 +3041,6 @@ porträtt	1
 porträtten	1
 porträtterne	1
 porträttet	1
-português	1
 postlådan	1
 posttjänsten	1
 prästers	1
@@ -3104,7 +3088,6 @@ rälsbussar	1
 rälsen	1
 rammelbuljången	1
 ränna	1
-raphaëls	1
 rår	1
 rastsång	1
 rätt	1
@@ -3150,7 +3133,6 @@ röjandet	1
 rök	1
 röka	1
 rökning	1
-română	1
 rön	1
 ronaldotröja	1
 rönnbärsklasar	1
@@ -3572,7 +3554,6 @@ tårtor	1
 tässäkin	1
 tät	1
 tätä	1
-tatarça	1
 tävlar	1
 tävlings-erfarenhet	1
 tävlingströja	1
@@ -3923,8 +3904,6 @@ vise-polismästarne	1
 vittnesmål	1
 vittnesmålen	1
 vörda	1
-vučević	1
-vučićs	1
 wååhr	1
 wändt	1
 wärckz	1

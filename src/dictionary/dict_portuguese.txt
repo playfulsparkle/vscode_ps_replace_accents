@@ -117,7 +117,6 @@ família	25
 informações	25
 ninguém	25
 só	25
-ª	24
 além	24
 ameaça	24
 atribuição-compartilhaigual	24
@@ -259,7 +258,6 @@ loulé	10
 memória	10
 mudança	10
 música	10
-º	10
 obstetrícia	10
 população	10
 sugestão	10
@@ -363,7 +361,6 @@ império	6
 indivíduos	6
 inglês	6
 localização	6
-lumière	6
 mão	6
 máquinas	6
 matemáticas	6
@@ -458,7 +455,6 @@ caça	4
 cálculo	4
 camiões	4
 cinematógrafo	4
-citroën	4
 côa	4
 competição	4
 constituída	4
@@ -537,7 +533,6 @@ terão	4
 troféu	4
 túnel	4
 variações	4
-viña	4
 ábaco	3
 ação	3
 aço	3
@@ -638,7 +633,6 @@ necessário	3
 necessários	3
 negociações	3
 observações	3
-ºc	3
 páginas	3
 parabólica	3
 paralisação	3
@@ -982,7 +976,6 @@ reúne	2
 rodapé	2
 sábio	2
 satélites	2
-schrödinger	2
 séc	2
 seções	2
 secretária	2
@@ -993,7 +986,6 @@ servirão	2
 sessão	2
 simpósio	2
 sinfónica	2
-škoda	2
 sobrevivência	2
 superfície	2
 supersônico	2
@@ -1019,7 +1011,6 @@ versáteis	2
 virgínia	2
 vitórias	2
 wikificação	2
-ˈislant	1
 ábacos	1
 abolição	1
 abrangência	1
@@ -1047,7 +1038,6 @@ alcançar	1
 alcançou	1
 alcatrão	1
 alçou	1
-algèbre	1
 algérie	1
 alimentação	1
 alocação	1
@@ -1172,7 +1162,6 @@ cândida	1
 cão	1
 caótica	1
 caóticas	1
-čapek	1
 capitães	1
 capitão	1
 carroçarias	1
@@ -1322,7 +1311,6 @@ eclesiástica	1
 ecológico	1
 edições	1
 éditos	1
-ẽfini	1
 egnácia	1
 eléctricos	1
 elétricas	1
@@ -1437,7 +1425,6 @@ françois	1
 fumaça	1
 furgão	1
 futurística	1
-galos’	1
 generalização	1
 genérico	1
 gêneros	1
@@ -1452,9 +1439,7 @@ geopolíticas	1
 geotérmico	1
 gerência	1
 germânica	1
-gjøa	1
 glossário	1
-gödel	1
 goiás	1
 gótico	1
 goulão	1
@@ -1470,7 +1455,6 @@ guiné	1
 habitação	1
 habitável	1
 hábito	1
-haydarpaşa	1
 hectométrico	1
 herança	1
 herói	1
@@ -1554,7 +1538,6 @@ jacareí	1
 jános	1
 japonês	1
 jerónimo	1
-jet’	1
 jornalístico	1
 júpiter	1
 juruá	1
@@ -1636,7 +1619,6 @@ mínimas	1
 míssil	1
 moção	1
 módulos	1
-molière	1
 mongólia	1
 monitorização	1
 monocromática	1
@@ -1699,7 +1681,6 @@ orientação	1
 orientações	1
 originárias	1
 otimização	1
-öv	1
 ovação	1
 pacífico	1
 paço	1
@@ -1749,7 +1730,6 @@ pós-terramoto	1
 posições	1
 possuíam	1
 poupanças	1
-präsident	1
 práticas	1
 prático	1
 pré-histórica	1
@@ -1840,13 +1820,10 @@ rococó	1
 rodá-lo	1
 rodízio	1
 rodoviários	1
-röhr	1
 romano-germânico	1
 rómulo	1
 rosário	1
 roteirização	1
-routières	1
-rovanperä	1
 rúben	1
 saíram	1
 salões	1
@@ -1938,7 +1915,6 @@ tubulação	1
 turísticos	1
 turnês	1
 únicas	1
-unidiseño	1
 urânio	1
 uruá	1
 útil	1
@@ -1966,12 +1942,3 @@ vulnerável	1
 wolfmüller	1
 zaporíjia	1
 zoológico	1
-αὐτός	1
-ιστορία	1
-λογία	1
-μ	1
-σοφία	1
-σοφός	1
-τέχνη	1
-φιλία	1
-φιλοσοφία	1

@@ -192,7 +192,6 @@ brühe	13
 fachenzyklopädien	13
 flächenland	13
 funktionsverbgefüge	13
-húsavík	13
 kölner	13
 landtagspräsidentin	13
 lückenhaft	13
@@ -288,7 +287,6 @@ böhmen	10
 ergänzen	10
 fächer	10
 flächenländern	10
-fraîche	10
 fürsten	10
 gehörenden	10
 gemeindeverbände	10
@@ -499,10 +497,8 @@ pürierstab	7
 räterepublik	7
 regelmäßige	7
 residenzstädte	7
-reykjavík	7
 rot-grüne	7
 rüsselsheim	7
-sigló	7
 spätantike	7
 spätmittelalter	7
 spezialität	7
@@ -522,7 +518,6 @@ universitäts-	7
 universitätsstadt	7
 vielfältigen	7
 vorgänge	7
-vučić	7
 wählte	7
 währungsrechner	7
 wiedergründung	7
@@ -667,7 +662,6 @@ bewölkt	5
 biosphärenreservate	5
 blätter	5
 böhrnsen	5
-cvijić	5
 dächern	5
 dänemarks	5
 deutsch-dänischen	5
@@ -677,7 +671,6 @@ eichstätt	5
 eigenständiges	5
 einfügst	5
 einzufügen	5
-enkýklios	5
 entlässt	5
 erhöhten	5
 erklärst	5
@@ -709,7 +702,6 @@ gütersloh	5
 hausmärchen	5
 herzöge	5
 hinzufügen	5
-hófsós	5
 hügel	5
 hügelige	5
 hunsrücks	5
@@ -741,7 +733,6 @@ langjährige	5
 läufe	5
 lebensqualität	5
 lehrkräfte	5
-lópez	5
 lörrach	5
 löwenburg	5
 madonnenländchen	5
@@ -781,7 +772,6 @@ rückwirkend	5
 rückzug	5
 saarländer	5
 sämtlicher	5
-são	5
 schmölln	5
 schöpfung	5
 schützende	5
@@ -1040,13 +1030,11 @@ opernhäuser	4
 österreichisches	4
 ostthüringische	4
 over-ear-kopfhörer	4
-paideía	4
 palácio	4
 peenemünde	4
 pfälzische	4
 pfälzischen	4
 philipps-universität	4
-poço	4
 populäre	4
 pößneck	4
 präfektur	4
@@ -1079,7 +1067,6 @@ schönberg	4
 schönbrunn	4
 schöne	4
 schuldenstände	4
-sebastião	4
 selbstständig	4
 selbstständige	4
 selbstständigkeit	4
@@ -1141,7 +1128,6 @@ verkündung	4
 vermögenslage	4
 veröffentlichung	4
 verwöhnen	4
-victória	4
 viertgrößte	4
 vizepräsident	4
 vögte	4
@@ -1228,14 +1214,11 @@ bräuche	3
 bremervörde	3
 brügge	3
 bücherhallen	3
-budyšin	3
 bundesbehörden	3
 burevestnik-marschflugkörper	3
 bürgerpreis	3
 büste	3
 café	3
-chaldūn	3
-croûtons	3
 dafür	3
 dänen	3
 datensätze	3
@@ -1294,7 +1277,6 @@ flächenanteil	3
 flächenkleinsten	3
 fortzüge	3
 fpö-generalsekretär	3
-française	3
 fränkischer	3
 fränzi	3
 freifläche	3
@@ -1426,7 +1408,6 @@ köstlichkeiten	3
 kreuzkümmel	3
 kriegsgräber	3
 kriegsgräberanlagen	3
-krýsuvík	3
 kühles	3
 kultstätte	3
 kulturstätten	3
@@ -1526,7 +1507,6 @@ reichspräsident	3
 reichsstädten	3
 religiöses	3
 residenzschlösser	3
-río	3
 röbel	3
 röder	3
 römern	3
@@ -1558,15 +1538,12 @@ schützenfest	3
 schwarzwälder	3
 seán	3
 seebäder	3
-şehitlik-moschee	3
 sekretärin	3
 sekundärradar	3
 sicherheitskräfte	3
 siebtgrößte	3
 siegermächte	3
 siegessäule	3
-sinató	3
-škola	3
 söhne	3
 sorgfältig	3
 späte	3
@@ -1725,7 +1702,6 @@ admiralitätswappen	2
 ähnliche	2
 ähnlichen	2
 aktivitäten	2
-alcúdia	2
 alleingänge	2
 alljährliche	2
 alljährlichen	2
@@ -1789,7 +1765,6 @@ außenküste	2
 äußerte	2
 äußerungen	2
 außeruniversitären	2
-ausstellung_3_sebastião	2
 ausstellungshäuser	2
 ausübung	2
 auswärtigen	2
@@ -1805,7 +1780,6 @@ badegewässer-atlas	2
 badegewässern	2
 badegewässerqualität	2
 baden-württembergischer	2
-bahā	2
 bahnübergänge	2
 bahnübergängen	2
 bäke	2
@@ -1844,7 +1818,6 @@ beleuchtungslösungen	2
 bemühte	2
 bergbaustädte	2
 bergbaustätten	2
-berríos	2
 berücksichtigen	2
 berufstätiger	2
 berühmten	2
@@ -1910,7 +1883,6 @@ brüten	2
 bruttolöhne	2
 bruttowertschöpfung	2
 büchen	2
-budō	2
 bühring	2
 bundesergänzungszuweisungen	2
 bundesländer	2
@@ -1935,10 +1907,8 @@ bürogebäude	2
 bürostadt	2
 büxt	2
 calvörde	2
-castellón	2
 christian-albrechts-universität	2
 churfürstliche	2
-cilenšek	2
 clara-cäcilia	2
 cöln	2
 corona-sondervermögen	2
@@ -1972,7 +1942,6 @@ drittstärkste	2
 dröhmer	2
 drömling	2
 dübener	2
-duchač	2
 düne	2
 dünen	2
 düngemittel	2
@@ -2101,7 +2070,6 @@ först	2
 forstämter	2
 fortgeführt	2
 fortwährende	2
-français	2
 frankenhöhe	2
 französischem	2
 frédéric	2
@@ -2237,7 +2205,6 @@ grenzübergänge	2
 grenzübergangs	2
 grenzübergreifenden	2
 grenzüberschreitende	2
-grindavík	2
 gröde	2
 grönland	2
 großflächige	2
@@ -2265,7 +2232,6 @@ grünendeich	2
 grünkohl	2
 grünlandwirtschaft	2
 grüntjens	2
-grýla	2
 güllemengen	2
 gülüstan-mausoleum	2
 güterbezirke	2
@@ -2338,7 +2304,6 @@ hülfensberg	2
 hülzweiler	2
 hunsrück-hochwald	2
 hüpft	2
-húsaví	2
 hüten	2
 hüttenwesen	2
 hützeler	2
@@ -2361,7 +2326,6 @@ iván	2
 jährlicher	2
 jährliches	2
 josé	2
-józef	2
 jübek	2
 jubiläums	2
 jüdisch-mittelalterliche	2
@@ -2484,7 +2448,6 @@ leistungsfähig	2
 leistungsfähigkeit	2
 leistungsfähigsten	2
 leistungsstärksten	2
-león	2
 lesenswertthüringenbundesland	2
 leuchttürmen	2
 liberalität	2
@@ -2502,7 +2465,6 @@ lösung	2
 lösungen	2
 lübke	2
 ludwig-maximilians-universität	2
-luís	2
 lüke	2
 luxuriösen	2
 mächtigere	2
@@ -2512,7 +2474,6 @@ majestätischen	2
 malmö	2
 männer	2
 männerkreis	2
-måns	2
 märchen	2
 märchenbeschreibung	2
 märkischen	2
@@ -2521,7 +2482,6 @@ marschflugkörper	2
 märz	2
 mäßige	2
 maßstäbe	2
-matías	2
 matthäus-evangelium	2
 matthäus-kirche	2
 mäuse	2
@@ -2576,8 +2536,6 @@ musikpädagogen	2
 musikstücke	2
 muskatkürbis	2
 müsli	2
-mývatn	2
-mývatn-gebiet	2
 nachbarstädte	2
 nachrücken	2
 nachschöpfung	2
@@ -2911,8 +2869,6 @@ südweststaats	2
 südwürttemberg-hohenzollern	2
 sümpfe	2
 suppen-glück	2
-świebodzice	2
-świętów	2
 tagebücher	2
 täler	2
 tänzer	2
@@ -2927,7 +2883,6 @@ tatsächlichen	2
 tatverdächtigen	2
 täufer	2
 technikfolgenabschätzung	2
-tegnspråksenter	2
 teilherzogtümer	2
 teltow-fläming	2
 tempelhof-schöneberg	2
@@ -3240,7 +3195,6 @@ zwölftgrößtes	2
 aachen-kornelimünster-walheim	1
 abbé-komparator	1
 äbbelwoihessisch	1
-abdul-bahā	1
 ábel	1
 abergläubisch	1
 abfälle	1
@@ -3296,17 +3250,14 @@ adelfränkisch	1
 adelshöfe	1
 adenauer-bus-affäre	1
 advokätzchen	1
-afā	1
 afd-anhängern	1
 affäre	1
 affter-buchhändler	1
 afölk	1
-âge	1
 aggregatszuständen	1
 ägidius	1
 agrarbehörde	1
 águila	1
-agustín	1
 ägyptens	1
 ägyptisches	1
 ägyptologe	1
@@ -3316,16 +3267,12 @@ agustín	1
 ähnlichkeit	1
 ahornbäume	1
 ahrensbök	1
-aírton	1
 ak-präsident	1
 aktionskünstler	1
 aktivität	1
-al-athīr	1
-al-chwārizmi	1
 albert-ludwigs-universität	1
 albhochfläche	1
 albträume	1
-alcañón	1
 alemán	1
 alemannisch-fränkischen	1
 alérion	1
@@ -3367,7 +3314,6 @@ altsächsischen	1
 altsüdarabische	1
 altwarmbüchen	1
 amalfiküste	1
-amīr	1
 amokläufer	1
 amöneburger	1
 amtsangehörigen	1
@@ -3397,7 +3343,6 @@ angehörige	1
 angehöriger	1
 angelsächsische	1
 angenähert	1
-ångermanland	1
 angermünde	1
 angerösteten	1
 ängste	1
@@ -3432,8 +3377,6 @@ ansässigen	1
 anschläge	1
 anständiger	1
 anständiges	1
-antão	1
-antónio	1
 anträge	1
 anträgen	1
 anwächst	1
@@ -3451,7 +3394,6 @@ aquäduktenmarmor	1
 aquädukts	1
 äquatorialguinea	1
 äquivalent	1
-arapović	1
 arbeitnehmerstärkste	1
 arbeitsblätter	1
 arbeitskräfte	1
@@ -3472,16 +3414,13 @@ architekturbüros	1
 ärgerlich	1
 ärgert	1
 ärgerte	1
-århus	1
 aríbisálà	1
 ärmelkanal	1
 armen-brüder	1
 ärmliche	1
 armutsbekämpfung	1
 armutsgefährdet	1
-arqueológico	1
 árskógssandur	1
-årsmøder	1
 artikellänge	1
 artillerieaufklärungsradar	1
 ärztedichte	1
@@ -3490,11 +3429,8 @@ artillerieaufklärungsradar	1
 ärztestatistik	1
 ärzteverbände	1
 aschendorf-hümmling	1
-åsele	1
 asnières	1
 assistenzkräften	1
-aššur	1
-aššurbanipal	1
 assyrisch-aramäische	1
 asteroidenersterwähnung	1
 ästhetiken	1
@@ -3502,7 +3438,6 @@ asteroidenersterwähnung	1
 ästhetische	1
 astlänge	1
 astungssäge	1
-at-tabarī	1
 atemzüge	1
 athenäum	1
 ätherische	1
@@ -3518,7 +3453,6 @@ atommülllager	1
 atomtest-ankündigungen	1
 atomwaffen-übungen	1
 attaché-korps	1
-attuša	1
 audionröhre	1
 auerhähne	1
 aufbackbrötchen	1
@@ -3651,7 +3585,6 @@ auwäldern	1
 avantgardekünstler	1
 azimutauflösung	1
 baakenhöft	1
-bāb	1
 babycafés	1
 babylöffel	1
 bächle	1
@@ -3678,12 +3611,10 @@ bairisch-fränkische	1
 bairisch-österreichische	1
 bairisch-schwäbisch-fränkische	1
 bairisch-schwäbische	1
-bajowarjōz	1
 balduinbrücke	1
 ballauf-wilhelmswörth	1
 bälle	1
 ballungsräumen	1
-bambić	1
 bankbeschäftigten	1
 bänke	1
 bänken	1
@@ -3695,14 +3626,11 @@ bärenreiter	1
 bärenschild	1
 bärensee	1
 bärin	1
-barış	1
 barockgärten	1
 barockgebäude	1
-barón	1
 barsbüttel	1
 basel-mülhausen	1
 basteibrücke	1
-bâtir	1
 baudenkmälern	1
 bäuerlich	1
 bäuerlichen	1
@@ -3744,7 +3672,6 @@ begrüßte	1
 begütert	1
 behält	1
 behälter	1
-bēheima	1
 behörde	1
 behördenfinder	1
 behördenverzeichnis	1
@@ -3770,7 +3697,6 @@ bemängelt	1
 bemängelte	1
 bemühen	1
 bemühungen	1
-benoît	1
 benötigen	1
 benötigt	1
 benötigte	1
@@ -3804,7 +3730,6 @@ berühmt	1
 berühmte	1
 berühmteren	1
 berührten	1
-besançon-la	1
 beschädigt	1
 beschädigten	1
 beschäftigten-zahlen	1
@@ -3920,7 +3845,6 @@ blättern	1
 blätterteig	1
 blätterteigkreisen	1
 blätterteigrolle	1
-blåvandshuk	1
 blöcke	1
 blöcken	1
 blühen	1
@@ -3999,7 +3923,6 @@ bräutigam	1
 bräutigamseichen	1
 bremen-gröpelingen	1
 bremisch-niedersächsische	1
-briceño	1
 bröckelt	1
 brockhaus-enzyklopädie	1
 bronzegüsse	1
@@ -4137,16 +4060,12 @@ butternut-kürbissuppe	1
 butternutkürbis-suppe	1
 bützow	1
 caballé	1
-čačaks	1
 cafés	1
-çakır	1
-calderón	1
 campari-mehrheitsaktionär	1
 candomblé	1
 cantimpré	1
 carl-von-ossietzky-universität	1
 carlshütte	1
-carreço	1
 cd-rom-enzyklopädie	1
 cd-rom-enzyklopädien	1
 cdu-generalsekretär	1
@@ -4164,8 +4083,6 @@ chichén	1
 chihuahua-wüste	1
 chimären	1
 chöre	1
-ciência	1
-citânia	1
 cité	1
 classée	1
 cláudio	1
@@ -4177,7 +4094,6 @@ computerschränken	1
 computerunterstütztes	1
 condamné	1
 containerschiffsgrößen	1
-çopur	1
 corona-verläufe	1
 cristián	1
 csu-geführten	1
@@ -4187,7 +4103,6 @@ cybermilitär	1
 cyclohexenyl-nucleinsäure	1
 d-züge	1
 d'économie	1
-d'extrême-orient	1
 dachstübchen	1
 dahle-mündung	1
 dämme	1
@@ -4257,14 +4172,11 @@ diät	1
 dichterfürsten	1
 dickflüssige	1
 diesbezüglich	1
-dihlavī	1
 diözesen	1
 direktflüge	1
 direktzügen	1
-di̇ti̇b	1
 diversität	1
 dna-strängen	1
-dōan	1
 döbernitz	1
 döblin	1
 döhren	1
@@ -4360,7 +4272,6 @@ düsseldorfs	1
 düsterer	1
 düw	1
 düwel	1
-džihić	1
 eberschützer	1
 eberspächer	1
 eckernföör	1
@@ -4385,7 +4296,6 @@ eigentümer	1
 eigentümerschaft	1
 eigentümerwechsel	1
 eigentümliche	1
-einarsdóttir	1
 einbände	1
 einbänden	1
 einbändige	1
@@ -4489,7 +4399,6 @@ elfenbeinflöte	1
 elftgrößte	1
 élie	1
 eliteuniversitäten	1
-elle-même	1
 elsässischen	1
 émile	1
 emmaus-jünger	1
@@ -4511,7 +4420,6 @@ endmoränenzüge	1
 energieüberträger	1
 energiezähler	1
 engländer	1
-enkýkliou	1
 entblößtes	1
 entfährt	1
 entfällt	1
@@ -4645,13 +4553,11 @@ erzbischöfliche	1
 erzürnen	1
 és	1
 eselshütte	1
-españa	1
 espèce	1
 esslöffel	1
 etagenhäusern	1
 étendue	1
 ethik-schüler	1
-être	1
 eu-ausländer	1
 eu-ländern	1
 eu-ökoverordnung	1
@@ -4676,7 +4582,6 @@ exportmärkte	1
 exportüberschuss	1
 exzellenzuniversität	1
 ezéchiel	1
-ezerjó	1
 fabrikgebäude	1
 fabrikgebäudes	1
 fabrikgrundstücken	1
@@ -4725,7 +4630,6 @@ farbausführungen	1
 färbung	1
 färbungen	1
 farnblättriger	1
-faúndez	1
 federfüßiges	1
 fehleinschätzungen	1
 feingerätetechnik	1
@@ -4733,7 +4637,6 @@ feldgeschütze	1
 feldzüge	1
 félix	1
 felsvorsprüngen	1
-fenyő	1
 fernbahnhöfen	1
 fernsehgeräten	1
 fernwärme	1
@@ -4742,7 +4645,6 @@ fernwärmenetz	1
 fernwärmeversorgung	1
 fertilität	1
 festgefügten	1
-fête	1
 fettsäure	1
 feuchttücher	1
 feuergefährdet	1
@@ -4871,7 +4773,6 @@ förderung	1
 förderungen	1
 förderungsmöglichkeiten	1
 förderwagen	1
-forêt	1
 förmliche	1
 forschungsgegenstände	1
 forschungsstärke	1
@@ -4887,10 +4788,7 @@ fortzügen	1
 fossillagerstätte	1
 fpö-landeshauptmann	1
 fragwürdig	1
-fraîcheoder	1
 fraktionsstärke	1
-françaises	1
-françois	1
 fränk	1
 fränkisch-sächsische	1
 fränkisches	1
@@ -5339,7 +5237,6 @@ gezündeten	1
 gezwängt	1
 gibsonwüste	1
 gimnázium	1
-gioventù	1
 gipfelstürmern	1
 glan-nahe-entwässerungsgebiet	1
 gläsernes	1
@@ -5435,7 +5332,6 @@ grenzverläufen	1
 grenzwertüberschreitungen	1
 griechenlandrömisches	1
 griechisch-römischen	1
-grikšas	1
 grillé	1
 grimme-preisträger	1
 gröber	1
@@ -5573,7 +5469,6 @@ güterverkehrs-	1
 güterzüge	1
 gutsdörfer	1
 gutshöfe	1
-ġużi	1
 guzmán	1
 gyula-lászló-gymnasium	1
 hackbällchencroûtons	1
@@ -5695,7 +5590,6 @@ hellhäutiger	1
 helmut-schmidt-universität	1
 hemisphäre	1
 hengstzüchtungen	1
-henríquez	1
 herbeigeführt	1
 herbeizuführen	1
 herbstgemüse	1
@@ -5736,7 +5630,6 @@ hinterländer	1
 hinterlässt	1
 hinzufügenvisuelltext	1
 hinzugefügt	1
-história	1
 hitler-attentäter	1
 hobby-militärarchäologe	1
 hochauflösenden	1
@@ -5787,7 +5680,6 @@ höhlenrettung	1
 höhö	1
 höhr-grenzhausen	1
 hokkaido-kürbis	1
-holečkova	1
 holládi-erdő	1
 holländischen	1
 hölle	1
@@ -5806,7 +5698,6 @@ holzhäuser	1
 homogenitätsgebot	1
 homöobox-proteine	1
 honoré	1
-honshū	1
 höpfler	1
 hoppstädter	1
 hörbare	1
@@ -5867,7 +5758,6 @@ hüpf	1
 hüpfstelzen	1
 hüpfte	1
 hürde	1
-húsavíker	1
 hüter	1
 hüthig	1
 hütte	1
@@ -5877,7 +5767,6 @@ hüttenkäse	1
 hüttenwerke	1
 hydro-québec	1
 hydrosphäre	1
-hyōgo	1
 hyperstabilität	1
 i-tüpfelchen	1
 ibáñez	1
@@ -5895,7 +5784,6 @@ identitätsstiftenden	1
 identitätsstiftung	1
 identitätssuche	1
 ig-metall-funktionärin	1
-īlīya	1
 imaginäre	1
 immerwährenden	1
 immerwährender	1
@@ -5949,10 +5837,8 @@ irrtümlich	1
 islamverbänden	1
 isländische	1
 isländischem	1
-ismā	1
 isoglossenbündel	1
 israelisch-französische	1
-itō	1
 itzá	1
 itzá-maya	1
 jagdschlösschen	1
@@ -5970,14 +5856,11 @@ jahrgangsübergreifendem	1
 jährlich	1
 jährliche	1
 jahrmärkte	1
-janović	1
 japurá	1
 jasminblüte	1
 jerusalemvizepräsident	1
 jesuiten-kommunität	1
 jianshan-höhle	1
-jiří	1
-joão	1
 jockenhövel	1
 johannes-gutenberg-universität	1
 johannes-höver-haus	1
@@ -6005,7 +5888,6 @@ jungpleistozän	1
 jüngst	1
 jüngste	1
 jüngsten	1
-júnior	1
 junkersmühle	1
 jupitergigantensäule	1
 jürgens	1
@@ -6047,8 +5929,6 @@ kämpften	1
 kantenlängen	1
 kapazität	1
 kapazitäten	1
-karikó	1
-karkemiš	1
 karlsbüste	1
 karlsruhe-münchen	1
 karlsschützengilde	1
@@ -6082,7 +5962,6 @@ kaufmännische	1
 kaufmännischen	1
 keltenfürsten	1
 keltisch-römische	1
-kendō	1
 kennedybrücke	1
 ketoglutarsäure	1
 kettensäge	1
@@ -6106,7 +5985,6 @@ kirschblütenbäume	1
 kirschblütenbäumen	1
 kirschblütenzeit	1
 kirschblütenzweig	1
-kiš	1
 kita-gebühr	1
 kitzbühel	1
 klänge	1
@@ -6312,7 +6190,6 @@ krünitz	1
 küche	1
 küchen	1
 küchenhilfe	1
-kudō	1
 kühberger	1
 kühen	1
 kühl	1
@@ -6434,10 +6311,8 @@ küstenstadt	1
 küster	1
 küstrin	1
 kütahya	1
-kyohō	1
 kz-gedenkstätte	1
 kz-häftlinge	1
-l'ouïe	1
 lächeln	1
 lächelnd	1
 lächelte	1
@@ -6445,7 +6320,6 @@ lächerliche	1
 läden	1
 ladenöffnungszeiten	1
 lädt	1
-lagaš	1
 lagerstätten	1
 lagerstättenkunde	1
 lähmt	1
@@ -6521,7 +6395,6 @@ lärm	1
 lärmbelästigung	1
 läßt	1
 lästert	1
-lâtife	1
 lätta	1
 latücht	1
 lätzchen	1
@@ -6593,12 +6466,10 @@ löhnen	1
 lohnzuwächse	1
 löhr-center	1
 löhrmann	1
-loïs	1
 lombardsbrücke	1
 lön	1
 löneke	1
 löptin	1
-lőrincz	1
 lösbar	1
 lösbares	1
 löschanträgen	1
@@ -6690,7 +6561,6 @@ mädchenflohmarkt	1
 mädchengymnasium	1
 mädchenpensionat	1
 mädchenschule	1
-mafātī	1
 mahlerey-künste	1
 mähren	1
 mährische	1
@@ -6703,7 +6573,6 @@ majestätischer	1
 mäkelei	1
 mala-balanica-höhle	1
 malangré	1
-mâle	1
 mandats-palästina	1
 mandelöl	1
 mängel	1
@@ -6721,7 +6590,6 @@ männliches	1
 manövriersystemen	1
 manövrierunfähig	1
 mansfäller	1
-manteño-guancavilca-kultur	1
 mapungubwe-hügel	1
 marathonläufe	1
 märc	1
@@ -6736,7 +6604,6 @@ märchentag	1
 märchenweg	1
 márcio	1
 marienglashöhle	1
-marín	1
 marinestützpunkt	1
 marionettenmörder	1
 markgräflerland	1
@@ -6748,7 +6615,6 @@ markranstädt	1
 märkte	1
 märkten	1
 marschengewässer	1
-martín	1
 märzkämpfen	1
 märzke	1
 märzministerium	1
@@ -6791,10 +6657,7 @@ mehrtägigen	1
 mehrzügigen	1
 meisterprüfung	1
 meistumkämpften	1
-mękelborg	1
-même	1
 meme-kostüm	1
-mêmes	1
 mémoire	1
 mengenverhältnis	1
 mentalitäten	1
@@ -6818,12 +6681,8 @@ messerrücken	1
 messgerät	1
 méthodique	1
 methylarsonsäure	1
-mezarlığı	1
-michaël	1
-miedź	1
 mietfahrräder	1
 mikrofonständer	1
-mikulaštik	1
 militär	1
 militär-lehrschmiede	1
 militärarchäologie	1
@@ -6938,7 +6797,6 @@ moréri	1
 moréris	1
 mörschied	1
 mörser	1
-moschión	1
 moselbrücken	1
 moselfränkischsprachigen	1
 moseltalbrücke	1
@@ -7000,7 +6858,6 @@ mündliche	1
 mundsburg-türme	1
 mündungen	1
 mündungstrichter	1
-muñoz	1
 münster	1
 münsterhügel	1
 münsterkäse	1
@@ -7032,8 +6889,6 @@ mütze	1
 mysteriös	1
 mysteriösen	1
 mysteriöseste	1
-mývatn-see	1
-mývatn-sees	1
 nachbardörfer	1
 nachbarländern	1
 nachgeschöpften	1
@@ -7117,7 +6972,6 @@ neutralitätsverpflichtung	1
 neuzeitarchäologie	1
 newborn-größe	1
 ngày	1
-ngũgĩ	1
 nicht-binären	1
 nicht-ständiges	1
 nichteuropäische	1
@@ -7140,7 +6994,6 @@ niedriglöhne	1
 nö-news-newsletter	1
 nö-vizelandeshauptmann	1
 no2-grenzwertüberschreitungen	1
-noë	1
 nohfelden-sötern	1
 nölke	1
 nord-süd-ausrichtung	1
@@ -7164,7 +7017,6 @@ nordsächsischen	1
 nordverlängerung	1
 nordwest-südost	1
 nordwürttemberg	1
-noreña	1
 normenkontrollanträgen	1
 nöß	1
 nötig	1
@@ -7174,7 +7026,6 @@ nrw-bevölkerung	1
 ns-größen	1
 nuklearsprengköpfe	1
 nuklearsprengköpfen	1
-núñez	1
 nüral	1
 nürnberg-dutzendteich	1
 nürnberger	1
@@ -7209,7 +7060,6 @@ oberschulämter	1
 oberschwäbischen	1
 oberschwärzenbach	1
 obershäubchen	1
-oblačinska	1
 obskurität	1
 obstbaumblüte	1
 obstbrände	1
@@ -7276,7 +7126,6 @@ opernaufführung	1
 opernaufführungen	1
 opernsängerin	1
 öpnv-abo	1
-oporów	1
 ordnungsämtern	1
 öresundregion	1
 organisationsübergreifenden	1
@@ -7315,15 +7164,12 @@ ostwürttemberg	1
 otto-friedrich-universität	1
 otto-von-guericke-universität	1
 ötzi	1
-où	1
 över	1
 pächt	1
 pädagoge	1
 pädagogisch-didaktische	1
 pädagogischer	1
 pädagogium	1
-padevět	1
-paideías	1
 pál	1
 paläo-elbe	1
 paläoklimatologie	1
@@ -7362,7 +7208,6 @@ passivität	1
 pastelltöne	1
 patentgeschützte	1
 pauschalbeträge	1
-pavlović	1
 pediküre	1
 pedosphäre	1
 pendlerströme	1
@@ -7418,10 +7263,7 @@ phimaen-höhle	1
 phytosanitär	1
 picknickplätzen	1
 pietà	1
-pilismarót	1
 pionierländer	1
-pisão	1
-più	1
 pkw-parkplätze	1
 plácido	1
 plädieren	1
@@ -7431,7 +7273,6 @@ pläne	1
 planmäßigem	1
 planmäßigkeit	1
 planstädte	1
-plantagenêt	1
 planungsräume	1
 plärrer	1
 plätschern	1
@@ -7452,7 +7293,6 @@ plünderten	1
 poker-einsätze	1
 pokroková	1
 polenta-soufflé	1
-polítiker	1
 polizeikräften	1
 polizeipräsident	1
 polizeipräsidenten	1
@@ -7465,7 +7305,6 @@ popularität	1
 populärkultur	1
 populärste	1
 portalwünsche	1
-porto-campanhã	1
 porträt	1
 porträtieren	1
 porträtiert	1
@@ -7473,9 +7312,6 @@ portugaleser-münzen	1
 positurtümmler	1
 postižené	1
 powerräder	1
-powiązań	1
-poznań	1
-praça	1
 prachtbände	1
 prächtige	1
 prächtigen	1
@@ -7520,7 +7356,6 @@ primärradar	1
 primärrecht	1
 primärsektor	1
 primátor	1
-príncipe	1
 priorität	1
 privat-universität	1
 privatflüge	1
@@ -7549,7 +7384,6 @@ prüfungskommission	1
 prüfungsschule	1
 prüfverfahren	1
 prüfwerkzeug	1
-przerębski	1
 ps-hölle	1
 pseudokohärentes	1
 pumpermühlen	1
@@ -7578,12 +7412,10 @@ québec	1
 radikalität	1
 ragöse	1
 rahmsüppchen	1
-ramón	1
 ränge	1
 rangerhöhung	1
 rangierbahnhöfe	1
 rangierbahnhöfen	1
-rasā	1
 rastmöglichkeiten	1
 raststätte	1
 rät	1
@@ -7596,13 +7428,11 @@ rätseln	1
 rätselten	1
 ratspräsidentschaft	1
 räuberfleisch	1
-rauchbauer-erdő	1
 räucherfisch	1
 räucherhaus	1
 räuchermännchen	1
 räuchern	1
 räucherrituale	1
-raúl	1
 räume	1
 räumen	1
 räumgig	1
@@ -7681,7 +7511,6 @@ repräsentationsbau	1
 repräsentativen	1
 repräsentieren	1
 repräsentiert	1
-república	1
 residenzstädten	1
 restaurantführer	1
 resthöft	1
@@ -7734,7 +7563,6 @@ römerzeit	1
 römisch-deutscher	1
 römisch-germanisches	1
 römischen	1
-rómverjar	1
 röntgen-aufnahme	1
 röntgengerät	1
 röntgenlaser	1
@@ -7812,7 +7640,6 @@ ruhr-universität	1
 ruhrbehörde	1
 rührei	1
 rühren	1
-ruíz	1
 ruländer	1
 rumänen	1
 rumänien	1
@@ -7841,7 +7668,6 @@ saargemünd-zweibrücker	1
 saarländisch	1
 saarländisch-französischen	1
 saarzuflüsse	1
-şabran	1
 sacherklärung	1
 sachsen-verbindungsbüro	1
 sächsisch-thüringischen-gewerbeausstellung	1
@@ -7889,13 +7715,8 @@ sängern	1
 sanitäre	1
 sanitätsakademie	1
 sanitätsführungskommando	1
-santería	1
 sap-gründer	1
-sardão	1
 särge	1
-šarrukin	1
-sąsiedzkiej	1
-sąsiedztwa	1
 satellitengeodäsie	1
 satellitenstädte	1
 satéspießchen	1
@@ -8106,7 +7927,6 @@ segelwettkämpfe	1
 seggenrohrsänger	1
 sehenswürdigkeit	1
 sehenswürdigkeiten-liste	1
-şehir	1
 sehsüchten	1
 seitenflügeln	1
 seitengebäude	1
@@ -8125,7 +7945,6 @@ selbstverständlich	1
 selbstverständnis	1
 selbstverwaltungskörperschaften	1
 selbstzerstörungssystem	1
-selçuk	1
 semmelknödel	1
 senatsbehörden	1
 senderübergreifenden	1
@@ -8134,9 +7953,6 @@ sensibilität	1
 seriosität	1
 server-schränken	1
 sexualität	1
-shinbutsu-shūgō	1
-shintō	1
-shintō-schrein	1
 shovakh-höhle	1
 sicán-kultur	1
 sichtbetonwänden	1
@@ -8152,13 +7968,8 @@ silberhütchen	1
 singvögeln	1
 sinngemäß	1
 själevadsån	1
-sjåvold	1
 skála	1
-skalić	1
-skarsgård	1
-skovtårnet	1
 slawendörfer	1
-sluchově	1
 snowden-enthüllungen	1
 societätsverlag	1
 södra	1
@@ -8276,7 +8087,6 @@ spüren	1
 spürnasen	1
 spürst	1
 spürte	1
-staats-shintō	1
 staatsangehöriger	1
 staatsangehörigkeit	1
 staatsfläche	1
@@ -8363,13 +8173,11 @@ sterbefälle	1
 sterbenmüssen	1
 sterbeüberschuss	1
 sterneköchin2011	1
-stettin-goleniów	1
 steuererhöhungen	1
 steuererklärungen	1
 steuerfälle	1
 steuerprüfung	1
 stiftsdörfer	1
-štih	1
 stöbern	1
 stöbert	1
 stocherkähne	1
@@ -8390,7 +8198,6 @@ straßenverkehrsmäßig	1
 straßenverkehrsunfälle	1
 sträßer	1
 streckenführung	1
-střední	1
 streitgespräch	1
 streitkräfte	1
 streitkräftebasis	1
@@ -8529,7 +8336,6 @@ sühne	1
 sühnen	1
 süllberg	1
 sultan-abdul-samad-gebäude	1
-sumō	1
 sumokämpferin	1
 sünje	1
 sünke	1
@@ -8539,7 +8345,6 @@ supermärkten	1
 süppchen	1
 suppengemüsetk	1
 suppengrün	1
-šuruppak	1
 süss	1
 süß	1
 süße	1
@@ -8563,7 +8368,6 @@ sütterlin-waack	1
 süw	1
 swinemünde	1
 synästhetischer	1
-t-erdő	1
 tabaré	1
 tagebaugerätetechnik	1
 tagelöhner	1
@@ -8574,13 +8378,11 @@ tagesrückblick	1
 täglich	1
 tägliche	1
 tagsüber	1
-taíno	1
 talbrücke	1
 tanzbälle	1
 tänzerin	1
 tänzerinnen	1
 tarifbeschäftigte	1
-taş	1
 täter-opfer-umkehr	1
 tätigen	1
 tätigkeit	1
@@ -8591,7 +8393,6 @@ tauber-gäuplatten	1
 täufergemeinden	1
 täuschung	1
 téchne	1
-technikós	1
 techno-nächte	1
 technologiesprünge	1
 teigblätter	1
@@ -8605,7 +8406,6 @@ teilsouveränität	1
 teilstationäre	1
 teilstücke	1
 teilstücks	1
-telefónica	1
 temperaturhöchstwert	1
 temporäre	1
 tennisschläger	1
@@ -8613,7 +8413,6 @@ tércio	1
 tertiär	1
 tertiärer	1
 tertiärsektor	1
-tês	1
 testankündigung	1
 teufelsbrück	1
 teufelshöhle	1
@@ -8640,10 +8439,8 @@ tiefgründige	1
 tiefkühlproduktion	1
 tierärztekammer	1
 tierärztliche	1
-timčo	1
 tischtennisschläger	1
 titelblättern	1
-titriş	1
 tk-kürbis	1
 töchterschule	1
 todesfälle	1
@@ -8663,7 +8460,6 @@ tönnesmann	1
 tonträger	1
 tonträger-unternehmen	1
 top-städten	1
-tordai-lejkó	1
 torjäger	1
 tornado-häufigkeit	1
 torpedo-trümmerinsel	1
@@ -8727,7 +8523,6 @@ tü	1
 tücher	1
 tüchersfels	1
 tüchtig	1
-túcume	1
 tüdelband	1
 tüdern	1
 tüftler	1
@@ -8974,10 +8769,6 @@ u-yüan	1
 übungshängen	1
 übungsstunden	1
 uckermärkische	1
-uğurcan	1
-ullāh	1
-ullāhs	1
-ulūm	1
 umfängen	1
 umfänglich	1
 umfüllt	1
@@ -9140,7 +8931,6 @@ us-militärregierung	1
 us-raumfahrtbehörde	1
 us-städten	1
 uterusstäbe	1
-utterån	1
 variantenwörterbuch	1
 varietät	1
 varietäten	1
@@ -9326,7 +9116,6 @@ veterinärimpfstoffe	1
 veterinärmedizin	1
 vèze	1
 victoria-wüste	1
-vicús-kultur	1
 videoüberwachung	1
 viehbestände	1
 vielfachgerät	1
@@ -9346,12 +9135,8 @@ viertgrößtes	1
 vierthöchsten	1
 viertstärkste	1
 vierzehn-stöckigen	1
-villalón	1
-virgílio	1
-virú-kultur	1
 visegrád	1
 visionärer	1
-vitória	1
 vizepräsidenten	1
 vizepräsidentin	1
 vögel	1
@@ -9437,7 +9222,6 @@ vorzüge	1
 vorzügen	1
 vorzurücken	1
 vosgröne	1
-vučić-regierung	1
 vulkanausbrüchen	1
 vulkanstränden	1
 wabenförmigen	1
@@ -9471,13 +9255,11 @@ walzenprägewerk	1
 walzenschrämlader	1
 wälzlagerkonzerns	1
 wälzt	1
-wān	1
 wanderfeldröhre	1
 wandermöglichkeiten	1
 wanderpärchen	1
 wanderungsüberschüssen	1
 wandlungsfähige	1
-wanjikũ	1
 wankelmütiges	1
 wanzleben-börde	1
 wären	1
@@ -9580,7 +9362,6 @@ wettbewerbsfähigsten	1
 wetterumschwünge	1
 wetterverhältnisse	1
 wettrüsten	1
-wężyk	1
 widerstände	1
 widerwärtige	1
 wiechel-kramüller	1
@@ -9643,7 +9424,6 @@ wortwörtlich	1
 wortwörtliche	1
 wortzusammenrückung	1
 worüber	1
-współpracy	1
 wühlen	1
 wühlmäuse	1
 wührer	1
@@ -9682,7 +9462,6 @@ wüstungen	1
 wütend	1
 wütende	1
 wütet	1
-yemisí	1
 yü-hai	1
 zabergäu	1
 zählen	1
@@ -9719,13 +9498,11 @@ ziegeldächer	1
 ziegelmüller	1
 zielflughäfen	1
 zigeunerschneidmühle	1
-žilinskas	1
 zinkhütten	1
 zitierfähig	1
 zitrusfrüchten	1
 zivilbevölkerung	1
 ziviljustizgebäude	1
-zoë	1
 zögen	1
 zögerlich	1
 zögernd	1
@@ -9831,7 +9608,6 @@ zweitstärksten	1
 zweitstärkstes	1
 zweiwöchiges	1
 zwetschgenröster	1
-związkowego	1
 zwiebel-champignon-gemüse	1
 zwiespältig	1
 zwillingsflüsse	1

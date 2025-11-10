@@ -130,7 +130,6 @@ ménagier	8
 nucléaire	8
 précise	8
 révisé	8
-são	8
 votée	8
 aggravé	7
 étrangères	7
@@ -212,7 +211,6 @@ demandé	4
 déroulant	4
 écrit	4
 entité	4
-español	4
 espectáculo	4
 étudiants	4
 façade	4
@@ -354,7 +352,6 @@ anticipées	2
 aplicação	2
 appliquée	2
 appropriée	2
-araújo	2
 arménien	2
 arrêté	2
 artículo	2
@@ -372,14 +369,11 @@ budgétaires	2
 bühne	2
 caméra	2
 caméras	2
-casarão	2
 catégorisation	2
 célèbre	2
-čeština	2
 chargé	2
 chrétienne	2
 chrysanthèmes	2
-ĉi	2
 ciências	2
 cimetière	2
 clichés	2
@@ -494,7 +488,6 @@ géorgie	2
 geração	2
 gérald	2
 gespräch	2
-gestão	2
 görlitz	2
 gürci'nin	2
 güzel	2
@@ -515,7 +508,6 @@ israéliennes	2
 joué	2
 jusqu'à	2
 kakhétie	2
-kościuszkowski	2
 l’aéroport	2
 l’année	2
 l’armée	2
@@ -557,8 +549,6 @@ mère	2
 mètres	2
 ministère	2
 ministères	2
-montaña	2
-música	2
 müzisyen	2
 n’étant	2
 n’inquiète	2
@@ -573,7 +563,6 @@ occupée	2
 opération	2
 opérations	2
 organisée	2
-peñarol	2
 pénuries	2
 pépite	2
 percuté	2
@@ -678,8 +667,6 @@ visé	2
 wikiversité	2
 zéro	2
 abandonné	1
-abrahão	1
-abrão	1
 abusé	1
 accédé	1
 accéder	1
@@ -694,8 +681,6 @@ acquittés	1
 acté	1
 activités	1
 actualités	1
-acuña	1
-acústica	1
 adhérent	1
 administração	1
 adoptée	1
@@ -730,8 +715,6 @@ annonçant	1
 annoncée	1
 annoncés	1
 annulé	1
-año	1
-años	1
 anschlüsse	1
 antiaérienne	1
 apéro	1
@@ -771,9 +754,7 @@ autoproclamé	1
 autorités	1
 avancé	1
 avancée	1
-avendaño	1
 avérés	1
-ažd	1
 babasónicos	1
 baissé	1
 balayée	1
@@ -789,7 +770,6 @@ basé	1
 bassères	1
 bâtiment	1
 bâtiments	1
-bedřicha	1
 békássy	1
 bélanger	1
 belizón	1
@@ -806,7 +786,6 @@ biélorusse	1
 bientôt	1
 biología	1
 biotério	1
-birleşimidir	1
 björk	1
 blessées	1
 bloqué	1
@@ -819,7 +798,6 @@ brésil	1
 brésilien	1
 budgétaire	1
 c’était	1
-caamaño	1
 câbles	1
 caché	1
 cachée	1
@@ -837,7 +815,6 @@ capacité	1
 capacités	1
 capturé	1
 características	1
-caraúbas	1
 cárdenas	1
 carofícies	1
 carrée	1
@@ -863,10 +840,7 @@ chaîne	1
 chaînes	1
 chèque	1
 chillán	1
-chorões	1
 chrétien	1
-chrustalioŭ	1
-chū-kondō	1
 chudáci	1
 chuté	1
 ciência	1
@@ -901,7 +875,6 @@ conçu	1
 conçues	1
 conçus	1
 condamnées	1
-conexões	1
 confère	1
 confèrent	1
 confidentialité	1
@@ -954,7 +927,6 @@ créez	1
 crème	1
 cretácico	1
 crimée	1
-cristãos	1
 critères	1
 critiqué	1
 cumulée	1
@@ -997,7 +969,6 @@ d’impôt	1
 d’inéligibilité	1
 d’ingénieurs	1
 d’irrégularités	1
-dağıtık	1
 dành	1
 darmois-théobald	1
 dauphiné	1
@@ -1128,16 +1099,12 @@ diligentées	1
 dióxido	1
 dirigé	1
 discrète	1
-diseño	1
 dispensée	1
 disputé	1
 disputés	1
 disqualifié	1
 distillé	1
 divisées	1
-djenerå	1
-doğar	1
-domiñu	1
 dopé	1
 dopée	1
 dörp-pape	1
@@ -1147,7 +1114,6 @@ drôle	1
 drôlerie	1
 dû	1
 dualité	1
-dům	1
 durée	1
 écarte	1
 échapper	1
@@ -1228,7 +1194,6 @@ enquêtant	1
 enregistré	1
 enregistrés	1
 ensablée	1
-ensueñosportada	1
 enterré	1
 entièrement	1
 entités	1
@@ -1249,15 +1214,11 @@ envoyé	1
 équipes	1
 ercíclio	1
 éric	1
-escravidão	1
 espaço-tempo	1
-españa	1
-españaleal	1
 específica	1
 espéraient	1
 espérant	1
 espère	1
-estremeñu	1
 établies	1
 établir	1
 étaient	1
@@ -1343,11 +1304,9 @@ frontispìtziu	1
 frühlingsdreieck	1
 frustré	1
 fusión	1
-fútbolchapas	1
 gaëtan	1
 gagné	1
 galilée	1
-galvão	1
 gangrène	1
 garçon	1
 gâteaux	1
@@ -1374,7 +1333,6 @@ goûter	1
 grâce	1
 gradé	1
 grégoire	1
-grotą	1
 gründung	1
 guetté	1
 guinée-bissau	1
@@ -1383,7 +1341,6 @@ györgy	1
 haïti	1
 hak-kâ-ngî	1
 hámos	1
-hånda	1
 harcelés	1
 haussé	1
 héberge	1
@@ -1409,13 +1366,11 @@ hyène	1
 hypothèse	1
 ibérique	1
 identifiés	1
-i̇dman	1
 ilê	1
 îles	1
 illégalement	1
 illégitime	1
 îlot	1
-imådjes	1
 imaginé	1
 imaginée	1
 immédiate	1
@@ -1477,11 +1432,9 @@ istván	1
 j’espère	1
 j’étais	1
 japón	1
-jazyků	1
 jérôme	1
 jerónimo	1
 jérusalem	1
-joão	1
 jörg	1
 jouée	1
 journées	1
@@ -1502,7 +1455,6 @@ kleinkläranlage	1
 köm	1
 könig	1
 kraków	1
-krkač	1
 künstliches	1
 kurdî	1
 küster	1
@@ -1567,7 +1519,6 @@ lancée	1
 längst	1
 languoïde	1
 lapaïvka	1
-latviešu	1
 léa	1
 leeën	1
 legalità	1
@@ -1593,14 +1544,11 @@ liberté	1
 libertés	1
 lié	1
 liés	1
-lietuvių	1
-limbă	1
 limité	1
 limitée	1
 limogé	1
 língua	1
 literário	1
-literatūra	1
 littéraire	1
 littéraires	1
 livré	1
@@ -1617,7 +1565,6 @@ magnétique	1
 maîtrisant	1
 maîtrisent	1
 maîtriser	1
-majątku	1
 malgré	1
 manqué	1
 marchés	1
@@ -1625,7 +1572,6 @@ maría	1
 marie-aimée	1
 mariëndal	1
 mariné	1
-marinosão	1
 markundersökning	1
 marquée	1
 massé	1
@@ -1655,11 +1601,9 @@ menções	1
 mènent	1
 mensongère	1
 mérignac	1
-meštrovića	1
 méta-wiki	1
 métaclasse	1
 métalliques	1
-metalúrgica	1
 météo	1
 météorologique	1
 méthode	1
@@ -1671,7 +1615,6 @@ michaël	1
 miljöingenjör	1
 millénaire	1
 millimètres	1
-miloše	1
 mìng-dĕ	1
 mingrélie	1
 minière	1
@@ -1694,16 +1637,12 @@ münchen	1
 mûr	1
 mûri	1
 musée	1
-műve	1
-může	1
 mystère	1
 n’empêchent	1
 n’étaient	1
 n’excède	1
 n’exonère	1
-nāhuatl	1
 nájera	1
-não	1
 napoléon	1
 nápoles	1
 natación	1
@@ -1724,7 +1663,6 @@ nommée	1
 nouveauté	1
 nouvelle-calédonie	1
 numéros	1
-nuñez	1
 nyíregyháza	1
 observé	1
 observées	1
@@ -1749,14 +1687,12 @@ orquídeas	1
 összes	1
 österberg	1
 österreichischen	1
-otağ	1
 où	1
 oundiladzé	1
 pál	1
 paläozoologie	1
 paléontologie	1
 palmipèdes	1
-pamiątkę	1
 paniqué	1
 paralysé	1
 parfumé	1
@@ -1798,7 +1734,6 @@ poignée	1
 polarización	1
 pôle	1
 policière	1
-polioptimallaşdırma	1
 político	1
 polynésienne	1
 polysémique	1
@@ -1809,7 +1744,6 @@ posée	1
 poséidon	1
 possibilités	1
 posté	1
-prażmowskiego	1
 précédents	1
 prêchant	1
 précieux	1
@@ -1865,17 +1799,12 @@ protégées	1
 protéger	1
 protéines	1
 provoqué	1
-prūsiskan	1
-pública	1
 publicité	1
 publicité-kantar	1
 publiée	1
-púbricu	1
 pulvérisées	1
-puneña	1
 può	1
 qu’à	1
-qu’on	1
 qualifiée	1
 qualité	1
 quête	1
@@ -2010,7 +1939,6 @@ révoltes	1
 revolución	1
 rhétorique	1
 rhône	1
-ribeirão	1
 rinpotché	1
 röblom	1
 română	1
@@ -2032,7 +1960,6 @@ saluée	1
 saluées	1
 sánchez	1
 sänger	1
-saúde	1
 säugetiere	1
 sauvé	1
 scène	1
@@ -2041,7 +1968,6 @@ schéma	1
 schématique	1
 schöpfwerk	1
 scolarité	1
-sebastião	1
 secrètes	1
 século	1
 sécurisant	1
@@ -2049,7 +1975,6 @@ sécuritaires	1
 sédentarisation	1
 sédimentaire	1
 séfi	1
-şehidi	1
 séjour	1
 séjours	1
 sélection	1
@@ -2073,19 +1998,11 @@ signalé	1
 signalés	1
 signé	1
 signés	1
-şiirler	1
-silōs	1
-simeão	1
 sindéticas	1
 sintético	1
 située	1
 sixième	1
-škola	1
-skupština	1
-slovenčina	1
 slovène	1
-slovenščina	1
-ślůnski	1
 société	1
 sociétés	1
 sociojurídicas	1
@@ -2119,7 +2036,6 @@ sustentáveis	1
 sustentável	1
 système	1
 szakgimnázium	1
-szczęścia	1
 tachetée	1
 tanàna	1
 technologiesouveränität	1
@@ -2176,9 +2092,6 @@ türkçe	1
 über	1
 überschneiden	1
 ułanów	1
-últimas	1
-último	1
-umeå	1
 ünlü	1
 usée	1
 usés	1
@@ -2191,7 +2104,6 @@ validé	1
 vám	1
 variación	1
 vásárhelyi	1
-vatandaşlığın	1
 végétal	1
 véhiculait	1
 veillé	1
@@ -2200,7 +2112,6 @@ vérifiabilité	1
 vérifiable	1
 vérification	1
 vérifiez	1
-versão	1
 versé	1
 vertébrale	1
 vertèbre	1
@@ -2213,8 +2124,6 @@ voilée	1
 volapük	1
 volé	1
 votées	1
-výběru	1
-walizką	1
 weizsäcker	1
 wikimédia	1
 yalçıner	1

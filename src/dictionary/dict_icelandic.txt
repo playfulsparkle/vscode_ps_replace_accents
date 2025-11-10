@@ -543,7 +543,6 @@ fjölmiðla	3
 fjölskyldur	3
 fjörðum	3
 fjórum	3
-føroya	3
 frábær	3
 framkvæmdastjóri	3
 framsóknarflokksins	3
@@ -2090,7 +2089,6 @@ umferðarslyss	1
 umferðinni	1
 umfjöllunina	1
 umhverfið	1
-umhvørvisfelag	1
 umræða	1
 umræddra	1
 umræðu	1

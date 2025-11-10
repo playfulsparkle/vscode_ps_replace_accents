@@ -101,7 +101,6 @@ svært	48
 små	47
 slået	46
 søde	46
-️	45
 selvfølgelig	45
 smør	45
 hør	44
@@ -518,12 +517,10 @@ trækker	9
 træner	9
 undersøge	9
 undersøgelse	9
-usa’s	9
 våbenhvile	9
 vælg	9
 valsemøllen	9
 voldtægt	9
-what’s	9
 æblegrød	8
 bagestål	8
 blognetværk	8
@@ -856,13 +853,11 @@ begået	4
 bekræftede	4
 berørte	4
 besøger	4
-bid’	4
 blæser	4
 brændt	4
 cheføkonom	4
 condibøtte	4
 dækket	4
-dahl’en	4
 dahlmedgrønnelinser	4
 dengsø	4
 embedsmænd	4
@@ -931,7 +926,6 @@ palæstinensere	4
 palæstinensiske	4
 papegøjens	4
 påskefrokost	4
-pet’s	4
 præsenteret	4
 rådhuset	4
 råolie	4
@@ -1022,7 +1016,6 @@ dødsfald	3
 dommedagsvåben	3
 dømte	3
 døre	3
-dr’s	3
 drænede	3
 drøfte	3
 dyrevelfærdsloven	3
@@ -1181,7 +1174,6 @@ tilgængelig	3
 tilhører	3
 tilså	3
 tilværelsen	3
-tofu’	3
 tøjet	3
 træde	3
 træffe	3
@@ -1218,7 +1210,6 @@ afbræk	2
 afhænger	2
 afhængige	2
 afhængigt	2
-almindelig’	2
 ånd	2
 anlæg	2
 anslår	2
@@ -1268,7 +1259,6 @@ børneområdet	2
 børsåbningen	2
 bosætterbevægelse	2
 bosætterideologi	2
-brännäng	2
 brøgger	2
 brombær	2
 brøndum	2
@@ -1338,7 +1328,6 @@ genåbning	2
 generøst	2
 gennemført	2
 gerningsmændene	2
-go’	2
 grænser	2
 græske	2
 grønklædte	2
@@ -1385,9 +1374,6 @@ høres	2
 høring	2
 hornshøj	2
 hovedpulsåre	2
-hus’	2
-hygge’	2
-i’et	2
 idéer	2
 idømt	2
 ildsjæle	2
@@ -1633,7 +1619,6 @@ sprødheden	2
 sprøjter	2
 stærkeste	2
 ståsted	2
-stat’	2
 stillehavsområdet	2
 støj	2
 storslået	2
@@ -1672,7 +1657,6 @@ træningscentret	2
 træningsturneringen	2
 tronfølgen	2
 trump-vælgermøde	2
-tunsalat’	2
 tv-vært	2
 uafhængig	2
 ubåd	2
@@ -1713,14 +1697,11 @@ viceinvesteringsdirektør	2
 vindmølleprojekter	2
 vm-bælte	2
 yderligtgående	2
-zionismen’	2
-á	1
 åbenlys	1
 åbning	1
 åbningstid	1
 åbningstider	1
 åbningstiderne	1
-act’	1
 adfærd	1
 adfærdsændring	1
 adsbøl	1
@@ -1972,7 +1953,6 @@ erklære	1
 erklærer	1
 ernæringsforbundet	1
 esportstræner	1
-eu’s	1
 fædrelandet	1
 fældes	1
 fældet	1
@@ -2025,7 +2005,6 @@ fødes	1
 fødevarebank	1
 fødevarehjælp	1
 fødevarepriser	1
-fodre’	1
 fødselsår	1
 fødselsdage	1
 fødselsdagsboller	1
@@ -2116,13 +2095,11 @@ genopstå	1
 gentænke	1
 gjøl	1
 glutennetværket	1
-gnocchi’erne	1
 gøren	1
 gøres	1
 gråand	1
 græde	1
 grænserne	1
-gravely’	1
 grød-arrangement	1
 grødgris	1
 grødris	1
@@ -2135,7 +2112,6 @@ grøntsagsskuffen	1
 grundlægger	1
 guldæg	1
 gulerødderne	1
-guru’er	1
 håbe	1
 håbede	1
 hædersbevisninger	1
@@ -2155,7 +2131,6 @@ hævemiddel	1
 hæveprocessen	1
 hæves	1
 halvø	1
-hamas’	1
 håndarbejdsskole	1
 håndbog	1
 handelsmæssige	1
@@ -2286,7 +2261,6 @@ kanelbrødet	1
 kanindåb	1
 kåres	1
 kåret	1
-katsu’s	1
 kernemælk	1
 khabarovsk-atomubåd	1
 kikærtemel	1
@@ -2295,7 +2269,6 @@ klægt	1
 klargør	1
 klimamæssigt	1
 klimamål	1
-klm’s	1
 knækker	1
 knibtangsmanøvre	1
 knivdræbte	1
@@ -2382,7 +2355,6 @@ landsdækkende	1
 lånerkort	1
 lavindkomstvælgere	1
 ligamål	1
-lige’-beregninger	1
 ligeså	1
 livedækning	1
 løbebåndet	1
@@ -2481,7 +2453,6 @@ modsætningsforholdet	1
 molekylærstråleepitaksi	1
 mønster	1
 mør	1
-morgen’	1
 mørk	1
 mørket	1
 mørup	1
@@ -2506,7 +2477,6 @@ nævneværdig	1
 narko-ubåd	1
 narkofartøjer	1
 narkotikabekæmpelsesoperation	1
-nato’s	1
 naturfølsomme	1
 naturfølsomt	1
 navnesøster	1
@@ -2550,8 +2520,6 @@ nytårsgave	1
 ø-gruppens	1
 ø-kommuner	1
 ø-samfund	1
-ob’s	1
-obamacare’	1
 oddssætter	1
 øde	1
 ødelæggelserne	1
@@ -2654,7 +2622,6 @@ påpege	1
 påpegede	1
 papegøjedrama	1
 papegøjes	1
-paprika’	1
 parringssæsonen	1
 partikelstråling	1
 påskeæg	1
@@ -2762,7 +2729,6 @@ senfølger	1
 seriøs	1
 seriøse	1
 seværdigheder	1
-sf’er	1
 shiretoko-halvøen	1
 siddeskråning	1
 sidstnævnte	1
@@ -2890,7 +2856,6 @@ sundhedsredaktør	1
 superløberen	1
 surdejsbagværk	1
 svækker	1
-svampe’	1
 svinemørbrad	1
 svømmehalsbygning	1
 svømmer	1
@@ -2942,7 +2907,6 @@ tlsæt	1
 toårige	1
 tøes	1
 tøet	1
-tofu’en	1
 togføreren	1
 tøm	1
 tomatpuréen	1

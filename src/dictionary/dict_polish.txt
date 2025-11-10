@@ -1176,7 +1176,6 @@ narkopaństwem	3
 naśladować	3
 nastawiać	3
 naukowców	3
-nicolò	3
 niektórzy	3
 nieśmiertelną	3
 nieszczęście	3
@@ -3581,7 +3580,6 @@ byś	1
 byście	1
 bytności	1
 bywają	1
-čachtice	1
 całą	1
 caldwellów	1
 całodzienną	1
@@ -3589,7 +3587,6 @@ całość	1
 całości	1
 całując	1
 carpatią	1
-cataluña	1
 cebulą	1
 cebulę	1
 cebulką	1
@@ -3610,7 +3607,6 @@ centroprawicą	1
 cerkwią	1
 cesarską	1
 cesarzową	1
-česnauskis	1
 cętkami	1
 chabówce	1
 charakteryzują	1
@@ -3652,7 +3648,6 @@ chociaż	1
 chociażby	1
 chodników	1
 chodź	1
-chodzá	1
 chojną	1
 chorągwie	1
 chórem	1
@@ -3784,7 +3779,6 @@ córki	1
 córko	1
 coś	1
 cóż	1
-crème	1
 cudaków	1
 cudną	1
 cudowną	1
@@ -3931,7 +3925,6 @@ debatę	1
 dębem	1
 dębnikach	1
 dębu	1
-decò	1
 decydując	1
 decyzją	1
 decyzję	1
@@ -4407,7 +4400,6 @@ falą	1
 falę	1
 falować	1
 falujące	1
-família	1
 fanaberią	1
 fanką	1
 fanów	1
@@ -4656,7 +4648,6 @@ gotującego	1
 gotującej	1
 gozdawa-litwińska	1
 grą	1
-graä	1
 grać	1
 gracją	1
 graficzną	1
@@ -4936,7 +4927,6 @@ józia	1
 józio	1
 juhasów	1
 jurajską	1
-kä	1
 kącik23	1
 kącik26	1
 kącika	1
@@ -6388,11 +6378,9 @@ neosędziów	1
 neosędziowie	1
 neriną	1
 nerwową	1
-neusėda	1
 neutralną	1
 nią	1
 nićmi	1
-nicolás	1
 nicość	1
 nicpoń	1
 niderlandów	1
@@ -7120,7 +7108,6 @@ opuścić	1
 opuścili	1
 opuścisz	1
 oranżerii	1
-orbánem	1
 oręż	1
 oręża	1
 oręzny	1
@@ -9127,7 +9114,6 @@ reżysera	1
 reżyseria	1
 ricottą	1
 ricottę	1
-rinkēvics	1
 rób	1
 robaczków	1
 robią	1
@@ -9506,7 +9492,6 @@ rzucić	1
 rzymską	1
 rzymsko-katolicką	1
 rzyśko	1
-saariselkä	1
 sącz	1
 sąd	1
 sądach	1
@@ -9950,7 +9935,6 @@ soszyński	1
 soszyńskim	1
 sów	1
 sówek	1
-spaä	1
 spać	1
 spacerów	1
 spacerować	1
@@ -10945,7 +10929,6 @@ unikatowości	1
 uniknąć	1
 uniknięcia	1
 uniknięciu	1
-università	1
 unoszące	1
 unoszącego	1
 unoszącej	1
@@ -12208,7 +12191,6 @@ wzrastającego	1
 wzroście	1
 wzruszeń	1
 yalthą	1
-yemayá	1
 zaangażowała	1
 zaangażowania	1
 zaangażowany	1

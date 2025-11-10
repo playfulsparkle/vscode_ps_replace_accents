@@ -60,7 +60,6 @@ recombinación	17
 híbrido	16
 inmigración	16
 ontologías	16
-alemão	15
 analógica	15
 cómputo	15
 memorándum	15
@@ -256,7 +255,6 @@ minoría	6
 mirá	6
 mitraísmo	6
 operación	6
-pablø	6
 patógeno	6
 pérdidas	6
 políticasfrases	6
@@ -267,9 +265,7 @@ publicó	6
 razón	6
 retroiluminación	6
 río	6
-røjas	6
 rúa	6
-são	6
 sólido	6
 subpíxeles	6
 sustitución	6
@@ -277,7 +273,6 @@ tensión	6
 transcripción	6
 transfección	6
 tucumán	6
-uchôa	6
 últimas	6
 últimos	6
 undécima	6
@@ -330,7 +325,6 @@ inventó	5
 júpiter	5
 jurídica	5
 lápis	5
-lemaître	5
 llegó	5
 llevó	5
 magnéticas	5
@@ -377,7 +371,6 @@ afrikáners	4
 alá	4
 álbum	4
 alfanumérico	4
-allāh	4
 andrés	4
 arsénico	4
 artrópodos	4
@@ -524,7 +517,6 @@ bioinformáticas	3
 bioinformático	3
 biológicos	3
 boletín	3
-caiçara	3
 calculó	3
 calificó	3
 cárceles	3
@@ -610,7 +602,6 @@ generó	3
 géneros	3
 geoquímica	3
 gótica	3
-grandão	3
 guillén	3
 habían	3
 habría	3
@@ -633,7 +624,6 @@ invasión	3
 invención	3
 irán	3
 japonés	3
-jenča	3
 josé	3
 judías	3
 jurídicos	3
@@ -842,7 +832,6 @@ ayudó	2
 azúa	2
 bailarín	2
 balístico	2
-barça	2
 básicamente	2
 benín	2
 bérard	2
@@ -852,7 +841,6 @@ bioinformática	2
 biológica	2
 biológico	2
 biomédicas	2
-bläsing	2
 blástula	2
 bogotá	2
 bosón	2
@@ -1077,7 +1065,6 @@ funcionó	2
 fundación	2
 gabón	2
 ganó	2
-gardênia	2
 gastó	2
 gastronomía	2
 generación	2
@@ -1090,7 +1077,6 @@ genómicas	2
 geofísica	2
 geográfica	2
 geográfico	2
-geographĭa	2
 geométrica	2
 germánico	2
 globalización	2
@@ -1118,7 +1104,6 @@ homínido	2
 homogéneas	2
 homotopía	2
 hoshaná	2
-ℹ️	2
 íbamos	2
 ibérica	2
 ilícitos	2
@@ -1185,7 +1170,6 @@ madrileñas	2
 máel	2
 magnética	2
 magnetización	2
-malobabić	2
 mamíferos	2
 mañana	2
 mandarín	2
@@ -1207,7 +1191,6 @@ mediodía	2
 médulas	2
 megaoperación	2
 mejía	2
-mejor’	2
 metafísica	2
 metáfora	2
 metálicas	2
@@ -1232,10 +1215,8 @@ monocromática	2
 monocromáticos	2
 monogénicas	2
 monoteísta	2
-mu’	2
 muchísima	2
 multiplicación	2
-na’	2
 nación	2
 nanométrica	2
 napoleón	2
@@ -1373,7 +1354,6 @@ revés	2
 riñones	2
 rococó	2
 románico	2
-röntgen	2
 sabía	2
 sabíamos'	2
 sabías	2
@@ -1382,7 +1362,6 @@ salón	2
 satélite	2
 saturación	2
 saurópsidos	2
-schrödinger	2
 seguían	2
 selectrón	2
 semiesférico	2
@@ -1423,7 +1402,6 @@ surgió	2
 tabú	2
 táctica	2
 taiwán	2
-tankosić	2
 té	2
 téchnē	2
 técnicos	2
@@ -1447,7 +1425,6 @@ tintín	2
 típicas	2
 tomará	2
 topológico	2
-toumaï	2
 tóxico	2
 toxicología	2
 tóxicos	2
@@ -1490,7 +1467,6 @@ volcán	2
 volúmenes	2
 volví	2
 votación	2
-wöhler	2
 wüthrich	2
 xxinformática	2
 zarpó	2
@@ -1604,7 +1580,6 @@ afín	1
 aflicción	1
 aflojó	1
 afrikáner	1
-afutā	1
 ágil	1
 agonía	1
 agradecería	1
@@ -1620,16 +1595,10 @@ ahí	1
 ailén	1
 aisló	1
 ajourées	1
-al-anbiyā'	1
-al-islām	1
-al-islāmīya	1
-al-lāh	1
-al-tawhīd	1
 álamos	1
 albañil	1
 albedrío	1
 alcaná	1
-alcântara	1
 alcanzará	1
 alcanzó	1
 alcohólicas	1
@@ -1692,7 +1661,6 @@ amplió	1
 amputación	1
 ámsterdam	1
 amuchástegui	1
-ān	1
 añade	1
 añaden	1
 añadida	1
@@ -1812,7 +1780,6 @@ araújo	1
 arcángel	1
 archidiócesis	1
 archipiélago	1
-architectūra	1
 architéktōn	1
 archós	1
 arcoíris	1
@@ -1978,7 +1945,6 @@ bárbara	1
 baréin	1
 barría	1
 barríacecilia	1
-barýshnikov	1
 basándonos	1
 basándose	1
 bashkortostán	1
@@ -2005,7 +1971,6 @@ benjamín	1
 bergós	1
 berlín	1
 beyoncé	1
-bhāvanā	1
 bíblica	1
 bíblico	1
 bíblicos	1
@@ -2048,16 +2013,13 @@ biotecnologías	1
 biotecnológicas	1
 biotecnológicos	1
 bíró	1
-bishōjo	1
 bitácoras	1
 blíster	1
-böhm	1
 bolaño	1
 bolígrafo	1
 borbón	1
 botánicos	1
 bóveda	1
-brâncovenesc	1
 brás	1
 brasileñas	1
 brasileño	1
@@ -2096,7 +2058,6 @@ cafeterías	1
 caídas	1
 caído	1
 caídos	1
-calabaza’	1
 calderón	1
 calefacción	1
 calendárico	1
@@ -2124,7 +2085,6 @@ cánceres	1
 cancerígenas	1
 canción	1
 cançó	1
-cândido	1
 cañón	1
 cañones	1
 canónico	1
@@ -2418,7 +2378,6 @@ conté	1
 contemporáneaedad	1
 contemporáneas	1
 contemporáneos	1
-contenção'	1
 contención	1
 contenía	1
 contenían	1
@@ -2767,7 +2726,6 @@ digitaltecnologías	1
 dígito	1
 dilà	1
 dilatación	1
-dimitrijević	1
 dinámica	1
 dinámicas	1
 dinámicos	1
@@ -3328,11 +3286,8 @@ fracasó	1
 fracción	1
 fracturó	1
 frágil	1
-fraîche	1
-français	1
 fráncfort	1
 franchín	1
-françois	1
 freír	1
 frenesí	1
 frenética	1
@@ -3412,10 +3367,8 @@ giró	1
 glaciología	1
 glicoproteína	1
 glóbulos	1
-göbekli	1
 gobernación	1
 gobernó	1
-gödel	1
 godolías	1
 golpeó	1
 gómez	1
@@ -3428,7 +3381,6 @@ grafía	1
 gráficas	1
 gráfico	1
 gráfos	1
-grândola	1
 gravimetría	1
 gritó	1
 guaraní	1
@@ -3760,7 +3712,6 @@ israelíes	1
 iván	1
 jabalcón	1
 jabón	1
-jaëll	1
 jaldún	1
 jamón	1
 jané	1
@@ -3769,7 +3720,6 @@ jarquín	1
 jasídicas	1
 jasídico	1
 jasídicos	1
-jātim	1
 jáuregui	1
 jazarí	1
 jazmín	1
@@ -3783,9 +3733,6 @@ jerusalén	1
 jeshván	1
 jesús	1
 jiménez	1
-jinmeiyō	1
-jireček	1
-joão	1
 joaquín	1
 josé-pío	1
 josep-lluís	1
@@ -3806,9 +3753,7 @@ jurídicas	1
 jurídico	1
 jurisdicción	1
 justificó	1
-kämpfen	1
 karaúl	1
-karīm	1
 kéfir	1
 kijé	1
 kiké	1
@@ -3818,14 +3763,11 @@ korán	1
 kordofán	1
 krásnaya	1
 kühlcke	1
-kundō	1
-kushān	1
 láctica	1
 lágrimas	1
 lamentó	1
 láminas	1
 lanchón	1
-ländler	1
 lanús	1
 lápices	1
 lápida	1
@@ -3881,7 +3823,6 @@ lítico	1
 litografía	1
 litográfico	1
 litúrgica	1
-llāh	1
 llamándose	1
 llamé	1
 llegándolos	1
@@ -4046,7 +3987,6 @@ método	1
 metodologías	1
 metodológicos	1
 métrica	1
-mettā	1
 méxico-tenochtitlan	1
 méxicocensura	1
 méxicocorrección	1
@@ -4147,7 +4087,6 @@ mostraría	1
 motín	1
 motivación	1
 motivó	1
-mousikē	1
 movía	1
 movían	1
 móvil	1
@@ -4256,7 +4195,6 @@ notificaría	1
 notó	1
 novísima	1
 nucleación	1
-nuclear’	1
 núcleo	1
 nucleótido	1
 nucleótidos	1
@@ -4319,11 +4257,8 @@ omisión	1
 onís	1
 ontología	1
 óoorale	1
-operação	1
 opération	1
 operístico	1
-öpik	1
-öpik-oort	1
 oposición	1
 opresión	1
 ópticas	1
@@ -4377,7 +4312,6 @@ paisajístico	1
 paíscategorías	1
 pakistaní	1
 pakistaníes	1
-palavrão	1
 paleoantropología	1
 paleogeografía	1
 paleografía	1
@@ -4405,7 +4339,6 @@ paramétrica	1
 parámetro	1
 parámetros	1
 paraná	1
-paranirvā	1
 parasitología	1
 parásitos	1
 parecerían	1
@@ -4491,7 +4424,6 @@ pestañas	1
 petición	1
 petrografía	1
 petróleo	1
-philosophĭa	1
 pía	1
 pícaro’	1
 pícaros	1
@@ -4972,7 +4904,6 @@ róterdam	1
 ruíz	1
 ruiz-ayúcar	1
 rumanía	1
-ryōko	1
 sábanas	1
 sabían	1
 sabiduría	1
@@ -5002,16 +4933,13 @@ sanguíneas	1
 santafé	1
 santibañez	1
 santísima	1
-săpân	1
 sarcófago	1
-šarī	1
 sátira	1
 satírica	1
 satírico	1
 satíricos	1
 saudí	1
 saúl	1
-schön	1
 schué	1
 schütz	1
 sebastián	1
@@ -5028,7 +4956,6 @@ seguía	1
 seguirá	1
 seguirán	1
 seguirían	1
-segurança	1
 selección	1
 semáforo	1
 semántica	1
@@ -5068,9 +4995,7 @@ servirá	1
 seudoperiodístico	1
 sexología	1
 sextorsión	1
-shā-llāh	1
 shanghái	1
-shintarō	1
 shostakóvich	1
 sí	1
 siècle	1
@@ -5241,7 +5166,6 @@ tártaro	1
 tasación	1
 tauroctonía	1
 taxonomía	1
-tây	1
 tayikistán	1
 tchéky	1
 technologías	1
@@ -5307,7 +5231,6 @@ tiranía	1
 titán	1
 titulé	1
 tocó	1
-tōka	1
 tolerará	1
 tómalo	1
 tómame	1
@@ -5317,13 +5240,11 @@ tomarían	1
 tomás	1
 tomé	1
 tomó	1
-tönnies	1
 topoclimatología	1
 topología	1
 topológicos	1
 topónimo	1
 torácica	1
-torigā	1
 tracción	1
 tradición	1
 traducción	1
@@ -5493,9 +5414,7 @@ votarán	1
 votarían	1
 wassápenin	1
 windmühlen	1
-wôdan	1
 wóden	1
-xämät	1
 xenófobos	1
 zárate	1
 zebadúa	1

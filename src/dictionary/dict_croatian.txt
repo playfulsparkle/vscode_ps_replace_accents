@@ -326,7 +326,6 @@ važan	8
 veljača	8
 vučić	8
 vukojević	8
-women’s	8
 zagrebački	8
 zaključio	8
 započela	8
@@ -759,7 +758,6 @@ smještene	4
 snažnije	4
 snažno	4
 španjolska	4
-spremni’	4
 spriječeno	4
 spriječila	4
 sreće	4
@@ -1113,7 +1111,6 @@ ugođaj	3
 ugođaja	3
 ugroženi	3
 uhapšeni	3
-ünlüişler	3
 uračunati	3
 uravnotežen	3
 usklađivanja	3
@@ -1160,7 +1157,6 @@ antifašizam	2
 avanturistička	2
 ažurirano	2
 bakalovićem	2
-bakom’	2
 baštinu	2
 berić	2
 berislavićeva	2
@@ -1318,7 +1314,6 @@ kažemo	2
 kažnjivo	2
 kezerić	2
 kiše	2
-kjær	2
 klasičan	2
 klijentelističkih	2
 književnost	2
@@ -1630,7 +1625,6 @@ pridržavali	2
 prihvaća	2
 priopćenja	2
 priopćili	2
-prirodno’	2
 prirodoslovno-matematičkog	2
 pristaša	2
 pristupaš	2
@@ -1761,7 +1755,6 @@ staništa	2
 stanište	2
 staništu	2
 steći	2
-steiermärkische	2
 štete	2
 štićenica	2
 štimca	2
@@ -1796,7 +1789,6 @@ svjedočio	2
 tačno	2
 tadašnje	2
 tadašnjeg	2
-tata’	2
 tehničkih	2
 tehnoloških	2
 termički	2
@@ -1864,7 +1856,6 @@ uređivala	2
 uređuje	2
 usklađena	2
 usklađenosti	2
-usluge’	2
 uspješan	2
 uspješnog	2
 uspješnu	2
@@ -1985,8 +1976,6 @@ zračni	2
 žurne	2
 zvuči	2
 afričke	1
-agadmator’s	1
-alaïa	1
 alpinističko	1
 alpinističkom	1
 aludirajući	1
@@ -2052,7 +2041,6 @@ bezvremenošću	1
 biciklistička	1
 bilježila	1
 bilježilo	1
-binkov’s	1
 birači	1
 bivšem	1
 bivšim	1
@@ -2187,7 +2175,6 @@ cjeloživotno	1
 članovima	1
 čokoloda	1
 colić	1
-côte	1
 čovečanstvu	1
 čović	1
 čovječnost	1
@@ -2222,7 +2209,6 @@ crtića	1
 čuvenom	1
 cvijeće	1
 cvjetači	1
-d’azur	1
 dabinović	1
 đakova	1
 današnje	1
@@ -2420,7 +2406,6 @@ gusić	1
 gušt	1
 gužvi	1
 hajdaš	1
-hangin’	1
 hapšenja	1
 hertfordširu	1
 hindukuš	1
@@ -2555,7 +2540,6 @@ jakuševac	1
 jakuševcu	1
 jamčevina	1
 jamči	1
-jane’s	1
 jaruščica	1
 jastučić	1
 jednolični	1
@@ -2581,7 +2565,6 @@ kadić	1
 kafić	1
 kajić	1
 kalafatić	1
-kamikaza’	1
 kanališe	1
 kaotičan	1
 kaotične	1
@@ -2704,7 +2687,6 @@ kutjevačka	1
 kuzminečka	1
 labudović	1
 laburističke	1
-laka’	1
 lanište	1
 lažnjake	1
 lažnu	1
@@ -2717,7 +2699,6 @@ liječnici	1
 lijevičari	1
 liši	1
 livadićeva	1
-ljepotan’	1
 ljepše	1
 ljetošnje	1
 ljevičara	1
@@ -3059,7 +3040,6 @@ obrazloženju	1
 obrazloži	1
 obrazložile	1
 obrazložio	1
-obroci’	1
 obrušavanju	1
 obrušila	1
 obuhvaćene	1
@@ -3067,7 +3047,6 @@ obž	1
 očajanjem	1
 očajavamo	1
 očajnički	1
-ocean’s	1
 očekivane	1
 očekivanih	1
 očekivanja	1
@@ -3126,7 +3105,6 @@ odvažnosti	1
 odvjetništvo	1
 odvjetništvu	1
 odvlače	1
-oglasa’	1
 oglašavanjem	1
 oglašen	1
 oglašivačkog	1
@@ -3358,7 +3336,6 @@ pokušalo	1
 pokušat	1
 pokušava	1
 pokušavajući	1
-poligon’	1
 političarka	1
 poljaković	1
 poljskadržavljanin	1
@@ -3664,7 +3641,6 @@ reciklažnog	1
 reciklažnom	1
 rendulić	1
 revizionističke	1
-revolucija’	1
 režirala	1
 ričeta	1
 riješen	1
@@ -3739,8 +3715,6 @@ savršenog	1
 savršenstva	1
 sažeto	1
 ščrbak	1
-se’	1
-şebnem	1
 šećer	1
 sedmično	1
 sedmočlani	1
@@ -3837,7 +3811,6 @@ slučajeva	1
 slučajne	1
 slučajno	1
 slušali	1
-slush’d	1
 službene	1
 službeni	1
 službenici	1
@@ -4087,7 +4060,6 @@ tržnicu	1
 tuđe	1
 tumačile	1
 tumačio	1
-tura’	1
 turističkog	1
 turudića	1
 tužbe	1
@@ -4280,7 +4252,6 @@ vidiš	1
 vidović	1
 vijećem	1
 vijećnik	1
-vijesti’	1
 vilibić	1
 viljuške	1
 viša	1
@@ -4336,7 +4307,6 @@ vrećicama	1
 vrećicom	1
 vrećicu	1
 vreša	1
-vrh’	1
 vrijeđam	1
 vrijeđanje	1
 vrše	1
@@ -4350,7 +4320,6 @@ vučković	1
 vukadinović	1
 vukašinu	1
 vukušić	1
-you’re	1
 zabilježene	1
 zabilježila	1
 žabljaku	1
@@ -4457,7 +4426,6 @@ zgrožena	1
 zgrušavanje	1
 žice	1
 židovskom	1
-ziggy’s	1
 žigmanov	1
 žirija	1
 žiro-račun	1
