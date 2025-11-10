@@ -2219,7 +2219,6 @@ fakultní	6
 fiedlerová	6
 filipín	6
 galáska	6
-garaż	6
 generálního	6
 historické	6
 historický	6
@@ -3702,7 +3701,6 @@ orgánům	4
 orlické	4
 ošetřovatelé	4
 ósmy	4
-osnabrücku	4
 osobním	4
 ostrovní	4
 ověřena	4
@@ -4365,7 +4363,6 @@ biosféra	3
 bitově	3
 blahuš	3
 blízko	3
-börse	3
 bourání	3
 bouře	3
 bouřkové	3
@@ -5411,7 +5408,6 @@ rafinérie	3
 rafinérií	3
 rajče	3
 ramenonožců	3
-ramię	3
 raněné	3
 raněných	3
 raný	3
@@ -5475,7 +5471,6 @@ rusů	3
 rychlému	3
 rysí	3
 rysů	3
-sächsische	3
 saduceové	3
 salát	3
 sálu	3
@@ -5535,7 +5530,6 @@ shánět	3
 shannonův	3
 shodné	3
 sídliště	3
-się	3
 sílit	3
 silného	3
 silný	3
@@ -6176,7 +6170,6 @@ zvučné	3
 zvýší	3
 zvýšil	3
 aaronsohnová	2
-abadèche	2
 abatyši	2
 abchazský	2
 abchazštin	2
@@ -6267,7 +6260,6 @@ azylových	2
 babbittová	2
 babišovu	2
 babylonský	2
-bäderbau	2
 báječném	2
 bakteriový	2
 balení	2
@@ -6368,7 +6360,6 @@ budapešť	2
 buddhistické	2
 budíčku	2
 bulharská	2
-büttner	2
 bydliště	2
 bylinkové	2
 byrokratické	2
@@ -6470,7 +6461,6 @@ cestujícího	2
 chápat	2
 chápeme	2
 chatáb	2
-châtillonu	2
 chcát	2
 chcípnout	2
 chladných	2
@@ -6903,8 +6893,6 @@ hodinový	2
 hodonína	2
 hodují	2
 hoffmannově	2
-högel	2
-högela	2
 hojně	2
 hokejisté	2
 hokejové	2
@@ -7387,7 +7375,6 @@ másel	2
 mašinérii	2
 máslíčkový	2
 matěje	2
-mäuse	2
 mbappé	2
 mechanických	2
 medicejský	2
@@ -7446,7 +7433,6 @@ místním	2
 místopředsednické	2
 místostarosta	2
 mistrů-tkalců	2
-mitään	2
 mládeže	2
 mladíci	2
 mladík	2
@@ -7491,7 +7477,6 @@ mučení	2
 mučí	2
 muflonů	2
 múlhatott	2
-müllera	2
 muslimském	2
 můstek	2
 muzeí	2
@@ -7550,7 +7535,6 @@ nadšenců	2
 nadšení	2
 nadužívat	2
 nafouknutých	2
-någon	2
 náhle	2
 náhled	2
 nahlédl	2
@@ -8904,7 +8888,6 @@ rychlobruslení	2
 rychlý	2
 rychnově	2
 šabata	2
-sabotaż	2
 šafár	2
 safírový	2
 šafránková	2
@@ -10011,7 +9994,6 @@ welšsky	2
 wikicitáty	2
 wikiverzitě	2
 wikizprávách	2
-würselenu	2
 zábavnou	2
 zábavu	2
 zabezpečení	2
@@ -10441,7 +10423,6 @@ abandonování	1
 abandonováních	1
 abandonováním	1
 abandonováními	1
-abarognòsia	1
 abatiša	1
 abatyše	1
 abatyšemi	1
@@ -10612,7 +10593,6 @@ analytické	1
 analytického	1
 analytických	1
 analýzou	1
-ancă	1
 andách	1
 andělé	1
 anekdotický	1
@@ -10694,7 +10674,6 @@ arnošta	1
 arnoštem	1
 árny	1
 árnyék	1
-arrière	1
 arších	1
 árthach	1
 artuše	1
@@ -10812,7 +10791,6 @@ bádání	1
 badatelská	1
 badatelský	1
 badatelův	1
-badė	1
 bádenska	1
 badyán	1
 badyánoví	1
@@ -10827,9 +10805,7 @@ bagatelizováním	1
 bagatelizováními	1
 bagatelizují	1
 bagatelní	1
-bagaż	1
 bagážista	1
-bagażnik	1
 bagdádský	1
 bahá	1
 bahamský	1
@@ -11081,7 +11057,6 @@ bojůvky	1
 bolestné	1
 bolí	1
 bombardéry	1
-bönisch	1
 bonusové	1
 bordelmamá	1
 borůvka	1
@@ -11236,7 +11211,6 @@ cabrón	1
 čačaný	1
 cacería	1
 caché	1
-cachottière	1
 čachr	1
 čachre-machle	1
 čachry	1
@@ -11248,11 +11222,9 @@ cachottière	1
 cadáver	1
 cadékes	1
 čadičový	1
-cadièra	1
 čadivý	1
 čadský	1
 cadýk	1
-caffè	1
 čahoun	1
 cairéad	1
 caisearbhán	1
@@ -11271,7 +11243,6 @@ cajzlovský	1
 čalamáda	1
 calcifié	1
 calculé	1
-calèche	1
 calefacción	1
 caletník	1
 calmé	1
@@ -11635,7 +11606,6 @@ charitě	1
 chatíb	1
 chátrat	1
 chatreššar	1
-chaumières	1
 chcaní	1
 chechtavý	1
 chemička	1
@@ -11833,7 +11803,6 @@ cké	1
 cookových	1
 coročně	1
 coroční	1
-cotinière	1
 covidový	1
 coworkingovém	1
 cože	1
@@ -11848,7 +11817,6 @@ crewingových	1
 črtl	1
 čsav	1
 čsd	1
-csergheö	1
 čsob	1
 csóka	1
 čsú	1
@@ -11927,7 +11895,6 @@ dablérsky	1
 ďáblův	1
 ďábly	1
 dabrowská	1
-dächern	1
 dachový	1
 dačické	1
 dácie	1
@@ -11936,7 +11903,6 @@ dadaistický	1
 dageš	1
 dahíja	1
 dahíje	1
-daîme	1
 dajánandy	1
 dají	1
 dakarský	1
@@ -11957,7 +11923,6 @@ dalekých	1
 dálkového	1
 dálkovým	1
 dallaský	1
-dallëndyshe	1
 dálniční	1
 dálničních	1
 dálný	1
@@ -11972,7 +11937,6 @@ danajský	1
 daněk	1
 daněla	1
 danému	1
-danės	1
 daním	1
 daňová	1
 daňového	1
@@ -11989,7 +11953,6 @@ darebáček	1
 darebák	1
 daremník	1
 dařila	1
-darītė	1
 dárků	1
 dárky	1
 darmošlap	1
@@ -12681,10 +12644,6 @@ edokladů	1
 edukací	1
 édulcorant	1
 éduquer	1
-edziĝi	1
-edziĝonto	1
-edziniĝi	1
-edziniĝonto	1
 eféb	1
 efébeion	1
 efébie	1
@@ -12702,14 +12661,12 @@ effectué	1
 efficacité	1
 effondré	1
 effrayé	1
-efterår	1
 egocentrický	1
 egoísta	1
 egoistický	1
 egreš	1
 egypťané	1
 egyptě	1
-egyptiläinen	1
 egyptológická	1
 egyptologický	1
 égyptologie	1
@@ -12717,8 +12674,6 @@ egyptologický	1
 egyptská	1
 egyptský	1
 egyptština	1
-ehkä	1
-ehtiä	1
 éinstéiniam	1
 ekologové	1
 ekonomickém	1
@@ -12825,7 +12780,6 @@ engéšem	1
 énoncer	1
 énorme	1
 enseñó	1
-enzyklopädie	1
 eocén	1
 epochální	1
 erasmův	1
@@ -12911,7 +12865,6 @@ facák	1
 facebookového	1
 facebookovém	1
 facebookový	1
-fachmännisch	1
 faciální	1
 facička	1
 fackovací	1
@@ -13098,7 +13051,6 @@ fukovský	1
 fukovští	1
 fuksová	1
 fulbové	1
-funèbre	1
 fungováním	1
 fungovať	1
 fungující	1
@@ -13108,7 +13060,6 @@ funkcionář	1
 funkcionářů	1
 funkčních	1
 funkčním	1
-für	1
 fůry	1
 futuriáni	1
 fylogenetický	1
@@ -13121,12 +13072,9 @@ gabardénový	1
 gabčíka	1
 gabonský	1
 gabunský	1
-gadolīnija	1
-gadolīnijs	1
 gadolínium	1
 gadžikano	1
 gadžovi	1
-gaëlle	1
 gagačka	1
 gagátový	1
 gagauzský	1
@@ -13134,7 +13082,6 @@ gagné	1
 gajdoš	1
 gajdošík	1
 gál	1
-galaktėka	1
 galaktický	1
 galalitový	1
 galantně	1
@@ -13142,7 +13089,6 @@ galantní	1
 galapágách	1
 galareolaíocht	1
 galejnický	1
-galėninks	1
 galenitový	1
 galerií	1
 galeriích	1
@@ -13152,7 +13098,6 @@ galilejský	1
 galimatyáš	1
 galiziová	1
 gallér	1
-gallū	1
 gallupův	1
 galoše	1
 galský	1
@@ -13163,13 +13108,11 @@ gambáč	1
 gambijský	1
 gangliový	1
 ganzúa	1
-gapaĉi	1
 garanční	1
 garantovaná	1
 garážemi	1
 garážové	1
 garážový	1
-gardanĝelo	1
 gardé	1
 gardový	1
 gargantuovský	1
@@ -13250,7 +13193,6 @@ groteskně	1
 gruzínci	1
 gruzínský	1
 gumového	1
-günther	1
 gušti	1
 guvernérka	1
 guvernérkou	1
@@ -13319,7 +13261,6 @@ hajným	1
 hajzlík	1
 hakenkrajclerský	1
 halách	1
-halbjährlich	1
 haldamáš	1
 halenkách	1
 halenkám	1
@@ -13346,19 +13287,14 @@ hamée	1
 hamerník	1
 hamižník	1
 hamižnost	1
-hammaslääkäri	1
-hammaslääketiede	1
 hanbář	1
 hanbatý	1
 hanbiť	1
-händel	1
-hånden	1
 handicapé	1
 handicapované	1
 handicapovaný	1
 handicapovaným	1
 hanět	1
-hängande	1
 hanobí	1
 hanuš	1
 hanušovi	1
@@ -13699,16 +13635,13 @@ idiopatický	1
 idiotní	1
 idiotský	1
 idiotština	1
-ieftinătate	1
 ieškovas	1
-igår	1
 iglú	1
 ignoré	1
 ignorování	1
 ignorovány	1
 igrišče	1
 íhaha	1
-ihjäl	1
 ihličnan	1
 ihličnatý	1
 ijár	1
@@ -13896,14 +13829,12 @@ jalovičku	1
 jalovičky	1
 jalový	1
 jaltský	1
-jamaïcain	1
 jamajčané	1
 jamajská	1
 jamkový	1
 jamôčka	1
 jamón	1
 janičár	1
-janiĉaro	1
 jános	1
 janoušková	1
 janovské	1
@@ -13932,7 +13863,6 @@ japonštinu	1
 japonštiny	1
 jarmarečník	1
 jarmočný	1
-jarmuż	1
 jarnější	1
 jarních	1
 jarního	1
@@ -13940,19 +13870,16 @@ jarním	1
 jarný	1
 jaroměří	1
 jaromíra	1
-jarretière	1
 jarušková	1
 jarý	1
 jasanový	1
 jásat	1
-jashtë	1
 jaskyňa	1
 jasmínový	1
 jasmínu	1
 jasněji	1
 jasnější	1
 jasnému	1
-jasnomòdri	1
 jasnovidecký	1
 jasnovidectví	1
 jasným	1
@@ -13968,7 +13895,6 @@ jaternicový	1
 játra	1
 játrům	1
 jatýrka	1
-jaunâtre	1
 javára	1
 javítani	1
 javítva	1
@@ -14099,7 +14025,6 @@ jmíny	1
 jógu	1
 jordán	1
 jordánci	1
-jörga	1
 jorkšíra	1
 juanů	1
 judikáty	1
@@ -14170,7 +14095,6 @@ kafíčka	1
 kafíčko	1
 kafilérie	1
 kafilerní	1
-kafkaïen	1
 kafková	1
 kafkovský	1
 kafrovník	1
@@ -14198,7 +14122,6 @@ kákán	1
 kakání	1
 kakaovník	1
 kakaový	1
-kaksikymmentä	1
 kaktusový	1
 kalábr	1
 kalamář	1
@@ -14207,7 +14130,6 @@ kalamitě	1
 kalamitní	1
 kalašnika	1
 kalašnikem	1
-kalbėti	1
 kalciový	1
 kalendáři	1
 kalendárium	1
@@ -14361,7 +14283,6 @@ keňanky	1
 keramickým	1
 keři	1
 kérovat	1
-kestä	1
 kéž	1
 kilometrový	1
 kimči	1
@@ -14848,7 +14769,6 @@ kurvítko	1
 kůry	1
 kurýr	1
 kušnit	1
-kustiejėms	1
 kútra	1
 kůže	1
 kužel	1
@@ -14943,7 +14863,6 @@ laclový	1
 lačnit	1
 lacný	1
 lacté	1
-lactifère	1
 lactosérum	1
 ladění	1
 ladič	1
@@ -14956,7 +14875,6 @@ ladně	1
 ladný	1
 ládovat	1
 ľadvina	1
-lagopède	1
 lahodící	1
 lahôdkový	1
 lahodný	1
@@ -14992,7 +14910,6 @@ lakonický	1
 lakovaného	1
 lakový	1
 lakrimální	1
-lakstīgala	1
 laktační	1
 laktóza	1
 láků	1
@@ -15034,7 +14951,6 @@ leberálbalos	1
 léčbě	1
 léčeben	1
 léčebné	1
-lèche-vitrine	1
 léčíme	1
 léčivům	1
 ledaže	1
@@ -15205,7 +15121,6 @@ loňských	1
 lopotování	1
 lorentzově	1
 lórinc	1
-lőrince	1
 lotyšského	1
 lotyšsko	1
 lotyšsku	1
@@ -15217,8 +15132,6 @@ louskáček	1
 loutkařit	1
 loutkový	1
 louže	1
-löwe	1
-löwenberg	1
 ložnice	1
 ložnici	1
 lpět	1
@@ -15257,7 +15170,6 @@ lyže	1
 lyžovat	1
 lži	1
 lživý	1
-maamyyrä	1
 maastrichtský	1
 macajský	1
 macbethovský	1
@@ -15293,7 +15205,6 @@ madridský	1
 madrigalový	1
 madurská	1
 madžarski	1
-maëva	1
 mafián	1
 mafiích	1
 mafiózo	1
@@ -15399,7 +15310,6 @@ marží	1
 masarykovým	1
 masáž	1
 máši	1
-mäsiar	1
 masírovat	1
 masivně	1
 maskované	1
@@ -15558,7 +15468,6 @@ migrační	1
 migrantům	1
 mihály	1
 míjet	1
-mikään	1
 mikině	1
 miklóse	1
 mikovíny	1
@@ -15809,7 +15718,6 @@ mudrák	1
 mulčovací	1
 multifunkčních	1
 multiplexování	1
-münstera	1
 muralů	1
 murár	1
 musilová	1
@@ -15866,7 +15774,6 @@ náboru	1
 náboženská	1
 nabožina	1
 nabravše	1
-nabrzeże	1
 nabubřelému	1
 nabubřelí	1
 nabušenec	1
@@ -16054,7 +15961,6 @@ náhrobky	1
 náhrobní	1
 naím	1
 nainstalované	1
-naître	1
 naivní	1
 nájem	1
 nájemců	1
@@ -17072,7 +16978,6 @@ nezvolení	1
 nezvolí	1
 nezvyklé	1
 nezvyklý	1
-niccolò	1
 ničeny	1
 ničila	1
 ničily	1
@@ -17117,7 +17022,6 @@ normálnost	1
 normativní	1
 norové	1
 norské	1
-norvège	1
 nosím	1
 nosné	1
 nosočistoplena	1
@@ -17261,7 +17165,6 @@ obilninový	1
 obilný	1
 objasněn	1
 objasní	1
-objęcie	1
 objectivité	1
 objeď	1
 objednáte	1
@@ -17969,8 +17872,6 @@ ozubené	1
 ozubení	1
 ozvěn	1
 ozývat	1
-paauglystė	1
-pabėnga	1
 paběrkovati	1
 pachacútec	1
 páchající	1
@@ -17995,13 +17896,11 @@ padají	1
 padajícími	1
 padák	1
 padákový	1
-padamä	1
 padáme	1
 padělatel	1
 padělatelův	1
 padělek	1
 pádem	1
-padėrbtė	1
 padesáté	1
 padesátieurové	1
 padesátieurový	1
@@ -18043,7 +17942,6 @@ pahýl	1
 paintballový	1
 paišielis	1
 pajďák	1
-pajęczyna	1
 pajzlíček	1
 paketové	1
 paketového	1
@@ -18260,7 +18158,6 @@ perský	1
 personálem	1
 personálie	1
 personálně	1
-personīga	1
 peruánci	1
 peruánských	1
 pešeková	1
@@ -19012,7 +18909,6 @@ poušti	1
 pouštíme	1
 poutníci	1
 poutník	1
-pouze‘	1
 použije	1
 použijí	1
 použila	1
@@ -20403,7 +20299,6 @@ rachtař	1
 ración	1
 racionálně	1
 ráčit	1
-racizëm	1
 rackové	1
 racků	1
 řácky	1
@@ -20474,8 +20369,6 @@ raffiné	1
 rafička	1
 rafinovanější	1
 rafinovaný	1
-rafraîchir	1
-ragės	1
 rajčata	1
 rajčatový	1
 rajčina	1
@@ -20494,7 +20387,6 @@ rakouská	1
 rakousko-uherský	1
 rakovinný	1
 rakovinotvorný	1
-rakstniecība	1
 raků	1
 rakušané	1
 rakušanově	1
@@ -20529,7 +20421,6 @@ rašit	1
 rasťo	1
 rátať	1
 ratifikovaného	1
-räv	1
 rávenni	1
 raž	1
 razantními	1
@@ -21137,13 +21028,11 @@ rytíř	1
 rytíři	1
 rytířskosti	1
 rýžování	1
-saarländisch	1
 šabakismus	1
 šabat	1
 sabatový	1
 sabdží	1
 šabes	1
-sabiedrība	1
 šabík	1
 šablon	1
 šablona	1
@@ -21179,12 +21068,10 @@ sadařův	1
 sadbový	1
 sadě	1
 sadební	1
-sademetsä	1
 sadistický	1
 sádlo	1
 sadový	1
 sádrových	1
-sadźba	1
 šafaříkova	1
 šafársky	1
 safián	1
@@ -21193,12 +21080,10 @@ safír	1
 safírová	1
 safírově	1
 saflorový	1
-safrà	1
 šafrán	1
 šafránový	1
 šafron	1
 sagitální	1
-sagristà	1
 sahá	1
 saharský	1
 sáhib	1
@@ -21233,7 +21118,6 @@ sakroiliakální	1
 sakrolumbální	1
 sakrolumbálny	1
 sakropelvinní	1
-saksağan	1
 šaktismus	1
 sakům	1
 sakumprásk	1
@@ -21255,7 +21139,6 @@ saldré	1
 salepový	1
 saleté	1
 salicylový	1
-salière	1
 šalina	1
 salinité	1
 šalinkarta	1
@@ -21580,7 +21463,6 @@ selhává	1
 šelmu	1
 selský	1
 semaforů	1
-sème	1
 semerák	1
 semifinále	1
 seminární	1
@@ -22064,7 +21946,6 @@ slyší	1
 slyším	1
 slyšíme	1
 slzného	1
-smäd	1
 smädný	1
 smajlíkem	1
 šmakovat	1
@@ -22482,7 +22363,6 @@ srdcaře	1
 srdečně	1
 srní	1
 srocení	1
-środkowy	1
 srófolják	1
 šroubovky	1
 srovnáme	1
@@ -22512,7 +22392,6 @@ stáhl	1
 stáhnout	1
 staletí	1
 stalinův	1
-stället	1
 stálou	1
 stálých	1
 stančík	1
@@ -22808,13 +22687,11 @@ subsérie	1
 substantívach	1
 súdán	1
 súdánu	1
-süddeutsche	1
 sudí	1
 sudího	1
 sudími	1
 sudý	1
 šudžáija	1
-süe	1
 súfismus	1
 šuk	1
 šukání	1
@@ -22968,7 +22845,6 @@ tabáčník	1
 tabákové	1
 tabáku	1
 tabatěrka	1
-tabatière	1
 tabernákl	1
 tabernákulum	1
 táblákat	1
@@ -22984,7 +22860,6 @@ taché	1
 tachetée	1
 tachovská	1
 tachovský	1
-tachymètre	1
 taciturnité	1
 tacón	1
 tačové	1
@@ -23254,7 +23129,6 @@ topiče	1
 topírna	1
 topmanažerů	1
 topologický	1
-török	1
 toť	1
 totalitám	1
 totalitě	1
@@ -23464,11 +23338,8 @@ uachtarán	1
 uběhala	1
 uběhla	1
 uběrák	1
-ubertà	1
-ubertosità	1
 ubezpečení	1
 ubikvitérní	1
-ubiquità	1
 ubírá	1
 ublížení	1
 ublížený	1
@@ -23519,7 +23390,6 @@ uchazeč	1
 ucházející	1
 uchází	1
 uchmatnúť	1
-uchodźczyni	1
 úchop	1
 uchovává	1
 uchovávané	1
@@ -23601,7 +23471,6 @@ udmurtština	1
 údolími	1
 údolní	1
 údolnice	1
-udråbsord	1
 údržba	1
 údržbář	1
 údržbě	1
@@ -23666,13 +23535,11 @@ uhranutý	1
 úhrnná	1
 úhrnu	1
 úhybový	1
-ujë	1
 ujetých	1
 újfent	1
 ujištění	1
 ujistivši	1
 újmy	1
-ujście	1
 ukájet	1
 úkaz	1
 ukázku	1
@@ -23699,7 +23566,6 @@ ukončím	1
 úkonech	1
 úkony	1
 úkorně	1
-ukośnik	1
 ukradené	1
 ukradení	1
 ukradený	1
@@ -24279,11 +24145,9 @@ valčík	1
 válčit	1
 válčiv	1
 valdštejnský	1
-valė	1
 válečným	1
 valenciát	1
 valentýnka	1
-valerėjuons	1
 valeriána	1
 valgózní	1
 valí	1
@@ -24293,13 +24157,10 @@ validé	1
 validité	1
 validované	1
 válkami	1
-valkovenäjä	1
-valkovenäläinen	1
 vallée	1
 vallonné	1
 valník	1
 valný	1
-valodniecība	1
 valonský	1
 valonština	1
 valorisé	1
@@ -24307,7 +24168,6 @@ valorizací	1
 valorizační	1
 válov	1
 valše	1
-valstībė	1
 valvulární	1
 vámi	1
 vampýr	1
@@ -25449,18 +25309,14 @@ wágner	1
 wagnerovců	1
 wágnerův	1
 warrenová	1
-wdzięczny	1
 webinář	1
 webmailů	1
 webový	1
 webových	1
 weinsteinová	1
-wejście	1
 welština	1
 woodův	1
 wu-šu	1
-württemberska	1
-wwø	1
 xboxový	1
 xeanón	1
 xenofobními	1
@@ -25471,42 +25327,17 @@ xérophile	1
 xilografía	1
 xilógrafo	1
 xuíz	1
-xuño	1
 xurásico	1
-xwį	1
 xylém	1
 xylofágní	1
 xylóza	1
 yacaré	1
-yağmur	1
-yaklaşmak	1
 yardů	1
 yardům	1
-yaşamak	1
 yellowstonském	1
-yeqën	1
-yeşil	1
-yetmiş	1
-yhdeksän	1
-yhdeksänkymmentä	1
-yhdeksänsataa	1
-yhdeksäntoista	1
-yhdeksäs	1
-yhdessä	1
-yhdistyä	1
-yhtyä	1
-yleensä	1
-ymmärtää	1
-ympyrä	1
 yorkshirské	1
 yorský	1
 youtubeři	1
-yrittää	1
-ystävä	1
-ystävällinen	1
-ystävällisyys	1
-ystävätär	1
-ystävyys	1
 yttriový	1
 zaaranžována	1
 žab	1
@@ -25515,7 +25346,6 @@ zaaranžována	1
 žabák	1
 žabákův	1
 zabalák	1
-zabaldoutė	1
 zabalení	1
 zabalený	1
 zabalí	1
@@ -25679,7 +25509,6 @@ zafixování	1
 žaga	1
 žagata	1
 zagebriť	1
-zagrożenie	1
 žah	1
 žahách	1
 záhadně	1
@@ -26340,7 +26169,6 @@ zedník	1
 zekonomičtit	1
 zélandu	1
 želať	1
-żelaznym	1
 želé	1
 zelenským	1
 železa	1
@@ -26555,7 +26383,6 @@ zítřky	1
 živalski	1
 zívat	1
 živcový	1
-živě4	1
 živec	1
 živíme	1
 živina	1
