@@ -86,6 +86,11 @@ When restoring, it uses **per-language dictionaries**, optional **suffix matchin
 
 ## Release Notes
 
+### 0.0.17
+
+- Added auto language detection for all supported dictionary languages.
+- Fixed bug checking file exists for renaming file/folder.
+
 ### 0.0.16
 
 - Optimized dictionary loading and processing, safeguards for word and frequncy.

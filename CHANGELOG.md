@@ -2,6 +2,11 @@
 
 All notable changes to the "Playful Sparkle: Replace Accents" extension will be documented in this file.
 
+## [0.0.17] - 2025-11-11
+
+- Added auto language detection for all supported dictionary languages.
+- Fixed bug checking file exists for renaming file/folder.
+
 ## [0.0.16] - 2025-11-09
 
 - Optimized dictionary loading and processing, safeguards for word and frequncy.
