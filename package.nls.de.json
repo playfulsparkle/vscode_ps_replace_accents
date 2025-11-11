@@ -3,7 +3,7 @@
     "extension.config.removeDiacritics.title": "Replace Accents",
     "extension.config.userCharacterMapping.desc": "Definieren Sie eigene Zeichenabbildungen zum Entfernen von diakritischen Zeichen. Verwenden Sie dies, um festzulegen, wie Sonderzeichen konvertiert werden sollen (z. B. deutsches „ß“ zu „ss“, Ligaturen „æ“ zu „ae“). Wird nach der Normalisierung angewendet.",
     "extension.config.textLanguage.desc": "Wählen Sie die Sprache Ihres Textes, um das Entfernen und Wiederherstellen von Diakritika zu verbessern.",
-    "extension.config.textLanguage.off.desc": "Aus",
+    "extension.config.textLanguage.autoDetect.desc": "Automatisch erkennen",
     "extension.config.textLanguage.croatian.desc": "Kroatisch",
     "extension.config.textLanguage.czech.desc": "Tschechisch",
     "extension.config.textLanguage.danish.desc": "Dänisch",

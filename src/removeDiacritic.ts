@@ -1,4 +1,4 @@
-import { searchAndReplaceCaseSensitive, diacriticRegex } from "./shared";
+import { searchAndReplaceCaseSensitive, normalizeText } from "./shared";
 import { AccentedLetter, LanguageLetters, languageCharacterMappings } from "./characterMappings";
 
 /**
@@ -131,14 +131,14 @@ class DiacriticRemover {
         const allMappings = this.getAllMappings();
 
         if (Object.keys(allMappings).length === 0) {
-            return this.normalize(text);
+            return normalizeText(text);
         }
 
         // Handle remaining special characters if mappings exist
         const specialCharsPattern: RegExp | undefined = this.getSpecialCharsPattern();
 
         if (!specialCharsPattern) {
-            return this.normalize(text);
+            return normalizeText(text);
         }
 
         let result = text.replace(
@@ -146,11 +146,7 @@ class DiacriticRemover {
             match => allMappings[match] ?? match
         );
 
-        return this.normalize(result);
-    }
-
-    private normalize(str: string): string {
-        return str.normalize("NFKD").replace(diacriticRegex, "");
+        return normalizeText(result);
     }
 }
 

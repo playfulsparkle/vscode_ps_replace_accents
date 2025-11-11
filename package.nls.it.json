@@ -3,7 +3,7 @@
     "extension.config.removeDiacritics.title": "Replace Accents",
     "extension.config.userCharacterMapping.desc": "Definisci mappature personalizzate dei caratteri per la rimozione dei diacritici. Usa questa impostazione per specificare come devono essere convertiti i caratteri speciali (ad es. il tedesco «ß» in «ss», le legature «æ» in «ae»). Applicato dopo la normalizzazione.",
     "extension.config.textLanguage.desc": "Seleziona la lingua del testo per migliorare la rimozione e il ripristino dei segni diacritici.",
-    "extension.config.textLanguage.off.desc": "Disattivato",
+    "extension.config.textLanguage.autoDetect.desc": "Rilevamento automatico",
     "extension.config.textLanguage.croatian.desc": "Croato",
     "extension.config.textLanguage.czech.desc": "Ceco",
     "extension.config.textLanguage.danish.desc": "Danese",

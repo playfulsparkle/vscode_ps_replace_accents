@@ -2,7 +2,8 @@ import * as vscode from "vscode";
 import * as path from "path";
 import {
 	validateUserCharacterMappings,
-	normalizeIgnoreWords
+	normalizeIgnoreWords,
+	normalizeText
 } from "./shared";
 import DiacriticRestorer from "./restoreDiacritic";
 import DiacriticRemover from "./removeDiacritic";
@@ -60,7 +61,7 @@ export function activate(context: vscode.ExtensionContext) {
 		/** Opens the GitHub issues page to report problems */
 		ReportIssue = "ps-replace-accents.reportIssue",
 		/** Removes diacritics from selected text or entire document */
-		ReplaceDiacriticts = "ps-replace-accents.removeDiacritics",
+		RemoveDiacriticts = "ps-replace-accents.removeDiacritics",
 		/** Removes diacritics from file or folder names in Explorer */
 		RemoveDiacritictsFileOrFolder = "ps-replace-accents.removeDiacriticsFileOrFolder",
 		/** Restores diacritics to normalized text using dictionary */
@@ -169,7 +170,7 @@ export function activate(context: vscode.ExtensionContext) {
 			for (const selection of selections) {
 				if (!selection.isEmpty) {
 					const text = document.getText(selection);
-					return text.substring(0, 125);
+					return normalizeText(text.substring(0, 125));
 				}
 			}
 		}
@@ -182,7 +183,7 @@ export function activate(context: vscode.ExtensionContext) {
 		);
 		const text = document.getText(entireDocumentRange);
 
-		return text.substring(0, 125);
+		return normalizeText(text.substring(0, 125));
 	};
 
 	/**
@@ -262,36 +263,41 @@ export function activate(context: vscode.ExtensionContext) {
 		}
 	};
 
-	const showLanguageSelectionDialog = async (sample: string | undefined = undefined): Promise<string> => {
+	const getConfiLanguage = async (sample: string): Promise<string | undefined> => {
 		const language: string = vscode.workspace
 			.getConfiguration("ps-replace-accents")
-			.get<string>("textLanguage", "off");
+			.get<string>("textLanguage", "auto");
 
-		if (language === "off") {
-			if (sample) {
-				const detector = new LanguageDetector();
+		if (language !== "auto") {
+			return language;
+		}
 
-				const result = detector.detect(sample);
+		const detector = new LanguageDetector();
 
-				console.log(result);
+		const result = detector.detect(sample);
 
-				if (result.language !== "unknown") {
-					return result.language;
-				}
-			}
+		console.log(sample, result);
 
-			const open = await vscode.window.showWarningMessage(
+		return result.language !== "unknown" ? result.language : undefined;
+	};
+
+	const showLanguageSelectionDialog = async (sample: string): Promise<string | undefined> => {
+		const language: string | undefined = await getConfiLanguage(sample);
+
+		if (!language) {
+			const openPrompt = await vscode.window.showWarningMessage(
 				vscode.l10n.t("Select a text language in Settings to restore diacritics."),
 				vscode.l10n.t("Open Settings"),
 				vscode.l10n.t("Cancel")
 			);
 
-			if (open === vscode.l10n.t("Open Settings")) {
+			if (openPrompt === vscode.l10n.t("Open Settings")) {
 				await vscode.commands.executeCommand(
 					"workbench.action.openSettings",
 					"ps-replace-accents.textLanguage"
 				);
 			}
+
 		}
 
 		return language;
@@ -317,7 +323,7 @@ export function activate(context: vscode.ExtensionContext) {
 		 * @see {@link validateUserCharacterMappings} for mapping validation
 		 * @see {@link DiacriticRemover} for the processing logic
 		 */
-		[CommandId.ReplaceDiacriticts]: async () => {
+		[CommandId.RemoveDiacriticts]: async () => {
 			const userMappings: { [key: string]: string } = vscode.workspace
 				.getConfiguration("ps-replace-accents")
 				.get<{ [key: string]: string }>("userCharacterMapping", {});
@@ -330,14 +336,12 @@ export function activate(context: vscode.ExtensionContext) {
 				return;
 			}
 
+			const textSample = getEditorTextSample();
+
 			// Read language setting
-			const language: string = vscode.workspace
-				.getConfiguration("ps-replace-accents")
-				.get<string>("textLanguage", "off");
+			const language = await getConfiLanguage(textSample);
 
-			const languageValue = language === "off" ? undefined : language;
-
-			const remover = new DiacriticRemover(languageValue, userMappings);
+			const remover = new DiacriticRemover(language, userMappings);
 
 			const result = await processTextInEditor(text => remover.removeDiacritics(text));
 
@@ -384,9 +388,9 @@ export function activate(context: vscode.ExtensionContext) {
 			const urisToRename = selectedUris && selectedUris.length > 0 ? selectedUris : [uri];
 
 			// Read language setting
-			const language: string = await showLanguageSelectionDialog();
+			const language: string | undefined = await showLanguageSelectionDialog(urisToRename.join(" "));
 
-			if (language === "off") {
+			if (!language) {
 				return;
 			}
 
@@ -427,9 +431,9 @@ export function activate(context: vscode.ExtensionContext) {
 			const textSample = getEditorTextSample();
 
 			// Read language setting
-			const language: string = await showLanguageSelectionDialog(textSample);
+			const language: string | undefined = await showLanguageSelectionDialog(textSample);
 
-			if (language === "off") {
+			if (!language) {
 				return;
 			}
 

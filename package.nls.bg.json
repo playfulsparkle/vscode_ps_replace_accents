@@ -3,7 +3,7 @@
   "extension.config.removeDiacritics.title": "Replace Accents",
   "extension.config.userCharacterMapping.desc": "Определете собствени съпоставяния на знаци за премахване на диакритични знаци. Използвайте това, за да посочите как да се конвертират специалните знаци (напр. немското „ß“ към „ss“, лигатурите „æ“ към „ae“). Прилага се след нормализиране.",
   "extension.config.textLanguage.desc": "Изберете езика на вашия текст, за да подобрите премахването и възстановяването на диакритичните знаци.",
-  "extension.config.textLanguage.off.desc": "Изключено",
+  "extension.config.textLanguage.autoDetect.desc": "Автоматично разпознаване",
   "extension.config.textLanguage.croatian.desc": "Хърватски",
   "extension.config.textLanguage.czech.desc": "Чешки",
   "extension.config.textLanguage.danish.desc": "Датски",

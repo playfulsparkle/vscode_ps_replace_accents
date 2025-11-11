@@ -40,6 +40,9 @@ var path2 = __toESM(require("path"));
 // src/shared.ts
 var vscode = __toESM(require("vscode"));
 var diacriticRegex = /[\p{Mn}\u0300-\u036f]/gu;
+function normalizeText(str) {
+  return str.normalize("NFKD").replace(diacriticRegex, "");
+}
 function searchAndReplaceCaseSensitive(original, restored, characterMappings) {
   if (!original || !restored) {
     return restored;
@@ -933,20 +936,17 @@ var DiacriticRestorer = class _DiacriticRestorer {
     }
     const allMappings = this.getAllMappings();
     if (Object.keys(allMappings).length === 0) {
-      return this.normalize(text);
+      return normalizeText(text);
     }
     const specialCharsPattern = this.getSpecialCharsPattern();
     if (!specialCharsPattern) {
-      return this.normalize(text);
+      return normalizeText(text);
     }
     let result = text.replace(
       specialCharsPattern,
       (match) => allMappings[match] ?? match
     );
-    return this.normalize(result);
-  }
-  normalize(str) {
-    return str.normalize("NFKD").replace(diacriticRegex, "");
+    return normalizeText(result);
   }
   /**
    * Changes the active language and reloads the appropriate dictionary
@@ -1112,20 +1112,17 @@ var DiacriticRemover = class {
     }
     const allMappings = this.getAllMappings();
     if (Object.keys(allMappings).length === 0) {
-      return this.normalize(text);
+      return normalizeText(text);
     }
     const specialCharsPattern = this.getSpecialCharsPattern();
     if (!specialCharsPattern) {
-      return this.normalize(text);
+      return normalizeText(text);
     }
     let result = text.replace(
       specialCharsPattern,
       (match) => allMappings[match] ?? match
     );
-    return this.normalize(result);
-  }
-  normalize(str) {
-    return str.normalize("NFKD").replace(diacriticRegex, "");
+    return normalizeText(result);
   }
 };
 var removeDiacritic_default = DiacriticRemover;
@@ -1840,7 +1837,7 @@ function activate(context) {
   let CommandId;
   ((CommandId2) => {
     CommandId2["ReportIssue"] = "ps-replace-accents.reportIssue";
-    CommandId2["ReplaceDiacriticts"] = "ps-replace-accents.removeDiacritics";
+    CommandId2["RemoveDiacriticts"] = "ps-replace-accents.removeDiacritics";
     CommandId2["RemoveDiacritictsFileOrFolder"] = "ps-replace-accents.removeDiacriticsFileOrFolder";
     CommandId2["RestoreDiacritics"] = "ps-replace-accents.restoreDiacritics";
   })(CommandId || (CommandId = {}));
@@ -1905,7 +1902,7 @@ function activate(context) {
       for (const selection of selections) {
         if (!selection.isEmpty) {
           const text2 = document.getText(selection);
-          return text2.substring(0, 125);
+          return normalizeText(text2.substring(0, 125));
         }
       }
     }
@@ -1916,7 +1913,7 @@ function activate(context) {
       document.lineAt(document.lineCount - 1).text.length
     );
     const text = document.getText(entireDocumentRange);
-    return text.substring(0, 125);
+    return normalizeText(text.substring(0, 125));
   };
   const removeDiacritictsFileOrFolder = async (language, userMappings = {}, uri) => {
     const remover = new removeDiacritic_default(language, userMappings);
@@ -1968,23 +1965,25 @@ function activate(context) {
       return false;
     }
   };
-  const showLanguageSelectionDialog = async (sample = void 0) => {
-    const language = vscode2.workspace.getConfiguration("ps-replace-accents").get("textLanguage", "off");
-    if (language === "off") {
-      if (sample) {
-        const detector = new LanguageDetector();
-        const result = detector.detect(sample);
-        console.log(result);
-        if (result.language !== "unknown") {
-          return result.language;
-        }
-      }
-      const open = await vscode2.window.showWarningMessage(
+  const getConfiLanguage = async (sample) => {
+    const language = vscode2.workspace.getConfiguration("ps-replace-accents").get("textLanguage", "auto");
+    if (language !== "auto") {
+      return language;
+    }
+    const detector = new LanguageDetector();
+    const result = detector.detect(sample);
+    console.log(sample, result);
+    return result.language !== "unknown" ? result.language : void 0;
+  };
+  const showLanguageSelectionDialog = async (sample) => {
+    const language = await getConfiLanguage(sample);
+    if (!language) {
+      const openPrompt = await vscode2.window.showWarningMessage(
         vscode2.l10n.t("Select a text language in Settings to restore diacritics."),
         vscode2.l10n.t("Open Settings"),
         vscode2.l10n.t("Cancel")
       );
-      if (open === vscode2.l10n.t("Open Settings")) {
+      if (openPrompt === vscode2.l10n.t("Open Settings")) {
         await vscode2.commands.executeCommand(
           "workbench.action.openSettings",
           "ps-replace-accents.textLanguage"
@@ -2011,16 +2010,16 @@ function activate(context) {
     		 * @see {@link validateUserCharacterMappings} for mapping validation
     		 * @see {@link DiacriticRemover} for the processing logic
     		 */
-    ["ps-replace-accents.removeDiacritics" /* ReplaceDiacriticts */]: async () => {
+    ["ps-replace-accents.removeDiacritics" /* RemoveDiacriticts */]: async () => {
       const userMappings = vscode2.workspace.getConfiguration("ps-replace-accents").get("userCharacterMapping", {});
       const mappingsError = validateUserCharacterMappings(userMappings);
       if (mappingsError) {
         vscode2.window.showErrorMessage(mappingsError);
         return;
       }
-      const language = vscode2.workspace.getConfiguration("ps-replace-accents").get("textLanguage", "off");
-      const languageValue = language === "off" ? void 0 : language;
-      const remover = new removeDiacritic_default(languageValue, userMappings);
+      const textSample = getEditorTextSample();
+      const language = await getConfiLanguage(textSample);
+      const remover = new removeDiacritic_default(language, userMappings);
       const result = await processTextInEditor((text) => remover.removeDiacritics(text));
       switch (result) {
         case 1 /* SelectionModified */:
@@ -2053,8 +2052,8 @@ function activate(context) {
         return;
       }
       const urisToRename = selectedUris && selectedUris.length > 0 ? selectedUris : [uri];
-      const language = await showLanguageSelectionDialog();
-      if (language === "off") {
+      const language = await showLanguageSelectionDialog(urisToRename.join(" "));
+      if (!language) {
         return;
       }
       for (const currentUri of urisToRename) {
@@ -2081,7 +2080,7 @@ function activate(context) {
       const ignoredWords = normalizeIgnoreWords(ignoredWordsRaw);
       const textSample = getEditorTextSample();
       const language = await showLanguageSelectionDialog(textSample);
-      if (language === "off") {
+      if (!language) {
         return;
       }
       const restorer = new restoreDiacritic_default(language, ignoredWords, suffixMatching);

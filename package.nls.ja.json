@@ -3,7 +3,7 @@
     "extension.config.removeDiacritics.title": "Replace Accents",
     "extension.config.userCharacterMapping.desc": "アクセント削除のための独自の文字マッピングを定義します。特殊文字をどのように変換するかを指定するために使用します。(例: ドイツ語の「ß」を「ss」に、合字「æ」を「ae」に変換)。正規化の後に適用されます。",
     "extension.config.textLanguage.desc": "テキストの言語を選択して、ダイアクリティカルマークの削除と復元を改善します。",
-    "extension.config.textLanguage.off.desc": "オフ",
+    "extension.config.textLanguage.autoDetect.desc": "自動検出",
     "extension.config.textLanguage.croatian.desc": "クロアチア語",
     "extension.config.textLanguage.czech.desc": "チェコ語",
     "extension.config.textLanguage.danish.desc": "デンマーク語",

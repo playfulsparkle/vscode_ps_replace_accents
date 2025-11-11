@@ -119,10 +119,10 @@
         },
         "ps-replace-accents.textLanguage": {
           "type": "string",
-          "default": "off",
+          "default": "auto",
           "description": "%extension.config.textLanguage.desc%",
           "enum": [
-            "off",
+            "auto",
             "croatian",
             "czech",
             "danish",
@@ -144,7 +144,7 @@
             "swedish"
           ],
           "enumDescriptions": [
-            "%extension.config.textLanguage.off.desc%",
+            "%extension.config.textLanguage.autoDetect.desc%",
             "%extension.config.textLanguage.croatian.desc%",
             "%extension.config.textLanguage.czech.desc%",
             "%extension.config.textLanguage.danish.desc%",

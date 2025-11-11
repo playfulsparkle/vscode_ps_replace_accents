@@ -15,6 +15,10 @@ import * as vscode from "vscode";
  */
 export const diacriticRegex = /[\p{Mn}\u0300-\u036f]/gu;
 
+export function normalizeText(str: string): string {
+    return str.normalize("NFKD").replace(diacriticRegex, "");
+}
+
 /**
  * Preserves the original text case pattern when replacing characters and
  * handles diacritic expansions by using character mappings to determine

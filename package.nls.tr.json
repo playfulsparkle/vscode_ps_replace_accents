@@ -3,7 +3,7 @@
     "extension.config.removeDiacritics.title": "Replace Accents",
     "extension.config.userCharacterMapping.desc": "Vurgu işaretlerini kaldırmak için özel karakter eşlemeleri tanımlayın. Özel karakterlerin nasıl dönüştürüleceğini belirtmek için bunu kullanın. Örneğin Almanca “ß” karakterini “ss” olarak, “æ” birleşik harfini “ae” olarak dönüştürün. Normalleştirmeden sonra uygulanır.",
     "extension.config.textLanguage.desc": "Metninizin dilini seçin, böylece vurgu işaretlerinin kaldırılması ve geri yüklenmesi iyileştirilir.",
-    "extension.config.textLanguage.off.desc": "Kapalı",
+    "extension.config.textLanguage.autoDetect.desc": "Otomatik algılama",
     "extension.config.textLanguage.croatian.desc": "Hırvatça",
     "extension.config.textLanguage.czech.desc": "Çekçe",
     "extension.config.textLanguage.danish.desc": "Danca",
