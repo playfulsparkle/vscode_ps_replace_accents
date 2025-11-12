@@ -1,32 +1,41 @@
 /**
- * Language detection result with confidence score
- */
+* Language detection result with confidence score
+*/
 export interface LanguageDetectionResult {
+    /** Detected language code */
     language: string;
+    /** Confidence score between 0 and 1 */
     confidence: number;
+    /** Raw scores for all supported languages */
     scores: { [language: string]: number };
+    /** Whether the detection is considered reliable */
     isReliable: boolean;
+    /** Languages with similar confidence scores */
     ambiguousLanguages?: string[];
 }
 
 /**
- * Enhanced standalone language detector using character patterns, frequency analysis,
- * and linguistic features. Works with pure ASCII text (no diacritics).
- * 
- * Achieves ~99% accuracy through multi-layered analysis and language-specific discriminators.
- */
+* Language detector using character patterns, frequency analysis, and linguistic features
+* Supports multiple European languages with advanced disambiguation
+*/
 export class LanguageDetector {
+    /** Array of supported language codes */
     private readonly SUPPORTED_LANGUAGES = [
         "czech", "danish", "french", "german", "hungarian", "polish", "slovak",
         "spanish", "swedish", "portuguese", "italian", "norwegian", "icelandic",
         "dutch", "croatian", "slovenian", "romanian", "lithuanian", "latvian"
     ];
 
+    /** Minimum text length required for reliable detection */
     private readonly MIN_TEXT_LENGTH = 50;
+
+    /** Minimum word count required for reliable detection */
     private readonly MIN_WORD_COUNT = 10;
+
+    /** Confidence threshold for considering detection reliable */
     private readonly CONFIDENCE_THRESHOLD = 0.25;
 
-    // Enhanced character frequency profiles with more distinctive characters
+    /** Character frequency profiles for supported languages */
     private readonly CHAR_FREQUENCIES: { [language: string]: { [char: string]: number } } = {
         polish: { "z": 0.065, "w": 0.045, "y": 0.038, "k": 0.035, "c": 0.040, "j": 0.023 },
         czech: { "v": 0.055, "k": 0.042, "p": 0.031, "t": 0.062, "o": 0.074, "e": 0.084 },
@@ -49,8 +58,18 @@ export class LanguageDetector {
         latvian: { "a": 0.107, "i": 0.090, "s": 0.074, "e": 0.072, "t": 0.061, "u": 0.048 }
     };
 
+    /**
+    * Creates a new LanguageDetector instance
+    */
     constructor() { }
 
+    /**
+    * Detects the language of the provided text
+    *
+    * @param text - The text to analyze for language detection
+    *
+    * @returns Language detection result with confidence scores
+    */
     detect(text: string): LanguageDetectionResult {
         if (!text || text.trim().length === 0) {
             return {
@@ -118,6 +137,16 @@ export class LanguageDetector {
         };
     }
 
+    /**
+    * Calculates a comprehensive language score using multiple linguistic features
+    *
+    * @private
+    *
+    * @param text - Text to analyze
+    * @param language - Target language to score against
+    *
+    * @returns Numerical score representing language match confidence
+    */
     private calculateLanguageScore(text: string, language: string): number {
         const words = text.toLowerCase().split(/\s+/).filter(w => w.length > 0);
         if (words.length === 0) { return 0; }
@@ -157,8 +186,13 @@ export class LanguageDetector {
     }
 
     /**
-     * Disambiguates between highly similar language pairs
-     */
+    * Disambiguates between highly similar language pairs using specific linguistic markers
+    *
+    * @private
+    *
+    * @param scores - Current language scores to modify
+    * @param text - Text being analyzed
+    */
     private disambiguateSimilarLanguages(scores: { [language: string]: number }, text: string): void {
         const words = text.toLowerCase().split(/\s+/).filter(w => w.length > 2);
 
@@ -169,25 +203,25 @@ export class LanguageDetector {
 
             for (const word of words) {
                 // Slovak-specific patterns
-                if (/(ia|ie|iu)/.test(word)) slovakBoost += 3;
-                if (/(krat|prav|vlast|robot)/.test(word)) slovakBoost += 4;
-                if (/ovat$/.test(word)) slovakBoost += 2;
-                if (/(vsetk|prist|buduci|minul)/.test(word)) slovakBoost += 5;
-                
+                if (/(ia|ie|iu)/.test(word)) { slovakBoost += 3; }
+                if (/(krat|prav|vlast|robot)/.test(word)) { slovakBoost += 4; }
+                if (/ovat$/.test(word)) { slovakBoost += 2; }
+                if (/(vsetk|prist|buduci|minul)/.test(word)) { slovakBoost += 5; }
+
                 // Czech-specific patterns
-                if (/(ou|ej|uj)/.test(word)) czechBoost += 3;
-                if (/(kdo|kde|proc|jake|ktery)/.test(word)) czechBoost += 5;
-                if (/(budou|jsou|maji|mame|mate)/.test(word)) czechBoost += 4;
-                if (/(prave|vsak|tedy|takze|protoze)/.test(word)) czechBoost += 5;
+                if (/(ou|ej|uj)/.test(word)) { czechBoost += 3; }
+                if (/(kdo|kde|proc|jake|ktery)/.test(word)) { czechBoost += 5; }
+                if (/(budou|jsou|maji|mame|mate)/.test(word)) { czechBoost += 4; }
+                if (/(prave|vsak|tedy|takze|protoze)/.test(word)) { czechBoost += 5; }
             }
 
             // Check for distinctive stopwords
             const slovakStops = ["som", "ste", "budem", "budes", "vsetci", "vsetky"];
             const czechStops = ["jsem", "jste", "budou", "budeme", "budete", "vsichni"];
-            
+
             for (const word of words) {
-                if (slovakStops.includes(word)) slovakBoost += 15;
-                if (czechStops.includes(word)) czechBoost += 15;
+                if (slovakStops.includes(word)) { slovakBoost += 15; }
+                if (czechStops.includes(word)) { czechBoost += 15; }
             }
 
             scores["slovak"] += slovakBoost;
@@ -201,12 +235,12 @@ export class LanguageDetector {
 
             for (const word of words) {
                 // Norwegian-specific
-                if (/(kje|sje|gje|bla|bru)/.test(word)) norwegianBoost += 4;
-                if (/(ikke|ogsa|nar|blir|ble|var)/.test(word)) norwegianBoost += 3;
-                
+                if (/(kje|sje|gje|bla|bru)/.test(word)) { norwegianBoost += 4; }
+                if (/(ikke|ogsa|nar|blir|ble|var)/.test(word)) { norwegianBoost += 3; }
+
                 // Danish-specific
-                if (/(ige|ede|hed|rod|hod)/.test(word)) danishBoost += 4;
-                if (/(ikke|ogsaa|naar|bliver|blev|var)/.test(word)) danishBoost += 3;
+                if (/(ige|ede|hed|rod|hod)/.test(word)) { danishBoost += 4; }
+                if (/(ikke|ogsaa|naar|bliver|blev|var)/.test(word)) { danishBoost += 3; }
             }
 
             scores["norwegian"] += norwegianBoost;
@@ -220,12 +254,12 @@ export class LanguageDetector {
 
             for (const word of words) {
                 // Croatian-specific
-                if (/(ije|jet|ijel|ijat)/.test(word)) croatianBoost += 4;
-                if (/(biti|imati|raditi|govoriti)/.test(word)) croatianBoost += 3;
-                
+                if (/(ije|jet|ijel|ijat)/.test(word)) { croatianBoost += 4; }
+                if (/(biti|imati|raditi|govoriti)/.test(word)) { croatianBoost += 3; }
+
                 // Slovenian-specific
-                if (/(ija|uje|oval)/.test(word)) slovenianBoost += 4;
-                if (/(biti|imeti|delati|govoriti)/.test(word)) slovenianBoost += 3;
+                if (/(ija|uje|oval)/.test(word)) { slovenianBoost += 4; }
+                if (/(biti|imeti|delati|govoriti)/.test(word)) { slovenianBoost += 3; }
             }
 
             scores["croatian"] += croatianBoost;
@@ -239,12 +273,12 @@ export class LanguageDetector {
 
             for (const word of words) {
                 // Portuguese-specific
-                if (/(ao|oe|nh|lh|cao|sao)/.test(word)) portugueseBoost += 4;
-                if (/(voce|nao|muito|tambem|quando)/.test(word)) portugueseBoost += 5;
-                
+                if (/(ao|oe|nh|lh|cao|sao)/.test(word)) { portugueseBoost += 4; }
+                if (/(voce|nao|muito|tambem|quando)/.test(word)) { portugueseBoost += 5; }
+
                 // Spanish-specific
-                if (/(usted|muy|tambien|cuando|porque)/.test(word)) spanishBoost += 5;
-                if (/(cion|sion)$/.test(word)) spanishBoost += 3;
+                if (/(usted|muy|tambien|cuando|porque)/.test(word)) { spanishBoost += 5; }
+                if (/(cion|sion)$/.test(word)) { spanishBoost += 3; }
             }
 
             scores["portuguese"] += portugueseBoost;
@@ -253,8 +287,14 @@ export class LanguageDetector {
     }
 
     /**
-     * Enhanced stopword sets with more comprehensive coverage
-     */
+    * Gets stopwords for a specific language
+    *
+    * @private
+    *
+    * @param language - Language code
+    *
+    * @returns Set of stopwords for the language
+    */
     private getStopwords(language: string): Set<string> {
         const stopwordLists: { [key: string]: string[] } = {
             hungarian: ["a", "az", "es", "hogy", "nem", "van", "egy", "meg", "ki", "de", "is", "be", "le", "fel", "ez", "azt", "akkor", "aki", "csak", "vagy", "volt", "lehet"],
@@ -281,12 +321,32 @@ export class LanguageDetector {
         return new Set(stopwordLists[language] || []);
     }
 
+    /**
+    * Calculates the ratio of stopwords in the text for a given language
+    *
+    * @private
+    *
+    * @param words - Array of words from the text
+    * @param language - Language to check against
+    *
+    * @returns Ratio of matching stopwords (0-1)
+    */
     private calculateStopwordRatio(words: string[], language: string): number {
         const stopwords = this.getStopwords(language);
         const stopwordCount = words.filter(w => stopwords.has(w)).length;
         return stopwordCount / words.length;
     }
 
+    /**
+    * Analyzes character frequency distribution against language profiles
+    *
+    * @private
+    *
+    * @param text - Text to analyze
+    * @param language - Language to compare against
+    *
+    * @returns Score based on character frequency match (0-1)
+    */
     private analyzeCharacterFrequency(text: string, language: string): number {
         const lowerText = text.toLowerCase();
         const charCount: { [char: string]: number } = {};
@@ -315,8 +375,15 @@ export class LanguageDetector {
     }
 
     /**
-     * Analyzes character trigrams (three-character sequences) - highly distinctive
-     */
+    * Analyzes three-character sequences specific to languages
+    *
+    * @private
+    *
+    * @param text - Text to analyze
+    * @param language - Language to check for
+    *
+    * @returns Trigram analysis score
+    */
     private analyzeTrigrams(text: string, language: string): number {
         const trigrams: { [key: string]: string[] } = {
             german: ["sch", "ich", "ein", "und", "cht", "hen", "den", "gen", "ver", "ber"],
@@ -357,6 +424,16 @@ export class LanguageDetector {
         return Math.min(score, 1.0);
     }
 
+    /**
+    * Analyzes two-character sequences for language identification
+    *
+    * @private
+    *
+    * @param text - Text to analyze
+    * @param language - Language to check for
+    *
+    * @returns Bigram analysis score
+    */
     private analyzeBigrams(text: string, language: string): number {
         const bigrams: { [key: string]: string[] } = {
             german: ["ch", "en", "er", "ie", "de", "te", "sc", "nd", "ge", "st"],
@@ -397,6 +474,16 @@ export class LanguageDetector {
         return Math.min(score, 1.0);
     }
 
+    /**
+    * Scores word patterns and morphological features specific to languages
+    *
+    * @private
+    *
+    * @param word - Individual word to score
+    * @param language - Language to check against
+    *
+    * @returns Pattern matching score
+    */
     private scoreWordPatterns(word: string, language: string): number {
         if (word.length < 3) { return 0; }
 
@@ -502,6 +589,16 @@ export class LanguageDetector {
         return score;
     }
 
+    /**
+    * Scores word endings and suffixes characteristic of specific languages
+    *
+    * @private
+    *
+    * @param word - Individual word to score
+    * @param language - Language to check against
+    *
+    * @returns Word structure score
+    */
     private scoreWordStructure(word: string, language: string): number {
         if (word.length < 4) { return 0; }
 
@@ -540,6 +637,16 @@ export class LanguageDetector {
         return score;
     }
 
+    /**
+    * Applies negative scoring for patterns unlikely in the target language
+    *
+    * @private
+    *
+    * @param words - Array of words from the text
+    * @param language - Language to check against
+    *
+    * @returns Negative score penalty
+    */
     private applyNegativePatterns(words: string[], language: string): number {
         let penalty = 0;
 
@@ -588,8 +695,15 @@ export class LanguageDetector {
     }
 
     /**
-     * Checks for highly distinctive language-specific markers
-     */
+    * Checks for highly distinctive language-specific vocabulary markers
+    *
+    * @private
+    *
+    * @param words - Array of words from the text
+    * @param language - Language to check for
+    *
+    * @returns Score based on distinctive marker matches
+    */
     private checkLanguageSpecificMarkers(words: string[], language: string): number {
         const markers: { [key: string]: string[] } = {
             hungarian: ["hogy", "nincs", "lesz", "volt", "lehet", "kell", "minden", "csak", "alatt", "felett"],
@@ -626,8 +740,15 @@ export class LanguageDetector {
     }
 
     /**
-     * Analyzes vowel/consonant patterns specific to languages
-     */
+    * Analyzes vowel/consonant patterns and phonological features
+    *
+    * @private
+    *
+    * @param words - Array of words from the text
+    * @param language - Language to check against
+    *
+    * @returns Vowel/consonant pattern score
+    */
     private analyzeVowelConsonantPatterns(words: string[], language: string): number {
         let score = 0;
 
@@ -686,18 +807,40 @@ export class LanguageDetector {
         return score / Math.max(words.length, 1);
     }
 
+    /**
+    * Gets the list of supported languages
+    *
+    * @returns Array of supported language codes
+    */
     getSupportedLanguages(): string[] {
         return [...this.SUPPORTED_LANGUAGES];
     }
 
+    /**
+    * Gets the confidence threshold for reliable detection
+    *
+    * @returns Confidence threshold value (0-1)
+    */
     getConfidenceThreshold(): number {
         return this.CONFIDENCE_THRESHOLD;
     }
 
+    /**
+    * Checks if a language is supported by the detector
+    *
+    * @param language - Language code to check
+    *
+    * @returns True if the language is supported
+    */
     isLanguageSupported(language: string): boolean {
         return this.SUPPORTED_LANGUAGES.includes(language.toLowerCase());
     }
 
+    /**
+    * Gets the minimum text requirements for reliable detection
+    *
+    * @returns Object containing minimum text length and word count
+    */
     getMinimumRequirements(): { minTextLength: number; minWordCount: number } {
         return {
             minTextLength: this.MIN_TEXT_LENGTH,

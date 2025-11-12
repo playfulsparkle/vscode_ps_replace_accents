@@ -4,129 +4,140 @@ import { searchAndReplaceCaseSensitive, normalizeText } from "./shared";
 import { LanguageLetters, languageCharacterMappings } from "./characterMappings";
 
 /**
- * Dictionary entry interface representing a word and its frequency
- * 
- * @typedef {Object} DictionaryEntry
- * @property {string} word - The word with diacritics
- * @property {number} frequency - Frequency of word usage (higher = more common)
- */
+* Dictionary entry interface representing a word and its frequency
+*
+* @typedef {Object} DictionaryEntry
+* @property {string} word - The word with diacritics
+* @property {number} frequency - Frequency of word usage (higher = more common)
+*/
 interface DictionaryEntry {
     word: string;
     frequency: number;
 }
 
 /**
- * A utility class that restores accent marks and special characters to 
- * normalized text using language-specific dictionaries and frequency-based 
- * matching.
- */
+* A utility class that restores accent marks and special characters to
+* normalized text using language-specific dictionaries and frequency-based
+* matching.
+*/
 class DiacriticRestorer {
     /**
-     * Main dictionary storage mapping base forms to possible diacritic variations
-     * Stored as arrays sorted by frequency (descending - most frequent first)
-     * 
-     * @type {Map<string, DictionaryEntry[]>}
-     * @private
-     */
+    * Main dictionary storage mapping base forms to possible diacritic variations
+    * Stored as arrays sorted by frequency (descending - most frequent first)
+    *
+    * @private
+    *
+    * @type {Map<string, DictionaryEntry[]>}
+    */
     private dictionary: Map<string, DictionaryEntry[]> = new Map();
 
     /**
-     * Language-specific character mappings for the currently active language
-     * 
-     * Contains the complete set of special characters and their ASCII equivalents
-     * for the current language. This is used to handle language-specific diacritics
-     * and special characters that aren't covered by standard Unicode normalization.
-     * 
-     * @private
-     * @type {LanguageLetters | undefined}
-     */
+    * Language-specific character mappings for the currently active language
+    *
+    * Contains the complete set of special characters and their ASCII equivalents
+    * for the current language. This is used to handle language-specific diacritics
+    * and special characters that aren't covered by standard Unicode normalization.
+    *
+    * @private
+    *
+    * @type {LanguageLetters | undefined}
+    */
     private currentMappings: LanguageLetters | undefined;
 
     /**
-     * Set of words to ignore during restoration (in normalized form)
-     * 
-     * @type {Set<string>}
-     * @private
-     */
+    * Set of words to ignore during restoration (in normalized form)
+    *
+    * @private
+    *
+    * @type {Set<string>}
+    */
     private ignoredWords: Set<string>;
 
     /**
-     * Currently active language code (e.g., 'hu', 'fr', 'es')
-     * 
-     * @type {string | undefined}
-     * @private
-     */
+    * Currently active language code (e.g., 'hu', 'fr', 'es')
+    *
+    * @private
+    *
+    * @type {string | undefined}
+    */
     private currentLanguage: string | undefined;
 
     /**
-     * Indicates whether the dictionary is loaded and ready for use
-     * 
-     * @type {boolean}
-     * @private
-     */
+    * Indicates whether the dictionary is loaded and ready for use
+    *
+    * @private
+    *
+    * @type {boolean}
+    */
     private isReady: boolean = false;
 
     /**
-     * Base file system path where dictionary files are stored
-     * 
-     * @type {string}
-     * @private
-     */
+    * Base file system path where dictionary files are stored
+    *
+    * @private
+    *
+    * @type {string}
+    */
     private dictionaryBasePath: string;
 
     /**
-     * LRU cache for restoration results to improve performance
-     * 
-     * @type {Map<string, string>}
-     * @private
-     */
+    * LRU cache for restoration results to improve performance
+    *
+    * @private
+    *
+    * @type {Map<string, string>}
+    */
     private restorationCache: Map<string, string> = new Map();
 
     /**
-     * Maximum number of entries to store in the restoration cache
-     * 
-     * @type {number}
-     * @private
-     * @readonly
-     */
+    * Maximum number of entries to store in the restoration cache
+    *
+    * @private
+    * @readonly
+    *
+    * @type {number}
+    */
     private readonly MAX_CACHE_SIZE = 1000;
 
     /**
-     * Whether to enable suffix matching for inflected word forms
-     * 
-     * @type {boolean}
-     * @private
-     */
+    * Whether to enable suffix matching for inflected word forms
+    *
+    * @private
+    *
+    * @type {boolean}
+    */
     private enableSuffixMatching: boolean;
 
     /**
-     * Minimum stem length for suffix matching (default: 2)
-     * 
-     * @type {number}
-     * @private
-     */
+    * Minimum stem length for suffix matching (default: 2)
+    *
+    * @private
+    *
+    * @type {number}
+    */
     private minSuffixStemLength: number;
 
     /**
-     * Cached regex pattern for identifying words (including Unicode letters and combining marks)
-     * Matches: Unicode letters, combining marks, apostrophes, and hyphens
-     * 
-     * @type {RegExp}
-     * @static
-     * @readonly
-     */
+    * Cached regex pattern for identifying words (including Unicode letters and combining marks)
+    * Matches: Unicode letters, combining marks, apostrophes, and hyphens
+    *
+    * @static
+    * @readonly
+    *
+    * @type {RegExp}
+    */
     private static readonly WORD_REGEX = /[\p{L}\p{M}'\u2019-]+/gu;
 
     /**
-     * Creates a new DiacriticRestorer instance
-     * 
-     * @param {string} language - Language code for dictionary loading (e.g., 'hu', 'fr')
-     * @param {string[]} [ignoredWords=[]] - Array of words to skip during restoration
-     * @param {boolean} [enableSuffixMatching=false] - Whether to enable suffix matching for inflected forms
-     * @param {number} [minSuffixStemLength=2] - Minimum stem length for suffix matching
-     * 
-     * @throws {Error} If language is not provided
-     */
+    * Creates a new DiacriticRestorer instance
+    *
+    * @param {string} language - Language code for dictionary loading (e.g., 'hu', 'fr')
+    * @param {string[]} [ignoredWords=[]] - Array of words to skip during restoration
+    * @param {boolean} [enableSuffixMatching=false] - Whether to enable suffix matching for inflected forms
+    * @param {number} [minSuffixStemLength=2] - Minimum stem length for suffix matching
+    *
+    * @throws {Error} If language is not provided
+    */
     constructor(
         language: string | undefined,
         ignoredWords: string[] = [],
@@ -148,31 +159,32 @@ class DiacriticRestorer {
     }
 
     /**
-     * Generates character mappings for diacritic restoration operations
-     * 
-     * Provides bidirectional mapping capabilities between diacritic characters and their
-     * ASCII equivalents. When `reversed` is false, returns mappings from diacritic characters
-     * to ASCII equivalents (used for normalization). When `reversed` is true, returns mappings
-     * from ASCII sequences to diacritic characters (used for restoration and case alignment).
-     * 
-     * @private
-     * @param {boolean} [reversed=false] - When true, returns reverse mappings (ASCII → diacritic)
-     *                                     When false, returns normal mappings (diacritic → ASCII)
-     * @returns {{[key: string]: string}} Object containing character mappings
-     * 
-     * @example
-     * // Normal mappings for normalization:
-     * // { 'á': 'a', 'é': 'e', 'ø': 'oe', 'æ': 'ae' }
-     * const normalMappings = getAllMappings();
-     * 
-     * @example
-     * // Reverse mappings for restoration:
-     * // { 'a': 'á', 'e': 'é', 'oe': 'ø', 'ae': 'æ' }  
-     * const reverseMappings = getAllMappings(true);
-     * 
-     * @see {@link removeDiacritics} - Uses normal mappings
-     * @see {@link searchAndReplaceCaseSensitive} - Uses reverse mappings
-     */
+    * Generates character mappings for diacritic restoration operations
+    *
+    * Provides bidirectional mapping capabilities between diacritic characters and their
+    * ASCII equivalents. When `reversed` is false, returns mappings from diacritic characters
+    * to ASCII equivalents (used for normalization). When `reversed` is true, returns mappings
+    * from ASCII sequences to diacritic characters (used for restoration and case alignment).
+    *
+    * @private
+    *
+    * @param {boolean} [reversed=false] - When true, returns reverse mappings (ASCII → diacritic)
+    *                                     When false, returns normal mappings (diacritic → ASCII)
+    * @returns {{[key: string]: string}} Object containing character mappings
+    *
+    * @example
+    * // Normal mappings for normalization:
+    * // { 'á': 'a', 'é': 'e', 'ø': 'oe', 'æ': 'ae' }
+    * const normalMappings = getAllMappings();
+    *
+    * @example
+    * // Reverse mappings for restoration:
+    * // { 'a': 'á', 'e': 'é', 'oe': 'ø', 'ae': 'æ' }
+    * const reverseMappings = getAllMappings(true);
+    *
+    * @see {@link removeDiacritics} - Uses normal mappings
+    * @see {@link searchAndReplaceCaseSensitive} - Uses reverse mappings
+    */
     private getAllMappings(reversed: boolean = false): { [key: string]: string } {
         if (!this.currentMappings) {
             return {};
@@ -184,11 +196,11 @@ class DiacriticRestorer {
     }
 
     /**
-     * Gets the special characters pattern computed from currentMappings
-     * Computed on demand to save memory
-     * 
-     * @private
-     */
+    * Gets the special characters pattern computed from currentMappings
+    * Computed on demand to save memory
+    *
+    * @private
+    */
     private getSpecialCharsPattern(): RegExp | undefined {
         if (!this.currentMappings?.letters.length) {
             return undefined;
@@ -203,14 +215,14 @@ class DiacriticRestorer {
     }
 
     /**
-     * Initializes the diacritic restorer by loading and building the dictionary
-     * 
-     * @async
-     * 
-     * @returns {Promise<void>}
-     * 
-     * @throws {Error} If no language is specified or dictionary file cannot be loaded
-     */
+    * Initializes the diacritic restorer by loading and building the dictionary
+    *
+    * @async
+    *
+    * @returns {Promise<void>}
+    *
+    * @throws {Error} If no language is specified or dictionary file cannot be loaded
+    */
     async initialize(): Promise<void> {
         if (this.isReady) {
             return;
@@ -228,15 +240,16 @@ class DiacriticRestorer {
     }
 
     /**
-     * Reads dictionary file from disk with optimized streaming
-     * 
-     * @private
-     * @param {string} filePath - Path to the dictionary file
-     * 
-     * @returns {Promise<string>} File contents as string
-     * 
-     * @throws {Error} If file doesn't exist or cannot be read
-     */
+    * Reads dictionary file from disk with optimized streaming
+    *
+    * @private
+    *
+    * @param {string} filePath - Path to the dictionary file
+    *
+    * @returns {Promise<string>} File contents as string
+    *
+    * @throws {Error} If file doesn't exist or cannot be read
+    */
     private async readDictionaryFile(filePath: string): Promise<string> {
         return new Promise((resolve, reject) => {
             // Check if file exists first
@@ -263,15 +276,16 @@ class DiacriticRestorer {
     }
 
     /**
-     * Builds the in-memory dictionary from CSV data with frequency-based sorting
-     * 
-     * Uses optimized insertion sort for memory efficiency
-     * 
-     * @private
-     * @param {string} csvData - Tab-separated CSV data (word\tfrequency)
-     * 
-     * @returns {void}
-     */
+    * Builds the in-memory dictionary from CSV data with frequency-based sorting
+    *
+    * Uses optimized insertion sort for memory efficiency
+    *
+    * @private
+    *
+    * @param {string} csvData - Tab-separated CSV data (word\tfrequency)
+    *
+    * @returns {void}
+    */
     private buildDictionary(csvData: string): void {
         const lines = csvData.split("\n");
         let lineCount = 0;
@@ -347,14 +361,14 @@ class DiacriticRestorer {
     }
 
     /**
-     * Restores diacritics to normalized text using the loaded dictionary
-     * 
-     * @param {string} text - Input text with missing diacritics
-     * 
-     * @returns {string} Text with restored diacritics
-     * 
-     * @throws {Error} If restorer is not initialized
-     */
+    * Restores diacritics to normalized text using the loaded dictionary
+    *
+    * @param {string} text - Input text with missing diacritics
+    *
+    * @returns {string} Text with restored diacritics
+    *
+    * @throws {Error} If restorer is not initialized
+    */
     restoreDiacritics(text: string): string {
         if (!this.isReady) {
             throw new Error("Accent restorer not initialized. Call initialize() first.");
@@ -389,14 +403,15 @@ class DiacriticRestorer {
     }
 
     /**
-     * Adds an entry to the LRU cache, evicting oldest entry if capacity exceeded
-     * 
-     * @private
-     * @param {string} key - Original word
-     * @param {string} value - Restored word
-     * 
-     * @returns {void}
-     */
+    * Adds an entry to the LRU cache, evicting oldest entry if capacity exceeded
+    *
+    * @private
+    *
+    * @param {string} key - Original word
+    * @param {string} value - Restored word
+    *
+    * @returns {void}
+    */
     private addToCache(key: string, value: string): void {
         // Simple LRU: if cache is full, delete the first (oldest) entry
         if (this.restorationCache.size >= this.MAX_CACHE_SIZE) {
@@ -409,15 +424,16 @@ class DiacriticRestorer {
     }
 
     /**
-     * Finds the best dictionary match for a normalized word using frequency ranking
-     * 
-     * @private
-     * @param {string} word - Original word (for case preservation)
-     * @param {string} lowerWord - Pre-computed lowercase version
-     * @param {string} baseForm - Pre-computed normalized base form
-     * 
-     * @returns {string | null} Best matching word with diacritics, or null if no match found
-     */
+    * Finds the best dictionary match for a normalized word using frequency ranking
+    *
+    * @private
+    *
+    * @param {string} word - Original word (for case preservation)
+    * @param {string} lowerWord - Pre-computed lowercase version
+    * @param {string} baseForm - Pre-computed normalized base form
+    *
+    * @returns {string | null} Best matching word with diacritics, or null if no match found
+    */
     private findBestMatch(word: string, lowerWord: string, baseForm: string): string | null {
         const candidates = this.dictionary.get(baseForm);
         // console.log(word, lowerWord, candidates);
@@ -435,17 +451,18 @@ class DiacriticRestorer {
     }
 
     /**
-     * Attempts to match inflected word forms by progressively shortening the stem
-     * 
-     * Optimized to check larger stems first (more likely to match)
-     * 
-     * @private
-     * @param {string} word - Original word
-     * @param {string} lowerWord - Pre-computed lowercase version
-     * @param {string} normalizedBase - Normalized base form
-     * 
-     * @returns {string | null} Reconstructed word with diacritics, or null if no match
-     */
+    * Attempts to match inflected word forms by progressively shortening the stem
+    *
+    * Optimized to check larger stems first (more likely to match)
+    *
+    *
+    *
+    * @param {string} word - Original word
+    * @param {string} lowerWord - Pre-computed lowercase version
+    * @param {string} normalizedBase - Normalized base form
+    *
+    * @returns {string | null} Reconstructed word with diacritics, or null if no match
+    */
     private findSuffixMatch(word: string, lowerWord: string, normalizedBase: string): string | null {
         const wordLen = normalizedBase.length;
 
@@ -473,15 +490,16 @@ class DiacriticRestorer {
     }
 
     /**
-     * Removes diacritics and normalizes text to base form for dictionary lookup
-     * 
-     * Optimized for performance with minimal string operations
-     * 
-     * @private
-     * @param {string} text - Input text with potential diacritics
-     * 
-     * @returns {string} Normalized text without diacritics
-     */
+    * Removes diacritics and normalizes text to base form for dictionary lookup
+    *
+    * Optimized for performance with minimal string operations
+    *
+    * @private
+    *
+    * @param {string} text - Input text with potential diacritics
+    *
+    * @returns {string} Normalized text without diacritics
+    */
     private removeDiacritics(text: string): string {
         if (!text || typeof text !== "string") {
             return text;
@@ -509,13 +527,13 @@ class DiacriticRestorer {
     }
 
     /**
-     * Changes the active language and reloads the appropriate dictionary
-     * 
-     * @async
-     * @param {string} language - New language code
-     * 
-     * @returns {Promise<void>}
-     */
+    * Changes the active language and reloads the appropriate dictionary
+    *
+    * @async
+    * @param {string} language - New language code
+    *
+    * @returns {Promise<void>}
+    */
     async changeLanguage(language: string): Promise<void> {
         if (language === this.currentLanguage && this.isReady) {
             return; // No change needed
@@ -530,10 +548,10 @@ class DiacriticRestorer {
     }
 
     /**
-     * Cleans up resources and resets the restorer to uninitialized state
-     * 
-     * @returns {void}
-     */
+    * Cleans up resources and resets the restorer to uninitialized state
+    *
+    * @returns {void}
+    */
     dispose(): void {
         this.dictionary.clear();
         this.ignoredWords.clear();
@@ -544,10 +562,10 @@ class DiacriticRestorer {
     }
 
     /**
-     * Returns memory usage statistics for monitoring and debugging
-     * 
-     * @returns {string} Formatted string with memory usage information
-     */
+    * Returns memory usage statistics for monitoring and debugging
+    *
+    * @returns {string} Formatted string with memory usage information
+    */
     getMemoryUsage(): string {
         const entries = Array.from(this.dictionary.values()).reduce((sum, arr) => sum + arr.length, 0);
         const uniqueBaseForms = this.dictionary.size;
@@ -555,19 +573,19 @@ class DiacriticRestorer {
     }
 
     /**
-     * Checks if the restorer is initialized and ready for use
-     * 
-     * @returns {boolean} True if initialized and ready
-     */
+    * Checks if the restorer is initialized and ready for use
+    *
+    * @returns {boolean} True if initialized and ready
+    */
     getIsReady(): boolean {
         return this.isReady;
     }
 
     /**
-     * Gets the currently active language code
-     * 
-     * @returns {string | undefined} Current language or undefined if not set
-     */
+    * Gets the currently active language code
+    *
+    * @returns {string | undefined} Current language or undefined if not set
+    */
     getCurrentLanguage(): string | undefined {
         return this.currentLanguage;
     }

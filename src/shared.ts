@@ -1,18 +1,18 @@
 import * as vscode from "vscode";
 
 /**
- * Regular expression for matching diacritical marks and combining characters
- * 
- * This regex uses Unicode property escapes to match:
- * - `\p{Mn}`: Non-spacing marks (diacritics that don't take up space)
- * - `\u0300-\u036f`: Combining diacritical marks Unicode block
- * 
- * @constant {RegExp}
- * @global
- * 
- * @see {@link https://unicode.org/reports/tr44/#GC_Values_Table | Unicode General Category Values}
- * @see {@link https://en.wikipedia.org/wiki/Combining_Diacritical_Marks | Combining Diacritical Marks}
- */
+* Regular expression for matching diacritical marks and combining characters
+*
+* This regex uses Unicode property escapes to match:
+* - `\p{Mn}`: Non-spacing marks (diacritics that don't take up space)
+* - `\u0300-\u036f`: Combining diacritical marks Unicode block
+*
+* @constant {RegExp}
+* @global
+*
+* @see {@link https://unicode.org/reports/tr44/#GC_Values_Table | Unicode General Category Values}
+* @see {@link https://en.wikipedia.org/wiki/Combining_Diacritical_Marks | Combining Diacritical Marks}
+*/
 export const diacriticRegex = /[\p{Mn}\u0300-\u036f]/gu;
 
 export function normalizeText(str: string): string {
@@ -20,19 +20,19 @@ export function normalizeText(str: string): string {
 }
 
 /**
- * Preserves the original text case pattern when replacing characters and
- * handles diacritic expansions by using character mappings to determine
- * the correct character alignment between original and restored forms.
- * 
- * For diacritic restoration scenarios where character counts differ due to
- * expansions (e.g., "oe" → "ø", "ae" → "æ"), this function uses character
- * mappings to align the strings properly before applying case patterns.
- * 
- * @param {string} original - The original normalized text (without diacritics)
- * @param {string} restored - The restored text with diacritics
- * @param {Object} [characterMappings] - Optional character mappings for alignmen
- * @returns {string} The restored text with proper case pattern applied
- */
+* Preserves the original text case pattern when replacing characters and
+* handles diacritic expansions by using character mappings to determine
+* the correct character alignment between original and restored forms.
+*
+* For diacritic restoration scenarios where character counts differ due to
+* expansions (e.g., "oe" → "ø", "ae" → "æ"), this function uses character
+* mappings to align the strings properly before applying case patterns.
+*
+* @param {string} original - The original normalized text (without diacritics)
+* @param {string} restored - The restored text with diacritics
+* @param {Object} [characterMappings] - Optional character mappings for alignmen
+* @returns {string} The restored text with proper case pattern applied
+*/
 export function searchAndReplaceCaseSensitive(
     original: string,
     restored: string,
@@ -52,14 +52,16 @@ export function searchAndReplaceCaseSensitive(
 }
 
 /**
- * Applies case pattern using character mappings to handle multi-character expansions
- * 
- * @private
- * @param {string} original - Original normalized text
- * @param {string} restored - Restored text with diacritics  
- * @param {Object} characterMappings - Character mappings for expansions
- * @returns {string} Properly transformed result
- */
+* Applies case pattern using character mappings to handle multi-character expansions
+*
+* @private
+*
+* @param {string} original - Original normalized text
+* @param {string} restored - Restored text with diacritics
+* @param {Object} characterMappings - Character mappings for expansions
+*
+* @returns {string} Properly transformed result
+*/
 function applyCasePatternWithMappings(
     original: string,
     restored: string,
@@ -109,14 +111,16 @@ function applyCasePatternWithMappings(
 }
 
 /**
- * Applies case pattern from original text to restored text
- * Helper function that contains the original logic for same-length strings
- * 
- * @private
- * @param {string} original - The original text containing the case pattern
- * @param {string} restored - The replacement text to apply the case pattern to  
- * @returns {string} The restored text with case pattern from the original
- */
+* Applies case pattern from original text to restored text
+* Helper function that contains the original logic for same-length strings
+*
+* @private
+*
+* @param {string} original - The original text containing the case pattern
+* @param {string} restored - The replacement text to apply the case pattern to
+*
+* @returns {string} The restored text with case pattern from the original
+*/
 function applyCasePattern(original: string, restored: string): string {
     if (!original || !restored) {
         return restored;
@@ -175,19 +179,19 @@ function applyCasePattern(original: string, restored: string): string {
 }
 
 /**
- * Validates user-provided character mappings for diacritic replacement
- * 
- * Ensures that custom character mappings follow the required format:
- * - Each key must be a single character string
- * - Each value must be a string (can be multiple characters)
- * - The mappings object must be a valid object
- * 
- * @param {Object} mappings - User-provided character mappings object to validate
- * @param {string} mappings.key - Single character keys with string values
- * @returns {string} Empty string if validation passes, localized error message if validation fails
- * 
- * @throws {Error} Does not throw errors, returns localized error messages instead
- */
+* Validates user-provided character mappings for diacritic replacement
+*
+* Ensures that custom character mappings follow the required format:
+* - Each key must be a single character string
+* - Each value must be a string (can be multiple characters)
+* - The mappings object must be a valid object
+*
+* @param {Object} mappings - User-provided character mappings object to validate
+* @param {string} mappings.key - Single character keys with string values
+* @returns {string} Empty string if validation passes, localized error message if validation fails
+*
+* @throws {Error} Does not throw errors, returns localized error messages instead
+*/
 export function validateUserCharacterMappings(mappings: { [key: string]: string }): string {
     if (!mappings || typeof mappings !== "object") {
         return vscode.l10n.t("Invalid mappings: Not an object.");
@@ -207,17 +211,17 @@ export function validateUserCharacterMappings(mappings: { [key: string]: string 
 }
 
 /**
- * Normalizes and deduplicates a string of ignored words into a clean array
- * 
- * Processes a newline-separated string of words into a normalized array:
- * - Splits by newlines
- * - Trims whitespace from each word
- * - Removes empty lines
- * - Deduplicates using a Set
- * 
- * @param {string} str - Input string containing newline-separated words
- * @returns {string[]} Array of unique, trimmed words
- */
+* Normalizes and deduplicates a string of ignored words into a clean array
+*
+* Processes a newline-separated string of words into a normalized array:
+* - Splits by newlines
+* - Trims whitespace from each word
+* - Removes empty lines
+* - Deduplicates using a Set
+*
+* @param {string} str - Input string containing newline-separated words
+* @returns {string[]} Array of unique, trimmed words
+*/
 export function normalizeIgnoreWords(str: string): string[] {
     return Array.from(
         new Set(
