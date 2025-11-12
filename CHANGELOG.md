@@ -2,6 +2,10 @@
 
 All notable changes to the "Playful Sparkle: Replace Accents" extension will be documented in this file.
 
+## [0.0.18] - 2025-11-12
+
+- Fix bug file existence check now verifies exact case on case-insensitive file systems (Windows, macOS)
+
 ## [0.0.17] - 2025-11-11
 
 - Added auto language detection for all supported dictionary languages.

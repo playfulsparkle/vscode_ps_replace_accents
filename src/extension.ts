@@ -256,10 +256,27 @@ export function activate(context: vscode.ExtensionContext) {
 
 	const isFileExists = async (uri: vscode.Uri): Promise<boolean> => {
 		try {
-			await vscode.workspace.fs.stat(uri);
-			return true;  // File exists - stat succeeded
+			// For exact case verification, check parent directory
+			const parentUri = vscode.Uri.joinPath(uri, "..");
+			const fileName = path.basename(uri.fsPath);
+
+			// Validate fileName to prevent edge cases
+			if (!fileName || fileName === "." || fileName === "..") {
+				return false;
+			}
+
+			const entries = await vscode.workspace.fs.readDirectory(parentUri);
+
+			// Look for exact case match
+			return entries.some(([name]) => name === fileName);
 		} catch (error) {
-			return false; // File doesn't exist - stat threw an error
+			// FileNotFound or any filesystem error means it doesn't exist or isn't accessible
+			if (error instanceof vscode.FileSystemError) {
+				return false;
+			}
+
+			// Re-throw unexpected errors
+			throw error;
 		}
 	};
 

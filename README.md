@@ -86,6 +86,10 @@ When restoring, it uses **per-language dictionaries**, optional **suffix matchin
 
 ## Release Notes
 
+### 0.0.18
+
+- Fix bug file existence check now verifies exact case on case-insensitive file systems (Windows, macOS)
+
 ### 0.0.17
 
 - Added auto language detection for all supported dictionary languages.
