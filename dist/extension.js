@@ -2161,10 +2161,18 @@ function activate(context) {
   };
   const isFileExists = async (uri) => {
     try {
-      await vscode2.workspace.fs.stat(uri);
-      return true;
+      const parentUri = vscode2.Uri.joinPath(uri, "..");
+      const fileName = path2.basename(uri.fsPath);
+      if (!fileName || fileName === "." || fileName === "..") {
+        return false;
+      }
+      const entries = await vscode2.workspace.fs.readDirectory(parentUri);
+      return entries.some(([name]) => name === fileName);
     } catch (error) {
-      return false;
+      if (error instanceof vscode2.FileSystemError) {
+        return false;
+      }
+      throw error;
     }
   };
   const getConfiLanguage = async (sample) => {
