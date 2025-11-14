@@ -60,7 +60,7 @@ When restoring, it uses **per-language dictionaries**, optional **suffix matchin
   - Polish word count: 13,362
   - Portuguese word count: 1,944
   - Romanian word count: 5,632
-  - Slovak word count: 34,339
+  - Slovak word count: 37,373
   - Slovenian word count: 1,790
   - Spanish word count: 5,826
   - Swedish word count: 8,986
