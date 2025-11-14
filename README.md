@@ -44,6 +44,29 @@ When restoring, it uses **per-language dictionaries**, optional **suffix matchin
   - **Windows/Linux:** `Ctrl+Alt+R`
   - **macOS:** `Cmd+Alt+R`
 
+- **Supported language dictionaries:**
+  - Croatian word count: 4,480
+  - Czech word count: 26,816
+  - Danish word count: 3,033
+  - Dutch word count: 423
+  - French word count: 2,137
+  - German word count: 9,617
+  - Hungarian word count: 127,653
+  - Icelandic word count: 2,245
+  - Italian word count: 1,042
+  - Latvian word count: 5,156
+  - Lithuanian word count: 4,126
+  - Norwegian word count: 973
+  - Polish word count: 13,362
+  - Portuguese word count: 1,944
+  - Romanian word count: 5,632
+  - Slovak word count: 34,339
+  - Slovenian word count: 1,790
+  - Spanish word count: 5,826
+  - Swedish word count: 8,986
+
+  **Note:** These dictionaries are curated and only include words that contain at least one non-ASCII character or diacritic, for example Danish `“ø”`, Norwegian `“å”`, Polish `“ą”`, French `“é”` and similar letters. Words written using only unaccented ASCII letters are not stored. Because the focus is on accented forms, the word counts for some languages are significantly lower than in a full dictionary.
+
 - **Multi-Language Support**: The extension's user interface and informational messages are available in English (en), Magyar (hu), Slovenčina (sk), Čeština (cs), Deutsch (de), Français (fr), Polski (pl), Български (bg), Español (es), Italiano (it), 日本語 (ja), 한국어 (ko), Português do Brasil (pt-br), Русский (ru), Türkçe (tr), 简体中文 (zh-cn), 繁體中文 (zh-tw) languages.
 
 ---
