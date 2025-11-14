@@ -2,6 +2,10 @@
 
 All notable changes to the "Playful Sparkle: Replace Accents" extension will be documented in this file.
 
+## [0.0.19] - 2025-11-14
+
+- Swedish, spanish, dutch, tialian, romanian, slovak dictionary update.
+
 ## [0.0.18] - 2025-11-12
 
 - Fix bug file existence check now verifies exact case on case-insensitive file systems (Windows, macOS)

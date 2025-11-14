@@ -109,6 +109,10 @@ When restoring, it uses **per-language dictionaries**, optional **suffix matchin
 
 ## Release Notes
 
+### 0.0.19
+
+- Swedish, spanish, dutch, tialian, romanian, slovak dictionary update.
+
 ### 0.0.18
 
 - Fix bug file existence check now verifies exact case on case-insensitive file systems (Windows, macOS)
