@@ -109,6 +109,10 @@ When restoring, it uses **per-language dictionaries**, optional **suffix matchin
 
 ## Release Notes
 
+### 0.0.20
+
+- Optimized async call to remove diacriticts on file or folder.
+
 ### 0.0.19
 
 - Swedish, spanish, dutch, tialian, romanian, slovak dictionary update.

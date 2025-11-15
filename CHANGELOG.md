@@ -2,6 +2,10 @@
 
 All notable changes to the "Playful Sparkle: Replace Accents" extension will be documented in this file.
 
+## [0.0.20] - 2025-11-15
+
+- Optimized async call to remove diacriticts on file or folder.
+
 ## [0.0.19] - 2025-11-14
 
 - Swedish, spanish, dutch, tialian, romanian, slovak dictionary update.

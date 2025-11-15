@@ -2262,16 +2262,26 @@ function activate(context) {
         return;
       }
       const urisToRename = selectedUris && selectedUris.length > 0 ? selectedUris : [uri];
+      let successCount = 0;
       const language = await showLanguageSelectionDialog(urisToRename.join(" "));
       if (!language) {
         return;
       }
-      for (const currentUri of urisToRename) {
-        await removeDiacritictsFileOrFolder(language, userMappings, currentUri);
-      }
-      if (urisToRename.length > 1) {
+      const results = await Promise.allSettled(
+        urisToRename.map(
+          (currentUri) => removeDiacritictsFileOrFolder(language, userMappings, currentUri)
+        )
+      );
+      results.forEach((result, index) => {
+        if (result.status === "rejected") {
+          console.error(`Failed to process ${urisToRename[index].fsPath}:`, result.reason);
+        } else {
+          successCount++;
+        }
+      });
+      if (successCount > 0) {
         vscode2.window.showInformationMessage(
-          vscode2.l10n.t("Diacritics removed from {0} items.", urisToRename.length)
+          vscode2.l10n.t("Diacritics removed from {0} items.", successCount)
         );
       }
     },

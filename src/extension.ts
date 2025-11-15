@@ -404,6 +404,8 @@ export function activate(context: vscode.ExtensionContext) {
 			// Handle multiple selection
 			const urisToRename = selectedUris && selectedUris.length > 0 ? selectedUris : [uri];
 
+			let successCount = 0;
+
 			// Read language setting
 			const language: string | undefined = await showLanguageSelectionDialog(urisToRename.join(" "));
 
@@ -411,13 +413,23 @@ export function activate(context: vscode.ExtensionContext) {
 				return;
 			}
 
-			for (const currentUri of urisToRename) {
-				await removeDiacritictsFileOrFolder(language, userMappings, currentUri);
-			}
+			const results = await Promise.allSettled(
+				urisToRename.map(currentUri =>
+					removeDiacritictsFileOrFolder(language, userMappings, currentUri)
+				)
+			);
 
-			if (urisToRename.length > 1) {
+			results.forEach((result, index) => {
+				if (result.status === "rejected") {
+					console.error(`Failed to process ${urisToRename[index].fsPath}:`, result.reason);
+				} else {
+					successCount++;
+				}
+			});
+
+			if (successCount > 0) {
 				vscode.window.showInformationMessage(
-					vscode.l10n.t("Diacritics removed from {0} items.", urisToRename.length)
+					vscode.l10n.t("Diacritics removed from {0} items.", successCount)
 				);
 			}
 		},
