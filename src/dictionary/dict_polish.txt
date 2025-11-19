@@ -66,7 +66,6 @@ pomyślała	23
 śliczna	23
 szlaków	23
 trasę	23
-krynica-zdrój	22
 partię	22
 słońcu	22
 dojechać	21
@@ -88,7 +87,6 @@ podróżniczych	20
 świętokrzyskie	20
 szczyptę	20
 toruń	20
-warmińsko-mazurskie	20
 gramów	19
 grześ	19
 kościuszki	19
@@ -144,7 +142,6 @@ orzechów	16
 stanęła	16
 agresję	15
 kraków	15
-książkowy-las	15
 ruszyliśmy	15
 żono	15
 cechą	14
@@ -691,7 +688,6 @@ chrupiącymi	4
 chrupkości	4
 chwilkę	4
 cieśla	4
-ćwiek-świdecką	4
 czernichów	4
 czerpią	4
 długoterminową	4
@@ -1091,7 +1087,6 @@ konkretną	3
 konwencję	3
 korzyści	3
 kościołów	3
-krakowsko-częstochowska	3
 kroków	3
 królewnę	3
 króliczek	3
@@ -1140,7 +1135,6 @@ maślankę	3
 mężczyzna	3
 mężczyźni	3
 miąższu	3
-miechów-kraków	3
 miejscówki	3
 miękkiego	3
 mieleńskich	3
@@ -1159,7 +1153,6 @@ mroczną	3
 mrożenia	3
 mrozić	3
 muszkatołową	3
-muszyna-zdrój	3
 nachodzić	3
 nadwyżki	3
 najbogatszą	3
@@ -1241,7 +1234,6 @@ piosenkę	3
 pisaliśmy	3
 pisklę	3
 piwną	3
-piwniczna-zdrój	3
 placuszków	3
 płaczącej	3
 planują	3
@@ -1522,7 +1514,6 @@ zbliżył	3
 zbliżyła	3
 zdążył	3
 zegarową	3
-żegiestów-zdrój	3
 zejdę	3
 żelatynę	3
 żelazna	3
@@ -1824,7 +1815,6 @@ jakości	2
 jamneńczycy	2
 jaskółce	2
 jęczmienia	2
-jedliny-zdrój	2
 jednośladu	2
 jedyną	2
 jesteśmy	2
@@ -1885,7 +1875,6 @@ konsternację	2
 kontekście	2
 korzystając	2
 korzystaliśmy	2
-kościół-mauzoleum	2
 kościołowi	2
 kościuszkowskiej	2
 kościuszkowskim	2
@@ -1895,7 +1884,6 @@ koszalińskiego	2
 kosztować	2
 kotletów	2
 krąg	2
-krakowsko-częstochowskiej	2
 kratką	2
 krążki	2
 krąży	2
@@ -1920,7 +1908,6 @@ królują	2
 króluje	2
 kroplę	2
 krótsze	2
-krynicę-zdrój	2
 kryształową	2
 krytykę	2
 krzaków	2
@@ -2352,7 +2339,6 @@ połówkę	2
 położony	2
 położy	2
 położyła	2
-polsko-ukraińskie	2
 polujących	2
 pomieści	2
 pomiń	2
@@ -2415,7 +2401,6 @@ pozwalająca	2
 pozwoliliśmy	2
 pożywienia	2
 pracowników	2
-pragi-północ	2
 prawników	2
 praworządności	2
 prażę	2
@@ -3185,7 +3170,6 @@ zrozumiałą	2
 żubrzyca	2
 zupełną	2
 żurawina	2
-żurawska-polkowska	2
 żurawski	2
 żurka	2
 zwartą	2
@@ -3236,8 +3220,6 @@ amerykańskich	1
 amerykańskie	1
 amerykańskiej	1
 amerykańskim	1
-amerykańsko-belgijski	1
-amerykańsko-francuska	1
 analizę	1
 analizować	1
 analizują	1
@@ -3289,7 +3271,6 @@ attaché	1
 atutów	1
 audiobooków	1
 aurę	1
-austriacko-japońsko-niemiecki	1
 automatyzację	1
 autorkę	1
 autorów	1
@@ -3383,7 +3364,6 @@ bezwzględnego	1
 bezwzględnie	1
 bezwzględny	1
 białkową	1
-biało-różowe	1
 białołęki	1
 białoruś	1
 białorusiąjulius	1
@@ -3406,7 +3386,6 @@ biegówego	1
 biegówkowych	1
 biegówkowym	1
 bieliznę	1
-bielskiem-białą	1
 bierność	1
 bieżącą	1
 bieżnika	1
@@ -3568,7 +3547,6 @@ burzę	1
 buteleczkę	1
 butów	1
 buzię	1
-by-passów	1
 być	1
 byków	1
 byłą	1
@@ -3673,8 +3651,6 @@ chrześcijanka	1
 chrześcijańska	1
 chrześcijański	1
 chrześcijańskich	1
-chrześcijańsko-demokratycznej	1
-chrześcijańsko-społecznej	1
 chrześcijaństwem	1
 chuście	1
 chusteczkę	1
@@ -3848,7 +3824,6 @@ częstochowska	1
 częstochowskiej	1
 człowieczeństwa	1
 człowieczeństwo	1
-człowieka-węża	1
 czółenka	1
 czółenkiem	1
 czółenko	1
@@ -4507,7 +4482,6 @@ giąć	1
 giełdę	1
 giętkich	1
 gigantów	1
-ginejko-prażmo	1
 ginęli	1
 gizińska	1
 głąb	1
@@ -4584,7 +4558,6 @@ gołąbek	1
 gołąbkiem	1
 gołębi	1
 goniąc	1
-góra-dół	1
 gorące	1
 gorąco	1
 gorący	1
@@ -4634,7 +4607,6 @@ gościu	1
 gospodarczą	1
 gospodarką	1
 gospodarkę	1
-gospodarz-wąż	1
 gospodynię	1
 goszczę	1
 gotów	1
@@ -4646,7 +4618,6 @@ gotruję	1
 gotującą	1
 gotującego	1
 gotującej	1
-gozdawa-litwińska	1
 grą	1
 grać	1
 gracją	1
@@ -4853,7 +4824,6 @@ japońska	1
 japoński	1
 japońskie	1
 japońskim	1
-japońsko-fińsko-holenderski	1
 jarmarków	1
 jarmużem	1
 jarzącą	1
@@ -4958,7 +4928,6 @@ kamieńsku	1
 kamińskiego	1
 kampanię	1
 kampinoską	1
-kanadyjsko-amerykańska	1
 kanałów	1
 kanapkę	1
 kandydatów	1
@@ -5017,7 +4986,6 @@ kęsach	1
 kęsem	1
 kęsie	1
 kichnięcie	1
-kidawa-błońska	1
 kiedyś	1
 kiedyż	1
 kielichów	1
@@ -5213,7 +5181,6 @@ kościelnego	1
 kościelnych	1
 kościół	1
 kościoła	1
-kościoła-mauzoleum	1
 kościołach	1
 kościołem	1
 kościółka	1
@@ -5244,10 +5211,6 @@ kradnąc	1
 kradzieżach	1
 krajów	1
 krajową	1
-kraków-dolina	1
-kraków-kryspinów	1
-kraków-miechów	1
-kraków-trzyciąż-kraków	1
 krańca	1
 krańcu	1
 kraść	1
@@ -5347,7 +5310,6 @@ kryjówek	1
 kryjówki	1
 krynicą	1
 krynicę	1
-krynicy-zdrój	1
 kryształków	1
 krytyków	1
 krytykując	1
@@ -5714,7 +5676,6 @@ małżeńskich	1
 małżeńskim	1
 małżonka	1
 małżonki	1
-mam-chusteczkę-haftowaną	1
 mamą	1
 manewrujących	1
 manipulację	1
@@ -5835,7 +5796,6 @@ mielecką	1
 mieleńskie	1
 mieleńskiej	1
 mieliśmy	1
-mielnie-unieściu	1
 mieniąca	1
 mierzą	1
 mierzący	1
@@ -5860,7 +5820,6 @@ mięsne	1
 mięsnego	1
 mięsnej	1
 mięśni	1
-mięsno-warzywnym	1
 mięsny	1
 mięsnych	1
 mięso	1
@@ -5901,7 +5860,6 @@ milczeć	1
 milionów	1
 militariów	1
 militarną	1
-militarno-historyczną	1
 miłość	1
 miłością	1
 miłościw	1
@@ -5919,7 +5877,6 @@ ministrę	1
 ministrów	1
 minutę	1
 miodową	1
-mirska-królikowska	1
 miseczkę	1
 misją	1
 misję	1
@@ -5932,7 +5889,6 @@ mitologią	1
 mknąc	1
 mknęły	1
 mleczną	1
-mleczno-różowym	1
 młodość	1
 młodości	1
 młodością	1
@@ -6046,7 +6002,6 @@ musquée	1
 musującym	1
 musztardą	1
 musztardową	1
-muszyną-zdrojem	1
 muszyńskich	1
 muszyńskiego	1
 muzealną	1
@@ -6370,7 +6325,6 @@ nędznej	1
 nędznym	1
 nędzy	1
 negatywną	1
-neo-sędziów	1
 neosędzia	1
 neosędziego	1
 neosędzio	1
@@ -6995,7 +6949,6 @@ okazów	1
 okazują	1
 okazywać	1
 oklapniętego	1
-okolicą-	1
 okoliczności	1
 okolicznościach	1
 okrągłą	1
@@ -7038,7 +6991,6 @@ okularów	1
 okupacyjną	1
 okutą	1
 olbrzymią	1
-ołówek-odc	1
 ołówka	1
 ołówków	1
 ołówkowi	1
@@ -7125,7 +7077,6 @@ ormiańska	1
 ormiańskich	1
 ormiańskie	1
 ormiańskiej	1
-ornitologów-amatorów	1
 ortygią	1
 ortygię	1
 oryginalną	1
@@ -7218,12 +7169,10 @@ oświaty	1
 oświecając	1
 oświęcimia	1
 oświetlało	1
-oświetlana-	1
 oświetlone	1
 oświetlony	1
 oszczędnie	1
 oszczędności	1
-oszczędnościowo-pożyczkową	1
 oszczędnych	1
 oszczędź	1
 oszczędzać	1
@@ -7346,7 +7295,6 @@ pańskiego	1
 państowych	1
 państw	1
 państwa	1
-państwa-agresora	1
 państwach	1
 państwami	1
 państwem	1
@@ -7919,11 +7867,8 @@ pólnocna	1
 północną	1
 północnego	1
 północnej	1
-północno-wschodniej	1
-północno-zachodniej	1
 północnoeuropejskie	1
 północnokoreańskiej	1
-północny-wschód	1
 północy	1
 polowań	1
 połowę	1
@@ -7944,7 +7889,6 @@ półprodukty	1
 półprzewodników	1
 półprzezroczyste	1
 polską	1
-polska-białoruś	1
 polskę	1
 półtłustego	1
 półtora	1
@@ -8367,7 +8311,6 @@ pracujących	1
 pradawną	1
 prądnik	1
 prądniku	1
-pragą-północ	1
 pragną	1
 pragnąc	1
 pragnąca	1
@@ -8638,7 +8581,6 @@ przemyślenia	1
 przemyśleniami	1
 przemyślnie	1
 przemysłową	1
-przemysłowo-usługową	1
 przenieś	1
 przeniknąć	1
 przeniknął	1
@@ -8818,7 +8760,6 @@ przyglądałam	1
 przyglądniesz	1
 przygó	1
 przygód	1
-przygodą-	1
 przygodę	1
 przygotowań	1
 przygotowaną	1
@@ -9143,7 +9084,6 @@ rogalińskiej	1
 rój	1
 rolę	1
 rolniczą	1
-rolno-spożywczej	1
 romańskich	1
 romantyczną	1
 ropę	1
@@ -9155,7 +9095,6 @@ roślinami	1
 roślinka	1
 roślinki	1
 roślinnemu	1
-roślinności-	1
 roślinnością	1
 roślinnych	1
 roślinnym	1
@@ -9490,7 +9429,6 @@ rzucają	1
 rzućcie	1
 rzucić	1
 rzymską	1
-rzymsko-katolicką	1
 rzyśko	1
 sącz	1
 sąd	1
@@ -9503,7 +9441,6 @@ sądowa	1
 sądowej	1
 sądowi	1
 sądownictwa	1
-sądowo-psychiatryczne	1
 sądowy	1
 sądowych	1
 sądu	1
@@ -9563,7 +9500,6 @@ schodzić	1
 schodźmy	1
 schodźta	1
 schować	1
-schronisko-restaurację	1
 schwytać	1
 ściągała	1
 ściągi	1
@@ -9603,7 +9539,6 @@ schwytać	1
 ścisnęło	1
 ściśniętym	1
 sędziego	1
-sędziego-wizytatora	1
 sędzim	1
 sędzio	1
 sędziów	1
@@ -9802,7 +9737,6 @@ słomą	1
 słomianą	1
 słomkę	1
 słoneczników	1
-słono-kwaśnej	1
 słoność	1
 słów	1
 słowację	1
@@ -9996,7 +9930,6 @@ spieszyć	1
 śpiewano	1
 śpiewka	1
 śpiewu	1
-spin-offów	1
 spiżarki	1
 spiżarnia	1
 spłacić	1
@@ -10127,7 +10060,6 @@ srebrzystą	1
 średniej	1
 średnim	1
 średnio	1
-średnio-łatwym	1
 średniowiecze	1
 średniowieczne	1
 średniowieczny	1
@@ -10570,7 +10502,6 @@ teksturę	1
 telefoniczną	1
 telewizję	1
 telewizyjną	1
-teoretykiem-alpinistą	1
 teorię	1
 terapię	1
 teraźniejszości	1
@@ -10694,7 +10625,6 @@ trzepaczką	1
 trzepotać	1
 trzeźwości	1
 trzyciąż	1
-trzyciąż-	1
 trzyciążanina	1
 trzydzieści	1
 trzymać	1
@@ -11070,7 +11000,6 @@ uwagą	1
 uwagę	1
 uważa	1
 uważać	1
-uważać-	1
 uważają	1
 uważając	1
 uważajcie	1
@@ -11160,7 +11089,6 @@ walczyć	1
 walką	1
 walkę	1
 walorów	1
-wampir-najeźdźca	1
 wandę	1
 wanilię	1
 waniliową	1
@@ -11313,7 +11241,6 @@ wezmę	1
 weźmiesz	1
 wężową	1
 węży	1
-wężyk-	1
 wgłębiać	1
 wgłębianie	1
 wiącka	1
@@ -11759,7 +11686,6 @@ wyciągiem	1
 wyciągnąć	1
 wyciągniętych	1
 wyciął	1
-wycieczką-	1
 wycieczkę	1
 wycieńczenia	1
 wycieńczona	1
@@ -11774,7 +11700,6 @@ wyczerpaną	1
 wyczerpującej	1
 wyczuć	1
 wyczuwając	1
-wyczynowo-sportową	1
 wydać	1
 wydają	1
 wydarzają	1
@@ -11960,7 +11885,6 @@ wyobraźnię	1
 wyostrzają	1
 wypadają	1
 wypadków	1
-wypadowo-noclegową	1
 wypalający	1
 wypaść	1
 wypatrywać	1
@@ -12244,7 +12168,6 @@ zabraniają	1
 zabudowań	1
 zaburzać	1
 żaby	1
-zabytków-	1
 zachęcają	1
 zachęcał	1
 zachęcamy	1
@@ -12906,9 +12829,7 @@ zebrzydowską	1
 żebyśmy	1
 zechcą	1
 zechcielibyście	1
-zegarków-	1
 żegiestów	1
-żegiestowie-zdrój	1
 żeglarz	1
 żegnali	1
 żegnały	1
@@ -13194,7 +13115,6 @@ zrzucić	1
 zsunął	1
 żubry	1
 żuk	1
-żuk-wieczorkiewicz	1
 żukowskij	1
 zupą	1
 zupełności	1

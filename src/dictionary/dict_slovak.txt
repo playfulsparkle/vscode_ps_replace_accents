@@ -1086,7 +1086,6 @@ signály	20
 škrob	20
 soplíky	20
 správcov	20
-správydomáceeurópska	20
 storočia	20
 štyroch	20
 súčasť	20
@@ -1533,7 +1532,6 @@ rodinné	15
 rukách	15
 samé	15
 šaňová	15
-šaštín-stráže	15
 šebianová	15
 šefčíková	15
 šelingová	15
@@ -1839,7 +1837,6 @@ brazílii	13
 čapková	13
 čaputová	13
 čarnogurská	13
-čau-čau	13
 čaučau	13
 čech	13
 čechizmus	13
@@ -1855,7 +1852,6 @@ brazílii	13
 čert	13
 červotoč	13
 češan	13
-česko-slovenska	13
 chrbát	13
 chronickým	13
 čičváková	13
@@ -2306,7 +2302,6 @@ druhému	11
 držať	11
 duši	11
 dýchaním	11
-e-kníh	11
 etický	11
 európska	11
 greguš	11
@@ -4516,8 +4511,6 @@ klesajú	6
 kliknúť	6
 klinických	6
 kľučky	6
-kniho-kamaráti	6
-kniho-kamarátky	6
 kočíku	6
 kódexov	6
 kognitívna	6
@@ -5174,7 +5167,6 @@ budujú	5
 celkovú	5
 centrálnu	5
 čerstvého	5
-česko-slovensko	5
 československu	5
 českých	5
 chápať	5
@@ -5337,7 +5329,6 @@ gurmána	5
 gymnáziá	5
 gynekologické	5
 gynekológiu	5
-háj-nicovô	5
 hašler	5
 havária	5
 hematologička	5
@@ -7673,7 +7664,6 @@ užívaní	4
 užívate	4
 úzkostné	4
 užšom	4
-va-šem	4
 väčším	4
 väčšmi	4
 vaječníkoch	4
@@ -8099,7 +8089,6 @@ britský	3
 bronchiolitída	3
 bronchitída	3
 bronzová	3
-brusel-hlavné	3
 bruškom	3
 brušnej	3
 budapešť	3
@@ -8115,7 +8104,6 @@ bývať	3
 čaro	3
 čaru	3
 časem	3
-čchang-e	3
 čeľade	3
 čelia	3
 čelinák	3
@@ -8183,7 +8171,6 @@ civilnú	3
 členkou	3
 členské	3
 členského	3
-čong-un	3
 črevách	3
 črevnú	3
 črty	3
@@ -9468,7 +9455,6 @@ opravovať	3
 oprieť	3
 optimalizácia	3
 optimalizovať	3
-orbán-fico-babiš	3
 orbána	3
 orbitálnej	3
 organizáciami	3
@@ -10102,7 +10088,6 @@ sekáčová	3
 sekrét	3
 sekundách	3
 semanová	3
-šen-čou	3
 seničan	3
 seriálov	3
 seriály	3
@@ -10261,7 +10246,6 @@ spokojná	3
 spokojní	3
 spoľahlivosť	3
 spoločenskej	3
-spoločensko-ekonomická	3
 spoločenskom	3
 spoločnosťami	3
 spoločnosťou	3
@@ -10448,7 +10432,6 @@ tichým	3
 tíme	3
 tímová	3
 tímy	3
-ťin-pchingom	3
 tináková	3
 tinktúra	3
 tisícky	3
@@ -10768,7 +10751,6 @@ vyriešili	3
 výrobe	3
 výroku	3
 vyrovnať	3
-výsadkovo-útočná	3
 vysejú	3
 vyšetrených	3
 vyšetrovaní	3
@@ -11095,7 +11077,6 @@ acidobázické	2
 adaptácii	2
 adaptovať	2
 adenovírusmi	2
-áditja-l1	2
 administrácia	2
 administratívnych	2
 adventúra	2
@@ -11398,7 +11379,6 @@ cabadasová	2
 čakacie	2
 čakal	2
 čakalo	2
-čan-šu	2
 čapkovičových	2
 čaputovej	2
 cár	2
@@ -11606,7 +11586,6 @@ clá	2
 clevelandská	2
 clijstersová	2
 cmoríková	2
-cohen-séat	2
 čokolády	2
 cpinová	2
 črtá	2
@@ -11957,7 +11936,6 @@ dzurjaníkovým	2
 dzurjaníkovými	2
 džúsov	2
 džúsy	2
-e-knihách	2
 edému	2
 edícia	2
 edukačné	2
@@ -12048,7 +12026,6 @@ fatálne	2
 fázu	2
 február	2
 federácia	2
-fekálne-orálne	2
 feničania	2
 fenomény	2
 fermentované	2
@@ -12728,7 +12705,6 @@ katalánsko	2
 katalóg	2
 katarčan	2
 katarčanka	2
-kategóriespoločenské	2
 kategóriu	2
 katión	2
 katolíčka	2
@@ -12755,7 +12731,6 @@ každopádne	2
 každou	2
 kazíká	2
 kazíková	2
-kdu-čsl	2
 kellnerová	2
 kemény	2
 keňa	2
@@ -12961,7 +12936,6 @@ krémoch	2
 krémových	2
 křenková	2
 kreslím	2
-kresťansko-sociálnej	2
 kresťanstvo	2
 kričali	2
 krídla	2
@@ -12974,7 +12948,6 @@ kritických	2
 kritizujúcu	2
 krivé	2
 križanovská	2
-krížom-krážom	2
 krízou	2
 križovatke	2
 kŕmené	2
@@ -13284,7 +13257,6 @@ medeši	2
 mediácia	2
 mediálna	2
 medicínskeho	2
-medicínsko-technických	2
 médium	2
 medúzu	2
 medúzy	2
@@ -13346,7 +13318,6 @@ migrácie	2
 migrácii	2
 migrény	2
 mikešová	2
-mikojan-gurevič	2
 mikroflóry	2
 mikrografický	2
 mikrovlnné	2
@@ -14054,7 +14025,6 @@ nôž	2
 nože	2
 nožíkov	2
 nožmi	2
-np-úplný	2
 núbijci	2
 núdzové	2
 núdzovo	2
@@ -14547,7 +14517,6 @@ patronáty	2
 patyková	2
 paulišinová	2
 pavelicová	2
-pawliková-vilhanová	2
 pchať	2
 pedagogických	2
 pedagógovia	2
@@ -14572,7 +14541,6 @@ petržalka	2
 pevná	2
 pevnosť	2
 pevný	2
-pezinok-rozálka	2
 pichať	2
 pieninského	2
 piesní	2
@@ -15366,7 +15334,6 @@ rástla	2
 rastlinný	2
 rastúcemu	2
 ražovica	2
-re-kategorizované	2
 reakcií	2
 realistických	2
 realizácie	2
@@ -16266,7 +16233,6 @@ takému	2
 takými	2
 talentových	2
 taliančina	2
-talleyrand-périgord	2
 tamás	2
 tamojšej	2
 tamojších	2
@@ -16292,7 +16258,6 @@ taxóny	2
 ťažší	2
 ťažších	2
 ťažšieho	2
-te-ťiang	2
 technického	2
 technických	2
 technologická	2
@@ -16346,7 +16311,6 @@ tiažové	2
 tieňovej	2
 tieseň	2
 tímov	2
-ťin-pching	2
 tínedžera	2
 tínedžerky	2
 tínedžermi	2
@@ -16796,7 +16760,6 @@ vegáni	2
 vegetačné	2
 vegetarián	2
 vejú	2
-vekovo-špecifická	2
 veliteľstvo	2
 veľkého	2
 veľkokapacitných	2
@@ -18032,7 +17995,6 @@ agrochemikália	1
 agrológ	1
 agronómia	1
 agronómom	1
-aha-zážitok	1
 ajatolláh	1
 ajťáci	1
 ajupraviť	1
@@ -18041,7 +18003,6 @@ akademickým	1
 akadémii	1
 akadémiu	1
 akási	1
-akaši-kaikjó	1
 akcentuácia	1
 akceptované	1
 akceptovať	1
@@ -18105,12 +18066,6 @@ akvárií	1
 akvizície	1
 akvizícií	1
 akýsi	1
-al-ádlí	1
-al-azíz	1
-al-džazíra	1
-al-fattáh	1
-al-káida	1
-alain-rené	1
 alarmujúcim	1
 alavés	1
 albánčina	1
@@ -18194,9 +18149,6 @@ američana	1
 američanka	1
 amerícium	1
 americkému	1
-americko-indická	1
-americko-indickú	1
-americko-slovenský	1
 americkými	1
 amfíbia	1
 aminokyselín	1
@@ -18265,7 +18217,6 @@ angličan	1
 angličanka	1
 anglická	1
 anglického	1
-anglicko-americký	1
 anglickú	1
 anglických	1
 angličtina	1
@@ -18375,21 +18326,10 @@ archeológie	1
 archeológovia	1
 architektonickým	1
 architektúra	1
-architektúrawikipédia	1
 architektúri	1
 architektúry	1
 archívportál	1
 archívwikipédia	1
-archívwikiportályafrika	1
-archívwikiportálybelgicko	1
-archívwikiportályčesko	1
-archívwikiportálydivadlo	1
-archívwikiportályhudba	1
-archívwikiportálykinematografia	1
-archívwikiportálypočítačové	1
-archívwikiportályšachportál	1
-archívwikiportálytenisportál	1
-archívwikiportályumenie	1
 archívy	1
 arcibiskupského	1
 arcívnom	1
@@ -18418,8 +18358,6 @@ arterosklerózy	1
 artritídu	1
 artróza	1
 arzén	1
-aš-šaríf	1
-as-sísí	1
 asfaltová	1
 asií	1
 asimilačné	1
@@ -18434,7 +18372,6 @@ astrál	1
 astročlánkov	1
 astrológiou	1
 ástron	1
-astronautov-kandidátov	1
 astronomického	1
 astronomickú	1
 astronomických	1
@@ -18475,7 +18412,6 @@ atraktívnu	1
 atraktívnym	1
 átriu	1
 aú	1
-audio-vizualizácii	1
 audioknihám	1
 audiovízia	1
 audiovizuálne	1
@@ -18524,12 +18460,10 @@ avizovaného	1
 avizovaní	1
 axiomatizácia	1
 ayersová	1
-až-až	1
 azerbajdžan	1
 azerbajdžanci	1
 azerbajdžanského	1
 azerbajdžanu	1
-ázijsko-pacifického	1
 ázijských	1
 azorám	1
 azylové	1
@@ -18666,7 +18600,6 @@ baranová	1
 barbakán	1
 barbarský	1
 barbizonská	1
-barč-ivan	1
 bariéra	1
 bariérová	1
 bariérovej	1
@@ -18989,7 +18922,6 @@ blchám	1
 bledá	1
 bledé	1
 bledú	1
-blériot-voisin	1
 blériota	1
 bleskový	1
 blesovský	1
@@ -19277,7 +19209,6 @@ café	1
 cakóni	1
 calderón	1
 campová	1
-čandraján-3	1
 čángóovia	1
 čankajšek	1
 čapek	1
@@ -19313,8 +19244,6 @@ carné	1
 castrológia	1
 častú	1
 cavagnoudová	1
-čchang-čeng	1
-čching-te	1
 čechom	1
 čechoslováci	1
 cecílie	1
@@ -19429,13 +19358,6 @@ césar	1
 českaupraviť	1
 českém	1
 českému	1
-česko-slovenské	1
-česko-slovenskej	1
-česko-slovenskom	1
-česko-slovensku	1
-česko-slovenskujazyky	1
-česko-slovenský	1
-česko-slovenských	1
 českojazyčnej	1
 českojazyčnú	1
 československé	1
@@ -19503,7 +19425,6 @@ chátral	1
 chátrala	1
 chátrania	1
 chatrče	1
-chémiachémiawikiportály	1
 chemického	1
 chemičkou	1
 chemikáliami	1
@@ -19720,7 +19641,6 @@ cisárstva	1
 čítaním	1
 čítaniu	1
 čítaných	1
-čitateľa-zapisovateľa	1
 čitateľke	1
 čitateľov	1
 čitateľské	1
@@ -19784,8 +19704,6 @@ cností	1
 colinsová	1
 colníkov	1
 colných	1
-comédie-ballet	1
-čong-nama	1
 čorba	1
 coriová	1
 čornaja	1
@@ -19811,8 +19729,6 @@ cukríky	1
 čumák	1
 čumieť	1
 čunderlíková	1
-čung-žuej	1
-čunovo-rajka	1
 cúper	1
 cupotajú	1
 curaçajčania	1
@@ -19861,11 +19777,9 @@ daničová	1
 däniken	1
 daňka	1
 daňové	1
-daňovo-odvodové	1
 daňový	1
 dánska	1
 dánske	1
-dánsko-českého	1
 dánsky	1
 daným	1
 darčekom	1
@@ -20082,7 +19996,6 @@ dialógmi	1
 dialógu	1
 dialógy	1
 diamantová	1
-diamantovo-smaragdová	1
 diapazón	1
 diár	1
 diáre	1
@@ -20648,10 +20561,6 @@ džungľa	1
 džungľu	1
 džúsu	1
 é	1
-e-knihám	1
-e-knižného	1
-e-knižnicu	1
-e-knižník	1
 echotextúry	1
 edémov	1
 edície	1
@@ -20816,7 +20725,6 @@ epizódach	1
 epizodická	1
 epizódok	1
 epizódu	1
-érasme-louis	1
 ergonómia	1
 erotická	1
 erotický	1
@@ -20956,8 +20864,6 @@ ezánou	1
 fábia	1
 fabiánovej	1
 fabrikách	1
-fabry-pérotov	1
-fabry-pérotovho	1
 fagocytózu	1
 fajčeniu	1
 fajčiarom	1
@@ -21034,7 +20940,6 @@ fenomenálny	1
 fenomenológia	1
 fenoménové	1
 fenoménu	1
-féret-fleury	1
 ferganskí	1
 férové	1
 féroví	1
@@ -21161,7 +21066,6 @@ fragmentovaných	1
 fraktál	1
 fraktúrami	1
 francelová	1
-françois-andré	1
 francúzoch	1
 francúzsku	1
 francúzštiny	1
@@ -21183,7 +21087,6 @@ fúkate	1
 fúkne	1
 füleová	1
 fulerény	1
-full-hybridného	1
 fundamentálna	1
 fungicíd	1
 fungicídy	1
@@ -21224,7 +21127,6 @@ gágor	1
 gál	1
 galaktagóg	1
 galaktické	1
-galaktóza-1-fosfát	1
 galát	1
 galatská	1
 galériou	1
@@ -21319,7 +21221,6 @@ globálnemu	1
 glóbus	1
 glogasová	1
 glosár	1
-glukóza-1-fosfát	1
 glycyrrhizín	1
 glycyrrhizínu	1
 glykoproteín	1
@@ -21375,8 +21276,6 @@ gregušová	1
 grék	1
 grékov	1
 grékyňa	1
-grendža-donska	1
-grendža-donskyj	1
 grilovačiek	1
 grilovačku	1
 grilovaná	1
@@ -21596,7 +21495,6 @@ hlbinná	1
 hĺbke	1
 hĺbkového	1
 hlbokému	1
-hlboko-širkomorský	1
 hlbokých	1
 hlbokým	1
 hledání	1
@@ -21868,7 +21766,6 @@ hurikán	1
 hurná	1
 husák	1
 husáka	1
-husáková-lokvencová	1
 husárik	1
 husárová	1
 huščavová	1
@@ -22075,7 +21972,6 @@ inflačná	1
 informáciách	1
 informačné	1
 informačného	1
-informačno-osvetový	1
 informatická	1
 informatívne	1
 informatizácie	1
@@ -22266,7 +22162,6 @@ izotopové	1
 izraelčan	1
 izraelčanka	1
 izraelskí	1
-izraelsko-palestínskom	1
 izraelskú	1
 jabĺčko	1
 jacksonová	1
@@ -22412,7 +22307,6 @@ jonáša	1
 jonesová	1
 jordánska	1
 jordánsko	1
-joynerová-kerseeová	1
 jožko	1
 jožo	1
 józsef	1
@@ -22437,7 +22331,6 @@ juniorské	1
 juniorský	1
 juniorských	1
 júnis	1
-jünnan-kuejčouská	1
 juraková	1
 juríčkovej	1
 jurík	1
@@ -22540,7 +22433,6 @@ kaňonu	1
 kantáta	1
 kantónoch	1
 kantóny	1
-kao-čcheng	1
 kapacitné	1
 kapelách	1
 kapitále	1
@@ -22955,7 +22847,6 @@ komunistickú	1
 komunít	1
 komunitné	1
 komunitného	1
-komunitno-vzťahovú	1
 komunitných	1
 konáme	1
 konaných	1
@@ -23031,7 +22922,6 @@ konšpirácie	1
 konšpiračné	1
 konšpiračnej	1
 konštanty	1
-konstantynivka-družkivka	1
 konštatovanie	1
 konštatujú	1
 konštelácie	1
@@ -23460,13 +23350,8 @@ kultivovanejšie	1
 kultové	1
 kultovými	1
 kultúr	1
-kultúraaudiovíziazábavaumenie	1
 kulturákoch	1
-kultúraspoločnosťosobný	1
 kultúrno	1
-kultúrno-etických	1
-kultúrno-etickými	1
-kultúrno-historická	1
 kultúrnou	1
 kultúrnu	1
 kultúrny	1
@@ -23631,7 +23516,6 @@ lámanie	1
 lamaséria	1
 lámať	1
 lámavosť	1
-lambda-operátor	1
 laminárne	1
 lámka	1
 lampáreň	1
@@ -23642,8 +23526,6 @@ lapidárium	1
 lapošová	1
 lapuníková	1
 laryngitída	1
-laryngotracheobronchitída	1
-laryngotracheobronchitídu	1
 lašáková	1
 lašihajské	1
 láskavé	1
@@ -23651,7 +23533,6 @@ láskavejšie	1
 láskavosť	1
 láskavosťou	1
 láskavú	1
-lasker-schülerová	1
 láskyplnom	1
 laššáková	1
 laténska	1
@@ -23666,7 +23547,6 @@ látková	1
 látkovej	1
 lattová	1
 laureátov	1
-laurent-škrabalová	1
 láva	1
 ľavej	1
 ľavičiar	1
@@ -23749,7 +23629,6 @@ leteckú	1
 letecký	1
 leteckých	1
 letectví	1
-letectvowikiportályletectvo	1
 letíme	1
 letíš	1
 letisková	1
@@ -23951,7 +23830,6 @@ lotyšskom	1
 lotyšskou	1
 loučeň	1
 lounová	1
-lovec-korisť	1
 lovecké	1
 lože	1
 ložisku	1
@@ -24027,7 +23905,6 @@ lúzerská	1
 lužickí	1
 lužickou	1
 ľvove	1
-ľvovovej-belovovej	1
 lýdi	1
 lýkia	1
 lykožrút	1
@@ -24037,7 +23914,6 @@ lymfatické	1
 lymfatickému	1
 lymfatickým	1
 lymfóm	1
-lyricko-ezoterický	1
 lýtkach	1
 lýtko	1
 lyžiach	1
@@ -24066,7 +23942,6 @@ mačina	1
 mačizmus	1
 mačkáková	1
 mačkami	1
-mačko-pes	1
 macová	1
 mačuha	1
 maďara	1
@@ -24187,7 +24062,6 @@ manažovania	1
 manažovaný	1
 manažuje	1
 mandát	1
-mandžusko-tunguzské	1
 mané	1
 manévre	1
 manévrom	1
@@ -24313,7 +24187,6 @@ matematizácia	1
 materiálem	1
 materiáli	1
 materiálmi	1
-materiálno-technických	1
 materiálnu	1
 materinské	1
 materského	1
@@ -24358,7 +24231,6 @@ maximálnou	1
 maximálny	1
 maximiliána	1
 máximy	1
-mazár-e	1
 mazáre	1
 maznaním	1
 maznať	1
@@ -24584,8 +24456,6 @@ mikulík	1
 mikušková	1
 miláčikovo	1
 milánsky	1
-mild-hybridné	1
-mild-hybridným	1
 milénia	1
 miliardách	1
 miliardár	1
@@ -24845,7 +24715,6 @@ morských	1
 moskovský	1
 moslimské	1
 mošnosť	1
-most-híd	1
 mostík	1
 mostný	1
 motá	1
@@ -24853,7 +24722,6 @@ motajú	1
 motív	1
 motivácií	1
 motivačná	1
-motivačno-hygienická	1
 motivovaného	1
 motivovanú	1
 motivovaný	1
@@ -24986,7 +24854,6 @@ mýtoch	1
 mzdách	1
 mzdová	1
 mzdových	1
-n-členná	1
 nabáda	1
 nabaliť	1
 nábeh	1
@@ -25158,7 +25025,6 @@ najbližšiu	1
 najbohatších	1
 najcennejšia	1
 najcennejšie	1
-najcharakteristickejším	1
 najchutnejšej	1
 najcitlivejšie	1
 nájdená	1
@@ -25963,7 +25829,6 @@ nemčine	1
 nemčiny	1
 nemcová	1
 nemecká	1
-nemecko-americká	1
 nemení	1
 nemením	1
 nemeníte	1
@@ -26946,7 +26811,6 @@ nútite	1
 nutkavé	1
 nutnosťou	1
 nykänen	1
-nylon-tráviace	1
 oáz	1
 oáza	1
 oázy	1
@@ -28021,7 +27885,6 @@ palček	1
 pálčivá	1
 pálení	1
 paleoantropológia	1
-paleocénno-eocénne	1
 paleoklimatológia	1
 paleolitického	1
 paleooceánografia	1
@@ -28600,7 +28463,6 @@ počúvali	1
 počúvanie	1
 počúvate	1
 poď	1
-pod-manickým	1
 poďakovali	1
 poďakovaním	1
 poďakuje	1
@@ -28971,7 +28833,6 @@ pooperačný	1
 poóra	1
 pootvorení	1
 pootvorením	1
-pop-kultúre	1
 popálenia	1
 popálenie	1
 popasovať	1
@@ -28990,7 +28851,6 @@ popôrodná	1
 popôrodného	1
 poppová	1
 popracovať	1
-poprade-spišskej	1
 popraskaná	1
 poprechádzať	1
 popredí	1
@@ -30683,9 +30543,6 @@ rakovinovým	1
 rakovinovými	1
 rakúskeho	1
 rakúskej	1
-rakúsko-uhorska	1
-rakúsko-uhorsko	1
-rakúsko-uhorsku	1
 rakúskom	1
 rakúsky	1
 rakúskych	1
@@ -30976,7 +30833,6 @@ rimmerová	1
 rímska	1
 rímskeho	1
 rímskej	1
-rímsko-nemeckej	1
 rímskokatolícky	1
 rímskonemecká	1
 rímskych	1
@@ -31288,9 +31144,6 @@ rusínskom	1
 rušiť	1
 rušivý	1
 rúško	1
-rusko-amerického	1
-rusko-francúzsky	1
-rusko-turecké	1
 ruskojazyčný	1
 rušnej	1
 rušnejší	1
@@ -31380,8 +31233,6 @@ sahají	1
 šáhidmi	1
 šáhidom	1
 šahy	1
-saint-émilion	1
-saint-rémy-de-provence	1
 saintgermainská	1
 šajnu	1
 sakkára	1
@@ -31393,7 +31244,6 @@ sálanie	1
 šalátom	1
 šaláty	1
 šalejú	1
-sales-ákov	1
 saleziánov	1
 šalieť	1
 šalil	1
@@ -31599,7 +31449,6 @@ semiačkam	1
 seminár	1
 seminára	1
 semináre	1
-šen-jang	1
 senát	1
 sendviče	1
 seniorát	1
@@ -31872,7 +31721,6 @@ skorú	1
 skorým	1
 škóti	1
 škótska	1
-škótsko-americkej	1
 škp	1
 škrabadlá	1
 škrabského	1
@@ -32059,7 +31907,6 @@ slyšel	1
 slziť	1
 slzný	1
 smädová	1
-smaragdovo-diamantového	1
 smartfónoch	1
 smartfónov	1
 smartfónu	1
@@ -32148,8 +31995,6 @@ sochárov	1
 socialistický	1
 socialistickými	1
 socializácia	1
-sociálno-demokratické	1
-sociálno-právna	1
 sociálnodemokratická	1
 sociálnoprávnej	1
 société	1
@@ -32353,7 +32198,6 @@ společně	1
 spolková	1
 spolkovému	1
 spoločenského	1
-spoločensko-ekonomickou	1
 spoločenskú	1
 spoločenskými	1
 spoločenstva	1
@@ -32622,7 +32466,6 @@ statkárstvo	1
 štátni	1
 statočne	1
 štátotvorný	1
-štátu-agresora	1
 staurovské	1
 staurovskú	1
 staurovských	1
@@ -32745,7 +32588,6 @@ stranám	1
 stranícka	1
 straníckej	1
 stranícki	1
-stranícko-politickej	1
 straničky	1
 straníckych	1
 stránkami	1
@@ -32754,7 +32596,6 @@ strápňujete	1
 strašenie	1
 strašidelné	1
 strašidelného	1
-strašidelno-napínavé	1
 strašidlá	1
 strašnejší	1
 stratégiami	1
@@ -32998,7 +32839,6 @@ súmestie	1
 súostrovia	1
 súostrovie	1
 súostrovím	1
-šup-šup	1
 súper	1
 superfaktoriál	1
 supérieure	1
@@ -33297,7 +33137,6 @@ taxonomické	1
 ťažobnej	1
 ťažobných	1
 ťažšom	1
-tchien-ťin	1
 téc	1
 technécium	1
 technickému	1
@@ -33484,7 +33323,6 @@ tillingerová	1
 tímami	1
 tímlídrov	1
 tímto	1
-ťin-pchingovi	1
 tínedžer	1
 tínedžeriek	1
 tínedžerka	1
@@ -33587,7 +33425,6 @@ tóny	1
 topánka	1
 topás	1
 toplianskohanušovčan	1
-toplianskohanušovčanov	1
 topoľčany	1
 topológia	1
 tormová	1
@@ -33778,7 +33615,6 @@ trúd	1
 trúfla	1
 truhlář	1
 truľo	1
-trup-krídlo	1
 trúsiacich	1
 trvajúcich	1
 trvalá	1
@@ -34074,8 +33910,6 @@ ukotviť	1
 ukradnutý	1
 ukradnutých	1
 ukrajinskému	1
-ukrajinsko-maďarského	1
-ukrajinsko-poľskú	1
 ukrivdenému	1
 ukrutných	1
 ukryť	1
@@ -34110,8 +33944,6 @@ umenieslužby	1
 umenieúžitkové	1
 umenievýtvarné	1
 umeniewikipédia	1
-umeniezábavaspoločenské	1
-umeniezvukkultúrazábava	1
 umeníupraviť	1
 úmerná	1
 úmerne	1
@@ -34617,7 +34449,6 @@ vedaakademické	1
 vedapríroda	1
 vedaspoločnosť	1
 vedeckému	1
-vedecko-fantastický	1
 vedeckofantastický	1
 vedeckým	1
 vedeckými	1
@@ -34636,7 +34467,6 @@ vedomejšie	1
 vedomím	1
 vedomosť	1
 vedomosťami	1
-vedymedzidisciplinárne	1
 vedyslužby	1
 vedyspoločnosť	1
 vedytechnikaúžitkové	1
@@ -34771,8 +34601,6 @@ viditeľných	1
 vidlové	1
 viečka	1
 viečku	1
-viedeň-oslo-bodo-svolvaer	1
-viedeň-oslo-evenes	1
 viedenská	1
 vietnamský	1
 víkendom	1
@@ -34941,7 +34769,6 @@ vodopriepustná	1
 vodorovnosť	1
 vojdeš	1
 vojenskí	1
-vojensko-priemyselný	1
 vojenským	1
 vojenskými	1
 vojnoví	1
@@ -35011,7 +34838,6 @@ vraždia	1
 vrazím	1
 vrbovskí	1
 vrchný	1
-vrchný-spodný	1
 vrchným	1
 vrcholí	1
 vrcholových	1
@@ -35150,7 +34976,6 @@ vychovávate	1
 vychovávateľka	1
 výchovná	1
 výchovného	1
-výchovno-vzdelávací	1
 výchozí	1
 vychudnutých	1
 vychutnávať	1
@@ -35919,20 +35744,11 @@ wikicitátyďalšie	1
 wikipédiawikipédia	1
 wikipedického	1
 wikipédiu	1
-wikiportályastronómiaportál	1
-wikiportályfyzikaportál	1
-wikiportálygeografiaportál	1
-wikiportályinformatikaportál	1
-wikiportályjazykovedaportál	1
-wikiportálykozmonautikaportál	1
-wikiportálymatematikaportál	1
-wikiportálymedicínaportál	1
 wikislovník	1
 wikislovníku	1
 wikiúdajovportál	1
 wittová	1
 workoholička	1
-wu-šu	1
 wymanová	1
 xenofóbneho	1
 yaoundé	1
@@ -36107,7 +35923,6 @@ zahraničná	1
 zahraničné	1
 zahraničnému	1
 zahraniční	1
-zahranično-politický	1
 zahraničnými	1
 zahriať	1
 zahŕňajúcich	1
@@ -36730,7 +36545,6 @@ zelenšiemu	1
 zelinková	1
 zelinová	1
 željko	1
-zem-pretínajúce	1
 zemepisné	1
 zemí	1
 zemiakový	1
@@ -36756,7 +36570,6 @@ zemským	1
 zestárla	1
 ževakcinačný	1
 ževraj	1
-zgúth-vrbický	1
 zháňali	1
 zháňaní	1
 zharmonizovaný	1
@@ -37112,7 +36925,6 @@ zobrazovaný	1
 zobrazovať	1
 zobuď	1
 zobudení	1
-zoči-voči	1
 zodpovedajú	1
 zodpovedajúce	1
 zodpovedajúci	1

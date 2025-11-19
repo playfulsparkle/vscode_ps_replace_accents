@@ -59,7 +59,6 @@ går	30
 krigføring	30
 militæret	30
 søppel	30
-ansiktsgjenkjenningsverktøy	29
 etterpå	29
 føles	29
 løpende	29
@@ -72,7 +71,6 @@ allestedsnærværende	27
 avsløringer	27
 bånd	27
 besøkt	27
-femårs-kontrakt	27
 følges	27
 forsøksobjekt	27
 førstnevnte	27
@@ -80,7 +78,6 @@ hær	27
 hærens	27
 hjørnestein	27
 måttet	27
-militær-sponsor	27
 nøkkelrolle	27
 økosystemer	27
 overvåkingsregime	27
@@ -313,11 +310,9 @@ rengård	3
 sånne	3
 sjåføren	3
 sjøl	3
-snø-	3
 snør	3
 søk	3
 søkte	3
-sør-norge	3
 spøker	3
 stå	3
 stått	3
@@ -494,14 +489,12 @@ våpenstøtte	2
 vått	2
 wedøe	2
 abortbråket	1
-æres-viseadmiral-posisjonen	1
 æreskrav	1
 ærlig	1
 ærlige	1
 angrepsforsøk	1
 anslår	1
 anslått	1
-åpnings-	1
 åpningstid	1
 åpningstida	1
 århundre	1
@@ -549,7 +542,6 @@ católica	1
 celledøra	1
 denstørste	1
 dét	1
-diktator-verktøy	1
 dødelig	1
 dødeligste	1
 dødsantallet	1
@@ -566,10 +558,8 @@ døgnet	1
 dømte	1
 døren	1
 dørterskelen	1
-drammens-ordfører	1
 drømmer	1
 drøyt	1
-epstein-avsløring	1
 eugénie	1
 færreste	1
 fangeklær	1
@@ -580,7 +570,6 @@ ferieøya	1
 fjellområdene	1
 fløyet	1
 fluktverktøy	1
-fn-undersøkelse	1
 føderal	1
 fødselsdato	1
 fødselsdatoen	1
@@ -607,7 +596,6 @@ føyer	1
 framgår	1
 frastøtt	1
 fraværende	1
-fredrikstad-ordfører	1
 fritidsmiljøer	1
 frøs	1
 fullføre	1
@@ -631,7 +619,6 @@ grønt	1
 grøsser	1
 gründer	1
 håkon	1
-halloween-bønn	1
 håndgripelige	1
 håndskrift	1
 håndterer	1
@@ -648,7 +635,6 @@ høydepunktet	1
 høyere	1
 høyesterettsdom	1
 høylys	1
-høyre-ordfører	1
 høyreekstremes	1
 høyreekstremt	1
 høyresidens	1
@@ -676,7 +662,6 @@ kjærlighet	1
 kjærligheten	1
 kjølig	1
 kjønnsnøytral	1
-kjøpe-orgie	1
 kjøper	1
 kjøpes	1
 kjøpesenter	1
@@ -758,8 +743,6 @@ nære	1
 næringskjeden	1
 nærmer	1
 nærmiljøer	1
-narko-båter	1
-narko-fartøy	1
 narkotikainnførsel	1
 nattemørket	1
 nedbøren	1
@@ -787,7 +770,6 @@ oppstå	1
 øra	1
 ordførere	1
 ørene	1
-øst-	1
 østersen'	1
 østlandet	1
 østlige	1
@@ -801,7 +783,6 @@ overvåkingsbildet	1
 overvåkingskamera	1
 overvåkingskameraer	1
 overvåkingskameraet	1
-overvåknings-	1
 overvåkningsbildene	1
 overvåkningsmekanismer	1
 overvåkningssystemene	1
@@ -848,13 +829,11 @@ reisemål	1
 religiøs	1
 religiøst	1
 rengjøringen	1
-rød-	1
 røk	1
 rømme	1
 rører	1
 røykdykkere	1
 røykutvikling	1
-russland-bånd	1
 særdeles	1
 sårbar	1
 sårbare	1
@@ -885,8 +864,6 @@ søkelyset	1
 søkkvåte	1
 søkt	1
 søndagens	1
-sør-øst	1
-sør-sudan	1
 søramerikanske	1
 sørger	1
 sørget	1
@@ -925,7 +902,6 @@ taxisjåfør	1
 tenåring	1
 tenåringsjenter	1
 terroristbøllene	1
-tiktok-bøddelen	1
 tilbød	1
 tilhørende	1
 tilhørte	1

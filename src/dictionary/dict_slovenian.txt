@@ -509,7 +509,6 @@ madžarski	2
 mahniču	2
 manjkajoči	2
 matjaž	2
-mazar-e-šarif	2
 meče	2
 mesečna	2
 mesečni	2
@@ -827,7 +826,6 @@ buldožerje	1
 črede	1
 črke	1
 črnih	1
-črno-beli	1
 črnogoro	1
 črpalkah	1
 črpaš	1
@@ -892,7 +890,6 @@ dovršena	1
 doživljenska	1
 dr’gač’	1
 dramatičnost	1
-drogi-živel	1
 društvo	1
 društvu	1
 družbenem	1
@@ -1044,13 +1041,11 @@ lovišča	1
 luštno	1
 madžari	1
 magičnemu	1
-mah-niču	1
 manjkajočo	1
 manjšina	1
 manjšine	1
 maš	1
 matične	1
-mazar-e-šarifu	1
 medšihtom	1
 mehiškem	1
 menedžerja	1
@@ -1309,7 +1304,6 @@ poskušal	1
 pošlihtou	1
 pošlje	1
 poslušanja	1
-post-komunistična	1
 pošten	1
 poštenemu	1
 poštenosti	1

@@ -215,7 +215,6 @@ uppväxt	26
 väg	26
 väljs	26
 årets	25
-bahus-läns	25
 däremot	25
 engelskspråkiga	25
 fjärde	25
@@ -360,7 +359,6 @@ generalguvernören	15
 halloweenfrågor	15
 höger	15
 höras	15
-hushålls-bok	15
 köket	15
 lägsta	15
 nå	15
@@ -892,7 +890,6 @@ västerländsk	7
 västeuropa	7
 växa	7
 växer	7
-wikisource-översättning	7
 à	6
 äga	6
 äktenskap	6
@@ -1119,7 +1116,6 @@ fånga	5
 färgade	5
 färger	5
 fastän	5
-fiskare-sång	5
 flög	5
 folkräkning	5
 förändras	5
@@ -1228,7 +1224,6 @@ säljande	5
 sänker	5
 självbetitlade	5
 självständiga	5
-självständighetsförklaringen	5
 sjukvård	5
 skärgårdsfest	5
 sköter	5
@@ -1403,7 +1398,6 @@ genomgått	4
 glömt	4
 göta	4
 gräset	4
-grenadinernasalomonöarnasamoaseychellernasierra	4
 grillbuffé	4
 grön	4
 håkan	4
@@ -1563,7 +1557,6 @@ sändas	4
 sänds	4
 sångarna	4
 sänka	4
-sarah-ärenden	4
 särskiljande	4
 säte	4
 sätts	4
@@ -1655,7 +1648,6 @@ växlingskursen	4
 växt	4
 växter	4
 wäl	4
-å-ljud	3
 ädellövskog	3
 adjö	3
 ädla	3
@@ -1897,7 +1889,6 @@ hemlandssånger	3
 hemlös	3
 hemtjänst	3
 hjärnoperationen	3
-hjärt-lungfonden	3
 hjärtat	3
 hjärtattack	3
 högländerna	3
@@ -2159,7 +2150,6 @@ segersäll	3
 seinäjoki	3
 sekulär	3
 sexköp	3
-shl-omgång	3
 själen	3
 självständighetsdag	3
 sjöngs	3
@@ -2220,7 +2210,6 @@ stugägare	3
 svenskspråkig	3
 tämligen	3
 tända	3
-tänkarens-filosofens	3
 tänkvärt	3
 tät	3
 tätbefolkade	3
@@ -2327,7 +2316,6 @@ abortförhållandet	2
 affär	2
 affären	2
 affärsutvecklingschef	2
-afskeds-skål	2
 äfventyr	2
 ägarbolaget	2
 ägarna	2
@@ -2443,7 +2431,6 @@ avslöjas	2
 avstå	2
 avstängd	2
 avstängda	2
-bad-stjärnan	2
 bådar	2
 bäddar	2
 bakåt	2
@@ -2527,7 +2514,6 @@ bronsåldern	2
 bröströst	2
 bröstvårtan	2
 bröts	2
-brr-väder	2
 brunsås	2
 bruttovärldsprodukten	2
 celldörr	2
@@ -2626,7 +2612,6 @@ fjällmaraton	2
 fjärdedelar	2
 fjärilen	2
 flöt	2
-flygare-carlén	2
 flygbränsle	2
 flygpionjär	2
 flygplansläget	2
@@ -2763,7 +2748,6 @@ framgångsrikaste	2
 främmande	2
 framväxt	2
 frekvensomfång	2
-frivilligförsvarsorganisation	2
 fröding	2
 frögdoms	2
 fröja	2
@@ -2874,7 +2858,6 @@ höstlov	2
 höstmiljö	2
 hotellövernattningar	2
 hudläkaren	2
-huldre-sägner	2
 humanitär	2
 hushållet	2
 huvudvärk	2
@@ -2948,7 +2931,6 @@ känslosam	2
 kapellmästare	2
 kapplöpningen	2
 kära	2
-karantäns-läkares	2
 käre	2
 kärleksfull	2
 kärnkraftsplanerna	2
@@ -3014,7 +2996,6 @@ ländersamväldettidigare	2
 landshövding	2
 landsväg	2
 landsvägar	2
-landsvägs-poesi	2
 längdskidorvisar	2
 långsiktigt	2
 långskott	2
@@ -3045,7 +3026,6 @@ linnéska	2
 livlös	2
 ljudböcker	2
 löfte	2
-lokomotiv-förare	2
 lönar	2
 löner	2
 lönsam	2
@@ -3067,7 +3047,6 @@ mållös	2
 malmström	2
 målsägande	2
 måltider	2
-måndag-bidrag	2
 måndagskväll	2
 mångfald	2
 mångkulturalism	2
@@ -3157,7 +3136,6 @@ naturtillgångarna	2
 nederländsk	2
 nedsättande	2
 nettoexportör	2
-nhl-stjärnan	2
 nöd	2
 nödanrop	2
 nödgas	2
@@ -3186,7 +3164,6 @@ oförsäkrade	2
 ögruppen	2
 okaraktäristiska	2
 öl	2
-omedelbums-värld	2
 omfördelning	2
 omgående	2
 omgång	2
@@ -3279,7 +3256,6 @@ personermän	2
 pionjärerna	2
 pjäs	2
 plånböcker	2
-playbarntv-tablåalla	2
 popsångareamerikanska	2
 potatismoslådan	2
 präglad	2
@@ -3323,7 +3299,6 @@ renässans	2
 reseförsäkringar	2
 resmål	2
 restaurangbesök	2
-riksdags-utblåsningen	2
 riksgränsen	2
 riksrätten	2
 rikstäckande	2
@@ -3386,7 +3361,6 @@ sångstilar	2
 sångtexter	2
 sänkta	2
 sånt	2
-sarah-anmälningar	2
 säregna	2
 särställning	2
 säsong	2
@@ -3477,7 +3451,6 @@ spårvagnen	2
 spektakulär	2
 spelförmåga	2
 spökboll	2
-språk-	2
 språkbruket	2
 språkkunskaperna	2
 språklag	2
@@ -3501,7 +3474,6 @@ ståndsförfattningens	2
 ståndsriksdagen	2
 stäng	2
 stärkta	2
-startsportplushejnöjetipsakulturledaretv	2
 statsägda	2
 statsrådslön	2
 stekön	2
@@ -3607,7 +3579,6 @@ trovärdigt	2
 turistnäringen	2
 turiststråken	2
 turnéstarten	2
-tv-tablå	2
 tvåa	2
 tvåan	2
 tvåbarnsmamman	2
@@ -3787,7 +3758,6 @@ zürich	2
 abortfrågor	1
 accentförskjutningarna	1
 accentsättning	1
-ächtastånds-prijs	1
 ackompanjemangstämmor	1
 adelsmän	1
 ädle	1
@@ -3795,7 +3765,6 @@ adelsmän	1
 administratör	1
 administratörer	1
 ådragit	1
-adventskalenderchokladfärgsprakande	1
 aéronautique	1
 affärsdistrikt	1
 affärsidé	1
@@ -3805,11 +3774,8 @@ affärspartner	1
 affärstidningen	1
 affärstjänster	1
 afföda	1
-affton-sång	1
 aflöning	1
-aflönings-	1
 afmålad	1
-afskeds-sång	1
 afskedssång	1
 afslöjanden	1
 aftonstämning	1
@@ -3943,7 +3909,6 @@ ansvarsområde	1
 ansvarsområden	1
 antågande	1
 antérieure	1
-antikorruptionsåklagarmyndigheten	1
 antipiratbyrån	1
 äntrade	1
 anträffbar	1
@@ -4461,9 +4426,7 @@ brödernas	1
 bröderne	1
 brödet	1
 brödh	1
-brödra-sång	1
 brödskivningsmaskinen	1
-bröllops-gåln	1
 bröllopsfirande	1
 bröllopsfoton	1
 bröllopsfotona	1
@@ -4495,12 +4458,10 @@ busschaufförer	1
 butiksförsäljningen	1
 byggföretaget	1
 byrå	1
-cadett-sång	1
 caicosöarna	1
 carlén	1
 carlström	1
 cartieröarna	1
-cartieröarnajulönkokosöarnakorallhavsöarnaheard	1
 castellà	1
 céline	1
 centerväljarna	1
@@ -4512,8 +4473,6 @@ civilingenjören	1
 civilmål	1
 civilrättsliga	1
 clàssic	1
-cointreau-ståndet	1
-con-besökarna	1
 countryhållet	1
 countrylåten	1
 countrysångare	1
@@ -4522,7 +4481,6 @@ countrysångerska	1
 crèmer	1
 croixön	1
 cröneka	1
-cup-hånet	1
 cykelanvändning	1
 d’èxit	1
 d'orléans	1
@@ -4570,7 +4528,6 @@ detaljnivå	1
 diabetesläkemedel	1
 diabetesläkemedlet	1
 dialektområden	1
-dif-stjärnans	1
 dignitärer	1
 direktör	1
 direktutlägg	1
@@ -4641,10 +4598,8 @@ drönarstörningar	1
 drönarvy	1
 drunknatfödda	1
 duettsångerska	1
-dufwo-röst	1
 dufworöst	1
 dundersuccé	1
-e-handelsjättarna	1
 écosse	1
 edirnehändelsen	1
 édith	1
@@ -4709,7 +4664,6 @@ erhållit	1
 erhålls	1
 erhölls	1
 erkände	1
-erkännande-dela-lika	1
 erkännandet	1
 eröfring	1
 erövra	1
@@ -5360,7 +5314,6 @@ gårdar	1
 gärdestad	1
 gårdestig	1
 gårdglad	1
-gårdskarl-eldarbefattningen	1
 gäss	1
 gåssar	1
 gästar	1
@@ -5411,7 +5364,6 @@ gitarrsträng	1
 givarländer	1
 gjutjärnsram	1
 glaciär	1
-glad-måndag-bidrag	1
 gläder	1
 glädes	1
 glädja	1
@@ -5509,7 +5461,6 @@ guvernörer	1
 guvernörerna	1
 gyllström	1
 gymnasiumskrämma	1
-gyökeres-ramsa	1
 hackbrädet	1
 haé	1
 häfdernas	1
@@ -5535,7 +5486,6 @@ hällevik	1
 hållin	1
 hållna	1
 hållning	1
-halloween-stämning	1
 halloweenfärger	1
 halloweenskämt	1
 hallström	1
@@ -5555,7 +5505,6 @@ hälsocentralen	1
 hälsoeffekter	1
 hälsominister	1
 hälsoskäl	1
-hälsostegen-kampanj	1
 hälsoutgifterna	1
 hälsovårds	1
 hämden	1
@@ -5618,8 +5567,6 @@ härnösands	1
 härolder	1
 härom	1
 häromkring	1
-harr-khärs-boen	1
-harrgåls-ola	1
 harrgårsfal	1
 harrgårstösa	1
 härte	1
@@ -5664,7 +5611,6 @@ herrgård	1
 herrgårdar	1
 himmelsfärd	1
 himmelsfärdsdag	1
-hiphopmusikermänvänsterhänta	1
 historieberättande	1
 hjälpen	1
 hjälpinsatser	1
@@ -5754,9 +5700,6 @@ hörners	1
 hörnet	1
 hornlåt	1
 hörnstenarna	1
-höst-rusket	1
-höst-sång	1
-höst-seglats	1
 höstarbetehemmets	1
 höstarna	1
 höstblomma	1
@@ -5801,7 +5744,6 @@ husdröm	1
 husdrömmar	1
 hushållen	1
 hushållens	1
-hushålls-allehanda	1
 hushållsförmögenhet	1
 hushållsinkomster	1
 husväggen	1
@@ -5821,7 +5763,6 @@ hyresgäster	1
 hyresgästerna	1
 hyresvärd	1
 hyviä	1
-icke-nödvändiga	1
 idéen	1
 identitària	1
 idériktningar	1
@@ -5879,7 +5820,6 @@ inrättades	1
 inrättas	1
 inrikesförhållandena	1
 inrikessäkerhetsdepartement	1
-inrikessäkerhetsdepartementet	1
 inröstade	1
 insåg	1
 insättningar	1
@@ -5969,11 +5909,9 @@ jordbrukssamhällen	1
 jordnära	1
 jörg	1
 journalisthögskola	1
-juglans-träd	1
 julgåfva	1
 julhänge	1
 julkänslan	1
-julsång-o	1
 julstjärna	1
 julutställning	1
 julvärdar	1
@@ -6023,8 +5961,6 @@ karaktäristiska	1
 karaktäristiskt	1
 karaktärsträd	1
 kärleks	1
-kärleks-prijs	1
-kärleks-suck	1
 kärleksmotiv	1
 kärlekstörst	1
 karlsö	1
@@ -6053,8 +5989,6 @@ käyt	1
 kedjerökare	1
 keräsi	1
 kesä	1
-kiämpa-wisa	1
-kiellman-göranson	1
 kiristämättömät	1
 kirsbär	1
 kisapäivän	1
@@ -6104,7 +6038,6 @@ knarrström	1
 knivbeväpnad	1
 kö	1
 köhler	1
-köks-kajsa	1
 köksbordet	1
 köksgardin	1
 kolasås	1
@@ -6217,7 +6150,6 @@ kungssången	1
 kungsträdgården	1
 kunskapsnivå	1
 kunskapsområden	1
-kuriren-inlägg	1
 kustslätterna	1
 kuststräckor	1
 kuutsemägi	1
@@ -6301,8 +6233,6 @@ lånades	1
 lånat	1
 länderengelskspråkiga	1
 ländereuropeiska	1
-länderöstatermonarkiersamväldetengelskspråkiga	1
-ländersamväldetfederationertidigare	1
 ländervästindiens	1
 landgränser	1
 landområden	1
@@ -6318,14 +6248,12 @@ landsvägen	1
 landsvägsmaja	1
 lånebilen	1
 länets	1
-längd-	1
 längdåkarens	1
 längdgraden	1
 längdhopp	1
 långdistansvapen	1
 längdskidåkare	1
 längdskidoruppges	1
-längdskidorvc-premiär	1
 längdstjärnan	1
 längesen	1
 långfilm	1
@@ -6397,7 +6325,6 @@ lättspelad	1
 leamän	1
 ledamöterna	1
 ledtrådar	1
-lefnads-öden	1
 lefnadsöden	1
 lefnadssätt	1
 lejontämjarens	1
@@ -6416,7 +6343,6 @@ likvärdigt	1
 limegrönt	1
 lindbäck	1
 lindelöf	1
-linné-minne	1
 linnéa	1
 listaså	1
 litterär	1
@@ -6450,7 +6376,6 @@ löneskillnader	1
 lönespridning	1
 lönespridningen	1
 lönestrukturstatistik	1
-lonkero-grå	1
 lönliga	1
 lönneborg	1
 lönnlig	1
@@ -6538,7 +6463,6 @@ måltavla	1
 måltid	1
 måltorkan	1
 måluppfyllelsens	1
-mån-skenet	1
 månadens	1
 månadersperioden	1
 månadsarvode	1
@@ -6587,7 +6511,6 @@ mänskobarn	1
 manskören	1
 maräng	1
 mardrömslika	1
-marie-adélaïde	1
 märkas	1
 märkesmännen	1
 märket	1
@@ -6634,7 +6557,6 @@ måttligare	1
 måttlighetsdrickare	1
 matväg	1
 maxåldern	1
-mcdonaldöarnanorfolkönaustraliska	1
 medborgarrättsrörelse	1
 medborgarsång	1
 meddelandetjänsten	1
@@ -6646,7 +6568,6 @@ medieföretag	1
 medkänsla	1
 medkompositör	1
 medlemsförbund	1
-medlemsstaterskandinavienmonarkiersvenskspråkiga	1
 medresenär	1
 medsvängningar	1
 mejlväxling	1
@@ -6655,7 +6576,6 @@ mellanårsval	1
 mellanlägen	1
 mellanlånga	1
 mellanmål	1
-mellanöstern-kommando	1
 mellanvästerns	1
 melodiösare	1
 meningslöst	1
@@ -6665,7 +6585,6 @@ metallföremål	1
 metallkåpor	1
 metallsträngarna	1
 metalltråd	1
-mff-piteå	1
 michèle	1
 mikä	1
 miliärkommitténs	1
@@ -6702,7 +6621,6 @@ mineraltillgångar	1
 minimilön	1
 ministerlön	1
 ministerrådet	1
-minnes-skål	1
 minneshjälp	1
 minnesmärken	1
 minnesvärda	1
@@ -6729,7 +6647,6 @@ mobiloperatör	1
 mobilradioanläggning	1
 möbler	1
 modalröst	1
-moder-lösa	1
 moderlösa	1
 modulära	1
 mögel	1
@@ -6813,7 +6730,6 @@ myndighetsutövning	1
 myös	1
 mysteriemässamässa	1
 nåbar	1
-nacka-åke	1
 nådigt	1
 näköinen	1
 näktergal	1
@@ -6877,8 +6793,6 @@ nedvärderats	1
 nettoförmögenhet	1
 nettoförmögenheten	1
 nettolönen	1
-nhl-säsong	1
-nils-uttermans-räggla	1
 nittonårige	1
 nivåsamhällen	1
 nö	1
@@ -7085,7 +6999,6 @@ ordförteckning	1
 ordstävet	1
 öresundsbron	1
 öresundsförbindelsen	1
-orfei-drängar	1
 originaluppsättningen	1
 orkestersättning	1
 örnen	1
@@ -7107,7 +7020,6 @@ ostämda	1
 östermyra	1
 östersjöuppropet	1
 östersky	1
-östersunds-posten	1
 östkatoliker	1
 östkusten	1
 östligaste	1
@@ -7197,7 +7109,6 @@ outtömliga	1
 oxå	1
 öyster	1
 pääkaupunkiseudullakin	1
-päärynä-lime	1
 pääsee	1
 päässä	1
 påbörjats	1
@@ -7228,7 +7139,6 @@ pärla	1
 parlamentsledamöterna	1
 pärmen	1
 pärnu	1
-päron-lime	1
 pärson	1
 partiföreträdare	1
 partigåva	1
@@ -7303,14 +7213,12 @@ polisiär	1
 polisiära	1
 poliskårer	1
 polisväsendet	1
-politie-rättens	1
 politikområden	1
 popbhangralåten	1
 popframgång	1
 popframgångarna	1
 popgruppstävling	1
 popstjärnor	1
-populär-philosophi	1
 populärare	1
 populären	1
 populärkulturell	1
@@ -7369,7 +7277,6 @@ punkrörelsen	1
 pusseldagskänslan	1
 pusselväder	1
 què	1
-qvälls-stump	1
 qvarnsägner	1
 råare	1
 räcka	1
@@ -7381,7 +7288,6 @@ räddades	1
 räddat	1
 räddning	1
 räddningen	1
-räddnings-	1
 räddningsinsatsen	1
 räddningspersonal	1
 räddningstjänst	1
@@ -7519,7 +7425,6 @@ riktnummerområden	1
 rivalmötet	1
 robotförsvarssystemet	1
 rock'n'rollvågen	1
-rockabillysångareamerikanska	1
 rockdängan	1
 rockframträdande	1
 rockkarriär	1
@@ -7687,8 +7592,6 @@ sångvers	1
 sänkte	1
 sänktes	1
 såpoperan	1
-sarah-anmälan	1
-sarah-anmälningarna	1
 sårat	1
 särbon	1
 särdeles	1
@@ -7853,9 +7756,7 @@ skrämmas	1
 skrämmer	1
 skräms	1
 skränar	1
-skräp-post-korgen	1
 skrapsår	1
-skridsko-sång	1
 skriftspråket	1
 skrivglädje	1
 skrivsätt	1
@@ -7919,7 +7820,6 @@ smörfräst	1
 smörgåsbord	1
 smörja	1
 smörjas	1
-sms-länk	1
 snabbmatställen	1
 snabbtågen	1
 snabbtåget	1
@@ -8158,7 +8058,6 @@ strålar	1
 strålningsnivåer	1
 strålsäkerhetsmyndigheten	1
 strängare	1
-stränginstrumenttangentinstrument	1
 strängrörelsen	1
 strävan	1
 strävande	1
@@ -8280,7 +8179,6 @@ tätä	1
 täthet	1
 tätorterna	1
 tävlingar	1
-tävlings-erfarenhet	1
 tävlingsprogram	1
 tävlingströja	1
 taxichauffören	1
@@ -8308,7 +8206,6 @@ tidöpartiernas	1
 tidsfråga	1
 tidsödande	1
 tietää	1
-tiktok-användare	1
 tilförliteligaste	1
 tilläggen	1
 tilläggning	1
@@ -8343,7 +8240,6 @@ tillträde	1
 tillväxtpakt	1
 tillväxtsiffrorna	1
 tillväxttakten	1
-tillverkningsindustriområdet	1
 tingsrätten	1
 tingsrätter	1
 tioåriga	1
@@ -8448,7 +8344,6 @@ tronföljden	1
 tronföljdskris	1
 trosåskådningar	1
 tröstar	1
-tröste-sång	1
 tröstlöst	1
 trötthet	1
 tröttna	1
@@ -8475,15 +8370,12 @@ turnétrummis	1
 turnétrummisen	1
 tusensköna	1
 tuskegeefödda	1
-tv-premiär	1
-två-tre	1
 tvådelad	1
 tvåhalsad	1
 tvåhalsade	1
 tvåkammarriksdag	1
 tvåkammarriksdagen	1
 tvångsåtgärder	1
-tvångsförflyttningspolitiken	1
 tvångsparagraf	1
 tvångssteriliseringarna	1
 tvångstankar	1
@@ -8797,9 +8689,6 @@ väntat	1
 vapenförmåga	1
 vapenstillestånd	1
 väpnat	1
-vår-	1
-vår-regn	1
-vår-sång	1
 vårdades	1
 vårdag	1
 vardagshändelser	1
@@ -8859,7 +8748,6 @@ världsturnéer	1
 vårlig	1
 värma	1
 värmde	1
-värme-element	1
 värmeförsörjningen	1
 värmekostnaderna	1
 värmekraft	1
@@ -8948,7 +8836,6 @@ vindelälven	1
 vingåker	1
 vinterhalvåret	1
 virtuosmässiga	1
-vise-polismästarne	1
 vissångare	1
 vithövdad	1
 vithövdade	1
@@ -8973,7 +8860,6 @@ wärckz	1
 wärkz	1
 wärngren	1
 wårt	1
-wäster-norrland	1
 webbenkät	1
 wikén	1
 wikipediaförfattande	1

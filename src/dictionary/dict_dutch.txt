@@ -137,7 +137,6 @@ opgeëist	2
 pinguïns	2
 reünie	2
 rodríguez	2
-saoedi-arabië	2
 scène	2
 siberië	2
 sicilië	2
@@ -147,7 +146,6 @@ theorieën	2
 thracië	2
 variëren	2
 abchazië	1
-abchazo-adygeïsche	1
 aëtius	1
 aké	1
 albanië	1
@@ -167,7 +165,6 @@ antiochië	1
 antonín	1
 arabië	1
 arameeërs	1
-arauán-talen	1
 armeniërs	1
 asháninka	1
 assyriërs	1
@@ -186,7 +183,6 @@ bobsleeën	1
 boël	1
 boström	1
 brouckère	1
-café-eigenaar	1
 cafés	1
 calorieën	1
 calpaïne	1
@@ -202,7 +198,6 @@ cocaïneproductie	1
 commerciële	1
 communiqué	1
 complottheorieën	1
-continuïteitsproblemen	1
 controversiële	1
 coördinerende	1
 dadaïsme	1
@@ -239,12 +234,9 @@ faeröers	1
 família	1
 financiënminister	1
 française	1
-françois-xavier	1
 frédéric	1
-frère-orban	1
 galápagoseilanden	1
 garcía	1
-gaza-israël	1
 gecoördineerd	1
 gecreëerd	1
 geëindigd	1
@@ -267,7 +259,6 @@ georgiërs	1
 gérard	1
 geruïneerd	1
 gonçalves	1
-groot-brittannië	1
 guaraní	1
 gülenbeweging	1
 guzmán	1
@@ -308,12 +299,10 @@ lázaro	1
 léon	1
 lezgiërs	1
 libération	1
-linkeroever-oekraïne	1
 lucílio	1
 macaguán	1
 maniëristen	1
 maoïsme	1
-marie-josé	1
 mariël	1
 masaï	1
 matheï	1
@@ -329,15 +318,12 @@ monotheïsme	1
 montréal	1
 moraviërs	1
 moskeeën	1
-mössbauer-rotor-experimenten	1
 münchhausen	1
 musée	1
 musicalcarrière	1
 mythologieën	1
-na-denétalen	1
 níet	1
 noé	1
-noord-macedonië	1
 nubië	1
 óf	1
 onderzeeër	1
@@ -360,7 +346,6 @@ pokémonkaarten	1
 poliçan	1
 polynesiërs	1
 potentiële	1
-pre-industriële	1
 première	1
 principiële	1
 privéappjes	1
@@ -415,9 +400,6 @@ waterefficiëntie	1
 wedstrijdcarrière	1
 wereldzeeën	1
 yavarí	1
-yeşilgöz-zegerius	1
 zechiël	1
 zélf	1
 zó	1
-zuid-azië	1
-zuid-ossetië	1

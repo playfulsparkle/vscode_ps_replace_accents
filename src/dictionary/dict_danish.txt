@@ -314,7 +314,6 @@ sjældent	17
 spørg	17
 tør	17
 værne	17
-venstre-højborgen	17
 wienerbrød	17
 årsagen	16
 båd	16
@@ -360,14 +359,12 @@ græsk	14
 høje	14
 jøderne	14
 løsning	14
-ø-borgmestre	14
 øvrige	14
 tænker	14
 tilsætte	14
 tilsættes	14
 ændrer	13
 byrådet	13
-chiagrødmedcitronogbirkes	13
 chiagrødmedskyr	13
 efterår	13
 forstå	13
@@ -544,7 +541,6 @@ indkøbsliste	8
 indlægget	8
 julesmåkager	8
 klargører	8
-københavner-venner	8
 kød	8
 køkkenrulle	8
 kølet	8
@@ -570,7 +566,6 @@ nytårsopskrifter	8
 opmærksom	8
 opmærksomhed	8
 østlige	8
-øv-dage	8
 palæstina	8
 påpeger	8
 påskemad	8
@@ -624,7 +619,6 @@ kværnet	7
 låne	7
 løn	7
 mærkeligt	7
-maga-bevægelsen	7
 militært	7
 mistænkes	7
 mødtes	7
@@ -698,7 +692,6 @@ lægers	6
 løbebånd	6
 lørdagens	6
 månen	6
-missil-spørgsmål	6
 nægter	6
 nære	6
 nærliggende	6
@@ -735,7 +728,6 @@ væsken	6
 vallø	6
 vindmøllerne	6
 åbnet	5
-æblebrud-hasselnødder-chokolade-kanel-opskrift-	5
 æblecidereddike	5
 ælt	5
 æltes	5
@@ -896,7 +888,6 @@ kortlægge	4
 kræftsvulst	4
 læge	4
 læser	4
-league-opgøret	4
 løb	4
 magtesløse	4
 målingen	4
@@ -1050,7 +1041,6 @@ gennemgå	3
 gennemgået	3
 grønholdt	3
 grøntproduktion	3
-grøntsagsboullion-terning	3
 grundlæggende	3
 grundlovsforhøret	3
 håndarbejde	3
@@ -1102,8 +1092,6 @@ målmand	3
 målt	3
 maratonløberen	3
 medføre	3
-megafon-måling	3
-militær-til-militær-kanaler	3
 militærangreb	3
 millionbøf	3
 modsætning	3
@@ -1117,7 +1105,6 @@ nøgleby	3
 nordøstlige	3
 nyudnævnte	3
 ø	3
-ø-kommunerne	3
 øjenvidne	3
 omstændigheder	3
 opgøret	3
@@ -1131,7 +1118,6 @@ overvågningskameraer	3
 påfaldende	3
 palæstinenserne	3
 pålidelig	3
-papegøje-kyndig	3
 partifæller	3
 påstået	3
 påstande	3
@@ -1150,7 +1136,6 @@ sædvanligt	3
 sælger	3
 sammenhængskraft	3
 sårbar	3
-schjøtt-kristensen	3
 schrøder	3
 sjællands	3
 skærpet	3
@@ -1200,7 +1185,6 @@ adoptionsområdet	2
 æbler	2
 æggehviderne	2
 ældrepleje	2
-æltefrie-surdejsboller-surdejsbrod-opskrift-uden-roremaskine	2
 æltefrit	2
 ælter	2
 ændres	2
@@ -1214,15 +1198,12 @@ afhængigt	2
 anlæg	2
 anslår	2
 anstød	2
-apec-tomødet	2
-apec-topmødet	2
 årigs	2
 årsdag	2
 årtiers	2
 arvefølgen	2
 atmosfærens	2
 atomvåbnet	2
-attributionsundersøgelse	2
 badeværelse	2
 bænken	2
 bære	2
@@ -1250,7 +1231,6 @@ bokmål	2
 boligområder	2
 bønnerne	2
 børglum	2
-børne-	2
 børnefiskeri	2
 børnehave	2
 børnehaven	2
@@ -1355,7 +1335,6 @@ hårdest	2
 havørn	2
 havregrøden	2
 helårssamfund	2
-hizbollah-mål	2
 hjørne	2
 hjørner	2
 hjørnet	2
@@ -1419,11 +1398,9 @@ lægge	2
 længde	2
 landstræneren	2
 lår	2
-league-opgør	2
 letmælk	2
 letweltervægt	2
 leveområder	2
-lincoln-badeværelse	2
 lineær	2
 lokalområdets	2
 løkke	2
@@ -1435,8 +1412,6 @@ madlavningsfløden	2
 mændenes	2
 mænds	2
 mærkes	2
-maga-fløj	2
-maga-fløjen	2
 måge	2
 måle	2
 målrettede	2
@@ -1478,8 +1453,6 @@ nødvendighed	2
 nøj	2
 nordøst	2
 nykøbing	2
-ø-borgmestrene	2
-ø-gruppe	2
 ødelæggelser	2
 ødelægger	2
 offentliggørelse	2
@@ -1503,8 +1476,6 @@ optræder	2
 ordfører	2
 ørnen	2
 østeuropastudier	2
-øv-dag	2
-øv-dagene	2
 øvad	2
 øvelser	2
 overføre	2
@@ -1520,8 +1491,6 @@ pænt	2
 pågældende	2
 påkørsel	2
 påkørslen	2
-palæstina-debat	2
-palæstina-sagen	2
 påsat	2
 påskeretter	2
 påstand	2
@@ -1550,7 +1519,6 @@ rammevilkår	2
 regelmæssige	2
 regnskabsårets	2
 rekordår	2
-retshåndhævelsesbetalinger	2
 risengrød	2
 rødbedebøfferne	2
 rødløget	2
@@ -1599,7 +1567,6 @@ smagsmæssigt	2
 småkoge	2
 småkriminelle	2
 småsimre	2
-smør-ternene	2
 socialrådgiverforening	2
 solidaritetsbevægelser	2
 søndagsskoler	2
@@ -1643,7 +1610,6 @@ tilsynsbesøg	2
 tiltrække	2
 tissø	2
 tø	2
-to-sæts-sejr	2
 toastbrød	2
 tømte	2
 tønder	2
@@ -1656,8 +1622,6 @@ træning	2
 træningscentret	2
 træningsturneringen	2
 tronfølgen	2
-trump-vælgermøde	2
-tv-vært	2
 uafhængig	2
 ubåd	2
 ubåden	2
@@ -1693,9 +1657,7 @@ valsemøllens	2
 vedrørende	2
 vegetarbøffer	2
 vejrhændelse	2
-viceinvesteringsdirektør	2
 vindmølleprojekter	2
-vm-bælte	2
 yderligtgående	2
 åbenlys	1
 åbning	1
@@ -1723,7 +1685,6 @@ adsbøl	1
 ærgrelse	1
 ærligt	1
 ærmet	1
-ærø-projekt	1
 ærøs	1
 æsel	1
 afdækket	1
@@ -1761,8 +1722,6 @@ ansøgt	1
 anspændt	1
 antikrigsbevægelse	1
 antiubådskrigsførelse	1
-apple-finansdirektør	1
-ara-papegøje	1
 arbejdsområder	1
 arbejdstagerområdet	1
 arbejdsvilkår	1
@@ -1784,7 +1743,6 @@ atomubåd	1
 atomvåbenkapable	1
 atomvåbenprogram	1
 atomvåbentest	1
-atomvåbentestsprængninger	1
 atomvåbnene	1
 attentatforsøg	1
 bådsmandspibe	1
@@ -1826,8 +1784,6 @@ betalingspåkrav	1
 bevæbne	1
 bevæbnede	1
 bevægelige	1
-bibelbælte-segment	1
-bibelbælte-segmentet	1
 bilnøgle	1
 bjælker	1
 blærer	1
@@ -1862,7 +1818,6 @@ borgmesterkæden	1
 børneafdeling	1
 børnebørn	1
 børnefamilier	1
-børnehave-besøg	1
 børneklassiker	1
 børnesager	1
 børnetøjet	1
@@ -1904,11 +1859,9 @@ damgård	1
 debattør	1
 delagtiggøre	1
 dertilhørende	1
-det-unge-par-på-nørrebro	1
 detailkæder	1
 direktøren	1
 djævlen	1
-dna-prøver	1
 døbt	1
 dødelig	1
 dødsår	1
@@ -1929,7 +1882,6 @@ drømt	1
 dusør	1
 dykkerhåndtegn	1
 edemamebønnerne	1
-efterårs-	1
 efterårsferie	1
 efterårsferien	1
 efterårsvejr	1
@@ -1948,7 +1900,6 @@ elementarånder	1
 elmålere	1
 energianlæg	1
 entreprenør	1
-er-tilværelse	1
 erklære	1
 erklærer	1
 ernæringsforbundet	1
@@ -1979,7 +1930,6 @@ fartøjet	1
 fastlåst	1
 fastslået	1
 favoritmåder	1
-fcn-afbrændere	1
 fintskårne	1
 fjerdestørste	1
 fladbrød	1
@@ -2014,7 +1964,6 @@ følelsesladet	1
 følsomme	1
 følsomt	1
 føltes	1
-forældre-	1
 foræret	1
 forårsage	1
 forårsdag	1
@@ -2100,7 +2049,6 @@ gøres	1
 gråand	1
 græde	1
 grænserne	1
-grød-arrangement	1
 grødgris	1
 grødris	1
 grøntproducenterne	1
@@ -2151,7 +2099,6 @@ håndteringen	1
 håndvasken	1
 hårdag	1
 hårdknude	1
-hårdknude-regel	1
 hårdtslående	1
 hårfarve	1
 hasselnødderne	1
@@ -2172,7 +2119,6 @@ hjemmegående	1
 hjemsøgt	1
 høfeber	1
 høg	1
-høj-hellig	1
 højdepunkt	1
 højkommissær	1
 højkvalitetsarbejde	1
@@ -2184,7 +2130,6 @@ højrisikopatienter	1
 højrødt	1
 højtideligt	1
 holdforfølgelsesløb	1
-hør-viskestykke	1
 høringssvar	1
 høringssvarene	1
 høringssvaret	1
@@ -2205,11 +2150,9 @@ hvidløgene	1
 hvidtøl	1
 hvorpå	1
 iblødsætning	1
-idræts-	1
 ifører	1
 igangværende	1
 igår	1
-ikke-nødvendige	1
 ilsøe	1
 imødegår	1
 imødekommer	1
@@ -2262,7 +2205,6 @@ kanindåb	1
 kåres	1
 kåret	1
 kernemælk	1
-khabarovsk-atomubåd	1
 kikærtemel	1
 klæg	1
 klægt	1
@@ -2278,14 +2220,11 @@ købeerstatninger	1
 københavnerne	1
 købeversion	1
 købstad	1
-kød-bolognese	1
 kødagtige	1
 kødblandingen	1
 kødindtaget	1
 kødsauce	1
 køges	1
-køkken-	1
-køkken-alrummet	1
 køkkener	1
 køkkenø	1
 køkkenpapir	1
@@ -2296,7 +2235,6 @@ koldhævede	1
 koldhæves	1
 koldhævet	1
 koldskålsgrød	1
-køle-	1
 køleskabet’	1
 køleskabskoldt	1
 kølig	1
@@ -2306,7 +2244,6 @@ konkurrenceløft	1
 konkurrencevilkår	1
 kønne	1
 kønsbaseret	1
-kopi-vægttabsmedicin	1
 køres	1
 kørestol	1
 køretøjer	1
@@ -2389,8 +2326,6 @@ mærket	1
 mærkevarer	1
 mæthed	1
 mættede	1
-maga-kæmperne	1
-maga-vælgere	1
 mågeklat	1
 mågen	1
 mågevej	1
@@ -2399,7 +2334,6 @@ måleenheder	1
 målene	1
 måler	1
 målestok	1
-målings-	1
 målløs	1
 målscore	1
 mandatområde	1
@@ -2420,19 +2354,14 @@ medfører	1
 medgørlig	1
 medicinalkæmpe	1
 medicinalkæmpen	1
-mel-mængden	1
 mellemøstkorrespondent	1
 melmængderne	1
-menneskerettighedsområdet	1
 metaltråd	1
-meter-løb	1
 midtsjællandske	1
 mikrobølgeovn	1
 mikrotræning	1
-militær-	1
 militæradministration	1
 miljø	1
-miljø-	1
 miljøet	1
 miljøforvaltning	1
 miljøkrav	1
@@ -2468,27 +2397,21 @@ nærmeste	1
 nærmiljø	1
 nærområdet	1
 næsager	1
-næst-tungeste	1
 næstformand	1
 næstveds	1
 nævekamp	1
 nævne	1
 nævneværdig	1
-narko-ubåd	1
 narkofartøjer	1
-narkotikabekæmpelsesoperation	1
 naturfølsomme	1
 naturfølsomt	1
 navnesøster	1
 nedenstående	1
 nedkølet	1
 nedslående	1
-negros-øen	1
 nervøs	1
 nervøse	1
-nevada-ørkenen	1
 nevø	1
-news-vært	1
 nigallafrø	1
 ninjasværd	1
 nøddesmag	1
@@ -2505,21 +2428,14 @@ nøglelov	1
 nøglepunkt	1
 nøjagtigt	1
 nøjjjj	1
-nør-pedersen	1
 nørbæk	1
 nørdede	1
 nørdet	1
 nørgaard	1
-nørrebro-par	1
-norsted-jørgensen	1
 nygårdsvej	1
 nykårede	1
 nytårsdag	1
 nytårsgave	1
-ø-borgmestrer	1
-ø-gruppens	1
-ø-kommuner	1
-ø-samfund	1
 oddssætter	1
 øde	1
 ødelæggelserne	1
@@ -2669,9 +2585,6 @@ rævegrav	1
 rævene	1
 ræverøde	1
 råjordsplanum	1
-randers-anfører	1
-randers-anføreren	1
-randers-målet	1
 råstofudvinding	1
 regelsæt	1
 regionsrådsvalg	1
@@ -2729,7 +2642,6 @@ senfølger	1
 seriøs	1
 seriøse	1
 seværdigheder	1
-shiretoko-halvøen	1
 siddeskråning	1
 sidstnævnte	1
 sikkerhedsmæssige	1
@@ -2763,8 +2675,6 @@ sløjfe	1
 sløk	1
 småbørnspædagogik	1
 småt	1
-smør-	1
-smør-fyldte	1
 smøre	1
 smøret	1
 smørklat	1
@@ -2786,7 +2696,6 @@ solstråler	1
 soltørret	1
 sommermåneder	1
 søndagen	1
-søndags-indlæg	1
 søndagsbord	1
 søndagsbordet	1
 søndagslokation	1
@@ -2797,7 +2706,6 @@ søndagsplaner	1
 søndagstanker	1
 sønderby	1
 søndergaards	1
-sønderjyske-comeback	1
 sønderup	1
 sørg	1
 sørgelige	1
@@ -2926,9 +2834,6 @@ træningsholdet	1
 trætte	1
 transportmæssig	1
 trekantområdet	1
-trump-støtte	1
-trump-støtter	1
-tschad-søen	1
 tværfagligt	1
 tværpasning	1
 uændret	1
@@ -2971,7 +2876,6 @@ vådbund	1
 våddragter	1
 væde	1
 væg	1
-vægt-	1
 vægten	1
 vægtige	1
 vægtskåle	1
@@ -2997,7 +2901,6 @@ værner	1
 vært	1
 værtinde	1
 væskeindhold	1
-valsemoellen-groed-søndag	1
 vandmængden	1
 varetægtsfænglset	1
 varetægtsfængslingen	1
@@ -3013,7 +2916,6 @@ venstrefløjsdrømmeri	1
 venstrefløjspartier	1
 vestsjællandske	1
 vicedirektør	1
-videnskabreligionvideregående	1
 videnskabvideregående	1
 vidtgående	1
 vierø	1
@@ -3027,7 +2929,6 @@ vintermåneder	1
 vintermånederne	1
 weekendmåltider	1
 westergård	1
-yar-missilområdet	1
 yderfløjsparti	1
 yderfløjspartier	1
 yndlingsæbletræ	1

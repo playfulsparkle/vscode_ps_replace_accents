@@ -1,6 +1,5 @@
 abonnés	279
 réservé	241
-sous-catégories	96
 catégories	73
 économie	55
 légales	46
@@ -59,7 +58,6 @@ expérience	13
 jusqu’à	13
 l’arrivée	13
 réputé	13
-satiété-prix	13
 sénégal	13
 spécialité	13
 vélo	13
@@ -99,14 +97,12 @@ l’anéantissement	10
 l'époque	10
 l’époque	10
 l’humanité	10
-mini-séries	10
 modifié	10
 pénale	10
 réalisatrice	10
 rénové	10
 réveils	10
 siècles	10
-sino-américain	10
 suppléments	10
 télévision	10
 voilà	10
@@ -135,7 +131,6 @@ aggravé	7
 étrangères	7
 près	7
 région	7
-sous-catégorie	7
 trouvés	7
 activité	6
 annoncé	6
@@ -188,7 +183,6 @@ pluralité	5
 présence	5
 procès	5
 qu’israël	5
-rémi-françois	5
 répression	5
 rétablissement	5
 séance	5
@@ -261,10 +255,8 @@ céreste	3
 château	3
 collégiens	3
 comédien	3
-contemporánea-96	3
 controversé	3
 crédible	3
-d’après-midi	3
 d'écran	3
 débutant	3
 décembre	3
@@ -288,7 +280,6 @@ explicación	3
 fábrica	3
 façon	3
 física	3
-franco-algérien	3
 hémicycle	3
 icône	3
 inédites	3
@@ -347,7 +338,6 @@ accusé	2
 accusée	2
 ajouté	2
 alcalá	2
-anti-aérienne	2
 anticipées	2
 aplicação	2
 appliquée	2
@@ -360,7 +350,6 @@ associé	2
 assurés	2
 astéroïde	2
 atmosphérique	2
-au-delà	2
 balanços	2
 barème	2
 bergé	2
@@ -408,7 +397,6 @@ définition	2
 démocratique	2
 déplacées	2
 déplacer	2
-déplore-t-elle	2
 déposé	2
 déposer	2
 dépôts	2
@@ -454,7 +442,6 @@ entraîneur	2
 escritório	2
 espérer	2
 étant	2
-états-unis	2
 étranger	2
 être	2
 étude	2
@@ -589,7 +576,6 @@ préparent	2
 président	2
 prévenus	2
 prévoit	2
-pro-européen	2
 procédé	2
 procédures	2
 proposée	2
@@ -633,7 +619,6 @@ révèlent	2
 revendiqué	2
 révolution	2
 río	2
-rodríguez-navas	2
 rückstoßes	2
 s’était	2
 s’éternisent	2
@@ -723,7 +708,6 @@ appelé	1
 appelées	1
 approuvé	1
 appuyés	1
-après-midi	1
 aquáticas	1
 aragón	1
 aragonés	1
@@ -760,7 +744,6 @@ baissé	1
 balayée	1
 balcón	1
 balnéaires	1
-bân-lâm-gí	1
 bändermodell	1
 bandièra	1
 bardé	1
@@ -854,7 +837,6 @@ cleovansóstenes	1
 có	1
 coleção	1
 comédie	1
-comédie-française	1
 comemoração	1
 comète	1
 commandée	1
@@ -908,7 +890,6 @@ correção	1
 cortège	1
 côtés	1
 côtoyer	1
-coude-à-coude	1
 coupé	1
 coût	1
 coûts	1
@@ -970,7 +951,6 @@ d’inéligibilité	1
 d’ingénieurs	1
 d’irrégularités	1
 dành	1
-darmois-théobald	1
 dauphiné	1
 débat	1
 débattre	1
@@ -989,7 +969,6 @@ decimonónica	1
 décisif	1
 décision	1
 décisive	1
-déclarait-il	1
 déclaration	1
 déclarations	1
 déclenché	1
@@ -1033,7 +1012,6 @@ démarré	1
 dément	1
 démenti	1
 démentis	1
-demi-siècle	1
 démission	1
 démocrate	1
 démocrates	1
@@ -1107,7 +1085,6 @@ distillé	1
 divisées	1
 dopé	1
 dopée	1
-dörp-pape	1
 doublé	1
 doués	1
 drôle	1
@@ -1133,7 +1110,6 @@ durée	1
 écoutées	1
 écran	1
 écrire	1
-écrit-elle	1
 écrivait	1
 écrivez	1
 écroué	1
@@ -1162,10 +1138,8 @@ eléa	1
 éliminé	1
 éliminée	1
 éliront	1
-elle-même	1
 éloigne	1
 élue	1
-em-länderfahnen-netzvinyl	1
 émaillées	1
 émis	1
 émotion	1
@@ -1214,7 +1188,6 @@ envoyé	1
 équipes	1
 ercíclio	1
 éric	1
-espaço-tempo	1
 específica	1
 espéraient	1
 espérant	1
@@ -1242,7 +1215,6 @@ eudème	1
 eurêka	1
 européen	1
 eusébio	1
-eux-mêmes	1
 evasión	1
 éventuel	1
 éventuelle	1
@@ -1285,7 +1257,6 @@ fixé	1
 fixée	1
 flávia	1
 flugblätter	1
-förderanlagen-und-kranbau	1
 forêts	1
 fósiles	1
 fossé	1
@@ -1311,7 +1282,6 @@ gangrène	1
 garçon	1
 gâteaux	1
 géant	1
-gebäude-kranbau	1
 généralement	1
 génération	1
 générationnel	1
@@ -1335,11 +1305,9 @@ gradé	1
 grégoire	1
 gründung	1
 guetté	1
-guinée-bissau	1
 günter	1
 györgy	1
 haïti	1
-hak-kâ-ngî	1
 hámos	1
 harcelés	1
 haussé	1
@@ -1357,7 +1325,6 @@ hiérarchisent	1
 histórica	1
 hoá	1
 hôpitaux	1
-hors-séries	1
 hôtel	1
 humiliés	1
 hürlimann	1
@@ -1469,7 +1436,6 @@ l'amène	1
 l’américain	1
 l’antisémitisme	1
 l’apogée	1
-l’après-midi	1
 l'armée	1
 l’assèchement	1
 l’autorité	1
@@ -1489,7 +1455,6 @@ l’emblématique	1
 l’emblème	1
 l'épisode	1
 l’ère	1
-l’état-major	1
 l'été	1
 l’étranger	1
 l’événement	1
@@ -1511,7 +1476,6 @@ l’opérateur	1
 l’unanimité	1
 l’unilatérale	1
 là	1
-là-bas	1
 labellisé	1
 labellisée	1
 laboratório	1
@@ -1528,14 +1492,12 @@ légèreté	1
 légion	1
 léglise	1
 léo	1
-léon-dierx	1
 léopoldville	1
 lepéniste	1
 lëtzebuergesch	1
 levée	1
 lévitation	1
 libéral	1
-libéral-conservateur	1
 libérale	1
 libération	1
 libéré	1
@@ -1554,8 +1516,6 @@ littéraires	1
 livré	1
 lòng	1
 lovée	1
-lugar-espaço	1
-lui-même	1
 lumière	1
 luminosité	1
 m’étais	1
@@ -1569,7 +1529,6 @@ malgré	1
 manqué	1
 marchés	1
 maría	1
-marie-aimée	1
 mariëndal	1
 mariné	1
 markundersökning	1
@@ -1588,9 +1547,7 @@ mécanisme	1
 méchants	1
 médecins	1
 médiathèque	1
-médiatico-politique	1
 médiatique	1
-médico-psychologique	1
 méfait	1
 mejía	1
 mêlant	1
@@ -1601,7 +1558,6 @@ menções	1
 mènent	1
 mensongère	1
 mérignac	1
-méta-wiki	1
 métaclasse	1
 métalliques	1
 météo	1
@@ -1610,12 +1566,10 @@ méthode	1
 métier	1
 meurtrière	1
 méxico	1
-mi-journée	1
 michaël	1
 miljöingenjör	1
 millénaire	1
 millimètres	1
-mìng-dĕ	1
 mingrélie	1
 minière	1
 mirandés	1
@@ -1625,7 +1579,6 @@ modèles	1
 modélisation	1
 modération	1
 modifiés	1
-moi-même	1
 moitié	1
 moléculaire	1
 mónica	1
@@ -1661,7 +1614,6 @@ nié	1
 noémie	1
 nommée	1
 nouveauté	1
-nouvelle-calédonie	1
 numéros	1
 nyíregyháza	1
 observé	1
@@ -1679,7 +1631,6 @@ opposé	1
 orações	1
 orchestrée	1
 ordonné	1
-ordre-des-siècles	1
 organisé	1
 organisées	1
 orocué	1
@@ -1709,7 +1660,6 @@ pedagógico	1
 pédagogique	1
 pédagogiques	1
 pédé	1
-pehuen-có	1
 pénal	1
 perçant	1
 pérez	1
@@ -1720,7 +1670,6 @@ perpétuité	1
 persécutés	1
 personnalités	1
 pétrolière	1
-peut-être	1
 photographié	1
 piéger	1
 planardurchführung	1
@@ -1800,7 +1749,6 @@ protéger	1
 protéines	1
 provoqué	1
 publicité	1
-publicité-kantar	1
 publiée	1
 pulvérisées	1
 può	1
@@ -1875,7 +1823,6 @@ reliés	1
 remédier	1
 remercié	1
 remonté	1
-remouchamps-harzée	1
 remplaçant	1
 rémunérera	1
 renforcé	1
@@ -1952,7 +1899,6 @@ s’élever	1
 s’étend	1
 s’étire	1
 saakadzé	1
-sacré-cœur	1
 sacrifiée	1
 sajtótájékoztatója	1
 salariés	1
@@ -2006,12 +1952,9 @@ slovène	1
 société	1
 sociétés	1
 sociojurídicas	1
-soi-même	1
 sombré	1
 sophistiqués	1
 soulevé	1
-sous-amendé	1
-sous-catégorisés	1
 souveraineté	1
 spécial	1
 spéciales	1
@@ -2083,7 +2026,6 @@ transformé	1
 transição	1
 traversé	1
 trêve	1
-trinité-et-tobago	1
 troisième	1
 trône	1
 trouvé	1
@@ -2098,7 +2040,6 @@ usés	1
 utilisé	1
 utilisée	1
 utilisés	1
-vagón-tren	1
 valérie	1
 validé	1
 vám	1
@@ -2115,8 +2056,6 @@ vérifiez	1
 versé	1
 vertébrale	1
 vertèbre	1
-vice-président	1
-vice-présidente	1
 villégiature	1
 vinícius	1
 visés	1

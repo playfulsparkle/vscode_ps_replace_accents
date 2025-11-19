@@ -319,7 +319,6 @@ rapidità	4
 regolarità	4
 riguarderà	4
 rossoblù	4
-sac-à-poche	4
 sapidità	4
 sbuffò	4
 scappò	4
@@ -658,7 +657,6 @@ cederà	1
 cédric	1
 centralità	1
 châteaux	1
-città-prigione	1
 città’	1
 clézio	1
 coinvolgerà	1
@@ -726,7 +724,6 @@ dúvida	1
 économie	1
 effettuerà	1
 elpharaòn	1
-entità-brand	1
 eredità	1
 esaù	1
 esclusività	1
@@ -830,7 +827,6 @@ marajó	1
 materializzò	1
 maternità	1
 méfier	1
-micro-attività	1
 microcriminalità	1
 misurabilità	1
 mollò	1

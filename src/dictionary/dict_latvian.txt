@@ -16,7 +16,6 @@ nākotnes	126
 sievietēm	120
 kamaniņu	114
 siguldā	114
-вчера	114
 spēlē	108
 jaunākās	99
 biedrība	96
@@ -68,11 +67,6 @@ platība	76
 ražotne	76
 ražotnes	76
 tēma	76
-в	76
-иллюстративное	76
-латвийцы	76
-новости	76
-фото	76
 viņš	70
 vairāk	69
 būs	66
@@ -259,36 +253,6 @@ viltības	38
 vīri	38
 zaudējuma	38
 žurnālus	38
-благословения	38
-блудных	38
-быстро	38
-верят	38
-возвращений	38
-вселенной	38
-делятся	38
-долгожданные	38
-знака	38
-зодиака	38
-и	38
-историями	38
-какие	38
-контроль	38
-котов	38
-но	38
-ноября	38
-одичал	38
-организации	38
-пах	38
-по-русски	38
-политические	38
-получат	38
-пришел	38
-сараем	38
-сговоры	38
-себя	38
-тайные	38
-теории	38
-тотальный	38
 brūnu	37
 norāda	37
 ziņot	37
@@ -581,7 +545,6 @@ vakarā	6
 veidā	6
 vienīgā	6
 vienotība	6
-vīķe-freiberga	6
 viņus	6
 vīramāti	6
 visā	6
@@ -1107,7 +1070,6 @@ ukraiņu	3
 upīša	3
 uzdūros	3
 uzskatīja	3
-uztupes-karamiševas	3
 vāc	3
 vācijas	3
 vairākkārt	3
@@ -1238,7 +1200,6 @@ būtisku	2
 būvēja	2
 būvētājs	2
 būvētās	2
-cabrón	2
 caurspīdīgu	2
 celtniecība	2
 čempiona	2
@@ -1429,7 +1390,6 @@ kādai	2
 kādus	2
 kafejnīcā	2
 kaismīgas	2
-kalniņa-lukaševica	2
 kampaņu	2
 kanāda	2
 kandidāti	2
@@ -1457,7 +1417,6 @@ kolektīvs	2
 kolorītiem	2
 koncertzāle	2
 konkurētspēja	2
-konservatīvie-liberāļi	2
 konservatīvo	2
 kooperatīvās	2
 kopējo	2
@@ -2536,7 +2495,6 @@ dzērumā	1
 dzērvju	1
 dzēstas	1
 dziesmām	1
-dziesmas’’	1
 dziļāks	1
 dziļi	1
 džima	1
@@ -3211,7 +3169,6 @@ komentētāji	1
 komfortablāko	1
 komisijā	1
 komitejā	1
-komórek	1
 kompānijas	1
 kompensācijas	1
 kompozīcija	1
@@ -3442,7 +3399,6 @@ manā	1
 mančestras	1
 manifestējusi	1
 manipulācijā	1
-maņku-	1
 manteifeļiem	1
 manteļskursteņa	1
 manteļskurstenis	1
@@ -3475,7 +3431,6 @@ mazizmēra	1
 mazspējas	1
 mazsvarīgi	1
 mazuļa	1
-mazure-siliņa	1
 mēbelēm	1
 medaļas	1
 medaļniece	1
@@ -3937,7 +3892,6 @@ pārdzīvojumā	1
 paredzētās	1
 paredzēto	1
 paredzēts	1
-pareizo’	1
 pārējās	1
 pārējiem	1
 pārgriezta	1
@@ -4379,7 +4333,6 @@ romantizētajā	1
 rosļikova	1
 rostovā	1
 rotaļlietas	1
-roze’’	1
 rožkalns	1
 rožukoks	1
 rūdolfs	1
@@ -5066,7 +5019,6 @@ viesistabā	1
 viesnīcā	1
 viešņu	1
 viesošanās	1
-vietā-	1
 vietējās	1
 vietējiem	1
 vīgants	1

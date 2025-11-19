@@ -47,7 +47,6 @@ resonó	29
 arquitectónicos	28
 catódicos	28
 amnistía	27
-atribución-compartirigual	27
 cláusulas	27
 derrotó	27
 economía	27
@@ -237,7 +236,6 @@ programación	10
 publicación	10
 sabía	10
 sudamérica	10
-al-ándalus	9
 aristóteles	9
 bioinformáticos	9
 cadáveres	9
@@ -302,7 +300,6 @@ láseres	8
 loterías	8
 lúmenes	8
 mañanas	8
-martínez-piqueras	8
 matarás	8
 máximo	8
 mesiánico	8
@@ -483,7 +480,6 @@ presentación	6
 prevención	6
 procés	6
 prohíbe	6
-proteína-proteína	6
 ramírez	6
 represión	6
 retroiluminación	6
@@ -559,7 +555,6 @@ eléctricamente	5
 eléctricas	5
 electrónico	5
 empezó	5
-en-línea	5
 energías	5
 enseñanzas	5
 escribió	5
@@ -641,7 +636,6 @@ actualización	4
 acumulación	4
 acusación	4
 afganistán	4
-afgano-iraní	4
 afrikáners	4
 alá	4
 alegría	4
@@ -694,7 +688,6 @@ diseñadores	4
 disponían	4
 división	4
 ejecución	4
-electrón-hueco	4
 electrónica	4
 émile	4
 empecé	4
@@ -1045,7 +1038,6 @@ llegará	3
 logró	3
 lucía	3
 macrófagos	3
-magneto-óptico	3
 malversación	3
 mariátegui	3
 máscara	3
@@ -1090,7 +1082,6 @@ obligación	3
 observó	3
 obstáculos	3
 olímpicos	3
-opéra-comique	3
 órganos	3
 orígenes	3
 óvulo	3
@@ -1260,7 +1251,6 @@ añadiendo	2
 añadir	2
 analítica	2
 análoga	2
-analógicos-digitales	2
 análogos	2
 andión	2
 andréi	2
@@ -1533,7 +1523,6 @@ egiptólogo	2
 éibar	2
 ejercería	2
 elaboración	2
-electro-óptico	2
 electromagnético	2
 electroporación	2
 eliminó	2
@@ -1905,7 +1894,6 @@ pequeña	2
 pequeños	2
 percibía	2
 pérdida	2
-père-lachaise	2
 periódico	2
 periodísticas	2
 pérmico	2
@@ -2256,7 +2244,6 @@ aeronáutico	1
 afanásiev	1
 afectará	1
 afectó	1
-afganistán-	1
 afiliación	1
 afín	1
 aflicción	1
@@ -2321,7 +2308,6 @@ alquiló	1
 alterará	1
 alternó	1
 altísimo	1
-alto-alemán	1
 aludía	1
 aludiría	1
 aluvión	1
@@ -2353,7 +2339,6 @@ analizó	1
 análogamente	1
 analogía	1
 analógicascontrol	1
-analógico-digital	1
 anarquía	1
 anárquica	1
 anatómicamente	1
@@ -2362,7 +2347,6 @@ anaxágoras	1
 anclará	1
 ándale	1
 andré	1
-andré-marie	1
 androcéntrica	1
 anécdota	1
 anécdotas	1
@@ -2444,7 +2428,6 @@ aquéllos	1
 aqueménida	1
 aquí'	1
 aquñi	1
-árabe-israelí	1
 árabes	1
 arábiga	1
 aragonés	1
@@ -2457,13 +2440,11 @@ archós	1
 arcoíris	1
 áreas	1
 argentinadesaparición	1
-argentino-brasileña	1
 argón	1
 aristócratas	1
 aristocráticos	1
 aristotélica	1
 aritmética	1
-aritmético-lógicas	1
 arlés	1
 armamentístico	1
 armó	1
@@ -2545,7 +2526,6 @@ aumentaría	1
 áurico	1
 auríferos	1
 auriñaciense	1
-austria-hungría	1
 austrohúngaras	1
 autobiografía	1
 autobiográficos	1
@@ -2588,7 +2568,6 @@ bahía	1
 bailén	1
 bajarían	1
 bajó	1
-bajo-alemán	1
 balcánica	1
 balcón	1
 balística	1
@@ -2632,7 +2611,6 @@ bière	1
 bilingüe	1
 billón	1
 binúcleo	1
-bio-históricas	1
 bioclimática	1
 bioconstrucción	1
 bioética	1
@@ -2725,7 +2703,6 @@ cambié	1
 camerún	1
 camión	1
 campañas	1
-campo-rodríguez	1
 cámpora	1
 cañaveral	1
 cancelación	1
@@ -2775,7 +2752,6 @@ castellón	1
 catalogación	1
 catálogo	1
 catástrofes	1
-catedral-basílica	1
 catedrática	1
 categorías	1
 categorización	1
@@ -2852,7 +2828,6 @@ citogenética	1
 citohistopatología	1
 citometría	1
 citotóxicos	1
-cívico-militar	1
 clamarían	1
 clarín	1
 clarísimo	1
@@ -2874,7 +2849,6 @@ clínico	1
 clínicos	1
 clónicas	1
 clónicos	1
-clos-lucé	1
 clústeres	1
 coagulación	1
 cóctel	1
@@ -3037,7 +3011,6 @@ coronación	1
 correlación	1
 correrán	1
 corrían	1
-corriente-tensión	1
 corrigió	1
 corrió	1
 cortés	1
@@ -3049,10 +3022,8 @@ cósmido	1
 cosmologías	1
 cosmológicas	1
 cosmovisión	1
-costa-fernández	1
 costará	1
 costaría	1
-coto-garcía	1
 cráneo	1
 creándonos	1
 créanme	1
@@ -3315,7 +3286,6 @@ difería	1
 difícilmente	1
 difundía	1
 digitación	1
-digital-analógico	1
 digitalización	1
 digitaltecnologías	1
 dígito	1
@@ -3402,7 +3372,6 @@ ecólogos	1
 econometría	1
 economías	1
 económicamente	1
-económico-administrativa	1
 ecuménicas	1
 ecuménicos	1
 edificación	1
@@ -3423,7 +3392,6 @@ elección	1
 eléctrica	1
 eléctricos	1
 electrificación	1
-electro-ópticas	1
 electrodinámica	1
 electrodomésticos	1
 electrofísica	1
@@ -3772,9 +3740,7 @@ fénix	1
 fenómica	1
 féretros	1
 fermentación	1
-fernández-argüelles	1
 férreamente	1
-ferrero-martín	1
 ferromagnética	1
 ferromagnético	1
 fértil	1
@@ -3839,7 +3805,6 @@ fricción	1
 frívolos	1
 frontón	1
 frotación	1
-fuentes-beráin	1
 funcionaría	1
 fundéu	1
 fundó	1
@@ -3912,7 +3877,6 @@ gobernó	1
 godolías	1
 golpeándose	1
 golpeó	1
-gonzález-ripoll	1
 gótico	1
 graduó	1
 grafía	1
@@ -3931,7 +3895,6 @@ guían	1
 guías	1
 guigó	1
 guiñar	1
-guinea-bisáu	1
 guiño	1
 günter	1
 gurión	1
@@ -4012,7 +3975,6 @@ historiología	1
 holandés	1
 holístico	1
 holográficas	1
-hombre-máquina	1
 homeotrópicamente	1
 homocigóticos	1
 homoerótica	1
@@ -4206,7 +4168,6 @@ iónica	1
 iónicas	1
 iónico	1
 iónicos	1
-irán-israel	1
 iraní	1
 iré	1
 irlandés	1
@@ -4223,7 +4184,6 @@ isocórico	1
 isonomía	1
 isósceles	1
 isotérmico	1
-israelí-palestino	1
 iván	1
 jabalcón	1
 jabón	1
@@ -4250,8 +4210,6 @@ jeshván	1
 jinámar	1
 joaquín	1
 jorasán	1
-josé-pío	1
-josep-lluís	1
 josué	1
 joyería	1
 józsef	1
@@ -4353,9 +4311,7 @@ lógicos	1
 lógos	1
 lograría	1
 loguía	1
-lomonósov-	1
 londoño	1
-lópez-dóriga	1
 lósev	1
 luchó	1
 luciría	1
@@ -4371,7 +4327,6 @@ maestría	1
 magalí	1
 mágica	1
 mágico	1
-magneto-ópticos	1
 magnetósfera	1
 magnífico	1
 magnólidas	1
@@ -4404,8 +4359,6 @@ marítimos	1
 maródi	1
 marrón	1
 martí	1
-martí-renom	1
-martínez-	1
 mártir	1
 mártires	1
 masías	1
@@ -4420,7 +4373,6 @@ mecamática	1
 mecánica	1
 mecánicas	1
 mecánico	1
-mecánico-eléctrica	1
 mecánicos	1
 medallón	1
 medellín	1
@@ -4431,7 +4383,6 @@ mediáticos	1
 médicas	1
 medición	1
 médico	1
-médicos-	1
 meditación	1
 mediterránea	1
 mediterráneos	1
@@ -4480,7 +4431,6 @@ metodologías	1
 metodológicas	1
 metodológicos	1
 métrica	1
-méxico-tenochtitlan	1
 méxicocensura	1
 méxicocorrección	1
 méxicoleyendas	1
@@ -4507,7 +4457,6 @@ midió	1
 migijón	1
 migraré	1
 migró	1
-mil-millonésimas	1
 milán	1
 milésima	1
 milésimas	1
@@ -4571,7 +4520,6 @@ morfometría	1
 moría	1
 morirían	1
 mortificación	1
-moscú-	1
 mostrará	1
 mostrarán	1
 mostraría	1
@@ -4602,8 +4550,6 @@ muñeca	1
 muñecas	1
 muñecos	1
 muñiz	1
-muñoz-alonso	1
-muñoz-ledo	1
 murió	1
 músculo	1
 museístico	1
@@ -4663,7 +4609,6 @@ níger	1
 niña	1
 niñez	1
 nisán	1
-no-gestión	1
 noción	1
 noé	1
 nómina	1
@@ -4746,7 +4691,6 @@ oposición	1
 optimización	1
 óptimo	1
 optó	1
-opto-electrónicos	1
 optoelectrónics	1
 opúsculo	1
 oración	1
@@ -4835,7 +4779,6 @@ participó	1
 partícula	1
 pasarán	1
 pasaría	1
-pascual-garcía	1
 pastún	1
 patología	1
 patologías	1
@@ -4936,8 +4879,6 @@ politécnica	1
 políticacontroversias	1
 políticassoberaníafrases	1
 políticawikipedia	1
-político-comercial	1
-político-militar	1
 politización	1
 politóloga	1
 politólogo	1
@@ -5022,7 +4963,6 @@ procesó	1
 proclamó	1
 proctología	1
 pródigo	1
-producción-	1
 producían	1
 producirán	1
 produciría	1
@@ -5076,7 +5016,6 @@ psicólogas	1
 psicologías	1
 psicológica	1
 psicológicas	1
-psicológico-etnográficas	1
 psicológicos	1
 psicólogo	1
 psicólogos	1
@@ -5311,7 +5250,6 @@ ríu	1
 robótica	1
 robótico	1
 robóticos	1
-rodríguez-ferrer	1
 rogué	1
 románica	1
 romántica	1
@@ -5323,7 +5261,6 @@ rompió	1
 rotación	1
 róterdam	1
 rufián	1
-ruiz-ayúcar	1
 rumanía	1
 sábados	1
 sábanas	1
@@ -5337,7 +5274,6 @@ sacrificó	1
 sacristía	1
 sádico	1
 sáenz	1
-salazar-pérez	1
 saldaña	1
 saldó	1
 saldrán	1
@@ -5389,7 +5325,6 @@ semánticas	1
 semántico	1
 sembradío	1
 sembró	1
-semi-héroe	1
 semióloga	1
 semíticas	1
 seña	1
@@ -5485,7 +5420,6 @@ sociológicos	1
 sociólogo	1
 sócrates	1
 sofisticación	1
-soldados-músicos	1
 solía	1
 solicitarán	1
 sólida	1
@@ -5510,7 +5444,6 @@ sorprenderías	1
 sortearán	1
 sostenía	1
 soviéticas	1
-soviético-japonesa	1
 soviéticos	1
 sóviets	1
 spécial	1
@@ -5543,7 +5476,6 @@ sufrían	1
 sufriría	1
 sugestión	1
 suicidó	1
-suizo-francés	1
 sultán	1
 sumará	1
 suní	1

@@ -318,7 +318,6 @@ populației	23
 naționale	22
 pîslaru	22
 reprezintă	22
-științifico-fantastic	22
 urmă	22
 ușor	22
 bucureștenii	21
@@ -378,7 +377,6 @@ administrația	17
 autoritățile	17
 câmp	17
 engleză	17
-într-o	17
 jucător	17
 jucători	17
 militară	17
@@ -446,7 +444,6 @@ groază	14
 îmi	14
 înțeles	14
 inteligenței	14
-într-un	14
 modificări	14
 muncă	14
 președinte	14
@@ -559,7 +556,6 @@ rețeaua	11
 românesc	11
 selecția	11
 sexuală	11
-și-a	11
 soldații	11
 șters	11
 științei	11
@@ -606,7 +602,6 @@ privința	10
 producție	10
 proiectată	10
 rezervă	10
-să-l	10
 salvați	10
 șerban	10
 socială	10
@@ -665,7 +660,6 @@ reformă	9
 restricții	9
 rețelele	9
 ș	9
-să-i	9
 șef	9
 soția	9
 spațială	9
@@ -738,7 +732,6 @@ rapiță	8
 rețea	8
 române	8
 roșie	8
-să-și	8
 sălbatică	8
 sancțiunile	8
 săptămânii	8
@@ -903,7 +896,6 @@ mizează	6
 modificările	6
 neobișnuită	6
 observațiile	6
-opto-electronică	6
 oră	6
 orașele	6
 orbán	6
@@ -1243,7 +1235,6 @@ introducând	4
 învățământ	4
 județe	4
 lampă	4
-le-ați	4
 legăturile	4
 licitații	4
 lingvistică	4
@@ -1407,7 +1398,6 @@ apăsând	3
 arabă	3
 arătând	3
 argumentație	3
-asigurați-vă	3
 asociații	3
 așteptăm	3
 așteptat	3
@@ -1612,7 +1602,6 @@ intervenția	3
 întinde	3
 intitulată	3
 întoarce	3
-într-adevăr	3
 intrăm	3
 întrebarea	3
 întrerupt	3
@@ -1626,7 +1615,6 @@ jucătorii	3
 jucătorul	3
 judecătorii	3
 jurisprudența	3
-l-ați	3
 lăsând	3
 lăsați	3
 laudă	3
@@ -1668,7 +1656,6 @@ musulmană	3
 natală	3
 nefericită	3
 nenumărate	3
-nu-și	3
 numiți	3
 obligă	3
 obligației	3
@@ -1780,7 +1767,6 @@ statică	3
 ști	3
 sticlă	3
 științelor	3
-științifico-fantastică	3
 știm	3
 strălucire	3
 studenților	3
@@ -1831,7 +1817,6 @@ vulcăneşti	3
 wikipédia	3
 zeități	3
 zoologică	3
-a-și	2
 abordări	2
 abstractă	2
 abținerea	2
@@ -1863,9 +1848,7 @@ afișează	2
 afișierul	2
 agreată	2
 ajutați	2
-ajutați-ne	2
 alătură	2
-alcalino-pământoase	2
 alcoolică	2
 aleargă	2
 alegătorii	2
@@ -1882,7 +1865,6 @@ analiștii	2
 analiză	2
 analizând	2
 analizează	2
-andré-marie	2
 animală	2
 aniversări	2
 anorganică	2
@@ -1931,7 +1913,6 @@ biofotonică	2
 biologică	2
 biomatematică	2
 birocrația	2
-bohr-răspuns	2
 brânză	2
 browniană	2
 bucureștenilor	2
@@ -2150,8 +2131,6 @@ formulă	2
 forțat	2
 fostă	2
 fotovoltaică	2
-franco-română	2
-franța--official	2
 fugă	2
 funcţiile	2
 funcţiilor	2
@@ -2351,12 +2330,10 @@ mașinii	2
 masivă	2
 măsurat	2
 materială	2
-maxilo-facială	2
 mediteraneană	2
 menținută	2
 merită	2
 metaxială	2
-micro-electronică	2
 microelectronică	2
 migranți	2
 migrenă	2
@@ -2475,7 +2452,6 @@ portalfizică	2
 portantă	2
 poșeta	2
 posibilități	2
-post-tranziție	2
 postări	2
 poștei	2
 povești	2
@@ -2550,7 +2526,6 @@ reglementări	2
 relaţie	2
 remarcabilă	2
 renașterea	2
-rené-antoine	2
 reparații	2
 reprezentată	2
 reprezentații	2
@@ -2579,7 +2554,6 @@ roboți	2
 roboții	2
 rocă	2
 roiniță	2
-româno-americană	2
 rulantă	2
 rutină	2
 săbii	2
@@ -2634,7 +2608,6 @@ solicitărilor	2
 solidă	2
 soluțiile	2
 sonoră	2
-spațiu-timp	2
 specifică	2
 speculativă	2
 speranța	2
@@ -2648,7 +2621,6 @@ staționat	2
 ştefănuţă	2
 șterge	2
 ștergerea	2
-știință--american-romanian	2
 științificetehnologie	2
 străină	2
 strâng	2
@@ -2700,10 +2672,7 @@ traversează	2
 trimisă	2
 tură	2
 turbină	2
-tzigara-samurcaș	2
 ultimă	2
-undă-corpuscul	2
-undă-particulă	2
 unește	2
 unică	2
 unită	2
@@ -2719,7 +2688,6 @@ urmărire	2
 urmată	2
 următor	2
 uzură	2
-v-ați	2
 vândut	2
 vântului	2
 vârstele	2
@@ -2796,7 +2764,6 @@ adevăruri	1
 adiție	1
 adjuncţii	1
 administează	1
-administrativ-teritorială	1
 administrează	1
 admirabilă	1
 adolescența	1
@@ -2827,12 +2794,10 @@ agenților	1
 agravată	1
 agregării	1
 agricolă	1
-ajungându-se	1
 ajunși	1
 ăla	1
 alăturarea	1
 alăturată	1
-alăturați-vă	1
 albaneză	1
 albastră	1
 albiţa	1
@@ -2840,7 +2805,6 @@ alcătuit	1
 alcătuită	1
 aldohexoză	1
 aleasă	1
-alegeți-vă	1
 alfabetică	1
 aliaţilor	1
 alimentație	1
@@ -2873,7 +2837,6 @@ ameninţărilor	1
 amiabilă	1
 amplasată	1
 amplifică	1
-an-lumină	1
 analfabeți	1
 analitică	1
 analizării	1
@@ -2883,12 +2846,10 @@ anchetează	1
 ancoră	1
 anestezistă	1
 angajăm	1
-ani-lumină	1
 animație	1
 animației	1
 antagoniștii	1
 antenă	1
-antero-posterioară	1
 anticeaușiste	1
 anticipație	1
 anticipațiile	1
@@ -2978,7 +2939,6 @@ atlantică	1
 atomiștii	1
 atrasă	1
 atribuțiilor	1
-aubadă-	1
 auditivă	1
 augmentată	1
 autentificați	1
@@ -2990,7 +2950,6 @@ automatică	1
 autorizați	1
 autorizație	1
 avalanșe	1
-având-o	1
 avansată	1
 avansați	1
 avantajează	1
@@ -3033,19 +2992,16 @@ bătrânul	1
 băuturi	1
 băuturile	1
 bazându	1
-bazându-se	1
 belgiană	1
 beneficiază	1
 benítez	1
 benzinărie	1
 benzinării	1
 berlină	1
-bielă-manivelă	1
 bifăm	1
 bifați	1
 bijectivă	1
 binară	1
-bine-cunoscută	1
 bineveniți	1
 birocrați	1
 birocratizează	1
@@ -3054,7 +3010,6 @@ biunivocă	1
 bizantină	1
 blând	1
 blândă	1
-bloc-coliță	1
 blocată	1
 blocați	1
 bogați	1
@@ -3156,7 +3111,6 @@ catastrofă	1
 câteodată	1
 căutând	1
 căutările	1
-căutați-l	1
 cauzată	1
 căzând	1
 căzătoare	1
@@ -3331,7 +3285,6 @@ contesă	1
 contestă	1
 conținând	1
 continuându	1
-continuându-și	1
 continuată	1
 contracepție	1
 contracultură	1
@@ -3385,7 +3338,6 @@ credincioșii	1
 credințe	1
 credinței	1
 cremalieră	1
-crépy-en-valois	1
 creşă	1
 crescută	1
 creșterii	1
@@ -3426,7 +3378,6 @@ cyberspațiu	1
 cyberspațiul	1
 cyberspațiul'	1
 d'aldébaran	1
-d'île-de-france	1
 dădea	1
 dădeau	1
 dâmbovița	1
@@ -3464,8 +3415,6 @@ demonstranți	1
 demonstraţia	1
 demonstrații	1
 dendrită	1
-dento-alveolară	1
-dento-facială	1
 deosebită	1
 depășească	1
 depășește	1
@@ -3614,9 +3563,7 @@ electrictății	1
 electroacustică	1
 electroenergetică	1
 electromecanică	1
-electronii-degenerați	1
 electrotehnicăportal	1
-elegie-odă	1
 eliberării	1
 eliberată	1
 eliberaţi	1
@@ -3692,7 +3639,6 @@ explorând	1
 explozivă	1
 expoziție	1
 expozițiilor	1
-exprimându-și	1
 externează	1
 extincție	1
 extinzând	1
@@ -3702,7 +3648,6 @@ extraterestră	1
 ezitați	1
 fabricată	1
 făcea	1
-făcut-o	1
 fălciu	1
 falimentară	1
 familiară	1
@@ -3711,7 +3656,6 @@ fân	1
 fantomă	1
 faringită	1
 farmaceutică	1
-farsă-	1
 favorabilă	1
 favorizării	1
 febră	1
@@ -3732,7 +3676,6 @@ ființe	1
 filmări	1
 filmările	1
 filmată	1
-filmștiințifico-fantastic	1
 filmuleț	1
 filosofică	1
 filozofică	1
@@ -3786,7 +3729,6 @@ fraților	1
 fraudă	1
 frecvenţei	1
 frédéric	1
-frédéric-françois	1
 frontieră	1
 frumoasă	1
 funcționale	1
@@ -3811,7 +3753,6 @@ gândești	1
 gândirea	1
 gândirism	1
 gândise	1
-gândiți-vă	1
 gânditori	1
 gânditorii	1
 gânditorilor	1
@@ -3866,7 +3807,6 @@ graţierea	1
 grațiile	1
 gravitație	1
 gravitațional	1
-greco-catolică	1
 greșește	1
 grevă	1
 grindină	1
@@ -3908,7 +3848,6 @@ ieșire	1
 igienică	1
 ignorând	1
 ignorați	1
-île-de-france	1
 ilicită	1
 iluminiști	1
 ilustrată	1
@@ -3990,13 +3929,11 @@ inaugurală	1
 încetarea	1
 încetățenit	1
 încheiați	1
-încheindu-le	1
 închidă	1
 închidem	1
 închiderea	1
 închideți	1
 închinate	1
-închipuindu-și	1
 închipuiți	1
 închirierea	1
 închisă	1
@@ -4115,7 +4052,6 @@ inovații	1
 însărcinate	1
 înscriam	1
 înscrierile	1
-înscrieți-vă	1
 inscripționate	1
 înscrisa	1
 înscriși	1
@@ -4192,9 +4128,6 @@ interzică	1
 întocmind	1
 întocmirea	1
 întorci	1
-într-atât	1
-într-unu	1
-într-unul	1
 intrării	1
 intrați	1
 întreabă	1
@@ -4215,7 +4148,6 @@ intrați	1
 întrevedere	1
 întro	1
 introducă	1
-introduceți-l	1
 întrodus	1
 introdusă	1
 întruni	1
@@ -4258,7 +4190,6 @@ invitați	1
 invitație	1
 invité	1
 invocând	1
-ionescu-sisești	1
 ipotetică	1
 irlandeză	1
 ironizând	1
@@ -4266,7 +4197,6 @@ isăilă	1
 ispășească	1
 israeliană	1
 izobară	1
-jean-andré	1
 jocă	1
 josé	1
 jucătorilor	1
@@ -4292,7 +4222,6 @@ lansării	1
 lanțului	1
 lanțurile	1
 lărgire	1
-lăsându-se	1
 lăsatul	1
 lászló	1
 lațul	1
@@ -4309,7 +4238,6 @@ lecțiile	1
 legislație	1
 legislativă	1
 lemnoasă	1
-léon-philippe	1
 lesă	1
 levitația	1
 licențele	1
@@ -4417,14 +4345,12 @@ menționeze	1
 mențiune	1
 mereuță	1
 mergând	1
-méta-barons	1
 metaforă	1
 metalică	1
 meteoriți	1
 meteoriții	1
 meteorologică	1
 mexicană	1
-mi-aș	1
 micuței	1
 micuților	1
 midraș	1
@@ -4482,7 +4408,6 @@ mușchi	1
 mutată	1
 mutați	1
 muzicală	1
-n-aș	1
 nádasdy	1
 nanoelectronică	1
 narativă	1
@@ -4505,7 +4430,6 @@ navigația	1
 navigație	1
 naziști	1
 naziștilor	1
-ne-autoconfirmați	1
 neașteptat	1
 neatenție	1
 neautorizată	1
@@ -4535,7 +4459,6 @@ nepopulară	1
 nepoţii	1
 neprețuit	1
 neprezentării	1
-neputându-se	1
 nesemnată	1
 nesemnificativă	1
 nesfârşit	1
@@ -4552,16 +4475,12 @@ nişă	1
 nominală	1
 nominalizări	1
 nominalizată	1
-non-ficționale	1
-non-supranaturală	1
-nord-atlantică	1
 norocoasă	1
 norvegiană	1
 noțiuni	1
 noțiunii	1
 noțiunile	1
 noțiunilor	1
-nou-eclozați	1
 nouăsprezece	1
 numeroși	1
 numește	1
@@ -4579,7 +4498,6 @@ obligaţiilor	1
 obligațiunile	1
 observării	1
 obstetrică	1
-obstetrică-ginecologie	1
 obțin	1
 obțină	1
 obținând	1
@@ -4626,7 +4544,6 @@ orientăm	1
 orientări	1
 orientată	1
 originală	1
-orion-lebăda	1
 orizontală	1
 ornamentală	1
 orţan	1
@@ -4696,7 +4613,6 @@ păstrării	1
 păstrată	1
 păstrate	1
 păstrați	1
-păstrează-mă	1
 pășune	1
 patologică	1
 pătrat	1
@@ -4716,7 +4632,6 @@ periculoasă	1
 periodică	1
 permacultură	1
 permită	1
-permțându-i	1
 perpetuează	1
 persecuția	1
 persecuţiei	1
@@ -4726,15 +4641,12 @@ perspectivă	1
 perturbă	1
 perturbările	1
 perturbaţii	1
-pește-pisică	1
 pești	1
 peștii	1
-petrescu-găină	1
 petrică	1
 photoshopată	1
 pianiști	1
 piardă	1
-piatra-neamț	1
 picură	1
 pieptăna	1
 piesă	1
@@ -4756,7 +4668,6 @@ plâns	1
 plasată	1
 plasmă	1
 plasmidă	1
-plastică-microchirurgie	1
 plastilină	1
 plătărești	1
 plăteau	1
@@ -4806,10 +4717,8 @@ portalșah	1
 porțelan	1
 porțile	1
 portiță	1
-portretizându-l	1
 posibilității	1
 posibilitățile	1
-poștal-fiscale	1
 poștașul	1
 postată	1
 postdecembristă	1
@@ -4821,7 +4730,6 @@ potențialului	1
 potrivește	1
 potrivită	1
 povară	1
-pp-dispută	1
 prăbuși	1
 prăbușirii	1
 prăbușise	1
@@ -4836,7 +4744,6 @@ precipită	1
 precipitațiilor	1
 precizând	1
 predată	1
-predică-	1
 predicții	1
 predispoziții	1
 preferată	1
@@ -4892,7 +4799,6 @@ proiectăm	1
 proiecției	1
 proiecționist	1
 promițătoare	1
-promovați-ne	1
 pronunţ	1
 pronunțe	1
 propagandă	1
@@ -4936,7 +4842,6 @@ radieră	1
 radioactivă	1
 radioelectronică	1
 radișcev	1
-rădulescu-motru	1
 rafală	1
 rafinăriilor	1
 rămânând	1
@@ -5136,15 +5041,12 @@ rurală	1
 rușilor	1
 rușinos	1
 rută	1
-să-mi	1
-să-ți	1
 șaizeci	1
 sală	1
 sălard	1
 salariați	1
 salcâm	1
 sălile	1
-saltîkov-scedrin	1
 sămănătorism	1
 samurcaș	1
 sănătatea	1
@@ -5181,7 +5083,6 @@ scandinavă	1
 scăpăm	1
 scăzută	1
 schimbăm	1
-schimbându-și	1
 schimbării	1
 scoată	1
 școlară	1
@@ -5213,9 +5114,6 @@ selecționat	1
 selecționata	1
 selecționate	1
 selecționerului	1
-semi-automată	1
-semi-închis	1
-semi-preparată	1
 semiotică	1
 semiprotejată	1
 semnalând	1
@@ -5245,10 +5143,6 @@ sfidătoare	1
 sfinții	1
 sfinților	1
 sfințire	1
-și-ar	1
-și-au	1
-și-l	1
-și-n	1
 siestă	1
 siguranţei	1
 șiism	1
@@ -5297,7 +5191,6 @@ soluționez	1
 sosiţi	1
 soț	1
 soție	1
-șotie-	1
 soției	1
 soțului	1
 șovăit	1
@@ -5328,7 +5221,6 @@ stâlpii	1
 stâlpul	1
 ștampilate	1
 stână	1
-stânga-sus	1
 stângii	1
 stăniloae	1
 stăpânit	1
@@ -5347,12 +5239,9 @@ stațiunii	1
 sterilizări	1
 știam	1
 știi	1
-știință-ficțiune	1
 științăportaluri	1
 științific	1
-științificeagriculturăștiințe	1
 științificeștiință	1
-științifico-fantasticul	1
 stilistică	1
 stinsă	1
 știrea	1
@@ -5360,7 +5249,6 @@ stocastică	1
 stocată	1
 străbătut	1
 străduia	1
-străduindu-se	1
 strălucitor	1
 strămoș	1
 strâmtori	1
@@ -5511,7 +5399,6 @@ tricuspidă	1
 trimițând	1
 triplă	1
 tulburărilor	1
-turdaș-vinča	1
 turmă	1
 tușieră	1
 țuțea	1
@@ -5579,16 +5466,13 @@ vătămare	1
 vătămări	1
 vătămărilor	1
 vătămătoare	1
-văzându-se	1
 văzute	1
 vecină	1
 vecinătatea	1
-vector-distanță	1
 vehementă	1
 venă	1
 verifică	1
 verificăm	1
-verificându-vă	1
 verticală	1
 veșmântul	1
 veșnice	1
@@ -5607,7 +5491,6 @@ vizând	1
 vizată	1
 vizigotăcategorie	1
 vizitați	1
-vizitează-ne	1
 vizualizările	1
 vlăduțescu	1
 vodă	1

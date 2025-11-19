@@ -325,7 +325,6 @@ ryškus	6
 sąjungos	6
 šalių	6
 šie	6
-širvinskas-makalius	6
 sistemų	6
 skrydžiai	6
 sudarė	6
@@ -446,7 +445,6 @@ biudžetas	4
 būna	4
 būtinai	4
 būtinas	4
-čmilytė-nielsen	4
 dalyvavimą	4
 didžiausią	4
 draugų	4
@@ -659,7 +657,6 @@ gamyklą	3
 garsiakalbių	3
 gebėjimus	3
 gelbėjimo	3
-genytė-pikčienė	3
 grandų	3
 grupėmis	3
 ieško	3
@@ -715,7 +712,6 @@ liberalų	3
 literatūra	3
 liūdna	3
 liūtas	3
-lukaitytė-vnarauskienė	3
 lukašenkos	3
 lyderystė	3
 lygį	3
@@ -1027,7 +1023,6 @@ garsų	2
 gebėjimai	2
 gebėsite	2
 gebėti	2
-genytės-pikčienės	2
 gerovės	2
 globėjai	2
 grąžą	2
@@ -1157,7 +1152,6 @@ konkrečias	2
 konkrečius	2
 konkretų	2
 konstiantynivką	2
-konstiantynivka-družkivka	2
 kontrolierė	2
 kovą	2
 kovų	2
@@ -1196,7 +1190,6 @@ mamą	2
 maniežo	2
 maršrutais	2
 maršrutų	2
-masiokaitė-liubinienė	2
 mąstymas	2
 matijošaitis	2
 maža	2
@@ -1211,7 +1204,6 @@ metalinį	2
 metį	2
 metinėms	2
 metodinė	2
-mikalčiūtė-urbonė	2
 milijardų	2
 minėjo	2
 ministeriją	2
@@ -1331,7 +1323,6 @@ pirmenybę	2
 planą	2
 planetų	2
 pociūno	2
-pocytė-medutė	2
 pokštininkui	2
 pokytį	2
 politikė	2
@@ -1414,14 +1405,12 @@ ryškiai	2
 ryšys	2
 ryžto	2
 sąjungoje	2
-sąjungos-lietuvos	2
 šalčininkų	2
 šalims	2
 šaltiniais	2
 šaltiniu	2
 šaltinius	2
 šaltuoju	2
-santaros-šviesos	2
 santykį	2
 sargiūnas	2
 sargiūnui	2
@@ -2916,7 +2905,6 @@ nutraukė	1
 nuvažiuodavome	1
 okupaciją	1
 onkologinės	1
-operatyvinių-taktinių	1
 opoziciją	1
 optimalų	1
 organizacijų	1
@@ -3522,7 +3510,6 @@ silpnąsias	1
 šimtus	1
 širdį	1
 širvinsko	1
-širvinsku-makaliumi	1
 širvinskui	1
 šitaip	1
 šitoje	1
@@ -3995,7 +3982,6 @@ vertinančių	1
 vertintų	1
 vertybėmis	1
 vertybinių	1
-vertybių-dorybių	1
 veščij	1
 vestuvės	1
 vestuvėse	1
@@ -4094,7 +4080,6 @@ zenitinių	1
 žiūrovo	1
 žiūrovus	1
 žmogumi	1
-žmogus-ugnis	1
 žmonai	1
 žmonijos	1
 žodis	1

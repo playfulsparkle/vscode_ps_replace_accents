@@ -244,7 +244,6 @@ stól	17
 sýslu	17
 vesturbæjarlaug	17
 þakka	17
-cambridge-skíri	16
 lög	16
 málið	16
 níu	16
@@ -377,7 +376,6 @@ stjórnarformaður	7
 tekið	7
 þjóðanna	7
 þörf	7
-cambridge-skíris	6
 dröfn	6
 færeyja	6
 fjölskyldan	6
@@ -433,7 +431,6 @@ sín	5
 skúrir	5
 skýjað	5
 staðar	5
-stjórnskipunar-	5
 stunguárás	5
 talíbana	5
 úrkomulítið	5
@@ -781,7 +778,6 @@ hjálma	2
 hjólað	2
 hjólafjölskyldan	2
 hjólagarpur	2
-hjúkrunar-	2
 hláku	2
 hlaupið	2
 hlotið	2
@@ -860,13 +856,11 @@ nærri	2
 næstum	2
 nálgast	2
 námi	2
-náttúru-	2
 náttúrufræðistofnun	2
 náttúrulega	2
 neyð	2
 niður	2
 nígeríuforseta	2
-norðan-	2
 núgildandi	2
 núverandi	2
 ný	2
@@ -944,7 +938,6 @@ stýrt	2
 suð	2
 suðaustan	2
 suðri	2
-suður-	2
 suðureyjar	2
 suðureyjargöngum	2
 suðurströndina	2
@@ -1101,7 +1094,6 @@ andstaða	1
 árlegan	1
 arnardóttir	1
 árnessýslu	1
-arsenal-goðsögn	1
 ásættanlegt	1
 ásakaði	1
 ásakaður	1
@@ -1119,7 +1111,6 @@ auðvelda	1
 auðveldara	1
 auðvelt	1
 auglýsinga	1
-auglýsinga-	1
 auglýsingamarkaðar	1
 auglýsingamarkaðurinn	1
 auglýsingasölu	1
@@ -1258,7 +1249,6 @@ erfiðs	1
 erfiður	1
 eyðileggið	1
 eyrún	1
-facebook-síðuna	1
 fælist	1
 færa	1
 færeyinga	1
@@ -1267,7 +1257,6 @@ færeyskt	1
 færeyskum	1
 færsluna	1
 færu	1
-falklands-stríðinu	1
 farþega	1
 farþegaflugvöllum	1
 farþegavélar	1
@@ -1320,7 +1309,6 @@ flugfélögum	1
 flugvélar	1
 flutningsmaður	1
 flýja	1
-fo-herferð	1
 fög	1
 fögin	1
 fögnuðu	1
@@ -1429,7 +1417,6 @@ hálf	1
 hálfu	1
 hallað	1
 hálsi	1
-hámarks-	1
 handjárn	1
 handtók	1
 harðduglegar	1
@@ -1895,7 +1882,6 @@ sérstakar	1
 sérstök	1
 sért	1
 setningarræðu	1
-sharía-löggjöf	1
 síðar	1
 síðastliðinn	1
 síðastliðnum	1
@@ -1940,7 +1926,6 @@ skoðanakannanir	1
 skoðanir	1
 skoðunar	1
 skoðunum	1
-skóla-	1
 skólasókn	1
 skólum	1
 skömm	1
@@ -2012,7 +1997,6 @@ stjórnsýsla	1
 stjórnsýslu	1
 stjórnsýslunnar	1
 stjórntæki	1
-stjórnunar-	1
 stjórnvölinn	1
 stöðina	1
 stödu	1
@@ -2029,8 +2013,6 @@ stuðningi	1
 stungið	1
 stýra	1
 suður	1
-suður-afríku	1
-suðvestur-	1
 svæði	1
 svaraði	1
 sviðinu	1
