@@ -45,25 +45,25 @@ When restoring, it uses **per-language dictionaries**, optional **suffix matchin
   - **macOS:** `Cmd+Alt+R`
 
 - **Supported language dictionaries:**
-  - Croatian word count: 4,480
-  - Czech word count: 26,816
-  - Danish word count: 3,033
-  - Dutch word count: 423
-  - French word count: 2,137
-  - German word count: 9,617
-  - Hungarian word count: 127,653
-  - Icelandic word count: 2,245
-  - Italian word count: 1,042
-  - Latvian word count: 5,156
-  - Lithuanian word count: 4,126
-  - Norwegian word count: 973
-  - Polish word count: 13,362
-  - Portuguese word count: 1,944
-  - Romanian word count: 5,632
-  - Slovak word count: 37,373
-  - Slovenian word count: 1,790
-  - Spanish word count: 5,826
-  - Swedish word count: 8,986
+  - Croatian word count: 4,430
+  - Czech word count: 26,728
+  - Danish word count: 2,934
+  - Dutch word count: 402
+  - French word count: 2,045
+  - German word count: 8,845
+  - Hungarian word count: 124,866
+  - Icelandic word count: 2,226
+  - Italian word count: 1,037
+  - Latvian word count: 5,108
+  - Lithuanian word count: 4,110
+  - Norwegian word count: 949
+  - Polish word count: 13,282
+  - Portuguese word count: 1,851
+  - Romanian word count: 5,481
+  - Slovak word count: 37,010
+  - Slovenian word count: 1,777
+  - Spanish word count: 5,749
+  - Swedish word count: 8,868
 
   **Note:** These dictionaries are curated and only include words that contain at least one non-ASCII character or diacritic, for example Danish `“ø”`, Norwegian `“å”`, Polish `“ą”`, French `“é”` and similar letters. Words written using only unaccented ASCII letters are not stored. Because the focus is on accented forms, the word counts for some languages are significantly lower than in a full dictionary.
 
@@ -108,6 +108,11 @@ When restoring, it uses **per-language dictionaries**, optional **suffix matchin
 ---
 
 ## Release Notes
+
+### 0.0.21
+
+- Filtered all dictionary entries.
+- Updated normalization and adding dictionary entries to discard words that contain characters outside of the valid character mappings.
 
 ### 0.0.20
 

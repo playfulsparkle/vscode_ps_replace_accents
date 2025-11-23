@@ -12656,7 +12656,6 @@ ekvádoru	1
 électricité	1
 électrique	1
 électrode	1
-électrogène	1
 électrolytique	1
 électromagnétique	1
 électromobile	1
@@ -12730,7 +12729,6 @@ energetickém	1
 energetičtí	1
 énergie	1
 énergique	1
-énergumène	1
 énerver	1
 enfanté	1
 engedték	1
@@ -12738,7 +12736,6 @@ engéšem	1
 énigmatique	1
 énoncer	1
 énorme	1
-enseñó	1
 eocén	1
 epochální	1
 erasmův	1
@@ -13700,7 +13697,6 @@ irčan	1
 ireverzibilní	1
 ironický	1
 irové	1
-irrégulière	1
 iša	1
 islámmodlitby	1
 islámských	1
@@ -14061,8 +14057,6 @@ kaganát	1
 kahánek	1
 káida	1
 káidou	1
-kaišėna	1
-kaištė	1
 kajakář	1
 kajakářka	1
 kajča	1
@@ -15202,7 +15196,6 @@ majitelů	1
 mák	1
 makabejské	1
 makaón	1
-mäkčeň	1
 makléřů	1
 makó	1
 makoně	1
@@ -15702,7 +15695,6 @@ mžiková	1
 mžít	1
 naaranžoval	1
 nabádá	1
-nabadziņš	1
 náběhy	1
 naběračce	1
 nabídkou	1
@@ -21221,7 +21213,6 @@ saúdská	1
 saudskoarabské	1
 saúdskoarabských	1
 saúdští	1
-šauksmėninks	1
 saunéra	1
 saunový	1
 sauropodů	1
@@ -21808,7 +21799,6 @@ sledovací	1
 sledovaný	1
 sledovaným	1
 šlehnout	1
-ślepców	1
 slepých	1
 sletů	1
 slevách	1
@@ -21888,7 +21878,6 @@ slyší	1
 slyším	1
 slyšíme	1
 slzného	1
-smädný	1
 smajlíkem	1
 šmakovat	1
 smála	1
@@ -25643,8 +25632,6 @@ záložku	1
 záložní	1
 záložnímu	1
 žaltář	1
-žaltė	1
-žaltīs	1
 žaltys	1
 žalud	1
 žaludeční	1
@@ -26099,7 +26086,6 @@ zedník	1
 žehnátko	1
 žejdlíček	1
 žejdlík	1
-žekė	1
 zekonomičtit	1
 zélandu	1
 želať	1
@@ -26136,10 +26122,8 @@ zeměkoule	1
 zeměkouli	1
 zeměpis	1
 zeměpisná	1
-žemės	1
 zemětřesných	1
 zemiačky	1
-žemīns	1
 žemle	1
 žemli	1
 žemlička	1
@@ -26183,7 +26167,6 @@ zeptáte	1
 žerotínova	1
 žerotínský	1
 žeroucí	1
-žertavuotė	1
 žertva	1
 žerucha	1
 žervé	1
@@ -26228,7 +26211,6 @@ zhudebnění	1
 žiadny	1
 žiak	1
 žiarenie	1
-žibitė	1
 žid	1
 židačka	1
 židák	1
@@ -26272,7 +26254,6 @@ zikmundův	1
 žilinou	1
 žilka	1
 žilkováním	1
-žilvėtis	1
 zimních	1
 zimního	1
 zimním	1
@@ -26309,10 +26290,8 @@ ziskům	1
 zítřejší	1
 zítřka	1
 zítřky	1
-žiuogrē	1
 žiuogs	1
 žiuogspera	1
-žiurkėnas	1
 živ	1
 živalski	1
 zívat	1

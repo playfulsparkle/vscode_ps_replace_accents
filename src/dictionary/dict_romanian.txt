@@ -461,7 +461,6 @@ cuvântul	13
 deranjează	13
 dronă	13
 explică	13
-făgăraş	13
 grădină	13
 greacă	13
 înaltă	13
@@ -725,7 +724,6 @@ orașe	8
 performanță	8
 personală	8
 precipitații	8
-pregăteşte	8
 prezidențială	8
 rapidă	8
 rapiță	8
@@ -770,7 +768,6 @@ critică	7
 deocamdată	7
 depășit	7
 desfășoară	7
-desfăşurat	7
 determină	7
 direcția	7
 durată	7
@@ -969,7 +966,6 @@ bombă	5
 călătorească	5
 cărei	5
 căsătorească	5
-câştig	5
 căzut	5
 cerești	5
 cetățenilor	5
@@ -1463,7 +1459,6 @@ conducătorului	3
 configurație	3
 consecințele	3
 consimțământ	3
-conspiraţionişti	3
 constă	3
 constată	3
 constituțional	3
@@ -1494,7 +1489,6 @@ dependentă	3
 descurajată	3
 deșeu	3
 desfășurarea	3
-desfăşurate	3
 desființare	3
 deținută	3
 devastați	3
@@ -1740,7 +1734,6 @@ scrisă	3
 seamă	3
 secțiile	3
 securităţii	3
-şedinţei	3
 semnată	3
 senzația	3
 seră	3
@@ -1813,7 +1806,6 @@ vești	3
 vibrație	3
 vizibilității	3
 vizualizări	3
-vulcăneşti	3
 wikipédia	3
 zeități	3
 zoologică	3
@@ -2012,7 +2004,6 @@ cromatică	2
 culturală	2
 cumpărat	2
 cunoaștere	2
-cunoaşteţi	2
 cunoscuți	2
 cunoștință	2
 cuprinsă	2
@@ -2039,7 +2030,6 @@ definitivă	2
 deflație	2
 degenerați	2
 deosebește	2
-depăşesc	2
 depășite	2
 deplasării	2
 desemnând	2
@@ -2047,7 +2037,6 @@ deșert	2
 deșeuri	2
 deșeurilor	2
 desfășurări	2
-desfăşurării	2
 desfășurată	2
 detaliază	2
 determinată	2
@@ -2212,7 +2201,6 @@ inaugurată	2
 incluși	2
 incluzând	2
 inconștientă	2
-încrucişatecategorie	2
 încuraja	2
 îndemnat	2
 îndemnul	2
@@ -2294,7 +2282,6 @@ investiția	2
 investiție	2
 jefuită	2
 jenă	2
-jérôme	2
 judeţeană	2
 județene	2
 judiciară	2
@@ -2353,7 +2340,6 @@ mulțimilor	2
 multinaţional	2
 muncească	2
 mutări	2
-nagykövetség	2
 născuții	2
 nașteri	2
 natalităţii	2
@@ -2540,7 +2526,6 @@ restricționate	2
 rețelelor	2
 reține	2
 reținerii	2
-reuşească	2
 reușesc	2
 reușește	2
 reușiți	2
@@ -2618,7 +2603,6 @@ stații	2
 stațiilor	2
 staționar	2
 staționat	2
-ştefănuţă	2
 șterge	2
 ștergerea	2
 științificetehnologie	2
@@ -3141,7 +3125,6 @@ chestionați	1
 chimiștii	1
 chirilă	1
 chirurgicală	1
-chişinăului	1
 chiuș	1
 chiuvetă	1
 cibernetică	1
@@ -3338,7 +3321,6 @@ credincioșii	1
 credințe	1
 credinței	1
 cremalieră	1
-creşă	1
 crescută	1
 creșterii	1
 creștină	1
@@ -3436,8 +3418,6 @@ descriptivă	1
 descurajează	1
 desemnează	1
 deșerturi	1
-desfăşurare	1
-desfăşuraţi	1
 desființa	1
 desfiinţarea	1
 desfiinţate	1
@@ -3835,7 +3815,6 @@ hotărâte	1
 hoți	1
 hrană	1
 hrănire	1
-iarăşi	1
 iasă	1
 iberică	1
 idealiști	1
@@ -3895,8 +3874,6 @@ impotenţă	1
 împovărează	1
 împrăștiat	1
 impresionistă	1
-împuşca	1
-împuşcată	1
 inacţiunii	1
 inadecvată	1
 înaintat	1
@@ -4014,7 +3991,6 @@ infracțiunea	1
 infracțiunilor	1
 înfrângere	1
 înfrângeri	1
-înfricoşător	1
 înfuriat	1
 ingerinţele	1
 înghețat	1
@@ -4363,7 +4339,6 @@ miniștrii	1
 minoritară	1
 minunați	1
 minusculă	1
-mişcările	1
 misterioasă	1
 mitologică	1
 mitrală	1
@@ -4420,7 +4395,6 @@ nașterile	1
 nașterilor	1
 naționalism	1
 naţionalist	1
-naţionaliştilor	1
 naționalități	1
 naţiuni	1
 naţiunile	1
@@ -4461,7 +4435,6 @@ neprețuit	1
 neprezentării	1
 nesemnată	1
 nesemnificativă	1
-nesfârşit	1
 nesoluţionată	1
 nesupusă	1
 nețoiu	1
@@ -4471,7 +4444,6 @@ nevastă	1
 nevoiași	1
 nicăieri	1
 nimerească	1
-nişă	1
 nominală	1
 nominalizări	1
 nominalizată	1
@@ -4762,7 +4734,6 @@ preocupărilor	1
 preocupată	1
 preș	1
 presărate	1
-preşedintă	1
 președinția	1
 presocratică	1
 prestabilită	1
@@ -4899,7 +4870,6 @@ realizează	1
 reapariție	1
 recăpătat	1
 recâștiga	1
-recâştige	1
 recentă	1
 recepție	1
 recepționeze	1
@@ -4913,7 +4883,6 @@ recreativă	1
 recrează	1
 recunoască	1
 recunoscând	1
-recunoştinţa	1
 recuperăm	1
 redactați	1
 redenumiți	1
@@ -4992,7 +4961,6 @@ retușate	1
 reunească	1
 reunește	1
 reuși	1
-reuşită	1
 reutilizată	1
 reutilizează	1
 revizuită	1
@@ -5057,7 +5025,6 @@ sancțiunii	1
 sângeroasă	1
 sanguină	1
 șanselor	1
-şantajează	1
 șantajului	1
 săpat	1
 săpun	1
@@ -5373,7 +5340,6 @@ trăind	1
 trăire	1
 trăit	1
 transantarctică	1
-tranşează	1
 transferată	1
 transferați	1
 transhumanță	1

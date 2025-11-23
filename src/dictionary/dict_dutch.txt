@@ -211,7 +211,6 @@ diëten	1
 discussiëren	1
 dravidiërs	1
 düsseldorf	1
-dvořák	1
 échte	1
 economieën	1
 édouard	1
@@ -263,7 +262,6 @@ guaraní	1
 gülenbeweging	1
 guzmán	1
 haïti	1
-hampâté	1
 hawaï	1
 hawaïaans	1
 hè	1
@@ -379,7 +377,6 @@ suppé	1
 taalcafé	1
 tasmanië	1
 technologieën	1
-théâtre	1
 therapieën	1
 thérèse	1
 thermaïsche	1

@@ -339,7 +339,6 @@ accusée	2
 ajouté	2
 alcalá	2
 anticipées	2
-aplicação	2
 appliquée	2
 appropriée	2
 arménien	2
@@ -375,7 +374,6 @@ compétition	2
 comptabilisés	2
 condamné	2
 consacré	2
-conservação	2
 construcción	2
 contemporánea	2
 contesté	2
@@ -472,7 +470,6 @@ géographiques	2
 geometría	2
 géopolitique	2
 géorgie	2
-geração	2
 gérald	2
 gespräch	2
 görlitz	2
@@ -619,7 +616,6 @@ révèlent	2
 revendiqué	2
 révolution	2
 río	2
-rückstoßes	2
 s’était	2
 s’éternisent	2
 santé	2
@@ -661,13 +657,11 @@ accès	1
 accordé	1
 accroché	1
 accusés	1
-ações	1
 acquittés	1
 acté	1
 activités	1
 actualités	1
 adhérent	1
-administração	1
 adoptée	1
 adressé	1
 aériennes	1
@@ -784,7 +778,6 @@ c’était	1
 câbles	1
 caché	1
 cachée	1
-çadırı	1
 café	1
 cafés	1
 caído	1
@@ -835,9 +828,7 @@ clarifié	1
 clémence	1
 cleovansóstenes	1
 có	1
-coleção	1
 comédie	1
-comemoração	1
 comète	1
 commandée	1
 commencé	1
@@ -851,7 +842,6 @@ complète	1
 complètes	1
 complicité	1
 compressé	1
-conceição	1
 concernés	1
 conçu	1
 conçues	1
@@ -876,8 +866,6 @@ considérablement	1
 considérer	1
 considérés	1
 considérez	1
-construção	1
-construções	1
 contacté	1
 contemporáneo	1
 contrastés	1
@@ -886,7 +874,6 @@ convivialité	1
 coordonnés	1
 copié	1
 córdoba	1
-correção	1
 cortège	1
 côtés	1
 côtoyer	1
@@ -1003,7 +990,6 @@ dégeler	1
 dégèleront	1
 dégradé	1
 dégrader	1
-degustação	1
 délai	1
 délicats	1
 délicieux	1
@@ -1016,7 +1002,6 @@ démission	1
 démocrate	1
 démocrates	1
 démocratie	1
-demolição	1
 démontrent	1
 démontrer	1
 déontologie	1
@@ -1048,7 +1033,6 @@ destiné	1
 destinée	1
 détaillée	1
 détails	1
-detecção	1
 détecteur	1
 détention	1
 détenus	1
@@ -1223,7 +1207,6 @@ evasión	1
 évincer	1
 évitant	1
 éviter	1
-evolução	1
 évoluent	1
 évolution	1
 évoquant	1
@@ -1232,7 +1215,6 @@ exilé	1
 existências	1
 expatriés	1
 expedición	1
-experimentação	1
 expérimental	1
 exposé	1
 exprimé	1
@@ -1501,7 +1483,6 @@ libéral	1
 libérale	1
 libération	1
 libéré	1
-libertação	1
 liberté	1
 libertés	1
 lié	1
@@ -1554,7 +1535,6 @@ mêlant	1
 mêmes	1
 menaçant	1
 menaçants	1
-menções	1
 mènent	1
 mensongère	1
 mérignac	1
@@ -1628,7 +1608,6 @@ opérationnelle	1
 opérationnelles	1
 opportunément	1
 opposé	1
-orações	1
 orchestrée	1
 ordonné	1
 organisé	1
@@ -1700,7 +1679,6 @@ précipitations	1
 précis	1
 précisant	1
 préconisé	1
-předčítá	1
 prédilection	1
 préfecture	1
 préhistorique	1
@@ -1739,7 +1717,6 @@ procéder	1
 proclamé	1
 proclamée	1
 proclamés	1
-produção	1
 proférées	1
 progrès	1
 prophétie	1
@@ -1757,7 +1734,6 @@ qualifiée	1
 qualité	1
 quête	1
 química	1
-ração	1
 raisonné	1
 randonnée	1
 rapporté	1
@@ -1827,7 +1803,6 @@ remplaçant	1
 rémunérera	1
 renforcé	1
 renommée	1
-renovação	1
 rénovation	1
 renversé	1
 renvoyée	1
@@ -1858,7 +1833,6 @@ résister	1
 résorbent	1
 responsabilité	1
 responsabilités	1
-restauração	1
 rétention	1
 réticences	1
 rétorqué	1
@@ -1888,10 +1862,8 @@ rhétorique	1
 rhône	1
 rinpotché	1
 röblom	1
-română	1
 romançons	1
 romántica	1
-rückstoßlader	1
 s’accélère	1
 s’améliorer	1
 s’égaie	1
@@ -2023,7 +1995,6 @@ tragédie	1
 transféré	1
 transformación	1
 transformé	1
-transição	1
 traversé	1
 trêve	1
 troisième	1
@@ -2033,7 +2004,6 @@ tuées	1
 türkçe	1
 über	1
 überschneiden	1
-ułanów	1
 ünlü	1
 usée	1
 usés	1
@@ -2065,7 +2035,6 @@ volé	1
 votées	1
 weizsäcker	1
 wikimédia	1
-yalçıner	1
 yorùbá	1
 younès	1
 yüksel	1

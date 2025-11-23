@@ -1164,7 +1164,6 @@ tecnológica	3
 telefónica	3
 teológica	3
 térmicamente	3
-théâtre	3
 tío	3
 títulos	3
 tomará	3
@@ -2072,7 +2071,6 @@ surgió	2
 suscripción	2
 tabú	2
 táctica	2
-téchnē	2
 técnico	2
 tecnológicas	2
 tecnológico	2
@@ -2435,7 +2433,6 @@ araújo	1
 árbitro	1
 arcángel	1
 archidiócesis	1
-architéktōn	1
 archós	1
 arcoíris	1
 áreas	1
@@ -2710,7 +2707,6 @@ cancelaría	1
 canceló	1
 cánceres	1
 cancerígenas	1
-cançó	1
 cañón	1
 cañones	1
 canónico	1
@@ -3090,7 +3086,6 @@ currículum	1
 currículums	1
 cursó	1
 cúspide	1
-d’intérêt	1
 d’orléans	1
 dabíd	1
 daña	1
@@ -3151,7 +3146,6 @@ demócrito	1
 demográfica	1
 demográficamente	1
 demográficas	1
-dēmosthénēs	1
 demostración	1
 demostrarían	1
 demostró	1
@@ -4234,7 +4228,6 @@ krásnaya	1
 kühlcke	1
 láctica	1
 lágrimas	1
-laïcité	1
 lamentó	1
 láminas	1
 lanchón	1
@@ -4649,7 +4642,6 @@ oclusión	1
 óculo	1
 ocupación	1
 ocupó	1
-óðinn	1
 odontología	1
 odontólogos	1
 óengus	1
@@ -5524,7 +5516,6 @@ técnicamente	1
 técnicas	1
 tecnológicos	1
 tecnopolítica	1
-téctōn	1
 teijón	1
 teísmo	1
 tejería	1

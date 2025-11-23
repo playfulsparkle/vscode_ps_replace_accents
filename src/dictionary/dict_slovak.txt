@@ -965,7 +965,6 @@ tomáš	22
 údajné	22
 ukazujú	22
 veľká	22
-vučić	22
 výchova	22
 vyššia	22
 zdravých	22
@@ -1611,7 +1610,6 @@ taká	15
 téme	15
 tragédiou	15
 trápi	15
-třeštíková	15
 trošku	15
 týždňoch	15
 ukázal	15
@@ -1969,7 +1967,6 @@ sústavy	13
 súvisiace	13
 súvislosť	13
 symptomatická	13
-třetí	13
 tritisíc	13
 tvár	13
 týkajúce	13
@@ -2886,7 +2883,6 @@ jakubjaková	9
 januári	9
 jednoduchá	9
 jemné	9
-jiří	9
 kaliňákovi	9
 kálnice	9
 kašli	9
@@ -2897,7 +2893,6 @@ kolonizácia	9
 komunikácii	9
 komunikovať	9
 konať	9
-křesťanství	9
 krvné	9
 kultúrna	9
 kultúrne	9
@@ -4498,7 +4493,6 @@ jaššová	6
 jediný	6
 její	6
 jemný	6
-ještě	6
 júli	6
 kamarát	6
 kanálikov	6
@@ -5982,7 +5976,6 @@ takého	5
 takéhoto	5
 takýmto	5
 takzvané	5
-tamější	5
 ťažkej	5
 ťažkostiach	5
 technická	5
@@ -6107,7 +6100,6 @@ všímajte	5
 všímajú	5
 všimnete	5
 všimol	5
-vučića	5
 výbavu	5
 vyberám	5
 výborným	5
@@ -6280,7 +6272,6 @@ anorganická	4
 antipyretiká	4
 antropológia	4
 aplikovaný	4
-arabštině	4
 arbitrážnom	4
 areáli	4
 armádu	4
@@ -6784,8 +6775,6 @@ krátkozrakých	4
 kremeľ	4
 kremľa	4
 kresťanská	4
-křesťanské	4
-křesťany	4
 krídel	4
 kriedová	4
 kritizujú	4
@@ -7341,7 +7330,6 @@ rastúcim	4
 rátaj	4
 reakčný	4
 reálny	4
-řečeno	4
 registrovaných	4
 regulácia	4
 reguláciou	4
@@ -7354,7 +7342,6 @@ rezáky	4
 réžia	4
 riaditeľstva	4
 riaditeľstvo	4
-říši	4
 rituál	4
 rodičovskej	4
 rodové	4
@@ -7723,7 +7710,6 @@ voľnočasových	4
 voľnopredajnými	4
 vôľu	4
 vonkajší	4
-vörösová	4
 vozidlá	4
 vracaní	4
 vracaním	4
@@ -8318,7 +8304,6 @@ dovoľujú	3
 dráhu	3
 dramatická	3
 draselný	3
-dřímalka	3
 drobček	3
 drôt	3
 držím	3
@@ -8539,7 +8524,6 @@ hospodárovým	3
 hospodárovými	3
 hôtel	3
 hotové	3
-houbaření	3
 hovorkyňou	3
 hračiek	3
 hradená	3
@@ -8670,8 +8654,6 @@ jedovaté	3
 jemným	3
 jesenný	3
 jež	3
-jiřím	3
-jižně	3
 josé	3
 júliusa	3
 jurkoviča	3
@@ -9989,8 +9971,6 @@ rodová	3
 rokaupraviť	3
 rokovaní	3
 rómov	3
-röntgenová	3
-röntgenové	3
 rotácie	3
 rovesníčky	3
 rovesníkmi	3
@@ -10068,7 +10048,6 @@ schizofrénia	3
 schôdza	3
 schopných	3
 schránke	3
-schützová	3
 schválená	3
 schválil	3
 schwarczová	3
@@ -10141,7 +10120,6 @@ skaličan	3
 škandál	3
 skládky	3
 sklárová	3
-sklenaříková	3
 sklenčárová	3
 sklenková	3
 skleróza	3
@@ -10458,7 +10436,6 @@ tráva	3
 trávením	3
 trávili	3
 trebatická	3
-třeštíkovou	3
 trilógia	3
 trištvrte	3
 trojnásobný	3
@@ -11872,7 +11849,6 @@ dreň	2
 drevené	2
 drevených	2
 drevorubač	2
-dříve	2
 drobní	2
 drobová	2
 drogová	2
@@ -11913,7 +11889,6 @@ dvojité	2
 dvojnásobnou	2
 dvojnásobok	2
 dvojtýždňový	2
-dvořák	2
 dvorský	2
 dýchaní	2
 dýchavičnosti	2
@@ -12865,7 +12840,6 @@ koordinátor	2
 kopcová	2
 kopernikovský	2
 kopírovať	2
-koptštině	2
 koreň	2
 koreňom	2
 kôrka	2
@@ -12934,7 +12908,6 @@ kréda	2
 krehká	2
 krémoch	2
 krémových	2
-křenková	2
 kreslím	2
 kresťanstvo	2
 kričali	2
@@ -13749,7 +13722,6 @@ neistý	2
 neistým	2
 nejasám	2
 nejasná	2
-nejdůležitější	2
 nejedákov	2
 nejedného	2
 nejednoznačný	2
@@ -13760,7 +13732,6 @@ nekontrolovanému	2
 nekonvenčná	2
 nekonzumovať	2
 nekrofágia	2
-některé	2
 nelákala	2
 neliečiť	2
 nemasírujte	2
@@ -14915,7 +14886,6 @@ prameňom	2
 praskajúce	2
 prasličky	2
 pratasevičom	2
-přáteli	2
 pravdepodobná	2
 pravdepodobný	2
 pravdivá	2
@@ -15166,7 +15136,6 @@ prírodným	2
 prírodovedné	2
 prirovnať	2
 príručkách	2
-přísloví	2
 prislúchajú	2
 príslušná	2
 prísnejšie	2
@@ -15279,7 +15248,6 @@ púšťané	2
 púšte	2
 púti	2
 pútnické	2
-původní	2
 pýta	2
 pýtam	2
 pýtame	2
@@ -15417,7 +15385,6 @@ richterová	2
 riešeniach	2
 riešilo	2
 riešiš	2
-říká	2
 rím	2
 ríma	2
 rímsa	2
@@ -15429,7 +15396,6 @@ rišov	2
 ríšskej	2
 riť	2
 ritomský	2
-řízení	2
 riziková	2
 rizikovú	2
 róba	2
@@ -15783,7 +15749,6 @@ skúsený	2
 skúseným	2
 skúšku	2
 skúšobníctvo	2
-skutečně	2
 skutočnom	2
 skutočných	2
 skvalitňuje	2
@@ -16029,7 +15994,6 @@ stanné	2
 stanovení	2
 stanovených	2
 staráš	2
-stařík	2
 starnutí	2
 starostí	2
 staroveké	2
@@ -16136,7 +16100,6 @@ stúpanie	2
 stupňom	2
 stupňovať	2
 stupňový	2
-stupňů	2
 stupňuje	2
 stupňujú	2
 stužky	2
@@ -16498,7 +16461,6 @@ ukončujú	2
 úkonov	2
 ukradnúť	2
 ukrajinčina	2
-ukřižování	2
 uľahčí	2
 úľava	2
 uľavilo	2
@@ -16976,7 +16938,6 @@ vtáky	2
 vtedajšej	2
 vtipkár	2
 vtipný	2
-vůči	2
 vulgárne	2
 vulgárnemu	2
 vulgárnych	2
@@ -17966,7 +17927,6 @@ afričan	1
 afričanem	1
 afričania	1
 afričanka	1
-afričanů	1
 afrického	1
 africký	1
 afrikánci	1
@@ -18303,7 +18263,6 @@ apolitickosť	1
 apollónovou	1
 apollosoviča	1
 apostáza	1
-apoštolů	1
 apríl	1
 aprílovú	1
 apriórnou	1
@@ -18972,7 +18931,6 @@ boháčová	1
 bohatému	1
 bohatších	1
 bohatství	1
-bohočlověka	1
 bohoslužba	1
 bohoslužby	1
 bohoslužebných	1
@@ -19684,7 +19642,6 @@ clám	1
 členskej	1
 členským	1
 členstvo	1
-členů	1
 clonové	1
 človekkultúraviera	1
 človekspoločnosť	1
@@ -19719,7 +19676,6 @@ cristoforettiová	1
 čssr	1
 čteme	1
 ctižiadostivá	1
-čtyřicítka	1
 čudáčka	1
 čudovala	1
 cudzími	1
@@ -19731,7 +19687,6 @@ cukríky	1
 čunderlíková	1
 cúper	1
 cupotajú	1
-curaçajčania	1
 čurillovcami	1
 čurillu	1
 čurilovcov	1
@@ -19963,7 +19918,6 @@ detenčnom	1
 deterministická	1
 detoxikáciu	1
 detskému	1
-dětství	1
 devastačný	1
 devätnásťročná	1
 deväťpodlažnú	1
@@ -20065,8 +20019,6 @@ distribúcií	1
 distribúciu	1
 distribučné	1
 distribuované	1
-dítěte	1
-dítěti	1
 diuretické	1
 diuretických	1
 diuretiká	1
@@ -20130,7 +20082,6 @@ dobiš	1
 dobové	1
 dobového	1
 dobovými	1
-dobřichovicích	1
 dobrodružstve	1
 dobrodružstvom	1
 dobroprajnosť	1
@@ -20400,10 +20351,7 @@ drevená	1
 dreveným	1
 drevokazné	1
 driemať	1
-dřímalkom	1
-dřímalku	1
 drínová	1
-dřív	1
 drobná	1
 drobného	1
 drobnohľad	1
@@ -20463,8 +20411,6 @@ dúfajúc	1
 dúfal	1
 dúfaš	1
 dúfať	1
-důležitou	1
-důležitým	1
 dunajská	1
 dunajský	1
 dunčková	1
@@ -20525,7 +20471,6 @@ dvojsečnou	1
 dvojtvárnosťou	1
 dvojtýždenníka	1
 dvojtýždňovom	1
-dvořáček	1
 dvorným	1
 dvorská	1
 dýchací	1
@@ -20546,7 +20491,6 @@ dynamickým	1
 dysfágia	1
 dysfázia	1
 dystópia	1
-džajić	1
 džalálábád	1
 džeme	1
 džemu	1
@@ -21085,7 +21029,6 @@ fúkacia	1
 fúkania	1
 fúkate	1
 fúkne	1
-füleová	1
 fulerény	1
 fundamentálna	1
 fungicíd	1
@@ -21239,7 +21182,6 @@ goralské	1
 gorbačov	1
 gordoňová	1
 goriščáková	1
-gössnerová	1
 góti	1
 gotické	1
 gracilnosť	1
@@ -21378,7 +21320,6 @@ healdová	1
 héctor	1
 hedónia	1
 hedvičina	1
-hedvičině	1
 hedvičiny	1
 hektárov	1
 heléni	1
@@ -21539,7 +21480,6 @@ hodinový	1
 hodiť	1
 hodní	1
 hodničáková	1
-hodnostáře	1
 hodnostárov	1
 hodnotených	1
 hodnotí	1
@@ -21733,7 +21673,6 @@ hrúpki	1
 hruškami	1
 hrušková	1
 hrušku	1
-hrůzný	1
 hrvoľ	1
 hryzátka	1
 hryzátko	1
@@ -21825,7 +21764,6 @@ hysterektómii	1
 hysteréza	1
 hystéria	1
 hysterickú	1
-ibišević	1
 ibuprofén	1
 ichtyológia	1
 ichtyologička	1
@@ -22277,14 +22215,12 @@ jemnejšími	1
 jemných	1
 jenský	1
 jérémie	1
-jeruzalémě	1
 jeruzalémském	1
 jesenná	1
 jesenného	1
 jeseňou	1
 jestvujú	1
 ježíšem	1
-ježíšově	1
 ježkom	1
 jímž	1
 jiné	1
@@ -22381,12 +22317,10 @@ kaleňuková	1
 kaleráb	1
 kalkulácia	1
 kalkulačka	1
-källström	1
 kálnici	1
 kalorického	1
 kalužskou	1
 kamarádství	1
-kamarádů	1
 kamarády	1
 kamarátiek	1
 kamarátil	1
@@ -22487,7 +22421,6 @@ kašlite	1
 kašľov	1
 kašľového	1
 kašovitá	1
-kašparů	1
 kastrácia	1
 kašu	1
 kašubčinou	1
@@ -22712,7 +22645,6 @@ kokyová	1
 kolabujúci	1
 koláčov	1
 koľajová	1
-kolář	1
 kolárčiková	1
 kolaudačné	1
 kolaudačného	1
@@ -23214,17 +23146,13 @@ kreslení	1
 kresliť	1
 kresťan	1
 kresťanom	1
-křesťanskou	1
 kresťanský	1
 kresťanských	1
 kresťanstva	1
-křesťanstvím	1
 kresťanstvom	1
-křičet	1
 kričíme	1
 krídelká	1
 krídlami	1
-křídly	1
 kriedovitá	1
 kriedovú	1
 kriedových	1
@@ -23262,7 +23190,6 @@ krivých	1
 krížence	1
 kríženie	1
 križovatka	1
-křižovatkou	1
 križovatky	1
 krížové	1
 krížovú	1
@@ -23272,7 +23199,6 @@ kŕmenia	1
 krško	1
 krstné	1
 krstného	1
-krůčky	1
 kruhový	1
 krupicového	1
 krúpy	1
@@ -23307,7 +23233,6 @@ ksčm	1
 ksénia	1
 ksénie	1
 kterému	1
-kteří	1
 kterých	1
 ktorúkoľvek	1
 ktorýkoľvek	1
@@ -23818,7 +23743,6 @@ loptičky	1
 loptová	1
 loptové	1
 loránd	1
-lörincová	1
 lorková	1
 lososová	1
 lotériami	1
@@ -24317,7 +24241,6 @@ memoár	1
 memoizácia	1
 menách	1
 menčíková	1
-méně	1
 menejcennými	1
 menené	1
 meningitíde	1
@@ -24350,8 +24273,6 @@ mesačnej	1
 mesačnom	1
 mesačnú	1
 mesačným	1
-měsíce	1
-měsících	1
 mešita	1
 mešitu	1
 meškajúcich	1
@@ -24394,7 +24315,6 @@ mexického	1
 mexickú	1
 mezenchým	1
 mezinárodních	1
-meziříčím	1
 mezopotámia	1
 mezopotámska	1
 mezosféra	1
@@ -24480,7 +24400,6 @@ milým	1
 mimoeurópske	1
 mimoliterárne	1
 mimoparlamentná	1
-mimořádné	1
 mimorozpočtových	1
 mimovládky	1
 mimovládna	1
@@ -24538,7 +24457,6 @@ minúte	1
 minútových	1
 minútu	1
 mirákulum	1
-míří	1
 miščíková	1
 misiách	1
 misiám	1
@@ -24774,7 +24692,6 @@ múdrych	1
 múdrym	1
 múdrymi	1
 mukách	1
-mukařovský	1
 multidisciplinárnej	1
 multifunkčného	1
 multifunkčný	1
@@ -24797,7 +24714,6 @@ múzeách	1
 múzeí	1
 múzejná	1
 mužem	1
-můžeme	1
 mužíčkovia	1
 muzikálov	1
 muzikály	1
@@ -24812,7 +24728,6 @@ mužskými	1
 mužstva	1
 mužstvo	1
 mužstvu	1
-můžu	1
 mých	1
 myeloidná	1
 mykolajivskú	1
@@ -25302,7 +25217,6 @@ napätiam	1
 napätiu	1
 napcháte	1
 napchávali	1
-napětí	1
 napínanie	1
 napínavá	1
 napínavého	1
@@ -25350,14 +25264,12 @@ napomína	1
 nápomocné	1
 nápomocní	1
 napomôcť	1
-napořád	1
 náporom	1
 napovedajú	1
 napratať	1
 napráva	1
 napraví	1
 napraviť	1
-napříč	1
 naprogramovaného	1
 naprojektovaný	1
 narábal	1
@@ -25740,7 +25652,6 @@ nehnuteľnosťami	1
 nehodlajú	1
 nehojdajú	1
 nehovoriť	1
-něhož	1
 nehrám	1
 nehýbala	1
 nehýbali	1
@@ -25750,7 +25661,6 @@ neinfekčnej	1
 neinvazívny	1
 neísť	1
 neistú	1
-nějakém	1
 nejakých	1
 nejakými	1
 nejasného	1
@@ -25790,8 +25700,6 @@ nekritické	1
 nekŕmte	1
 nekrofília	1
 nekryté	1
-některém	1
-některých	1
 nekúpať	1
 nekúpili	1
 nekúpim	1
@@ -25800,7 +25708,6 @@ nekúpite	1
 nekupovať	1
 nekvalitné	1
 nekvalitných	1
-někým	1
 neľakaj	1
 nelákal	1
 nelákalo	1
@@ -25848,13 +25755,11 @@ nemôcť	1
 nemohúcneho	1
 nemožnosť	1
 nemusím	1
-nemůžu	1
 nemýlim	1
 nemýliť	1
 nemým	1
 nemyslíme	1
 nemysliteľné	1
-němž	1
 nenabité	1
 nenachádza	1
 nenadávať	1
@@ -26109,7 +26014,6 @@ nepríjemnejších	1
 nepríjemnými	1
 neprijmú	1
 neprilákame	1
-nepříliš	1
 neprimerané	1
 neprimeranú	1
 neprimeraným	1
@@ -26141,7 +26045,6 @@ neráta	1
 nerátala	1
 nerátame	1
 neregistruješ	1
-neřeším	1
 nerešpektovali	1
 nerešpektovania	1
 neresť	1
@@ -26205,8 +26108,6 @@ neslušné	1
 neslúžil	1
 neslúžilo	1
 neslúžite	1
-nesmiřitelné	1
-nesmíšeně	1
 nesnaží	1
 nesnažila	1
 nesnažili	1
@@ -26279,7 +26180,6 @@ nestrávené	1
 nestrávenej	1
 nestretávajte	1
 nestretnú	1
-nestvořený	1
 nesúcou	1
 nesúdim	1
 nesúďte	1
@@ -26658,7 +26558,6 @@ nezvyšuje	1
 ničili	1
 ničivé	1
 ničivým	1
-nicméně	1
 nicolás	1
 nicolása	1
 nicolásovi	1
@@ -26853,7 +26752,6 @@ obdarená	1
 obdivovaný	1
 obdobné	1
 obdobným	1
-obecnější	1
 obedňajšom	1
 obedného	1
 obedujúcich	1
@@ -27076,7 +26974,6 @@ ochranárom	1
 ochranárov	1
 ochránia	1
 ochránime	1
-ochránkyně	1
 ochranná	1
 ochranných	1
 ochranným	1
@@ -27749,7 +27646,6 @@ otcovského	1
 otehotnením	1
 otepľovania	1
 otepľovaniu	1
-otěží	1
 otitídsy	1
 otitulkovať	1
 otlačku	1
@@ -28192,8 +28088,6 @@ pešou	1
 pestré	1
 pestrosť	1
 pestujú	1
-pětadvacetiletý	1
-pětašedesát	1
 petíciu	1
 petková	1
 peťov	1
@@ -28691,7 +28585,6 @@ pokroková	1
 pokrokové	1
 pokrokoví	1
 pokrstený	1
-pokřtění	1
 pokrúti	1
 pokrvné	1
 pokrytá	1
@@ -28872,7 +28765,6 @@ poradenských	1
 poradíme	1
 poradkyňa	1
 poradňa	1
-pořádně	1
 poradný	1
 poranení	1
 porastú	1
@@ -29138,7 +29030,6 @@ poverená	1
 povereného	1
 poverený	1
 povestná	1
-povětšinou	1
 povinnosťami	1
 povinnosťou	1
 povinných	1
@@ -29396,7 +29287,6 @@ predispozície	1
 predispozíciou	1
 predkladajú	1
 predkladané	1
-předkládány	1
 predkladať	1
 predkoloniálnych	1
 predloží	1
@@ -29506,7 +29396,6 @@ prehlbujú	1
 prehliadač	1
 prehliadači	1
 prehliadať	1
-přehlížel	1
 prehĺtaní	1
 prehnaná	1
 prehnať	1
@@ -29535,7 +29424,6 @@ preklápanie	1
 preklasifikovaných	1
 preklopiť	1
 prekonaním	1
-překonaných	1
 prekonáte	1
 prekonávaním	1
 prekonávaniu	1
@@ -29782,7 +29670,6 @@ prevážaniu	1
 prevážil	1
 preväzov	1
 prevažuje	1
-převažujícím	1
 prevedené	1
 prevedením	1
 preventívkach	1
@@ -29813,7 +29700,6 @@ prevýši	1
 prevzaté	1
 prevzatím	1
 prevzatý	1
-převzetí	1
 preženie	1
 prezentácie	1
 prezentáciu	1
@@ -29864,7 +29750,6 @@ priaznivejšie	1
 priaznivým	1
 príbalového	1
 príbehoch	1
-příbezích	1
 približnú	1
 približovať	1
 približujeme	1
@@ -29878,13 +29763,11 @@ príbuznej	1
 príbuznosti	1
 príbuznou	1
 príbuznými	1
-přičemž	1
 príčetnosti	1
 prichádzajúce	1
 prichádzajúcu	1
 prichádzali	1
 prichádzame	1
-příchodem	1
 príchuťami	1
 prichytiť	1
 pričinil	1
@@ -30014,7 +29897,6 @@ primeranému	1
 prímesou	1
 prímestské	1
 primitívny	1
-přímo	1
 primogenitúra	1
 prímorské	1
 prímorskej	1
@@ -30025,7 +29907,6 @@ prinášanie	1
 princípe	1
 princípoch	1
 princípom	1
-přinejmenším	1
 prinízka	1
 prínosom	1
 printových	1
@@ -30046,7 +29927,6 @@ pripáliť	1
 pripísal	1
 pripísali	1
 pripísať	1
-připisování	1
 prípitok	1
 priplatiť	1
 pripnúť	1
@@ -30086,7 +29966,6 @@ prírodovedecké	1
 prírodovedeckej	1
 prirodzenejšie	1
 prirodzenejším	1
-přirozené	1
 príručke	1
 príručková	1
 príručné	1
@@ -30101,7 +29980,6 @@ prisávanie	1
 prišelci	1
 príšeriek	1
 prisladkú	1
-příslib	1
 príslovie	1
 príslovka	1
 príslovky	1
@@ -30143,13 +30021,10 @@ pristávanie	1
 pristávať	1
 prístavné	1
 prístavného	1
-příští	1
-příštích	1
 prístrešku	1
 prístroja	1
 prístrojov	1
 prístrojovú	1
-přístupem	1
 pristúpil	1
 prístupná	1
 prístupné	1
@@ -30164,7 +30039,6 @@ príťažlivého	1
 príťažlivej	1
 príťažlivosti	1
 príťažou	1
-přítelkyni	1
 pritiahnuté	1
 pritiahnutými	1
 pritlačte	1
@@ -30184,7 +30058,6 @@ priveľkej	1
 priveľký	1
 príveskov	1
 prívesky	1
-přívětivá	1
 prívetivé	1
 prívetivo	1
 prívetivý	1
@@ -30445,8 +30318,6 @@ purgatívny	1
 purpurová	1
 puška	1
 puškárom	1
-působícím	1
-působím	1
 púšť	1
 púšťajú	1
 púšťať	1
@@ -30743,7 +30614,6 @@ reproduktorová	1
 republikáni	1
 republikánov	1
 republikánska	1
-řešeny	1
 rešerš	1
 rešeto	1
 rešpekte	1
@@ -30826,7 +30696,6 @@ riešili	1
 riešim	1
 riešiteľný	1
 riešte	1
-říkám	1
 rimavská	1
 ríme	1
 rimmerová	1
@@ -30876,7 +30745,6 @@ rodičku	1
 rodičky	1
 rodičovská	1
 rodičovstvu	1
-rodičů	1
 rodinnému	1
 rodinní	1
 rodné	1
@@ -30904,9 +30772,6 @@ rómom	1
 rómskej	1
 rómskom	1
 rondokubistických	1
-röntgenového	1
-röntgenový	1
-röntgenových	1
 ropná	1
 ropnú	1
 ropným	1
@@ -30923,7 +30788,6 @@ rovnakosť	1
 rovnakých	1
 rovnakými	1
 rovňanová	1
-rovněž	1
 rovníku	1
 rovnobežka	1
 rovnobežke	1
@@ -31181,7 +31045,6 @@ ružových	1
 rybách	1
 rybám	1
 rybár	1
-rybaření	1
 rybárové	1
 rybárovej	1
 rybárovou	1
@@ -31264,8 +31127,6 @@ samosprávnemu	1
 samosprávnom	1
 samosprávnych	1
 samosprávou	1
-samotářského	1
-samotářství	1
 samotnými	1
 samovražedné	1
 samovražednými	1
@@ -31284,7 +31145,6 @@ saním	1
 sanitára	1
 šansón	1
 sapegovú	1
-šapić	1
 saprofág	1
 saprofytické	1
 sára	1
@@ -31357,7 +31217,6 @@ schovať	1
 schovávali	1
 schránka	1
 schránok	1
-schröerová	1
 schumannová	1
 schváleného	1
 schválenej	1
@@ -31398,7 +31257,6 @@ sebeckosť	1
 šebeňa	1
 sebestačnosť	1
 sebestačnosti	1
-sebevědomá	1
 secesných	1
 séchan	1
 sedadlá	1
@@ -31509,7 +31367,6 @@ severovýchodná	1
 severovýchodu	1
 severozápadne	1
 severský	1
-sèvreská	1
 sexistické	1
 sexuálnej	1
 sexuológia	1
@@ -32194,7 +32051,6 @@ spokojný	1
 spoľahlivá	1
 spoľahlivého	1
 spoľahlivými	1
-společně	1
 spolková	1
 spolkovému	1
 spoločenského	1
@@ -32506,9 +32362,7 @@ stekať	1
 stenných	1
 štep	1
 stepanovyč	1
-štěpí	1
 stereotypnými	1
-štěstí	1
 štetinky	1
 štetinou	1
 stiahnuté	1
@@ -32738,7 +32592,6 @@ stvárnenou	1
 štvorčlennej	1
 štvordňového	1
 štvordňový	1
-stvořením	1
 stvorený	1
 štvoricu	1
 štvorkombinácia	1
@@ -33083,7 +32936,6 @@ taliančiny	1
 talianová	1
 talóa	1
 tamášová	1
-tamějšího	1
 tamojší	1
 tamojšia	1
 tampónov	1
@@ -33202,7 +33054,6 @@ telocvikárka	1
 telových	1
 telovýchovné	1
 témam	1
-téměř	1
 temešvár	1
 temiaková	1
 temnú	1
@@ -33281,7 +33132,6 @@ terstský	1
 tertuliána	1
 tesákmi	1
 tešia	1
-těšila	1
 tešili	1
 tešíme	1
 tešlárová	1
@@ -33540,7 +33390,6 @@ trénuje	1
 trestajú	1
 trestané	1
 trestaní	1
-třeštíkovej	1
 trestnému	1
 trestnoprávny	1
 trestnoprávnym	1
@@ -33613,7 +33462,6 @@ trúchlime	1
 trúchlohra	1
 trúd	1
 trúfla	1
-truhlář	1
 truľo	1
 trúsiacich	1
 trvajúcich	1
@@ -33703,7 +33551,6 @@ túžob	1
 tvárach	1
 tváričku	1
 tváril	1
-tvářila	1
 tvárime	1
 tvarová	1
 tvoríme	1
@@ -33714,7 +33561,6 @@ tvorivých	1
 tvorivým	1
 tvrdohlavá	1
 tvrdých	1
-tvůrčí	1
 týči	1
 týčia	1
 tyčinkou	1
@@ -34478,7 +34324,6 @@ vegetariánoch	1
 vegetariánstva	1
 veková	1
 vekovú	1
-věkový	1
 vektorový	1
 velásquez	1
 velením	1
@@ -34562,8 +34407,6 @@ vetračku	1
 vetračky	1
 vetraní	1
 vetranú	1
-větší	1
-většina	1
 vévodila	1
 vezmú	1
 vežou	1
@@ -34795,7 +34638,6 @@ voliť	1
 voľnejšie	1
 voľnomyšlienkárka	1
 voľnosť	1
-völpelová	1
 vôňach	1
 voňala	1
 voňať	1
@@ -34900,9 +34742,6 @@ vtákozobce	1
 vtedajšia	1
 vtedajších	1
 vtedajšieho	1
-vtěleného	1
-vtěleném	1
-vtělením	1
 vtiahnuť	1
 vtieravého	1
 vúb	1
@@ -35096,7 +34935,6 @@ výhovorky	1
 vyhovovať	1
 vyhraďte	1
 vyhrajú	1
-vyhraněných	1
 vyhraté	1
 vyhrávala	1
 vyhrávať	1
@@ -35206,7 +35044,6 @@ vymazaní	1
 vymazaný	1
 vymedzených	1
 výmen	1
-vyměněná	1
 vymeniť	1
 vymenovanú	1
 vymenovaných	1
@@ -35355,7 +35192,6 @@ vyriešení	1
 vyriešeniu	1
 vyriešenú	1
 vyriešilo	1
-vyřízena	1
 výrobcov	1
 výrobcu	1
 vyrobený	1
@@ -35480,7 +35316,6 @@ vystúpili	1
 vystúpiť	1
 výstupné	1
 vystupovaním	1
-výstupů	1
 vystupujú	1
 vystupujúceho	1
 výstupy	1
@@ -35568,7 +35403,6 @@ vyváža	1
 vyvážaná	1
 vyváženého	1
 vyváženie	1
-vyvěrající	1
 vyvešať	1
 vyvést	1
 výveva	1
@@ -35652,7 +35486,6 @@ vyznačovali	1
 vyznačovanie	1
 významného	1
 významnej	1
-významněji	1
 významnému	1
 významnou	1
 významným	1
@@ -35708,7 +35541,6 @@ vzhľade	1
 vzhliadnutí	1
 vžila	1
 vzišlo	1
-vzkříšeného	1
 vzletová	1
 vznášala	1
 vznesení	1
@@ -36293,7 +36125,6 @@ zástupkyne	1
 zastupovaním	1
 zastupovať	1
 zásuvka	1
-zasvěcený	1
 zasypané	1
 zasýti	1
 zaťahovanie	1
@@ -36513,7 +36344,6 @@ zdržiavania	1
 zdržím	1
 zdržme	1
 zdržuje	1
-zdůrazňování	1
 zdurenými	1
 zdvihnuté	1
 zdvojnásobí	1
@@ -36790,7 +36620,6 @@ zmagoriť	1
 zmäkčujúcich	1
 zmäkne	1
 zmanažovať	1
-zmatečně	1
 zmätené	1
 zmäteného	1
 zmätenosť	1
@@ -36999,7 +36828,6 @@ zoznamovaní	1
 zoznamovať	1
 zpátky	1
 zpočátku	1
-zpověď	1
 zradkyňou	1
 zraková	1
 zraneného	1
@@ -37087,8 +36915,6 @@ zúfalstvo	1
 žurnalistiku	1
 žurnálov	1
 zúročiť	1
-zůstává	1
-zůstávají	1
 žuvačky	1
 žužanovia	1
 zúženými	1
@@ -37123,7 +36949,6 @@ zverejňujú	1
 zverené	1
 zvesená	1
 zvetrávanie	1
-zvětšujících	1
 zviditeľnenie	1
 zvieracích	1
 zvieracími	1

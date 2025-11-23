@@ -1741,7 +1741,6 @@ budgetåret	3
 countrysångareamerikanska	3
 dagbräckningen	3
 dahlbäck	3
-đàn	3
 därifrån	3
 därutöver	3
 dödades	3
@@ -4115,7 +4114,6 @@ badstränderna	1
 bågbro	1
 baggensstäket	1
 bägges	1
-bahá'íer	1
 bakgård	1
 bakpärmen	1
 baksmälla	1
@@ -8127,7 +8125,6 @@ synliggör	1
 synsättet	1
 sysselsätta	1
 sysselsätter	1
-szijjártó	1
 tå	1
 tablå	1
 täby	1
@@ -8359,7 +8356,6 @@ tumöroperation	1
 turistmål	1
 turistnäring	1
 turiststråk	1
-türkçe	1
 turnédatum	1
 turnédatumen	1
 turnédokumentär	1

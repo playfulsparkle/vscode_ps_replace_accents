@@ -16,6 +16,11 @@ import * as vscode from "vscode";
 export const diacriticRegex = /[\p{Mn}\u0300-\u036f]/gu;
 
 export function normalizeText(str: string): string {
+    // Handle string.toWellFormed() if available (ES2024)
+    if (typeof (str as any).toWellFormed === "function") {
+        str = (str as any).toWellFormed();
+    }
+
     return str.normalize("NFKD").replace(diacriticRegex, "");
 }
 

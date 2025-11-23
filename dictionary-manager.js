@@ -70,11 +70,11 @@ class DictionaryManager {
     }
 
     /**
-     * Checks if a word contains language-specific diacritics
+     * Checks if a word contains ONLY language-specific diacritics (no foreign diacritics)
      * 
      * @param {string} word - The word to check
      * @param {string} language - The target language
-     * @returns {boolean} True if word contains diacritics from the specified language
+     * @returns {boolean} True if word contains only diacritics from the specified language
      */
     containsLanguageDiacritics(word, language) {
         if (!language) {
@@ -82,16 +82,37 @@ class DictionaryManager {
         }
 
         const languageChars = languageCharacterMappings[language.toLowerCase()];
+
         if (!languageChars) {
             throw new Error(`Unsupported language: ${language}. Available: ${this.getAvailableLanguages().join(", ")}`);
         }
 
+        const allowedPunctuation = new Set(["'", "\u2018", "\u2019"]);
+
+        let hasLanguageDiacritic = false;
+
         for (let i = 0; i < word.length; i++) {
-            if (languageChars.has(word[i])) {
-                return true;
+            const char = word[i];
+            const charCode = char.charCodeAt(0);
+
+            // If it's a non-ASCII character (potential diacritic)
+            if (charCode > 127) {
+                // Allow valid punctuation marks
+                if (allowedPunctuation.has(char)) {
+                    continue;
+                }
+
+                // Check if it's in the language's character set
+                if (languageChars.has(char)) {
+                    hasLanguageDiacritic = true;
+                } else {
+                    // Found a diacritic that's NOT in this language - reject the word
+                    return false;
+                }
             }
         }
-        return false;
+
+        return hasLanguageDiacritic;
     }
 
     /**

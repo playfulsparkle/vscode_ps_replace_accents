@@ -31,7 +31,6 @@ slušnih	60
 polževi	59
 rešitvah	59
 štirih	58
-dončić	57
 če	55
 članek	52
 braškem	51
@@ -221,7 +220,6 @@ cenejše	4
 člani	4
 članov	4
 dediščine	4
-dončića	4
 egipčanski	4
 finančnih	4
 generične	4
@@ -281,7 +279,6 @@ večina	4
 večji	4
 veščec	4
 vprašanjih	4
-vučića	4
 vzdrževale	4
 zabeležili	4
 zaščita	4
@@ -705,9 +702,7 @@ vojaška	2
 vojaškimi	2
 vračunaš	2
 vršiču	2
-vučićem	2
 vučiceva	2
-vučićevi	2
 vzdolž	2
 začele	2
 začeti	2
@@ -1058,7 +1053,6 @@ mešani	1
 mešano	1
 mesečno	1
 metodološko	1
-miloševićeve	1
 mimoidoče	1
 mimoidočega	1
 mišice	1
@@ -1693,7 +1687,6 @@ vsakič	1
 vsakršno	1
 všeč	1
 vseživljenjskega	1
-vučanović	1
 vučkotu	1
 vzdržnosti	1
 žabica	1

@@ -2,6 +2,11 @@
 
 All notable changes to the "Playful Sparkle: Replace Accents" extension will be documented in this file.
 
+## [0.0.21] - 2025-11-23
+
+- Filtered all dictionary entries.
+- Updated normalization and adding dictionary entries to discard words that contain characters outside of the valid character mappings.
+
 ## [0.0.20] - 2025-11-15
 
 - Optimized async call to remove diacriticts on file or folder.
